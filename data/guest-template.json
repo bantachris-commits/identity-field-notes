@@ -1,0 +1,31 @@
+{
+  "id": "YYYY-MM-DD-guest-slug",
+  "date": "YYYY-MM-DD",
+  "edition": "GUEST VOICE // TOPIC",
+  "title": "Guest article title",
+  "dek": "One-sentence summary of the contributor's point of view.",
+  "tags": ["PAM", "IAM"],
+  "readTime": "6 min",
+  "featured": false,
+  "contentType": "guest",
+  "humanWritten": true,
+  "author": {
+    "name": "Full Name",
+    "role": "Role / Organization",
+    "url": "https://optional-author-link.example",
+    "bio": "Short author bio or relevant disclosure."
+  },
+  "disclosure": "Human-written guest contribution. Relevant affiliations should be disclosed.",
+  "stories": [
+    {
+      "kicker": "Guest Voice",
+      "title": "Section heading",
+      "summary": "The contributor's actual prose or article section.",
+      "why": "The contributor's takeaway or recommendation.",
+      "source": "Guest contributor",
+      "url": "",
+      "aiGenerated": false,
+      "confidence": "Human contribution"
+    }
+  ]
+}
