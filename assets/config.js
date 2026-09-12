@@ -26,3 +26,27 @@ window.IFN_CONFIG = {
     sponsorshipEmail: ""
   }
 };
+
+// Theme bootstrap. Apply the saved theme before first paint, then load the
+// shared theme layer used by every page on the site.
+(()=>{
+  const valid=new Set(["field","dark","matrix"]);
+  let saved="field";
+  try{saved=localStorage.getItem("ifn-theme")||"field"}catch(e){}
+  document.documentElement.dataset.theme=valid.has(saved)?saved:"field";
+
+  if(!document.querySelector('link[data-ifn-theme]')){
+    const css=document.createElement("link");
+    css.rel="stylesheet";
+    css.href="assets/theme.css";
+    css.dataset.ifnTheme="true";
+    document.head.appendChild(css);
+  }
+
+  if(!document.querySelector('script[data-ifn-theme]')){
+    const js=document.createElement("script");
+    js.src="assets/theme.js";
+    js.dataset.ifnTheme="true";
+    document.head.appendChild(js);
+  }
+})();
