@@ -1,16 +1,22 @@
 (()=>{
-  const THEMES=["field","dark","matrix"];
-  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix"};
+  const THEMES=["field","dark","matrix","jurassic"];
+  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Park"};
   const STORAGE_KEY="ifn-theme";
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
-  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":"#102934"}
+  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#b73527":"#102934"}
+
+  function setFavicon(theme){
+    const icon=document.querySelector('link[rel~="icon"]');
+    if(icon)icon.href=theme==="jurassic"?"assets/favicon-jurassic.svg":"assets/favicon.svg";
+  }
 
   function setGiscusTheme(theme){
     const iframe=document.querySelector("iframe.giscus-frame");
     if(!iframe)return;
-    iframe.contentWindow?.postMessage({giscus:{setConfig:{theme:theme==="field"?"light":"dark"}}},"https://giscus.app");
+    const light=theme==="field"||theme==="jurassic";
+    iframe.contentWindow?.postMessage({giscus:{setConfig:{theme:light?"light":"dark"}}},"https://giscus.app");
   }
 
   function updateButtons(theme){
@@ -27,6 +33,7 @@
     if(persist){try{localStorage.setItem(STORAGE_KEY,theme)}catch(e){}}
     const meta=document.querySelector('meta[name="theme-color"]');
     if(meta)meta.setAttribute("content",themeColor(theme));
+    setFavicon(theme);
     updateButtons(theme);
     if(theme==="matrix")startRain(); else stopRain();
     setGiscusTheme(theme);
