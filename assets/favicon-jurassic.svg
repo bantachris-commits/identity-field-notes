@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Identity Field Notes fossil park badge">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Identity Field Notes Jurassic fossil badge">
   <circle cx="48" cy="48" r="45" fill="#050505"/>
-  <circle cx="48" cy="48" r="41" fill="#f2c230"/>
-  <circle cx="48" cy="48" r="36.5" fill="#d61f27" stroke="#050505" stroke-width="3"/>
-  <path d="M20 49c5-16 17-26 33-27 10-1 19 2 26 9-8-2-14-1-20 2 8 2 13 6 16 12-8-4-16-4-24-1-4 2-8 5-11 9-5-3-12-5-20-4z" fill="#050505"/>
-  <path d="M31 45c5-8 12-13 21-14 8-1 14 1 19 5-7 0-12 2-16 6 5 0 10 3 13 7-7-2-13-1-18 2-4 2-7 5-9 8-3-5-6-9-10-14z" fill="#f7e8b0"/>
-  <circle cx="57.5" cy="35.5" r="2.8" fill="#050505"/>
-  <path d="M31 44l6 8 5-7 6 8 7-9M38 37l-4-6M47 34l-1-8M55 34l4-7" fill="none" stroke="#050505" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M24 57h48l8 7-8 16H24L16 64z" fill="#050505" stroke="#f2c230" stroke-width="3"/>
-  <text x="48" y="72" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="20" font-weight="900" letter-spacing="2" fill="#fff1bd">IFN</text>
-  <path d="M28 83h40" stroke="#d61f27" stroke-width="3"/>
+  <circle cx="48" cy="48" r="40" fill="#f2c230"/>
+  <circle cx="48" cy="48" r="35" fill="#d61f27" stroke="#050505" stroke-width="3"/>
+  <g fill="none" stroke="#050505" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 54c12-13 24-20 38-21" stroke-width="5.5"/>
+    <path d="M57 32c7-7 17-7 23-1l-7 4 8 5-9 5-10-3-6-7z" stroke-width="4.5" fill="#050505"/>
+    <path d="M64 42l10 8-12 1" stroke-width="4"/>
+    <path d="M55 38c-5 5-9 11-11 18-2 6-2 12-1 18" stroke-width="5"/>
+    <path d="M43 52l-9-7M43 56l-11 1M44 60l-8 8" stroke-width="3"/>
+    <path d="M45 59l10 12-2 10M40 59L31 72l-1 9" stroke-width="5"/>
+    <path d="M50 49l8 4 5-4" stroke-width="3.5"/>
+    <path d="M28 48l-7-5M34 43l-6-7" stroke-width="3"/>
+  </g>
+  <circle cx="71" cy="33" r="2" fill="#d61f27"/>
 </svg>
