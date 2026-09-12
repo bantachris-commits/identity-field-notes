@@ -14,7 +14,7 @@ window.IFN_CONFIG = {
     repoId: "R_kgDOUYDzQw",
     category: "General",
     // Add the General discussion category node ID after the one-time Giscus setup.
-    categoryId: "",
+    categoryId: "DIC_kwDOUYDzQ84DFdEZ",
     mapping: "specific"
   },
   analytics: {
