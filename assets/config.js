@@ -30,7 +30,7 @@ window.IFN_CONFIG = {
 // Theme bootstrap. Apply the saved theme before first paint, then load the
 // shared theme layer used by every page on the site.
 (()=>{
-  const valid=new Set(["field","dark","matrix"]);
+  const valid=new Set(["field","dark","matrix","jurassic"]);
   let saved="field";
   try{saved=localStorage.getItem("ifn-theme")||"field"}catch(e){}
   document.documentElement.dataset.theme=valid.has(saved)?saved:"field";
