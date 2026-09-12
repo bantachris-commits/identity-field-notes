@@ -5,7 +5,7 @@ window.IFN_CONFIG = {
   newsletter: {
     provider: "buttondown",
     // Set this after creating the newsletter. No secret is exposed in the browser.
-    buttondownUsername: "",
+    buttondownUsername: "identityfieldnotes",
     tag: "website"
   },
   comments: {
