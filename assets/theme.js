@@ -5,7 +5,7 @@
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
-  function themeColor(theme){return theme==="matrix"?"#01060b":theme==="dark"?"#11171c":"#102934"}
+  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":"#102934"}
 
   function setGiscusTheme(theme){
     const iframe=document.querySelector("iframe.giscus-frame");
@@ -84,14 +84,14 @@
       rain.raf=raf;
       if(ts-last<65)return;
       last=ts;
-      ctx.fillStyle="rgba(1,6,11,.11)";ctx.fillRect(0,0,width,height);
+      ctx.fillStyle="rgba(0,4,0,.11)";ctx.fillRect(0,0,width,height);
       ctx.font=`${fontSize}px "Cascadia Mono",Consolas,monospace`;
       for(let i=0;i<drops.length;i++){
         if(drops[i]===-999){if(Math.random()<.0018)drops[i]=-Math.floor(Math.random()*25);continue}
         const ch=chars[Math.floor(Math.random()*chars.length)];
         const y=drops[i]*fontSize;
         const bright=Math.random()>.93;
-        ctx.fillStyle=bright?"rgba(163,220,255,.75)":"rgba(40,145,230,.42)";
+        ctx.fillStyle=bright?"rgba(190,255,199,.78)":"rgba(38,255,99,.45)";
         ctx.fillText(ch,i*fontSize,y);
         drops[i]++;
         if(y>height+80&&Math.random()>.965)drops[i]=-999;
