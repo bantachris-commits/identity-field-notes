@@ -4,16 +4,17 @@ window.IFN_CONFIG = {
   tagline: "AI-driven identity news. I burn the tokens so you don't have to.",
   newsletter: {
     provider: "buttondown",
-    // Set this after creating the newsletter. No secret is exposed in the browser.
+    // Public Buttondown username used by the embedded signup form.
     buttondownUsername: "identityfieldnotes",
-    tag: "website"
+    // Leave blank unless the Buttondown plan has Tags enabled.
+    tag: ""
   },
   comments: {
     provider: "giscus",
     repo: "bantachris-commits/identity-field-notes",
     repoId: "R_kgDOUYDzQw",
     category: "General",
-    // Add the General discussion category node ID after the one-time Giscus setup.
+    // General discussion category node ID discovered by the setup workflow.
     categoryId: "DIC_kwDOUYDzQ84DFdEZ",
     mapping: "specific"
   },
