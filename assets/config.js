@@ -28,7 +28,7 @@ window.IFN_CONFIG = {
 };
 
 // Theme bootstrap. Apply the saved theme before first paint, then load the
-// shared theme layer used by every page on the site.
+// shared theme layers used by every page on the site.
 (()=>{
   const valid=new Set(["field","dark","matrix","jurassic"]);
   let saved="field";
@@ -41,6 +41,14 @@ window.IFN_CONFIG = {
     css.href="assets/theme.css";
     css.dataset.ifnTheme="true";
     document.head.appendChild(css);
+  }
+
+  if(!document.querySelector('link[data-ifn-jurassic]')){
+    const park=document.createElement("link");
+    park.rel="stylesheet";
+    park.href="assets/jurassic.css";
+    park.dataset.ifnJurassic="true";
+    document.head.appendChild(park);
   }
 
   if(!document.querySelector('script[data-ifn-theme]')){
