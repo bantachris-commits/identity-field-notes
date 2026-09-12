@@ -1,0 +1,27 @@
+name: Create email digest draft
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    env:
+      BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+      BUTTONDOWN_MODE: draft
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify Buttondown secret
+        run: |
+          if [ -z "$BUTTONDOWN_API_KEY" ]; then
+            echo "BUTTONDOWN_API_KEY is not configured in repository secrets."
+            exit 1
+          fi
+      - run: pip install requests
+      - name: Create draft from latest Field Note
+        run: python scripts/push_buttondown.py
