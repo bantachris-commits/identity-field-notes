@@ -5,7 +5,7 @@
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
-  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#b73527":"#102934"}
+  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#d61f27":"#102934"}
 
   function setFavicon(theme){
     const icon=document.querySelector('link[rel~="icon"]');
