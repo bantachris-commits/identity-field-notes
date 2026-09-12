@@ -10,10 +10,10 @@ window.IFN_CONFIG = {
   },
   comments: {
     provider: "giscus",
-    // Fill these after enabling GitHub Discussions and installing Giscus.
-    repo: "",
-    repoId: "",
-    category: "Field Discussion",
+    repo: "bantachris-commits/identity-field-notes",
+    repoId: "R_kgDOUYDzQw",
+    category: "General",
+    // Add the General discussion category node ID after the one-time Giscus setup.
     categoryId: "",
     mapping: "specific"
   },
@@ -44,11 +44,19 @@ window.IFN_CONFIG = {
   }
 
   if(!document.querySelector('link[data-ifn-jurassic]')){
-    const park=document.createElement("link");
-    park.rel="stylesheet";
-    park.href="assets/jurassic.css";
-    park.dataset.ifnJurassic="true";
-    document.head.appendChild(park);
+    const jurassic=document.createElement("link");
+    jurassic.rel="stylesheet";
+    jurassic.href="assets/jurassic.css";
+    jurassic.dataset.ifnJurassic="true";
+    document.head.appendChild(jurassic);
+  }
+
+  if(!document.querySelector('link[data-ifn-jurassic-brand]')){
+    const brand=document.createElement("link");
+    brand.rel="stylesheet";
+    brand.href="assets/jurassic-brand.css";
+    brand.dataset.ifnJurassicBrand="true";
+    document.head.appendChild(brand);
   }
 
   if(!document.querySelector('script[data-ifn-theme]')){
