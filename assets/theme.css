@@ -12,6 +12,15 @@
 .nav-menu .theme-switcher button{flex:1}
 #matrix-rain{display:none;position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:28;opacity:.23}
 
+/* Clickable topic taxonomy */
+.topline .topic-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.topic-link{color:inherit;text-decoration:none;font-weight:700;padding:2px 4px;border-bottom:1px solid transparent}
+.topic-link:hover,.topic-link[aria-current="page"]{color:#f0c67f;border-bottom-color:currentColor}
+.topic-sep{opacity:.45}
+.topic-tail{margin-left:8px;opacity:.72}
+.tag{text-decoration:none}
+a.tag:hover{border-color:var(--accent);color:var(--accent)}
+
 /* Dark mode */
 html[data-theme="dark"]{
   color-scheme:dark;--ink:#e8edf1;--muted:#9eabb4;--paper:#11171c;--paper2:#182128;--card:#151e24;--line:#34434d;
@@ -50,6 +59,7 @@ html[data-theme="matrix"] #matrix-rain{display:block}
 html[data-theme="matrix"] .ai-strip{background:#000200;color:#a4ffae;border-bottom:1px solid #07521f}
 html[data-theme="matrix"] .ai-strip a{color:#32ff69}
 html[data-theme="matrix"] .topline{background:#000600;color:#38dc63;border-bottom:1px solid #073d18}
+html[data-theme="matrix"] .topic-link:hover,html[data-theme="matrix"] .topic-link[aria-current="page"]{color:#8dffa1}
 html[data-theme="matrix"] header{background:rgba(0,4,0,.95);box-shadow:0 4px 25px rgba(0,255,70,.07)}
 html[data-theme="matrix"] .brand strong,html[data-theme="matrix"] h1,html[data-theme="matrix"] h2,html[data-theme="matrix"] h3,
 html[data-theme="matrix"] .lede,html[data-theme="matrix"] .story h2,html[data-theme="matrix"] .card h3,html[data-theme="matrix"] .sidecard h3,
@@ -93,5 +103,5 @@ html[data-theme="matrix"] ::selection{background:#0b7b31;color:#fff}
 .guest-card{border-top:4px solid var(--green)}
 .guest-card .eyebrow{color:var(--green)}
 
-@media(max-width:900px){header .theme-switcher{display:none}.nav-menu .theme-switcher{display:flex}}
+@media(max-width:900px){header .theme-switcher{display:none}.nav-menu .theme-switcher{display:flex}.topic-tail{width:100%;margin-left:0;margin-top:2px}.topline .topic-links{gap:6px}}
 @media(prefers-reduced-motion:reduce){#matrix-rain{display:none!important}html[data-theme="matrix"] body:before{display:none}}
