@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Identity Field Notes park badge"><circle cx="32" cy="32" r="29" fill="#b73527" stroke="#17120f" stroke-width="4"/><circle cx="32" cy="32" r="22" fill="#f1e1b6" stroke="#17120f" stroke-width="3"/><path d="M14 35c4-9 10-15 20-16 8-1 14 2 18 7-5 0-10 2-13 5 5 1 9 4 10 9-7-3-14-2-19 2-4-3-10-5-16-7z" fill="#17120f"/><circle cx="38" cy="25" r="2.2" fill="#f1e1b6"/><path d="M19 34l4 8 4-6 4 7 5-8" fill="none" stroke="#f1e1b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 46h28" stroke="#17120f" stroke-width="2"/><text x="32" y="53" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="900" letter-spacing="1" fill="#17120f">IFN</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Identity Field Notes fossil park badge">
+  <circle cx="48" cy="48" r="45" fill="#050505"/>
+  <circle cx="48" cy="48" r="41" fill="#f2c230"/>
+  <circle cx="48" cy="48" r="36.5" fill="#d61f27" stroke="#050505" stroke-width="3"/>
+  <path d="M20 49c5-16 17-26 33-27 10-1 19 2 26 9-8-2-14-1-20 2 8 2 13 6 16 12-8-4-16-4-24-1-4 2-8 5-11 9-5-3-12-5-20-4z" fill="#050505"/>
+  <path d="M31 45c5-8 12-13 21-14 8-1 14 1 19 5-7 0-12 2-16 6 5 0 10 3 13 7-7-2-13-1-18 2-4 2-7 5-9 8-3-5-6-9-10-14z" fill="#f7e8b0"/>
+  <circle cx="57.5" cy="35.5" r="2.8" fill="#050505"/>
+  <path d="M31 44l6 8 5-7 6 8 7-9M38 37l-4-6M47 34l-1-8M55 34l4-7" fill="none" stroke="#050505" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 57h48l8 7-8 16H24L16 64z" fill="#050505" stroke="#f2c230" stroke-width="3"/>
+  <text x="48" y="72" text-anchor="middle" font-family="Impact, Arial Black, sans-serif" font-size="20" font-weight="900" letter-spacing="2" fill="#fff1bd">IFN</text>
+  <path d="M28 83h40" stroke="#d61f27" stroke-width="3"/>
+</svg>
