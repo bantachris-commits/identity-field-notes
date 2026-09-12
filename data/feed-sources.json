@@ -1,0 +1,24 @@
+{
+  "feeds": [
+    {
+      "name": "Okta Threat Intelligence",
+      "url": "https://www.okta.com/blog/threat-intelligence.rss",
+      "enabled": true,
+      "tags": [
+        "Okta",
+        "Threat"
+      ]
+    },
+    {
+      "name": "Delinea Platform Changelog",
+      "url": "https://setup.delinea.app/network-requirements/feed",
+      "enabled": false,
+      "tags": [
+        "Delinea",
+        "Operations"
+      ],
+      "note": "Useful operational feed, disabled by default because it is not general editorial news."
+    }
+  ],
+  "note": "Daily edition generation can use OpenAI web search, so RSS is an optional low-cost supplement rather than the only collection method."
+}

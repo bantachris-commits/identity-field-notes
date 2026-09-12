@@ -1,0 +1,34 @@
+[
+  {
+    "provider": "Microsoft Learn",
+    "title": "Microsoft Entra training",
+    "level": "Free / self-paced",
+    "focus": "Identity, access, governance and Entra administration",
+    "url": "https://learn.microsoft.com/training/browse/?terms=Microsoft%20Entra",
+    "sponsored": false
+  },
+  {
+    "provider": "CyberArk",
+    "title": "CyberArk University",
+    "level": "Vendor training",
+    "focus": "Privileged access and identity security",
+    "url": "https://www.cyberark.com/services-support/training/",
+    "sponsored": false
+  },
+  {
+    "provider": "SailPoint",
+    "title": "SailPoint University",
+    "level": "Vendor training",
+    "focus": "Identity governance and administration",
+    "url": "https://www.sailpoint.com/university",
+    "sponsored": false
+  },
+  {
+    "provider": "FIDO Alliance",
+    "title": "Passkey & authentication resources",
+    "level": "Standards / practitioner",
+    "focus": "FIDO, passkeys and phishing-resistant authentication",
+    "url": "https://fidoalliance.org/passkeys/",
+    "sponsored": false
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "2026-09-12-morning-brief",
+    "date": "2026-09-12",
+    "edition": "FIELD NOTES // 2026.09.12",
+    "title": "The identity control plane is getting crowded",
+    "dek": "Okta pushes deeper into PAM and IGA, agent identity keeps moving into the IAM center, and session theft raises the bar for privileged authentication.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "IGA",
+      "NHI",
+      "ITDR"
+    ],
+    "readTime": "7 min",
+    "featured": true,
+    "generatedBy": "AI + practitioner prompt",
+    "disclosure": "AI-generated summary from linked sources. Verify important details at the source.",
+    "stories": [
+      {
+        "kicker": "Vendor Watch",
+        "title": "Okta pushes deeper into PAM, IGA and ITDR",
+        "summary": "The strategic signal is bigger than any single feature: access governance, privileged access and threat response are converging into a common identity-security operating model.",
+        "why": "Teams that historically stitched together SSO, IGA and PAM should expect more overlap among vendors and more pressure to justify where each control should live.",
+        "source": "Okta",
+        "url": "https://www.okta.com/newsroom/press-releases/",
+        "aiGenerated": true,
+        "confidence": "Source-linked"
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Agent governance and machine identity keep moving toward the IAM center",
+        "summary": "Identity platforms increasingly treat AI agents, workloads and machine identities as first-class IAM subjects rather than implementation edge cases.",
+        "why": "PAM programs should start defining ownership, credential lifecycle, authorization boundaries and kill-switch behavior for agent identities now.",
+        "source": "Microsoft Entra / industry sources",
+        "url": "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
+        "aiGenerated": true,
+        "confidence": "Source-linked"
+      },
+      {
+        "kicker": "Threat",
+        "title": "Session theft makes \u2018MFA enabled\u2019 an incomplete control statement",
+        "summary": "Adversary-in-the-middle phishing and token replay continue to demonstrate that a completed MFA challenge does not guarantee a safe privileged session.",
+        "why": "Measure privileged authentication quality: phishing resistance, device trust, token protection, session risk and revocation capability, not merely MFA enrollment.",
+        "source": "Microsoft Security",
+        "url": "https://www.microsoft.com/security/blog/",
+        "aiGenerated": true,
+        "confidence": "Source-linked"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-11-machine-identities",
+    "date": "2026-09-11",
+    "edition": "FIELD NOTE // MACHINE IAM",
+    "title": "The service account problem is becoming the agent identity problem",
+    "dek": "AI agents are adding speed and autonomy to an identity class most organizations already struggle to inventory and govern.",
+    "tags": [
+      "NHI",
+      "Agentic AI",
+      "PAM"
+    ],
+    "readTime": "5 min",
+    "featured": false,
+    "generatedBy": "AI + practitioner prompt",
+    "disclosure": "AI-assisted practitioner commentary.",
+    "stories": [
+      {
+        "kicker": "From the Field",
+        "title": "The old controls still matter, but the execution window is shrinking",
+        "summary": "Ownership, purpose, least privilege, credential rotation and recertification remain foundational. Autonomous agents make weak lifecycle controls fail faster.",
+        "why": "Treat agent identities as governed identities with explicit owners, scoped authority, short-lived credentials and observable action boundaries.",
+        "source": "Identity Field Notes",
+        "url": "about.html",
+        "aiGenerated": true,
+        "confidence": "Commentary"
+      }
+    ]
+  }
+]

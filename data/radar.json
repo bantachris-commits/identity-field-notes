@@ -1,0 +1,58 @@
+[
+  {
+    "id": "okta-token-theft-2026-09-09",
+    "date": "2026-09-09",
+    "source": "Okta Threat Intelligence",
+    "title": "Session token theft drives AI account hijacking",
+    "url": "https://www.okta.com/blog/threat-intelligence/",
+    "tags": [
+      "Threat",
+      "Tokens",
+      "AI"
+    ],
+    "note": "Worth reading for the identity/session angle. Original source linked; this card is an AI-generated pointer, not a substitute for the article.",
+    "score": 94
+  },
+  {
+    "id": "delinea-runtime-authz-2026",
+    "date": "2026-09-10",
+    "source": "Delinea",
+    "title": "Credential brokering vs. runtime authorization",
+    "url": "https://delinea.com/blog",
+    "tags": [
+      "PAM",
+      "AUTHZ",
+      "Agents"
+    ],
+    "note": "Interesting framing around controlling the action inside a privileged session, not only the connection into it.",
+    "score": 90
+  },
+  {
+    "id": "ms-entra-current",
+    "date": "2026-09-09",
+    "source": "Microsoft Entra",
+    "title": "Recent Microsoft Entra identity updates",
+    "url": "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
+    "tags": [
+      "Entra",
+      "IAM",
+      "Governance"
+    ],
+    "note": "Vendor release stream to watch for governance, authentication and machine/agent identity changes.",
+    "score": 84
+  },
+  {
+    "id": "beyondtrust-research",
+    "date": "2026-09-08",
+    "source": "BeyondTrust",
+    "title": "Identity and privilege research worth scanning",
+    "url": "https://www.beyondtrust.com/blog",
+    "tags": [
+      "PAM",
+      "Research",
+      "Threat"
+    ],
+    "note": "Research feed with a useful mix of privilege, cloud and agentic security work.",
+    "score": 78
+  }
+]

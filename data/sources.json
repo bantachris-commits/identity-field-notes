@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "name": "Microsoft Entra Blog",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
+      "category": "Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "Microsoft Security Blog",
+      "url": "https://www.microsoft.com/security/blog/",
+      "category": "Research / Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "Okta Threat Intelligence",
+      "url": "https://www.okta.com/blog/threat-intelligence/",
+      "category": "Threat Intelligence",
+      "priority": "Primary",
+      "rss": "https://www.okta.com/blog/threat-intelligence.rss"
+    },
+    {
+      "name": "CyberArk Resources",
+      "url": "https://www.cyberark.com/resources/all-blog-posts",
+      "category": "Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "Delinea Blog",
+      "url": "https://delinea.com/blog",
+      "category": "Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "SailPoint Identity Library",
+      "url": "https://www.sailpoint.com/identity-library",
+      "category": "Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "BeyondTrust Blog",
+      "url": "https://www.beyondtrust.com/blog",
+      "category": "Research / Vendor",
+      "priority": "Primary"
+    },
+    {
+      "name": "FIDO Alliance News",
+      "url": "https://fidoalliance.org/news-center/",
+      "category": "Standards",
+      "priority": "Primary"
+    },
+    {
+      "name": "CISA",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "category": "Government / Advisories",
+      "priority": "Primary"
+    }
+  ]
+}

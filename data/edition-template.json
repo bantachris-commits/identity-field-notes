@@ -1,0 +1,27 @@
+{
+  "id": "YYYY-MM-DD-morning-brief",
+  "date": "YYYY-MM-DD",
+  "edition": "FIELD NOTES // YYYY.MM.DD",
+  "title": "Morning headline",
+  "dek": "One-sentence edition deck.",
+  "tags": [
+    "PAM",
+    "IAM"
+  ],
+  "readTime": "6 min",
+  "featured": true,
+  "generatedBy": "AI + web search",
+  "disclosure": "AI-generated and source-linked.",
+  "stories": [
+    {
+      "kicker": "Vendor Watch",
+      "title": "Story title",
+      "summary": "What changed.",
+      "why": "Why practitioners should care.",
+      "source": "Original source",
+      "url": "https://example.com",
+      "confidence": "Primary source",
+      "aiGenerated": true
+    }
+  ]
+}

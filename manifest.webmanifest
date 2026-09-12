@@ -1,0 +1,9 @@
+{
+  "name": "Identity Field Notes",
+  "short_name": "IFN",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#102934",
+  "icons": []
+}

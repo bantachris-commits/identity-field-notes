@@ -1,73 +1,59 @@
 # Identity Field Notes
 
-A transparent, AI-driven identity security publication for PAM, IAM, IGA, NHI, ITDR, authentication, authorization and agentic identity.
+**AI-driven identity news. I burn the tokens so you don't have to.**
 
-> **AI-driven identity news. I burn the tokens so you don't have to.**
->
-> **AI slop, with receipts.** Source-linked. Community-corrected.
+A static, data-driven publication for PAM, IAM, IGA, NHI, ITDR, authentication and authorization. The brand is intentionally explicit about AI: **AI slop, with receipts.**
 
-## What is included
+## What is built
+- Daily Field Note homepage and archive
+- Automated Identity Radar
+- Source / methodology page
+- AI disclosure and correction policy
+- Event and training directories
+- Community discussion via Giscus
+- Optional identity jobs board
+- Quiet, clearly labeled sponsor inventory
+- Buttondown newsletter form integration
+- Automated Buttondown draft/send script
+- OpenAI + web-search weekday research/generation
+- AI Radar refresh several times per day
+- Weekly AI refresh of conferences and training
+- Privacy page and sponsor policy
+- RSS feed and sitemap generation
+- GitHub Pages deployment workflow
+- Mobile layout, social card, favicon and 404 page
 
-- Daily AI-researched Field Note
-- Identity Radar for higher-volume automated signal
-- Searchable article archive
-- Upcoming conferences/events directory
-- Training directory
-- Community/discussion page
-- Identity jobs page
-- Source/methodology page
-- Sponsorship and editorial policies
-- RSS and sitemap generation
-- Buttondown newsletter integration hooks
-- GitHub Actions automation for publishing, Radar, directories and deployment
-
-## Run locally
-
-Because the site fetches JSON, serve it over HTTP:
-
+## Local preview
 ```bash
 python -m http.server 8000
 ```
+Open http://localhost:8000.
 
-Then visit `http://localhost:8000`.
+## Launch checklist
+1. Register / point `IdentityFieldNotes.com` to your host.
+2. Create a GitHub repo and push these files.
+3. Enable GitHub Pages with **GitHub Actions** as the source.
+4. Add repository secret `OPENAI_API_KEY`.
+5. Optional: set repo variable `OPENAI_MODEL` (defaults to `gpt-5.6-luna`).
+6. Create a Buttondown newsletter; set its username in `assets/config.js`.
+7. Optional: add `BUTTONDOWN_API_KEY` secret. Keep `BUTTONDOWN_MODE=draft` until you trust the pipeline; set to `send` for fully automatic weekday delivery.
+8. Enable GitHub Discussions, install Giscus, and fill the comment IDs in `assets/config.js`.
+9. Change `siteUrl` if you use another domain.
+10. Review the first several generated editions before enabling automatic email sending.
 
-## Automation model
+## Automation design
+At 6:15 AM Mountain on weekdays, GitHub Actions:
+1. Runs an inexpensive RSS supplement into `data/radar.json`.
+2. Calls OpenAI with the web-search tool for current identity news.
+3. Requires real source URLs in the generated JSON.
+4. Publishes the new edition into `data/articles.json`.
+5. Rebuilds `feed.xml` and `sitemap.xml`.
+6. Optionally creates or sends a Buttondown digest.
+7. Commits the content update; the Pages workflow deploys it.
 
-The website and the AI research pipeline are deliberately decoupled. The frontend reads structured JSON from `data/`, so the model/provider can change later without rebuilding the site.
+Separate scheduled workflows also refresh the Identity Radar several times per day and the events/training directories weekly.
 
-The morning edition pipeline is intended to:
+The generation layer and UI are intentionally separate. You can replace the model, prompt, email provider or hosting later without changing the publication data contract.
 
-1. Search recent identity-security news and primary sources.
-2. Generate a structured edition JSON with source links.
-3. Publish the edition into `data/articles.json`.
-4. Rebuild RSS and sitemap outputs.
-5. Optionally create/send a Buttondown email digest.
-6. Commit the generated content so the site redeploys.
-
-Identity Radar runs separately and is intentionally noisier than the curated Field Note.
-
-## Transparency
-
-AI involvement is a feature, not fine print. The site labels AI summaries, links to original sources, and invites corrections and practitioner context. See `EDITORIAL_POLICY.md`.
-
-## Newsletter
-
-See `INTEGRATIONS.md` for Buttondown setup. Keep provider secrets in GitHub Actions secrets, never in browser JavaScript.
-
-## Comments
-
-Launch recommendation: Giscus + GitHub Discussions for low-overhead authentication and moderation. If the readership outgrows GitHub identity, migrate to a native Supabase-backed discussion layer.
-
-## Monetization philosophy
-
-Keep revenue intentionally subordinate to content:
-
-1. One clearly labeled Morning Digest sponsor.
-2. One quiet site/article sponsor slot.
-3. Clearly labeled sponsored/affiliate training and events.
-4. Optional identity-security job listings.
-5. Never pay-to-rank editorial coverage.
-
-## Deployment
-
-The repository includes GitHub Pages deployment automation and a `CNAME` for `IdentityFieldNotes.com`. See `DEPLOYMENT.md` for configuration steps.
+## Editorial principle
+The site is a **reading accelerator**, not a primary source. AI summaries are labeled, sources are prominent, vendor claims should remain attributed, and meaningful corrections should be preserved.
