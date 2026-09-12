@@ -24,7 +24,7 @@
   function applyTheme(theme,{persist=true}={}){
     if(!THEMES.includes(theme))theme="field";
     document.documentElement.dataset.theme=theme;
-    if(persist)localStorage.setItem(STORAGE_KEY,theme);
+    if(persist){try{localStorage.setItem(STORAGE_KEY,theme)}catch(e){}}
     const meta=document.querySelector('meta[name="theme-color"]');
     if(meta)meta.setAttribute("content",themeColor(theme));
     updateButtons(theme);
@@ -62,7 +62,7 @@
   }
 
   function startRain(){
-    if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+    if(rain||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
     let canvas=document.getElementById("matrix-rain");
     if(!canvas){canvas=document.createElement("canvas");canvas.id="matrix-rain";canvas.setAttribute("aria-hidden","true");document.body.appendChild(canvas)}
     const ctx=canvas.getContext("2d");
@@ -79,8 +79,9 @@
       drops=Array.from({length:cols},()=>Math.random()<.22?-Math.floor(Math.random()*60):-999);
     }
     function draw(ts){
-      if(currentTheme()!=="matrix"){cancelAnimationFrame(raf);return}
+      if(currentTheme()!=="matrix")return;
       raf=requestAnimationFrame(draw);
+      rain.raf=raf;
       if(ts-last<65)return;
       last=ts;
       ctx.fillStyle="rgba(1,6,11,.11)";ctx.fillRect(0,0,width,height);
@@ -97,20 +98,23 @@
       }
     }
     resize();window.addEventListener("resize",resize,{passive:true});
-    rain={canvas,raf,resize};raf=requestAnimationFrame(draw);rain.raf=raf;
+    rain={canvas,raf:null,resize};
+    raf=requestAnimationFrame(draw);rain.raf=raf;
   }
 
   function stopRain(){
     if(rain?.raf)cancelAnimationFrame(rain.raf);
+    if(rain?.resize)window.removeEventListener("resize",rain.resize);
     const canvas=document.getElementById("matrix-rain");
     if(canvas){const ctx=canvas.getContext("2d");ctx?.clearRect(0,0,canvas.width,canvas.height)}
     rain=null;
   }
 
   const observer=new MutationObserver(()=>setGiscusTheme(currentTheme()));
-  document.addEventListener("DOMContentLoaded",()=>{
+  function boot(){
     installControls();
     applyTheme(currentTheme(),{persist:false});
-    observer.observe(document.body,{childList:true,subtree:true});
-  });
+    if(document.body)observer.observe(document.body,{childList:true,subtree:true});
+  }
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true}); else boot();
 })();
