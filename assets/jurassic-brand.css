@@ -1,0 +1,42 @@
+/* Cleaner Jurassic-specific brand lockup. Loaded after jurassic.css. */
+html[data-theme="jurassic"] .brand{align-items:center;gap:14px}
+html[data-theme="jurassic"] .mark{
+  width:58px;
+  height:58px;
+  background:#d61f27 url("favicon-jurassic.svg") center/cover no-repeat;
+  border-radius:50%;
+  box-shadow:0 0 0 2px #050505,0 0 0 5px #f2c230;
+  transform:none;
+}
+html[data-theme="jurassic"] .brand>span:last-child{display:grid;gap:5px;align-items:start}
+html[data-theme="jurassic"] .brand strong{
+  display:inline-block;
+  width:max-content;
+  max-width:100%;
+  margin:0;
+  padding:4px 9px 3px;
+  color:#fff3c4;
+  background:#d61f27;
+  border:2px solid #f2c230;
+  outline:2px solid #050505;
+  box-shadow:3px 3px 0 #050505;
+  font-family:Impact,"Arial Black",sans-serif;
+  font-size:20px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:.025em;
+  text-transform:uppercase;
+  text-shadow:2px 2px 0 #050505;
+}
+html[data-theme="jurassic"] .brand small{
+  padding-left:4px;
+  color:#f2c230;
+  font-weight:900;
+  letter-spacing:.13em;
+}
+html[data-theme="jurassic"] .hero:after{content:"IFN // IDENTITY FIELD RESEARCH DIVISION"}
+html[data-theme="jurassic"] footer .brand strong{color:#fff3c4;background:#d61f27}
+@media(max-width:900px){
+  html[data-theme="jurassic"] .mark{width:50px;height:50px}
+  html[data-theme="jurassic"] .brand strong{font-size:17px;padding:3px 7px 2px}
+}
