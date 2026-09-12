@@ -1,0 +1,247 @@
+/* Identity Field Notes: Park / dinosaur field-expedition theme.
+   An original homage built from expedition signage, amber, fossil badges and danger-striping.
+   It intentionally does not reproduce the Jurassic Park trademark or logo. */
+
+html[data-theme="jurassic"]{
+  color-scheme:light;
+  --ink:#19140f;
+  --muted:#6b604d;
+  --paper:#efe2bd;
+  --paper2:#ddcb98;
+  --card:#faf0d6;
+  --line:#8f7a57;
+  --accent:#d79a26;
+  --deep:#15110d;
+  --green:#34503a;
+  --red:#b73527;
+  --blue:#374b45;
+  --shadow:0 8px 24px rgba(53,37,13,.13);
+}
+
+html[data-theme="jurassic"] body{
+  background:
+    radial-gradient(circle at 14% 5%,rgba(215,154,38,.14),transparent 24rem),
+    repeating-linear-gradient(135deg,rgba(25,20,15,.018) 0,rgba(25,20,15,.018) 1px,transparent 1px,transparent 24px),
+    var(--paper);
+  color:var(--ink);
+}
+
+html[data-theme="jurassic"] .ai-strip{
+  background:#12100d;
+  color:#f5e7c2;
+  border-bottom:4px solid var(--red);
+}
+html[data-theme="jurassic"] .ai-strip a{color:#f0b83d;font-weight:800}
+html[data-theme="jurassic"] .topline{
+  background:var(--red);
+  color:#fff0cf;
+  border-bottom:2px solid var(--ink);
+  text-shadow:1px 1px 0 rgba(0,0,0,.2);
+}
+html[data-theme="jurassic"] .topic-link:hover,
+html[data-theme="jurassic"] .topic-link[aria-current="page"]{color:#fff3cf;border-bottom-color:#f7c54e}
+
+html[data-theme="jurassic"] header{
+  background:rgba(239,226,189,.96);
+  border-bottom:4px solid var(--ink);
+  box-shadow:0 3px 0 var(--red),0 8px 22px rgba(39,27,11,.1);
+}
+html[data-theme="jurassic"] .brand{gap:14px}
+html[data-theme="jurassic"] .mark{
+  width:52px;
+  height:52px;
+  border:0;
+  border-radius:50%;
+  background:#b73527 url("favicon-jurassic.svg") center/cover no-repeat;
+  color:transparent;
+  box-shadow:3px 3px 0 var(--accent);
+  transform:rotate(-2deg);
+  overflow:hidden;
+}
+html[data-theme="jurassic"] .brand strong{
+  font-family:Rockwell,"Roboto Slab",Georgia,serif;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.025em;
+  font-size:20px;
+}
+html[data-theme="jurassic"] .brand small{
+  color:#8f281f;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+html[data-theme="jurassic"] nav>a,
+html[data-theme="jurassic"] .nav-more summary{
+  font-family:var(--mono);
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+html[data-theme="jurassic"] nav>a:hover,
+html[data-theme="jurassic"] .nav-more summary:hover{color:var(--red)}
+html[data-theme="jurassic"] .nav-menu{
+  background:#f7eac9;
+  border:2px solid var(--ink);
+  box-shadow:4px 4px 0 var(--accent);
+}
+html[data-theme="jurassic"] .nav-menu a:hover{background:#e8d5a6;color:#8f281f}
+
+html[data-theme="jurassic"] .theme-switcher{
+  background:#e7d4a6;
+  border:2px solid var(--ink);
+  box-shadow:2px 2px 0 var(--accent);
+}
+html[data-theme="jurassic"] .theme-switcher button{color:#625640}
+html[data-theme="jurassic"] .theme-switcher button:hover{background:#f3e5c1;color:var(--ink)}
+html[data-theme="jurassic"] .theme-switcher button[aria-pressed="true"]{background:var(--red);color:#fff0cf}
+
+html[data-theme="jurassic"] .btn{
+  background:var(--red);
+  color:#fff0cf;
+  border:2px solid var(--ink);
+  box-shadow:3px 3px 0 var(--ink);
+  text-transform:uppercase;
+  letter-spacing:.035em;
+}
+html[data-theme="jurassic"] .btn.alt{background:#f4e5bf;color:var(--ink)}
+html[data-theme="jurassic"] .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+
+html[data-theme="jurassic"] .hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 86% 15%,rgba(215,154,38,.28),transparent 25rem),
+    linear-gradient(110deg,rgba(250,240,214,.88),rgba(226,206,155,.8)),
+    var(--paper);
+  border-bottom:4px solid var(--ink);
+}
+html[data-theme="jurassic"] .hero:after{
+  content:"";
+  position:absolute;
+  right:-90px;
+  bottom:-115px;
+  width:310px;
+  height:310px;
+  border:3px solid rgba(183,53,39,.12);
+  border-radius:50%;
+  box-shadow:0 0 0 18px rgba(25,20,15,.025),0 0 0 42px rgba(183,53,39,.035);
+  pointer-events:none;
+}
+html[data-theme="jurassic"] h1,
+html[data-theme="jurassic"] h2,
+html[data-theme="jurassic"] h3,
+html[data-theme="jurassic"] .story h2,
+html[data-theme="jurassic"] .card h3,
+html[data-theme="jurassic"] .sidecard h3,
+html[data-theme="jurassic"] .archive-item h3,
+html[data-theme="jurassic"] .radar-item h3,
+html[data-theme="jurassic"] .discussion h3,
+html[data-theme="jurassic"] .disclosure-step h3{
+  font-family:Rockwell,"Roboto Slab",Georgia,serif;
+}
+html[data-theme="jurassic"] h1{
+  font-weight:900;
+  letter-spacing:-.035em;
+  text-shadow:2px 2px 0 rgba(215,154,38,.2);
+}
+html[data-theme="jurassic"] .lede,
+html[data-theme="jurassic"] .story p{color:#4f4739}
+html[data-theme="jurassic"] .eyebrow{color:var(--red);font-weight:900}
+
+html[data-theme="jurassic"] .transparency-box{
+  background:#e9cf8e;
+  border:2px solid var(--ink);
+  border-left:8px solid var(--red);
+  box-shadow:4px 4px 0 rgba(25,20,15,.9);
+}
+html[data-theme="jurassic"] .transparency-box .stamp{
+  background:#17120f;
+  color:#f7dfa4;
+  border:2px solid #17120f;
+  box-shadow:2px 2px 0 var(--red);
+}
+
+html[data-theme="jurassic"] .story{border-bottom:2px solid #9a8965}
+html[data-theme="jurassic"] .why{
+  background:#eadbb5;
+  border-left:6px solid var(--red);
+  box-shadow:inset 0 0 0 1px rgba(25,20,15,.12);
+}
+html[data-theme="jurassic"] .readmore{color:#7f261e;font-weight:900}
+html[data-theme="jurassic"] .pill,
+html[data-theme="jurassic"] .tag{border:1px solid #6f6046;font-weight:800}
+html[data-theme="jurassic"] .pill.ai{background:#efd494;border-color:#9b6c16;color:#4a3515}
+html[data-theme="jurassic"] .pill.source{background:#dce4cf;border-color:#617452;color:#273526}
+html[data-theme="jurassic"] .pill.human{background:#d5e4d4;border-color:#4a704e;color:#244027}
+html[data-theme="jurassic"] .tag{background:#f8ebca}
+html[data-theme="jurassic"] a.tag:hover{background:var(--red);border-color:var(--ink);color:#fff1d1}
+
+html[data-theme="jurassic"] .sidecard,
+html[data-theme="jurassic"] .card,
+html[data-theme="jurassic"] .radar-item,
+html[data-theme="jurassic"] .discussion,
+html[data-theme="jurassic"] .disclosure-step,
+html[data-theme="jurassic"] .plain-table{
+  background:var(--card);
+  border:2px solid var(--ink);
+  box-shadow:4px 4px 0 rgba(143,122,87,.55);
+}
+html[data-theme="jurassic"] .card{min-height:180px}
+html[data-theme="jurassic"] .guest-card{border-top:6px solid var(--green)}
+html[data-theme="jurassic"] .section-head{
+  border-bottom:4px solid var(--ink);
+  box-shadow:0 4px 0 var(--red);
+  padding-bottom:12px;
+}
+html[data-theme="jurassic"] .section-head h2{text-transform:uppercase;letter-spacing:.015em}
+
+html[data-theme="jurassic"] .newsletter input,
+html[data-theme="jurassic"] .newsletter select,
+html[data-theme="jurassic"] .search{
+  background:#fff8e6;
+  color:var(--ink);
+  border:2px solid #766548;
+}
+html[data-theme="jurassic"] .score{
+  border:3px solid var(--ink);
+  border-radius:50%;
+  background:var(--red);
+  color:#fff0cf;
+  box-shadow:2px 2px 0 var(--accent);
+}
+html[data-theme="jurassic"] .sponsor-card{
+  background:
+    repeating-linear-gradient(135deg,rgba(215,154,38,.12) 0,rgba(215,154,38,.12) 10px,rgba(250,240,214,.55) 10px,rgba(250,240,214,.55) 20px),
+    #efdfb6;
+  border-color:var(--ink);
+}
+html[data-theme="jurassic"] .sponsor-card:before{color:#8d281f;font-weight:900}
+html[data-theme="jurassic"] .notice{background:#eadbb6;border:2px solid #7c6a4e}
+html[data-theme="jurassic"] .notice.dark{background:#17120f;color:#f6e8c7;border-color:#17120f}
+html[data-theme="jurassic"] .notice.dark a{color:#f3bd49}
+html[data-theme="jurassic"] .ad-slot{
+  border:2px dashed #7a6545;
+  background:rgba(247,234,201,.55);
+  color:#66583f;
+}
+html[data-theme="jurassic"] .plain-table th{background:#ddc78e;color:#251c13;border-bottom:2px solid var(--ink)}
+html[data-theme="jurassic"] .plain-table td{border-bottom:1px solid #b39d72}
+html[data-theme="jurassic"] .giscus-placeholder{background:#eadcb8;border:2px dashed #8a7757}
+
+html[data-theme="jurassic"] footer{
+  background:#15110d;
+  color:#f4e6c6;
+  border-top:7px solid var(--red);
+  box-shadow:inset 0 4px 0 var(--accent);
+}
+html[data-theme="jurassic"] footer a{color:#f4e6c6}
+html[data-theme="jurassic"] footer p{color:#cabd9e}
+html[data-theme="jurassic"] footer .mark{box-shadow:3px 3px 0 #d79a26}
+html[data-theme="jurassic"] .footer-bottom{color:#a99b7f;border-top-color:#5e5039}
+html[data-theme="jurassic"] ::selection{background:#d79a26;color:#17120f}
+
+@media(max-width:900px){
+  html[data-theme="jurassic"] .mark{width:46px;height:46px}
+  html[data-theme="jurassic"] .brand strong{font-size:18px}
+}
