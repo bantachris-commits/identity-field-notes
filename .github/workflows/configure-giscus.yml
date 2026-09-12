@@ -1,0 +1,44 @@
+name: Configure Giscus comments
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  discussions: read
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Discover General discussion category
+        id: category
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CATEGORY_ID=$(gh api graphql -f query='query { repository(owner: "bantachris-commits", name: "identity-field-notes") { discussionCategories(first: 20) { nodes { id name } } } }' --jq '.data.repository.discussionCategories.nodes[] | select(.name == "General") | .id')
+          if [ -z "$CATEGORY_ID" ]; then
+            echo "Could not find the General discussion category."
+            exit 1
+          fi
+          echo "category_id=$CATEGORY_ID" >> "$GITHUB_OUTPUT"
+      - name: Write Giscus configuration
+        env:
+          CATEGORY_ID: ${{ steps.category.outputs.category_id }}
+        run: |
+          python - <<'PY'
+          import os, re
+          from pathlib import Path
+          p=Path('assets/config.js')
+          s=p.read_text(encoding='utf-8')
+          cid=os.environ['CATEGORY_ID']
+          s=re.sub(r'(categoryId:\s*)"[^"]*"', lambda m: m.group(1)+f'"{cid}"', s, count=1)
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Commit Giscus configuration
+        run: |
+          git config user.name "identity-field-notes-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/config.js
+          git diff --cached --quiet || git commit -m "config: enable Giscus comments"
+          git push
