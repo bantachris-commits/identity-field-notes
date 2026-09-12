@@ -1,6 +1,6 @@
 (()=>{
   const THEMES=["field","dark","matrix","jurassic"];
-  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Park"};
+  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic"};
   const STORAGE_KEY="ifn-theme";
   let rain=null;
 
