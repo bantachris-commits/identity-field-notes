@@ -49,4 +49,11 @@ window.IFN_CONFIG = {
     js.dataset.ifnTheme="true";
     document.head.appendChild(js);
   }
+
+  if(!document.querySelector('script[data-ifn-guests]')){
+    const guests=document.createElement("script");
+    guests.src="assets/guest.js";
+    guests.dataset.ifnGuests="true";
+    document.head.appendChild(guests);
+  }
 })();
