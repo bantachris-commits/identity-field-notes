@@ -1,132 +1,162 @@
-/* Identity Field Notes: Park / dinosaur field-expedition theme.
-   An original homage built from expedition signage, amber, fossil badges and danger-striping.
-   It intentionally does not reproduce the Jurassic Park trademark or logo. */
+/* Identity Field Notes: Park / dinosaur attraction theme.
+   Original homage using a black, red, golden-yellow and bone palette.
+   The badge and typography are original IFN artwork, not a reproduction of a film trademark. */
 
 html[data-theme="jurassic"]{
   color-scheme:light;
-  --ink:#19140f;
-  --muted:#6b604d;
-  --paper:#efe2bd;
-  --paper2:#ddcb98;
-  --card:#faf0d6;
-  --line:#8f7a57;
-  --accent:#d79a26;
-  --deep:#15110d;
-  --green:#34503a;
-  --red:#b73527;
-  --blue:#374b45;
-  --shadow:0 8px 24px rgba(53,37,13,.13);
+  --ink:#090909;
+  --muted:#5d5242;
+  --paper:#ead99f;
+  --paper2:#d7bd62;
+  --card:#fff4cf;
+  --line:#17120d;
+  --accent:#f2c230;
+  --deep:#050505;
+  --green:#274a37;
+  --red:#d61f27;
+  --blue:#343f3b;
+  --shadow:0 8px 24px rgba(0,0,0,.22);
 }
 
 html[data-theme="jurassic"] body{
   background:
-    radial-gradient(circle at 14% 5%,rgba(215,154,38,.14),transparent 24rem),
-    repeating-linear-gradient(135deg,rgba(25,20,15,.018) 0,rgba(25,20,15,.018) 1px,transparent 1px,transparent 24px),
-    var(--paper);
+    linear-gradient(rgba(242,194,48,.045) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(242,194,48,.045) 1px,transparent 1px),
+    radial-gradient(circle at 50% -10%,rgba(214,31,39,.18),transparent 32rem),
+    #0b0b0a;
+  background-size:34px 34px,34px 34px,auto,auto;
   color:var(--ink);
 }
 
 html[data-theme="jurassic"] .ai-strip{
-  background:#12100d;
-  color:#f5e7c2;
-  border-bottom:4px solid var(--red);
+  background:#050505;
+  color:#fff2c2;
+  border-bottom:5px solid var(--accent);
 }
-html[data-theme="jurassic"] .ai-strip a{color:#f0b83d;font-weight:800}
+html[data-theme="jurassic"] .ai-strip strong{color:#fff4cf}
+html[data-theme="jurassic"] .ai-strip a{color:#f6c52f;font-weight:900}
+
 html[data-theme="jurassic"] .topline{
   background:var(--red);
-  color:#fff0cf;
-  border-bottom:2px solid var(--ink);
-  text-shadow:1px 1px 0 rgba(0,0,0,.2);
+  color:#fff7d4;
+  border-bottom:4px solid #050505;
+  box-shadow:inset 0 -2px 0 var(--accent);
+  text-shadow:1px 1px 0 rgba(0,0,0,.45);
 }
 html[data-theme="jurassic"] .topic-link:hover,
-html[data-theme="jurassic"] .topic-link[aria-current="page"]{color:#fff3cf;border-bottom-color:#f7c54e}
+html[data-theme="jurassic"] .topic-link[aria-current="page"]{
+  color:#fff;
+  border-bottom-color:var(--accent);
+}
 
 html[data-theme="jurassic"] header{
-  background:rgba(239,226,189,.96);
-  border-bottom:4px solid var(--ink);
-  box-shadow:0 3px 0 var(--red),0 8px 22px rgba(39,27,11,.1);
+  background:#0b0b0a;
+  color:#fff4cf;
+  border-bottom:5px solid var(--accent);
+  box-shadow:0 5px 0 var(--red),0 12px 24px rgba(0,0,0,.32);
 }
-html[data-theme="jurassic"] .brand{gap:14px}
+html[data-theme="jurassic"] header a{color:#fff4cf}
+html[data-theme="jurassic"] .brand{gap:15px}
 html[data-theme="jurassic"] .mark{
-  width:52px;
-  height:52px;
+  width:64px;
+  height:64px;
   border:0;
   border-radius:50%;
-  background:#b73527 url("favicon-jurassic.svg") center/cover no-repeat;
+  background:#d61f27 url("favicon-jurassic.svg") center/cover no-repeat;
   color:transparent;
-  box-shadow:3px 3px 0 var(--accent);
-  transform:rotate(-2deg);
+  box-shadow:0 0 0 3px #0a0a09,0 0 0 6px var(--accent),4px 4px 0 #000;
+  transform:rotate(-1deg);
   overflow:hidden;
+  flex:0 0 auto;
 }
 html[data-theme="jurassic"] .brand strong{
-  font-family:Rockwell,"Roboto Slab",Georgia,serif;
+  color:#fff4cf;
+  font-family:Impact,"Arial Black",Rockwell,Georgia,serif;
+  font-size:23px;
   font-weight:900;
   text-transform:uppercase;
-  letter-spacing:.025em;
-  font-size:20px;
+  letter-spacing:.018em;
+  text-shadow:2px 2px 0 #000,-1px -1px 0 #000;
 }
 html[data-theme="jurassic"] .brand small{
-  color:#8f281f;
+  color:var(--accent);
   font-weight:900;
-  letter-spacing:.12em;
+  letter-spacing:.14em;
 }
 html[data-theme="jurassic"] nav>a,
 html[data-theme="jurassic"] .nav-more summary{
+  color:#fff1bf;
   font-family:var(--mono);
   font-size:11px;
-  font-weight:800;
+  font-weight:900;
   text-transform:uppercase;
-  letter-spacing:.04em;
+  letter-spacing:.045em;
 }
 html[data-theme="jurassic"] nav>a:hover,
-html[data-theme="jurassic"] .nav-more summary:hover{color:var(--red)}
+html[data-theme="jurassic"] .nav-more summary:hover{color:var(--accent)}
 html[data-theme="jurassic"] .nav-menu{
-  background:#f7eac9;
-  border:2px solid var(--ink);
-  box-shadow:4px 4px 0 var(--accent);
+  background:#11100e;
+  color:#fff2c8;
+  border:3px solid var(--accent);
+  box-shadow:5px 5px 0 var(--red);
 }
-html[data-theme="jurassic"] .nav-menu a:hover{background:#e8d5a6;color:#8f281f}
+html[data-theme="jurassic"] .nav-menu a{color:#fff2c8}
+html[data-theme="jurassic"] .nav-menu a:hover{background:var(--red);color:#fff}
 
 html[data-theme="jurassic"] .theme-switcher{
-  background:#e7d4a6;
-  border:2px solid var(--ink);
-  box-shadow:2px 2px 0 var(--accent);
+  background:#0d0d0c;
+  border:2px solid #5c501d;
+  box-shadow:none;
 }
-html[data-theme="jurassic"] .theme-switcher button{color:#625640}
-html[data-theme="jurassic"] .theme-switcher button:hover{background:#f3e5c1;color:var(--ink)}
-html[data-theme="jurassic"] .theme-switcher button[aria-pressed="true"]{background:var(--red);color:#fff0cf}
+html[data-theme="jurassic"] .theme-switcher button{color:#d9c985}
+html[data-theme="jurassic"] .theme-switcher button:hover{background:#211d13;color:#fff2bc}
+html[data-theme="jurassic"] .theme-switcher button[aria-pressed="true"]{
+  background:var(--accent);
+  color:#090909;
+  box-shadow:inset 0 0 0 2px #090909;
+}
 
 html[data-theme="jurassic"] .btn{
   background:var(--red);
-  color:#fff0cf;
-  border:2px solid var(--ink);
-  box-shadow:3px 3px 0 var(--ink);
+  color:#fff8d9;
+  border:3px solid #080808;
+  box-shadow:0 0 0 2px var(--accent),4px 4px 0 #080808;
+  font-weight:900;
   text-transform:uppercase;
-  letter-spacing:.035em;
+  letter-spacing:.04em;
 }
-html[data-theme="jurassic"] .btn.alt{background:#f4e5bf;color:var(--ink)}
-html[data-theme="jurassic"] .btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+html[data-theme="jurassic"] .btn.alt{background:var(--accent);color:#080808}
+html[data-theme="jurassic"] .btn:hover{transform:translate(-1px,-1px);box-shadow:0 0 0 2px var(--accent),6px 6px 0 #080808}
 
 html[data-theme="jurassic"] .hero{
   position:relative;
   overflow:hidden;
+  color:#fff5d2;
   background:
-    radial-gradient(circle at 86% 15%,rgba(215,154,38,.28),transparent 25rem),
-    linear-gradient(110deg,rgba(250,240,214,.88),rgba(226,206,155,.8)),
-    var(--paper);
-  border-bottom:4px solid var(--ink);
+    radial-gradient(circle at 83% 18%,rgba(214,31,39,.38),transparent 22rem),
+    radial-gradient(circle at 88% 35%,rgba(242,194,48,.13),transparent 30rem),
+    linear-gradient(115deg,#090908 0%,#12110d 58%,#2a0b0d 100%);
+  border-bottom:7px solid var(--accent);
+  box-shadow:inset 0 -4px 0 var(--red);
 }
-html[data-theme="jurassic"] .hero:after{
+html[data-theme="jurassic"] .hero:before{
   content:"";
   position:absolute;
-  right:-90px;
-  bottom:-115px;
-  width:310px;
-  height:310px;
-  border:3px solid rgba(183,53,39,.12);
-  border-radius:50%;
-  box-shadow:0 0 0 18px rgba(25,20,15,.025),0 0 0 42px rgba(183,53,39,.035);
+  inset:0;
   pointer-events:none;
+  opacity:.22;
+  background:repeating-linear-gradient(135deg,transparent 0,transparent 30px,rgba(242,194,48,.08) 30px,rgba(242,194,48,.08) 32px);
+}
+html[data-theme="jurassic"] .hero>.shell{position:relative;z-index:1}
+html[data-theme="jurassic"] .hero:after{
+  content:"IFN // IDENTITY PARK OPERATIONS";
+  position:absolute;
+  right:-48px;
+  bottom:38px;
+  transform:rotate(-90deg);
+  color:rgba(242,194,48,.22);
+  font:900 11px var(--mono);
+  letter-spacing:.18em;
 }
 html[data-theme="jurassic"] h1,
 html[data-theme="jurassic"] h2,
@@ -138,44 +168,57 @@ html[data-theme="jurassic"] .archive-item h3,
 html[data-theme="jurassic"] .radar-item h3,
 html[data-theme="jurassic"] .discussion h3,
 html[data-theme="jurassic"] .disclosure-step h3{
-  font-family:Rockwell,"Roboto Slab",Georgia,serif;
+  font-family:Impact,"Arial Black",Rockwell,Georgia,serif;
+  letter-spacing:.005em;
 }
-html[data-theme="jurassic"] h1{
+html[data-theme="jurassic"] .hero h1{
+  color:#fff5d0;
   font-weight:900;
-  letter-spacing:-.035em;
-  text-shadow:2px 2px 0 rgba(215,154,38,.2);
+  letter-spacing:-.02em;
+  text-transform:uppercase;
+  text-shadow:4px 4px 0 #000,0 0 1px #000;
 }
-html[data-theme="jurassic"] .lede,
-html[data-theme="jurassic"] .story p{color:#4f4739}
+html[data-theme="jurassic"] .hero .lede{color:#e7d9a8}
+html[data-theme="jurassic"] .hero .meta{color:#d8c98e}
 html[data-theme="jurassic"] .eyebrow{color:var(--red);font-weight:900}
+html[data-theme="jurassic"] .hero .eyebrow{color:var(--accent);text-shadow:1px 1px 0 #000}
+
+html[data-theme="jurassic"] .grid,
+html[data-theme="jurassic"] main>.shell:not(.hero .shell){
+  background:var(--paper);
+}
+html[data-theme="jurassic"] .grid{box-shadow:0 0 0 1px rgba(0,0,0,.04)}
 
 html[data-theme="jurassic"] .transparency-box{
-  background:#e9cf8e;
-  border:2px solid var(--ink);
-  border-left:8px solid var(--red);
-  box-shadow:4px 4px 0 rgba(25,20,15,.9);
+  background:var(--accent);
+  color:#090909;
+  border:3px solid #080808;
+  border-left:10px solid var(--red);
+  box-shadow:5px 5px 0 #000;
 }
 html[data-theme="jurassic"] .transparency-box .stamp{
-  background:#17120f;
-  color:#f7dfa4;
-  border:2px solid #17120f;
-  box-shadow:2px 2px 0 var(--red);
+  background:#090909;
+  color:#fff1b9;
+  border:2px solid #090909;
+  box-shadow:3px 3px 0 var(--red);
 }
 
-html[data-theme="jurassic"] .story{border-bottom:2px solid #9a8965}
+html[data-theme="jurassic"] .story{border-bottom:3px solid #3a3020}
+html[data-theme="jurassic"] .story p{color:#332c22}
 html[data-theme="jurassic"] .why{
-  background:#eadbb5;
-  border-left:6px solid var(--red);
-  box-shadow:inset 0 0 0 1px rgba(25,20,15,.12);
+  background:#ffe9a6;
+  border:2px solid #17120d;
+  border-left:8px solid var(--red);
+  box-shadow:3px 3px 0 rgba(0,0,0,.18);
 }
-html[data-theme="jurassic"] .readmore{color:#7f261e;font-weight:900}
+html[data-theme="jurassic"] .readmore{color:#a90f17;font-weight:900}
 html[data-theme="jurassic"] .pill,
-html[data-theme="jurassic"] .tag{border:1px solid #6f6046;font-weight:800}
-html[data-theme="jurassic"] .pill.ai{background:#efd494;border-color:#9b6c16;color:#4a3515}
-html[data-theme="jurassic"] .pill.source{background:#dce4cf;border-color:#617452;color:#273526}
-html[data-theme="jurassic"] .pill.human{background:#d5e4d4;border-color:#4a704e;color:#244027}
-html[data-theme="jurassic"] .tag{background:#f8ebca}
-html[data-theme="jurassic"] a.tag:hover{background:var(--red);border-color:var(--ink);color:#fff1d1}
+html[data-theme="jurassic"] .tag{border:2px solid #17120d;font-weight:900}
+html[data-theme="jurassic"] .pill.ai{background:var(--accent);border-color:#17120d;color:#17120d}
+html[data-theme="jurassic"] .pill.source{background:#fff0bc;border-color:#17120d;color:#17120d}
+html[data-theme="jurassic"] .pill.human{background:#dce9d7;border-color:#17120d;color:#193020}
+html[data-theme="jurassic"] .tag{background:#fff1bd}
+html[data-theme="jurassic"] a.tag:hover{background:var(--red);border-color:#080808;color:#fff7d3}
 
 html[data-theme="jurassic"] .sidecard,
 html[data-theme="jurassic"] .card,
@@ -184,64 +227,60 @@ html[data-theme="jurassic"] .discussion,
 html[data-theme="jurassic"] .disclosure-step,
 html[data-theme="jurassic"] .plain-table{
   background:var(--card);
-  border:2px solid var(--ink);
-  box-shadow:4px 4px 0 rgba(143,122,87,.55);
+  border:3px solid #17120d;
+  box-shadow:5px 5px 0 rgba(0,0,0,.28);
 }
-html[data-theme="jurassic"] .card{min-height:180px}
-html[data-theme="jurassic"] .guest-card{border-top:6px solid var(--green)}
+html[data-theme="jurassic"] .guest-card{border-top:8px solid var(--red)}
 html[data-theme="jurassic"] .section-head{
-  border-bottom:4px solid var(--ink);
-  box-shadow:0 4px 0 var(--red);
+  border-bottom:5px solid #111;
+  box-shadow:0 5px 0 var(--red);
   padding-bottom:12px;
 }
-html[data-theme="jurassic"] .section-head h2{text-transform:uppercase;letter-spacing:.015em}
+html[data-theme="jurassic"] .section-head h2{text-transform:uppercase;letter-spacing:.02em}
 
 html[data-theme="jurassic"] .newsletter input,
 html[data-theme="jurassic"] .newsletter select,
 html[data-theme="jurassic"] .search{
-  background:#fff8e6;
-  color:var(--ink);
-  border:2px solid #766548;
+  background:#fff9e5;
+  color:#111;
+  border:2px solid #111;
 }
 html[data-theme="jurassic"] .score{
-  border:3px solid var(--ink);
+  border:4px solid #090909;
   border-radius:50%;
   background:var(--red);
-  color:#fff0cf;
-  box-shadow:2px 2px 0 var(--accent);
+  color:#fff3c5;
+  box-shadow:0 0 0 3px var(--accent),3px 3px 0 #000;
 }
 html[data-theme="jurassic"] .sponsor-card{
-  background:
-    repeating-linear-gradient(135deg,rgba(215,154,38,.12) 0,rgba(215,154,38,.12) 10px,rgba(250,240,214,.55) 10px,rgba(250,240,214,.55) 20px),
-    #efdfb6;
-  border-color:var(--ink);
+  background:repeating-linear-gradient(135deg,#f2c230 0,#f2c230 12px,#111 12px,#111 16px,#fff4cf 16px,#fff4cf 28px);
+  border-color:#090909;
 }
-html[data-theme="jurassic"] .sponsor-card:before{color:#8d281f;font-weight:900}
-html[data-theme="jurassic"] .notice{background:#eadbb6;border:2px solid #7c6a4e}
-html[data-theme="jurassic"] .notice.dark{background:#17120f;color:#f6e8c7;border-color:#17120f}
-html[data-theme="jurassic"] .notice.dark a{color:#f3bd49}
-html[data-theme="jurassic"] .ad-slot{
-  border:2px dashed #7a6545;
-  background:rgba(247,234,201,.55);
-  color:#66583f;
-}
-html[data-theme="jurassic"] .plain-table th{background:#ddc78e;color:#251c13;border-bottom:2px solid var(--ink)}
-html[data-theme="jurassic"] .plain-table td{border-bottom:1px solid #b39d72}
-html[data-theme="jurassic"] .giscus-placeholder{background:#eadcb8;border:2px dashed #8a7757}
+html[data-theme="jurassic"] .sponsor-card>*{background:#fff4cf;padding:2px 4px}
+html[data-theme="jurassic"] .sponsor-card:before{color:#090909;background:var(--accent);font-weight:900;padding:3px 5px}
+html[data-theme="jurassic"] .notice{background:#ffe9a6;border:2px solid #111}
+html[data-theme="jurassic"] .notice.dark{background:#090909;color:#fff0bd;border-color:var(--accent)}
+html[data-theme="jurassic"] .notice.dark a{color:var(--accent)}
+html[data-theme="jurassic"] .ad-slot{border:2px dashed #5a4819;background:#f8e4a0;color:#4b3b16}
+html[data-theme="jurassic"] .plain-table th{background:var(--accent);color:#111;border-bottom:3px solid #111}
+html[data-theme="jurassic"] .plain-table td{border-bottom:1px solid #8d7a3f}
+html[data-theme="jurassic"] .giscus-placeholder{background:#ffe9a6;border:2px dashed #111}
 
 html[data-theme="jurassic"] footer{
-  background:#15110d;
-  color:#f4e6c6;
-  border-top:7px solid var(--red);
-  box-shadow:inset 0 4px 0 var(--accent);
+  background:#050505;
+  color:#fff2c2;
+  border-top:8px solid var(--red);
+  box-shadow:inset 0 5px 0 var(--accent);
 }
-html[data-theme="jurassic"] footer a{color:#f4e6c6}
-html[data-theme="jurassic"] footer p{color:#cabd9e}
-html[data-theme="jurassic"] footer .mark{box-shadow:3px 3px 0 #d79a26}
-html[data-theme="jurassic"] .footer-bottom{color:#a99b7f;border-top-color:#5e5039}
-html[data-theme="jurassic"] ::selection{background:#d79a26;color:#17120f}
+html[data-theme="jurassic"] footer a{color:#fff2c2}
+html[data-theme="jurassic"] footer p{color:#cdbf8e}
+html[data-theme="jurassic"] footer .brand strong{color:#fff4cf}
+html[data-theme="jurassic"] footer .brand small{color:var(--accent)}
+html[data-theme="jurassic"] .footer-bottom{color:#a99a68;border-top-color:#51491f}
+html[data-theme="jurassic"] ::selection{background:var(--red);color:#fff}
 
 @media(max-width:900px){
-  html[data-theme="jurassic"] .mark{width:46px;height:46px}
-  html[data-theme="jurassic"] .brand strong{font-size:18px}
+  html[data-theme="jurassic"] .mark{width:54px;height:54px}
+  html[data-theme="jurassic"] .brand strong{font-size:19px}
+  html[data-theme="jurassic"] .hero:after{display:none}
 }
