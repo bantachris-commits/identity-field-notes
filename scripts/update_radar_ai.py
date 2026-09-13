@@ -10,7 +10,10 @@ ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.getenv('OPENAI_MODEL','gpt-5.6-luna')
 now=datetime.now(ZoneInfo('America/Denver'))
 prompt=f'''Today is {now.date().isoformat()} in America/Denver. Search the current web for NEW or newly relevant items from the last 36 hours that experienced PAM/IAM/IGA/identity-security practitioners might want in a reading queue. Include privileged access, Entra/Okta/Auth0, SailPoint/Saviynt, CyberArk/Delinea/BeyondTrust, passkeys/FIDO, NHI/machine identity, identity attacks, OAuth/session/token abuse, and AI-agent authorization. Prefer original sources and strong security research. Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://real-url","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 10 items. Never invent URLs.'''
-r=OpenAI().responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
+print(f'Radar search starting with model: {MODEL}', flush=True)
+client=OpenAI(timeout=180.0,max_retries=1)
+r=client.responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
+print('Radar search response received.', flush=True)
 t=r.output_text.strip()
 if t.startswith('```'): t=re.sub(r'^```(?:json)?\s*|\s*```$','',t)
 try: payload=json.loads(t)
