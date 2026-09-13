@@ -30,22 +30,29 @@ def specific_url(u):
         return True
     except Exception:return False
 
+def valid_date(value):
+    try:
+        return datetime.strptime(str(value),'%Y-%m-%d').date().isoformat()
+    except Exception:
+        return now.date().isoformat()
+
 prompt=f'''Today is {now.date().isoformat()} in America/Denver. Search the current web for NEW or newly relevant items from the last 36 hours that experienced PAM/IAM/IGA/identity-security practitioners might want in a reading queue. Cover the market broadly, including CyberArk/Palo Alto Networks, Delinea, BeyondTrust, Okta/Auth0, Microsoft Entra, SailPoint, Saviynt, Ping Identity, Descope, Semperis, AWS, Google Cloud, FIDO/OpenID, NHI/machine identity, passkeys, ITDR, OAuth/session/token abuse and AI-agent authorization.
 
 Also look back up to 7 days for material breaches or incidents where reliable reporting or primary evidence identifies an identity-control failure or abuse as a root cause or contributing factor: compromised credentials, MFA bypass, token/session theft, excessive privilege, stale identities, exposed secrets, service-account abuse, OAuth abuse, authentication or authorization failures, federation/account-linking failures, or weak offboarding.
 
 Source rules:
-- Prefer original incident disclosures, regulatory filings, CISA/CERT/government material, standards bodies, primary technical research, and strong independent security reporting or analysis.
+- Prefer original incident disclosures, regulatory filings, CISA/CERT/government material, standards bodies, primary technical research, and strong independent security reporting or analysis. When there is no primary incident disclosure, prefer dedicated security reporting such as Reuters, BleepingComputer or similarly rigorous sources over general-interest commentary.
 - Every item URL must be the canonical page for the exact article, advisory, filing, press release or research item. Do not return a vendor homepage, generic blog index, newsroom listing, category/tag page, generic documentation page, release-notes index or press-release directory.
 - If a development exists only as a release-note entry and there is no stable item-level or anchored URL, skip it rather than sending readers to a generic index.
 - Before returning an item, verify that the destination page title/content actually matches the claimed story. If you cannot verify that, omit the item.
+- Return the item's actual publication date from the source, not today's collection date.
 - Do not surface vendor marketing that mainly argues "our product could have prevented this breach." A vendor source is fine when the vendor is the affected party or published the original advisory/research, or when a product announcement itself is materially relevant to identity practitioners.
 - Do not infer identity causation when the evidence does not establish it.
 - Prefer substantive incidents, technical research, material standards changes, acquisitions/platform shifts and meaningful product moves over generic thought leadership.
 - Avoid duplicate coverage of the same development unless the second source adds substantial independent detail.
 - Never invent URLs.
 
-Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://exact-item-url","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 12 items.'''
+Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://exact-item-url","published_date":"YYYY-MM-DD","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 12 items.'''
 print(f'Radar search starting with model: {MODEL}',flush=True)
 client=OpenAI(timeout=180.0,max_retries=1)
 r=client.responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
@@ -66,7 +73,7 @@ for x in payload.get('items',[]):
         print('Skipping generic or invalid source URL:',u,flush=True);continue
     by_url[u]={
       'id':hashlib.sha1(u.encode()).hexdigest()[:16],
-      'date':now.date().isoformat(),'source':x.get('source','Source'),'title':x.get('title','Untitled'),
+      'date':valid_date(x.get('published_date')),'source':x.get('source','Source'),'title':x.get('title','Untitled'),
       'url':u,'tags':x.get('tags',[])[:6],'note':x.get('note','AI-collected reading candidate.'),
       'score':max(50,min(100,int(x.get('score',70))))
     }
