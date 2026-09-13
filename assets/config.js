@@ -4,22 +4,18 @@ window.IFN_CONFIG = {
   tagline: "AI-driven identity news. I burn the tokens so you don't have to.",
   newsletter: {
     provider: "buttondown",
-    // Public Buttondown username used by the embedded signup form.
     buttondownUsername: "identityfieldnotes",
-    // Leave blank unless the Buttondown plan has Tags enabled.
     tag: ""
   },
+  community: {
+    provider: "supabase",
+    supabaseUrl: "https://fbiwpyeodonkkllfzwbs.supabase.co",
+    supabaseKey: "sb_publishable_Pev5Aa49H3ZWMcZC_3X2-w_3BtKyWN3"
+  },
   comments: {
-    provider: "giscus",
-    repo: "bantachris-commits/identity-field-notes",
-    repoId: "R_kgDOUYDzQw",
-    category: "General",
-    // General discussion category node ID discovered by the setup workflow.
-    categoryId: "DIC_kwDOUYDzQ84DFdEZ",
-    mapping: "specific"
+    provider: "supabase"
   },
   analytics: {
-    // privacy-friendly option; leave empty to disable
     plausibleDomain: ""
   },
   contact: {
@@ -28,8 +24,6 @@ window.IFN_CONFIG = {
   }
 };
 
-// Theme bootstrap. Apply the saved theme before first paint, then load the
-// shared theme layers used by every page on the site.
 (()=>{
   const valid=new Set(["field","dark","matrix","jurassic"]);
   let saved="field";
