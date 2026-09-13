@@ -10,7 +10,8 @@ window.IFN_CONFIG = {
   community: {
     provider: "supabase",
     supabaseUrl: "https://fbiwpyeodonkkllfzwbs.supabase.co",
-    supabaseKey: "sb_publishable_Pev5Aa49H3ZWMcZC_3X2-w_3BtKyWN3"
+    supabaseKey: "sb_publishable_Pev5Aa49H3ZWMcZC_3X2-w_3BtKyWN3",
+    googleClientId: ""
   },
   comments: {
     provider: "supabase"
