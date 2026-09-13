@@ -7,14 +7,14 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
       "Entra",
-      "passkeys",
+      "Passkeys",
       "FIDO",
       "MFA",
-      "session-theft",
-      "identity-attacks"
+      "OAuth",
+      "Session theft"
     ],
-    "note": "Details active attacks that use passkey and helpdesk lures, AiTM or device-code flows, stolen tokens, attacker-registered MFA methods, and Microsoft Graph reconnaissance.",
-    "score": 100
+    "note": "Primary research details passkey- and SSO-themed AiTM and device-code phishing that captures sessions, adds attacker authentication methods, and enables Microsoft Graph, SharePoint, OneDrive, and mailbox access.",
+    "score": 99
   },
   {
     "id": "c352fc150c7419a1",
@@ -50,6 +50,22 @@
     "score": 94
   },
   {
+    "id": "6e6808f3261047ff",
+    "date": "2026-09-13",
+    "source": "Microsoft Security",
+    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "tags": [
+      "OAuth",
+      "Session theft",
+      "Entra",
+      "AI-agent authorization",
+      "Identity attacks"
+    ],
+    "note": "Useful case study of OAuth device-code phishing leading to business-email-compromise activity and how correlated identity, email, and endpoint telemetry disrupted it before persistence and fraud.",
+    "score": 94
+  },
+  {
     "id": "5eb7907d4adfd0ac",
     "date": "2026-09-13",
     "source": "METR",
@@ -64,6 +80,23 @@
       "authentication"
     ],
     "note": "Primary incident disclosure describes a fail-open authentication bug exposing an agent dashboard, API-key theft, SSH persistence, and a separate campaign involving OAuth grants and credential stuffing.",
+    "score": 93
+  },
+  {
+    "id": "8f5f50198141b88a",
+    "date": "2026-09-13",
+    "source": "BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Entra",
+      "MFA bypass",
+      "Token theft",
+      "OAuth"
+    ],
+    "note": "Independent reporting adds operational detail on attackers using legitimate MFA flows, stolen session tokens, malicious OAuth applications, and previously registered authenticator methods to access Microsoft 365.",
     "score": 93
   },
   {
@@ -113,6 +146,22 @@
     ],
     "note": "Primary advisory material explains how an overly broad self-management ACI could let unauthenticated clients create reusable Kerberos identities and potentially reach administrative privileges.",
     "score": 91
+  },
+  {
+    "id": "bb560ed018471892",
+    "date": "2026-09-13",
+    "source": "Microsoft Sentinel Changelog",
+    "title": "New Entra ID Detection: Illicit OAuth Consent Grant Targeting Mailbox Scopes with Persistent Token Access",
+    "url": "https://sentinelchangelog.net/posts/2026-09-11-pr-15047/",
+    "tags": [
+      "Entra",
+      "OAuth",
+      "Token abuse",
+      "Detection",
+      "Session security"
+    ],
+    "note": "A newly published analytic rule targets consent grants combining offline_access with high-impact mailbox scopes, directly addressing persistent refresh-token abuse after consent phishing.",
+    "score": 90
   },
   {
     "id": "0c6670cd03c045a8",
@@ -178,6 +227,21 @@
     "score": 86
   },
   {
+    "id": "eb77ddbb1f967f57",
+    "date": "2026-09-13",
+    "source": "Surfshark",
+    "title": "Security update: September 2026 incident report",
+    "url": "https://surfshark.com/blog/security-update-september-2026-incident-report",
+    "tags": [
+      "NHI",
+      "Secrets management",
+      "Service accounts",
+      "Incident response"
+    ],
+    "note": "The affected-party disclosure traces unauthorized access to an internet-exposed internal test server and identifies build-related credentials in code history that required rotation and token revocation.",
+    "score": 86
+  },
+  {
     "id": "99680276e400d3fb",
     "date": "2026-09-13",
     "source": "IDScan.net",
@@ -222,6 +286,52 @@
     ],
     "note": "The reported RubyGems activity is a timely case study in what can happen when autonomous agents receive external platform access without sufficiently restrictive identity, authorization, and execution controls.",
     "score": 82
+  },
+  {
+    "id": "cd0695560dd007cc",
+    "date": "2026-09-13",
+    "source": "SecurityWeek",
+    "title": "Surfshark Systems Targeted by Hackers",
+    "url": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
+    "tags": [
+      "Secrets management",
+      "NHI",
+      "Configuration failure",
+      "Incident response"
+    ],
+    "note": "Independent coverage provides a concise identity-control case study involving exposed engineering infrastructure and credentials, while distinguishing the limited impact from production or customer-data compromise.",
+    "score": 82
+  },
+  {
+    "id": "6235353ac62c92c0",
+    "date": "2026-09-13",
+    "source": "The Block",
+    "title": "Revolut says customer KYC, Bitcoin transaction data exposed after fake request from gov't domain",
+    "url": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
+    "tags": [
+      "Identity attacks",
+      "Impersonation",
+      "Authentication failure",
+      "Authorization failure"
+    ],
+    "note": "Revolut reports that an unauthorized party used an email account on a legitimate government domain to submit fraudulent data requests, exposing the risk of trust-based authorization without stronger requester verification.",
+    "score": 79
+  },
+  {
+    "id": "dbf2ee11ae2d727f",
+    "date": "2026-09-13",
+    "source": "The MCP Report",
+    "title": "MCP Server Identity and Verification",
+    "url": "https://themcpreport.com/posts/mcp-server-identity-and-verification",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "MCP",
+      "Machine identity"
+    ],
+    "note": "This timely analysis examines the gap between validating OAuth authorization and verifying that an MCP server is the legitimate principal authorized to receive or act on delegated agent access.",
+    "score": 78
   },
   {
     "id": "delinea-runtime-authz-2026",
