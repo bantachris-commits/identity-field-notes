@@ -1,21 +1,111 @@
 [
   {
+    "date": "2026-09-22",
+    "end": "2026-09-24",
+    "name": "Oktane 2026",
+    "location": "Caesars Forum, Las Vegas, Nevada, United States",
+    "focus": "Identity security for AI, authentication, authorization, workforce and customer identity, hands-on labs",
+    "url": "https://www.okta.com/oktane/",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2026-10-06",
+    "end": "2026-10-06",
+    "name": "Identity & Non-Human Identity Impact Day 2026",
+    "location": "Marriott Hotel, Munich, Germany",
+    "focus": "IAM, identity security, non-human identities, machine identities and AI identity governance",
+    "url": "https://www.kuppingercole.com/events",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
     "date": "2026-10-19",
     "end": "2026-10-21",
     "name": "Authenticate U.S. 2026",
-    "location": "Carlsbad, California",
-    "focus": "Passkeys, authentication, non-human authentication and agentic identity",
+    "location": "Omni La Costa Resort & Spa, Carlsbad, California, United States",
+    "focus": "Passkeys, phishing-resistant authentication, FIDO2, passwordless authentication and digital identity",
     "url": "https://authenticatecon.com/event/authenticate-u-s-2026/",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "date": "2026-11-18",
+    "end": "2026-11-18",
+    "name": "Customer Identity & Access Management Impact Day 2026",
+    "location": "Hilton Frankfurt Airport, Frankfurt, Germany",
+    "focus": "CIAM, customer authentication, authorization, identity security and digital trust",
+    "url": "https://www.kuppingercole.com/events",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2026-11-26",
+    "end": "2026-11-26",
+    "name": "Identity-Centric Cybersecurity Summit 2026",
+    "location": "Munich, Germany",
+    "focus": "Identity threats, identity security, ITDR, access control and cybersecurity strategy",
+    "url": "https://www.kuppingercole.com/events",
+    "type": "Summit",
+    "sponsored": false
+  },
+  {
+    "date": "2026-12-01",
+    "end": "2026-12-01",
+    "name": "FIDO Alliance Seoul Seminar: Passkey Day",
+    "location": "Korea Science and Technology Convention Center, Seoul, South Korea",
+    "focus": "Passkeys, authentication interoperability, passwordless security and FIDO standards",
+    "url": "https://fidoalliance.org/events/",
+    "type": "Seminar",
+    "sponsored": false
+  },
+  {
     "date": "2026-12-07",
     "end": "2026-12-09",
-    "name": "Gartner Identity & Access Management Summit 2026",
-    "location": "Las Vegas, Nevada",
-    "focus": "IAM strategy, PAM, IGA, machine IAM, agentic AI and architecture",
-    "url": "https://www.gartner.com/en/conferences/na/identity-access-management-us",
+    "name": "Gartner Identity & Access Management Summit 2026, Americas",
+    "location": "Las Vegas, Nevada, United States",
+    "focus": "IAM strategy, PAM, IGA, digital identity, identity security and AI-related identity challenges",
+    "url": "https://emt.gartnerweb.com/en/conferences/hub/identity-access-management-conferences",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2027-02-02",
+    "end": "2027-02-04",
+    "name": "OpenID Foundation Global Conference 2027",
+    "location": "etc.venues County Hall, London, United Kingdom",
+    "focus": "OpenID, OAuth, federation, authorization, interoperability and digital identity standards",
+    "url": "https://openid.net/conference/",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2027-03-08",
+    "end": "2027-03-09",
+    "name": "Gartner Identity & Access Management Summit 2027, EMEA",
+    "location": "InterContinental London \u2013 The O2, London, United Kingdom",
+    "focus": "IAM, IGA, PAM, machine identities, AI agents, identity governance and cybersecurity alignment",
+    "url": "https://www.gartner.com/en/conferences/emea/identity-access-management-uk",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2027-04-05",
+    "end": "2027-04-08",
+    "name": "RSA Conference 2027",
+    "location": "San Francisco, California, United States",
+    "focus": "Identity and authentication, identity threats, access control, cybersecurity, AI security and non-human identities",
+    "url": "https://www.rsaconference.com/",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "date": "2027-05-11",
+    "end": "2027-05-14",
+    "name": "European Identity and Cloud Conference 2027",
+    "location": "bcc Berlin Congress Center, Berlin, Germany",
+    "focus": "IAM, IGA, PAM, cloud identity, authorization, identity security and digital trust",
+    "url": "https://www.kuppingercole.com/events",
     "type": "Conference",
     "sponsored": false
   },
@@ -23,8 +113,8 @@
     "date": "2027-06-28",
     "end": "2027-07-01",
     "name": "Identiverse 2027",
-    "location": "Las Vegas, Nevada",
-    "focus": "Digital identity, trust, architecture and practitioner learning",
+    "location": "Mandalay Bay, Las Vegas, Nevada, United States",
+    "focus": "Digital identity, IAM, authentication, authorization, non-human and AI identity, privacy and identity threats",
     "url": "https://identiverse.com/",
     "type": "Conference",
     "sponsored": false

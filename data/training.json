@@ -1,34 +1,98 @@
 [
   {
     "provider": "Microsoft Learn",
-    "title": "Microsoft Entra training",
-    "level": "Free / self-paced",
-    "focus": "Identity, access, governance and Entra administration",
-    "url": "https://learn.microsoft.com/training/browse/?terms=Microsoft%20Entra",
+    "title": "Perform basic identity and access tasks",
+    "level": "Beginner",
+    "focus": "IAM fundamentals, Microsoft Entra identities, authentication, access management, identity protection and governance",
+    "url": "https://learn.microsoft.com/en-us/training/paths/perform-basic-identity-access-tasks/",
+    "sponsored": false
+  },
+  {
+    "provider": "Microsoft Learn",
+    "title": "Plan and implement an identity governance strategy",
+    "level": "Intermediate",
+    "focus": "IGA, entitlement management, access reviews, privileged access and identity monitoring",
+    "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+    "sponsored": false
+  },
+  {
+    "provider": "Microsoft Learn",
+    "title": "Manage and implement authentication methods in Microsoft Entra ID",
+    "level": "Intermediate",
+    "focus": "MFA, passwordless authentication, passkeys, FIDO2 security keys, Conditional Access and recovery",
+    "url": "https://learn.microsoft.com/en-us/training/modules/manage-implement-authentication-methods/",
+    "sponsored": false
+  },
+  {
+    "provider": "CyberArk University",
+    "title": "Privileged Access Management (PAM) Administration - Self-Paced",
+    "level": "Advanced",
+    "focus": "PAM administration, privileged account onboarding, password management, session management, threat analytics and troubleshooting",
+    "url": "https://training.cyberark.com/learn/course/external/view/elearning/3/PrivilegedAccessManagementPAMAdministration-Self-Paced",
     "sponsored": false
   },
   {
     "provider": "CyberArk",
-    "title": "CyberArk University",
-    "level": "Vendor training",
-    "focus": "Privileged access and identity security",
-    "url": "https://www.cyberark.com/services-support/training/",
+    "title": "PAM Boot Camp",
+    "level": "Beginner",
+    "focus": "PAM fundamentals, least privilege, just-in-time access, identity threat detection, access certification and third-party privileged access",
+    "url": "https://lp.cyberark.com/2023-pam-boot-camp-on-demand-en-registrationlp.html",
     "sponsored": false
   },
   {
-    "provider": "SailPoint",
-    "title": "SailPoint University",
-    "level": "Vendor training",
-    "focus": "Identity governance and administration",
-    "url": "https://www.sailpoint.com/university",
+    "provider": "BeyondTrust University",
+    "title": "BeyondTrust University",
+    "level": "Beginner to Advanced",
+    "focus": "PAM, privileged remote access, endpoint privilege management, Password Safe administration and privileged identity",
+    "url": "https://www.beyondtrust.com/services-training/beyondtrust-university",
     "sponsored": false
   },
   {
-    "provider": "FIDO Alliance",
-    "title": "Passkey & authentication resources",
-    "level": "Standards / practitioner",
-    "focus": "FIDO, passkeys and phishing-resistant authentication",
-    "url": "https://fidoalliance.org/passkeys/",
+    "provider": "Fortinet Training Institute",
+    "title": "FortiPAM Administrator",
+    "level": "Intermediate",
+    "focus": "PAM administration, privileged credentials, secrets management, roles, access control, monitoring and reporting",
+    "url": "https://training.fortinet.com/local/staticpage/view.php?page=library_fortipam-administrator",
+    "sponsored": false
+  },
+  {
+    "provider": "Google Cloud",
+    "title": "Workload Identity Federation",
+    "level": "Intermediate",
+    "focus": "Non-human identity, workload authentication, federated credentials, short-lived tokens and keyless access",
+    "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
+    "sponsored": false
+  },
+  {
+    "provider": "Google Cloud",
+    "title": "Managed workload identities overview",
+    "level": "Advanced",
+    "focus": "Workload and agent identities, SPIFFE, attestation, mTLS, Kubernetes identities and AI-agent access",
+    "url": "https://docs.cloud.google.com/iam/docs/managed-workload-identity",
+    "sponsored": false
+  },
+  {
+    "provider": "NIST",
+    "title": "SP 800-207: Zero Trust Architecture",
+    "level": "Intermediate",
+    "focus": "Identity-centric security, authentication, authorization, access management, non-person entities and zero trust architecture",
+    "url": "https://csrc.nist.gov/pubs/sp/800/207/final",
+    "sponsored": false
+  },
+  {
+    "provider": "OpenID Foundation",
+    "title": "OpenID Connect Core 1.0",
+    "level": "Intermediate",
+    "focus": "Federated authentication, OAuth 2.0, ID tokens, claims, relying parties and identity-provider integration",
+    "url": "https://openid.net/specs/openid-connect-core-1_0-18.html",
+    "sponsored": false
+  },
+  {
+    "provider": "OpenID Foundation",
+    "title": "Authorization API 1.0",
+    "level": "Advanced",
+    "focus": "Fine-grained authorization, policy decision services, delegated authorization and interoperable access control",
+    "url": "https://openid.net/specs/authorization-api-1_0.html",
     "sponsored": false
   }
 ]
