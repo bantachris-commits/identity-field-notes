@@ -1,0 +1,44 @@
+[
+  {
+    "id":"2026-09-03-agent-identity-control-plane",
+    "date":"2026-09-03",
+    "edition":"FIELD NOTE // AGENT IDENTITY",
+    "title":"Agent identity is becoming a real product category",
+    "dek":"Ping, Descope and Okta are approaching the same problem from different directions: agents need their own identity, delegated authority and runtime boundaries rather than borrowed human sessions and static keys.",
+    "tags":["NHI","AUTHZ","IAM","MCP","Agentic AI"],
+    "readTime":"7 min",
+    "stories":[
+      {"kicker":"Market","title":"Ping puts agent discovery, attribution and runtime control in one access model","summary":"Ping Identity introduced Enterprise Personal Agent Access for Claude and other personal agents, combining agent discovery, user/device attribution, secretless privileged access and runtime enforcement over the systems an agent reaches.","why":"The useful signal is not the product name. Large IAM vendors are moving beyond authenticating the human and toward continuously authorizing the agent's actions, with attribution preserved between the human and the autonomous actor.","source":"Ping Identity","url":"https://press.pingidentity.com/2026-09-01-Ping-Identity-Secures-Claude-Personal-Agents-From-Discovery-to-Action","confidence":"Vendor claim"},
+      {"kicker":"Standards","title":"Descope backs cross-app authorization for agents with short-lived identity assertions","summary":"Descope added Cross-App Access support using ID-JAG so enterprise identity providers can issue or validate short-lived assertions for agents accessing APIs and MCP servers instead of relying on static API keys or inherited browser sessions.","why":"If agent interoperability grows, identity teams will need standards for delegated access that preserve tenant, user, agent and tool context across application boundaries. This is worth tracking even if the protocol landscape is still settling.","source":"Descope","url":"https://www.descope.com/press-release/cross-app-access-xaa-support","confidence":"Vendor claim"},
+      {"kicker":"Machine IAM","title":"Okta exposes IAM administration to agents through scoped MCP tooling","summary":"Okta's Managed MCP Server entered Early Access, allowing supported AI clients to perform selected identity-management operations through natural language while enforcing OAuth scopes and producing auditable actions.","why":"Once an agent can administer the identity platform itself, PAM and IGA teams need explicit policy for who may delegate that authority, which operations require human approval and how agent actions are reviewed after the fact.","source":"Okta Product Innovation","url":"https://www.okta.com/blog/product-innovation/okta-managed-mcp-server-ai-agents/","confidence":"Vendor claim"}
+    ]
+  },
+  {
+    "id":"2026-08-04-platform-convergence",
+    "date":"2026-08-04",
+    "edition":"FIELD NOTE // PLATFORM CONVERGENCE",
+    "title":"IGA, PAM and runtime control are colliding",
+    "dek":"The identity market is expanding in both directions: governance vendors are moving into agent and machine security while PAM vendors move deeper into runtime authorization and continuous control.",
+    "tags":["IGA","PAM","NHI","AUTHZ","Agentic AI"],
+    "readTime":"7 min",
+    "stories":[
+      {"kicker":"IGA","title":"SailPoint makes Agentic Fabric generally available alongside Human Fabric","summary":"SailPoint announced a unified identity-security direction combining its Human Fabric with the generally available Agentic Fabric, including discovery and governance for non-human identities, AI agents and MCP-related activity.","why":"IGA programs should expect machine and agent lifecycle governance to become part of core identity architecture rather than a separate secrets-only problem.","source":"SailPoint","url":"https://www.sailpoint.com/press-releases/sailpoint-identity-security-solution","confidence":"Vendor claim"},
+      {"kicker":"PAM","title":"Delinea extends PAM toward per-action runtime authorization","summary":"Delinea announced runtime authorization for AI agents across protocols including databases, SSH, Kubernetes, cloud consoles and MCP, positioning enforcement inside the session rather than only at connection time.","why":"The architectural boundary of PAM is shifting. Teams evaluating modern PAM should ask whether controls govern credential issuance, session establishment, individual actions, or all three.","source":"Delinea","url":"https://delinea.com/news/delinea-delivers-runtime-authorization-for-ai-agents","confidence":"Vendor claim"},
+      {"kicker":"Authentication","title":"Microsoft moves passkeys from optional improvement toward the default Entra experience","summary":"Microsoft announced that passkeys would become the default authentication experience in Entra ID beginning September 1, with Microsoft-provided SMS and voice delivery scheduled for retirement in February 2027.","why":"For Entra shops, phishing-resistant authentication is becoming an operational migration program, not just a security recommendation. Inventory users dependent on SMS and voice before the retirement timeline becomes an outage problem.","source":"Microsoft Security","url":"https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/","confidence":"Primary source"}
+    ]
+  },
+  {
+    "id":"2026-06-29-identity-market-consolidation",
+    "date":"2026-06-29",
+    "edition":"FIELD NOTE // MARKET MAP",
+    "title":"Identity security is consolidating around privilege, machines and AI agents",
+    "dek":"Three major transactions show where large platforms think identity security is headed: PAM into security platforms, IGA into non-human identity, and privileged access into continuous authorization.",
+    "tags":["PAM","IGA","NHI","Market","Agentic AI"],
+    "readTime":"7 min",
+    "stories":[
+      {"kicker":"Market","title":"SailPoint closes Entro acquisition to pull NHI and credential security into governance","summary":"SailPoint completed its acquisition of Entro Security, adding machine-identity discovery and credential-security capabilities to its broader identity-governance platform and Agentic Fabric strategy.","why":"IGA vendors are signaling that ownership, lifecycle and access governance for machine identities should live beside human governance rather than in a disconnected secrets inventory.","source":"SailPoint","url":"https://www.sailpoint.com/press-releases/sailpoint-closes-entro-security-acquisition","confidence":"Primary source"},
+      {"kicker":"Market","title":"Delinea closes StrongDM acquisition to combine enterprise PAM with runtime authorization","summary":"Delinea completed its acquisition of StrongDM, combining enterprise privileged-access controls with just-in-time and runtime authorization for developer, cloud, machine and AI-agent access.","why":"This is a useful marker for the direction of PAM: fewer persistent credentials, more ephemeral access, and policy decisions that continue after the connection is established.","source":"Delinea","url":"https://delinea.com/news/delinea-acquires-strongdm-to-secure-ai-with-continuous-authorization","confidence":"Primary source"},
+      {"kicker":"Market","title":"Palo Alto Networks makes CyberArk identity security a core platform pillar","summary":"Palo Alto Networks completed its CyberArk acquisition in February, explicitly positioning identity security alongside its network, cloud, SecOps and AI security platforms.","why":"For PAM leaders, the strategic question is no longer only which vault or session manager wins. Identity telemetry and privilege controls are being pulled into much larger security-platform decisions and SOC workflows.","source":"Palo Alto Networks","url":"https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-cyberark-to-secure-the-ai-era","confidence":"Primary source"}
+    ]
+  }
+]
