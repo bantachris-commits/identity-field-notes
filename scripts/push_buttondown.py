@@ -11,6 +11,8 @@ protection.
 """
 import json
 import os
+import re
+from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -35,6 +37,34 @@ articles = json.loads((ROOT / "data" / "articles.json").read_text(encoding="utf-
 def is_guest(article):
     return article.get("contentType") == "guest" or article.get("humanWritten") is True
 
+def human_date(value):
+    try:
+        d = datetime.strptime(value, "%Y-%m-%d")
+        return f"{d.strftime('%B')} {d.day}, {d.year}"
+    except Exception:
+        return value
+
+def slugify(value):
+    value = re.sub(r"[^a-z0-9]+", "-", str(value or "").lower()).strip("-")
+    return value[:80] or "event"
+
+def event_id(event):
+    return event.get("id") or f"{event.get('date', 'event')}-{slugify(event.get('name'))}"
+
+def event_date(event):
+    start = event.get("date") or ""
+    end = event.get("end") or ""
+    if not end or end == start:
+        return human_date(start)
+    try:
+        a = datetime.strptime(start, "%Y-%m-%d")
+        b = datetime.strptime(end, "%Y-%m-%d")
+        if a.year == b.year and a.month == b.month:
+            return f"{a.strftime('%B')} {a.day}-{b.day}, {a.year}"
+    except Exception:
+        pass
+    return f"{human_date(start)} - {human_date(end)}"
+
 article = next((x for x in articles if x.get("featured") and not is_guest(x)), None)
 if article is None:
     article = next((x for x in articles if not is_guest(x)), None)
@@ -43,26 +73,22 @@ if article is None:
 
 stories = article.get("stories") or []
 canonical = f"{SITE}article.html?id={article['id']}"
-edition = article.get("edition") or f"FIELD NOTES // {article.get('date', '')}"
 slug = f"{article['id']}-preview" if preview else article["id"]
 subject_prefix = "[PREVIEW] " if preview else ""
+
+try:
+    events = json.loads((ROOT / "data" / "events.json").read_text(encoding="utf-8"))
+except Exception:
+    events = []
+article_date = article.get("date") or ""
+upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:3]
 
 lines = [
     "# Identity Field Notes",
     "",
-    f"**{edition}**",
+    f"Here's your identity-security digest for **{human_date(article.get('date', ''))}**.",
     "",
-    f"## {article['title']}",
-    "",
-    article.get("dek", ""),
-    "",
-    "*AI-driven identity news. I burn the tokens so you don't have to.*",
-    "",
-    f"[Read today's digest and join the practitioner discussion]({canonical})",
-    "",
-    "---",
-    "",
-    "## In 60 seconds",
+    "## TL;DR // 60-second brief",
     "",
 ]
 
@@ -72,7 +98,7 @@ if stories:
         title = story.get("title") or "Untitled story"
         lines.append(f"- **{kicker}: {title}**")
 else:
-    lines.append("- No stories were generated for this edition.")
+    lines.append("- Quiet morning. No story made the cut.")
 
 lines += ["", "---", ""]
 
@@ -97,18 +123,28 @@ for index, story in enumerate(stories, 1):
         lines += [f"> **Why it matters:** {why}", ""]
     lines += [f"[Original source — {source}]({source_url})", "", "---", ""]
 
+if upcoming_events:
+    lines += ["## Upcoming conferences", "", "A few identity events coming up soon:", ""]
+    for event in upcoming_events:
+        eid = event_id(event)
+        event_url = event.get("url") or f"{SITE}events.html#{eid}"
+        discuss_url = f"{SITE}events.html#{eid}"
+        lines += [
+            f"- **[{event.get('name', 'Identity event')}]({event_url})** · {event_date(event)} · {event.get('location', 'Location TBA')}",
+            f"  [Discuss with attendees on IFN]({discuss_url})",
+        ]
+    lines += ["", "---", ""]
+
 lines += [
     "## From the field",
     "",
     "Something missing, overstated, or wrong? Add evidence, field experience, or a correction directly under the story.",
     "",
-    f"[Read and discuss this edition on Identity Field Notes]({canonical})",
+    f"[Read and discuss today's digest on Identity Field Notes]({canonical})",
     "",
     "**Source first. AI summary second.**",
     "",
     f"**AI disclosure:** {article.get('disclosure') or 'This digest is AI-generated from linked sources. Verify important details at the original source.'}",
-    "",
-    "Identity Field Notes · IAM, PAM, IGA, NHI and identity security",
 ]
 
 body = "\n".join(lines)
@@ -123,7 +159,7 @@ payload = {
     "status": "draft",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v2",
+        "identity_field_notes_format": "morning-digest-v3",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
