@@ -8,13 +8,14 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
-      BUTTONDOWN_MODE: ${{ vars.BUTTONDOWN_MODE || 'draft' }}
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -42,9 +43,6 @@ jobs:
       - name: Build RSS and sitemap
         if: steps.gate.outputs.run == 'yes'
         run: python scripts/build_feeds.py
-      - name: Create / send Buttondown digest
-        if: steps.gate.outputs.run == 'yes' && env.BUTTONDOWN_API_KEY != ''
-        run: python scripts/push_buttondown.py
       - name: Commit publication update
         if: steps.gate.outputs.run == 'yes'
         run: |
@@ -53,3 +51,44 @@ jobs:
           git add data/ feed.xml sitemap.xml
           git diff --cached --quiet || git commit -m "publish: weekday identity field note"
           git push
+
+  deploy:
+    needs: publish
+    if: needs.publish.outputs.run == 'yes'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy today's Field Note
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  digest:
+    needs: [publish, deploy]
+    if: needs.publish.outputs.run == 'yes'
+    runs-on: ubuntu-latest
+    env:
+      BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+      BUTTONDOWN_MODE: ${{ vars.BUTTONDOWN_MODE || 'draft' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests
+      - name: Create or send Buttondown digest
+        if: env.BUTTONDOWN_API_KEY != ''
+        run: python scripts/push_buttondown.py
+      - name: Newsletter not configured
+        if: env.BUTTONDOWN_API_KEY == ''
+        run: echo "BUTTONDOWN_API_KEY is not configured; site publication completed without email."
