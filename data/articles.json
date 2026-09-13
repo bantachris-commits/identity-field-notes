@@ -4,14 +4,8 @@
     "date": "2026-09-12",
     "edition": "FIELD NOTES // 2026.09.12",
     "title": "The identity control plane is getting crowded",
-    "dek": "Okta pushes deeper into PAM and IGA, agent identity keeps moving into the IAM center, and session theft raises the bar for privileged authentication.",
-    "tags": [
-      "PAM",
-      "IAM",
-      "IGA",
-      "NHI",
-      "ITDR"
-    ],
+    "dek": "Okta pushes deeper into PAM and IGA, agent administration moves into the IAM control plane, and active cloud intrusions show why MFA alone is not a session-security strategy.",
+    "tags": ["PAM", "IAM", "IGA", "NHI", "ITDR"],
     "readTime": "7 min",
     "featured": true,
     "generatedBy": "AI + practitioner prompt",
@@ -20,32 +14,32 @@
       {
         "kicker": "Vendor Watch",
         "title": "Okta pushes deeper into PAM, IGA and ITDR",
-        "summary": "The strategic signal is bigger than any single feature: access governance, privileged access and threat response are converging into a common identity-security operating model.",
+        "summary": "Okta announced new governance and privileged-access capabilities alongside expanded identity threat detection through Permiso. The strategic signal is bigger than any single feature: governance, privileged access and threat response are being pulled into one identity-security operating model.",
         "why": "Teams that historically stitched together SSO, IGA and PAM should expect more overlap among vendors and more pressure to justify where each control should live.",
-        "source": "Okta",
-        "url": "https://www.okta.com/newsroom/press-releases/",
+        "source": "Okta newsroom",
+        "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
         "aiGenerated": true,
-        "confidence": "Source-linked"
+        "confidence": "Vendor claim"
       },
       {
         "kicker": "Machine IAM",
-        "title": "Agent governance and machine identity keep moving toward the IAM center",
-        "summary": "Identity platforms increasingly treat AI agents, workloads and machine identities as first-class IAM subjects rather than implementation edge cases.",
-        "why": "PAM programs should start defining ownership, credential lifecycle, authorization boundaries and kill-switch behavior for agent identities now.",
-        "source": "Microsoft Entra / industry sources",
-        "url": "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
+        "title": "IAM itself is becoming an agent-accessible control surface",
+        "summary": "Okta's Managed MCP Server exposes selected Okta management operations to AI agents through scoped OAuth and auditable tooling. It is another sign that agent identity is moving from an application edge case into the core IAM administration model.",
+        "why": "Identity teams need to define who can authorize an agent to administer IAM, which scopes it receives, how actions are attributed, and which operations still require human approval.",
+        "source": "Okta Product Innovation",
+        "url": "https://www.okta.com/blog/product-innovation/okta-managed-mcp-server-ai-agents/",
         "aiGenerated": true,
-        "confidence": "Source-linked"
+        "confidence": "Vendor claim"
       },
       {
         "kicker": "Threat",
-        "title": "Session theft makes \u2018MFA enabled\u2019 an incomplete control statement",
-        "summary": "Adversary-in-the-middle phishing and token replay continue to demonstrate that a completed MFA challenge does not guarantee a safe privileged session.",
-        "why": "Measure privileged authentication quality: phishing resistance, device trust, token protection, session risk and revocation capability, not merely MFA enrollment.",
-        "source": "Microsoft Security",
-        "url": "https://www.microsoft.com/security/blog/",
+        "title": "Session theft makes 'MFA enabled' an incomplete control statement",
+        "summary": "Microsoft is tracking active cloud intrusions that begin with passkey- and SSO-themed social engineering and proceed through AiTM or device-code flows, attacker-added authentication methods, Graph reconnaissance, and cloud data collection.",
+        "why": "Measure privileged authentication quality through phishing resistance, device trust, token protection, session risk and revocation capability, not merely MFA enrollment.",
+        "source": "Microsoft Security Research",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
         "aiGenerated": true,
-        "confidence": "Source-linked"
+        "confidence": "Primary source"
       }
     ]
   },
@@ -55,11 +49,7 @@
     "edition": "FIELD NOTE // MACHINE IAM",
     "title": "The service account problem is becoming the agent identity problem",
     "dek": "AI agents are adding speed and autonomy to an identity class most organizations already struggle to inventory and govern.",
-    "tags": [
-      "NHI",
-      "Agentic AI",
-      "PAM"
-    ],
+    "tags": ["NHI", "Agentic AI", "PAM"],
     "readTime": "5 min",
     "featured": false,
     "generatedBy": "AI + practitioner prompt",
@@ -74,6 +64,94 @@
         "url": "about.html",
         "aiGenerated": true,
         "confidence": "Commentary"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-10-runtime-authorization",
+    "date": "2026-09-10",
+    "edition": "FIELD NOTE // RUNTIME AUTHORIZATION",
+    "title": "Privilege is moving from account-level to action-level",
+    "dek": "AI agents are forcing PAM teams to ask a harder question than who got access: what was the identity allowed to do after the session opened?",
+    "tags": ["PAM", "AUTHZ", "NHI", "Agentic AI"],
+    "readTime": "6 min",
+    "featured": false,
+    "generatedBy": "AI-assisted archive backfill",
+    "disclosure": "AI-assisted synthesis of source-linked vendor and practitioner material. Product claims remain vendor claims.",
+    "stories": [
+      {
+        "kicker": "PAM",
+        "title": "Credential brokering is not the same thing as runtime authorization",
+        "summary": "Delinea argues that short-lived credentials solve only the credential-exposure problem. Its runtime-authorization framing moves policy evaluation inside the session so individual database statements, MCP tool calls and other actions can be evaluated and attributed.",
+        "why": "For autonomous or semi-autonomous access, a valid credential and approved connection may be necessary but insufficient. PAM architecture increasingly needs an answer for action-level policy and accountability.",
+        "source": "Delinea",
+        "url": "https://delinea.com/blog/credential-brokering-vs-runtime-authorization",
+        "aiGenerated": true,
+        "confidence": "Vendor claim"
+      },
+      {
+        "kicker": "Privilege",
+        "title": "Saviynt says AI turns privilege into a moving target",
+        "summary": "Saviynt frames privilege as a spectrum rather than a binary administrator/non-administrator label, especially when agents can discover new paths, call tools and accumulate effective reach during execution.",
+        "why": "Risk tiers for agents and non-human identities should account for reachable systems, delegation paths and potential privilege expansion, not just the permissions visible at task start.",
+        "source": "Saviynt",
+        "url": "https://saviynt.com/blog/how-privileged-can-your-ai-become",
+        "aiGenerated": true,
+        "confidence": "Vendor claim"
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "SailPoint pushes governance toward human, non-human and agentic identity together",
+        "summary": "SailPoint's machine-speed identity framing treats stolen credentials, session tokens, API keys and rapidly expanding non-human identities as part of one governance problem rather than separate IAM edge cases.",
+        "why": "The market is converging on a unified inventory and governance layer, while PAM and authorization controls increasingly handle the high-risk actions that follow.",
+        "source": "SailPoint",
+        "url": "https://www.sailpoint.com/blog/identity-at-machine-speed-securing-the-human-non-human-and-agentic-enterprise",
+        "aiGenerated": true,
+        "confidence": "Vendor claim"
+      }
+    ]
+  },
+  {
+    "id": "2026-09-09-session-trust",
+    "date": "2026-09-09",
+    "edition": "FIELD NOTE // SESSION TRUST",
+    "title": "Authentication succeeded. That does not mean the session is trustworthy.",
+    "dek": "Recent research makes the case for treating session tokens, MFA seed material and post-authentication persistence as privileged assets in their own right.",
+    "tags": ["IAM", "ITDR", "MFA", "Tokens", "PAM"],
+    "readTime": "6 min",
+    "featured": false,
+    "generatedBy": "AI-assisted archive backfill",
+    "disclosure": "AI-assisted synthesis of linked primary research and vendor threat analysis. Verify incident details at the original sources.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Passkey-themed lures are being used to reach cloud data after authentication",
+        "summary": "Microsoft describes active intrusions where social engineering leads to AiTM or device-code authentication, followed by new authentication methods, Microsoft Graph reconnaissance, and SharePoint, OneDrive and mailbox collection.",
+        "why": "A strong authentication ceremony does not end the identity-security problem. Session issuance, authentication-method changes, token use and post-login behavior need monitoring and fast revocation.",
+        "source": "Microsoft Security Research",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+        "aiGenerated": true,
+        "confidence": "Primary source"
+      },
+      {
+        "kicker": "Research",
+        "title": "Okta finds reusable session tokens in infostealer data",
+        "summary": "Okta Threat Intelligence examined stolen data containing still-usable session tokens and API keys for AI and cloud services, showing how attackers can replay authenticated state rather than perform a fresh sign-in.",
+        "why": "Session tokens should be treated like high-value credentials: constrain lifetime and context, detect replay, revoke aggressively after compromise, and avoid assuming MFA protects an already-issued session.",
+        "source": "Okta Threat Intelligence",
+        "url": "https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/",
+        "aiGenerated": true,
+        "confidence": "Research"
+      },
+      {
+        "kicker": "Threat",
+        "title": "MFA seed theft turns the second factor into reusable secret material",
+        "summary": "Delinea Labs' August threat outlook highlights SonicWall SMA1000 exploitation where attackers reportedly extracted session databases and TOTP seed configurations, allowing them to reuse the material instead of simply bypassing MFA.",
+        "why": "Treat TOTP seeds, session stores and authentication appliance secrets with the same lifecycle, access-control and rotation rigor as privileged credentials.",
+        "source": "Delinea Labs",
+        "url": "https://delinea.com/blog/stolen-mfa-seeds-and-identity-theft",
+        "aiGenerated": true,
+        "confidence": "Research"
       }
     ]
   }
