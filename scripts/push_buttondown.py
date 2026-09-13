@@ -5,9 +5,9 @@ Required: BUTTONDOWN_API_KEY
 Optional: BUTTONDOWN_MODE=draft|send (default draft)
 Optional: BUTTONDOWN_PREVIEW=true to create/update a separate, never-sent preview draft.
 
-Normal reruns update the existing matching draft. If the real edition was already
-sent, the script exits without sending it again. Preview mode uses a separate slug
-so an already-sent edition can still be inspected safely.
+The manual GitHub workflow named "Create email digest draft" is automatically
+preview mode. Normal weekday publishing keeps the real edition slug and duplicate
+protection.
 """
 import json
 import os
@@ -24,7 +24,9 @@ if not key:
 mode = os.getenv("BUTTONDOWN_MODE", "draft").lower()
 if mode not in {"draft", "send"}:
     raise SystemExit("BUTTONDOWN_MODE must be draft or send")
-preview = os.getenv("BUTTONDOWN_PREVIEW", "").strip().lower() in {"1", "true", "yes", "on"}
+workflow_name = os.getenv("GITHUB_WORKFLOW", "").strip().lower()
+preview_flag = os.getenv("BUTTONDOWN_PREVIEW", "").strip().lower() in {"1", "true", "yes", "on"}
+preview = preview_flag or workflow_name in {"create email digest draft", "create email digest preview"}
 if preview:
     mode = "draft"
 
