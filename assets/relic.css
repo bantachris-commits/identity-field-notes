@@ -1,0 +1,135 @@
+/* Secret archaeology-journal theme. Original pulp-adventure homage, not a reproduction of any film branding. */
+:root{
+  --relic-serif:"Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+  --relic-hand:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  --relic-type:"Courier New",Courier,monospace;
+}
+
+.secret-relic-wrap{display:flex;justify-content:center;align-items:center;padding:10px 0 5px;min-height:30px}
+.secret-relic{appearance:none;border:0;background:transparent;padding:2px;cursor:pointer;opacity:.38;filter:drop-shadow(0 2px 2px rgba(0,0,0,.28));transition:transform .18s ease,opacity .18s ease,filter .18s ease}
+.secret-relic img{display:block;width:22px;height:22px}
+.secret-relic:hover,.secret-relic:focus-visible{opacity:.9;transform:translateY(-2px) scale(1.08);outline:none;filter:drop-shadow(0 3px 4px rgba(0,0,0,.38))}
+html[data-theme="relic"] .secret-relic{opacity:1;transform:scale(1.12);filter:drop-shadow(0 0 7px rgba(235,191,69,.65))}
+html[data-theme="relic"] .secret-relic img{width:25px;height:25px}
+
+html[data-theme="relic"]{
+  color-scheme:light;
+  --ink:#352317;
+  --muted:#75614d;
+  --paper:#cdb47a;
+  --paper2:#b9985d;
+  --card:#f2e0ad;
+  --line:#7b5a35;
+  --accent:#9a2f22;
+  --deep:#21150d;
+  --green:#596946;
+  --red:#8b2f27;
+  --blue:#435d61;
+  --shadow:0 9px 24px rgba(55,32,13,.22);
+}
+html[data-theme="relic"] body{
+  color:var(--ink);
+  font-family:var(--relic-serif);
+  background-color:#c7ad73;
+  background-image:
+    radial-gradient(circle at 18% 22%,rgba(91,62,28,.09) 0 1px,transparent 1.5px),
+    radial-gradient(circle at 73% 64%,rgba(91,62,28,.08) 0 1px,transparent 1.5px),
+    repeating-linear-gradient(8deg,rgba(255,255,255,.025) 0 2px,rgba(83,55,26,.025) 2px 4px),
+    linear-gradient(#d6c08c,#c4a66b);
+}
+html[data-theme="relic"] body:after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:26;opacity:.22;
+  background-image:
+    radial-gradient(ellipse at 8% 10%,transparent 0 61%,rgba(72,43,21,.16) 62% 63%,transparent 64%),
+    radial-gradient(ellipse at 90% 72%,transparent 0 68%,rgba(72,43,21,.13) 69% 70%,transparent 71%);
+  mix-blend-mode:multiply;
+}
+html[data-theme="relic"] .ai-strip{background:#2a190f;color:#f2db9c;border-bottom:2px solid #8e2b20;font-family:var(--relic-type)}
+html[data-theme="relic"] .ai-strip a{color:#efc76c}
+html[data-theme="relic"] .topline{background:#694126;color:#f1dfb7;border-bottom:1px solid #3d2718;font-family:var(--relic-type);letter-spacing:.055em}
+html[data-theme="relic"] header{background:rgba(235,214,164,.95);border-bottom:1px solid #765430;box-shadow:0 5px 18px rgba(55,32,13,.15)}
+html[data-theme="relic"] .brand strong{font-family:var(--relic-serif);letter-spacing:.02em}
+html[data-theme="relic"] .mark{background:#8e2b20;color:#f7e5b2;border-color:#3a2114;box-shadow:3px 3px 0 #c59a45;font-family:var(--relic-type)}
+html[data-theme="relic"] h1,html[data-theme="relic"] h2,html[data-theme="relic"] h3{font-family:var(--relic-serif);color:#322015}
+html[data-theme="relic"] h1{letter-spacing:-.025em;text-shadow:0 1px 0 rgba(255,255,255,.25)}
+html[data-theme="relic"] .eyebrow,html[data-theme="relic"] .fine,html[data-theme="relic"] .pill,html[data-theme="relic"] .tag{font-family:var(--relic-type)}
+html[data-theme="relic"] .eyebrow{color:#8d2c21;letter-spacing:.09em}
+html[data-theme="relic"] .lede{color:#57422f;font-style:italic}
+html[data-theme="relic"] .btn{background:#8d2c21;border-color:#4a2517;color:#f8e9bd;box-shadow:3px 3px 0 #c49a46;font-family:var(--relic-type)}
+html[data-theme="relic"] .btn.alt{background:#e9d29a;color:#422b1b;border-color:#795735}
+html[data-theme="relic"] .theme-switcher{background:#e6cf98;border-color:#785535}
+html[data-theme="relic"] .theme-switcher button{color:#765f48}
+html[data-theme="relic"] .theme-switcher button:hover{background:#d7bb7b;color:#352317}
+html[data-theme="relic"] .theme-switcher button[aria-pressed="true"]{background:#4a2c1a;color:#f1dda8}
+
+html[data-theme="relic"] .story,
+html[data-theme="relic"] .card,
+html[data-theme="relic"] .sidecard,
+html[data-theme="relic"] .archive-item,
+html[data-theme="relic"] .radar-item,
+html[data-theme="relic"] .discussion,
+html[data-theme="relic"] .ifn-post,
+html[data-theme="relic"] .ifn-comment,
+html[data-theme="relic"] .notice,
+html[data-theme="relic"] .transparency-box,
+html[data-theme="relic"] .sponsor-card{
+  position:relative;
+  background-color:#f0ddaa;
+  background-image:
+    linear-gradient(90deg,transparent 0 42px,rgba(135,49,37,.16) 43px 44px,transparent 45px),
+    repeating-linear-gradient(0deg,transparent 0 28px,rgba(87,93,86,.13) 29px 30px);
+  border:1px solid #85633f;
+  box-shadow:0 5px 12px rgba(74,45,22,.16),inset 0 0 28px rgba(151,105,49,.08);
+}
+html[data-theme="relic"] .story:before,
+html[data-theme="relic"] .ifn-post:before,
+html[data-theme="relic"] .ifn-comment:before,
+html[data-theme="relic"] .radar-item:before{
+  content:"FIELD JOURNAL";
+  display:block;
+  margin:-2px 0 8px;
+  color:#8a3328;
+  font:700 10px var(--relic-type);
+  letter-spacing:.14em;
+  transform:rotate(-.7deg);
+}
+html[data-theme="relic"] .story h2,
+html[data-theme="relic"] .ifn-post h3,
+html[data-theme="relic"] .ifn-comment h3,
+html[data-theme="relic"] .radar-item h3,
+html[data-theme="relic"] .archive-item h3{
+  font-family:var(--relic-hand);
+  font-weight:700;
+  line-height:1.25;
+  color:#3a291d;
+}
+html[data-theme="relic"] .story p,
+html[data-theme="relic"] .ifn-comment-body,
+html[data-theme="relic"] .ifn-post p,
+html[data-theme="relic"] .radar-item p,
+html[data-theme="relic"] .archive-item p{color:#4e3a28}
+html[data-theme="relic"] .why{background:#e6ce94;border-left-color:#8e2b20;font-family:var(--relic-serif)}
+html[data-theme="relic"] .readmore{color:#842d24;font-family:var(--relic-type);font-weight:700}
+html[data-theme="relic"] .pill.ai{background:#d8b979;border-color:#8d6439;color:#4a2b17}
+html[data-theme="relic"] .pill.source{background:#e5d2a1;border-color:#887052;color:#3d3124}
+html[data-theme="relic"] .pill.human{background:#d1d2a4;border-color:#687050;color:#37412f}
+html[data-theme="relic"] .score{background:#8d2c21;color:#fae7b8;border-color:#4c2819;box-shadow:2px 2px 0 #bf9949}
+html[data-theme="relic"] .newsletter input,html[data-theme="relic"] .newsletter select,html[data-theme="relic"] .search,
+html[data-theme="relic"] .ifn-compose input,html[data-theme="relic"] .ifn-compose textarea,html[data-theme="relic"] .ifn-reply-form textarea{
+  background:#f6e6bb;color:#382519;border-color:#806044;font-family:var(--relic-type)
+}
+html[data-theme="relic"] .plain-table th{background:#d7b979;color:#392418;font-family:var(--relic-type)}
+html[data-theme="relic"] .ad-slot{background:rgba(101,66,31,.08);border-color:#8f714d;color:#80694f}
+html[data-theme="relic"] footer{background:#2b1a10;color:#ecd8a6;border-top:4px solid #8c2b21}
+html[data-theme="relic"] footer a{color:#f0d99d}
+html[data-theme="relic"] footer p{color:#c9b88f}
+html[data-theme="relic"] .footer-bottom{color:#a99674;border-top-color:#5b402a}
+html[data-theme="relic"] ::selection{background:#8d2c21;color:#fff1c7}
+
+@media(max-width:700px){
+  html[data-theme="relic"] .story,
+  html[data-theme="relic"] .ifn-post,
+  html[data-theme="relic"] .ifn-comment,
+  html[data-theme="relic"] .radar-item{background-image:repeating-linear-gradient(0deg,transparent 0 27px,rgba(87,93,86,.12) 28px 29px)}
+  .secret-relic img{width:24px;height:24px}
+}
