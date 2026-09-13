@@ -5,6 +5,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 jobs:
   radar:
     runs-on: ubuntu-latest
@@ -26,3 +28,20 @@ jobs:
           git add data/radar.json
           git diff --cached --quiet || git commit -m "radar: refresh identity reading queue"
           git push
+  deploy:
+    needs: radar
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy refreshed radar
+        id: deployment
+        uses: actions/deploy-pages@v4
