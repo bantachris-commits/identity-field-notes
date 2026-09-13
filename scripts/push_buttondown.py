@@ -9,6 +9,7 @@ The manual GitHub workflow named "Create email digest draft" is automatically
 preview mode. Normal weekday publishing keeps the real edition slug and duplicate
 protection.
 """
+import html
 import json
 import os
 import re
@@ -20,6 +21,11 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://identityfieldnotes.com/"
+NAVY = "#102934"
+AMBER = "#d18b18"
+PAPER = "#f6f1e7"
+TEAL = "#0b5e68"
+MUTED = "#5f6b6f"
 key = os.getenv("BUTTONDOWN_API_KEY")
 if not key:
     raise SystemExit("BUTTONDOWN_API_KEY is not set")
@@ -34,8 +40,10 @@ if preview:
 
 articles = json.loads((ROOT / "data" / "articles.json").read_text(encoding="utf-8"))
 
+
 def is_guest(article):
     return article.get("contentType") == "guest" or article.get("humanWritten") is True
+
 
 def human_date(value):
     try:
@@ -44,12 +52,15 @@ def human_date(value):
     except Exception:
         return value
 
+
 def slugify(value):
     value = re.sub(r"[^a-z0-9]+", "-", str(value or "").lower()).strip("-")
     return value[:80] or "event"
 
+
 def event_id(event):
     return event.get("id") or f"{event.get('date', 'event')}-{slugify(event.get('name'))}"
+
 
 def event_date(event):
     start = event.get("date") or ""
@@ -65,6 +76,11 @@ def event_date(event):
         pass
     return f"{human_date(start)} - {human_date(end)}"
 
+
+def e(value):
+    return html.escape(str(value or ""), quote=True)
+
+
 article = next((x for x in articles if x.get("featured") and not is_guest(x)), None)
 if article is None:
     article = next((x for x in articles if not is_guest(x)), None)
@@ -75,6 +91,7 @@ stories = article.get("stories") or []
 canonical = f"{SITE}article.html?id={article['id']}"
 slug = f"{article['id']}-preview" if preview else article["id"]
 subject_prefix = "[PREVIEW] " if preview else ""
+digest_date = human_date(article.get("date", ""))
 
 try:
     events = json.loads((ROOT / "data" / "events.json").read_text(encoding="utf-8"))
@@ -83,24 +100,27 @@ except Exception:
 article_date = article.get("date") or ""
 upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:3]
 
-lines = [
-    "# Identity Field Notes",
-    "",
-    f"Here's your identity-security digest for **{human_date(article.get('date', ''))}**.",
-    "",
-    "## TL;DR // 60-second brief",
-    "",
+parts = [
+    '<!-- buttondown-editor-mode: fancy -->',
+    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;background:{NAVY};border-radius:4px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.4px;color:{AMBER};text-transform:uppercase;">Identity Field Notes</div>
+<div style="font-family:Georgia,Times New Roman,serif;font-size:25px;line-height:1.2;font-weight:700;color:#ffffff;margin-top:7px;">Today&apos;s identity-security digest</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#d9e4e6;margin-top:8px;">{e(digest_date)}</div>
+</td></tr></table>''',
+    f'''<div style="background:{PAPER};border-left:4px solid {AMBER};padding:16px 18px;margin:0 0 26px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
+    '<ul style="margin:0;padding-left:20px;">',
 ]
 
 if stories:
     for story in stories:
         kicker = story.get("kicker") or "Identity Security"
         title = story.get("title") or "Untitled story"
-        lines.append(f"- **{kicker}: {title}**")
+        parts.append(f'<li style="margin:0 0 8px 0;line-height:1.45;"><strong>{e(kicker)}:</strong> {e(title)}</li>')
 else:
-    lines.append("- Quiet morning. No story made the cut.")
-
-lines += ["", "---", ""]
+    parts.append('<li>Quiet morning. No story made the cut.</li>')
+parts += ['</ul></div>']
 
 for index, story in enumerate(stories, 1):
     kicker = story.get("kicker") or "Identity Security"
@@ -111,62 +131,67 @@ for index, story in enumerate(stories, 1):
     source = story.get("source") or "Original source"
     source_url = urljoin(SITE, story.get("url") or canonical)
 
-    lines += [
-        f"## {index}. {title}",
-        "",
-        f"**{kicker} · {confidence}**",
-        "",
-        summary,
-        "",
+    parts += [
+        f'<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin:0 0 6px 0;">{e(kicker)} · {e(confidence)}</div>',
+        f'<h2 style="font-family:Georgia,Times New Roman,serif;font-size:23px;line-height:1.25;color:{NAVY};margin:0 0 12px 0;">{index}. {e(title)}</h2>',
+        f'<p style="font-size:16px;line-height:1.6;color:#202a2e;margin:0 0 14px 0;">{e(summary)}</p>',
     ]
     if why:
-        lines += [f"> **Why it matters:** {why}", ""]
-    lines += [f"[Original source — {source}]({source_url})", "", "---", ""]
+        parts.append(f'''<div style="background:{PAPER};border-left:4px solid {AMBER};padding:12px 15px;margin:14px 0 16px 0;line-height:1.55;color:#202a2e;">
+<strong style="color:{NAVY};">Why it matters:</strong> {e(why)}
+</div>''')
+    parts += [
+        f'<p style="margin:0 0 28px 0;"><a href="{e(source_url)}" style="color:{TEAL};font-weight:700;text-decoration:underline;">Original source — {e(source)} ↗</a></p>',
+        '<div style="height:1px;background:#d9d4c8;margin:0 0 26px 0;"></div>',
+    ]
 
 if upcoming_events:
-    lines += ["## Upcoming conferences", "", "A few identity events coming up soon:", ""]
+    parts += [
+        f'''<div style="background:#eef4f3;border-top:3px solid {TEAL};padding:18px 18px 10px 18px;margin:0 0 26px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:6px;">Upcoming conferences</div>
+<p style="margin:0 0 14px 0;color:{MUTED};">A few identity events coming up soon.</p>'''
+    ]
     for event in upcoming_events:
         eid = event_id(event)
         event_url = event.get("url") or f"{SITE}events.html#{eid}"
         discuss_url = f"{SITE}events.html#{eid}"
-        lines += [
-            f"- **[{event.get('name', 'Identity event')}]({event_url})** · {event_date(event)} · {event.get('location', 'Location TBA')}",
-            f"  [Discuss with attendees on IFN]({discuss_url})",
-        ]
-    lines += ["", "---", ""]
+        parts.append(f'''<div style="padding:0 0 14px 0;margin:0 0 14px 0;border-bottom:1px solid #cfdcda;">
+<div style="font-weight:700;color:{NAVY};"><a href="{e(event_url)}" style="color:{NAVY};text-decoration:none;">{e(event.get('name', 'Identity event'))}</a></div>
+<div style="font-size:14px;line-height:1.5;color:{MUTED};margin-top:4px;">{e(event_date(event))} · {e(event.get('location', 'Location TBA'))}</div>
+<div style="margin-top:6px;"><a href="{e(discuss_url)}" style="color:{TEAL};font-weight:700;">Discuss with attendees on IFN →</a></div>
+</div>''')
+    parts.append('</div>')
 
-lines += [
-    "## From the field",
-    "",
-    "Something missing, overstated, or wrong? Add evidence, field experience, or a correction directly under the story.",
-    "",
-    f"[Read and discuss today's digest on Identity Field Notes]({canonical})",
-    "",
-    "**Source first. AI summary second.**",
-    "",
-    f"**AI disclosure:** {article.get('disclosure') or 'This digest is AI-generated from linked sources. Verify important details at the original source.'}",
+parts += [
+    f'''<div style="background:{NAVY};padding:18px 20px;margin:0 0 18px 0;color:#ffffff;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin-bottom:8px;">From the field</div>
+<div style="font-size:15px;line-height:1.55;">Something missing, overstated, or wrong? Add evidence, field experience, or a correction directly under the story.</div>
+<div style="margin-top:12px;"><a href="{e(canonical)}" style="color:#ffffff;font-weight:700;text-decoration:underline;">Read and discuss today&apos;s digest on Identity Field Notes →</a></div>
+</div>''',
+    f'<p style="font-size:12px;line-height:1.5;color:{MUTED};"><strong>Source first. AI summary second.</strong><br>{e(article.get("disclosure") or "This digest is AI-generated from linked sources. Verify important details at the original source.")}</p>',
 ]
 
-body = "\n".join(lines)
+body = "\n".join(parts)
 headers = {"Authorization": f"Token {key}", "Content-Type": "application/json"}
 payload = {
-    "subject": f"{subject_prefix}IFN // {article['title']}",
+    "subject": f"{subject_prefix}Identity Field Notes // {digest_date}",
     "slug": slug,
     "body": body,
     "canonical_url": canonical,
-    "description": article.get("dek", ""),
+    "description": f"Today's identity-security digest for {digest_date}.",
     "commenting_mode": "disabled",
     "status": "draft",
+    "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v3",
+        "identity_field_notes_format": "morning-digest-v4",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
 
 listing = requests.get("https://api.buttondown.com/v1/emails", headers=headers, timeout=30)
 listing.raise_for_status()
-existing = next((e for e in listing.json().get("results", []) if e.get("slug") == slug), None)
+existing = next((x for x in listing.json().get("results", []) if x.get("slug") == slug), None)
 if existing and existing.get("status") == "sent":
     if preview:
         raise SystemExit("The preview copy was manually sent in Buttondown. Delete it or change its slug before regenerating a preview.")
