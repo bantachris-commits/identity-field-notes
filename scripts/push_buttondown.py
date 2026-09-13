@@ -23,9 +23,12 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://identityfieldnotes.com/"
 NAVY = "#102934"
 AMBER = "#d18b18"
-PAPER = "#f6f1e7"
 TEAL = "#0b5e68"
 MUTED = "#5f6b6f"
+COOL = "#f3f7f8"
+COOL_2 = "#eaf1f2"
+LINE = "#d6e0e2"
+WARM_TAG = "#fff5df"
 key = os.getenv("BUTTONDOWN_API_KEY")
 if not key:
     raise SystemExit("BUTTONDOWN_API_KEY is not set")
@@ -111,10 +114,10 @@ parts = [
 <td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#d9e4e6;white-space:nowrap;">{e(digest_date)}</td>
 </tr></table>
 </td></tr>
-<tr><td style="padding:9px 14px;background:{PAPER};border:1px solid #ddd4c2;border-top:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.7px;color:{NAVY};text-transform:uppercase;text-align:center;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; // &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
+<tr><td style="padding:9px 14px;background:#f7f9f9;border:1px solid {LINE};border-top:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.7px;color:{NAVY};text-transform:uppercase;text-align:center;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; // &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
 </table>''',
-    f'''<div style="background:{PAPER};border-left:4px solid {AMBER};padding:16px 18px;margin:0 0 26px 0;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
+    f'''<div style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
     '<ul style="margin:0;padding-left:20px;">',
 ]
 
@@ -122,7 +125,7 @@ if stories:
     for story in stories:
         kicker = story.get("kicker") or "Identity Security"
         title = story.get("title") or "Untitled story"
-        parts.append(f'<li style="margin:0 0 8px 0;line-height:1.45;"><strong>{e(kicker)}:</strong> {e(title)}</li>')
+        parts.append(f'<li style="margin:0 0 9px 0;line-height:1.45;color:#202a2e;"><strong style="color:{NAVY};">{e(kicker)}:</strong> {e(title)}</li>')
 else:
     parts.append('<li>Quiet morning. No story made the cut.</li>')
 parts += ['</ul></div>']
@@ -137,30 +140,30 @@ for index, story in enumerate(stories, 1):
     source_url = urljoin(SITE, story.get("url") or canonical)
 
     parts += [
-        f'<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin:0 0 6px 0;">{e(kicker)} · {e(confidence)}</div>',
+        f'''<div style="margin:0 0 8px 0;"><span style="display:inline-block;background:{WARM_TAG};border:1px solid #ecd19b;padding:4px 7px;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;letter-spacing:.8px;color:#8a5d0a;text-transform:uppercase;">{e(kicker)}</span><span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.6px;color:{MUTED};text-transform:uppercase;margin-left:7px;">{e(confidence)}</span></div>''',
         f'<h2 style="font-family:Georgia,Times New Roman,serif;font-size:23px;line-height:1.25;color:{NAVY};margin:0 0 12px 0;">{index}. {e(title)}</h2>',
-        f'<p style="font-size:16px;line-height:1.6;color:#202a2e;margin:0 0 14px 0;">{e(summary)}</p>',
+        f'<p style="font-size:16px;line-height:1.62;color:#202a2e;margin:0 0 14px 0;">{e(summary)}</p>',
     ]
     if why:
-        parts.append(f'''<div style="background:{PAPER};border-left:4px solid {AMBER};padding:12px 15px;margin:14px 0 16px 0;line-height:1.55;color:#202a2e;">
+        parts.append(f'''<div style="background:#f8fbfb;border:1px solid {LINE};border-left:4px solid {TEAL};padding:12px 15px;margin:15px 0 17px 0;line-height:1.55;color:#202a2e;">
 <strong style="color:{NAVY};">Why it matters:</strong> {e(why)}
 </div>''')
     parts += [
-        f'<p style="margin:0 0 28px 0;"><a href="{e(source_url)}" style="color:{TEAL};font-weight:700;text-decoration:underline;">Original source — {e(source)} ↗</a></p>',
-        '<div style="height:1px;background:#d9d4c8;margin:0 0 26px 0;"></div>',
+        f'<p style="margin:0 0 26px 0;"><a href="{e(source_url)}" style="color:{TEAL};font-weight:700;text-decoration:underline;">Original source — {e(source)} ↗</a></p>',
+        f'<div style="height:1px;background:{LINE};margin:0 0 28px 0;"></div>',
     ]
 
 if upcoming_events:
     parts += [
-        f'''<div style="background:#eef4f3;border-top:3px solid {TEAL};padding:18px 18px 10px 18px;margin:0 0 26px 0;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:6px;">Upcoming conferences</div>
-<p style="margin:0 0 14px 0;color:{MUTED};">A few identity events coming up soon.</p>'''
+        f'''<div style="background:#f7fafb;border:1px solid {LINE};border-top:3px solid {TEAL};padding:18px 18px 8px 18px;margin:0 0 28px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:5px;">Upcoming conferences</div>
+<p style="margin:0 0 15px 0;color:{MUTED};">A few identity events coming up soon.</p>'''
     ]
     for event in upcoming_events:
         eid = event_id(event)
         event_url = event.get("url") or f"{SITE}events.html#{eid}"
         discuss_url = f"{SITE}events.html#{eid}"
-        parts.append(f'''<div style="padding:0 0 14px 0;margin:0 0 14px 0;border-bottom:1px solid #cfdcda;">
+        parts.append(f'''<div style="padding:0 0 14px 0;margin:0 0 14px 0;border-bottom:1px solid {LINE};">
 <div style="font-weight:700;color:{NAVY};"><a href="{e(event_url)}" style="color:{NAVY};text-decoration:none;">{e(event.get('name', 'Identity event'))}</a></div>
 <div style="font-size:14px;line-height:1.5;color:{MUTED};margin-top:4px;">{e(event_date(event))} · {e(event.get('location', 'Location TBA'))}</div>
 <div style="margin-top:6px;"><a href="{e(discuss_url)}" style="color:{TEAL};font-weight:700;">Discuss with attendees on IFN →</a></div>
@@ -169,7 +172,7 @@ if upcoming_events:
 
 parts += [
     f'''<div style="background:{NAVY};padding:18px 20px;margin:0 0 18px 0;color:#ffffff;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin-bottom:8px;">From the field</div>
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin-bottom:8px;">From the field</div>
 <div style="font-size:15px;line-height:1.55;">Something missing, overstated, or wrong? Add evidence, field experience, or a correction directly under the story.</div>
 <div style="margin-top:12px;"><a href="{e(canonical)}" style="color:#ffffff;font-weight:700;text-decoration:underline;">Read and discuss today&apos;s digest on Identity Field Notes →</a></div>
 </div>''',
@@ -189,7 +192,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v5",
+        "identity_field_notes_format": "morning-digest-v6",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
