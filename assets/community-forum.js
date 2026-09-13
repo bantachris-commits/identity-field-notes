@@ -2,6 +2,7 @@
   const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   const dt=s=>new Date(s).toLocaleString("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"});
   const text=s=>esc(s).replace(/\n/g,"<br>");
+  const flair=p=>p?.flair?`<span class="ifn-flair">${esc(p.flair)}</span>`:"";
 
   async function setup(){
     const articleId="community-general",host=document.querySelector("#giscusHost");
@@ -25,7 +26,7 @@
         if(!roots.length){out.innerHTML='<div class="empty"><strong>No posts yet.</strong><br>Start the first field discussion.</div>';return}
         out.innerHTML=roots.slice().reverse().map(c=>{
           const p=profiles.get(c.user_id)||{},kids=replies.filter(r=>r.parent_id===c.id);
-          return `<article class="ifn-post"><div class="eyebrow">COMMUNITY POST</div><h3>${esc(c.title||"Field discussion")}</h3><div class="ifn-thread-meta"><strong>${esc(p.display_name||"Identity practitioner")}</strong><span class="fine">${dt(c.created_at)}</span>${p.headline?`<span class="fine">${esc(p.headline)}</span>`:""}</div><div class="ifn-comment-body">${text(c.body)}</div>${user?`<button class="ifn-reply-toggle" type="button" data-reply-toggle="${c.id}">Reply</button><form class="ifn-reply-form" data-reply-form="${c.id}" hidden><textarea name="body" rows="3" maxlength="8000" required placeholder="Add a useful reply…"></textarea><button class="btn small" type="submit">Post reply</button><span class="fine" data-status></span></form>`:""}${kids.length?`<div class="ifn-replies">${kids.map(r=>{const rp=profiles.get(r.user_id)||{};return `<div class="ifn-reply"><div class="ifn-comment-head"><strong>${esc(rp.display_name||"Identity practitioner")}</strong><span class="fine">${dt(r.created_at)}</span></div>${rp.headline?`<div class="fine">${esc(rp.headline)}</div>`:""}<div class="ifn-comment-body">${text(r.body)}</div></div>`}).join("")}</div>`:""}</article>`
+          return `<article class="ifn-post"><div class="eyebrow">COMMUNITY POST</div><h3>${esc(c.title||"Field discussion")}</h3><div class="ifn-thread-meta"><strong>${esc(p.display_name||"Identity practitioner")}</strong>${flair(p)}<span class="fine">${dt(c.created_at)}</span>${p.headline?`<span class="fine">${esc(p.headline)}</span>`:""}</div><div class="ifn-comment-body">${text(c.body)}</div>${user?`<button class="ifn-reply-toggle" type="button" data-reply-toggle="${c.id}">Reply</button><form class="ifn-reply-form" data-reply-form="${c.id}" hidden><textarea name="body" rows="3" maxlength="8000" required placeholder="Add a useful reply…"></textarea><button class="btn small" type="submit">Post reply</button><span class="fine" data-status></span></form>`:""}${kids.length?`<div class="ifn-replies">${kids.map(r=>{const rp=profiles.get(r.user_id)||{};return `<div class="ifn-reply"><div class="ifn-comment-head"><strong>${esc(rp.display_name||"Identity practitioner")}</strong>${flair(rp)}<span class="fine">${dt(r.created_at)}</span></div>${rp.headline?`<div class="fine">${esc(rp.headline)}</div>`:""}<div class="ifn-comment-body">${text(r.body)}</div></div>`}).join("")}</div>`:""}</article>`
         }).join("");
         wireReplies(out);
       }catch(err){out.innerHTML=`<div class="empty">${esc(err.message)}</div>`}
