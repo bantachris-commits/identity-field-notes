@@ -7,7 +7,21 @@
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
+  function savedTheme(){
+    let theme=currentTheme();
+    try{const saved=localStorage.getItem(STORAGE_KEY);if(THEMES.includes(saved))theme=saved}catch(e){}
+    return THEMES.includes(theme)?theme:"field";
+  }
   function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#d61f27":theme==="relic"?"#694126":"#102934"}
+
+  function ensureRelicStyles(){
+    if(document.querySelector('link[data-ifn-relic]'))return;
+    const css=document.createElement("link");
+    css.rel="stylesheet";
+    css.href="assets/relic.css?v=20260913-1";
+    css.dataset.ifnRelic="true";
+    document.head.appendChild(css);
+  }
 
   function setFavicon(theme){
     const icon=document.querySelector('link[rel~="icon"]');
@@ -159,9 +173,10 @@
 
   const observer=new MutationObserver(()=>setGiscusTheme(currentTheme()));
   function boot(){
+    ensureRelicStyles();
     installControls();
     installSecretRelic();
-    applyTheme(currentTheme(),{persist:false});
+    applyTheme(savedTheme(),{persist:false});
     if(document.body)observer.observe(document.body,{childList:true,subtree:true});
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true}); else boot();
