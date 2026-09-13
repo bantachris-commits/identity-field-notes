@@ -1,5 +1,6 @@
 (() => {
   const cfg = () => window.IFN_CONFIG?.community || {};
+  const GOOGLE_CLIENT_ID = "367776249426-5mlmbnh1u52ddumpjtou1bth7otcjadu.apps.googleusercontent.com";
   let client;
 
   function getClient() {
@@ -18,13 +19,13 @@
   }
 
   async function googleSignIn(host) {
-    const sb = getClient(), c = cfg();
-    if (!sb || !c.googleClientId || !window.google?.accounts?.id) return;
+    const sb = getClient();
+    if (!sb || !window.google?.accounts?.id) return;
     const raw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32))));
     const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
     const nonce = [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2,"0")).join("");
     window.google.accounts.id.initialize({
-      client_id: c.googleClientId,
+      client_id: GOOGLE_CLIENT_ID,
       nonce,
       use_fedcm_for_prompt: true,
       callback: async response => {
@@ -46,8 +47,7 @@
       return;
     }
     host.innerHTML = `<div class="community-auth-box"><div data-google-login></div><div class="fine">or use an email magic link</div><form data-magic-link><input name="email" type="email" required placeholder="you@company.com" aria-label="Email address"><button class="btn small" type="submit">Email me a sign-in link</button></form><div class="fine" data-auth-status></div></div>`;
-    const googleHost = host.querySelector("[data-google-login]");
-    if (cfg().googleClientId) await googleSignIn(googleHost); else googleHost.innerHTML = `<span class="fine">Google sign-in is being connected.</span>`;
+    await googleSignIn(host.querySelector("[data-google-login]"));
     host.querySelector("[data-magic-link]")?.addEventListener("submit",async e=>{
       e.preventDefault();
       const email = new FormData(e.currentTarget).get("email");
