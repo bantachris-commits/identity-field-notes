@@ -1,16 +1,6 @@
 #!/usr/bin/env python3
-"""Generate a source-linked weekday Identity Field Note using OpenAI web search.
-
-Required secret:
-  OPENAI_API_KEY
-Optional:
-  OPENAI_MODEL=gpt-5.6-luna
-
-The model is used as a research/summarization engine. It is explicitly instructed
-not to fabricate URLs and to prefer primary sources. The script validates the
-output shape before publishing it into data/articles.json.
-"""
-import os, json, re, sys
+"""Generate a source-linked weekday Identity Field Note using OpenAI web search."""
+import os, json, re
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -35,19 +25,20 @@ Research the most important NEW or newly relevant developments from roughly the 
 
 Also search up to the last 7 days for material breaches or security incidents where identity controls were a documented root cause or contributing factor. Relevant examples include stolen or reused credentials, weak or bypassed MFA, session/token theft, overprivileged identities, stale accounts, exposed secrets, service-account abuse, OAuth abuse, poor offboarding, or failures in authentication/authorization. Include an incident only when reliable evidence actually connects identity controls to what happened. Do not infer causation just because an identity vendor claims its product could have prevented the breach.
 
-Pay special attention to CyberArk, Delinea, SailPoint, Microsoft Entra, Okta/Auth0, BeyondTrust, Saviynt, AWS, Google Cloud, FIDO, CISA, major security research, and material incidents.
+Pay special attention to CyberArk, Delinea, SailPoint, Microsoft Entra, Okta/Auth0, BeyondTrust, Saviynt, AWS, Google Cloud, FIDO, CISA, major security research, standards work and material incidents.
 
 Editorial rules:
-1. Prefer original incident disclosures, regulatory filings, government/CERT advisories, standards bodies, primary research, court documents, and direct technical advisories. Use reputable independent reporting or analysis when it adds necessary context.
-2. For breaches/incidents, do NOT use a security vendor's marketing or "our tool would have stopped this" article as the primary evidence. Vendor material is acceptable only when that vendor is itself the affected party, published the original advisory/research, or provides uniquely relevant technical evidence.
-3. Never invent a URL. Every story MUST include a real URL you actually found through web search.
-4. Distinguish vendor claims from independently established facts.
-5. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
-6. Avoid duplicating the same announcement from multiple outlets.
-7. Write for experienced practitioners. Be concise and slightly skeptical.
-8. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
-9. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
-10. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
+1. Prefer original incident disclosures, regulatory filings, government/CERT advisories, standards bodies, primary research, court documents and direct technical advisories. Use reputable independent reporting when it adds necessary context.
+2. For breaches/incidents, do NOT use a security vendor's marketing or 'our tool would have stopped this' article as primary evidence. Vendor material is acceptable when that vendor is the affected party, published the original advisory/research, or provides uniquely relevant technical evidence.
+3. Every story URL MUST be the canonical page for that exact article, advisory, filing, release note or research item. Never use a publication homepage, blog index, newsroom listing, category/tag page, generic press-release directory or vendor landing page when a story-level URL exists.
+4. Never invent a URL. Every story MUST include a real URL you actually found through web search.
+5. Distinguish vendor claims from independently established facts.
+6. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
+7. Avoid duplicating the same announcement from multiple outlets.
+8. Write for experienced practitioners. Be concise and slightly skeptical.
+9. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
+10. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
+11. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
 
 Return ONLY valid JSON. No markdown fence. Shape:
 {{
@@ -62,13 +53,22 @@ Return ONLY valid JSON. No markdown fence. Shape:
       "summary": "2-3 sentence factual summary",
       "why": "1-2 sentence practitioner implication",
       "source": "source name",
-      "url": "https://real-source-url",
+      "url": "https://exact-story-url",
       "confidence": "Primary source|Multiple sources|Independent reporting|Vendor claim|Research"
     }}
   ]
 }}
 Return 3 to 6 stories. If the morning is quiet, return fewer stories rather than filler.
 """
+
+GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources"}
+GENERIC_URLS={
+ "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
+ "https://www.microsoft.com/security/blog",
+ "https://www.okta.com/blog/threat-intelligence",
+ "https://www.beyondtrust.com/blog",
+ "https://delinea.com/blog",
+}
 
 def extract_json(text):
     text=text.strip()
@@ -77,21 +77,32 @@ def extract_json(text):
         text=re.sub(r'\s*```$','',text)
     return json.loads(text)
 
-def valid_url(u):
+def specific_url(u):
     try:
-        p=urlparse(u); return p.scheme in ('http','https') and bool(p.netloc)
+        p=urlparse(u)
+        if p.scheme not in ('http','https') or not p.netloc:return False
+        normalized=f"{p.scheme}://{p.netloc}{p.path}".rstrip('/')
+        if normalized.lower() in {x.lower().rstrip('/') for x in GENERIC_URLS}:return False
+        if p.path.rstrip('/').lower() in GENERIC_PATHS:return False
+        return True
     except Exception:return False
 
-client=OpenAI()
+client=OpenAI(timeout=180.0,max_retries=1)
 resp=client.responses.create(model=MODEL,tools=[{"type":"web_search"}],input=PROMPT)
 payload=extract_json(resp.output_text)
-if not isinstance(payload.get('stories'),list) or not (1 <= len(payload['stories']) <= 8):
-    raise SystemExit('Invalid story list')
-for s in payload['stories']:
-    for k in ('title','summary','why','source','url'):
-        if not s.get(k): raise SystemExit(f'Missing {k}')
-    if not valid_url(s['url']): raise SystemExit(f'Invalid URL: {s["url"]}')
-    s['aiGenerated']=True
+raw=payload.get('stories',[])
+if not isinstance(raw,list):raise SystemExit('Invalid story list')
+clean=[];seen=set()
+for s in raw:
+    if not isinstance(s,dict):continue
+    if any(not s.get(k) for k in ('title','summary','why','source','url')):continue
+    if not specific_url(s['url']):
+        print('Skipping generic or invalid source URL:',s.get('url'),flush=True);continue
+    key=s['url'].rstrip('/').lower()
+    if key in seen:continue
+    seen.add(key);s['aiGenerated']=True;clean.append(s)
+if not clean:raise SystemExit('No stories survived source-link validation')
+payload['stories']=clean[:6]
 
 edition={
   'id':f'{TODAY}-morning-brief','date':TODAY,'edition':'FIELD NOTES // '+TODAY.replace('-','.'),
