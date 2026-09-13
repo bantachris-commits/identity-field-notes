@@ -1,7 +1,7 @@
 (()=>{
   const THEMES=["field","dark","matrix","jurassic","relic"];
   const SWITCHER_THEMES=["field","dark","relic","jurassic"];
-  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic",relic:"Jungle Cruise"};
+  const LABELS={field:"Light",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic",relic:"Jungle Cruise"};
   const STORAGE_KEY="ifn-theme";
   const PRE_SECRET_KEY="ifn-pre-matrix-theme";
   const JUNGLE_JOKES=[
