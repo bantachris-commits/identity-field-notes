@@ -33,16 +33,21 @@ Research the most important NEW or newly relevant developments from roughly the 
 - identity threat detection / identity attacks
 - AI agent identity and authorization
 
+Also search up to the last 7 days for material breaches or security incidents where identity controls were a documented root cause or contributing factor. Relevant examples include stolen or reused credentials, weak or bypassed MFA, session/token theft, overprivileged identities, stale accounts, exposed secrets, service-account abuse, OAuth abuse, poor offboarding, or failures in authentication/authorization. Include an incident only when reliable evidence actually connects identity controls to what happened. Do not infer causation just because an identity vendor claims its product could have prevented the breach.
+
 Pay special attention to CyberArk, Delinea, SailPoint, Microsoft Entra, Okta/Auth0, BeyondTrust, Saviynt, AWS, Google Cloud, FIDO, CISA, major security research, and material incidents.
 
 Editorial rules:
-1. Prefer original vendor advisories, primary research, standards bodies and government sources. Use reputable secondary reporting when it adds necessary context.
-2. Never invent a URL. Every story MUST include a real URL you actually found through web search.
-3. Distinguish vendor claims from independently established facts.
-4. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
-5. Avoid duplicating the same announcement from multiple outlets.
-6. Write for experienced practitioners. Be concise and slightly skeptical.
-7. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
+1. Prefer original incident disclosures, regulatory filings, government/CERT advisories, standards bodies, primary research, court documents, and direct technical advisories. Use reputable independent reporting or analysis when it adds necessary context.
+2. For breaches/incidents, do NOT use a security vendor's marketing or "our tool would have stopped this" article as the primary evidence. Vendor material is acceptable only when that vendor is itself the affected party, published the original advisory/research, or provides uniquely relevant technical evidence.
+3. Never invent a URL. Every story MUST include a real URL you actually found through web search.
+4. Distinguish vendor claims from independently established facts.
+5. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
+6. Avoid duplicating the same announcement from multiple outlets.
+7. Write for experienced practitioners. Be concise and slightly skeptical.
+8. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
+9. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
+10. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
 
 Return ONLY valid JSON. No markdown fence. Shape:
 {{
@@ -52,13 +57,13 @@ Return ONLY valid JSON. No markdown fence. Shape:
   "readTime": "6 min",
   "stories": [
     {{
-      "kicker": "Vendor Watch|Threat|Standards|Machine IAM|Research|From the Field",
+      "kicker": "Vendor Watch|Threat|Incident|Breach|Standards|Machine IAM|Research|From the Field",
       "title": "headline",
       "summary": "2-3 sentence factual summary",
       "why": "1-2 sentence practitioner implication",
       "source": "source name",
       "url": "https://real-source-url",
-      "confidence": "Primary source|Multiple sources|Vendor claim|Research"
+      "confidence": "Primary source|Multiple sources|Independent reporting|Vendor claim|Research"
     }}
   ]
 }}
