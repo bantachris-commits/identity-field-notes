@@ -102,12 +102,17 @@ upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:
 
 parts = [
     '<!-- buttondown-editor-mode: fancy -->',
-    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;background:{NAVY};border-radius:4px;">
-<tr><td style="padding:24px 26px;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1.4px;color:{AMBER};text-transform:uppercase;">Identity Field Notes</div>
-<div style="font-family:Georgia,Times New Roman,serif;font-size:25px;line-height:1.2;font-weight:700;color:#ffffff;margin-top:7px;">Today&apos;s identity-security digest</div>
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#d9e4e6;margin-top:8px;">{e(digest_date)}</div>
-</td></tr></table>''',
+    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;border-collapse:collapse;">
+<tr><td style="padding:8px 16px;background:{AMBER};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.1px;color:{NAVY};text-transform:uppercase;text-align:center;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
+<tr><td style="padding:20px 22px;background:{NAVY};">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
+<td width="58" valign="middle"><div style="width:46px;height:46px;line-height:46px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:800;letter-spacing:1px;">IFN</div></td>
+<td valign="middle"><div style="font-family:Georgia,Times New Roman,serif;font-size:25px;line-height:1.1;font-weight:700;color:#ffffff;">Identity Field Notes</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.15px;color:#d9e4e6;text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
+<td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#d9e4e6;white-space:nowrap;">{e(digest_date)}</td>
+</tr></table>
+</td></tr>
+<tr><td style="padding:9px 14px;background:{PAPER};border:1px solid #ddd4c2;border-top:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.7px;color:{NAVY};text-transform:uppercase;text-align:center;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; // &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
+</table>''',
     f'''<div style="background:{PAPER};border-left:4px solid {AMBER};padding:16px 18px;margin:0 0 26px 0;">
 <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
     '<ul style="margin:0;padding-left:20px;">',
@@ -184,7 +189,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v4",
+        "identity_field_notes_format": "morning-digest-v5",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
