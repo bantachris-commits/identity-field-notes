@@ -1,9 +1,21 @@
 (()=>{
   const THEMES=["field","dark","matrix","jurassic","relic"];
-  const SWITCHER_THEMES=["field","dark","matrix","jurassic"];
-  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic",relic:"Field Journal"};
+  const SWITCHER_THEMES=["field","dark","relic","jurassic"];
+  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic",relic:"Jungle Cruise"};
   const STORAGE_KEY="ifn-theme";
-  const PRE_RELIC_KEY="ifn-pre-relic-theme";
+  const PRE_SECRET_KEY="ifn-pre-matrix-theme";
+  const JUNGLE_JOKES=[
+    "Please keep your hands, hats, and access tokens inside the boat at all times.",
+    "Why did the service account cross the river? It had standing privileges on the other side.",
+    "Our password rotation is a lot like this river. Eventually, it comes back around.",
+    "That orphaned account is fine. It is just looking for its parent group.",
+    "Least privilege is important out here. The crocodiles call it portion control.",
+    "We tried role mining in the jungle. Mostly we found old groups nobody remembers creating.",
+    "If the SSO bridge looks questionable, don't worry. We have several more questionable bridges ahead.",
+    "The good news is the privileged account is vaulted. The bad news is nobody remembers where the vault is.",
+    "Our identity governance program has excellent visibility. We can clearly see the backlog from here.",
+    "Never trust a quiet service account. That's usually when they're plotting something scheduled for 2 a.m."
+  ];
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
@@ -18,7 +30,7 @@
     if(document.querySelector('link[data-ifn-relic]'))return;
     const css=document.createElement("link");
     css.rel="stylesheet";
-    css.href="assets/relic.css?v=20260913-1";
+    css.href="assets/relic.css?v=20260913-2";
     css.dataset.ifnRelic="true";
     document.head.appendChild(css);
   }
@@ -42,12 +54,40 @@
       btn.setAttribute("aria-pressed",active?"true":"false");
       btn.title=active?`${LABELS[theme]} mode active`:`Switch to ${LABELS[btn.dataset.themeChoice]} mode`;
     });
-    const relic=document.querySelector("[data-secret-relic]");
-    if(relic){
-      const active=theme==="relic";
-      relic.setAttribute("aria-pressed",active?"true":"false");
-      relic.title=active?"Return the relic":"An oddly placed relic";
+    const secret=document.querySelector("[data-secret-matrix]");
+    if(secret){
+      const active=theme==="matrix";
+      secret.setAttribute("aria-pressed",active?"true":"false");
+      secret.title=active?"Escape the matrix":"An oddly placed relic";
     }
+  }
+
+  function installJungleJokes(theme){
+    const existing=document.querySelector("[data-jungle-jokes]");
+    if(theme!=="relic"){
+      existing?.remove();
+      return;
+    }
+    if(existing)return;
+    const main=document.querySelector("main");
+    if(!main)return;
+    const picks=[...JUNGLE_JOKES].sort(()=>Math.random()-.5).slice(0,3);
+    const box=document.createElement("aside");
+    box.className="jungle-jokes";
+    box.dataset.jungleJokes="true";
+    const eyebrow=document.createElement("div");
+    eyebrow.className="eyebrow";
+    eyebrow.textContent="SKIPPER'S LOG // QUESTIONABLE IDENTITY WISDOM";
+    const title=document.createElement("strong");
+    title.textContent="Today's river-certified dad jokes";
+    box.append(eyebrow,title);
+    picks.forEach(joke=>{
+      const p=document.createElement("p");
+      p.textContent=joke;
+      box.appendChild(p);
+    });
+    const after=main.children[0];
+    if(after?.nextSibling)main.insertBefore(box,after.nextSibling); else main.appendChild(box);
   }
 
   function applyTheme(theme,{persist=true}={}){
@@ -58,6 +98,7 @@
     if(meta)meta.setAttribute("content",themeColor(theme));
     setFavicon(theme);
     updateButtons(theme);
+    installJungleJokes(theme);
     if(theme==="matrix")startRain(); else stopRain();
     setGiscusTheme(theme);
   }
@@ -91,15 +132,15 @@
     updateButtons(currentTheme());
   }
 
-  function installSecretRelic(){
-    if(document.querySelector("[data-secret-relic]"))return;
+  function installSecretMatrix(){
+    if(document.querySelector("[data-secret-matrix]"))return;
     const wrap=document.createElement("div");
     wrap.className="secret-relic-wrap";
     const btn=document.createElement("button");
     btn.type="button";
     btn.className="secret-relic";
-    btn.dataset.secretRelic="true";
-    btn.setAttribute("aria-label","Toggle secret field journal mode");
+    btn.dataset.secretMatrix="true";
+    btn.setAttribute("aria-label","Toggle secret display mode");
     btn.setAttribute("aria-pressed","false");
     const img=document.createElement("img");
     img.src="assets/favicon-relic.svg";
@@ -107,14 +148,14 @@
     img.setAttribute("aria-hidden","true");
     btn.appendChild(img);
     btn.addEventListener("click",()=>{
-      if(currentTheme()==="relic"){
+      if(currentTheme()==="matrix"){
         let restore="field";
-        try{restore=localStorage.getItem(PRE_RELIC_KEY)||"field"}catch(e){}
+        try{restore=localStorage.getItem(PRE_SECRET_KEY)||"field"}catch(e){}
         if(!SWITCHER_THEMES.includes(restore))restore="field";
         applyTheme(restore);
       }else{
-        try{localStorage.setItem(PRE_RELIC_KEY,currentTheme())}catch(e){}
-        applyTheme("relic");
+        try{localStorage.setItem(PRE_SECRET_KEY,currentTheme())}catch(e){}
+        applyTheme("matrix");
       }
     });
     wrap.appendChild(btn);
@@ -175,7 +216,7 @@
   function boot(){
     ensureRelicStyles();
     installControls();
-    installSecretRelic();
+    installSecretMatrix();
     applyTheme(savedTheme(),{persist:false});
     if(document.body)observer.observe(document.body,{childList:true,subtree:true});
   }
