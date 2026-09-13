@@ -2,14 +2,19 @@
   const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   const dt=s=>new Date(s).toLocaleString("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"});
   const text=s=>esc(s).replace(/\n/g,"<br>");
-  const flair=p=>p?.flair?`<span class="ifn-flair">${esc(p.flair)}</span>`:"";
+  const flair=p=>{
+    const out=[];
+    if(p?.flair)out.push(`<span class="ifn-flair">${esc(p.flair)}</span>`);
+    if((p?.badges||[]).includes("entered_matrix"))out.push('<span class="ifn-flair matrix-flair">Entered the Matrix</span>');
+    return out.join("");
+  };
 
   function load(src){return new Promise((resolve,reject)=>{const s=document.createElement("script");s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s)})}
   async function deps(){
     if(!window.supabase?.createClient)await load("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
     if(!window.google?.accounts?.id)await load("https://accounts.google.com/gsi/client");
     if(!window.IFNCommunityAuth)await load("assets/community-auth.js?v=20260913-2");
-    if(!window.IFNCommunityData)await load("assets/community-data.js?v=20260913-5");
+    if(!window.IFNCommunityData)await load("assets/community-data.js?v=20260913-7");
   }
   async function articleId(){
     const q=new URLSearchParams(location.search).get("id");
