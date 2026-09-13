@@ -12,4 +12,5 @@
   load("assets/nav.js?v=20260913-1", "ifnNav");
   load("assets/events-community-loader.js?v=20260913-2", "ifnEventsCommunity");
   load("assets/matrix-badge.js?v=20260913-1", "ifnMatrixBadge");
+  load("assets/market-archive-list.js?v=20260913-1", "ifnMarketArchive");
 })();
