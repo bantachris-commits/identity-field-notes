@@ -147,9 +147,9 @@
     "date": "2027-04-05",
     "end": "2027-04-08",
     "name": "RSA Conference 2027",
-    "location": "San Francisco, California, United States",
+    "location": "Moscone Center and Yerba Buena Center for the Arts, San Francisco, California, United States",
     "focus": "Identity and authentication, identity threats, access control, cybersecurity, AI security and non-human identities",
-    "url": "https://www.rsaconference.com/",
+    "url": "https://www.rsaconference.com/usa",
     "type": "Conference",
     "sponsored": false
   },
@@ -171,7 +171,7 @@
     "name": "Identiverse 2027",
     "location": "Mandalay Bay, Las Vegas, Nevada, United States",
     "focus": "Digital identity, IAM, authentication, authorization, non-human and AI identity, privacy and identity threats",
-    "url": "https://identiverse.com/",
+    "url": "https://events.identiverse.com/2027/begin",
     "type": "Conference",
     "sponsored": false
   }
