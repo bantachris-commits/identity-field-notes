@@ -1,5 +1,6 @@
 [
   {
+    "id": "2026-09-22-oktane-2026",
     "date": "2026-09-22",
     "end": "2026-09-24",
     "name": "Oktane 2026",
@@ -10,16 +11,51 @@
     "sponsored": false
   },
   {
-    "date": "2026-10-06",
-    "end": "2026-10-06",
-    "name": "Identity & Non-Human Identity Impact Day 2026",
-    "location": "Marriott Hotel, Munich, Germany",
-    "focus": "IAM, identity security, non-human identities, machine identities and AI identity governance",
-    "url": "https://www.kuppingercole.com/events",
+    "id": "2026-09-30-saviynt-unlock-chicago-2026",
+    "date": "2026-09-30",
+    "end": "2026-09-30",
+    "name": "Saviynt UNLOCK Chicago 2026",
+    "location": "Convene, 311 W Monroe St, Chicago, Illinois, United States",
+    "focus": "AI identity security, agent governance, human/non-human/AI identities, privilege and identity transformation",
+    "url": "https://saviynt.com/unlock/chicago",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "id": "2026-10-05-sailpoint-navigate-austin-2026",
+    "date": "2026-10-05",
+    "end": "2026-10-08",
+    "name": "SailPoint Navigate Austin 2026",
+    "location": "JW Marriott Austin and Austin Marriott Downtown, Austin, Texas, United States",
+    "focus": "Identity governance, AI agents, non-human identities, identity security strategy, workshops and masterclasses",
+    "url": "https://www.sailpoint.com/navigate/austin",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "id": "2026-10-06-aidentity-non-human-identity-impact-day-2026",
+    "date": "2026-10-06",
+    "end": "2026-10-06",
+    "name": "AIdentity & Non-Human Identity Impact Day 2026",
+    "location": "Marriott Hotel, Munich, Germany",
+    "focus": "AI agents, workloads, APIs, machine identities, non-human identity governance and cloud-native trust",
+    "url": "https://www.kuppingercole.com/events/nhiid2026",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "id": "2026-10-08-go-beyond-chicago-2026",
+    "date": "2026-10-08",
+    "end": "2026-10-08",
+    "name": "Go Beyond Chicago 2026",
+    "location": "Venue SIX10, Chicago, Illinois, United States",
+    "focus": "BeyondTrust customer conference covering human, machine and AI-agent identity security, privilege and product strategy",
+    "url": "https://www.beyondtrust.com/events/go-beyond-chicago",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "id": "2026-10-19-authenticate-u-s-2026",
     "date": "2026-10-19",
     "end": "2026-10-21",
     "name": "Authenticate U.S. 2026",
@@ -30,26 +66,29 @@
     "sponsored": false
   },
   {
+    "id": "2026-11-18-customer-identity-access-management-impact-day-2026",
     "date": "2026-11-18",
     "end": "2026-11-18",
     "name": "Customer Identity & Access Management Impact Day 2026",
     "location": "Hilton Frankfurt Airport, Frankfurt, Germany",
-    "focus": "CIAM, customer authentication, authorization, identity security and digital trust",
-    "url": "https://www.kuppingercole.com/events",
+    "focus": "CIAM, identity verification, fraud prevention, digital wallets, passkeys and digital trust",
+    "url": "https://www.kuppingercole.com/events/ciamid2026",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "id": "2026-11-26-identity-centric-cybersecurity-summit-2026",
     "date": "2026-11-26",
     "end": "2026-11-26",
     "name": "Identity-Centric Cybersecurity Summit 2026",
     "location": "Munich, Germany",
-    "focus": "Identity threats, identity security, ITDR, access control and cybersecurity strategy",
-    "url": "https://www.kuppingercole.com/events",
+    "focus": "ITDR, identity attack paths, modern PAM, continuous authorization, identity governance and identity-centric cyber resilience",
+    "url": "https://www.kuppingercole.com/events/icc-summit-2026",
     "type": "Summit",
     "sponsored": false
   },
   {
+    "id": "2026-12-01-fido-alliance-seoul-seminar-passkey-day",
     "date": "2026-12-01",
     "end": "2026-12-01",
     "name": "FIDO Alliance Seoul Seminar: Passkey Day",
@@ -60,16 +99,18 @@
     "sponsored": false
   },
   {
+    "id": "2026-12-07-gartner-identity-access-management-summit-2026-americas",
     "date": "2026-12-07",
     "end": "2026-12-09",
     "name": "Gartner Identity & Access Management Summit 2026, Americas",
     "location": "Las Vegas, Nevada, United States",
-    "focus": "IAM strategy, PAM, IGA, digital identity, identity security and AI-related identity challenges",
-    "url": "https://emt.gartnerweb.com/en/conferences/hub/identity-access-management-conferences",
+    "focus": "IAM strategy, PAM, IGA, machine IAM, agentic AI, authentication, authorization and identity security",
+    "url": "https://www.gartner.com/en/conferences/na/identity-access-management-us",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "id": "2027-02-02-openid-foundation-global-conference-2027",
     "date": "2027-02-02",
     "end": "2027-02-04",
     "name": "OpenID Foundation Global Conference 2027",
@@ -80,16 +121,29 @@
     "sponsored": false
   },
   {
+    "id": "2027-03-08-gartner-identity-access-management-summit-2027-emea",
     "date": "2027-03-08",
     "end": "2027-03-09",
     "name": "Gartner Identity & Access Management Summit 2027, EMEA",
-    "location": "InterContinental London \u2013 The O2, London, United Kingdom",
+    "location": "InterContinental London – The O2, London, United Kingdom",
     "focus": "IAM, IGA, PAM, machine identities, AI agents, identity governance and cybersecurity alignment",
     "url": "https://www.gartner.com/en/conferences/emea/identity-access-management-uk",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "id": "2027-03-10-delinea-edge-2027",
+    "date": "2027-03-10",
+    "end": "2027-03-12",
+    "name": "Delinea EDGE 2027",
+    "location": "Walt Disney World Swan & Dolphin, Orlando, Florida, United States",
+    "focus": "Delinea's inaugural flagship customer conference for identity security leaders and practitioners, focused on secure access and AI-driven identity threats",
+    "url": "https://delinea.com/edge",
+    "type": "Conference",
+    "sponsored": false
+  },
+  {
+    "id": "2027-04-05-rsa-conference-2027",
     "date": "2027-04-05",
     "end": "2027-04-08",
     "name": "RSA Conference 2027",
@@ -100,16 +154,18 @@
     "sponsored": false
   },
   {
+    "id": "2027-05-11-european-identity-and-cloud-conference-2027",
     "date": "2027-05-11",
     "end": "2027-05-14",
     "name": "European Identity and Cloud Conference 2027",
     "location": "bcc Berlin Congress Center, Berlin, Germany",
-    "focus": "IAM, IGA, PAM, cloud identity, authorization, identity security and digital trust",
-    "url": "https://www.kuppingercole.com/events",
+    "focus": "Digital identity, IAM, IGA, PAM, cloud identity, authorization, privacy and governance",
+    "url": "https://www.kuppingercole.com/events/eic2027",
     "type": "Conference",
     "sponsored": false
   },
   {
+    "id": "2027-06-28-identiverse-2027",
     "date": "2027-06-28",
     "end": "2027-07-01",
     "name": "Identiverse 2027",
