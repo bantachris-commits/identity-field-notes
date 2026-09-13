@@ -25,6 +25,8 @@ NAVY = "#102934"
 AMBER = "#d18b18"
 TEAL = "#0b5e68"
 MUTED = "#5f6b6f"
+CANVAS = "#e9eff1"
+SHEET = "#ffffff"
 COOL = "#f3f7f8"
 COOL_2 = "#eaf1f2"
 LINE = "#d6e0e2"
@@ -105,6 +107,10 @@ upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:
 
 parts = [
     '<!-- buttondown-editor-mode: fancy -->',
+    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{CANVAS}" style="width:100%;background:{CANVAS};border-collapse:collapse;">
+<tr><td style="padding:18px 14px;">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{SHEET}" style="width:100%;background:{SHEET};border:1px solid {LINE};border-collapse:collapse;">
+<tr><td style="padding:22px 20px;">''',
     f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;border-collapse:collapse;background:#ffffff;">
 <tr><td style="padding:0 0 8px 0;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
 <tr><td style="padding:18px 0 14px 0;">
@@ -177,6 +183,7 @@ parts += [
 <div style="margin-top:12px;"><a href="{e(canonical)}" style="color:#ffffff;font-weight:700;text-decoration:underline;">Read and discuss today&apos;s digest on Identity Field Notes →</a></div>
 </div>''',
     f'<p style="font-size:12px;line-height:1.5;color:{MUTED};"><strong>Source first. AI summary second.</strong><br>{e(article.get("disclosure") or "This digest is AI-generated from linked sources. Verify important details at the original source.")}</p>',
+    '</td></tr></table></td></tr></table>',
 ]
 
 body = "\n".join(parts)
@@ -192,7 +199,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v7",
+        "identity_field_notes_format": "morning-digest-v8",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
