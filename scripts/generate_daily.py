@@ -23,22 +23,25 @@ Research the most important NEW or newly relevant developments from roughly the 
 - identity threat detection / identity attacks
 - AI agent identity and authorization
 
-Also search up to the last 7 days for material breaches or security incidents where identity controls were a documented root cause or contributing factor. Relevant examples include stolen or reused credentials, weak or bypassed MFA, session/token theft, overprivileged identities, stale accounts, exposed secrets, service-account abuse, OAuth abuse, poor offboarding, or failures in authentication/authorization. Include an incident only when reliable evidence actually connects identity controls to what happened. Do not infer causation just because an identity vendor claims its product could have prevented the breach.
+Also search up to the last 7 days for material breaches or security incidents where identity controls were a documented root cause or contributing factor. Relevant examples include stolen or reused credentials, weak or bypassed MFA, session/token theft, overprivileged identities, stale accounts, exposed secrets, service-account abuse, OAuth abuse, poor offboarding, federation/account-linking failures, or failures in authentication/authorization. Include an incident only when reliable evidence actually connects identity controls to what happened. Do not infer causation just because an identity vendor claims its product could have prevented the breach.
 
-Pay special attention to CyberArk, Delinea, SailPoint, Microsoft Entra, Okta/Auth0, BeyondTrust, Saviynt, AWS, Google Cloud, FIDO, CISA, major security research, standards work and material incidents.
+Cover the market broadly. Pay attention to CyberArk/Palo Alto Networks, Delinea, BeyondTrust, SailPoint, Saviynt, Ping Identity, Descope, Semperis, Microsoft Entra, Okta/Auth0, AWS, Google Cloud, FIDO/OpenID, CISA and major independent security research. Do not let one vendor dominate an edition merely because its SEO is better.
 
 Editorial rules:
 1. Prefer original incident disclosures, regulatory filings, government/CERT advisories, standards bodies, primary research, court documents and direct technical advisories. Use reputable independent reporting when it adds necessary context.
 2. For breaches/incidents, do NOT use a security vendor's marketing or 'our tool would have stopped this' article as primary evidence. Vendor material is acceptable when that vendor is the affected party, published the original advisory/research, or provides uniquely relevant technical evidence.
-3. Every story URL MUST be the canonical page for that exact article, advisory, filing, release note or research item. Never use a publication homepage, blog index, newsroom listing, category/tag page, generic press-release directory or vendor landing page when a story-level URL exists.
-4. Never invent a URL. Every story MUST include a real URL you actually found through web search.
-5. Distinguish vendor claims from independently established facts.
-6. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
-7. Avoid duplicating the same announcement from multiple outlets.
-8. Write for experienced practitioners. Be concise and slightly skeptical.
-9. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
-10. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
-11. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
+3. Every story URL MUST be the canonical page for that exact article, advisory, filing, press release or research item. Never use a publication homepage, generic documentation page, release-notes index, blog index, newsroom listing, category/tag page, generic press-release directory or vendor landing page when a story-level URL exists.
+4. If a development exists only as an unaddressable release-note entry with no stable item-level or anchored URL, skip it rather than linking readers to a generic index.
+5. Before returning a story, verify that the destination page title/content actually supports the headline and summary you wrote. If the page is not the exact item, omit the story.
+6. Never invent a URL. Every story MUST include a real URL you actually found through web search.
+7. Distinguish vendor claims from independently established facts.
+8. Avoid generic thought leadership unless it contains a genuinely useful technical or strategic idea.
+9. Prefer meaningful platform moves, acquisitions, standards changes, technical controls and identity-relevant incidents over routine feature marketing.
+10. Avoid duplicating the same announcement from multiple outlets.
+11. Write for experienced practitioners. Be concise and slightly skeptical.
+12. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
+13. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
+14. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
 
 Return ONLY valid JSON. No markdown fence. Shape:
 {{
@@ -48,7 +51,7 @@ Return ONLY valid JSON. No markdown fence. Shape:
   "readTime": "6 min",
   "stories": [
     {{
-      "kicker": "Vendor Watch|Threat|Incident|Breach|Standards|Machine IAM|Research|From the Field",
+      "kicker": "Vendor Watch|Threat|Incident|Breach|Standards|Machine IAM|Research|Market|From the Field",
       "title": "headline",
       "summary": "2-3 sentence factual summary",
       "why": "1-2 sentence practitioner implication",
@@ -61,13 +64,14 @@ Return ONLY valid JSON. No markdown fence. Shape:
 Return 3 to 6 stories. If the morning is quiet, return fewer stories rather than filler.
 """
 
-GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources"}
+GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources","/iam/docs/release-notes"}
 GENERIC_URLS={
  "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
  "https://www.microsoft.com/security/blog",
  "https://www.okta.com/blog/threat-intelligence",
  "https://www.beyondtrust.com/blog",
  "https://delinea.com/blog",
+ "https://docs.cloud.google.com/iam/docs/release-notes",
 }
 
 def extract_json(text):
