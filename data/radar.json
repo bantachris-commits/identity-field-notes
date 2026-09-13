@@ -1,17 +1,81 @@
 [
   {
-    "id": "okta-token-theft-2026-09-09",
-    "date": "2026-09-09",
-    "source": "Okta Threat Intelligence",
-    "title": "Session token theft drives AI account hijacking",
-    "url": "https://www.okta.com/blog/threat-intelligence/",
+    "id": "b5a8ddba9d35f804",
+    "date": "2026-09-13",
+    "source": "Google Cloud Documentation",
+    "title": "IAM remote MCP server generally available; Gemini role suggestions via Policy Assist API",
+    "url": "https://docs.cloud.google.com/iam/docs/release-notes",
     "tags": [
-      "Threat",
-      "Tokens",
-      "AI"
+      "IAM",
+      "PAM",
+      "NHI",
+      "AI-agent-authorization",
+      "MCP"
     ],
-    "note": "Worth reading for the identity/session angle. Original source linked; this card is an AI-generated pointer, not a substitute for the article.",
-    "score": 94
+    "note": "Google\u2019s latest IAM release notes combine an MCP control surface for managing roles and deny policies with programmatic Gemini-assisted role recommendations, making agent-mediated administration a concrete governance concern.",
+    "score": 91
+  },
+  {
+    "id": "0c6670cd03c045a8",
+    "date": "2026-09-13",
+    "source": "Proxy Tech Support Research",
+    "title": "GTG-1002: What the First AI-Orchestrated Cyberattack Means for Engineers",
+    "url": "https://proxytechsupport.com/blog/gtg-1002-ai-orchestrated-cyberattack-engineering-lessons/",
+    "tags": [
+      "identity-attacks",
+      "NHI",
+      "AI-agent-authorization",
+      "OAuth",
+      "privileged-access"
+    ],
+    "note": "This reconstruction frames autonomous tool-using intrusion as an identity and authorization boundary problem, with useful implications for agent permissions, MCP exposure, credential harvesting, and blast-radius control.",
+    "score": 88
+  },
+  {
+    "id": "f17ffd271346ed10",
+    "date": "2026-09-13",
+    "source": "Proxy Tech Support Research",
+    "title": "Securing AI Agents in Production: A 2026 Engineering Checklist",
+    "url": "https://proxytechsupport.com/blog/securing-ai-agents-production-checklist-2026/",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "PAM",
+      "OAuth",
+      "session-security"
+    ],
+    "note": "A practitioner-oriented checklist argues for external policy enforcement, identity brokering, egress mediation, and out-of-band auditing rather than relying on model behavior to constrain privileged agents.",
+    "score": 86
+  },
+  {
+    "id": "99680276e400d3fb",
+    "date": "2026-09-13",
+    "source": "IDScan.net",
+    "title": "Notification of Data Security Incident",
+    "url": "https://idscan.net/press-release/notification-of-data-security-incident/",
+    "tags": [
+      "identity-security",
+      "identity-attacks",
+      "IGA",
+      "fraud"
+    ],
+    "note": "The identity-verification provider\u2019s incident notice is newly consequential amid reporting about a large-scale exposure of government-ID scans, highlighting durable identity-data risk and downstream account-fraud implications.",
+    "score": 84
+  },
+  {
+    "id": "18bc9bd7057e6164",
+    "date": "2026-09-13",
+    "source": "COE Security",
+    "title": "AI Agents and the RubyGems Incident: A New Warning for Software Supply Chain Security",
+    "url": "https://coesecurity.com/ai-agents-and-the-rubygems-incident-a-new-warning-for-software-supply-chain-security/",
+    "tags": [
+      "NHI",
+      "AI-agent-authorization",
+      "machine-identity",
+      "supply-chain"
+    ],
+    "note": "The reported RubyGems activity is a timely case study in what can happen when autonomous agents receive external platform access without sufficiently restrictive identity, authorization, and execution controls.",
+    "score": 82
   },
   {
     "id": "delinea-runtime-authz-2026",
@@ -26,6 +90,20 @@
     ],
     "note": "Interesting framing around controlling the action inside a privileged session, not only the connection into it.",
     "score": 90
+  },
+  {
+    "id": "okta-token-theft-2026-09-09",
+    "date": "2026-09-09",
+    "source": "Okta Threat Intelligence",
+    "title": "Session token theft drives AI account hijacking",
+    "url": "https://www.okta.com/blog/threat-intelligence/",
+    "tags": [
+      "Threat",
+      "Tokens",
+      "AI"
+    ],
+    "note": "Worth reading for the identity/session angle. Original source linked; this card is an AI-generated pointer, not a substitute for the article.",
+    "score": 94
   },
   {
     "id": "ms-entra-current",
