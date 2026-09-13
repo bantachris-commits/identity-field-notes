@@ -27,6 +27,7 @@ TEAL = "#0b5e68"
 MUTED = "#5f6b6f"
 CANVAS = "#e9eff1"
 SHEET = "#ffffff"
+HEADER_BG = "#eef3f4"
 COOL = "#f3f7f8"
 COOL_2 = "#eaf1f2"
 LINE = "#d6e0e2"
@@ -111,16 +112,16 @@ parts = [
 <tr><td style="padding:18px 14px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{SHEET}" style="width:100%;background:{SHEET};border:1px solid {LINE};border-collapse:collapse;">
 <tr><td style="padding:22px 20px;">''',
-    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;border-collapse:collapse;background:#ffffff;">
-<tr><td style="padding:0 0 8px 0;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
-<tr><td style="padding:18px 0 14px 0;">
+    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{HEADER_BG}" style="margin:0 0 24px 0;border:1px solid {LINE};border-collapse:collapse;background:{HEADER_BG};">
+<tr><td style="padding:12px 14px 8px 14px;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
+<tr><td style="padding:16px 14px 14px 14px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
 <td width="56" valign="middle"><div style="width:42px;height:42px;line-height:42px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;letter-spacing:1px;">IFN</div></td>
 <td valign="middle"><div style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
 <td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}</td>
 </tr></table>
 </td></tr>
-<tr><td style="border-top:4px solid {NAVY};padding:9px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
+<tr><td style="border-top:4px solid {NAVY};padding:9px 14px 11px 14px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
 </table>''',
     f'''<div style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
 <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
@@ -199,7 +200,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v8",
+        "identity_field_notes_format": "morning-digest-v9",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
