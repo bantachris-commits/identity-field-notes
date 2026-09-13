@@ -1,21 +1,24 @@
 (()=>{
-  const THEMES=["field","dark","matrix","jurassic"];
-  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic"};
+  const THEMES=["field","dark","matrix","jurassic","relic"];
+  const SWITCHER_THEMES=["field","dark","matrix","jurassic"];
+  const LABELS={field:"Field",dark:"Dark",matrix:"Matrix",jurassic:"Jurassic",relic:"Field Journal"};
   const STORAGE_KEY="ifn-theme";
+  const PRE_RELIC_KEY="ifn-pre-relic-theme";
   let rain=null;
 
   function currentTheme(){return document.documentElement.dataset.theme||"field"}
-  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#d61f27":"#102934"}
+  function themeColor(theme){return theme==="matrix"?"#000400":theme==="dark"?"#11171c":theme==="jurassic"?"#d61f27":theme==="relic"?"#694126":"#102934"}
 
   function setFavicon(theme){
     const icon=document.querySelector('link[rel~="icon"]');
-    if(icon)icon.href=theme==="jurassic"?"assets/favicon-jurassic.svg":"assets/favicon.svg";
+    if(!icon)return;
+    icon.href=theme==="jurassic"?"assets/favicon-jurassic.svg":theme==="relic"?"assets/favicon-relic.svg":"assets/favicon.svg";
   }
 
   function setGiscusTheme(theme){
     const iframe=document.querySelector("iframe.giscus-frame");
     if(!iframe)return;
-    const light=theme==="field"||theme==="jurassic";
+    const light=theme==="field"||theme==="jurassic"||theme==="relic";
     iframe.contentWindow?.postMessage({giscus:{setConfig:{theme:light?"light":"dark"}}},"https://giscus.app");
   }
 
@@ -25,6 +28,12 @@
       btn.setAttribute("aria-pressed",active?"true":"false");
       btn.title=active?`${LABELS[theme]} mode active`:`Switch to ${LABELS[btn.dataset.themeChoice]} mode`;
     });
+    const relic=document.querySelector("[data-secret-relic]");
+    if(relic){
+      const active=theme==="relic";
+      relic.setAttribute("aria-pressed",active?"true":"false");
+      relic.title=active?"Return the relic":"An oddly placed relic";
+    }
   }
 
   function applyTheme(theme,{persist=true}={}){
@@ -44,7 +53,7 @@
     wrap.className="theme-switcher";
     wrap.setAttribute("role","group");
     wrap.setAttribute("aria-label","Display theme");
-    THEMES.forEach(theme=>{
+    SWITCHER_THEMES.forEach(theme=>{
       const btn=document.createElement("button");
       btn.type="button";
       btn.dataset.themeChoice=theme;
@@ -65,6 +74,37 @@
     document.querySelectorAll(".mobile-nav .nav-menu").forEach(menu=>{
       if(!menu.querySelector(".theme-switcher"))menu.appendChild(switcherMarkup());
     });
+    updateButtons(currentTheme());
+  }
+
+  function installSecretRelic(){
+    if(document.querySelector("[data-secret-relic]"))return;
+    const wrap=document.createElement("div");
+    wrap.className="secret-relic-wrap";
+    const btn=document.createElement("button");
+    btn.type="button";
+    btn.className="secret-relic";
+    btn.dataset.secretRelic="true";
+    btn.setAttribute("aria-label","Toggle secret field journal mode");
+    btn.setAttribute("aria-pressed","false");
+    const img=document.createElement("img");
+    img.src="assets/favicon-relic.svg";
+    img.alt="";
+    img.setAttribute("aria-hidden","true");
+    btn.appendChild(img);
+    btn.addEventListener("click",()=>{
+      if(currentTheme()==="relic"){
+        let restore="field";
+        try{restore=localStorage.getItem(PRE_RELIC_KEY)||"field"}catch(e){}
+        if(!SWITCHER_THEMES.includes(restore))restore="field";
+        applyTheme(restore);
+      }else{
+        try{localStorage.setItem(PRE_RELIC_KEY,currentTheme())}catch(e){}
+        applyTheme("relic");
+      }
+    });
+    wrap.appendChild(btn);
+    document.body.appendChild(wrap);
     updateButtons(currentTheme());
   }
 
@@ -120,6 +160,7 @@
   const observer=new MutationObserver(()=>setGiscusTheme(currentTheme()));
   function boot(){
     installControls();
+    installSecretRelic();
     applyTheme(currentTheme(),{persist:false});
     if(document.body)observer.observe(document.body,{childList:true,subtree:true});
   }
