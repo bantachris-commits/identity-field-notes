@@ -4,7 +4,12 @@
   const text = s => esc(s).replace(/\n/g, "<br>");
   const slug = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 80) || "event";
   const eventId = e => e.id || `${e.date || "event"}-${slug(e.name)}`;
-  const flair = p => p?.flair ? `<span class="ifn-flair">${esc(p.flair)}</span>` : "";
+  const flair = p => {
+    const out=[];
+    if(p?.flair)out.push(`<span class="ifn-flair">${esc(p.flair)}</span>`);
+    if((p?.badges||[]).includes("entered_matrix"))out.push('<span class="ifn-flair matrix-flair">Entered the Matrix</span>');
+    return out.join("");
+  };
 
   async function setup() {
     const cards = [...document.querySelectorAll("#eventsList > .card")];
