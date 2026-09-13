@@ -8,13 +8,14 @@ from urllib.parse import unquote,urlparse
 
 ROOT=Path(__file__).resolve().parents[1]
 IGNORE_SCHEMES={"mailto","tel","javascript","data"}
-GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources"}
+GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources","/iam/docs/release-notes"}
 GENERIC_URLS={
  "https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog",
  "https://www.microsoft.com/security/blog",
  "https://www.okta.com/blog/threat-intelligence",
  "https://www.beyondtrust.com/blog",
  "https://delinea.com/blog",
+ "https://docs.cloud.google.com/iam/docs/release-notes",
 }
 
 class PageParser(HTMLParser):
@@ -48,6 +49,26 @@ def generic_source(raw):
     if normalized in {x.rstrip('/').lower() for x in GENERIC_URLS}:return True
     return p.path.rstrip('/').lower() in GENERIC_PATHS
 
+def validate_notes(errors,name,items,require_featured=False):
+    if not isinstance(items,list):
+        errors.append(f"data/{name}: expected a list");return
+    ids=[a.get("id") for a in items if isinstance(a,dict)]
+    dupes=sorted({x for x in ids if x and ids.count(x)>1})
+    if dupes:errors.append(f"data/{name}: duplicate ids: {', '.join(dupes)}")
+    if require_featured:
+        featured=sum(1 for a in items if isinstance(a,dict) and a.get('featured'))
+        if featured!=1:errors.append(f"data/{name}: expected exactly one featured article, found {featured}")
+    for i,a in enumerate(items):
+        if not isinstance(a,dict):errors.append(f"data/{name}[{i}]: note must be an object");continue
+        for field in ("id","date","title","dek","stories"):
+            if not a.get(field):errors.append(f"data/{name}[{i}]: missing {field}")
+        if isinstance(a.get("stories"),list):
+            for j,story in enumerate(a["stories"]):
+                if not isinstance(story,dict):errors.append(f"data/{name}[{i}].stories[{j}]: story must be an object");continue
+                for field in ("title","summary","why","source","url"):
+                    if not story.get(field):errors.append(f"data/{name}[{i}].stories[{j}]: missing {field}")
+                if generic_source(story.get("url")):errors.append(f"data/{name}[{i}].stories[{j}]: generic source URL {story.get('url')}")
+
 def main():
     errors=[]
     html_files=sorted(ROOT.glob("*.html"));parsed={p.resolve():page_info(p) for p in html_files}
@@ -68,29 +89,15 @@ def main():
     try:json.loads((ROOT/"manifest.webmanifest").read_text(encoding="utf-8"))
     except Exception as exc:errors.append(f"manifest.webmanifest: invalid JSON: {exc}")
 
-    articles=parsed_json.get("articles.json",[])
-    if isinstance(articles,list):
-        ids=[a.get("id") for a in articles if isinstance(a,dict)];dupes=sorted({x for x in ids if x and ids.count(x)>1})
-        if dupes:errors.append(f"data/articles.json: duplicate article ids: {', '.join(dupes)}")
-        featured=sum(1 for a in articles if isinstance(a,dict) and a.get('featured'))
-        if featured!=1:errors.append(f"data/articles.json: expected exactly one featured article, found {featured}")
-        for i,a in enumerate(articles):
-            if not isinstance(a,dict):errors.append(f"data/articles.json[{i}]: article must be an object");continue
-            for field in ("id","date","title","dek","stories"):
-                if not a.get(field):errors.append(f"data/articles.json[{i}]: missing {field}")
-            if isinstance(a.get("stories"),list):
-                for j,story in enumerate(a["stories"]):
-                    if not isinstance(story,dict):errors.append(f"data/articles.json[{i}].stories[{j}]: story must be an object");continue
-                    for field in ("title","summary","why","source","url"):
-                        if not story.get(field):errors.append(f"data/articles.json[{i}].stories[{j}]: missing {field}")
-                    if generic_source(story.get("url")):errors.append(f"data/articles.json[{i}].stories[{j}]: generic source URL {story.get('url')}")
+    validate_notes(errors,"articles.json",parsed_json.get("articles.json",[]),require_featured=True)
+    validate_notes(errors,"market-archive.json",parsed_json.get("market-archive.json",[]))
 
     radar=parsed_json.get("radar.json",[])
     if isinstance(radar,list):
         urls=[]
         for i,item in enumerate(radar):
             if not isinstance(item,dict):errors.append(f"data/radar.json[{i}]: item must be an object");continue
-            for field in ("title","source","url","note","score"):
+            for field in ("date","title","source","url","note","score"):
                 if item.get(field) in (None,""):errors.append(f"data/radar.json[{i}]: missing {field}")
             if generic_source(item.get("url")):errors.append(f"data/radar.json[{i}]: generic source URL {item.get('url')}")
             if item.get('url'):urls.append(item['url'].rstrip('/').lower())
