@@ -17,9 +17,12 @@ try:d=json.loads(t)
 except json.JSONDecodeError:d=json.loads(t[t.find('{'):t.rfind('}')+1])
 def valid(u):
  p=urlparse(u);return p.scheme in ('http','https') and bool(p.netloc)
+def slug(s):
+ return re.sub(r'[^a-z0-9]+','-',str(s or '').lower()).strip('-')[:80] or 'event'
 events=[]
 for x in d.get('events',[]):
  if x.get('date','')>=today and valid(x.get('url','')):
+  x['id']=x.get('id') or f"{x.get('date','event')}-{slug(x.get('name'))}"
   x['sponsored']=False;events.append(x)
 training=[]
 for x in d.get('training',[]):
