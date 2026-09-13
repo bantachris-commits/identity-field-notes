@@ -68,4 +68,11 @@ window.IFN_CONFIG = {
     guests.dataset.ifnGuests="true";
     document.head.appendChild(guests);
   }
+
+  if(!document.querySelector('script[data-ifn-published-guests]')){
+    const published=document.createElement("script");
+    published.src="assets/published-guest-voices.js?v=20260913-1";
+    published.dataset.ifnPublishedGuests="true";
+    document.head.appendChild(published);
+  }
 })();
