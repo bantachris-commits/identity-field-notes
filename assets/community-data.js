@@ -4,20 +4,24 @@
   async function thread(articleId){
     const sb=auth()?.getClient();
     if(!sb) throw new Error("Community service unavailable.");
-    const r=await sb.from("comments").select("id,parent_id,user_id,title,body,kind,created_at").eq("article_id",articleId).eq("status","published").order("created_at",{ascending:true});
+    const r=await sb.from("public_comments").select("id,parent_id,user_id,title,body,kind,created_at").eq("article_id",articleId).order("created_at",{ascending:true});
     if(r.error) throw r.error;
     const comments=r.data||[];
     const ids=[...new Set(comments.map(x=>x.user_id).filter(Boolean))];
     let profiles=[];
     if(ids.length){
-      const p=await sb.from("profiles").select("id,display_name,avatar_url,headline").in("id",ids);
+      const p=await sb.from("public_profiles").select("id,display_name,avatar_url,headline").in("id",ids);
       if(p.error) throw p.error;
       profiles=p.data||[];
-      const f=await sb.from("community_flair").select("user_id,flair").in("user_id",ids);
-      if(!f.error){
-        const fmap=new Map((f.data||[]).map(x=>[x.user_id,x.flair]));
-        profiles=profiles.map(x=>({...x,flair:fmap.get(x.id)||null}));
-      }
+
+      const [f,b]=await Promise.all([
+        sb.from("public_community_flair").select("user_id,flair").in("user_id",ids),
+        sb.from("public_community_badges").select("user_id,badge").in("user_id",ids)
+      ]);
+      const fmap=new Map(!f.error?(f.data||[]).map(x=>[x.user_id,x.flair]):[]);
+      const bmap=new Map();
+      if(!b.error)(b.data||[]).forEach(x=>{const list=bmap.get(x.user_id)||[];list.push(x.badge);bmap.set(x.user_id,list)});
+      profiles=profiles.map(x=>({...x,flair:fmap.get(x.id)||null,badges:bmap.get(x.id)||[]}));
     }
     return {comments,profiles:new Map(profiles.map(p=>[p.id,p]))};
   }
