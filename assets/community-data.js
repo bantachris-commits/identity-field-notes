@@ -13,6 +13,11 @@
       const p=await sb.from("profiles").select("id,display_name,avatar_url,headline").in("id",ids);
       if(p.error) throw p.error;
       profiles=p.data||[];
+      const f=await sb.from("community_flair").select("user_id,flair").in("user_id",ids);
+      if(!f.error){
+        const fmap=new Map((f.data||[]).map(x=>[x.user_id,x.flair]));
+        profiles=profiles.map(x=>({...x,flair:fmap.get(x.id)||null}));
+      }
     }
     return {comments,profiles:new Map(profiles.map(p=>[p.id,p]))};
   }
