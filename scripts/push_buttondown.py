@@ -3,9 +3,11 @@
 
 Required: BUTTONDOWN_API_KEY
 Optional: BUTTONDOWN_MODE=draft|send (default draft)
+Optional: BUTTONDOWN_PREVIEW=true to create/update a separate, never-sent preview draft.
 
-Draft reruns update the existing matching draft. If the edition was already
-sent, the script exits without sending it again.
+Normal reruns update the existing matching draft. If the real edition was already
+sent, the script exits without sending it again. Preview mode uses a separate slug
+so an already-sent edition can still be inspected safely.
 """
 import json
 import os
@@ -22,6 +24,9 @@ if not key:
 mode = os.getenv("BUTTONDOWN_MODE", "draft").lower()
 if mode not in {"draft", "send"}:
     raise SystemExit("BUTTONDOWN_MODE must be draft or send")
+preview = os.getenv("BUTTONDOWN_PREVIEW", "").strip().lower() in {"1", "true", "yes", "on"}
+if preview:
+    mode = "draft"
 
 articles = json.loads((ROOT / "data" / "articles.json").read_text(encoding="utf-8"))
 
@@ -37,6 +42,8 @@ if article is None:
 stories = article.get("stories") or []
 canonical = f"{SITE}article.html?id={article['id']}"
 edition = article.get("edition") or f"FIELD NOTES // {article.get('date', '')}"
+slug = f"{article['id']}-preview" if preview else article["id"]
+subject_prefix = "[PREVIEW] " if preview else ""
 
 lines = [
     "# Identity Field Notes",
@@ -105,8 +112,8 @@ lines += [
 body = "\n".join(lines)
 headers = {"Authorization": f"Token {key}", "Content-Type": "application/json"}
 payload = {
-    "subject": f"IFN // {article['title']}",
-    "slug": article["id"],
+    "subject": f"{subject_prefix}IFN // {article['title']}",
+    "slug": slug,
     "body": body,
     "canonical_url": canonical,
     "description": article.get("dek", ""),
@@ -115,15 +122,16 @@ payload = {
     "metadata": {
         "identity_field_notes_id": article["id"],
         "identity_field_notes_format": "morning-digest-v2",
+        "identity_field_notes_preview": "true" if preview else "false",
     },
 }
 
-# Find a matching edition before creating anything. This makes manual tests safe
-# and prevents a scheduled rerun from sending the same edition twice.
 listing = requests.get("https://api.buttondown.com/v1/emails", headers=headers, timeout=30)
 listing.raise_for_status()
-existing = next((e for e in listing.json().get("results", []) if e.get("slug") == article["id"]), None)
+existing = next((e for e in listing.json().get("results", []) if e.get("slug") == slug), None)
 if existing and existing.get("status") == "sent":
+    if preview:
+        raise SystemExit("The preview copy was manually sent in Buttondown. Delete it or change its slug before regenerating a preview.")
     print("Buttondown email already sent for", article["id"], "- refusing to send twice.")
     raise SystemExit(0)
 
@@ -136,7 +144,7 @@ if existing:
         timeout=30,
     )
     response.raise_for_status()
-    print("Updated existing Buttondown draft", email_id)
+    print("Updated Buttondown preview draft" if preview else "Updated existing Buttondown draft", email_id)
 else:
     response = requests.post(
         "https://api.buttondown.com/v1/emails",
@@ -146,7 +154,7 @@ else:
     )
     response.raise_for_status()
     email_id = response.json()["id"]
-    print("Created Buttondown email", email_id)
+    print("Created Buttondown preview draft" if preview else "Created Buttondown email", email_id)
 
 if mode == "send":
     publish = requests.post(
@@ -157,5 +165,7 @@ if mode == "send":
     )
     publish.raise_for_status()
     print("Published Buttondown email")
+elif preview:
+    print("Preview mode: left as a separate draft and cannot auto-send.")
 else:
     print("Left as draft. Set BUTTONDOWN_MODE=send to publish automatically.")
