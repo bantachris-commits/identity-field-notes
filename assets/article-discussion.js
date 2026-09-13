@@ -2,7 +2,12 @@
   const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   const dt=s=>new Date(s).toLocaleString("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"});
   const text=s=>esc(s).replace(/\n/g,"<br>");
-  const flair=p=>p?.flair?`<span class="ifn-flair">${esc(p.flair)}</span>`:"";
+  const flair=p=>{
+    const out=[];
+    if(p?.flair)out.push(`<span class="ifn-flair">${esc(p.flair)}</span>`);
+    if((p?.badges||[]).includes("entered_matrix"))out.push('<span class="ifn-flair matrix-flair">Entered the Matrix</span>');
+    return out.join("");
+  };
 
   async function setup(articleId){
     const host=document.querySelector("#giscusHost");
