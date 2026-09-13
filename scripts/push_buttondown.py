@@ -105,16 +105,16 @@ upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:
 
 parts = [
     '<!-- buttondown-editor-mode: fancy -->',
-    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;border-collapse:collapse;">
-<tr><td style="padding:8px 16px;background:{AMBER};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.1px;color:{NAVY};text-transform:uppercase;text-align:center;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
-<tr><td style="padding:20px 22px;background:{NAVY};">
+    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="margin:0 0 24px 0;border-collapse:collapse;background:#ffffff;">
+<tr><td style="padding:0 0 8px 0;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
+<tr><td style="padding:18px 0 14px 0;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
-<td width="58" valign="middle"><div style="width:46px;height:46px;line-height:46px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:800;letter-spacing:1px;">IFN</div></td>
-<td valign="middle"><div style="font-family:Georgia,Times New Roman,serif;font-size:25px;line-height:1.1;font-weight:700;color:#ffffff;">Identity Field Notes</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.15px;color:#d9e4e6;text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
-<td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#d9e4e6;white-space:nowrap;">{e(digest_date)}</td>
+<td width="56" valign="middle"><div style="width:42px;height:42px;line-height:42px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;letter-spacing:1px;">IFN</div></td>
+<td valign="middle"><div style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
+<td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}</td>
 </tr></table>
 </td></tr>
-<tr><td style="padding:9px 14px;background:#f7f9f9;border:1px solid {LINE};border-top:0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.7px;color:{NAVY};text-transform:uppercase;text-align:center;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; // &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
+<tr><td style="border-top:4px solid {NAVY};padding:9px 0 0 0;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
 </table>''',
     f'''<div style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
 <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
@@ -192,7 +192,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v6",
+        "identity_field_notes_format": "morning-digest-v7",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
