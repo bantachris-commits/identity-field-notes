@@ -15,7 +15,7 @@
   });
 
   const loadCss = href => {
-    if (document.querySelector(`link[href^="${href}"]`)) return;
+    if (document.querySelector(`link[href^="${href.split('?')[0]}"]`)) return;
     const l = document.createElement("link");
     l.rel = "stylesheet";
     l.href = href;
@@ -32,13 +32,13 @@
 
   async function boot() {
     if (!document.querySelector("#eventsList")) return;
-    loadCss("assets/community.css?v=20260913-6");
+    loadCss("assets/community.css?v=20260913-7");
     try {
       if (!window.supabase?.createClient) await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
       if (!window.google?.accounts?.id) await loadScript("https://accounts.google.com/gsi/client");
       if (!window.IFNCommunityAuth) await loadScript("assets/community-auth.js?v=20260913-2");
-      if (!window.IFNCommunityData) await loadScript("assets/community-data.js?v=20260913-3");
-      if (!window.IFNEventDiscussions) await loadScript("assets/event-discussions.js?v=20260913-1");
+      if (!window.IFNCommunityData) await loadScript("assets/community-data.js?v=20260913-7");
+      if (!window.IFNEventDiscussions) await loadScript("assets/event-discussions.js?v=20260913-2");
       if (await waitForCards()) await window.IFNEventDiscussions.setup();
     } catch (err) {
       console.warn("IFN event discussions failed to load", err);
