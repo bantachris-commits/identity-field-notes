@@ -8,7 +8,8 @@
   }
 
   load("assets/guest-core-lite.js?v=20260913-1", "ifnGuestCore");
-  load("assets/site-enhancements.js?v=20260913-1", "ifnSiteEnhancements");
+  load("assets/site-enhancements.js?v=20260913-2", "ifnSiteEnhancements");
   load("assets/nav.js?v=20260913-1", "ifnNav");
-  load("assets/events-community-loader.js?v=20260913-1", "ifnEventsCommunity");
+  load("assets/events-community-loader.js?v=20260913-2", "ifnEventsCommunity");
+  load("assets/matrix-badge.js?v=20260913-1", "ifnMatrixBadge");
 })();
