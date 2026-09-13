@@ -2,13 +2,14 @@
   const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   const dt=s=>new Date(s).toLocaleString("en-US",{month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"});
   const text=s=>esc(s).replace(/\n/g,"<br>");
+  const flair=p=>p?.flair?`<span class="ifn-flair">${esc(p.flair)}</span>`:"";
 
   function load(src){return new Promise((resolve,reject)=>{const s=document.createElement("script");s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s)})}
   async function deps(){
     if(!window.supabase?.createClient)await load("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
     if(!window.google?.accounts?.id)await load("https://accounts.google.com/gsi/client");
     if(!window.IFNCommunityAuth)await load("assets/community-auth.js?v=20260913-2");
-    if(!window.IFNCommunityData)await load("assets/community-data.js?v=20260913-2");
+    if(!window.IFNCommunityData)await load("assets/community-data.js?v=20260913-5");
   }
   async function articleId(){
     const q=new URLSearchParams(location.search).get("id");
@@ -52,7 +53,7 @@
       count.textContent=comments.length?`${comments.length} comment${comments.length===1?"":"s"}`:"Start discussion";
       const roots=comments.filter(c=>!c.parent_id),replies=comments.filter(c=>c.parent_id);
       if(!roots.length){out.innerHTML='<div class="story-discussion-empty">No comments yet. You can be first.</div>';return}
-      out.innerHTML=roots.map(c=>{const p=profiles.get(c.user_id)||{},kids=replies.filter(r=>r.parent_id===c.id);return `<article class="ifn-comment"><div class="ifn-comment-head"><strong>${esc(p.display_name||"Identity practitioner")}</strong><span class="fine">${dt(c.created_at)}</span></div>${p.headline?`<div class="fine">${esc(p.headline)}</div>`:""}<div class="ifn-comment-body">${text(c.body)}</div>${user?`<button class="ifn-reply-toggle" type="button" data-reply-toggle="${c.id}">Reply</button><form class="ifn-reply-form" data-reply-form="${c.id}" hidden><textarea name="body" rows="3" maxlength="8000" required placeholder="Reply to this comment…"></textarea><button class="btn small" type="submit">Post reply</button><span class="fine" data-status></span></form>`:""}${kids.length?`<div class="ifn-replies">${kids.map(r=>{const rp=profiles.get(r.user_id)||{};return `<div class="ifn-reply"><div class="ifn-comment-head"><strong>${esc(rp.display_name||"Identity practitioner")}</strong><span class="fine">${dt(r.created_at)}</span></div><div class="ifn-comment-body">${text(r.body)}</div></div>`}).join("")}</div>`:""}</article>`}).join("");
+      out.innerHTML=roots.map(c=>{const p=profiles.get(c.user_id)||{},kids=replies.filter(r=>r.parent_id===c.id);return `<article class="ifn-comment"><div class="ifn-comment-head"><strong>${esc(p.display_name||"Identity practitioner")}</strong>${flair(p)}<span class="fine">${dt(c.created_at)}</span></div>${p.headline?`<div class="fine">${esc(p.headline)}</div>`:""}<div class="ifn-comment-body">${text(c.body)}</div>${user?`<button class="ifn-reply-toggle" type="button" data-reply-toggle="${c.id}">Reply</button><form class="ifn-reply-form" data-reply-form="${c.id}" hidden><textarea name="body" rows="3" maxlength="8000" required placeholder="Reply to this comment…"></textarea><button class="btn small" type="submit">Post reply</button><span class="fine" data-status></span></form>`:""}${kids.length?`<div class="ifn-replies">${kids.map(r=>{const rp=profiles.get(r.user_id)||{};return `<div class="ifn-reply"><div class="ifn-comment-head"><strong>${esc(rp.display_name||"Identity practitioner")}</strong>${flair(rp)}<span class="fine">${dt(r.created_at)}</span></div><div class="ifn-comment-body">${text(r.body)}</div></div>`}).join("")}</div>`:""}</article>`}).join("");
       out.querySelectorAll("[data-reply-toggle]").forEach(b=>b.addEventListener("click",()=>{const f=out.querySelector(`[data-reply-form="${b.dataset.replyToggle}"]`);if(f)f.hidden=!f.hidden}));
       out.querySelectorAll("[data-reply-form]").forEach(f=>f.addEventListener("submit",async ev=>{ev.preventDefault();const form=ev.currentTarget,s=form.querySelector("[data-status]");try{s.textContent="Posting…";await IFNCommunityData.create(threadId,{body:new FormData(form).get("body"),parentId:form.dataset.replyForm,kind:"reply"});form.reset();await draw(panel,threadId,user)}catch(err){s.textContent=err.message}}));
     }catch(err){count.textContent="Discussion unavailable";out.innerHTML=`<div class="story-discussion-empty">${esc(err.message)}</div>`}
