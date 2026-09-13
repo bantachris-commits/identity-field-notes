@@ -106,25 +106,44 @@ except Exception:
 article_date = article.get("date") or ""
 upcoming_events = [x for x in events if (x.get("date") or "") >= article_date][:3]
 
+dark_mode_css = '''<style>
+:root { color-scheme: light dark; supported-color-schemes: light dark; }
+@media (prefers-color-scheme: dark) {
+  .ifn-canvas { background:#091216 !important; }
+  .ifn-sheet { background:#101b20 !important; border-color:#304149 !important; }
+  .ifn-header { background:#17282f !important; border-color:#344850 !important; }
+  .ifn-header-line { border-color:#344850 !important; }
+  .ifn-title, .ifn-story-title, .ifn-tldr-title, .ifn-why strong, .ifn-event-title, .ifn-event-title a { color:#f4f1e8 !important; }
+  .ifn-meta, .ifn-date, .ifn-taxonomy, .ifn-confidence, .ifn-event-meta, .ifn-disclosure { color:#aebbc0 !important; }
+  .ifn-body, .ifn-tldr li, .ifn-tldr strong, .ifn-why { color:#e7ecee !important; }
+  .ifn-tldr, .ifn-why, .ifn-event-panel { background:#17272e !important; border-color:#344850 !important; }
+  .ifn-tag { background:#332b18 !important; border-color:#6e5a2b !important; color:#f3c86c !important; }
+  .ifn-link, .ifn-event-link { color:#70d3dc !important; }
+  .ifn-rule { background:#344850 !important; }
+  .ifn-footer { background:#0c242d !important; }
+}
+</style>'''
+
 parts = [
     '<!-- buttondown-editor-mode: fancy -->',
-    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{CANVAS}" style="width:100%;background:{CANVAS};border-collapse:collapse;">
+    dark_mode_css,
+    f'''<table class="ifn-canvas" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{CANVAS}" style="width:100%;background:{CANVAS};border-collapse:collapse;">
 <tr><td style="padding:18px 14px;">
-<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{SHEET}" style="width:100%;background:{SHEET};border:1px solid {LINE};border-collapse:collapse;">
+<table class="ifn-sheet" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{SHEET}" style="width:100%;background:{SHEET};border:1px solid {LINE};border-collapse:collapse;">
 <tr><td style="padding:22px 20px;">''',
-    f'''<table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{HEADER_BG}" style="margin:0 0 24px 0;border:1px solid {LINE};border-collapse:collapse;background:{HEADER_BG};">
-<tr><td style="padding:12px 14px 8px 14px;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
+    f'''<table class="ifn-header" role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="{HEADER_BG}" style="margin:0 0 24px 0;border:1px solid {LINE};border-collapse:collapse;background:{HEADER_BG};">
+<tr><td class="ifn-header-line" style="padding:12px 14px 8px 14px;border-bottom:1px solid {LINE};font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:800;letter-spacing:1.15px;color:{AMBER};text-transform:uppercase;">AI-DRIVEN · SOURCE-LINKED · COMMUNITY-CORRECTED</td></tr>
 <tr><td style="padding:16px 14px 14px 14px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
 <td width="56" valign="middle"><div style="width:42px;height:42px;line-height:42px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;letter-spacing:1px;">IFN</div></td>
-<td valign="middle"><div style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
-<td valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}</td>
+<td valign="middle"><div class="ifn-title" style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div class="ifn-meta" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
+<td class="ifn-date" valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}</td>
 </tr></table>
 </td></tr>
-<tr><td style="border-top:4px solid {NAVY};padding:9px 14px 11px 14px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
+<tr><td class="ifn-taxonomy" style="border-top:4px solid {NAVY};padding:9px 14px 11px 14px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
 </table>''',
-    f'''<div style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
+    f'''<div class="ifn-tldr" style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
+<div class="ifn-tldr-title" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
     '<ul style="margin:0;padding-left:20px;">',
 ]
 
@@ -147,43 +166,43 @@ for index, story in enumerate(stories, 1):
     source_url = urljoin(SITE, story.get("url") or canonical)
 
     parts += [
-        f'''<div style="margin:0 0 8px 0;"><span style="display:inline-block;background:{WARM_TAG};border:1px solid #ecd19b;padding:4px 7px;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;letter-spacing:.8px;color:#8a5d0a;text-transform:uppercase;">{e(kicker)}</span><span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.6px;color:{MUTED};text-transform:uppercase;margin-left:7px;">{e(confidence)}</span></div>''',
-        f'<h2 style="font-family:Georgia,Times New Roman,serif;font-size:23px;line-height:1.25;color:{NAVY};margin:0 0 12px 0;">{index}. {e(title)}</h2>',
-        f'<p style="font-size:16px;line-height:1.62;color:#202a2e;margin:0 0 14px 0;">{e(summary)}</p>',
+        f'''<div style="margin:0 0 8px 0;"><span class="ifn-tag" style="display:inline-block;background:{WARM_TAG};border:1px solid #ecd19b;padding:4px 7px;font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;letter-spacing:.8px;color:#8a5d0a;text-transform:uppercase;">{e(kicker)}</span><span class="ifn-confidence" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:700;letter-spacing:.6px;color:{MUTED};text-transform:uppercase;margin-left:7px;">{e(confidence)}</span></div>''',
+        f'<h2 class="ifn-story-title" style="font-family:Georgia,Times New Roman,serif;font-size:23px;line-height:1.25;color:{NAVY};margin:0 0 12px 0;">{index}. {e(title)}</h2>',
+        f'<p class="ifn-body" style="font-size:16px;line-height:1.62;color:#202a2e;margin:0 0 14px 0;">{e(summary)}</p>',
     ]
     if why:
-        parts.append(f'''<div style="background:#f8fbfb;border:1px solid {LINE};border-left:4px solid {TEAL};padding:12px 15px;margin:15px 0 17px 0;line-height:1.55;color:#202a2e;">
+        parts.append(f'''<div class="ifn-why" style="background:#f8fbfb;border:1px solid {LINE};border-left:4px solid {TEAL};padding:12px 15px;margin:15px 0 17px 0;line-height:1.55;color:#202a2e;">
 <strong style="color:{NAVY};">Why it matters:</strong> {e(why)}
 </div>''')
     parts += [
-        f'<p style="margin:0 0 26px 0;"><a href="{e(source_url)}" style="color:{TEAL};font-weight:700;text-decoration:underline;">Original source — {e(source)} ↗</a></p>',
-        f'<div style="height:1px;background:{LINE};margin:0 0 28px 0;"></div>',
+        f'<p style="margin:0 0 26px 0;"><a class="ifn-link" href="{e(source_url)}" style="color:{TEAL};font-weight:700;text-decoration:underline;">Original source — {e(source)} ↗</a></p>',
+        f'<div class="ifn-rule" style="height:1px;background:{LINE};margin:0 0 28px 0;"></div>',
     ]
 
 if upcoming_events:
     parts += [
-        f'''<div style="background:#f7fafb;border:1px solid {LINE};border-top:3px solid {TEAL};padding:18px 18px 8px 18px;margin:0 0 28px 0;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:5px;">Upcoming conferences</div>
-<p style="margin:0 0 15px 0;color:{MUTED};">A few identity events coming up soon.</p>'''
+        f'''<div class="ifn-event-panel" style="background:#f7fafb;border:1px solid {LINE};border-top:3px solid {TEAL};padding:18px 18px 8px 18px;margin:0 0 28px 0;">
+<div class="ifn-tldr-title" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:5px;">Upcoming conferences</div>
+<p class="ifn-event-meta" style="margin:0 0 15px 0;color:{MUTED};">A few identity events coming up soon.</p>'''
     ]
     for event in upcoming_events:
         eid = event_id(event)
         event_url = event.get("url") or f"{SITE}events.html#{eid}"
         discuss_url = f"{SITE}events.html#{eid}"
         parts.append(f'''<div style="padding:0 0 14px 0;margin:0 0 14px 0;border-bottom:1px solid {LINE};">
-<div style="font-weight:700;color:{NAVY};"><a href="{e(event_url)}" style="color:{NAVY};text-decoration:none;">{e(event.get('name', 'Identity event'))}</a></div>
-<div style="font-size:14px;line-height:1.5;color:{MUTED};margin-top:4px;">{e(event_date(event))} · {e(event.get('location', 'Location TBA'))}</div>
-<div style="margin-top:6px;"><a href="{e(discuss_url)}" style="color:{TEAL};font-weight:700;">Discuss with attendees on IFN →</a></div>
+<div class="ifn-event-title" style="font-weight:700;color:{NAVY};"><a href="{e(event_url)}" style="color:{NAVY};text-decoration:none;">{e(event.get('name', 'Identity event'))}</a></div>
+<div class="ifn-event-meta" style="font-size:14px;line-height:1.5;color:{MUTED};margin-top:4px;">{e(event_date(event))} · {e(event.get('location', 'Location TBA'))}</div>
+<div style="margin-top:6px;"><a class="ifn-event-link" href="{e(discuss_url)}" style="color:{TEAL};font-weight:700;">Discuss with attendees on IFN →</a></div>
 </div>''')
     parts.append('</div>')
 
 parts += [
-    f'''<div style="background:{NAVY};padding:18px 20px;margin:0 0 18px 0;color:#ffffff;">
+    f'''<div class="ifn-footer" style="background:{NAVY};padding:18px 20px;margin:0 0 18px 0;color:#ffffff;">
 <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{AMBER};text-transform:uppercase;margin-bottom:8px;">From the field</div>
 <div style="font-size:15px;line-height:1.55;">Something missing, overstated, or wrong? Add evidence, field experience, or a correction directly under the story.</div>
 <div style="margin-top:12px;"><a href="{e(canonical)}" style="color:#ffffff;font-weight:700;text-decoration:underline;">Read and discuss today&apos;s digest on Identity Field Notes →</a></div>
 </div>''',
-    f'<p style="font-size:12px;line-height:1.5;color:{MUTED};"><strong>Source first. AI summary second.</strong><br>{e(article.get("disclosure") or "This digest is AI-generated from linked sources. Verify important details at the original source.")}</p>',
+    f'<p class="ifn-disclosure" style="font-size:12px;line-height:1.5;color:{MUTED};"><strong>Source first. AI summary second.</strong><br>{e(article.get("disclosure") or "This digest is AI-generated from linked sources. Verify important details at the original source.")}</p>',
     '</td></tr></table></td></tr></table>',
 ]
 
@@ -200,7 +219,7 @@ payload = {
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v9",
+        "identity_field_notes_format": "morning-digest-v10",
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
