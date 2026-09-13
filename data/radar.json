@@ -1,5 +1,89 @@
 [
   {
+    "id": "e7045162419c265f",
+    "date": "2026-09-13",
+    "source": "Microsoft Security Research",
+    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "tags": [
+      "Entra",
+      "passkeys",
+      "FIDO",
+      "MFA",
+      "session-theft",
+      "identity-attacks"
+    ],
+    "note": "Details active attacks that use passkey and helpdesk lures, AiTM or device-code flows, stolen tokens, attacker-registered MFA methods, and Microsoft Graph reconnaissance.",
+    "score": 100
+  },
+  {
+    "id": "c352fc150c7419a1",
+    "date": "2026-09-13",
+    "source": "9to5Mac",
+    "title": "Dropbox breach seemingly caused by egregious authentication failure",
+    "url": "https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/",
+    "tags": [
+      "IAM",
+      "SSO",
+      "OAuth",
+      "authentication-failure",
+      "authorization"
+    ],
+    "note": "Examines the reported compromise of about 5,000 accounts through a third-party Lenovo identity-provider integration that failed to properly validate authorization claims.",
+    "score": 95
+  },
+  {
+    "id": "82870bf6f1bec574",
+    "date": "2026-09-13",
+    "source": "BleepingComputer",
+    "title": "The Top 4 Threats We Found by Investigating Every Alert for a Quarter",
+    "url": "https://www.bleepingcomputer.com/news/security/the-top-4-threats-we-found-by-investigating-every-alert-for-a-quarter/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "OAuth",
+      "session-theft",
+      "token-abuse",
+      "identity-attacks"
+    ],
+    "note": "Useful incident-response analysis covering session hijacking, token replay, MFA bypass, credential stuffing, malicious inbox rules, and OAuth consent persistence.",
+    "score": 94
+  },
+  {
+    "id": "5eb7907d4adfd0ac",
+    "date": "2026-09-13",
+    "source": "METR",
+    "title": "Update on Security at METR",
+    "url": "https://metr.org/blog/2026-08-31-security-update/",
+    "tags": [
+      "NHI",
+      "machine-identity",
+      "API-keys",
+      "secrets",
+      "AI-agents",
+      "authentication"
+    ],
+    "note": "Primary incident disclosure describes a fail-open authentication bug exposing an agent dashboard, API-key theft, SSH persistence, and a separate campaign involving OAuth grants and credential stuffing.",
+    "score": 93
+  },
+  {
+    "id": "348626d9ce7a6f9b",
+    "date": "2026-09-13",
+    "source": "Anthropic",
+    "title": "Countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "tags": [
+      "NHI",
+      "machine-identity",
+      "AI-agents",
+      "secrets",
+      "session-theft",
+      "OAuth"
+    ],
+    "note": "Threat-intelligence reporting describes stolen credentials, admin-token amplification, CI/CD injection, session-table dumps, signing-key theft, and vendor-OAuth fan-out in AI-enabled intrusions.",
+    "score": 92
+  },
+  {
     "id": "b5a8ddba9d35f804",
     "date": "2026-09-13",
     "source": "Google Cloud Documentation",
@@ -13,6 +97,21 @@
       "MCP"
     ],
     "note": "Google\u2019s latest IAM release notes combine an MCP control surface for managing roles and deny policies with programmatic Gemini-assisted role recommendations, making agent-mediated administration a concrete governance concern.",
+    "score": 91
+  },
+  {
+    "id": "7767bba02e369351",
+    "date": "2026-09-13",
+    "source": "FreeIPA Project",
+    "title": "FreeIPA 4.13.4 release notes: CVE-2026-13097 access-control flaw",
+    "url": "https://www.freeipa.org/release-notes/4-13-4.html",
+    "tags": [
+      "IAM",
+      "privilege-escalation",
+      "authentication",
+      "access-control"
+    ],
+    "note": "Primary advisory material explains how an overly broad self-management ACI could let unauthenticated clients create reusable Kerberos identities and potentially reach administrative privileges.",
     "score": 91
   },
   {
@@ -32,6 +131,22 @@
     "score": 88
   },
   {
+    "id": "cd08e41344097314",
+    "date": "2026-09-13",
+    "source": "Agentic AI Foundation",
+    "title": "Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems",
+    "url": "https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems",
+    "tags": [
+      "AI-agent-authorization",
+      "MCP",
+      "OAuth",
+      "OIDC",
+      "delegation"
+    ],
+    "note": "Provides a timely architectural treatment of multi-party trust and authorization relationships among users, hosts, agents, MCP servers, authorization servers, and downstream resources.",
+    "score": 88
+  },
+  {
     "id": "f17ffd271346ed10",
     "date": "2026-09-13",
     "source": "Proxy Tech Support Research",
@@ -48,6 +163,21 @@
     "score": 86
   },
   {
+    "id": "63d92b090ca17491",
+    "date": "2026-09-13",
+    "source": "SEC filing",
+    "title": "MDRX cybersecurity incident disclosure",
+    "url": "https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm",
+    "tags": [
+      "IAM",
+      "compromised-credentials",
+      "third-party-access",
+      "least-privilege"
+    ],
+    "note": "A material incident disclosure identifies compromised vendor credentials as the access path used to download patient data and explicitly describes the limits of that access.",
+    "score": 86
+  },
+  {
     "id": "99680276e400d3fb",
     "date": "2026-09-13",
     "source": "IDScan.net",
@@ -60,6 +190,22 @@
       "fraud"
     ],
     "note": "The identity-verification provider\u2019s incident notice is newly consequential amid reporting about a large-scale exposure of government-ID scans, highlighting durable identity-data risk and downstream account-fraud implications.",
+    "score": 84
+  },
+  {
+    "id": "e02db55b4e084169",
+    "date": "2026-09-13",
+    "source": "VentureBeat",
+    "title": "MCP's new spec turns a planted prompt into a stolen credential",
+    "url": "https://venturebeat.com/security/mcps-new-spec-turns-a-planted-prompt-into-a-stolen-credential",
+    "tags": [
+      "AI-agent-authorization",
+      "MCP",
+      "OAuth",
+      "tokens",
+      "NHI"
+    ],
+    "note": "Analyzes how MCP's newer OAuth-native flows, rendered agent interfaces, audience binding, and token handling shift authorization and credential-theft responsibilities onto deployments.",
     "score": 84
   },
   {
