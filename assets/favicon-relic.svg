@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Golden archaeology relic">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2d77a"/><stop offset=".45" stop-color="#c99a36"/><stop offset="1" stop-color="#75501c"/></linearGradient>
+  </defs>
+  <path d="M19 11c4-5 22-5 26 0l-3 8c4 4 5 9 4 14l5 8-6 10-8-4-5 10-5-10-8 4-6-10 5-8c-1-5 0-10 4-14z" fill="url(#g)" stroke="#2c1b0e" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M24 15c4-3 12-3 16 0l-2 8H26z" fill="#a67525" stroke="#2c1b0e" stroke-width="1.6"/>
+  <circle cx="27" cy="27" r="2.2" fill="#25170d"/><circle cx="37" cy="27" r="2.2" fill="#25170d"/>
+  <path d="M29 34c2 1.5 4 1.5 6 0M22 39l10 5 10-5M18 42l9 5M46 42l-9 5" fill="none" stroke="#2c1b0e" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 18h16M27 12l-2 6M37 12l2 6" fill="none" stroke="#ffe8a0" stroke-width="1.4" stroke-linecap="round" opacity=".75"/>
+</svg>
