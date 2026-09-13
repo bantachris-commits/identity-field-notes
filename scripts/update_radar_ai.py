@@ -11,13 +11,14 @@ ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.getenv('OPENAI_MODEL','gpt-5.6-luna')
 now=datetime.now(ZoneInfo('America/Denver'))
 
-GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources"}
+GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources","/iam/docs/release-notes"}
 GENERIC_URLS={
  'https://techcommunity.microsoft.com/category/microsoft-entra/blog/microsoft-entra-blog',
  'https://www.microsoft.com/security/blog',
  'https://www.okta.com/blog/threat-intelligence',
  'https://www.beyondtrust.com/blog',
  'https://delinea.com/blog',
+ 'https://docs.cloud.google.com/iam/docs/release-notes',
 }
 def specific_url(u):
     try:
@@ -29,17 +30,18 @@ def specific_url(u):
         return True
     except Exception:return False
 
-prompt=f'''Today is {now.date().isoformat()} in America/Denver. Search the current web for NEW or newly relevant items from the last 36 hours that experienced PAM/IAM/IGA/identity-security practitioners might want in a reading queue. Include privileged access, Entra/Okta/Auth0, SailPoint/Saviynt, CyberArk/Delinea/BeyondTrust, passkeys/FIDO, NHI/machine identity, identity attacks, OAuth/session/token abuse, and AI-agent authorization.
+prompt=f'''Today is {now.date().isoformat()} in America/Denver. Search the current web for NEW or newly relevant items from the last 36 hours that experienced PAM/IAM/IGA/identity-security practitioners might want in a reading queue. Cover the market broadly, including CyberArk/Palo Alto Networks, Delinea, BeyondTrust, Okta/Auth0, Microsoft Entra, SailPoint, Saviynt, Ping Identity, Descope, Semperis, AWS, Google Cloud, FIDO/OpenID, NHI/machine identity, passkeys, ITDR, OAuth/session/token abuse and AI-agent authorization.
 
-Also look back up to 7 days for material breaches or incidents where reliable reporting or primary evidence identifies an identity-control failure or abuse as a root cause or contributing factor: compromised credentials, MFA bypass, token/session theft, excessive privilege, stale identities, exposed secrets, service-account abuse, OAuth abuse, authentication or authorization failures, or weak offboarding.
+Also look back up to 7 days for material breaches or incidents where reliable reporting or primary evidence identifies an identity-control failure or abuse as a root cause or contributing factor: compromised credentials, MFA bypass, token/session theft, excessive privilege, stale identities, exposed secrets, service-account abuse, OAuth abuse, authentication or authorization failures, federation/account-linking failures, or weak offboarding.
 
 Source rules:
 - Prefer original incident disclosures, regulatory filings, CISA/CERT/government material, standards bodies, primary technical research, and strong independent security reporting or analysis.
-- Every item URL must be the canonical page for the exact article, advisory, filing, release note or research item. Do not return a vendor homepage, generic blog index, newsroom listing, category/tag page or press-release directory when a specific item page exists.
-- A release-notes page is acceptable when the item genuinely exists only as an entry on that page.
+- Every item URL must be the canonical page for the exact article, advisory, filing, press release or research item. Do not return a vendor homepage, generic blog index, newsroom listing, category/tag page, generic documentation page, release-notes index or press-release directory.
+- If a development exists only as a release-note entry and there is no stable item-level or anchored URL, skip it rather than sending readers to a generic index.
+- Before returning an item, verify that the destination page title/content actually matches the claimed story. If you cannot verify that, omit the item.
 - Do not surface vendor marketing that mainly argues "our product could have prevented this breach." A vendor source is fine when the vendor is the affected party or published the original advisory/research, or when a product announcement itself is materially relevant to identity practitioners.
 - Do not infer identity causation when the evidence does not establish it.
-- Prefer substantive incidents, technical research, material standards changes and meaningful platform moves over generic thought leadership.
+- Prefer substantive incidents, technical research, material standards changes, acquisitions/platform shifts and meaningful product moves over generic thought leadership.
 - Avoid duplicate coverage of the same development unless the second source adds substantial independent detail.
 - Never invent URLs.
 
