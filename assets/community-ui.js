@@ -12,8 +12,18 @@
     if(user){
       compose.innerHTML='<form data-post><textarea name="body" rows="4" maxlength="8000" required placeholder="Add field experience, evidence, a correction, or a useful disagreement…"></textarea><button class="btn" type="submit">Post to the field</button><span class="fine" data-status></span></form>';
       compose.querySelector("form").addEventListener("submit",async ev=>{
-        ev.preventDefault();const status=ev.currentTarget.querySelector("[data-status]");
-        try{status.textContent="Posting…";await window.IFNCommunityData.post(articleId,new FormData(ev.currentTarget).get("body"));ev.currentTarget.reset();status.textContent="Posted.";await draw()}catch(err){status.textContent=err.message}
+        ev.preventDefault();
+        const form=ev.currentTarget;
+        const status=form.querySelector("[data-status]");
+        try{
+          status.textContent="Posting…";
+          await window.IFNCommunityData.post(articleId,new FormData(form).get("body"));
+          form.reset();
+          status.textContent="Posted.";
+          await draw();
+        }catch(err){
+          status.textContent=err.message;
+        }
       });
     }else compose.innerHTML='<p class="fine">Read freely. Sign in with Google or an email magic link to post.</p>';
 
