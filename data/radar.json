@@ -1,202 +1,44 @@
 [
   {
-    "id": "e7045162419c265f",
-    "date": "2026-09-13",
-    "source": "Microsoft Security Research",
-    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-    "tags": ["Entra", "Passkeys", "MFA", "OAuth", "Session theft"],
-    "note": "Primary research on active cloud intrusions using passkey/SSO lures, AiTM and device-code flows, attacker-added authentication methods, Graph reconnaissance and cloud data collection.",
-    "score": 99
+    "id":"e7045162419c265f","date":"2026-09-09","source":"Microsoft Security Research","title":"Passkey-themed social engineering leads to identity and cloud compromise","url":"https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/","tags":["Entra","Passkeys","MFA","OAuth","Session theft"],"note":"Primary research on active cloud intrusions using passkey/SSO lures, AiTM and device-code flows, attacker-added authentication methods, Graph reconnaissance and cloud data collection.","score":99
   },
   {
-    "id": "3820a0f914db94fe",
-    "date": "2026-09-13",
-    "source": "Okta Threat Intelligence",
-    "title": "Signing in without actually signing in",
-    "url": "https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/",
-    "tags": ["Tokens", "Session hijacking", "AI", "ITDR"],
-    "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
-    "score": 97
+    "id":"3820a0f914db94fe","date":"2026-09-09","source":"Okta Threat Intelligence","title":"Signing in without actually signing in","url":"https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/","tags":["Tokens","Session hijacking","AI","ITDR"],"note":"Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.","score":97
   },
   {
-    "id": "0bc125f22c0feaec",
-    "date": "2026-09-13",
-    "source": "Okta",
-    "title": "New Okta innovations close governance blind spots and extend zero standing privilege",
-    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
-    "tags": ["PAM", "IGA", "ITDR", "NHI", "Zero standing privilege"],
-    "note": "Vendor announcement worth tracking because it explicitly brings governance, privileged access and Permiso-backed identity threat detection into one identity-security platform story.",
-    "score": 96
+    "id":"oidc-key-binding-id1","date":"2026-09-10","source":"OpenID Foundation","title":"OpenID Connect Key Binding 1.0 approved as an Implementer's Draft","url":"https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/","tags":["OIDC","DPoP","Tokens","Standards","Session security"],"note":"The first Implementer's Draft standardizes binding a public key to an OIDC ID Token using DPoP, an important step toward making stolen bearer material less reusable.","score":96
   },
   {
-    "id": "c352fc150c7419a1",
-    "date": "2026-09-13",
-    "source": "9to5Mac",
-    "title": "Dropbox breach seemingly caused by egregious authentication failure",
-    "url": "https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/",
-    "tags": ["IAM", "SSO", "OAuth", "Authentication", "Authorization"],
-    "note": "Independent reporting on a third-party identity-provider integration failure that reportedly exposed thousands of accounts, useful as an authentication and trust-boundary case study.",
-    "score": 95
+    "id":"freeipa-4-13-4","date":"2026-09-08","source":"FreeIPA Project","title":"FreeIPA 4.13.4 addresses critical access-control flaws","url":"https://www.freeipa.org/release-notes/4-13-4.html","tags":["IAM","Kerberos","Privilege escalation","Access control"],"note":"Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.","score":96
   },
   {
-    "id": "6e6808f3261047ff",
-    "date": "2026-09-13",
-    "source": "Microsoft Security",
-    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
-    "tags": ["OAuth", "Session theft", "Entra", "Identity attacks"],
-    "note": "A concrete device-code-phishing and BEC case study showing how correlated identity, email and endpoint telemetry can disrupt post-authentication abuse.",
-    "score": 94
+    "id":"0bc125f22c0feaec","date":"2026-09-09","source":"Okta","title":"New Okta innovations close governance blind spots and extend zero standing privilege","url":"https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/","tags":["PAM","IGA","ITDR","NHI","Zero standing privilege"],"note":"Vendor announcement worth tracking because it explicitly brings governance, privileged access and Permiso-backed identity threat detection into one identity-security platform story.","score":94
   },
   {
-    "id": "5eb7907d4adfd0ac",
-    "date": "2026-09-13",
-    "source": "METR",
-    "title": "Update on Security at METR",
-    "url": "https://metr.org/blog/2026-08-31-security-update/",
-    "tags": ["NHI", "API keys", "Secrets", "AI agents", "Authentication"],
-    "note": "Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and separate OAuth/credential-stuffing activity.",
-    "score": 93
+    "id":"6e6808f3261047ff","date":"2026-09-10","source":"Microsoft Security","title":"Detect and disrupt AI-themed attacks with Microsoft Defender","url":"https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/","tags":["OAuth","Device code","Session theft","Entra","Identity attacks"],"note":"A concrete device-code-phishing and BEC case study showing how correlated identity, email and endpoint telemetry can disrupt post-authentication abuse.","score":94
   },
   {
-    "id": "efb7e4efca35b8f1",
-    "date": "2026-09-13",
-    "source": "Delinea",
-    "title": "Credential brokering vs. runtime authorization",
-    "url": "https://delinea.com/blog/credential-brokering-vs-runtime-authorization",
-    "tags": ["PAM", "AUTHZ", "AI agents", "Runtime authorization"],
-    "note": "A useful vendor framing of the difference between hiding or brokering credentials and evaluating individual privileged actions after a session is already open.",
-    "score": 93
+    "id":"63d92b090ca17491","date":"2026-09-08","source":"SEC filing","title":"Veradigm discloses data theft through compromised vendor API credentials","url":"https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm","tags":["IAM","Compromised credentials","Third-party access","API","Least privilege"],"note":"Primary filing identifying compromised vendor credentials as the access path used to download patient data and explaining that the credential was scoped to a limited API interface.","score":93
   },
   {
-    "id": "0f03a542038d1217",
-    "date": "2026-09-13",
-    "source": "Saviynt",
-    "title": "How Privileged Can Your AI Become? More Than You Might Think",
-    "url": "https://saviynt.com/blog/how-privileged-can-your-ai-become",
-    "tags": ["PAM", "AI agents", "NHI", "Zero standing privilege"],
-    "note": "Frames privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.",
-    "score": 92
+    "id":"dropbox-lenovo-idp-2026","date":"2026-09-02","source":"BleepingComputer","title":"Dropbox accounts breached through Lenovo email verification flaw","url":"https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/","tags":["IAM","Federation","Account linking","Authentication","Trust boundaries"],"note":"Security reporting on an identity-linking failure where fraudulent Lenovo IDs could be trusted into existing Dropbox accounts without the victim's Dropbox password.","score":93
   },
   {
-    "id": "348626d9ce7a6f9b",
-    "date": "2026-09-13",
-    "source": "Anthropic",
-    "title": "Countering misuse of AI: September 2026",
-    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-    "tags": ["NHI", "AI agents", "Secrets", "OAuth", "Identity attacks"],
-    "note": "Threat-intelligence reporting with identity-relevant examples including stolen credentials, admin-token amplification, CI/CD injection, session data and signing-key theft.",
-    "score": 92
+    "id":"5eb7907d4adfd0ac","date":"2026-08-31","source":"METR","title":"Update on Security at METR","url":"https://metr.org/blog/2026-08-31-security-update/","tags":["NHI","API keys","Secrets","AI agents","Authentication"],"note":"Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and a separate campaign involving credential stuffing and OAuth token-grant attempts.","score":92
   },
   {
-    "id": "b5a8ddba9d35f804",
-    "date": "2026-09-13",
-    "source": "Google Cloud Documentation",
-    "title": "IAM remote MCP server generally available; Gemini role suggestions via Policy Assist API",
-    "url": "https://docs.cloud.google.com/iam/docs/release-notes",
-    "tags": ["IAM", "PAM", "NHI", "MCP", "AI authorization"],
-    "note": "Google's IAM release notes put agent-mediated IAM administration and AI-assisted role recommendations into production governance workflows.",
-    "score": 91
+    "id":"eb77ddbb1f967f57","date":"2026-09-09","source":"Surfshark","title":"Security update: September 2026 incident report","url":"https://surfshark.com/blog/security-update-september-2026-incident-report","tags":["NHI","Secrets","Build credentials","Incident response"],"note":"Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.","score":91
   },
   {
-    "id": "7767bba02e369351",
-    "date": "2026-09-13",
-    "source": "FreeIPA Project",
-    "title": "FreeIPA 4.13.4 release notes: CVE-2026-13097 access-control flaw",
-    "url": "https://www.freeipa.org/release-notes/4-13-4.html",
-    "tags": ["IAM", "Privilege escalation", "Authentication", "Access control"],
-    "note": "Primary advisory material on an access-control flaw that could enable creation of reusable Kerberos identities and potentially reach administrative privilege.",
-    "score": 91
+    "id":"0f03a542038d1217","date":"2026-09-10","source":"Saviynt","title":"How Privileged Can Your AI Become? More Than You Might Think","url":"https://saviynt.com/blog/how-privileged-can-your-ai-become","tags":["PAM","AI agents","NHI","Privilege escalation","Zero standing privilege"],"note":"A useful practitioner framing of privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.","score":89
   },
   {
-    "id": "cacc3860f8e502d3",
-    "date": "2026-09-13",
-    "source": "Delinea Labs",
-    "title": "Stolen MFA seeds mark a new stage in identity theft",
-    "url": "https://delinea.com/blog/stolen-mfa-seeds-and-identity-theft",
-    "tags": ["MFA", "Sessions", "Secrets", "PAM", "ITDR"],
-    "note": "Threat analysis on stolen TOTP seed material and session databases, useful for thinking about authentication infrastructure itself as privileged secret inventory.",
-    "score": 90
+    "id":"348626d9ce7a6f9b","date":"2026-09-10","source":"Anthropic Threat Intelligence","title":"Detecting and countering misuse of AI: September 2026","url":"https://www.anthropic.com/threat-intelligence-report-september-2026","tags":["AI agents","Tokens","Credentials","Identity attacks","Threat intelligence"],"note":"Primary threat-intelligence reporting with identity-relevant cases including M365 token theft, stolen API credentials, account abuse and autonomous cyber operations.","score":88
   },
   {
-    "id": "263cc3572be910e6",
-    "date": "2026-09-13",
-    "source": "SailPoint",
-    "title": "Identity at machine speed: Securing the human, non-human, and agentic enterprise",
-    "url": "https://www.sailpoint.com/blog/identity-at-machine-speed-securing-the-human-non-human-and-agentic-enterprise",
-    "tags": ["IGA", "NHI", "AI agents", "Identity governance"],
-    "note": "A strategic read on governing human, machine and agent identities as one expanding identity-security problem rather than separate programs.",
-    "score": 89
+    "id":"99680276e400d3fb","date":"2026-09-04","source":"IDScan.net","title":"Notification of Data Security Incident","url":"https://idscan.net/press-release/notification-of-data-security-incident/","tags":["Identity proofing","Identity data","Fraud","Incident response"],"note":"Affected-party notice from an identity-verification provider investigating unauthorized access to customer information, relevant to downstream proofing and fraud risk.","score":84
   },
   {
-    "id": "f770a8d94fd45ba5",
-    "date": "2026-09-13",
-    "source": "Okta Product Innovation",
-    "title": "Introducing the Okta Managed MCP Server: Manage your Okta org with natural language",
-    "url": "https://www.okta.com/blog/product-innovation/okta-managed-mcp-server-ai-agents/",
-    "tags": ["IAM", "MCP", "AI agents", "OAuth"],
-    "note": "A concrete example of AI agents becoming IAM administrators through scoped OAuth and auditable MCP tooling, raising practical governance and approval questions.",
-    "score": 89
-  },
-  {
-    "id": "cd08e41344097314",
-    "date": "2026-09-13",
-    "source": "Agentic AI Foundation",
-    "title": "Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems",
-    "url": "https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems",
-    "tags": ["AUTHZ", "MCP", "OAuth", "OIDC", "Delegation"],
-    "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources.",
-    "score": 88
-  },
-  {
-    "id": "63d92b090ca17491",
-    "date": "2026-09-13",
-    "source": "SEC filing",
-    "title": "MDRX cybersecurity incident disclosure",
-    "url": "https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm",
-    "tags": ["IAM", "Compromised credentials", "Third-party access", "Least privilege"],
-    "note": "Material incident disclosure identifying compromised vendor credentials as the access path used to download patient data and describing the limits of that access.",
-    "score": 87
-  },
-  {
-    "id": "eb77ddbb1f967f57",
-    "date": "2026-09-13",
-    "source": "Surfshark",
-    "title": "Security update: September 2026 incident report",
-    "url": "https://surfshark.com/blog/security-update-september-2026-incident-report",
-    "tags": ["NHI", "Secrets", "Service accounts", "Incident response"],
-    "note": "Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.",
-    "score": 86
-  },
-  {
-    "id": "99680276e400d3fb",
-    "date": "2026-09-13",
-    "source": "IDScan.net",
-    "title": "Notification of Data Security Incident",
-    "url": "https://idscan.net/press-release/notification-of-data-security-incident/",
-    "tags": ["Identity data", "Fraud", "Incident response"],
-    "note": "An identity-verification provider incident notice with durable implications for government-ID data, downstream fraud and identity-proofing risk.",
-    "score": 84
-  },
-  {
-    "id": "e02db55b4e084169",
-    "date": "2026-09-13",
-    "source": "VentureBeat",
-    "title": "MCP's new spec turns a planted prompt into a stolen credential",
-    "url": "https://venturebeat.com/security/mcps-new-spec-turns-a-planted-prompt-into-a-stolen-credential",
-    "tags": ["MCP", "OAuth", "Tokens", "NHI", "AI authorization"],
-    "note": "Analysis of MCP authorization and token-handling risks that is useful for teams designing delegated agent access, even though it is secondary reporting.",
-    "score": 82
-  },
-  {
-    "id": "6235353ac62c92c0",
-    "date": "2026-09-13",
-    "source": "The Block",
-    "title": "Revolut says customer KYC, Bitcoin transaction data exposed after fake request from gov't domain",
-    "url": "https://www.theblock.co/news/business/2026-09-12-revolut-says-customer-kyc-bitcoin-transaction-data-exposed-after-fake-request-from-govt-domain-414516",
-    "tags": ["Identity attacks", "Impersonation", "Authorization", "KYC"],
-    "note": "A trust-and-authorization case study in which a request from a legitimate government-domain mailbox was reportedly used to obtain customer data.",
-    "score": 80
+    "id":"cd08e41344097314","date":"2026-07-28","source":"Agentic AI Foundation","title":"Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems","url":"https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems","tags":["AUTHZ","MCP","OAuth","OIDC","Delegation"],"note":"Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.","score":82
   }
 ]
