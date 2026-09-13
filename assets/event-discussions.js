@@ -4,7 +4,7 @@
   const text = s => esc(s).replace(/\n/g, "<br>");
   const slug = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 80) || "event";
   const eventId = e => e.id || `${e.date || "event"}-${slug(e.name)}`;
-  const flair = p => p?.flair ? `<span class="user-flair">${esc(p.flair)}</span>` : "";
+  const flair = p => p?.flair ? `<span class="ifn-flair">${esc(p.flair)}</span>` : "";
 
   async function setup() {
     const cards = [...document.querySelectorAll("#eventsList > .card")];
@@ -51,7 +51,11 @@
 
     if (location.hash) {
       const target = document.querySelector(location.hash);
-      if (target?.classList.contains("event-card")) setTimeout(() => target.scrollIntoView({block:"start"}), 100);
+      if (target?.classList.contains("event-card")) {
+        const panel = target.querySelector("[data-event-discussion]");
+        if (panel) panel.open = true;
+        setTimeout(() => target.scrollIntoView({block:"start"}), 100);
+      }
     }
   }
 
