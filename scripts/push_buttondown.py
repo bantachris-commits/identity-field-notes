@@ -110,7 +110,7 @@ payload = {
     "body": body,
     "canonical_url": canonical,
     "description": article.get("dek", ""),
-    "commenting_mode": "enabled",
+    "commenting_mode": "disabled",
     "status": "draft",
     "metadata": {
         "identity_field_notes_id": article["id"],
