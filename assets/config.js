@@ -11,7 +11,7 @@ window.IFN_CONFIG = {
     provider: "supabase",
     supabaseUrl: "https://fbiwpyeodonkkllfzwbs.supabase.co",
     supabaseKey: "sb_publishable_Pev5Aa49H3ZWMcZC_3X2-w_3BtKyWN3",
-    googleClientId: ""
+    googleClientId: "367776249426-5mlmbnh1u52ddumpjtou1bth7otcjadu.apps.googleusercontent.com"
   },
   comments: {
     provider: "supabase"
@@ -64,14 +64,14 @@ window.IFN_CONFIG = {
 
   if(!document.querySelector('script[data-ifn-guests]')){
     const guests=document.createElement("script");
-    guests.src="assets/guest.js?v=20260913-3";
+    guests.src="assets/guest.js?v=20260914-1";
     guests.dataset.ifnGuests="true";
     document.head.appendChild(guests);
   }
 
   if(!document.querySelector('script[data-ifn-published-guests]')){
     const published=document.createElement("script");
-    published.src="assets/published-guest-voices.js?v=20260913-1";
+    published.src="assets/published-guest-voices.js?v=20260914-1";
     published.dataset.ifnPublishedGuests="true";
     document.head.appendChild(published);
   }
