@@ -1,6 +1,5 @@
 (() => {
   const cfg = () => window.IFN_CONFIG?.community || {};
-  const GOOGLE_CLIENT_ID = "367776249426-5mlmbnh1u52ddumpjtou1bth7otcjadu.apps.googleusercontent.com";
   let client;
 
   function getClient() {
@@ -20,12 +19,13 @@
 
   async function googleSignIn(host) {
     const sb = getClient();
-    if (!sb || !window.google?.accounts?.id) return;
+    const googleClientId = cfg().googleClientId?.trim();
+    if (!sb || !googleClientId || !window.google?.accounts?.id) return;
     const raw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32))));
     const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
     const nonce = [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2,"0")).join("");
     window.google.accounts.id.initialize({
-      client_id: GOOGLE_CLIENT_ID,
+      client_id: googleClientId,
       nonce,
       use_fedcm_for_prompt: true,
       callback: async response => {
