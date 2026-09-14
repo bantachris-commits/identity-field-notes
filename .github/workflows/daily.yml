@@ -1,9 +1,8 @@
 name: Publish weekday Field Note
 on:
   schedule:
-    # 06:15 America/Denver across MDT/MST; the local gate prevents a double run.
-    - cron: '15 12 * * 1-5'
-    - cron: '15 13 * * 1-5'
+    - cron: '15 6 * * 1-5'
+      timezone: 'America/Denver'
   workflow_dispatch:
 
 permissions:
@@ -22,15 +21,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install openai requests feedparser
-      - name: Local-time gate
+      - name: Run gate
         id: gate
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "run=yes" >> "$GITHUB_OUTPUT"
-          else
-            HOUR=$(TZ=America/Denver date +%H)
-            echo "run=$([ "$HOUR" = "06" ] && echo yes || echo no)" >> "$GITHUB_OUTPUT"
-          fi
+        run: echo "run=yes" >> "$GITHUB_OUTPUT"
       - name: Collect RSS supplement
         if: steps.gate.outputs.run == 'yes'
         run: python scripts/collect_radar.py
