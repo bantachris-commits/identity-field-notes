@@ -17,15 +17,21 @@ def specific_url(raw):
     except Exception:
         return False
 
+def plain_text(raw):
+    text=html.unescape(str(raw or ''))
+    text=re.sub(r'<[^>]+>',' ',text)
+    text=html.unescape(text)
+    return re.sub(r'\s+',' ',text).strip()
+
 for src in sources['feeds']:
     if not src.get('enabled',True):continue
     feed=feedparser.parse(src['url'])
     for e in feed.entries[:20]:
-        url=str(e.get('link','') or '').strip();title=html.unescape(e.get('title','').strip())
+        url=str(e.get('link','') or '').strip();title=plain_text(e.get('title',''))
         if not specific_url(url) or not title:continue
         ident=hashlib.sha1(url.encode()).hexdigest()[:16]
         if ident in seen:continue
-        raw=e.get('summary','');clean=re.sub('<[^>]+>',' ',raw);clean=re.sub(r'\s+',' ',clean).strip()
+        clean=plain_text(e.get('summary',''))
         items.append({'id':ident,'date':datetime.date.today().isoformat(),'source':src['name'],'title':title,'url':url,'tags':src.get('tags',[]),'note':clean[:340] or 'New source item collected by RSS.','score':65})
         seen.add(ident)
 items=items[-300:]
