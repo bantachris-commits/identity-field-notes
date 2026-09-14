@@ -1,5 +1,6 @@
 (()=>{
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  const httpUrl=s=>{try{const u=new URL(String(s??'').trim());return ['http:','https:'].includes(u.protocol)?u.href:''}catch(e){return''}};
   const fmt=s=>new Date(`${String(s).slice(0,10)}T12:00:00`).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
   const isStaticGuest=a=>a?.contentType==='guest'||a?.humanWritten===true;
 
@@ -14,12 +15,13 @@
     try{
       const r=await fetch(url,{headers:{apikey:cfg.supabaseKey,Accept:'application/json'},cache:'no-store'});
       if(!r.ok)throw new Error(`Guest Voices API ${r.status}`);
-      return (await r.json()).map(x=>({kind:'submission',date:String(x.published_at||x.updated_at).slice(0,10),title:x.title,dek:x.pitch||String(x.body||'').slice(0,240),author:{name:x.author_name,role:x.author_role,url:x.author_url},href:`guest-submission.html?id=${encodeURIComponent(x.submission_id)}`}));
+      return (await r.json()).map(x=>({kind:'submission',date:String(x.published_at||x.updated_at).slice(0,10),title:x.title,dek:x.pitch||String(x.body||'').slice(0,240),author:{name:x.author_name,role:x.author_role,url:httpUrl(x.author_url)},href:`guest-submission.html?id=${encodeURIComponent(x.submission_id)}`}));
     }catch(e){console.warn('Could not load approved Guest Voices',e);return[]}
   }
 
   function card(x){
-    const name=x.author?.url?`<a href="${esc(x.author.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(x.author.name||'Guest contributor')}</strong></a>`:`<strong>${esc(x.author?.name||'Guest contributor')}</strong>`;
+    const authorUrl=httpUrl(x.author?.url);
+    const name=authorUrl?`<a href="${esc(authorUrl)}" target="_blank" rel="noopener noreferrer"><strong>${esc(x.author.name||'Guest contributor')}</strong></a>`:`<strong>${esc(x.author?.name||'Guest contributor')}</strong>`;
     return `<article class="card guest-card"><div class="eyebrow">HUMAN-WRITTEN · ${fmt(x.date)}</div><h3><a href="${x.href}">${esc(x.title)}</a></h3><div class="author-line"><span>BY ${name}</span>${x.author?.role?`<span>${esc(x.author.role)}</span>`:''}</div>${x.dek?`<p>${esc(x.dek)}</p>`:''}<div class="card-foot"><a class="readmore" href="${x.href}">Read guest voice →</a></div></article>`;
   }
 
