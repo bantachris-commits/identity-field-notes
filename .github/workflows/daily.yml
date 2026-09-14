@@ -94,9 +94,25 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
+      - name: Check for a new Field Note today
+        id: freshness
+        shell: bash
+        run: |
+          TODAY=$(TZ=America/Denver date +%F)
+          ARTICLE_DATE=$(python -c "import json; a=json.load(open('data/articles.json',encoding='utf-8')); print(next((x.get('date','') for x in a if x.get('featured') and not x.get('humanWritten') and x.get('contentType')!='guest'),''))")
+          if [ "$ARTICLE_DATE" = "$TODAY" ]; then
+            echo "send=yes" >> "$GITHUB_OUTPUT"
+            echo "Today's Field Note exists; digest is eligible to send."
+          else
+            echo "send=no" >> "$GITHUB_OUTPUT"
+            echo "No new Field Note today; skipping the digest."
+          fi
       - name: Create or send Buttondown digest
-        if: env.BUTTONDOWN_API_KEY != ''
+        if: env.BUTTONDOWN_API_KEY != '' && steps.freshness.outputs.send == 'yes'
         run: python scripts/push_buttondown.py
+      - name: Quiet morning - no digest
+        if: steps.freshness.outputs.send != 'yes'
+        run: echo "No genuinely new Field Note was published today, so no digest will be created or sent."
       - name: Newsletter not configured
-        if: env.BUTTONDOWN_API_KEY == ''
+        if: env.BUTTONDOWN_API_KEY == '' && steps.freshness.outputs.send == 'yes'
         run: echo "BUTTONDOWN_API_KEY is not configured; site publication completed without email."
