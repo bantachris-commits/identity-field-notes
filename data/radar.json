@@ -1,5 +1,187 @@
 [
   {
+    "id": "836a0c4b41daf7ef",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "First on the scene of the cybercrime",
+    "url": "https://www.okta.com/blog/threat-intelligence/first-on-the-scene-of-the-cybercrime/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive summary&lt;/h2&gt; &lt;p&gt;Okta Threat Intelligence (OTI) recently hit a significant milestone: we sent our 10,000th suspicious domain notification to a customer.&amp;nbsp;&lt;/p&gt; &lt;p&gt;I wanted to mark the moment by explaining how and why we do this important work.&lt;/p&gt; &lt;p&gt;I also want to share some r",
+    "score": 65
+  },
+  {
+    "id": "b981ac8a27c0facd",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Using advanced posture checks as a tooling watchdog",
+    "url": "https://www.okta.com/blog/threat-intelligence/using-advanced-posture-checks-as-a-tooling-watchdog/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;p&gt;Adversaries love to make life difficult for defenders. One of the best ways for attackers to operate undetected is to disable security tools on a compromised device.&lt;/p&gt; &lt;p&gt;Sometimes users do the hard work for them. When a frustrated user disables a security service that appears to be getting in the way of getting the",
+    "score": 65
+  },
+  {
+    "id": "6fb031fcad27832f",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Free tokens for  sale: How fake signups drive AI fraud",
+    "url": "https://www.okta.com/blog/threat-intelligence/free_tokens_for_sale/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Introduction&lt;/h2&gt; &lt;p&gt;As AI models have become vastly more capable, these multifunctional tools are being used for a wide range of tasks-from coding and analysis to software testing, research, and vulnerability hunting.&lt;/p&gt; &lt;p&gt;This has given rise to expansive gray and often illegal market offerings for acc",
+    "score": 65
+  },
+  {
+    "id": "da37d438ea401026",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Behind the scenes of a vishing operation",
+    "url": "https://www.okta.com/blog/threat-intelligence/behind-the-scenes-of-a-vishing-operation/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive Summary&lt;/h2&gt; &lt;p&gt;Okta Threat Intelligence recently obtained material from a sensitive source that provides an inside view of &lt;i&gt;Work Panel&lt;/i&gt;, an operator console used by threat actors running vishing campaigns that target customers of multiple identity providers, including Okta.&lt;/p&gt; &lt;p",
+    "score": 65
+  },
+  {
+    "id": "3682befdd9ccab8a",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "How to stop attackers from self-serving their way into accounts",
+    "url": "https://www.okta.com/blog/threat-intelligence/intrusion-actors-self-serve-their-way-into-accounts/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive Summary&lt;/h2&gt; &lt;p&gt;Over the last 12 months, Okta Threat Intelligence has observed a growing number of attacks in which users are tricked into approving attacker-initiated MFA enrollments and password resets.&amp;nbsp;&lt;/p&gt; &lt;p&gt;We have observed numerous related clusters of activity in which threat act",
+    "score": 65
+  },
+  {
+    "id": "019dea158ec05d94",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Vishing actors target Entra passkey enrollment",
+    "url": "https://www.okta.com/blog/threat-intelligence/vishing-actors-target-microsoft-entra-passkey-enrollment-/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive Summary&lt;/h2&gt; &lt;p&gt;Since April 2026, a threat actor tracked as O-UNC-066 that operates a DLS site with the name Pink (reported as &amp;quot;CL-CRI-1147&amp;quot; by Palo Alto Networks Unit 42) has deployed a panel-controlled phishing kit targeting the passkey enrollment process for Microsoft 365 customers.&lt;",
+    "score": 65
+  },
+  {
+    "id": "d0e12ef87f1c75eb",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Defending against TeamPCP software supply chain attacks | Threat Intelligence",
+    "url": "https://www.okta.com/blog/threat-intelligence/defending_against_team_pcp_software_supply_chain_attacks/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive summary&amp;nbsp;&lt;/h2&gt; &lt;p&gt;From late 2025, a threat actor group calling itself TeamPCP has turned the tools and practices built for high-velocity software deployment into delivery mechanisms for malware.&lt;br&gt; &lt;br&gt; While the group has used a variety of methods to target organizations, the most impa",
+    "score": 65
+  },
+  {
+    "id": "dfdfc44273e968ff",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Device code phishing: it's phishing with dynamite",
+    "url": "https://www.okta.com/blog/threat-intelligence/device-code-phishing--it-s-phishing-with-dynamite/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;p&gt;When most people think of \"phishing\", they usually think of users being tricked into disclosing credentials or downloading malware&lt;/p&gt; &lt;p&gt;One of the fastest growing methods of attack does neither. Instead, a targeted user is tricked into authorizing an attacker-controlled client. These attacks abuse user trust in the ",
+    "score": 65
+  },
+  {
+    "id": "67c36735f67e07fb",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Tycoon 2FA phishing actors disperse, branch into new attacks | Threat Intelligence",
+    "url": "https://www.okta.com/blog/threat-intelligence/tycoon_2fa_phishing_actors_scatter/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;p&gt;At one stage in mid-2025, Tycoon 2FA was responsible for more Identity Threat Protection (ITP) detections than any other phishing kit.&lt;/p&gt; &lt;p&gt;Tycoon 2FA offered threat actors an affordable, reliable service for MFA bypass against Microsoft 365 and Google Workspace tenants, without having to build and maintain the infr",
+    "score": 65
+  },
+  {
+    "id": "2e214b70903bf177",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "BreachForums logs reveal anonymizers of choice for shady characters",
+    "url": "https://www.okta.com/blog/threat-intelligence/blocking_shady_network/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;p&gt;When threat actors log into systems, they don't use their real IP addresses. Instead, they route their traffic through VPNs, proxies, and&amp;nbsp;anonymizing networks. We analyzed a January 2026 data leak from BreachForums - a major English-language cybercrime marketplace - that contained threat actor IP addresses. The analysis ",
+    "score": 65
+  },
+  {
+    "id": "121471d3d23f2837",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "LiteLLM supply chain attack: an explainer for identity pros",
+    "url": "https://www.okta.com/blog/threat-intelligence/litellm-supply-chain-attack--an-explainer-for-identity-pros/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;p&gt;In June 2025, Okta Threat Intelligence predicted that the rapid adoption of AI agents would generate &lt;a href=\"https://www.okta.com/blog/threat-intelligence/the-secrets-agentic-ai-leaves-behind/\"&gt;\"identity debt\"&lt;/a&gt; as developers experimented with these new technologies.&lt;/p&gt; &lt;p&gt;This scenario has played out ",
+    "score": 65
+  },
+  {
+    "id": "2f96aca7fb7d9e04",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Disrupting ShieldGuard: a security extension primed to drain crypto wallets",
+    "url": "https://www.okta.com/blog/threat-intelligence/disrupting-shieldguard--a-security-extension-primed-to-drain-cry/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive summary&lt;/h2&gt; &lt;p&gt;Okta Threat Intelligence has discovered and helped industry partners to take down the infrastructure of a cryptocurrency scam called \"ShieldGuard\".&lt;/p&gt; &lt;p&gt;ShieldGuard claims to be a blockchain project that offers - through its promotion of a browser extension - a capability that ",
+    "score": 65
+  },
+  {
+    "id": "c6579de8dd5687e4",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Vietnam-based cybercrime markets enable account sign-ups at scale",
+    "url": "https://www.okta.com/blog/threat-intelligence/vietnamese-cybercrime-operation-enables-fraudulent-account-signups/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive summary&lt;/h2&gt; &lt;p&gt;Okta Threat Intelligence, working with our partners at the University of Cyprus, have connected a cluster of fraudulent account registration activity to a sprawling cybercrime ecosystem based in Vietnam.&lt;/p&gt; &lt;p&gt;Fraudulent online accounts are more than just a nuisance; they are a ",
+    "score": 65
+  },
+  {
+    "id": "b0ea924afa19c6a2",
+    "date": "2026-09-14",
+    "source": "Okta Threat Intelligence",
+    "title": "Universities exposed to account takeover risk from contract cheating services",
+    "url": "https://www.okta.com/blog/threat-intelligence/universities-contract-cheating-services/",
+    "tags": [
+      "Okta",
+      "Threat"
+    ],
+    "note": "&lt;h2&gt;Executive Summary&lt;/h2&gt; &lt;p&gt;Okta Threat Intelligence has identified extortion campaigns that target university students.&lt;/p&gt; &lt;p&gt;These operations often masquerade as &amp;quot;tutoring\" or \"proctoring\" services, but function as &lt;a rel=\"noopener noreferrer\" target=\"_blank\" href=\"https://www.teqsa.gov.au/pr",
+    "score": 65
+  },
+  {
     "id": "8f5f50198141b88a",
     "date": "2026-09-11",
     "source": "BleepingComputer",

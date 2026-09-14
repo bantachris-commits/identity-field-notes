@@ -1,13 +1,68 @@
 [
   {
+    "id": "2026-09-14-morning-brief",
+    "date": "2026-09-14",
+    "edition": "FIELD NOTES // 2026.09.14",
+    "title": "When the Workflow Is the Identity Boundary",
+    "dek": "The strongest new signals are not another MFA feature, but evidence that AI workflows and stolen machine credentials are becoming direct authorization paths into enterprise data.",
+    "tags": [
+      "IAM",
+      "Machine IAM",
+      "Identity Threat Detection",
+      "AI Agent Authorization"
+    ],
+    "readTime": "5 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated from current web research and linked sources. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Research",
+        "title": "Noma documents \u2018workflow identity hijacking\u2019 in AI automations",
+        "summary": "Noma Labs describes an authorization failure in which an unauthenticated outsider can submit a normal request to an AI workflow, while the workflow executes downstream actions with the creator\u2019s privileged service account or API key. The research says the same pattern was identified in Google Workflows; Google acknowledged the report and confirmed a fix, without disclosing implementation details.",
+        "why": "Traditional agent controls do not automatically protect static workflows. Teams should trace requester identity through every automation boundary and replace creator-level API keys with short-lived, scoped delegation tied to the initiating principal.",
+        "source": "Noma Security / Noma Labs",
+        "url": "https://noma.security/noma-labs/workflow-identity-hijacking-the-silent-backdoor-in-ai-workflows",
+        "confidence": "Research",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Anthropic links stolen API keys and token stores to AI-assisted intrusions",
+        "summary": "Anthropic\u2019s September threat report describes operations in which attackers stole AI API keys from enterprise software vendors and reused at least one key for roughly three weeks against additional organizations, including a French retail chain and a Web3 identity platform. In a separate supply-chain compromise, the actors dumped more than 2,100 Azure AD token sets spanning over 40 corporate tenants and used AI to help create privileged tokens and automate cross-tenant data collection.",
+        "why": "The report reinforces that machine credentials, session stores and delegated tokens are not secondary implementation details: they are reusable access paths. Incident response should include API-key rotation, token-store invalidation, cross-tenant session review and attribution of agent-driven actions to a specific workload identity.",
+        "source": "Anthropic",
+        "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+        "confidence": "Primary source",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "Quarterly investigations find authenticated sessions outperform passwords for attackers",
+        "summary": "Prophet Security\u2019s review of customer investigations from May through July found identity involved in roughly half of confirmed malicious activity. Session hijacking and token replay repeatedly bypassed normal conditional-access checks, while attackers also used inbox rules, OAuth consent grants and MFA-method changes for persistence; in some cases, disabling the account did not invalidate already-issued access.",
+        "why": "The practical control question is no longer simply whether MFA blocked the login. Teams need telemetry and response actions for session issuance, replay, refresh-token redemption, OAuth grants and authentication-method changes, with revocation paths that work after account disablement.",
+        "source": "BleepingComputer, based on Prophet Security research",
+        "url": "https://www.bleepingcomputer.com/news/security/the-top-4-threats-we-found-by-investigating-every-alert-for-a-quarter/",
+        "confidence": "Research",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-12-morning-brief",
     "date": "2026-09-12",
     "edition": "FIELD NOTES // 2026.09.12",
     "title": "The identity control plane is getting crowded",
     "dek": "Okta pushes deeper into PAM and IGA, agent administration moves into the IAM control plane, and active cloud intrusions show why MFA alone is not a session-security strategy.",
-    "tags": ["PAM", "IAM", "IGA", "NHI", "ITDR"],
+    "tags": [
+      "PAM",
+      "IAM",
+      "IGA",
+      "NHI",
+      "ITDR"
+    ],
     "readTime": "7 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "AI + practitioner prompt",
     "disclosure": "AI-generated summary from linked sources. Verify important details at the source.",
     "stories": [
@@ -49,7 +104,11 @@
     "edition": "FIELD NOTE // MACHINE IAM",
     "title": "The service account problem is becoming the agent identity problem",
     "dek": "AI agents are adding speed and autonomy to an identity class most organizations already struggle to inventory and govern.",
-    "tags": ["NHI", "Agentic AI", "PAM"],
+    "tags": [
+      "NHI",
+      "Agentic AI",
+      "PAM"
+    ],
     "readTime": "5 min",
     "featured": false,
     "generatedBy": "AI + practitioner prompt",
@@ -73,7 +132,12 @@
     "edition": "FIELD NOTE // RUNTIME AUTHORIZATION",
     "title": "Privilege is moving from account-level to action-level",
     "dek": "AI agents are forcing PAM teams to ask a harder question than who got access: what was the identity allowed to do after the session opened?",
-    "tags": ["PAM", "AUTHZ", "NHI", "Agentic AI"],
+    "tags": [
+      "PAM",
+      "AUTHZ",
+      "NHI",
+      "Agentic AI"
+    ],
     "readTime": "6 min",
     "featured": false,
     "generatedBy": "AI-assisted archive backfill",
@@ -117,7 +181,13 @@
     "edition": "FIELD NOTE // SESSION TRUST",
     "title": "Authentication succeeded. That does not mean the session is trustworthy.",
     "dek": "Recent research makes the case for treating session tokens, MFA seed material and post-authentication persistence as privileged assets in their own right.",
-    "tags": ["IAM", "ITDR", "MFA", "Tokens", "PAM"],
+    "tags": [
+      "IAM",
+      "ITDR",
+      "MFA",
+      "Tokens",
+      "PAM"
+    ],
     "readTime": "6 min",
     "featured": false,
     "generatedBy": "AI-assisted archive backfill",
