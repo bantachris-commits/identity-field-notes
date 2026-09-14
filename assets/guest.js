@@ -9,8 +9,9 @@
 
   load("assets/guest-core-lite.js?v=20260913-1", "ifnGuestCore");
   load("assets/site-enhancements.js?v=20260913-2", "ifnSiteEnhancements");
-  load("assets/nav.js?v=20260913-1", "ifnNav");
+  load("assets/nav.js?v=20260913-2", "ifnNav");
   load("assets/events-community-loader.js?v=20260913-2", "ifnEventsCommunity");
   load("assets/matrix-badge.js?v=20260913-1", "ifnMatrixBadge");
   load("assets/market-archive-list.js?v=20260913-1", "ifnMarketArchive");
+  load("assets/published-guest-voices.js?v=20260913-1", "ifnPublishedGuests");
 })();
