@@ -102,7 +102,7 @@ jobs:
           fi
       - name: Create or send Buttondown digest
         if: env.BUTTONDOWN_API_KEY != '' && steps.freshness.outputs.send == 'yes'
-        run: python scripts/push_buttondown.py
+        run: python scripts/push_buttondown_current.py
       - name: Quiet morning - no digest
         if: steps.freshness.outputs.send != 'yes'
         run: echo "No genuinely new Field Note was published today, so no digest will be created or sent."
