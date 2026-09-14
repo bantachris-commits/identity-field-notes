@@ -37,7 +37,7 @@
     try {
       if (!window.supabase?.createClient) await loadScript(SUPABASE_JS);
       if (!window.google?.accounts?.id) await loadScript("https://accounts.google.com/gsi/client");
-      if (!window.IFNCommunityAuth) await loadScript("assets/community-auth.js?v=20260913-2");
+      if (!window.IFNCommunityAuth) await loadScript("assets/community-auth.js?v=20260914-1");
       if (!window.IFNCommunityData) await loadScript("assets/community-data.js?v=20260913-7");
       if (!window.IFNEventDiscussions) await loadScript("assets/event-discussions.js?v=20260913-2");
       if (await waitForCards()) await window.IFNEventDiscussions.setup();
