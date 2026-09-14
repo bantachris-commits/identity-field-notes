@@ -10,11 +10,22 @@ from openai import OpenAI
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.getenv("OPENAI_MODEL","gpt-5.6-luna")
 TODAY=datetime.now(ZoneInfo("America/Denver")).date().isoformat()
+ARTICLES_PATH=ROOT/'data'/'articles.json'
+articles=json.loads(ARTICLES_PATH.read_text(encoding='utf-8'))
+
+# Give the research pass explicit awareness of recently published material so a quiet
+# morning can remain quiet instead of manufacturing another angle on yesterday's news.
+recent=[]
+for article in articles[:8]:
+    for story in article.get('stories',[]):
+        if story.get('url'):
+            recent.append({'title':story.get('title',''),'url':story['url']})
+recent_json=json.dumps(recent[:30],ensure_ascii=False)
 
 PROMPT=f"""You are the research engine for Identity Field Notes, an openly AI-driven publication for experienced identity practitioners.
 Today in America/Denver is {TODAY}.
 
-Research the most important NEW or newly relevant developments from roughly the last 72 hours in:
+Research the most important NEW developments from roughly the last 72 hours in:
 - privileged access management (PAM)
 - identity and access management (IAM)
 - identity governance / IGA
@@ -24,6 +35,9 @@ Research the most important NEW or newly relevant developments from roughly the 
 - AI agent identity and authorization
 
 Also search up to the last 7 days for material breaches or security incidents where identity controls were a documented root cause or contributing factor. Relevant examples include stolen or reused credentials, weak or bypassed MFA, session/token theft, overprivileged identities, stale accounts, exposed secrets, service-account abuse, OAuth abuse, poor offboarding, federation/account-linking failures, or failures in authentication/authorization. Include an incident only when reliable evidence actually connects identity controls to what happened. Do not infer causation just because an identity vendor claims its product could have prevented the breach.
+
+These stories were recently published by Identity Field Notes. Do NOT return the same article URL again, and do not return a different article about the same development unless there is a genuinely material new fact, disclosure, release, exploit, acquisition milestone, standard approval, or practitioner-relevant change:
+{recent_json}
 
 Cover the market broadly. Pay attention to CyberArk/Palo Alto Networks, Delinea, BeyondTrust, SailPoint, Saviynt, Ping Identity, Descope, Semperis, Microsoft Entra, Okta/Auth0, AWS, Google Cloud, FIDO/OpenID, CISA and major independent security research. Do not let one vendor dominate an edition merely because its SEO is better.
 
@@ -42,6 +56,7 @@ Editorial rules:
 12. This publication openly labels the output as AI-generated; do not pretend a human reported the story.
 13. When breach causation is uncertain, say what is known and what is not. Do not upgrade correlation or speculation into fact.
 14. If a credible identity-relevant incident exists, strongly prefer including it over a routine product announcement. If none exists, do not force one.
+15. A quiet morning is a valid result. If there are no genuinely new, high-value stories after excluding recently published developments, return an empty stories array. Do not create filler just to produce an edition.
 
 Return ONLY valid JSON. No markdown fence. Shape:
 {{
@@ -61,7 +76,7 @@ Return ONLY valid JSON. No markdown fence. Shape:
     }}
   ]
 }}
-Return 3 to 6 stories. If the morning is quiet, return fewer stories rather than filler.
+Return 0 to 6 stories. Prefer zero over recycled or low-value material.
 """
 
 GENERIC_PATHS={"","/","/blog","/newsroom","/newsroom/press-releases","/press-releases","/resources","/iam/docs/release-notes"}
@@ -91,6 +106,15 @@ def specific_url(u):
         return True
     except Exception:return False
 
+def url_key(u):
+    try:
+        p=urlparse(u)
+        return f"{p.scheme.lower()}://{p.netloc.lower()}{p.path.rstrip('/').lower()}"
+    except Exception:
+        return str(u).rstrip('/').lower()
+
+published_urls={url_key(s.get('url','')) for a in articles for s in a.get('stories',[]) if s.get('url')}
+
 client=OpenAI(timeout=180.0,max_retries=1)
 resp=client.responses.create(model=MODEL,tools=[{"type":"web_search"}],input=PROMPT)
 payload=extract_json(resp.output_text)
@@ -102,23 +126,27 @@ for s in raw:
     if any(not s.get(k) for k in ('title','summary','why','source','url')):continue
     if not specific_url(s['url']):
         print('Skipping generic or invalid source URL:',s.get('url'),flush=True);continue
-    key=s['url'].rstrip('/').lower()
+    key=url_key(s['url'])
+    if key in published_urls:
+        print('Skipping already-published source URL:',s.get('url'),flush=True);continue
     if key in seen:continue
     seen.add(key);s['aiGenerated']=True;clean.append(s)
-if not clean:raise SystemExit('No stories survived source-link validation')
-payload['stories']=clean[:6]
 
+if not clean:
+    print('No genuinely new stories found. Leaving articles.json unchanged; no digest should send.',flush=True)
+    raise SystemExit(0)
+
+payload['stories']=clean[:6]
 edition={
   'id':f'{TODAY}-morning-brief','date':TODAY,'edition':'FIELD NOTES // '+TODAY.replace('-','.'),
-  'title':payload['title'],'dek':payload['dek'],'tags':payload.get('tags',[])[:8],
-  'readTime':payload.get('readTime','6 min'),'featured':True,'generatedBy':f'OpenAI {MODEL} + web search',
+  'title':payload.get('title') or 'Today in identity security','dek':payload.get('dek') or 'New identity-security developments worth reading.',
+  'tags':payload.get('tags',[])[:8],'readTime':payload.get('readTime','6 min'),'featured':True,
+  'generatedBy':f'OpenAI {MODEL} + web search',
   'disclosure':'AI-generated from current web research and linked sources. Verify material details at the source.',
   'stories':payload['stories']
 }
-path=ROOT/'data'/'articles.json'
-articles=json.loads(path.read_text(encoding='utf-8'))
 articles=[a for a in articles if a.get('id')!=edition['id']]
 for a in articles:a['featured']=False
 articles.insert(0,edition)
-path.write_text(json.dumps(articles,indent=2)+"\n",encoding='utf-8')
-print(f'Published {edition["id"]} with {len(edition["stories"])} stories using {MODEL}.')
+ARTICLES_PATH.write_text(json.dumps(articles,indent=2)+"\n",encoding='utf-8')
+print(f'Published {edition["id"]} with {len(edition["stories"])} genuinely new stories using {MODEL}.')
