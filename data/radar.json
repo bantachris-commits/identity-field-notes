@@ -6,15 +6,31 @@
     "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
     "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
     "tags": [
-      "Microsoft Entra",
+      "Entra",
       "Passkeys",
-      "MFA",
       "OAuth",
-      "Session Tokens",
-      "Cloud Security"
+      "MFA Bypass",
+      "Session Theft",
+      "ITDR"
     ],
-    "note": "Independent reporting adds operational detail on device-code authorization, session-token theft, attacker-registered MFA methods, Graph enumeration, and cloud-data access.",
-    "score": 96
+    "note": "Independent reporting adds operational detail to Microsoft\u2019s disclosure, including attacker-controlled OAuth clients, device-code phishing, unauthorized MFA-method registration, Graph enumeration, and connected-SaaS access.",
+    "score": 93
+  },
+  {
+    "id": "cd0695560dd007cc",
+    "date": "2026-09-11",
+    "source": "SecurityWeek",
+    "title": "Surfshark Systems Targeted by Hackers",
+    "url": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
+    "tags": [
+      "PAM",
+      "Secrets",
+      "Machine Identity",
+      "Credentials",
+      "Supply Chain"
+    ],
+    "note": "Surfshark disclosed access to an internet-exposed engineering test server containing internal configurations and build-related credentials committed to code history, prompting credential rotation despite no confirmed user-data access.",
+    "score": 76
   },
   {
     "id": "oidc-key-binding-id1",
@@ -49,6 +65,40 @@
     "score": 94
   },
   {
+    "id": "348626d9ce7a6f9b",
+    "date": "2026-09-10",
+    "source": "Anthropic",
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "AI Agents",
+      "OAuth",
+      "Token Abuse",
+      "Credentials"
+    ],
+    "note": "Anthropic\u2019s primary threat-intelligence report describes campaigns using compromised credentials, VPN access, device-code phishing, stolen API keys and session tokens, credential-database theft, and AI-assisted lateral movement.",
+    "score": 94
+  },
+  {
+    "id": "82870bf6f1bec574",
+    "date": "2026-09-10",
+    "source": "BleepingComputer",
+    "title": "The Top 4 Threats We Found by Investigating Every Alert for a Quarter",
+    "url": "https://www.bleepingcomputer.com/news/security/the-top-4-threats-we-found-by-investigating-every-alert-for-a-quarter/",
+    "tags": [
+      "ITDR",
+      "Session Theft",
+      "MFA Bypass",
+      "OAuth",
+      "Token Abuse",
+      "Identity Security"
+    ],
+    "note": "A field-based investigation reports that identity was targeted in roughly half of confirmed malicious activity, with stolen sessions, token replay, MFA fatigue, OAuth consent, and persistence surviving password resets.",
+    "score": 91
+  },
+  {
     "id": "0f03a542038d1217",
     "date": "2026-09-10",
     "source": "Saviynt",
@@ -65,37 +115,51 @@
     "score": 89
   },
   {
-    "id": "348626d9ce7a6f9b",
+    "id": "8961d4a3fc975173",
     "date": "2026-09-10",
-    "source": "Anthropic Threat Intelligence",
-    "title": "Detecting and countering misuse of AI: September 2026",
-    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "source": "arXiv",
+    "title": "One Click to Leak: Characterizing the Real-World Usage and Threat Impact of MNO-based Single Sign-On Websites",
+    "url": "https://arxiv.org/abs/2609.12037",
     "tags": [
-      "AI agents",
-      "Tokens",
-      "Credentials",
-      "Identity attacks",
-      "Threat intelligence"
+      "IAM",
+      "SSO",
+      "OAuth",
+      "Authorization",
+      "Token Abuse"
     ],
-    "note": "Primary threat-intelligence reporting with identity-relevant cases including M365 token theft, stolen API credentials, account abuse and autonomous cyber operations.",
+    "note": "This measurement study finds widespread trust defects in web-based mobile-network SSO, including exposed developer credentials and high-privilege tokens issued before user consent, with observed exploitation at scale.",
     "score": 88
   },
   {
-    "id": "e7045162419c265f",
-    "date": "2026-09-09",
-    "source": "Microsoft Security Research",
-    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "id": "4acdcda9acb0751f",
+    "date": "2026-09-10",
+    "source": "arXiv",
+    "title": "Signing the Transaction but Not the Decision: Whisper Attacks and a Binding Defense for AP2",
+    "url": "https://arxiv.org/abs/2609.11757",
     "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "Passkeys",
-      "MFA",
-      "OAuth",
-      "Session Tokens"
+      "AI Agents",
+      "Authorization",
+      "Machine Identity",
+      "NHI",
+      "Transaction Security"
     ],
-    "note": "Primary research documents passkey-themed AiTM and device-code phishing, attacker-added MFA methods, Graph reconnaissance, token replay, and SharePoint/Exchange data collection.",
-    "score": 99
+    "note": "The paper shows that cryptographically valid agent-payment signatures may fail to bind the user\u2019s actual decision, enabling prompt or content-driven credential access and unauthorized purchases, and proposes capability-binding defenses.",
+    "score": 86
+  },
+  {
+    "id": "b4218bf0eea91afa",
+    "date": "2026-09-10",
+    "source": "Google",
+    "title": "Switching password managers is easy and safe on Android",
+    "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Credential Exchange",
+      "IAM"
+    ],
+    "note": "Google announced Android support for direct password and passkey transfers between credential managers, materially advancing deployment and lifecycle considerations around FIDO Credential Exchange.",
+    "score": 82
   },
   {
     "id": "3820a0f914db94fe",
@@ -111,6 +175,23 @@
     ],
     "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
     "score": 97
+  },
+  {
+    "id": "e7045162419c265f",
+    "date": "2026-09-09",
+    "source": "Microsoft Security",
+    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "tags": [
+      "IAM",
+      "Entra",
+      "Passkeys",
+      "ITDR",
+      "OAuth",
+      "Session Theft"
+    ],
+    "note": "Primary Microsoft research details active intrusions that combine passkey-themed social engineering, AiTM or device-code phishing, stolen sessions, unauthorized MFA registration, Graph reconnaissance, and cloud-data theft.",
+    "score": 96
   },
   {
     "id": "eb77ddbb1f967f57",
