@@ -2,6 +2,7 @@
 """Fail on broken local links/assets, malformed data, unsafe URLs, duplicate IDs, or generic editorial source URLs."""
 from __future__ import annotations
 import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote,urlparse
@@ -154,6 +155,10 @@ def main():
             if not isinstance(item,dict):errors.append(f"data/radar.json[{i}]: item must be an object");continue
             for field in ("date","title","source","url","note","score"):
                 if item.get(field) in (None,""):errors.append(f"data/radar.json[{i}]: missing {field}")
+            for field in ("source","title","note"):
+                text=str(item.get(field) or "")
+                if re.search(r"&(?:amp;)?(?:lt|gt|#?\w+);|<\/?[a-z](?:[^>]*>|[^>]*$)|\\[*#\[]",text,re.I):
+                    errors.append(f"data/radar.json[{i}].{field}: contains encoded HTML or escaped Markdown")
             if item.get("url") and not valid_http_url(item.get("url")):errors.append(f"data/radar.json[{i}]: expected http/https source URL {item.get('url')!r}")
             if generic_source(item.get("url")):errors.append(f"data/radar.json[{i}]: generic source URL {item.get('url')}")
             if item.get('url'):urls.append(item['url'].rstrip('/').lower())

@@ -2,7 +2,7 @@
 const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>\"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
 function safeHttpUrl(raw){try{const u=new URL(String(raw||"").trim());return (u.protocol==="http:"||u.protocol==="https:")?u.href:""}catch(e){return ""}}
-function plainText(raw){const t=document.createElement("textarea");t.innerHTML=String(raw??"");return t.value.replace(/<[^>]*>/g," ").replace(/\s+/g," ").trim()}
+function plainText(raw){let value=String(raw??"");const t=document.createElement("textarea");for(let i=0;i<4;i++){t.innerHTML=value;const decoded=t.value;if(decoded===value)break;value=decoded}return value.replace(/<[^>]*>/g," ").replace(/<[^>]*$/g," ").replace(/\\([\\`*_{}\[\]()#+.!>-])/g,"$1").replace(/!\[([^\]]*)\]\([^)]*\)/g,"$1").replace(/\[([^\]]+)\]\([^)]*\)/g,"$1").replace(/(^|\s)#{1,6}\s*/g," ").replace(/\*\*|__|`/g,"").replace(/\)(?=\s|$)/g,"").replace(/\s+/g," ").trim()}
 const CORE_TOPICS=["PAM","IAM","IGA","NHI","ITDR","AUTHZ"];
 async function loadJSON(p){const r=await fetch(p,{cache:"no-store"});if(!r.ok)throw new Error(`${p}: ${r.status}`);return r.json()}
 function fmtDate(s){return new Date(s+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}

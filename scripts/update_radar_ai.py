@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 from openai import OpenAI
+from radar_text import normalize_item, plain_text
 
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.getenv('OPENAI_MODEL','gpt-5.6-luna')
@@ -65,7 +66,7 @@ except json.JSONDecodeError:
     if start<0 or end<start:raise
     payload=json.loads(t[start:end+1])
 path=ROOT/'data'/'radar.json'
-old=json.loads(path.read_text(encoding='utf-8')) if path.exists() else []
+old=[normalize_item(x) for x in json.loads(path.read_text(encoding='utf-8'))] if path.exists() else []
 by_url={x.get('url'):x for x in old if x.get('url') and specific_url(x.get('url'))}
 for x in payload.get('items',[]):
     u=x.get('url','')
@@ -73,8 +74,8 @@ for x in payload.get('items',[]):
         print('Skipping generic or invalid source URL:',u,flush=True);continue
     by_url[u]={
       'id':hashlib.sha1(u.encode()).hexdigest()[:16],
-      'date':valid_date(x.get('published_date')),'source':x.get('source','Source'),'title':x.get('title','Untitled'),
-      'url':u,'tags':x.get('tags',[])[:6],'note':x.get('note','AI-collected reading candidate.'),
+      'date':valid_date(x.get('published_date')),'source':plain_text(x.get('source','Source')),'title':plain_text(x.get('title','Untitled')),
+      'url':u,'tags':x.get('tags',[])[:6],'note':plain_text(x.get('note','AI-collected reading candidate.')),
       'score':max(50,min(100,int(x.get('score',70))))
     }
 items=list(by_url.values())

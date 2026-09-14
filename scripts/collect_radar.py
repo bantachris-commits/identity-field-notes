@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Low-cost RSS supplement for Identity Radar."""
-import json, hashlib, datetime, html, re
+import argparse, json, hashlib, datetime
 from pathlib import Path
 from urllib.parse import urlparse
-import feedparser
+from radar_text import normalize_item, plain_text
 
 ROOT=Path(__file__).resolve().parents[1]
 sources=json.loads((ROOT/'data'/'feed-sources.json').read_text(encoding='utf-8'))
@@ -16,18 +16,20 @@ def specific_url(raw):
     except Exception:
         return False
 
-def plain_text(raw):
-    text=html.unescape(str(raw or ''))
-    text=re.sub(r'<[^>]+>',' ',text)
-    text=html.unescape(text)
-    return re.sub(r'\s+',' ',text).strip()
-
 # Heal previously collected RSS content as well as new entries. This keeps the
 # stored JSON clean even if an older feed supplied entity-encoded HTML.
-for item in items:
-    if not isinstance(item,dict):continue
-    if item.get('title'):item['title']=plain_text(item['title'])
-    if item.get('note'):item['note']=plain_text(item['note'])
+items=[normalize_item(item) for item in items]
+
+parser=argparse.ArgumentParser()
+parser.add_argument('--normalize-only',action='store_true')
+args=parser.parse_args()
+
+if args.normalize_only:
+    path.write_text(json.dumps(items,indent=2)+"\n",encoding='utf-8')
+    print(f'Radar normalized: {len(items)} items')
+    raise SystemExit(0)
+
+import feedparser
 
 seen={x['id'] for x in items if isinstance(x,dict) and x.get('id')}
 for src in sources['feeds']:
