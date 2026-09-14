@@ -8,7 +8,6 @@ import feedparser
 ROOT=Path(__file__).resolve().parents[1]
 sources=json.loads((ROOT/'data'/'feed-sources.json').read_text(encoding='utf-8'))
 path=ROOT/'data'/'radar.json'; items=json.loads(path.read_text(encoding='utf-8')) if path.exists() else []
-seen={x['id'] for x in items}
 
 def specific_url(raw):
     try:
@@ -23,6 +22,14 @@ def plain_text(raw):
     text=html.unescape(text)
     return re.sub(r'\s+',' ',text).strip()
 
+# Heal previously collected RSS content as well as new entries. This keeps the
+# stored JSON clean even if an older feed supplied entity-encoded HTML.
+for item in items:
+    if not isinstance(item,dict):continue
+    if item.get('title'):item['title']=plain_text(item['title'])
+    if item.get('note'):item['note']=plain_text(item['note'])
+
+seen={x['id'] for x in items if isinstance(x,dict) and x.get('id')}
 for src in sources['feeds']:
     if not src.get('enabled',True):continue
     feed=feedparser.parse(src['url'])
