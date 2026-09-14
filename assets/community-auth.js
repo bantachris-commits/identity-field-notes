@@ -1,5 +1,6 @@
 (() => {
   const cfg = () => window.IFN_CONFIG?.community || {};
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   let client;
 
   function getClient() {
@@ -42,7 +43,8 @@
     if (!host || !sb) return;
     const user = await getUser();
     if (user) {
-      host.innerHTML = `<div class="community-auth-state"><strong>Signed in as ${window.esc ? esc(user.user_metadata?.full_name || user.email) : user.email}</strong> <button class="btn small alt" type="button" data-ifn-signout>Sign out</button></div>`;
+      const signedInLabel = user.user_metadata?.full_name || user.user_metadata?.name || user.email || "Signed-in user";
+      host.innerHTML = `<div class="community-auth-state"><strong>Signed in as ${esc(signedInLabel)}</strong> <button class="btn small alt" type="button" data-ifn-signout>Sign out</button></div>`;
       host.querySelector("[data-ifn-signout]")?.addEventListener("click",async()=>{await sb.auth.signOut();location.reload()});
       return;
     }
