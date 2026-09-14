@@ -1,5 +1,12 @@
 (()=>{
   function directLink(nav,href){return [...nav.children].find(x=>x.matches?.(`a[href="${href}"]`))}
+  function installNavRhythm(){
+    if(document.querySelector('#ifn-nav-rhythm'))return;
+    const s=document.createElement('style');
+    s.id='ifn-nav-rhythm';
+    s.textContent='@media(min-width:901px){header .nav>nav{gap:0}header .nav>nav>a:not(.btn),header .nav>nav>details.nav-more>summary{padding-left:8px;padding-right:8px;white-space:nowrap}header .nav>nav>details.nav-more{margin:0}header .nav>nav>.btn.small{margin-left:10px;white-space:nowrap}}';
+    document.head.appendChild(s);
+  }
   function ensureDesktop(){
     const nav=document.querySelector('header nav');
     if(!nav)return;
@@ -34,6 +41,6 @@
     const section=preview?.closest('section');
     if(section){const h=section.querySelector('.section-head h2'),p=section.querySelector('.section-head p'),a=section.querySelector('.section-head a');if(h)h.textContent='Latest Articles';if(p)p.textContent='Fast-moving identity-security links before they earn a full Field Note.';if(a)a.textContent='View latest articles →'}
   }
-  function boot(){ensureDesktop();ensureMobile();renameRadar();setTimeout(()=>{ensureDesktop();ensureMobile()},400)}
+  function boot(){installNavRhythm();ensureDesktop();ensureMobile();renameRadar();setTimeout(()=>{ensureDesktop();ensureMobile()},400)}
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();
