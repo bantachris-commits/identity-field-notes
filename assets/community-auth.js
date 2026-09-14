@@ -1,6 +1,6 @@
 (() => {
   const cfg = () => window.IFN_CONFIG?.community || {};
-  const GOOGLE_CLIENT_ID = "367776249426-5mlmbnh1u52ddumpjtou1bth7otcjadu.apps.googleusercontent.com";
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]));
   let client;
 
   function getClient() {
@@ -20,12 +20,13 @@
 
   async function googleSignIn(host) {
     const sb = getClient();
-    if (!sb || !window.google?.accounts?.id) return;
+    const googleClientId = cfg().googleClientId?.trim();
+    if (!sb || !googleClientId || !window.google?.accounts?.id) return;
     const raw = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(32))));
     const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(raw));
     const nonce = [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2,"0")).join("");
     window.google.accounts.id.initialize({
-      client_id: GOOGLE_CLIENT_ID,
+      client_id: googleClientId,
       nonce,
       use_fedcm_for_prompt: true,
       callback: async response => {
@@ -42,7 +43,8 @@
     if (!host || !sb) return;
     const user = await getUser();
     if (user) {
-      host.innerHTML = `<div class="community-auth-state"><strong>Signed in as ${window.esc ? esc(user.user_metadata?.full_name || user.email) : user.email}</strong> <button class="btn small alt" type="button" data-ifn-signout>Sign out</button></div>`;
+      const signedInLabel = user.user_metadata?.full_name || user.user_metadata?.name || user.email || "Signed-in user";
+      host.innerHTML = `<div class="community-auth-state"><strong>Signed in as ${esc(signedInLabel)}</strong> <button class="btn small alt" type="button" data-ifn-signout>Sign out</button></div>`;
       host.querySelector("[data-ifn-signout]")?.addEventListener("click",async()=>{await sb.auth.signOut();location.reload()});
       return;
     }
