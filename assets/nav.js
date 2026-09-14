@@ -8,6 +8,7 @@
     const radar=directLink(nav,'radar.html');if(radar)radar.textContent='Latest Articles';
     const archive=directLink(nav,'archive.html');
     const more=[...nav.children].find(x=>x.matches?.('details.nav-more'));
+    const summary=more?.querySelector('summary');if(summary){summary.textContent='More ▼';summary.style.fontWeight='600'}
     const menu=more?.querySelector('.nav-menu');
     if(menu){
       let archiveMore=menu.querySelector('a[href="archive.html"]');
