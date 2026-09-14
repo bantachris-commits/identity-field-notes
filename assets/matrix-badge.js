@@ -1,14 +1,15 @@
 (() => {
   let client=null, loading=null;
+  const SUPABASE_JS='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0';
 
   function loadSupabase(){
     if(window.supabase?.createClient)return Promise.resolve();
     if(loading)return loading;
     loading=new Promise((resolve,reject)=>{
       const existing=[...document.scripts].find(s=>s.src?.includes('@supabase/supabase-js'));
-      if(existing){existing.addEventListener('load',resolve,{once:true});existing.addEventListener('error',reject,{once:true});return}
+      if(existing){if(window.supabase?.createClient)return resolve();existing.addEventListener('load',resolve,{once:true});existing.addEventListener('error',reject,{once:true});return}
       const s=document.createElement('script');
-      s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+      s.src=SUPABASE_JS;
       s.onload=resolve;s.onerror=reject;document.head.appendChild(s);
     });
     return loading;
