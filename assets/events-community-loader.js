@@ -1,4 +1,5 @@
 (() => {
+  const SUPABASE_JS = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.116.0";
   const loadScript = src => new Promise((resolve, reject) => {
     const existing = [...document.scripts].find(s => s.src && s.src.includes(src.split('?')[0]));
     if (existing) {
@@ -34,7 +35,7 @@
     if (!document.querySelector("#eventsList")) return;
     loadCss("assets/community.css?v=20260913-7");
     try {
-      if (!window.supabase?.createClient) await loadScript("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2");
+      if (!window.supabase?.createClient) await loadScript(SUPABASE_JS);
       if (!window.google?.accounts?.id) await loadScript("https://accounts.google.com/gsi/client");
       if (!window.IFNCommunityAuth) await loadScript("assets/community-auth.js?v=20260913-2");
       if (!window.IFNCommunityData) await loadScript("assets/community-data.js?v=20260913-7");
