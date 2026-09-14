@@ -188,15 +188,30 @@
     "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
     "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "Passkeys",
       "OAuth",
-      "MFA Bypass",
       "Session Theft",
+      "MFA Bypass",
       "ITDR"
     ],
-    "note": "Independent reporting adds operational detail to Microsoft\u2019s disclosure, including attacker-controlled OAuth clients, device-code phishing, unauthorized MFA-method registration, Graph enumeration, and connected-SaaS access.",
-    "score": 93
+    "note": "This independent account adds operational detail on compromised Microsoft 365 sessions, token replay, persistence through new authentication methods, Graph enumeration, and gradual SharePoint, OneDrive, and Exchange exfiltration.",
+    "score": 97
+  },
+  {
+    "id": "0ffcbeaed46d9efe",
+    "date": "2026-09-11",
+    "source": "The Record from Recorded Future News",
+    "title": "Florida says motor vehicle data breach tied to credentials stolen from officer\u2019s personal device",
+    "url": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
+    "tags": [
+      "IAM",
+      "Credential Exposure",
+      "Excessive Access",
+      "Government"
+    ],
+    "note": "Florida officials identified improperly stored credentials on a police employee\u2019s personal device as the access path into the state motor-vehicle database.",
+    "score": 91
   },
   {
     "id": "cd0695560dd007cc",
@@ -231,22 +246,6 @@
     "score": 96
   },
   {
-    "id": "6e6808f3261047ff",
-    "date": "2026-09-10",
-    "source": "Microsoft Security",
-    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
-    "tags": [
-      "OAuth",
-      "Device code",
-      "Session theft",
-      "Entra",
-      "Identity attacks"
-    ],
-    "note": "A concrete device-code-phishing and BEC case study showing how correlated identity, email and endpoint telemetry can disrupt post-authentication abuse.",
-    "score": 94
-  },
-  {
     "id": "348626d9ce7a6f9b",
     "date": "2026-09-10",
     "source": "Anthropic",
@@ -262,6 +261,22 @@
     ],
     "note": "Anthropic\u2019s primary threat-intelligence report describes campaigns using compromised credentials, VPN access, device-code phishing, stolen API keys and session tokens, credential-database theft, and AI-assisted lateral movement.",
     "score": 94
+  },
+  {
+    "id": "6e6808f3261047ff",
+    "date": "2026-09-10",
+    "source": "Microsoft Security Blog",
+    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Device-Code Phishing",
+      "ITDR",
+      "Session Theft"
+    ],
+    "note": "Microsoft documents AI-themed campaigns that steal credentials and access tokens, including a business-email-compromise case using OAuth device-code phishing without conventional password theft.",
+    "score": 93
   },
   {
     "id": "82870bf6f1bec574",
@@ -344,6 +359,23 @@
     "score": 82
   },
   {
+    "id": "e7045162419c265f",
+    "date": "2026-09-09",
+    "source": "Microsoft Security Blog",
+    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Passkeys",
+      "OAuth",
+      "Session Theft",
+      "Microsoft Entra"
+    ],
+    "note": "Microsoft details an active campaign combining vishing, AiTM phishing, device-code authentication, unauthorized MFA-method registration, Graph reconnaissance, and SaaS data theft, with concrete detection and containment guidance.",
+    "score": 99
+  },
+  {
     "id": "3820a0f914db94fe",
     "date": "2026-09-09",
     "source": "Okta Threat Intelligence",
@@ -357,23 +389,6 @@
     ],
     "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
     "score": 97
-  },
-  {
-    "id": "e7045162419c265f",
-    "date": "2026-09-09",
-    "source": "Microsoft Security",
-    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-    "tags": [
-      "IAM",
-      "Entra",
-      "Passkeys",
-      "ITDR",
-      "OAuth",
-      "Session Theft"
-    ],
-    "note": "Primary Microsoft research details active intrusions that combine passkey-themed social engineering, AiTM or device-code phishing, stolen sessions, unauthorized MFA registration, Graph reconnaissance, and cloud-data theft.",
-    "score": 96
   },
   {
     "id": "eb77ddbb1f967f57",
@@ -457,17 +472,32 @@
     "id": "63d92b090ca17491",
     "date": "2026-09-08",
     "source": "U.S. Securities and Exchange Commission",
-    "title": "Veradigm Inc. Form 8-K: third-party vendor credential compromise exposed patient data through an API",
+    "title": "Veradigm Inc. Form 8-K: Third-party vendor cybersecurity incident",
     "url": "https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm",
     "tags": [
-      "NHI",
-      "Service Accounts",
+      "IAM",
+      "Third-Party Risk",
+      "Exposed Credentials",
       "API Security",
-      "Secrets",
-      "Third-Party Risk"
+      "NHI"
     ],
-    "note": "Primary filing states that credentials stolen from a vendor environment were used to access a restricted Veradigm API and download patient data, while broader systems were not reached.",
+    "note": "Veradigm\u2019s filing states that an unauthorized party obtained vendor credentials and used them against a limited API to download patient data, providing a clear service-credential abuse case.",
     "score": 94
+  },
+  {
+    "id": "3a7221f54609e02f",
+    "date": "2026-09-08",
+    "source": "Google Threat Intelligence",
+    "title": "GTIG AI Threat Tracker: From Prompting to Autonomy \u2013 The Evolution of Adversarial AI",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "Credential Theft",
+      "Cloud Identity"
+    ],
+    "note": "Primary research describes adversaries using compromised cloud resources and agent-enabled automation to build mass credential-harvesting operations in under six hours.",
+    "score": 92
   },
   {
     "id": "c34ce1458f4aee8e",
@@ -476,14 +506,14 @@
     "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
     "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
     "tags": [
-      "MFA",
+      "MFA Bypass",
       "Microsoft Entra",
-      "AiTM",
-      "Session Tokens",
-      "Credential Theft"
+      "Session Theft",
+      "Credential Theft",
+      "ITDR"
     ],
-    "note": "CloudSEK evidence shows an Evilginx-based phishing service captured more than 5,000 Microsoft 365 credentials and session cookies across 258 organizations.",
-    "score": 95
+    "note": "CloudSEK\u2019s investigation, reported by BleepingComputer, found an Evilginx-based phishing service intercepting passwords, MFA completions, and authenticated session cookies across hundreds of organizations.",
+    "score": 96
   },
   {
     "id": "99680276e400d3fb",
@@ -517,6 +547,23 @@
     "score": 93
   },
   {
+    "id": "23e5fbe83235a9c9",
+    "date": "2026-09-01",
+    "source": "Auth0",
+    "title": "How to Make Your AI Agent Enterprise-Ready: Enabling Enterprise-Managed Authorization for Client Apps in Auth0",
+    "url": "https://auth0.com/blog/enabling-enterprise-managed-authorization-for-client-apps/",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "Authorization",
+      "NHI",
+      "MCP",
+      "Okta"
+    ],
+    "note": "Auth0\u2019s early-access implementation of Cross App Access, Enterprise-Managed Authorization, and ID-JAG shows how enterprise IdPs can govern app-to-app and agent-to-tool authorization with short-lived exchanged tokens.",
+    "score": 88
+  },
+  {
     "id": "5eb7907d4adfd0ac",
     "date": "2026-08-31",
     "source": "METR",
@@ -547,5 +594,21 @@
     ],
     "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.",
     "score": 82
+  },
+  {
+    "id": "b2d31b97d2d61eba",
+    "date": "2026-07-13",
+    "source": "Microsoft Security Blog",
+    "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-microsoft-entra-id/",
+    "tags": [
+      "Microsoft Entra",
+      "Passkeys",
+      "FIDO2",
+      "MFA",
+      "Authentication"
+    ],
+    "note": "The September 1 rollout makes passkeys the default Entra authentication experience for users relying on SMS or voice, making this a newly operationally relevant migration item for identity teams.",
+    "score": 86
   }
 ]
