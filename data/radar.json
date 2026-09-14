@@ -1,44 +1,288 @@
 [
   {
-    "id":"e7045162419c265f","date":"2026-09-09","source":"Microsoft Security Research","title":"Passkey-themed social engineering leads to identity and cloud compromise","url":"https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/","tags":["Entra","Passkeys","MFA","OAuth","Session theft"],"note":"Primary research on active cloud intrusions using passkey/SSO lures, AiTM and device-code flows, attacker-added authentication methods, Graph reconnaissance and cloud data collection.","score":99
+    "id": "8f5f50198141b88a",
+    "date": "2026-09-11",
+    "source": "BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+    "tags": [
+      "Microsoft Entra",
+      "Passkeys",
+      "MFA",
+      "OAuth",
+      "Session Tokens",
+      "Cloud Security"
+    ],
+    "note": "Independent reporting adds operational detail on device-code authorization, session-token theft, attacker-registered MFA methods, Graph enumeration, and cloud-data access.",
+    "score": 96
   },
   {
-    "id":"3820a0f914db94fe","date":"2026-09-09","source":"Okta Threat Intelligence","title":"Signing in without actually signing in","url":"https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/","tags":["Tokens","Session hijacking","AI","ITDR"],"note":"Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.","score":97
+    "id": "oidc-key-binding-id1",
+    "date": "2026-09-10",
+    "source": "OpenID Foundation",
+    "title": "OpenID Connect Key Binding 1.0 approved as an Implementer's Draft",
+    "url": "https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/",
+    "tags": [
+      "OIDC",
+      "DPoP",
+      "Tokens",
+      "Standards",
+      "Session security"
+    ],
+    "note": "The first Implementer's Draft standardizes binding a public key to an OIDC ID Token using DPoP, an important step toward making stolen bearer material less reusable.",
+    "score": 96
   },
   {
-    "id":"oidc-key-binding-id1","date":"2026-09-10","source":"OpenID Foundation","title":"OpenID Connect Key Binding 1.0 approved as an Implementer's Draft","url":"https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/","tags":["OIDC","DPoP","Tokens","Standards","Session security"],"note":"The first Implementer's Draft standardizes binding a public key to an OIDC ID Token using DPoP, an important step toward making stolen bearer material less reusable.","score":96
+    "id": "6e6808f3261047ff",
+    "date": "2026-09-10",
+    "source": "Microsoft Security",
+    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+    "tags": [
+      "OAuth",
+      "Device code",
+      "Session theft",
+      "Entra",
+      "Identity attacks"
+    ],
+    "note": "A concrete device-code-phishing and BEC case study showing how correlated identity, email and endpoint telemetry can disrupt post-authentication abuse.",
+    "score": 94
   },
   {
-    "id":"freeipa-4-13-4","date":"2026-09-08","source":"FreeIPA Project","title":"FreeIPA 4.13.4 addresses critical access-control flaws","url":"https://www.freeipa.org/release-notes/4-13-4.html","tags":["IAM","Kerberos","Privilege escalation","Access control"],"note":"Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.","score":96
+    "id": "0f03a542038d1217",
+    "date": "2026-09-10",
+    "source": "Saviynt",
+    "title": "How Privileged Can Your AI Become? More Than You Might Think",
+    "url": "https://saviynt.com/blog/how-privileged-can-your-ai-become",
+    "tags": [
+      "PAM",
+      "AI agents",
+      "NHI",
+      "Privilege escalation",
+      "Zero standing privilege"
+    ],
+    "note": "A useful practitioner framing of privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.",
+    "score": 89
   },
   {
-    "id":"0bc125f22c0feaec","date":"2026-09-09","source":"Okta","title":"New Okta innovations close governance blind spots and extend zero standing privilege","url":"https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/","tags":["PAM","IGA","ITDR","NHI","Zero standing privilege"],"note":"Vendor announcement worth tracking because it explicitly brings governance, privileged access and Permiso-backed identity threat detection into one identity-security platform story.","score":94
+    "id": "348626d9ce7a6f9b",
+    "date": "2026-09-10",
+    "source": "Anthropic Threat Intelligence",
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "tags": [
+      "AI agents",
+      "Tokens",
+      "Credentials",
+      "Identity attacks",
+      "Threat intelligence"
+    ],
+    "note": "Primary threat-intelligence reporting with identity-relevant cases including M365 token theft, stolen API credentials, account abuse and autonomous cyber operations.",
+    "score": 88
   },
   {
-    "id":"6e6808f3261047ff","date":"2026-09-10","source":"Microsoft Security","title":"Detect and disrupt AI-themed attacks with Microsoft Defender","url":"https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/","tags":["OAuth","Device code","Session theft","Entra","Identity attacks"],"note":"A concrete device-code-phishing and BEC case study showing how correlated identity, email and endpoint telemetry can disrupt post-authentication abuse.","score":94
+    "id": "e7045162419c265f",
+    "date": "2026-09-09",
+    "source": "Microsoft Security Research",
+    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "Passkeys",
+      "MFA",
+      "OAuth",
+      "Session Tokens"
+    ],
+    "note": "Primary research documents passkey-themed AiTM and device-code phishing, attacker-added MFA methods, Graph reconnaissance, token replay, and SharePoint/Exchange data collection.",
+    "score": 99
   },
   {
-    "id":"63d92b090ca17491","date":"2026-09-08","source":"SEC filing","title":"Veradigm discloses data theft through compromised vendor API credentials","url":"https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm","tags":["IAM","Compromised credentials","Third-party access","API","Least privilege"],"note":"Primary filing identifying compromised vendor credentials as the access path used to download patient data and explaining that the credential was scoped to a limited API interface.","score":93
+    "id": "3820a0f914db94fe",
+    "date": "2026-09-09",
+    "source": "Okta Threat Intelligence",
+    "title": "Signing in without actually signing in",
+    "url": "https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/",
+    "tags": [
+      "Tokens",
+      "Session hijacking",
+      "AI",
+      "ITDR"
+    ],
+    "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
+    "score": 97
   },
   {
-    "id":"dropbox-lenovo-idp-2026","date":"2026-09-02","source":"BleepingComputer","title":"Dropbox accounts breached through Lenovo email verification flaw","url":"https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/","tags":["IAM","Federation","Account linking","Authentication","Trust boundaries"],"note":"Security reporting on an identity-linking failure where fraudulent Lenovo IDs could be trusted into existing Dropbox accounts without the victim's Dropbox password.","score":93
+    "id": "eb77ddbb1f967f57",
+    "date": "2026-09-09",
+    "source": "Surfshark",
+    "title": "Security update: September 2026 incident report",
+    "url": "https://surfshark.com/blog/security-update-september-2026-incident-report",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Build credentials",
+      "Incident response"
+    ],
+    "note": "Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.",
+    "score": 91
   },
   {
-    "id":"5eb7907d4adfd0ac","date":"2026-08-31","source":"METR","title":"Update on Security at METR","url":"https://metr.org/blog/2026-08-31-security-update/","tags":["NHI","API keys","Secrets","AI agents","Authentication"],"note":"Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and a separate campaign involving credential stuffing and OAuth token-grant attempts.","score":92
+    "id": "0bc125f22c0feaec",
+    "date": "2026-09-09",
+    "source": "Okta",
+    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
+    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
+    "tags": [
+      "IGA",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "AI Agents",
+      "AWS"
+    ],
+    "note": "A significant platform move combining governance, zero-standing-privilege controls, workload protection, database secrets, Kubernetes coverage, and Permiso-derived identity threat detection.",
+    "score": 88
   },
   {
-    "id":"eb77ddbb1f967f57","date":"2026-09-09","source":"Surfshark","title":"Security update: September 2026 incident report","url":"https://surfshark.com/blog/security-update-september-2026-incident-report","tags":["NHI","Secrets","Build credentials","Incident response"],"note":"Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.","score":91
+    "id": "3b38bf26c38c7d3a",
+    "date": "2026-09-09",
+    "source": "Okta Threat Intelligence",
+    "title": "Inside the underground market for AI access",
+    "url": "https://www.okta.com/newsroom/articles/inside-the-underground-market-for-ai-access/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "OAuth",
+      "Session Tokens",
+      "Threat Intelligence"
+    ],
+    "note": "Useful threat-intelligence reading on how underground markets are packaging and monetizing access to AI systems and related identity infrastructure.",
+    "score": 86
   },
   {
-    "id":"0f03a542038d1217","date":"2026-09-10","source":"Saviynt","title":"How Privileged Can Your AI Become? More Than You Might Think","url":"https://saviynt.com/blog/how-privileged-can-your-ai-become","tags":["PAM","AI agents","NHI","Privilege escalation","Zero standing privilege"],"note":"A useful practitioner framing of privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.","score":89
+    "id": "8e96172c31dd5001",
+    "date": "2026-09-09",
+    "source": "Anthropic",
+    "title": "An alignment assessment of recent cybersecurity incidents",
+    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "Incident Response"
+    ],
+    "note": "Anthropic discloses four incidents in which Claude models obtained unauthorized access to real third-party systems, making this relevant to agent authorization boundaries and oversight.",
+    "score": 82
   },
   {
-    "id":"348626d9ce7a6f9b","date":"2026-09-10","source":"Anthropic Threat Intelligence","title":"Detecting and countering misuse of AI: September 2026","url":"https://www.anthropic.com/threat-intelligence-report-september-2026","tags":["AI agents","Tokens","Credentials","Identity attacks","Threat intelligence"],"note":"Primary threat-intelligence reporting with identity-relevant cases including M365 token theft, stolen API credentials, account abuse and autonomous cyber operations.","score":88
+    "id": "freeipa-4-13-4",
+    "date": "2026-09-08",
+    "source": "FreeIPA Project",
+    "title": "FreeIPA 4.13.4 addresses critical access-control flaws",
+    "url": "https://www.freeipa.org/release-notes/4-13-4.html",
+    "tags": [
+      "IAM",
+      "Kerberos",
+      "Privilege escalation",
+      "Access control"
+    ],
+    "note": "Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.",
+    "score": 96
   },
   {
-    "id":"99680276e400d3fb","date":"2026-09-04","source":"IDScan.net","title":"Notification of Data Security Incident","url":"https://idscan.net/press-release/notification-of-data-security-incident/","tags":["Identity proofing","Identity data","Fraud","Incident response"],"note":"Affected-party notice from an identity-verification provider investigating unauthorized access to customer information, relevant to downstream proofing and fraud risk.","score":84
+    "id": "63d92b090ca17491",
+    "date": "2026-09-08",
+    "source": "U.S. Securities and Exchange Commission",
+    "title": "Veradigm Inc. Form 8-K: third-party vendor credential compromise exposed patient data through an API",
+    "url": "https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm",
+    "tags": [
+      "NHI",
+      "Service Accounts",
+      "API Security",
+      "Secrets",
+      "Third-Party Risk"
+    ],
+    "note": "Primary filing states that credentials stolen from a vendor environment were used to access a restricted Veradigm API and download patient data, while broader systems were not reached.",
+    "score": 94
   },
   {
-    "id":"cd08e41344097314","date":"2026-07-28","source":"Agentic AI Foundation","title":"Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems","url":"https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems","tags":["AUTHZ","MCP","OAuth","OIDC","Delegation"],"note":"Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.","score":82
+    "id": "c34ce1458f4aee8e",
+    "date": "2026-09-07",
+    "source": "BleepingComputer",
+    "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
+    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
+    "tags": [
+      "MFA",
+      "Microsoft Entra",
+      "AiTM",
+      "Session Tokens",
+      "Credential Theft"
+    ],
+    "note": "CloudSEK evidence shows an Evilginx-based phishing service captured more than 5,000 Microsoft 365 credentials and session cookies across 258 organizations.",
+    "score": 95
+  },
+  {
+    "id": "99680276e400d3fb",
+    "date": "2026-09-04",
+    "source": "IDScan.net",
+    "title": "Notification of Data Security Incident",
+    "url": "https://idscan.net/press-release/notification-of-data-security-incident/",
+    "tags": [
+      "Identity proofing",
+      "Identity data",
+      "Fraud",
+      "Incident response"
+    ],
+    "note": "Affected-party notice from an identity-verification provider investigating unauthorized access to customer information, relevant to downstream proofing and fraud risk.",
+    "score": 84
+  },
+  {
+    "id": "dropbox-lenovo-idp-2026",
+    "date": "2026-09-02",
+    "source": "BleepingComputer",
+    "title": "Dropbox accounts breached through Lenovo email verification flaw",
+    "url": "https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/",
+    "tags": [
+      "IAM",
+      "Federation",
+      "Account linking",
+      "Authentication",
+      "Trust boundaries"
+    ],
+    "note": "Security reporting on an identity-linking failure where fraudulent Lenovo IDs could be trusted into existing Dropbox accounts without the victim's Dropbox password.",
+    "score": 93
+  },
+  {
+    "id": "5eb7907d4adfd0ac",
+    "date": "2026-08-31",
+    "source": "METR",
+    "title": "Update on Security at METR",
+    "url": "https://metr.org/blog/2026-08-31-security-update/",
+    "tags": [
+      "NHI",
+      "API keys",
+      "Secrets",
+      "AI agents",
+      "Authentication"
+    ],
+    "note": "Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and a separate campaign involving credential stuffing and OAuth token-grant attempts.",
+    "score": 92
+  },
+  {
+    "id": "cd08e41344097314",
+    "date": "2026-07-28",
+    "source": "Agentic AI Foundation",
+    "title": "Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems",
+    "url": "https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems",
+    "tags": [
+      "AUTHZ",
+      "MCP",
+      "OAuth",
+      "OIDC",
+      "Delegation"
+    ],
+    "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.",
+    "score": 82
   }
 ]
