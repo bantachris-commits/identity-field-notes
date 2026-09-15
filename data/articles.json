@@ -2,27 +2,30 @@
   {
     "id": "2026-09-15-morning-brief",
     "date": "2026-09-15",
-    "edition": "FIELD NOTES // 2026.09.15",
-    "title": "A Quiet Morning, Except for One Stolen Police Login",
-    "dek": "The strongest new identity-relevant disclosure is a Florida DMV breach tied to credentials improperly stored on an employee\u2019s personal device; no comparable new PAM, IGA, passkey, or agent-authorization development cleared the bar without recycling recently covered news.",
+    "coverageDate": "2026-09-14",
+    "edition": "MORNING EDITION // 2026.09.15",
+    "title": "Agent Consent Moves Into the Control Plane",
+    "dek": "Highlights from 2026-09-14. AWS introduced a managed OAuth consent and session-binding portal for AI agents, while the queued Okta threat articles were published on earlier dates and are excluded.",
     "tags": [
       "IAM",
-      "Identity Threat Detection",
-      "Authentication"
+      "Machine IAM",
+      "AI-agents",
+      "OAuth"
     ],
-    "readTime": "2 min",
+    "readTime": "3 min",
     "featured": true,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
-    "disclosure": "AI-generated from current web research and linked sources. Verify material details at the source.",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-14, verified against linked sources. Edition dated 2026-09-15; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
       {
-        "kicker": "Breach",
-        "title": "Florida DMV breach traced to credentials stored on a police employee\u2019s personal device",
-        "summary": "Florida\u2019s Department of Highway Safety and Motor Vehicles said attackers accessed its DAVID driver database using compromised credentials belonging to a single Plant City Police Department user. The agency has not confirmed how many records were accessed or the threat actor\u2019s claim that more than 200,000 records were stolen; it also disputes the actor\u2019s separate claim that a password-reset flaw enabled access to multiple accounts. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/))",
-        "why": "This is a documented identity-control failure, not a vendor theory: a legitimate third-party account, improperly stored credentials, and access to a sensitive government database. The unresolved scope reinforces the need to treat external law-enforcement and partner identities as governed principals with phishing-resistant authentication, tightly bounded permissions, short-lived sessions, and query-level anomaly detection. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/))",
-        "source": "BleepingComputer / Florida Highway Safety and Motor Vehicles",
-        "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
-        "confidence": "Multiple sources",
+        "kicker": "Machine IAM",
+        "title": "AWS adds managed end-user OAuth consent for Bedrock AgentCore agents",
+        "summary": "Amazon Bedrock AgentCore Identity now provides a managed Consent Portal for agents that access services such as GitHub and Slack on a user\u2019s behalf. The portal handles corporate IdP authentication, provider consent, OAuth session binding, per-user token storage in the token vault, and CloudTrail-auditable operations, reducing the need for custom callback and browser-session infrastructure.",
+        "why": "This is a practical identity control for agentic workloads: delegated access can remain tied to the approving user instead of collapsing into a shared agent credential. Practitioners should still review gateway JWT authorization, requested scopes, execution-role permissions, token lifetime and revocation behavior, and the audit trail across the IdP, AgentCore and downstream provider.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
+        "confidence": "Primary source",
+        "published_date": "2026-09-14",
         "aiGenerated": true
       }
     ]
