@@ -7,6 +7,9 @@ on:
     # Existing editions and queued/sent emails are preserved on retries.
     - cron: '15 7 * * 1-5'
       timezone: 'America/Denver'
+    # One-time automation test on September 15, 2026; date-gated below.
+    - cron: '30 8 15 9 *'
+      timezone: 'America/Denver'
   workflow_dispatch:
 
 permissions: {}
@@ -32,7 +35,15 @@ jobs:
       - run: pip install -r requirements-automation.txt
       - name: Run gate
         id: gate
-        run: echo "run=yes" >> "$GITHUB_OUTPUT"
+        env:
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ "$TRIGGER_SCHEDULE" = "30 8 15 9 *" ] && [ "$(TZ=America/Denver date +%F)" != "2026-09-15" ]; then
+            echo "run=no" >> "$GITHUB_OUTPUT"
+            echo "The September 15, 2026 automation test has expired."
+          else
+            echo "run=yes" >> "$GITHUB_OUTPUT"
+          fi
       - name: Collect RSS supplement
         if: steps.gate.outputs.run == 'yes'
         run: python scripts/collect_radar.py
