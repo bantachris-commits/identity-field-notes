@@ -1,4 +1,5 @@
 """Send a separate format preview to the newsletter's sole subscriber."""
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -42,12 +43,21 @@ with tempfile.TemporaryDirectory() as directory:
             return voices
         return [{'id': 'layout-example', 'title': 'Sample Community Voice — layout preview only',
             'author': 'Example byline (not a real contributor)', 'role': 'Preview sample',
-            'excerpt': 'This clearly labeled sample demonstrates where newly published human contributions will appear: above the AI news highlights, with an author byline, excerpt, and link. It is not a published article.',
+            'excerpt': 'This clearly labeled sample demonstrates where newly published human contributions will appear: below the 60-second brief and above the full article highlights, with an author byline, excerpt, and link. It is not a published article.',
             'url': 'https://identityfieldnotes.com/guest-voices.html'}]
     community_digest.load_voices = preview_voices
     os.environ['BUTTONDOWN_PREVIEW'] = 'true'
     os.environ['BUTTONDOWN_MODE'] = 'draft'
-    result = runpy.run_path(str(root / 'scripts/push_buttondown.py'), run_name='__main__')
+    publisher = root / 'scripts/push_buttondown.py'
+    template = publisher.read_text(encoding='utf-8')
+    # One preview per template revision; retries retain the same duplicate guard.
+    revision = hashlib.sha256(template.encode('utf-8')).hexdigest()[:12]
+    original_slug = 'slug = f"{article[\'id\']}-preview" if preview else article["id"]'
+    if original_slug not in template:
+        raise SystemExit('Preview slug configuration changed; no email sent.')
+    template = template.replace(original_slug, original_slug.replace('-preview"', f'-preview-{revision}"'), 1)
+    publisher.write_text(template, encoding='utf-8')
+    result = runpy.run_path(str(publisher), run_name='__main__')
     email_id = result['email_id']
     # The owner explicitly authorized newsletter delivery and confirmed they are the sole subscriber.
     response = requests.patch(f'https://api.buttondown.com/v1/emails/{email_id}',
