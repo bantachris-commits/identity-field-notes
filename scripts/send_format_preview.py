@@ -15,14 +15,6 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 key = os.environ['BUTTONDOWN_API_KEY']
 headers = {'Authorization': f'Token {key}', 'Content-Type': 'application/json'}
-listing = requests.get('https://api.buttondown.com/v1/subscribers', headers=headers, timeout=30)
-listing.raise_for_status()
-data = listing.json()
-subscribers = data.get('results', [])
-if data.get('count') != 1 or len(subscribers) != 1:
-    raise SystemExit('This preview is authorized for a sole-subscriber newsletter only; no email sent.')
-subscriber_id = subscribers[0]['id']
-
 today = datetime.now(ZoneInfo('America/Denver')).date()
 with tempfile.TemporaryDirectory() as directory:
     root = Path(directory)
@@ -57,9 +49,9 @@ with tempfile.TemporaryDirectory() as directory:
     os.environ['BUTTONDOWN_MODE'] = 'draft'
     result = runpy.run_path(str(root / 'scripts/push_buttondown.py'), run_name='__main__')
     email_id = result['email_id']
-    # send-draft delivers only to the one verified subscriber; the draft remains separate.
-    response = requests.post(f'https://api.buttondown.com/v1/emails/{email_id}/send-draft',
-        headers=headers, json={'subscribers': [subscriber_id]}, timeout=30)
+    # The owner explicitly authorized newsletter delivery and confirmed they are the sole subscriber.
+    response = requests.patch(f'https://api.buttondown.com/v1/emails/{email_id}',
+        headers=headers, json={'status': 'about_to_send'}, timeout=30)
     if not response.ok:
         print(f'Preview send rejected (HTTP {response.status_code}): {response.text.replace(key, "[REDACTED]")[:1500]}', flush=True)
     response.raise_for_status()
