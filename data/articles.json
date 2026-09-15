@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-09-15-morning-brief",
+    "date": "2026-09-15",
+    "edition": "FIELD NOTES // 2026.09.15",
+    "title": "A Quiet Morning, Except for One Stolen Police Login",
+    "dek": "The strongest new identity-relevant disclosure is a Florida DMV breach tied to credentials improperly stored on an employee\u2019s personal device; no comparable new PAM, IGA, passkey, or agent-authorization development cleared the bar without recycling recently covered news.",
+    "tags": [
+      "IAM",
+      "Identity Threat Detection",
+      "Authentication"
+    ],
+    "readTime": "2 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated from current web research and linked sources. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Breach",
+        "title": "Florida DMV breach traced to credentials stored on a police employee\u2019s personal device",
+        "summary": "Florida\u2019s Department of Highway Safety and Motor Vehicles said attackers accessed its DAVID driver database using compromised credentials belonging to a single Plant City Police Department user. The agency has not confirmed how many records were accessed or the threat actor\u2019s claim that more than 200,000 records were stolen; it also disputes the actor\u2019s separate claim that a password-reset flaw enabled access to multiple accounts. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/))",
+        "why": "This is a documented identity-control failure, not a vendor theory: a legitimate third-party account, improperly stored credentials, and access to a sensitive government database. The unresolved scope reinforces the need to treat external law-enforcement and partner identities as governed principals with phishing-resistant authentication, tightly bounded permissions, short-lived sessions, and query-level anomaly detection. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/))",
+        "source": "BleepingComputer / Florida Highway Safety and Motor Vehicles",
+        "url": "https://www.bleepingcomputer.com/news/security/florida-confirms-dmv-database-breached-via-stolen-police-account/",
+        "confidence": "Multiple sources",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-14-morning-brief",
     "date": "2026-09-14",
     "edition": "FIELD NOTES // 2026.09.14",
@@ -12,7 +40,7 @@
       "AI Agent Authorization"
     ],
     "readTime": "5 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated from current web research and linked sources. Verify material details at the source.",
     "stories": [
