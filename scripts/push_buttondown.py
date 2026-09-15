@@ -16,6 +16,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -94,6 +95,9 @@ if article is None:
     raise SystemExit("No non-guest Field Note found for the digest")
 
 stories = article.get("stories") or []
+if mode == "send" and (article.get("date") != datetime.now(ZoneInfo("America/Denver")).date().isoformat() or not stories):
+    print("No current, nonempty Field Note; no digest will be created or sent.")
+    raise SystemExit(0)
 canonical = f"{SITE}article.html?id={article['id']}"
 slug = f"{article['id']}-preview" if preview else article["id"]
 subject_prefix = "[PREVIEW] " if preview else ""
@@ -227,11 +231,14 @@ payload = {
 listing = requests.get("https://api.buttondown.com/v1/emails", headers=headers, timeout=30)
 listing.raise_for_status()
 existing = next((x for x in listing.json().get("results", []) if x.get("slug") == slug), None)
-if existing and existing.get("status") == "sent":
+if existing and existing.get("status") in {"sent", "about_to_send", "scheduled", "in_flight", "throttled", "resending"}:
     if preview:
         raise SystemExit("The preview copy was manually sent in Buttondown. Delete it or change its slug before regenerating a preview.")
-    print("Buttondown email already sent for", article["id"], "- refusing to send twice.")
+    print("Buttondown email already queued or sent for", article["id"], "- leaving it unchanged.")
     raise SystemExit(0)
+
+if existing and existing.get("status") != "draft":
+    raise SystemExit("Existing Buttondown email is not a draft; review its status before retrying.")
 
 if existing:
     email_id = existing["id"]
@@ -255,14 +262,14 @@ else:
     print("Created Buttondown preview draft" if preview else "Created Buttondown email", email_id)
 
 if mode == "send":
-    publish = requests.post(
-        f"https://api.buttondown.com/v1/emails/{email_id}/publish",
+    publish = requests.patch(
+        f"https://api.buttondown.com/v1/emails/{email_id}",
         headers=headers,
-        json={},
+        json={"status": "about_to_send"},
         timeout=30,
     )
     publish.raise_for_status()
-    print("Published Buttondown email")
+    print("Queued Buttondown email for sending")
 elif preview:
     print("Preview mode: left as a separate draft and cannot auto-send.")
 else:
