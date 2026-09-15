@@ -1,5 +1,37 @@
 [
   {
+    "id": "35e784a66d88abcf",
+    "date": "2026-09-15",
+    "source": "NIST/CISA",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://csrc.nist.gov/pubs/ir/8587/final",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR",
+      "NHI",
+      "PAM"
+    ],
+    "note": "Final guidance emphasizes signing-key protection, token verification, lifecycle controls, federation security, and short-lived workload tokens instead of static secrets.",
+    "score": 99
+  },
+  {
+    "id": "fe184999dcccb80e",
+    "date": "2026-09-15",
+    "source": "Google Cloud",
+    "title": "Introducing new session management tools with native, granular controls",
+    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Session Security",
+      "ITDR",
+      "Google Cloud"
+    ],
+    "note": "Google Cloud made more granular session controls generally available, directly addressing credential theft, account takeover, OAuth-session duration, and context-aware access.",
+    "score": 94
+  },
+  {
     "id": "5277736636274adb",
     "date": "2026-09-14",
     "source": "AWS",
@@ -60,6 +92,21 @@
     ],
     "note": "Describes early-access discovery and governance for locally deployed AI agents and MCP servers, including runtime authorization and identity context.",
     "score": 86
+  },
+  {
+    "id": "cfe35776fa2ad314",
+    "date": "2026-09-14",
+    "source": "Microsoft Entra",
+    "title": "Simplify Employee Identity Lifecycle with HiBob and Microsoft Entra",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/simplify-employee-identity-lifecycle-with-hibob-and-microsoft-entra/4554510",
+    "tags": [
+      "IGA",
+      "IAM",
+      "Microsoft Entra",
+      "Lifecycle Management"
+    ],
+    "note": "The integration is relevant to joiner-mover-leaver practitioners because it targets hybrid identity lifecycle governance between HR data and Entra.",
+    "score": 82
   },
   {
     "id": "836a0c4b41daf7ef",
@@ -266,13 +313,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
     "tags": [
       "Microsoft Entra",
-      "Passkeys",
       "OAuth",
       "Session Theft",
       "MFA Bypass",
-      "ITDR"
+      "Passkeys"
     ],
-    "note": "This independent account adds operational detail on compromised Microsoft 365 sessions, token replay, persistence through new authentication methods, Graph enumeration, and gradual SharePoint, OneDrive, and Exchange exfiltration.",
+    "note": "The report adds operational detail on attacker-controlled OAuth applications, persistence through newly registered MFA methods, token-backed SSO access, and stealthy SharePoint, OneDrive, and Exchange collection.",
     "score": 97
   },
   {
@@ -497,19 +543,19 @@
   {
     "id": "e7045162419c265f",
     "date": "2026-09-09",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Research",
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "IAM",
+      "Microsoft Entra",
+      "MFA Bypass",
       "Passkeys",
-      "MFA",
-      "ITDR",
       "OAuth",
-      "Session-token-abuse"
+      "Session Theft",
+      "ITDR"
     ],
-    "note": "Provides primary technical analysis of helpdesk impersonation, AiTM, device-code phishing, token theft, and unauthorized authentication-method registration.",
-    "score": 99
+    "note": "Microsoft documents active attacks combining help-desk impersonation, adversary-in-the-middle phishing, device-code OAuth abuse, rogue authentication-method enrollment, Graph reconnaissance, and cloud-data theft.",
+    "score": 100
   },
   {
     "id": "3820a0f914db94fe",
@@ -541,6 +587,23 @@
     ],
     "note": "Talos identifies in-the-wild exploitation of an authentication bypass and static-credential flaw that enabled root access, credential harvesting, tunneling, and ransomware or destructive malware deployment.",
     "score": 97
+  },
+  {
+    "id": "0bc125f22c0feaec",
+    "date": "2026-09-09",
+    "source": "Okta",
+    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
+    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
+    "tags": [
+      "IGA",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "AI-Agent Authorization",
+      "AWS"
+    ],
+    "note": "Okta announced planned capabilities spanning AWS entitlement governance, access-drift remediation, zero-standing privilege for workloads and agents, and Permiso-powered identity threat detection.",
+    "score": 92
   },
   {
     "id": "eb77ddbb1f967f57",
@@ -587,22 +650,6 @@
     ],
     "note": "Researchers describe workflow identity hijacking, in which attacker-controlled content reaches an AI workflow through an unauthenticated entry point and exploits identity delegation or authorization design weaknesses.",
     "score": 85
-  },
-  {
-    "id": "0bc125f22c0feaec",
-    "date": "2026-09-09",
-    "source": "Okta",
-    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
-    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
-    "tags": [
-      "IGA",
-      "PAM",
-      "ITDR",
-      "NHI",
-      "AI-agent-authorization"
-    ],
-    "note": "Material platform announcement covering governance, privileged access, identity threat protection, and zero-standing-privilege controls for human and non-human identities.",
-    "score": 83
   },
   {
     "id": "8e96172c31dd5001",
@@ -728,6 +775,22 @@
     ],
     "note": "Security reporting on an identity-linking failure where fraudulent Lenovo IDs could be trusted into existing Dropbox accounts without the victim's Dropbox password.",
     "score": 93
+  },
+  {
+    "id": "afd2012573ed7e06",
+    "date": "2026-09-02",
+    "source": "OpenID Foundation",
+    "title": "Notice of Vote for Proposed OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification",
+    "url": "https://openid.net/notice-of-vote-for-proposed-openid-connect-ephemeral-subject-identifier-1-0-final-specification/",
+    "tags": [
+      "OpenID",
+      "Federation",
+      "Privacy",
+      "CIAM",
+      "Standards"
+    ],
+    "note": "The proposed ephemeral subject identifier specification is a meaningful federation change for reducing persistent cross-party correlation and improving identity privacy in OpenID Connect deployments.",
+    "score": 84
   },
   {
     "id": "23e5fbe83235a9c9",
