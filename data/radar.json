@@ -1,5 +1,20 @@
 [
   {
+    "id": "5277736636274adb",
+    "date": "2026-09-14",
+    "source": "AWS",
+    "title": "Manage end-user OAuth consent for AI agents with Amazon Bedrock AgentCore",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "AI-agents",
+      "NHI"
+    ],
+    "note": "AgentCore\u2019s managed consent portal handles end-user authentication, OAuth session binding, per-user token storage, and auditability for agents connecting to services such as GitHub and Slack.",
+    "score": 94
+  },
+  {
     "id": "836a0c4b41daf7ef",
     "date": "2026-09-14",
     "source": "Okta Threat Intelligence",
@@ -372,6 +387,21 @@
     "score": 86
   },
   {
+    "id": "04db7bfd27e87e28",
+    "date": "2026-09-10",
+    "source": "Google Cloud",
+    "title": "Introducing the Google Cloud Developer Plugin for AI Coding Agents",
+    "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents",
+    "tags": [
+      "Cloud-IAM",
+      "AI-agents",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "Google\u2019s new agent plugin packages authentication, authorization, project-management skills, and guardrails intended to reduce accidental key exposure and unsafe gcloud operations by coding agents.",
+    "score": 84
+  },
+  {
     "id": "b4218bf0eea91afa",
     "date": "2026-09-10",
     "source": "Google",
@@ -393,14 +423,13 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "IAM",
-      "Entra",
+      "Microsoft Entra",
       "Passkeys",
-      "MFA",
       "ITDR",
-      "OAuth"
+      "OAuth",
+      "Session-token-abuse"
     ],
-    "note": "Microsoft documents an active campaign in which passkey-themed lures led to compromised cloud identities, attacker-added authentication methods, Graph activity, and large-scale SharePoint, OneDrive, and email collection.",
+    "note": "Microsoft documents active intrusions using passkey-themed lures, AiTM phishing, device-code authorization, attacker-added MFA methods, Graph reconnaissance, and cloud data theft.",
     "score": 100
   },
   {
@@ -416,6 +445,22 @@
       "ITDR"
     ],
     "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
+    "score": 97
+  },
+  {
+    "id": "df020bc56450618a",
+    "date": "2026-09-09",
+    "source": "Cisco Talos",
+    "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
+    "url": "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
+    "tags": [
+      "PAM",
+      "IAM",
+      "ITDR",
+      "Credentials",
+      "Authentication-bypass"
+    ],
+    "note": "Talos identifies in-the-wild exploitation of an authentication bypass and static-credential flaw that enabled root access, credential harvesting, tunneling, and ransomware or destructive malware deployment.",
     "score": 97
   },
   {
@@ -530,17 +575,18 @@
   {
     "id": "3a7221f54609e02f",
     "date": "2026-09-08",
-    "source": "Google Threat Intelligence",
+    "source": "Google Threat Intelligence Group",
     "title": "GTIG AI Threat Tracker: From Prompting to Autonomy \u2013 The Evolution of Adversarial AI",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
     "tags": [
       "NHI",
-      "AI Agents",
-      "Credential Theft",
-      "Cloud Identity"
+      "AI-agents",
+      "Machine-identity",
+      "Credentials",
+      "Cloud-IAM"
     ],
-    "note": "Primary research describes adversaries using compromised cloud resources and agent-enabled automation to build mass credential-harvesting operations in under six hours.",
-    "score": 92
+    "note": "GTIG reports adversaries compromising cloud resources and using agent-enabled workflows to build and execute mass credential-harvesting campaigns, while targeting API credentials and AI infrastructure.",
+    "score": 93
   },
   {
     "id": "c34ce1458f4aee8e",
@@ -556,6 +602,22 @@
       "Token Theft"
     ],
     "note": "CloudSEK researchers found an Evilginx-based phishing service that intercepted Microsoft 365 credentials, MFA completions, and session cookies, with 258 organizations experiencing completed MFA-bypass compromises.",
+    "score": 99
+  },
+  {
+    "id": "a18c05bcb0e46665",
+    "date": "2026-09-07",
+    "source": "CloudSEK",
+    "title": "Tracking BigBear 2.0 Evilginx2 Phishing Campaign",
+    "url": "https://www.cloudsek.com/blog/tracking-bigbear-2-0-evilginx2-phishing-campaign",
+    "tags": [
+      "Microsoft Entra",
+      "MFA-bypass",
+      "Passkeys",
+      "Session-token-abuse",
+      "OAuth"
+    ],
+    "note": "The investigation exposes a Microsoft 365 phishing-as-a-service operation that captured thousands of credentials and session cookies, disabled WebAuthn in the browser, and replayed authenticated sessions after MFA.",
     "score": 99
   },
   {
