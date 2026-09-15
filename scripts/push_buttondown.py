@@ -165,21 +165,6 @@ parts = [
 </table>''',
 ]
 
-if voices:
-    parts.append(f'''<div class="ifn-event-panel" style="background:{WARM_TAG};border:2px solid {AMBER};border-top:6px solid {AMBER};padding:20px;margin:0 0 28px 0;">
-<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:800;letter-spacing:1px;color:#8a5d0a;text-transform:uppercase;">HUMAN-CURATED · COMMUNITY VOICES</div>
-<h2 class="ifn-title" style="font-family:Georgia,serif;font-size:25px;color:{NAVY};margin:8px 0;">Real practitioners. Their own words.</h2>
-<p class="ifn-event-meta" style="color:{MUTED};font-size:14px;">Newly published on {e(coverage_label)}. Human-written contributions from the IFN community.</p>''')
-    for voice in voices:
-        parts.append(f'''<div style="border-top:1px solid {LINE};padding:16px 0 4px;">
-<span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;color:#8a5d0a;">HUMAN-WRITTEN</span>
-<h3 class="ifn-story-title" style="font-family:Georgia,serif;font-size:21px;margin:8px 0;"><a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};">{e(voice['title'])}</a></h3>
-<p class="ifn-body" style="color:{NAVY};font-size:14px;"><strong>By {e(voice['author'])}</strong>{' · ' + e(voice['role']) if voice['role'] else ''}</p>
-<p class="ifn-body" style="font-size:16px;line-height:1.55;color:#202a2e;">{e(voice['excerpt'])}</p>
-<a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};font-weight:700;">Read the Community Voice →</a>
-</div>''')
-    parts.append('</div>')
-
 parts += [
     f'''<div class="ifn-tldr" style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
 <div class="ifn-tldr-title" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">YESTERDAY’S NEWS // 60-second brief</div>''',
@@ -194,6 +179,21 @@ if stories:
 else:
     parts.append('<li>No AI news highlights made the cut for this edition.</li>')
 parts += ['</ul></div>']
+
+if voices:
+    parts.append(f'''<div class="ifn-event-panel" style="background:{WARM_TAG};border:2px solid {AMBER};border-top:6px solid {AMBER};padding:20px;margin:0 0 28px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:800;letter-spacing:1px;color:#8a5d0a;text-transform:uppercase;">HUMAN-CURATED · COMMUNITY VOICES</div>
+<h2 class="ifn-title" style="font-family:Georgia,serif;font-size:25px;color:{NAVY};margin:8px 0;">Real practitioners. Their own words.</h2>
+<p class="ifn-event-meta" style="color:{MUTED};font-size:14px;">Newly published on {e(coverage_label)}. Human-written contributions from the IFN community.</p>''')
+    for voice in voices:
+        parts.append(f'''<div style="border-top:1px solid {LINE};padding:16px 0 4px;">
+<span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;color:#8a5d0a;">HUMAN-WRITTEN</span>
+<h3 class="ifn-story-title" style="font-family:Georgia,serif;font-size:21px;margin:8px 0;"><a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};">{e(voice['title'])}</a></h3>
+<p class="ifn-body" style="color:{NAVY};font-size:14px;"><strong>By {e(voice['author'])}</strong>{' · ' + e(voice['role']) if voice['role'] else ''}</p>
+<p class="ifn-body" style="font-size:16px;line-height:1.55;color:#202a2e;">{e(voice['excerpt'])}</p>
+<a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};font-weight:700;">Read the Community Voice →</a>
+</div>''')
+    parts.append('</div>')
 
 for index, story in enumerate(stories, 1):
     kicker = story.get("kicker") or "Identity Security"
