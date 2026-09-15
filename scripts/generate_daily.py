@@ -13,6 +13,13 @@ TODAY=datetime.now(ZoneInfo("America/Denver")).date().isoformat()
 ARTICLES_PATH=ROOT/'data'/'articles.json'
 articles=json.loads(ARTICLES_PATH.read_text(encoding='utf-8'))
 
+# A recovery run may need only deployment/email. Never rewrite an existing
+# edition after subscribers may already have received it.
+if any(a.get('date') == TODAY and not a.get('humanWritten')
+       and a.get('contentType') != 'guest' for a in articles):
+    print('Today\'s Field Note already exists; preserving it for deployment/email recovery.', flush=True)
+    raise SystemExit(0)
+
 # Give the research pass explicit awareness of recently published material so a quiet
 # morning can remain quiet instead of manufacturing another angle on yesterday's news.
 recent=[]
