@@ -6,10 +6,8 @@ on:
     - cron: '15 12 * * 1-5'
     - cron: '15 13 * * 1-5'
     - cron: '15 14 * * 1-5'
-  # Temporary end-to-end recovery trigger; removed after verification.
-  push:
-    branches: [main]
-    paths: ['.github/workflows/daily.yml']
+    # One-time UTC scheduler verification on September 15, 2026.
+    - cron: '5 15 15 9 *'
   workflow_dispatch:
 
 permissions: {}
@@ -42,6 +40,7 @@ jobs:
           DENVER_OFFSET=$(TZ=America/Denver date +%z)
           echo "Trigger: $TRIGGER_EVENT; Denver time: $(TZ=America/Denver date -Iseconds)" >> "$GITHUB_STEP_SUMMARY"
           SKIP=no
+          if [ "$TRIGGER_SCHEDULE" = "5 15 15 9 *" ] && [ "$(TZ=America/Denver date +%F)" != "2026-09-15" ]; then SKIP=yes; fi
           if [ "$TRIGGER_EVENT" = "schedule" ]; then
             if [ "$DENVER_OFFSET" = "-0600" ] && [ "$TRIGGER_SCHEDULE" = "15 14 * * 1-5" ]; then SKIP=yes; fi
             if [ "$DENVER_OFFSET" = "-0700" ] && [ "$TRIGGER_SCHEDULE" = "15 12 * * 1-5" ]; then SKIP=yes; fi
