@@ -15,6 +15,53 @@
     "score": 94
   },
   {
+    "id": "66cb64d3cc7e0346",
+    "date": "2026-09-14",
+    "source": "SecurityWeek",
+    "title": "Telus Warns Customers of Account Breaches",
+    "url": "https://www.securityweek.com/telus-warns-customers-of-account-breaches/",
+    "tags": [
+      "IAM",
+      "Credential-abuse",
+      "Account-takeover",
+      "CIAM"
+    ],
+    "note": "Reports Telus customer-account access using compromised credentials over an extended period, with exposed account and billing information.",
+    "score": 91
+  },
+  {
+    "id": "766e3bbf5301c5aa",
+    "date": "2026-09-14",
+    "source": "ITPro",
+    "title": "Revolut hands over customer data after fake government request",
+    "url": "https://www.itpro.com/security/data-breaches/revolut-hands-over-customer-data-after-fake-government-request",
+    "tags": [
+      "IAM",
+      "Authorization",
+      "Federation",
+      "Social-engineering",
+      "Identity-proofing"
+    ],
+    "note": "Examines an identity-control failure in which attackers abused trust in a legitimate government email domain to obtain sensitive customer records.",
+    "score": 88
+  },
+  {
+    "id": "5abec13b43b12f63",
+    "date": "2026-09-14",
+    "source": "Okta",
+    "title": "Shadow AI Endpoint Security: Discover & Govern Local Agents",
+    "url": "https://www.okta.com/blog/ai/shadow-ai-agent-discovery/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "NHI",
+      "AI-agent-authorization",
+      "ITDR"
+    ],
+    "note": "Describes early-access discovery and governance for locally deployed AI agents and MCP servers, including runtime authorization and identity context.",
+    "score": 86
+  },
+  {
     "id": "836a0c4b41daf7ef",
     "date": "2026-09-14",
     "source": "Okta Threat Intelligence",
@@ -244,6 +291,21 @@
     "score": 97
   },
   {
+    "id": "1464b6c3ba13452f",
+    "date": "2026-09-11",
+    "source": "Florida Department of Highway Safety and Motor Vehicles reporting via Tampa Bay 28",
+    "title": "Plant City police employee credentials led to Florida DMV data breach: FLHSMV",
+    "url": "https://www.tampabay28.com/news/region-hillsborough/plant-city-police-employee-credentials-led-to-florida-dmv-data-breach-flhsmv",
+    "tags": [
+      "IAM",
+      "Credential-exposure",
+      "Excessive-privilege",
+      "Government"
+    ],
+    "note": "Documents a state-confirmed breach in which improperly stored credentials on a personal device enabled access to Florida motor-vehicle systems.",
+    "score": 94
+  },
+  {
     "id": "c22ddbfe304ee871",
     "date": "2026-09-11",
     "source": "BleepingComputer",
@@ -417,20 +479,37 @@
     "score": 82
   },
   {
+    "id": "34f207af605a4f2e",
+    "date": "2026-09-10",
+    "source": "Okta",
+    "title": "Closing the frontline MFA coverage gap with Okta NFC",
+    "url": "https://www.okta.com/newsroom/articles/nfc-authentication-frontline-workers/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "PAM",
+      "IGA",
+      "Offboarding"
+    ],
+    "note": "Introduces badge-and-PIN authentication for shared frontline workstations, with individually attributable access and automated provisioning and deprovisioning.",
+    "score": 78
+  },
+  {
     "id": "e7045162419c265f",
     "date": "2026-09-09",
-    "source": "Microsoft Security Research",
+    "source": "Microsoft Security",
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Microsoft Entra",
+      "IAM",
       "Passkeys",
+      "MFA",
       "ITDR",
       "OAuth",
       "Session-token-abuse"
     ],
-    "note": "Microsoft documents active intrusions using passkey-themed lures, AiTM phishing, device-code authorization, attacker-added MFA methods, Graph reconnaissance, and cloud data theft.",
-    "score": 100
+    "note": "Provides primary technical analysis of helpdesk impersonation, AiTM, device-code phishing, token theft, and unauthorized authentication-method registration.",
+    "score": 99
   },
   {
     "id": "3820a0f914db94fe",
@@ -479,23 +558,6 @@
     "score": 91
   },
   {
-    "id": "0bc125f22c0feaec",
-    "date": "2026-09-09",
-    "source": "Okta",
-    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
-    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
-    "tags": [
-      "IGA",
-      "PAM",
-      "ITDR",
-      "NHI",
-      "AI Agents",
-      "AWS"
-    ],
-    "note": "A significant platform move combining governance, zero-standing-privilege controls, workload protection, database secrets, Kubernetes coverage, and Permiso-derived identity threat detection.",
-    "score": 88
-  },
-  {
     "id": "3b38bf26c38c7d3a",
     "date": "2026-09-09",
     "source": "Okta Threat Intelligence",
@@ -525,6 +587,22 @@
     ],
     "note": "Researchers describe workflow identity hijacking, in which attacker-controlled content reaches an AI workflow through an unauthenticated entry point and exploits identity delegation or authorization design weaknesses.",
     "score": 85
+  },
+  {
+    "id": "0bc125f22c0feaec",
+    "date": "2026-09-09",
+    "source": "Okta",
+    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
+    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
+    "tags": [
+      "IGA",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "AI-agent-authorization"
+    ],
+    "note": "Material platform announcement covering governance, privileged access, identity threat protection, and zero-standing-privilege controls for human and non-human identities.",
+    "score": 83
   },
   {
     "id": "8e96172c31dd5001",
@@ -627,12 +705,12 @@
     "title": "Notification of Data Security Incident",
     "url": "https://idscan.net/press-release/notification-of-data-security-incident/",
     "tags": [
-      "Identity proofing",
-      "Identity data",
-      "Fraud",
-      "Incident response"
+      "CIAM",
+      "Identity-proofing",
+      "Cloud-security",
+      "Incident-response"
     ],
-    "note": "Affected-party notice from an identity-verification provider investigating unauthorized access to customer information, relevant to downstream proofing and fraud risk.",
+    "note": "Primary disclosure from an identity-verification provider concerning unauthorized access to cloud-stored identity information, including government-ID numbers.",
     "score": 84
   },
   {
