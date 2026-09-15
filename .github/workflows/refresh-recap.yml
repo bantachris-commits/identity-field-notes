@@ -1,9 +1,6 @@
 name: Refresh website morning recap
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/refresh-recap.yml']
 
 permissions: {}
 
