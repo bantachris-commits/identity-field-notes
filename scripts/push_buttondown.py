@@ -13,12 +13,13 @@ import html
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import requests
+from community_digest import load_voices
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://identityfieldnotes.com/"
@@ -88,20 +89,36 @@ def e(value):
     return html.escape(str(value or ""), quote=True)
 
 
+today = datetime.now(ZoneInfo("America/Denver")).date()
 article = next((x for x in articles if x.get("featured") and not is_guest(x)), None)
 if article is None:
     article = next((x for x in articles if not is_guest(x)), None)
+if not preview and article and article.get("date") != today.isoformat():
+    article = None
+edition_day = datetime.strptime(article["date"], "%Y-%m-%d").date() if preview and article else today
+coverage_date = (edition_day - timedelta(days=1)).isoformat()
+voices = load_voices(ROOT, coverage_date)
+community_only = article is None
 if article is None:
-    raise SystemExit("No non-guest Field Note found for the digest")
-
+    if not voices:
+        print("No current recap or newly published Community Voices; no digest.")
+        raise SystemExit(0)
+    article = {
+        "id": f"{today.isoformat()}-morning-brief", "date": today.isoformat(),
+        "coverageDate": coverage_date, "stories": [],
+        "disclosure": "Community Voices are human-written contributions. Excerpts are provided by their authors.",
+    }
 stories = article.get("stories") or []
-if mode == "send" and (article.get("date") != datetime.now(ZoneInfo("America/Denver")).date().isoformat() or not stories):
-    print("No current, nonempty Field Note; no digest will be created or sent.")
+if not stories and not voices:
+    print("No news highlights or new Community Voices; no digest.")
     raise SystemExit(0)
-canonical = f"{SITE}article.html?id={article['id']}"
+if article.get("coverageDate") and article["coverageDate"] != coverage_date:
+    raise SystemExit("Edition coverage date does not match the previous Denver calendar day.")
+canonical = f"{SITE}guest-voices.html" if community_only else f"{SITE}article.html?id={article['id']}"
 slug = f"{article['id']}-preview" if preview else article["id"]
 subject_prefix = "[PREVIEW] " if preview else ""
 digest_date = human_date(article.get("date", ""))
+coverage_label = human_date(coverage_date)
 
 try:
     events = json.loads((ROOT / "data" / "events.json").read_text(encoding="utf-8"))
@@ -140,14 +157,32 @@ parts = [
 <tr><td style="padding:16px 14px 14px 14px;">
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"><tr>
 <td width="56" valign="middle"><div style="width:42px;height:42px;line-height:42px;text-align:center;background:{AMBER};color:{NAVY};font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:800;letter-spacing:1px;">IFN</div></td>
-<td valign="middle"><div class="ifn-title" style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div class="ifn-meta" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">The AI-driven practitioner brief</div></td>
-<td class="ifn-date" valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}</td>
+<td valign="middle"><div class="ifn-title" style="font-family:Georgia,Times New Roman,serif;font-size:28px;line-height:1.08;font-weight:700;color:{NAVY};">Identity Field Notes</div><div class="ifn-meta" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.35;font-weight:700;letter-spacing:1.05px;color:{MUTED};text-transform:uppercase;margin-top:5px;">Morning edition · News &amp; Community Voices</div></td>
+<td class="ifn-date" valign="middle" align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:{MUTED};white-space:nowrap;">{e(digest_date)}<br><span style="font-size:10px;">Highlights from {e(coverage_label)}</span></td>
 </tr></table>
 </td></tr>
 <tr><td class="ifn-taxonomy" style="border-top:4px solid {NAVY};padding:9px 14px 11px 14px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.45;font-weight:700;letter-spacing:.65px;color:{MUTED};text-transform:uppercase;">PAM · IAM · IGA · NHI · ITDR · AUTHZ &nbsp; <span style="color:{TEAL};">//</span> &nbsp; I burn the tokens so you don&apos;t have to.</td></tr>
 </table>''',
+]
+
+if voices:
+    parts.append(f'''<div class="ifn-event-panel" style="background:{WARM_TAG};border:2px solid {AMBER};border-top:6px solid {AMBER};padding:20px;margin:0 0 28px 0;">
+<div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:800;letter-spacing:1px;color:#8a5d0a;text-transform:uppercase;">HUMAN-CURATED · COMMUNITY VOICES</div>
+<h2 class="ifn-title" style="font-family:Georgia,serif;font-size:25px;color:{NAVY};margin:8px 0;">Real practitioners. Their own words.</h2>
+<p class="ifn-event-meta" style="color:{MUTED};font-size:14px;">Newly published on {e(coverage_label)}. Human-written contributions from the IFN community.</p>''')
+    for voice in voices:
+        parts.append(f'''<div style="border-top:1px solid {LINE};padding:16px 0 4px;">
+<span style="font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:800;color:#8a5d0a;">HUMAN-WRITTEN</span>
+<h3 class="ifn-story-title" style="font-family:Georgia,serif;font-size:21px;margin:8px 0;"><a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};">{e(voice['title'])}</a></h3>
+<p class="ifn-body" style="color:{NAVY};font-size:14px;"><strong>By {e(voice['author'])}</strong>{' · ' + e(voice['role']) if voice['role'] else ''}</p>
+<p class="ifn-body" style="font-size:16px;line-height:1.55;color:#202a2e;">{e(voice['excerpt'])}</p>
+<a class="ifn-link" href="{e(voice['url'])}" style="color:{TEAL};font-weight:700;">Read the Community Voice →</a>
+</div>''')
+    parts.append('</div>')
+
+parts += [
     f'''<div class="ifn-tldr" style="background:{COOL};border:1px solid {LINE};border-left:4px solid {NAVY};padding:16px 18px;margin:0 0 28px 0;">
-<div class="ifn-tldr-title" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">TL;DR // 60-second brief</div>''',
+<div class="ifn-tldr-title" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:800;letter-spacing:1px;color:{NAVY};text-transform:uppercase;margin-bottom:10px;">YESTERDAY’S NEWS // 60-second brief</div>''',
     '<ul style="margin:0;padding-left:20px;">',
 ]
 
@@ -157,7 +192,7 @@ if stories:
         title = story.get("title") or "Untitled story"
         parts.append(f'<li style="margin:0 0 9px 0;line-height:1.45;color:#202a2e;"><strong style="color:{NAVY};">{e(kicker)}:</strong> {e(title)}</li>')
 else:
-    parts.append('<li>Quiet morning. No story made the cut.</li>')
+    parts.append('<li>No AI news highlights made the cut for this edition.</li>')
 parts += ['</ul></div>']
 
 for index, story in enumerate(stories, 1):
@@ -213,17 +248,18 @@ parts += [
 body = "\n".join(parts)
 headers = {"Authorization": f"Token {key}", "Content-Type": "application/json"}
 payload = {
-    "subject": f"{subject_prefix}Identity Field Notes // {digest_date}",
+    "subject": f"{subject_prefix}Identity Field Notes // Morning edition · {digest_date}",
     "slug": slug,
     "body": body,
     "canonical_url": canonical,
-    "description": f"Today's identity-security digest for {digest_date}.",
+    "description": f"Morning edition for {digest_date}: highlights and Community Voices from {coverage_label}.",
     "commenting_mode": "disabled",
     "status": "draft",
     "template": "classic",
     "metadata": {
         "identity_field_notes_id": article["id"],
-        "identity_field_notes_format": "morning-digest-v10",
+        "identity_field_notes_format": "morning-recap-v11",
+        "identity_field_notes_coverage_date": coverage_date,
         "identity_field_notes_preview": "true" if preview else "false",
     },
 }
@@ -278,3 +314,4 @@ elif preview:
     print("Preview mode: left as a separate draft and cannot auto-send.")
 else:
     print("Left as draft. Set BUTTONDOWN_MODE=send to publish automatically.")
+

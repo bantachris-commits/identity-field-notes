@@ -52,10 +52,7 @@ jobs:
             echo "run=yes" >> "$GITHUB_OUTPUT"
             echo "Running publication, deployment, and eligible email delivery." >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Collect RSS supplement
-        if: steps.gate.outputs.run == 'yes'
-        run: python scripts/collect_radar.py
-      - name: Generate daily Field Note with web search
+      - name: Recap yesterday's notable Latest Articles
         if: steps.gate.outputs.run == 'yes'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -72,7 +69,7 @@ jobs:
         run: |
           git config user.name "identity-field-notes-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/articles.json data/radar.json feed.xml sitemap.xml
+          git add data/articles.json feed.xml sitemap.xml
           if git diff --cached --quiet; then
             echo "No publication changes to commit."
           else
@@ -129,25 +126,12 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install -r requirements-email.txt
-      - name: Check for a new Field Note today
-        id: freshness
-        shell: bash
-        run: |
-          TODAY=$(TZ=America/Denver date +%F)
-          ARTICLE_DATE=$(python -c "import json; a=json.load(open('data/articles.json',encoding='utf-8')); print(next((x.get('date','') for x in a if x.get('featured') and not x.get('humanWritten') and x.get('contentType')!='guest'),''))")
-          if [ "$ARTICLE_DATE" = "$TODAY" ]; then
-            echo "send=yes" >> "$GITHUB_OUTPUT"
-            echo "Today's Field Note exists; digest is eligible to send."
-          else
-            echo "send=no" >> "$GITHUB_OUTPUT"
-            echo "No new Field Note today; skipping the digest."
-          fi
-      - name: Create or send Buttondown digest
-        if: env.BUTTONDOWN_API_KEY != '' && steps.freshness.outputs.send == 'yes'
+      - name: Create or send the morning recap and Community Voices
+        if: env.BUTTONDOWN_API_KEY != ''
         run: python scripts/push_buttondown.py
-      - name: Quiet morning - no digest
-        if: steps.freshness.outputs.send != 'yes'
-        run: echo "No genuinely new Field Note was published today, so no digest will be created or sent."
       - name: Newsletter not configured
-        if: env.BUTTONDOWN_API_KEY == '' && steps.freshness.outputs.send == 'yes'
-        run: echo "BUTTONDOWN_API_KEY is not configured; site publication completed without email."
+        if: env.BUTTONDOWN_API_KEY == ''
+        run: |
+          echo "::error::BUTTONDOWN_API_KEY is not configured; cannot deliver the morning edition."
+          exit 1
+
