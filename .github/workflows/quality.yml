@@ -17,3 +17,6 @@ jobs:
           python-version: '3.12'
       - name: Check site integrity
         run: python scripts/check_site.py
+      - name: Check morning recap and Community Voices delivery
+        run: python -m unittest discover -s tests -p 'test_morning_recap.py' -v
+
