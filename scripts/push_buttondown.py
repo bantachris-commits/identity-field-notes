@@ -268,6 +268,10 @@ if mode == "send":
         json={"status": "about_to_send"},
         timeout=30,
     )
+    if not publish.ok:
+        # The status alone cannot distinguish API permissions from account restrictions.
+        detail = publish.text.replace(key, "[REDACTED]")[:2000]
+        print(f"Buttondown send rejected (HTTP {publish.status_code}): {detail}", flush=True)
     publish.raise_for_status()
     print("Queued Buttondown email for sending")
 elif preview:
