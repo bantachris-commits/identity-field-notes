@@ -1,10 +1,6 @@
 name: Send morning edition format preview
 on:
   workflow_dispatch:
-  # One-time launch for the requested preview; removed after delivery.
-  push:
-    branches: [main]
-    paths: ['.github/workflows/format-preview.yml']
 
 permissions:
   contents: read
