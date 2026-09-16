@@ -31,6 +31,22 @@
     "score": 99
   },
   {
+    "id": "b24941096295dd7f",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Hands Off my Tokens! NIST Finalizes Interagency Report 8587, Protecting Tokens and Assertions from Forgery, Theft, and Misuse",
+    "url": "https://csrc.nist.gov/news/2026/protecting-tokens-and-assertions-nist-ir-8587",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR",
+      "NHI",
+      "Federation"
+    ],
+    "note": "NIST and CISA guidance now finalized for protecting SSO, federation, API, workload and cloud identity tokens through stronger key management, verification and lifecycle controls.",
+    "score": 99
+  },
+  {
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
     "source": "Google Cloud",
@@ -90,6 +106,37 @@
     ],
     "note": "AgentCore\u2019s managed consent portal handles end-user authentication, OAuth session binding, per-user token storage, and auditability for agents connecting to services such as GitHub and Slack.",
     "score": 94
+  },
+  {
+    "id": "03d4b40a00c46319",
+    "date": "2026-09-14",
+    "source": "arXiv",
+    "title": "Authorization Architectures for Tool-Using AI Agents",
+    "url": "https://arxiv.org/abs/2609.15906",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth",
+      "NHI",
+      "Authorization"
+    ],
+    "note": "This review frames agent authorization around principal hierarchies, delegation and scope propagation, runtime enforcement, prompt-injection bypasses, and auditability.",
+    "score": 94
+  },
+  {
+    "id": "a08438a7ab1a57d4",
+    "date": "2026-09-14",
+    "source": "Unit 42",
+    "title": "Unmasking Cloud Identities: From Behavioral Clustering to Automated Detection",
+    "url": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/",
+    "tags": [
+      "ITDR",
+      "NHI",
+      "AWS",
+      "IAM",
+      "Cloud"
+    ],
+    "note": "Research using more than 40,000 identities across 125 cloud environments shows how behavioral clustering can classify human and machine roles and detect deviations that static permissions miss.",
+    "score": 93
   },
   {
     "id": "0586e096f0a894b1",
@@ -357,12 +404,12 @@
     "title": "Authorization Posture Mechanism (APM): Per-Transaction Consistency for OAuth 2.0",
     "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-vicente-oauth-apm-05.html",
     "tags": [
-      "IAM",
       "OAuth",
+      "Token security",
       "ITDR",
-      "Zero Trust"
+      "Authorization"
     ],
-    "note": "A new OAuth Internet-Draft proposes per-request consistency checks across client certificates, access tokens, and device posture for privileged operations, including graduated scope reduction when posture degrades.",
+    "note": "A new OAuth Internet-Draft proposes rechecking client certificate, token and device posture on each privileged request, with graduated scope reduction instead of simple allow-or-deny outcomes.",
     "score": 88
   },
   {
@@ -456,6 +503,22 @@
     ],
     "note": "The first Implementer's Draft standardizes binding a public key to an OIDC ID Token using DPoP, an important step toward making stolen bearer material less reusable.",
     "score": 96
+  },
+  {
+    "id": "88b1b3c0bd98be58",
+    "date": "2026-09-10",
+    "source": "Palo Alto Networks",
+    "title": "The Machine With Many Faces: Post-Exploitation Identity Misuse in SPIFFE/SPIRE",
+    "url": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
+    "tags": [
+      "NHI",
+      "Workload identity",
+      "Kubernetes",
+      "SPIFFE",
+      "Secrets"
+    ],
+    "note": "Unit 42 details how root access on a Kubernetes node can enable spoofing or harvesting of co-located workload identities through SPIFFE/SPIRE metadata.",
+    "score": 95
   },
   {
     "id": "72164e67141f310d",
@@ -583,6 +646,22 @@
     "score": 82
   },
   {
+    "id": "ea3ac4c1b3d41bdf",
+    "date": "2026-09-10",
+    "source": "Palo Alto Networks",
+    "title": "Secure AI Coding: Governing every agent, artifact, and identity",
+    "url": "https://www.paloaltonetworks.com/blog/2026/09/secure-ai-coding-governing-every-agent-artifact-and-identity/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "PAM",
+      "MCP",
+      "Secrets"
+    ],
+    "note": "The product move is relevant because coding agents increasingly operate with human identity, filesystem, terminal and business-system access, requiring task-scoped identities and removal of standing privilege.",
+    "score": 82
+  },
+  {
     "id": "34f207af605a4f2e",
     "date": "2026-09-10",
     "source": "Okta",
@@ -605,15 +684,14 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Microsoft Entra",
-      "MFA Bypass",
+      "Entra",
       "Passkeys",
-      "OAuth",
-      "Session Theft",
+      "MFA bypass",
+      "Token theft",
       "ITDR"
     ],
-    "note": "Microsoft documents active attacks combining help-desk impersonation, adversary-in-the-middle phishing, device-code OAuth abuse, rogue authentication-method enrollment, Graph reconnaissance, and cloud-data theft.",
-    "score": 100
+    "note": "Microsoft documents active campaigns combining help-desk impersonation, AiTM or device-code phishing, stolen sessions and attacker-added MFA methods for persistent cloud access.",
+    "score": 99
   },
   {
     "id": "3820a0f914db94fe",
@@ -816,6 +894,22 @@
     ],
     "note": "The investigation exposes a Microsoft 365 phishing-as-a-service operation that captured thousands of credentials and session cookies, disabled WebAuthn in the browser, and replayed authenticated sessions after MFA.",
     "score": 99
+  },
+  {
+    "id": "2896214c3d4c5f96",
+    "date": "2026-09-07",
+    "source": "BleepingComputer",
+    "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
+    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/amp/",
+    "tags": [
+      "Entra",
+      "MFA bypass",
+      "Session theft",
+      "Token theft",
+      "OAuth"
+    ],
+    "note": "CloudSEK evidence shows a phishing-as-a-service operation using AiTM proxies to capture credentials and authenticated session cookies from more than 258 organizations.",
+    "score": 97
   },
   {
     "id": "99680276e400d3fb",
