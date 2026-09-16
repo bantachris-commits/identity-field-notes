@@ -1,9 +1,6 @@
 name: Rehearse morning publication
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/publication-rehearsal.yml']
 
 permissions:
   contents: read
