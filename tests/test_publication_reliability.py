@@ -42,3 +42,17 @@ class ReliabilityTests(unittest.TestCase):
             stamp = datetime.fromisoformat(f'2026-09-17T{hour}:23:00+00:00')
             self.assertTrue(should_publish(stamp, 'schedule'))
             self.assertTrue(should_publish(stamp, 'workflow_run'))
+
+    def test_assistant_request_is_for_current_denver_date(self):
+        stamp = datetime.fromisoformat('2026-09-17T12:15:00+00:00')
+        self.assertTrue(should_publish(stamp, 'push', '2026-09-17'))
+        for requested_date in (None, '', '2026-09-16', '2026-09-18'):
+            self.assertFalse(should_publish(stamp, 'push', requested_date))
+
+    def test_assistant_request_respects_weekdays_and_publishing_window(self):
+        for timestamp, requested_date in (
+            ('2026-09-17T12:14:59+00:00', '2026-09-17'),
+            ('2026-09-18T00:00:00+00:00', '2026-09-17'),
+            ('2026-09-19T13:15:00+00:00', '2026-09-19'),
+        ):
+            self.assertFalse(should_publish(datetime.fromisoformat(timestamp), 'push', requested_date))

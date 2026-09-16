@@ -1,5 +1,9 @@
 name: Publish weekday Field Note
 on:
+  # ChatGPT's scheduled task updates this dated request through the GitHub app.
+  push:
+    branches: [main]
+    paths: ['.github/publish-request.json']
   # Retry opportunities throughout the Denver morning/day; GitHub cron can arrive hours late.
   schedule:
     - cron: '23 12-23 * * 1-5'
@@ -130,4 +134,3 @@ jobs:
         run: |
           echo "::error::BUTTONDOWN_API_KEY is not configured; cannot deliver the morning edition."
           exit 1
-

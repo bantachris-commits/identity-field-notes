@@ -2,6 +2,8 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches: [main]
+    # The requested daily workflow handles its own deployment.
+    paths-ignore: ['.github/publish-request.json']
   workflow_dispatch:
 permissions:
   contents: read
