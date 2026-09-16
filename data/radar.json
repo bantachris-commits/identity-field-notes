@@ -67,6 +67,25 @@
     "firstSeenAt": "2026-09-15T21:43:14Z"
   },
   {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-15",
+    "id": "4e2b0941f8803b78",
+    "date": "2026-09-15",
+    "source": "AWS Security Blog",
+    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
+    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Cloud Security",
+      "Least Privilege"
+    ],
+    "note": "Shows how to connect IAM Access Analyzer, CloudTrail, Bedrock-generated policy changes, and CI/CD review workflows to make least-privilege remediation persistent rather than periodic.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-15",
     "id": "cf856eb7adda9046",
     "date": "2026-09-15",
     "source": "AWS Security Blog",
@@ -75,28 +94,27 @@
     "tags": [
       "CIAM",
       "IAM",
-      "OAuth",
-      "Machine Identity"
+      "Resilience"
     ],
-    "note": "AWS details multi-Region Cognito authentication, token and session interoperability, OIDC issuer continuity, federation failover, and M2M authorization patterns.",
-    "score": 91,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
+    "note": "Provides current architectural guidance for multi-Region Cognito authentication, including replication, failover, regional dependencies, and recovery considerations.",
+    "score": 82
   },
   {
-    "id": "4e2b0941f8803b78",
+    "firstSeenAt": "2026-09-16T08:26:52.443047-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "4d6b3acd9600e7b4",
     "date": "2026-09-15",
-    "source": "AWS Security Blog",
-    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
-    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
+    "source": "Okta",
+    "title": "Okta expands regional identity infrastructure in UK",
+    "url": "https://www.okta.com/en-gb/newsroom/press-releases/okta-expands-regional-identity-infrastructure-in-uk/",
     "tags": [
       "IAM",
-      "IGA",
-      "CIEM",
-      "Least Privilege"
+      "Data Residency",
+      "Resilience",
+      "Federation"
     ],
-    "note": "A practical AWS design for detecting and remediating excessive permissions through CI/CD rather than relying on periodic access reviews.",
-    "score": 88,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
+    "note": "Relevant platform move for organizations balancing UK data residency, regional disaster recovery, regulated workloads, and identity-service availability.",
+    "score": 78
   },
   {
     "id": "5277736636274adb",
@@ -475,20 +493,21 @@
     "firstSeenAt": "2026-09-15T05:15:16Z"
   },
   {
+    "firstSeenAt": "2026-09-14T21:59:58Z",
+    "publishedDate": "2026-09-11",
     "id": "0ffcbeaed46d9efe",
     "date": "2026-09-11",
-    "source": "The Record",
+    "source": "The Record from Recorded Future News",
     "title": "Florida says motor vehicle data breach tied to credentials stolen from officer\u2019s personal device",
     "url": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
     "tags": [
       "IAM",
-      "PAM",
-      "Credential Security",
-      "Third-Party Access"
+      "Credential Theft",
+      "Excessive Privilege",
+      "Incident"
     ],
-    "note": "Florida officials attributed the DMV compromise to a police user\u2019s credentials stored on a personal device, providing a concrete valid-account and unmanaged-endpoint failure case.",
-    "score": 97,
-    "firstSeenAt": "2026-09-14T21:59:58Z"
+    "note": "State officials attributed the DMV breach to credentials stored on a police employee\u2019s personal device, making this a concrete example of credential hygiene and access-scoping failure.",
+    "score": 97
   },
   {
     "id": "1464b6c3ba13452f",
@@ -505,6 +524,24 @@
     "note": "Documents a state-confirmed breach in which improperly stored credentials on a personal device enabled access to Florida motor-vehicle systems.",
     "score": 94,
     "firstSeenAt": "2026-09-15T17:14:56Z"
+  },
+  {
+    "firstSeenAt": "2026-09-16T08:26:52.443047-06:00",
+    "publishedDate": "2026-09-11",
+    "id": "e86c593f85f71704",
+    "date": "2026-09-11",
+    "source": "The Hacker News",
+    "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+    "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+    "tags": [
+      "IAM",
+      "Authorization",
+      "Token Abuse",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Wiz observed attackers chaining an authentication bypass with token-scope validation flaws to obtain administrator control and deploy persistent backdoors.",
+    "score": 94
   },
   {
     "id": "cd0695560dd007cc",
@@ -672,6 +709,23 @@
     "note": "Google\u2019s new agent plugin packages authentication, authorization, project-management skills, and guardrails intended to reduce accidental key exposure and unsafe gcloud operations by coding agents.",
     "score": 84,
     "firstSeenAt": "2026-09-15T12:03:21Z"
+  },
+  {
+    "firstSeenAt": "2026-09-16T08:26:52.443047-06:00",
+    "publishedDate": "2026-09-10",
+    "id": "c06e80fbcb86b5b0",
+    "date": "2026-09-10",
+    "source": "Biometric Update",
+    "title": "Singapore expands Singpass passkeys to Android users",
+    "url": "https://www.biometricupdate.com/202609/singapore-expands-singpass-passkeys-to-android-users",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "MFA",
+      "CIAM"
+    ],
+    "note": "Useful deployment signal for practitioners: Singapore expanded national-ID passkeys to Android after reporting roughly 800,000 registered passkeys during the initial rollout.",
+    "score": 84
   },
   {
     "id": "b4218bf0eea91afa",
