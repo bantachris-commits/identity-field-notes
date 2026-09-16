@@ -16,6 +16,21 @@
     "score": 99
   },
   {
+    "id": "fce54ff4f5f7a4fc",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
+    "url": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Tokens",
+      "ITDR"
+    ],
+    "note": "New NIST/CISA guidance addresses token and assertion forgery, theft, misuse, key management, revocation, and lifecycle controls, with added considerations for AI agents.",
+    "score": 99
+  },
+  {
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
     "source": "Google Cloud",
@@ -32,6 +47,36 @@
     "score": 94
   },
   {
+    "id": "cf856eb7adda9046",
+    "date": "2026-09-15",
+    "source": "AWS Security Blog",
+    "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
+    "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
+    "tags": [
+      "CIAM",
+      "IAM",
+      "OAuth",
+      "Machine Identity"
+    ],
+    "note": "AWS details multi-Region Cognito authentication, token and session interoperability, OIDC issuer continuity, federation failover, and M2M authorization patterns.",
+    "score": 91
+  },
+  {
+    "id": "4e2b0941f8803b78",
+    "date": "2026-09-15",
+    "source": "AWS Security Blog",
+    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
+    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "CIEM",
+      "Least Privilege"
+    ],
+    "note": "A practical AWS design for detecting and remediating excessive permissions through CI/CD rather than relying on periodic access reviews.",
+    "score": 88
+  },
+  {
     "id": "5277736636274adb",
     "date": "2026-09-14",
     "source": "AWS",
@@ -45,6 +90,21 @@
     ],
     "note": "AgentCore\u2019s managed consent portal handles end-user authentication, OAuth session binding, per-user token storage, and auditability for agents connecting to services such as GitHub and Slack.",
     "score": 94
+  },
+  {
+    "id": "0586e096f0a894b1",
+    "date": "2026-09-14",
+    "source": "BleepingComputer",
+    "title": "Twitch extension with 30K installs exposes users\u2019 OAuth tokens",
+    "url": "https://www.bleepingcomputer.com/news/security/twitch-extension-with-30k-installs-exposes-users-oauth-tokens/",
+    "tags": [
+      "OAuth",
+      "Token Theft",
+      "Session Abuse",
+      "CIAM"
+    ],
+    "note": "A browser extension distributed through official stores was found transmitting Twitch OAuth session tokens to a third-party service, creating direct account-takeover exposure.",
+    "score": 92
   },
   {
     "id": "66cb64d3cc7e0346",
@@ -313,13 +373,28 @@
     "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
     "tags": [
       "Microsoft Entra",
-      "OAuth",
-      "Session Theft",
+      "Passkeys",
       "MFA Bypass",
-      "Passkeys"
+      "OAuth",
+      "Session Theft"
     ],
-    "note": "The report adds operational detail on attacker-controlled OAuth applications, persistence through newly registered MFA methods, token-backed SSO access, and stealthy SharePoint, OneDrive, and Exchange collection.",
-    "score": 97
+    "note": "Microsoft-linked reporting shows passkey-themed social engineering leading to AiTM credential and session theft, device-code OAuth authorization, malicious MFA enrollment, and Graph-based reconnaissance.",
+    "score": 99
+  },
+  {
+    "id": "c22ddbfe304ee871",
+    "date": "2026-09-11",
+    "source": "BleepingComputer",
+    "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "Secrets",
+      "AI Agents"
+    ],
+    "note": "The reporting describes automated scanning of 1.8 million APKs for hardcoded secrets, GitHub token acquisition, stolen Azure AD tokens, and movement from a developer token to cloud administrator access.",
+    "score": 98
   },
   {
     "id": "0ffcbeaed46d9efe",
@@ -350,21 +425,6 @@
     ],
     "note": "Documents a state-confirmed breach in which improperly stored credentials on a personal device enabled access to Florida motor-vehicle systems.",
     "score": 94
-  },
-  {
-    "id": "c22ddbfe304ee871",
-    "date": "2026-09-11",
-    "source": "BleepingComputer",
-    "title": "Hackers abused Claude to extract secrets from 1.8M Android apps",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
-    "tags": [
-      "NHI",
-      "Secrets Management",
-      "Cloud IAM",
-      "AI Agents"
-    ],
-    "note": "Anthropic\u2019s threat report describes credential-harvesting pipelines running across AWS infrastructure to scan 1.8 million Android packages for secrets used in subsequent compromises.",
-    "score": 86
   },
   {
     "id": "cd0695560dd007cc",
@@ -398,20 +458,18 @@
     "score": 96
   },
   {
-    "id": "348626d9ce7a6f9b",
+    "id": "72164e67141f310d",
     "date": "2026-09-10",
-    "source": "Anthropic",
-    "title": "Detecting and countering misuse of AI: September 2026",
-    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "source": "BleepingComputer",
+    "title": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/",
     "tags": [
-      "NHI",
-      "Machine Identity",
-      "AI Agents",
-      "OAuth",
-      "Token Abuse",
-      "Credentials"
+      "PAM",
+      "Credential Theft",
+      "Authentication Bypass",
+      "Privilege Escalation"
     ],
-    "note": "Anthropic\u2019s primary threat-intelligence report describes campaigns using compromised credentials, VPN access, device-code phishing, stolen API keys and session tokens, credential-database theft, and AI-assisted lateral movement.",
+    "note": "Cisco Talos identified active exploitation of an authentication bypass and static-credential flaw that enabled credential theft, network reconnaissance, persistence, and ransomware deployment.",
     "score": 94
   },
   {
@@ -621,6 +679,21 @@
     "score": 91
   },
   {
+    "id": "56efd949aedf050d",
+    "date": "2026-09-09",
+    "source": "BleepingComputer",
+    "title": "AdaptHealth confirms 4.1 million people exposed in July cyberattack",
+    "url": "https://www.bleepingcomputer.com/news/security/adapthealth-confirms-41-million-people-exposed-in-july-cyberattack/",
+    "tags": [
+      "PAM",
+      "Third-Party Risk",
+      "Privileged Account",
+      "Social Engineering"
+    ],
+    "note": "AdaptHealth said a social-engineering attack compromised a privileged third-party contractor account and exposed data from cloud business applications and clinical portals.",
+    "score": 90
+  },
+  {
     "id": "3b38bf26c38c7d3a",
     "date": "2026-09-09",
     "source": "Okta Threat Intelligence",
@@ -629,11 +702,10 @@
     "tags": [
       "AI Agents",
       "NHI",
-      "OAuth",
-      "Session Tokens",
-      "Threat Intelligence"
+      "Account Takeover",
+      "Token Abuse"
     ],
-    "note": "Useful threat-intelligence reading on how underground markets are packaging and monetizing access to AI systems and related identity infrastructure.",
+    "note": "Okta documents the criminal market for hijacked AI accounts and trial credits, including account takeover, stolen credentials, and machine-access resale dynamics.",
     "score": 86
   },
   {
@@ -793,6 +865,37 @@
     "score": 84
   },
   {
+    "id": "347c454cf81fe238",
+    "date": "2026-09-02",
+    "source": "AWS Security Blog",
+    "title": "Agentic security: Detection and response at machine speed",
+    "url": "https://aws.amazon.com/blogs/security/agentic-security-detection-and-response-at-machine-speed/",
+    "tags": [
+      "AI Agents",
+      "ITDR",
+      "NHI",
+      "Authorization"
+    ],
+    "note": "AWS outlines an identity-centered detection and response model for autonomous agents that authenticate for users, execute multistep workflows, and require machine-speed containment.",
+    "score": 84
+  },
+  {
+    "id": "348626d9ce7a6f9b",
+    "date": "2026-09-01",
+    "source": "Anthropic",
+    "title": "Countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "OAuth",
+      "Token Abuse",
+      "Cloud IAM"
+    ],
+    "note": "Anthropic reports campaigns involving stolen developer tokens, Azure AD authentication tokens, device-code phishing, cloud-email theft, exposed secrets, and rapid privilege escalation assisted by AI.",
+    "score": 97
+  },
+  {
     "id": "23e5fbe83235a9c9",
     "date": "2026-09-01",
     "source": "Auth0",
@@ -840,6 +943,20 @@
     ],
     "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.",
     "score": 82
+  },
+  {
+    "id": "20e828303a7a15fb",
+    "date": "2026-07-13",
+    "source": "Microsoft Security Blog",
+    "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+    "tags": [
+      "Microsoft Entra",
+      "Passkeys",
+      "MFA"
+    ],
+    "note": "This is newly operationally relevant because Microsoft\u2019s September 1 rollout began nudging SMS- and voice-enabled users toward passkey registration, with native telecom delivery scheduled to end February 1, 2027.",
+    "score": 96
   },
   {
     "id": "b2d31b97d2d61eba",
