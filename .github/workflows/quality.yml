@@ -18,5 +18,5 @@ jobs:
       - name: Check site integrity
         run: python scripts/check_site.py
       - name: Check morning recap and Community Voices delivery
-        run: python -m unittest discover -s tests -p 'test_morning_recap.py' -v
+        run: python -m unittest discover -s tests -v
 

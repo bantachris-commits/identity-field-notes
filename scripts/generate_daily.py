@@ -133,7 +133,8 @@ def url_key(u):
 
 candidate_urls={url_key(x.get('url','')) for x in candidates if x.get('url')}
 
-client=OpenAI(timeout=180.0,max_retries=1)
+print(f'Morning recap using model: {MODEL}', flush=True)
+client=OpenAI(timeout=float(os.getenv("OPENAI_REQUEST_TIMEOUT", "600")),max_retries=1)
 resp=client.responses.create(model=MODEL,tools=[{"type":"web_search"}],input=PROMPT)
 payload=extract_json(resp.output_text)
 raw=payload.get('stories',[])

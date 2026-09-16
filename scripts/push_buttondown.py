@@ -20,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 from community_digest import load_voices
+from buttondown_lookup import find_email
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://identityfieldnotes.com/"
@@ -264,9 +265,7 @@ payload = {
     },
 }
 
-listing = requests.get("https://api.buttondown.com/v1/emails", headers=headers, timeout=30)
-listing.raise_for_status()
-existing = next((x for x in listing.json().get("results", []) if x.get("slug") == slug), None)
+existing = find_email(headers, slug)
 if existing and existing.get("status") in {"sent", "about_to_send", "scheduled", "in_flight", "throttled", "resending"}:
     if preview:
         raise SystemExit("The preview copy was manually sent in Buttondown. Delete it or change its slug before regenerating a preview.")

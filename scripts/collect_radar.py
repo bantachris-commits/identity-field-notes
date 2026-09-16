@@ -43,6 +43,9 @@ for src in sources['feeds']:
         if ident in seen:continue
         clean=plain_text(e.get('summary',''))
         published_date, published_at = feed_publication(e)
+        if not published_date:
+            print('Skipping RSS article without a publication date:', url)
+            continue
         first_seen = datetime.datetime.now(datetime.timezone.utc).isoformat()
         items.append({'id':ident,'date':published_date or '', 'publishedDate':published_date, 'publishedAt':published_at, 'firstSeenAt':first_seen,'source':src['name'],'title':title,'url':url,'tags':src.get('tags',[]),'note':clean[:340] or 'New source item collected by RSS.','score':65})
         seen.add(ident)

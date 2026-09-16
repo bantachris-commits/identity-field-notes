@@ -51,7 +51,7 @@ Source rules:
 
 Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://exact-item-url","published_date":"YYYY-MM-DD","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 12 items.'''
 print(f'Radar search starting with model: {MODEL}',flush=True)
-client=OpenAI(timeout=180.0,max_retries=1)
+client=OpenAI(timeout=float(os.getenv("OPENAI_REQUEST_TIMEOUT", "600")),max_retries=1)
 r=client.responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
 print('Radar search response received.',flush=True)
 t=r.output_text.strip()
@@ -85,3 +85,8 @@ items=list(by_url.values())
 items.sort(key=lambda x:(x.get('date',''),x.get('score',0)),reverse=True)
 path.write_text(json.dumps(items[:200],indent=2)+'\n',encoding='utf-8')
 print('Radar updated:',len(items[:200]))
+
+(ROOT/'data'/'radar-status.json').write_text(json.dumps({
+    'updatedAt': datetime.now(ZoneInfo('America/Denver')).isoformat(),
+    'model': MODEL, 'items': len(items[:200])
+}, indent=2)+'\n', encoding='utf-8')

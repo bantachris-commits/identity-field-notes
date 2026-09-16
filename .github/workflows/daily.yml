@@ -13,10 +13,12 @@ permissions: {}
 
 concurrency:
   group: content-writers
+  queue: max
   cancel-in-progress: false
 
 jobs:
   publish:
+    timeout-minutes: 45
     if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.event != 'pull_request')
     permissions:
       contents: write
@@ -36,6 +38,12 @@ jobs:
         env:
           TRIGGER_EVENT: ${{ github.event_name }}
         run: python scripts/publication_gate.py
+      - name: Ensure overnight article discovery completed
+        if: steps.gate.outputs.run == 'yes'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-luna' }}
+        run: python scripts/ensure_radar.py
       - name: Recap yesterday's notable Latest Articles
         if: steps.gate.outputs.run == 'yes'
         env:
@@ -54,6 +62,7 @@ jobs:
           git config user.name "identity-field-notes-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/articles.json feed.xml sitemap.xml
+          if [ -f data/radar-status.json ]; then git add data/radar.json data/radar-status.json; fi
           if git diff --cached --quiet; then
             echo "No publication changes to commit."
           else
@@ -63,6 +72,7 @@ jobs:
           fi
 
   deploy:
+    timeout-minutes: 10
     needs: publish
     if: needs.publish.outputs.run == 'yes'
     permissions:
@@ -71,6 +81,7 @@ jobs:
       id-token: write
     concurrency:
       group: pages
+      queue: max
       cancel-in-progress: false
     environment:
       name: github-pages
@@ -94,6 +105,7 @@ jobs:
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
 
   digest:
+    timeout-minutes: 5
     needs: [publish, deploy]
     if: needs.publish.outputs.run == 'yes'
     permissions:
