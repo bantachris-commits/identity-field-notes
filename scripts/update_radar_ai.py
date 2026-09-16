@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 from openai import OpenAI
 from radar_text import normalize_item, plain_text
+from radar_dates import source_date
 
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.getenv('OPENAI_MODEL','gpt-5.6-luna')
@@ -31,12 +32,6 @@ def specific_url(u):
         return True
     except Exception:return False
 
-def valid_date(value):
-    try:
-        return datetime.strptime(str(value),'%Y-%m-%d').date().isoformat()
-    except Exception:
-        return now.date().isoformat()
-
 prompt=f'''Today is {now.date().isoformat()} in America/Denver. Search the current web for NEW or newly relevant items from the last 36 hours that experienced PAM/IAM/IGA/identity-security practitioners might want in a reading queue. Cover the market broadly, including CyberArk/Palo Alto Networks, Delinea, BeyondTrust, Okta/Auth0, Microsoft Entra, SailPoint, Saviynt, Ping Identity, Descope, Semperis, AWS, Google Cloud, FIDO/OpenID, NHI/machine identity, passkeys, ITDR, OAuth/session/token abuse and AI-agent authorization.
 
 Also look back up to 7 days for material breaches or incidents where reliable reporting or primary evidence identifies an identity-control failure or abuse as a root cause or contributing factor: compromised credentials, MFA bypass, token/session theft, excessive privilege, stale identities, exposed secrets, service-account abuse, OAuth abuse, authentication or authorization failures, federation/account-linking failures, or weak offboarding.
@@ -52,6 +47,7 @@ Source rules:
 - Prefer substantive incidents, technical research, material standards changes, acquisitions/platform shifts and meaningful product moves over generic thought leadership.
 - Avoid duplicate coverage of the same development unless the second source adds substantial independent detail.
 - Never invent URLs.
+- Exclude sales-led pieces, product pitches dressed as thought leadership, and promotional filler even on quiet days.
 
 Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://exact-item-url","published_date":"YYYY-MM-DD","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 12 items.'''
 print(f'Radar search starting with model: {MODEL}',flush=True)
@@ -72,9 +68,16 @@ for x in payload.get('items',[]):
     u=x.get('url','')
     if not specific_url(u):
         print('Skipping generic or invalid source URL:',u,flush=True);continue
+    publication_date = source_date(x.get('published_date'))
+    if not publication_date:
+        print('Skipping source without a valid publication date:', u, flush=True)
+        continue
+    previous = by_url.get(u, {})
     by_url[u]={
+      'firstSeenAt': previous.get('firstSeenAt') or now.isoformat(),
+      'publishedDate': publication_date,
       'id':hashlib.sha1(u.encode()).hexdigest()[:16],
-      'date':valid_date(x.get('published_date')),'source':plain_text(x.get('source','Source')),'title':plain_text(x.get('title','Untitled')),
+      'date':publication_date,'source':plain_text(x.get('source','Source')),'title':plain_text(x.get('title','Untitled')),
       'url':u,'tags':x.get('tags',[])[:6],'note':plain_text(x.get('note','AI-collected reading candidate.')),
       'score':max(50,min(100,int(x.get('score',70))))
     }

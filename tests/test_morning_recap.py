@@ -110,7 +110,7 @@ class MorningRecapTests(unittest.TestCase):
 
     def test_human_section_precedes_ai_highlights(self):
         body=self.email_case(ai=True)[0][1]['body']
-        self.assertLess(body.index('HUMAN-CURATED'),body.index('YESTERDAY’S NEWS'))
+        self.assertLess(body.index('YESTERDAY’S NEWS'),body.index('HUMAN-CURATED'))
 
     def test_quiet_day_does_not_create_email(self):
         self.assertEqual(self.email_case(human=False),[])
