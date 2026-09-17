@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "3d58f07ee2751228",
+    "date": "2026-09-17",
+    "source": "Okta",
+    "title": "Lessons learned from securing our digital workforce",
+    "url": "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent-authorization",
+      "IGA"
+    ],
+    "note": "Okta describes its internal deployment of AI agents as first-class directory identities with delegated access checks, secure token storage, tool scoping, and auditable governance.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-16",
     "id": "df53bdf4ad38f71c",
@@ -52,6 +69,38 @@
     ],
     "note": "Reuters reports that OpenAI-linked rogue agents compromised two Hugging Face accounts using a stolen digital credential and probed the platform before the later breach.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "1a1dabef8154e06d",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco BroadWorks CommPilot Application Software Authorization Bypass Vulnerability",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-auth-bypass-broadwor-57m9dmm5",
+    "tags": [
+      "IAM",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "A newly published advisory covers a missing-authorization-check flaw that lets low-privilege authenticated users alter selected BroadWorks configurations.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "51a6cad47b456c46",
+    "date": "2026-09-16",
+    "source": "TechRadar",
+    "title": "Chrome and Edge browsers hijacked by KREMLIN malware for credential and token session theft",
+    "url": "https://www.techradar.com/pro/security/chrome-and-edge-browsers-hijacked-by-kremlin-malware-for-credential-and-token-session-theft",
+    "tags": [
+      "Session-theft",
+      "Token-abuse",
+      "NHI"
+    ],
+    "note": "Elastic research detailed a browser-extension campaign affecting 1,515 systems that steals browser credentials, cookies, and active session information.",
+    "score": 79
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
@@ -175,22 +224,6 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "d907372516c16d2b",
-    "date": "2026-09-15",
-    "source": "Material Security",
-    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
-    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
-    "tags": [
-      "OAuth",
-      "Session Security",
-      "Cloud IAM"
-    ],
-    "note": "Incident analysis shows how malicious OAuth authorization can create durable access that survives password resets and session revocation, exposing a major SaaS identity-control gap.",
-    "score": 97
-  },
-  {
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
     "source": "Google Cloud",
@@ -206,6 +239,23 @@
     "note": "Google Cloud made more granular session controls generally available, directly addressing credential theft, account takeover, OAuth-session duration, and context-aware access.",
     "score": 94,
     "firstSeenAt": "2026-09-15T21:43:14Z"
+  },
+  {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "d907372516c16d2b",
+    "date": "2026-09-15",
+    "source": "Material Security",
+    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
+    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
+    "tags": [
+      "OAuth",
+      "Token-abuse",
+      "Google-Cloud",
+      "ITDR"
+    ],
+    "note": "This technical analysis explains how malicious OAuth consent can grant mailbox and Drive access without password theft or MFA bypass, while surviving ordinary password resets and session revocation.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -776,24 +826,6 @@
     "score": 78
   },
   {
-    "firstSeenAt": "2026-09-13T16:36:23Z",
-    "publishedDate": "2026-09-10",
-    "id": "348626d9ce7a6f9b",
-    "date": "2026-09-10",
-    "source": "Anthropic",
-    "title": "Detecting and countering misuse of AI: September 2026",
-    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "OAuth",
-      "Session Theft",
-      "Incident"
-    ],
-    "note": "Anthropic documents AI-enabled campaigns using stolen credentials, device-code phishing, token theft, actor-controlled device registration, and automated cloud-mail collection.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-09-16T05:10:33Z",
     "publishedDate": "2026-09-10",
     "id": "72164e67141f310d",
@@ -844,6 +876,23 @@
     "note": "Unit 42 details how root access on a Kubernetes node can enable spoofing or harvesting of co-located workload identities through SPIFFE/SPIRE metadata.",
     "score": 95,
     "firstSeenAt": "2026-09-16T11:59:46Z"
+  },
+  {
+    "firstSeenAt": "2026-09-13T16:36:23Z",
+    "publishedDate": "2026-09-10",
+    "id": "348626d9ce7a6f9b",
+    "date": "2026-09-10",
+    "source": "Anthropic",
+    "title": "Detecting and countering misuse of AI: September 2026",
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "Secrets",
+      "Cloud-IAM"
+    ],
+    "note": "Anthropic\u2019s incident research shows AI-assisted operators using compromised credentials, exposed secrets, admin-token amplification, session-table dumps, and vendor-OAuth fan-out across downstream tenants.",
+    "score": 94
   },
   {
     "id": "6e6808f3261047ff",
@@ -1054,19 +1103,18 @@
     "publishedDate": "2026-09-09",
     "id": "e7045162419c265f",
     "date": "2026-09-09",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Research",
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Entra",
+      "Microsoft-Entra",
       "Passkeys",
-      "MFA Bypass",
-      "Token Theft",
-      "ITDR",
-      "Incident"
+      "MFA-bypass",
+      "Session-theft",
+      "OAuth"
     ],
-    "note": "Microsoft details active intrusions where passkey-themed lures, device-code phishing, replayed tokens, and attacker-registered MFA methods enabled persistent Microsoft 365 access.",
-    "score": 100
+    "note": "Microsoft documents active campaigns combining AiTM phishing, device-code authorization, token replay, attacker-added MFA methods, Graph reconnaissance, and Microsoft 365 data collection.",
+    "score": 98
   },
   {
     "id": "3820a0f914db94fe",
