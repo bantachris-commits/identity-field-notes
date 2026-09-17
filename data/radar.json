@@ -17,6 +17,22 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "62f2164a08774a59",
+    "date": "2026-09-17",
+    "source": "Keeper Security / SailPoint",
+    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
+    "url": "https://www.prnewswire.com/news-releases/keeper-security-and-sailpoint-partner-to-automate-privileged-access-governance-302881339.html",
+    "tags": [
+      "PAM",
+      "IGA",
+      "Machine Identity"
+    ],
+    "note": "The new connector links SailPoint governance with KeeperPAM provisioning, deprovisioning, entitlement management, vaults, and privileged resources.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-16",
     "id": "df53bdf4ad38f71c",
@@ -117,6 +133,22 @@
       "Consumer identity"
     ],
     "note": "Google Home\u2019s early-access MCP server illustrates the rapidly expanding authorization surface when general-purpose AI agents can invoke real-world devices and access event history.",
+    "score": 72
+  },
+  {
+    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "5dd58e4e05d5abf3",
+    "date": "2026-09-16",
+    "source": "AWS",
+    "title": "Architecting a secure landing zone in the AWS European Sovereign Cloud",
+    "url": "https://aws.amazon.com/blogs/security/architecting-a-secure-landing-zone-in-the-aws-european-sovereign-cloud/",
+    "tags": [
+      "IAM",
+      "Cloud IAM",
+      "AWS"
+    ],
+    "note": "Useful architecture guidance for identity and control-plane design in AWS\u2019s separate European Sovereign Cloud partition.",
     "score": 72
   },
   {
@@ -250,12 +282,11 @@
     "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
       "OAuth",
-      "Token-abuse",
-      "Google-Cloud",
-      "ITDR"
+      "Session Security",
+      "Cloud IAM"
     ],
-    "note": "This technical analysis explains how malicious OAuth consent can grant mailbox and Drive access without password theft or MFA bypass, while surviving ordinary password resets and session revocation.",
-    "score": 91
+    "note": "Examines active OAuth-consent abuse against Google Workspace where attackers obtain mailbox and Drive access without stealing passwords or bypassing MFA.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -266,14 +297,13 @@
     "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
     "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
     "tags": [
-      "AWS",
       "IAM",
-      "IGA",
       "Least Privilege",
-      "NHI"
+      "CIEM",
+      "AI"
     ],
-    "note": "AWS presents a concrete workflow for turning Access Analyzer findings into reviewed infrastructure changes, remediation issues, or controlled decommissioning of unused principals.",
-    "score": 90
+    "note": "Shows how IAM Access Analyzer, CloudTrail, Bedrock, infrastructure as code, and CI/CD can turn excessive-permission remediation into a repeatable control loop.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -294,19 +324,19 @@
     "score": 84
   },
   {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
     "publishedDate": "2026-09-15",
-    "id": "cf856eb7adda9046",
+    "id": "2703ba831bdeabf4",
     "date": "2026-09-15",
-    "source": "AWS Security Blog",
-    "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
-    "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
+    "source": "AWS",
+    "title": "AWS STS simplifies session token size limits and adds session token size monitoring",
+    "url": "https://aws.amazon.com/blogs/security/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/",
     "tags": [
-      "CIAM",
       "IAM",
-      "Resilience"
+      "Session Security",
+      "Cloud IAM"
     ],
-    "note": "Provides current architectural guidance for multi-Region Cognito authentication, including replication, failover, regional dependencies, and recovery considerations.",
+    "note": "The change adds visibility into temporary-session token size and utilization, with practical implications for policy tags, proxies, caches, and token-handling infrastructure.",
     "score": 82
   },
   {
@@ -341,6 +371,38 @@
     ],
     "note": "Singapore\u2019s expansion of Singpass passkey login to Android provides a useful large-scale deployment signal for phishing-resistant authentication and cross-platform credential rollout.",
     "score": 78
+  },
+  {
+    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "fb2c7e56a3e0f677",
+    "date": "2026-09-15",
+    "source": "DigiCert",
+    "title": "Every AI Agent Needs a Kill Switch: DigiCert Launches AI Trust Manager",
+    "url": "https://www.digicert.com/news/every-ai-agent-needs-a-kill-switch-digicert-launches-ai-trust-manager",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "AI-Agent Authorization"
+    ],
+    "note": "DigiCert\u2019s new service treats AI agents as identifiable, owner-linked entities with authorization controls and revocation capability.",
+    "score": 76
+  },
+  {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-15",
+    "id": "cf856eb7adda9046",
+    "date": "2026-09-15",
+    "source": "AWS",
+    "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
+    "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
+    "tags": [
+      "CIAM",
+      "Authentication",
+      "Resilience"
+    ],
+    "note": "Cognito multi-Region replication introduces cross-Region failover considerations for user pools, IdP settings, token generation, revocation, and M2M authentication.",
+    "score": 75
   },
   {
     "firstSeenAt": "2026-09-16T11:59:46Z",
@@ -707,24 +769,6 @@
     "score": 99
   },
   {
-    "firstSeenAt": "2026-09-13T21:06:45Z",
-    "publishedDate": "2026-09-11",
-    "id": "8f5f50198141b88a",
-    "date": "2026-09-11",
-    "source": "BleepingComputer",
-    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
-    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
-    "tags": [
-      "Entra",
-      "Passkeys",
-      "MFA bypass",
-      "OAuth",
-      "Token theft"
-    ],
-    "note": "Microsoft-observed campaigns used passkey and SSO lures for AiTM and device-code phishing, then abused OAuth tokens, registered attacker-controlled MFA methods, and enumerated Graph permissions.",
-    "score": 98
-  },
-  {
     "id": "c22ddbfe304ee871",
     "date": "2026-09-11",
     "source": "BleepingComputer",
@@ -756,6 +800,24 @@
     ],
     "note": "State officials attributed the DMV breach to credentials stored on a police employee\u2019s personal device, making this a concrete example of credential hygiene and access-scoping failure.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-13T21:06:45Z",
+    "publishedDate": "2026-09-11",
+    "id": "8f5f50198141b88a",
+    "date": "2026-09-11",
+    "source": "BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+    "tags": [
+      "ITDR",
+      "MFA",
+      "Passkeys",
+      "Session Theft",
+      "Entra"
+    ],
+    "note": "Reports Microsoft-observed intrusions involving passkey-themed social engineering, AiTM, device-code phishing, session-token theft, unauthorized MFA registration, Graph reconnaissance, and cloud-data collection.",
+    "score": 96
   },
   {
     "id": "1464b6c3ba13452f",
@@ -1500,6 +1562,22 @@
     "note": "Auth0\u2019s early-access implementation of Cross App Access, Enterprise-Managed Authorization, and ID-JAG shows how enterprise IdPs can govern app-to-app and agent-to-tool authorization with short-lived exchanged tokens.",
     "score": 88,
     "firstSeenAt": "2026-09-14T21:59:58Z"
+  },
+  {
+    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
+    "publishedDate": "2026-09-01",
+    "id": "afad679b72d1a28d",
+    "date": "2026-09-01",
+    "source": "Amazon Web Services",
+    "title": "Amazon Bedrock AgentCore Identity now offers a managed consent portal",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-agentcore/",
+    "tags": [
+      "AI-Agent Authorization",
+      "OAuth",
+      "NHI"
+    ],
+    "note": "The managed consent portal removes custom OAuth callback and session-binding infrastructure for agents connecting to third-party services such as GitHub, Salesforce, and Slack.",
+    "score": 86
   },
   {
     "id": "5eb7907d4adfd0ac",
