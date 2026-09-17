@@ -1,0 +1,2 @@
+[functions.comment-admin-alerts]
+verify_jwt = false
