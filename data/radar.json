@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "df53bdf4ad38f71c",
+    "date": "2026-09-16",
+    "source": "Cisco PSIRT",
+    "title": "Cisco Identity Services Engine Vulnerabilities",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Authentication"
+    ],
+    "note": "Multiple Cisco ISE flaws include an unauthenticated REST API authentication bypass that can grant remote administrative access, alongside RCE and injection issues.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
     "publishedDate": "2026-09-16",
     "id": "ffa6cd36bbea9acd",
@@ -15,6 +31,24 @@
     ],
     "note": "Google Home\u2019s early-access MCP server illustrates the rapidly expanding authorization surface when general-purpose AI agents can invoke real-world devices and access event history.",
     "score": 72
+  },
+  {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "35e71bee1f18567b",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "NISTIR 8587 Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/nistir-8587-protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Tokens",
+      "Federation",
+      "NHI"
+    ],
+    "note": "Final guidance from NIST and CISA/JCDC covers token and assertion signing, verification, lifecycle controls, federation, SSO, APIs, and workload identity.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-09-15T21:43:14Z",
@@ -99,6 +133,22 @@
       "Delinea"
     ],
     "note": "A critical Secret Server on-premises flaw could allow a valid SAML IdP response to impersonate another Secret Server user, making federation validation a direct PAM risk.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "d907372516c16d2b",
+    "date": "2026-09-15",
+    "source": "Material Security",
+    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
+    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
+    "tags": [
+      "OAuth",
+      "Session Security",
+      "Cloud IAM"
+    ],
+    "note": "Incident analysis shows how malicious OAuth authorization can create durable access that survives password resets and session revocation, exposing a major SaaS identity-control gap.",
     "score": 97
   },
   {
@@ -529,6 +579,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-11",
+    "id": "82581f0f9e68b53b",
+    "date": "2026-09-11",
+    "source": "Microsoft Security Research via BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/amp/",
+    "tags": [
+      "Passkeys",
+      "MFA",
+      "OAuth",
+      "Session Theft",
+      "Entra"
+    ],
+    "note": "Detailed reporting documents AiTM and device-code attacks that capture sessions or issue tokens to attacker-controlled OAuth clients, followed by MFA-method persistence and Graph reconnaissance.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-09-13T21:06:45Z",
     "publishedDate": "2026-09-11",
     "id": "8f5f50198141b88a",
@@ -618,16 +686,16 @@
     "publishedDate": "2026-09-11",
     "id": "489122c557ede20d",
     "date": "2026-09-11",
-    "source": "Cloud Security Alliance AI Safety Initiative",
+    "source": "Cloud Security Alliance",
     "title": "Stolen AI Session Tokens Are Bypassing MFA",
     "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-infostealer-ai-token-replay-20260911-csa-s/",
     "tags": [
-      "Token theft",
-      "MFA bypass",
+      "AI Agents",
       "NHI",
-      "AI security"
+      "Session Theft",
+      "Tokens"
     ],
-    "note": "The research note analyzes infostealer logs containing live AI and enterprise SSO tokens and highlights why token revocation, not merely password reset, is required after session theft.",
+    "note": "Research note connects infostealer-compromised AI-service and enterprise SSO tokens to MFA bypass and highlights session lifecycle and token-revocation requirements for AI identities.",
     "score": 91
   },
   {
@@ -986,6 +1054,23 @@
     "firstSeenAt": "2026-09-16T05:10:33Z"
   },
   {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-09",
+    "id": "0deaadf3ec28089b",
+    "date": "2026-09-09",
+    "source": "BleepingComputer",
+    "title": "MFA's Weakest Link: Account Recovery Is the New Attack Path",
+    "url": "https://www.bleepingcomputer.com/news/security/mfas-weakest-link-account-recovery-is-the-new-attack-path/",
+    "tags": [
+      "MFA",
+      "Help Desk",
+      "Account Recovery",
+      "ITDR"
+    ],
+    "note": "The analysis ties recent Scattered Spider-style intrusions to social-engineered password and MFA resets, treating service-desk recovery as part of the authentication boundary.",
+    "score": 90
+  },
+  {
     "firstSeenAt": "2026-09-13T15:35:36-06:00",
     "publishedDate": "2026-09-09",
     "id": "0bc125f22c0feaec",
@@ -1050,6 +1135,24 @@
     "note": "Anthropic discloses four incidents in which Claude models obtained unauthorized access to real third-party systems, making this relevant to agent authorization boundaries and oversight.",
     "score": 82,
     "firstSeenAt": "2026-09-14T05:23:26Z"
+  },
+  {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-09",
+    "id": "08b0efd8cb05effb",
+    "date": "2026-09-09",
+    "source": "Okta",
+    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
+    "url": "https://www.okta.com/en-in/newsroom/press-releases/okta-product-innovations-september-2026/",
+    "tags": [
+      "IGA",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "AI Agents"
+    ],
+    "note": "A meaningful platform expansion combines planned governance, just-in-time privileged access, workload and Kubernetes credential controls, and Permiso-derived ITDR capabilities.",
+    "score": 82
   },
   {
     "id": "freeipa-4-13-4",
