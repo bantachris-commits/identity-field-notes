@@ -17,6 +17,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "9e1edda0cb7281f1",
+    "date": "2026-09-17",
+    "source": "Brevo / BleepingComputer",
+    "title": "Brevo supply-chain attack injected ClickFix scripts on customer sites",
+    "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+    "tags": [
+      "NHI",
+      "Secrets Management",
+      "Least Privilege",
+      "Supply Chain",
+      "Cloud"
+    ],
+    "note": "Attackers used a long-lived, full-permission Cloudflare API key hardcoded in source code to deploy a Worker that modified CDN responses and distributed malware across customer-facing sites.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
     "publishedDate": "2026-09-17",
     "id": "3d58f07ee2751228",
@@ -72,16 +90,16 @@
     "publishedDate": "2026-09-16",
     "id": "b7690ab12e8e050d",
     "date": "2026-09-16",
-    "source": "Cisco PSIRT",
+    "source": "Cisco",
     "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
     "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
     "tags": [
       "IAM",
-      "authentication bypass",
       "ITDR",
-      "CVE"
+      "Authentication",
+      "Zero-Day"
     ],
-    "note": "Critical CVE-2026-76460 allows unauthenticated remote access to Cisco ISE through an insufficiently protected API endpoint, with active exploitation reported by Cisco.",
+    "note": "A CVSS 10.0 unauthenticated API flaw in Cisco ISE and ISE-PIC enables authentication bypass and was reported as actively exploited, making this an urgent identity-control-plane issue.",
     "score": 98
   },
   {
@@ -153,6 +171,24 @@
     ],
     "note": "Okta adds URL-based AI-agent identification, identity-aware tool-call enforcement, unified audit trails and MCP capability discovery in preview.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "85ca12cc3a9ab3e5",
+    "date": "2026-09-16",
+    "source": "Okta",
+    "title": "Detecting shadow AI agents with advanced posture checks",
+    "url": "https://www.okta.com/en-au/blog/threat-intelligence/detecting_shadow_ai_agents_with_advanced_posture_checks/",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "OAuth",
+      "Identity Security Posture Management",
+      "ITDR"
+    ],
+    "note": "Okta describes new detection checks for endpoint AI tools, MCP servers and OAuth-connected agents, highlighting how unmanaged agent identities and grants evade traditional IAM inventories.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -338,6 +374,24 @@
       "Delinea"
     ],
     "note": "A critical Secret Server on-premises flaw could allow a valid SAML IdP response to impersonate another Secret Server user, making federation validation a direct PAM risk.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "0aa05a6b1187f435",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Federation",
+      "Token Security",
+      "Cloud"
+    ],
+    "note": "NIST IR 8587 provides newly finalized implementation guidance for token verification, signing-key protection, lifecycle controls, revocation, federation, SSO and API access.",
     "score": 97
   },
   {
@@ -1049,13 +1103,14 @@
     "title": "Detecting and countering misuse of AI: September 2026",
     "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
     "tags": [
-      "AI-agent-authorization",
       "NHI",
-      "Secrets",
-      "Cloud-IAM"
+      "Machine Identity",
+      "OAuth",
+      "Token Theft",
+      "AI Agents"
     ],
-    "note": "Anthropic\u2019s incident research shows AI-assisted operators using compromised credentials, exposed secrets, admin-token amplification, session-table dumps, and vendor-OAuth fan-out across downstream tenants.",
-    "score": 94
+    "note": "Anthropic\u2019s threat report details AI-assisted intrusions built around stolen credentials, API keys, session tokens, cloud secrets and OAuth fan-out, including operational indicators useful to defenders.",
+    "score": 95
   },
   {
     "id": "6e6808f3261047ff",
@@ -1270,13 +1325,13 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Microsoft-Entra",
+      "Entra",
       "Passkeys",
-      "MFA-bypass",
-      "Session-theft",
-      "OAuth"
+      "MFA",
+      "Token Theft",
+      "ITDR"
     ],
-    "note": "Microsoft documents active campaigns combining AiTM phishing, device-code authorization, token replay, attacker-added MFA methods, Graph reconnaissance, and Microsoft 365 data collection.",
+    "note": "Microsoft documents help-desk impersonation, AiTM and device-code attacks that capture credentials or sessions, add attacker authentication methods, and lead to Microsoft 365 data access.",
     "score": 98
   },
   {
