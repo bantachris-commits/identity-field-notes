@@ -1,5 +1,70 @@
 [
   {
+    "id": "2026-09-18-morning-brief",
+    "date": "2026-09-18",
+    "coverageDate": "2026-09-17",
+    "edition": "MORNING EDITION // 2026.09.18",
+    "title": "Identity Recap: Agent Credentials, Edge Injection and IGA-to-PAM",
+    "dek": "Highlights from 2026-09-17. September 17 brought a sharp warning on exposed AI-agent credentials, a supply-chain compromise rooted in standing cloud privilege, and two vendor moves toward governed agent and privileged access.",
+    "tags": [
+      "Machine Identity",
+      "AI-agent authorization",
+      "PAM",
+      "IGA",
+      "Identity Threat"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-17, verified against linked sources. Edition dated 2026-09-18; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Research",
+        "title": "Public MCP configurations expose a largely invisible class of agent credentials",
+        "summary": "Hush Security analyzed roughly 82,000 public MCP configuration files and reported that 12% of credential slots contained hardcoded secrets. The company says 55% of those secrets lacked recognizable token patterns, while many were broad-scope, non-expiring credentials that conventional scanners may miss. ([prnewswire.com](https://www.prnewswire.com/il/news-releases/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them-302881871.html))",
+        "why": "MCP configuration needs to be treated as an identity-control surface, not merely developer tooling. Teams should eliminate inline secrets, rotate anything exposed in Git history, assign ownership and expiry to agent credentials, and prefer brokered or short-lived access.",
+        "source": "Hush Security",
+        "url": "https://www.prnewswire.com/il/news-releases/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them-302881871.html",
+        "confidence": "Research",
+        "published_date": "2026-09-17",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Brevo supply-chain compromise shows the blast radius of a full-permission API key",
+        "summary": "Brevo said attackers used a long-lived Cloudflare API key hardcoded in application source code to create a Worker that modified CDN responses and injected ClickFix content into Brevo sites and customer-embedded scripts. The edge-layer changes bypassed origin-file integrity checks; BleepingComputer reported that Brevo identified an exposure window of roughly five and a half hours on September 14, while customer account data and core email infrastructure were reportedly unaffected. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/))",
+        "why": "The incident is a practical case for eliminating standing, full-account cloud credentials and separately monitoring edge configuration, Workers, routes and DNS changes. Identity teams should include machine credentials and deployment-plane permissions in incident response and continuous access reviews.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-17",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "From the Field",
+        "title": "Okta describes treating AI agents as first-class workforce identities",
+        "summary": "Okta says its internal digital-worker deployment registers agents, including its Dex orchestrator, in Universal Directory and applies user-context access checks, secure token storage and tool scoping. The company also says third-party-native agents are tied back to a central control plane for governed and auditable access. These are Okta\u2019s own operational claims, not independent validation. ([okta.com](https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/))",
+        "why": "The useful pattern is architectural: agent identity, delegated authority, authentication material, visible tools and audit records should be managed as one control problem. Limiting the tools exposed to an agent before invocation is a particularly concrete least-privilege control.",
+        "source": "Okta",
+        "url": "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-17",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Market",
+        "title": "Keeper and SailPoint connect IGA decisions to privileged-access enforcement",
+        "summary": "Keeper Security announced a connector linking SailPoint IGA with KeeperPAM for provisioning, deprovisioning, entitlement management, vault and resource access, and access certifications. The companies say credentials remain inside Keeper\u2019s vault while grants, changes and revocations are logged across both systems. ([prnewswire.com](https://www.prnewswire.com/news-releases/keeper-security-and-sailpoint-partner-to-automate-privileged-access-governance-302881339.html))",
+        "why": "The integration addresses a familiar governance gap: an approved or revoked entitlement is not useful if the PAM system still requires manual reconciliation. Buyers should test whether connectors cover administrative permissions, non-human identities, certification evidence and rapid offboarding\u2014not just user provisioning.",
+        "source": "Keeper Security / SailPoint",
+        "url": "https://www.prnewswire.com/news-releases/keeper-security-and-sailpoint-partner-to-automate-privileged-access-governance-302881339.html",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-17",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-17-morning-brief",
     "date": "2026-09-17",
     "coverageDate": "2026-09-16",
@@ -15,7 +80,7 @@
       "AI Agents"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-16, verified against linked sources. Edition dated 2026-09-17; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
