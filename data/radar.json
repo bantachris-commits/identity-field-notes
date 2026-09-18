@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "bc900014a902a0b4",
+    "date": "2026-09-17",
+    "source": "AWS",
+    "title": "Implementing defense-in-depth authorization for MCP tools on Amazon Quick",
+    "url": "https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI Agents",
+      "Authorization",
+      "OAuth"
+    ],
+    "note": "A practical AWS pattern applies Entra claims, MFA evidence, geofencing, RBAC, tool allowlists, parameter checks, and immutable auditing to every MCP invocation.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
     "publishedDate": "2026-09-17",
     "id": "4436bc9edc20363f",
@@ -83,6 +101,22 @@
       "Incident"
     ],
     "note": "Critical ISE flaws include an unauthenticated REST API authentication bypass that can expose and modify identity data with administrative privileges, plus RCE and injection issues.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "f421c661cb5dd293",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
+    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "ITDR"
+    ],
+    "note": "Critical CVE-2026-76460 enables unauthenticated remote access to Cisco ISE management interfaces, and Cisco says active exploitation is occurring with no workaround available.",
     "score": 99
   },
   {
@@ -173,6 +207,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "00e6aaff0cf4641a",
+    "date": "2026-09-16",
+    "source": "Google Cloud",
+    "title": "Cloud CISO Perspectives: How Google monitors AI threats and advances AI defenses",
+    "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "Machine Identity",
+      "Credentials"
+    ],
+    "note": "Google Threat Intelligence reports adversaries stealing AI-platform credentials, compromising cloud resources, harvesting secrets, and using agentic automation for credential theft and lateral movement.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
     "publishedDate": "2026-09-16",
     "id": "85ca12cc3a9ab3e5",
@@ -191,20 +242,21 @@
     "score": 87
   },
   {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
     "publishedDate": "2026-09-16",
-    "id": "00e6aaff0cf4641a",
+    "id": "2bf4e28eff7d32fd",
     "date": "2026-09-16",
-    "source": "Google Cloud / Google Threat Intelligence Group",
-    "title": "Cloud CISO Perspectives: How Google monitors AI threats and advances AI defenses",
-    "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses",
+    "source": "OpenID Foundation",
+    "title": "OIDF welcomes CISA and NIST\u2019s new guidance on token security",
+    "url": "https://openid.net/news/",
     "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "credential theft",
-      "cloud IAM"
+      "IAM",
+      "OAuth",
+      "Federation",
+      "Tokens",
+      "Standards"
     ],
-    "note": "Google\u2019s latest threat-intelligence perspective highlights the shift toward autonomous attack workflows and the resulting need for stronger identity and runtime controls around AI systems.",
+    "note": "The standards community\u2019s response highlights the significance of NISTIR 8587 for SSO, federation, authorization servers, and token-protection architecture.",
     "score": 86
   },
   {
@@ -342,6 +394,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "0aa05a6b1187f435",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Tokens",
+      "Federation",
+      "ITDR"
+    ],
+    "note": "New NISTIR 8587 provides concrete controls for token signing, verification, key management, federation, lifecycle, and response to stolen or misused assertions.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-15T21:43:14Z",
     "publishedDate": "2026-09-15",
     "id": "35e784a66d88abcf",
@@ -377,21 +447,20 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-15",
-    "id": "0aa05a6b1187f435",
+    "id": "d907372516c16d2b",
     "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "source": "Material Security",
+    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
+    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
-      "IAM",
       "OAuth",
-      "Federation",
-      "Token Security",
-      "Cloud"
+      "Session Security",
+      "Tokens",
+      "ITDR"
     ],
-    "note": "NIST IR 8587 provides newly finalized implementation guidance for token verification, signing-key protection, lifecycle controls, revocation, federation, SSO and API access.",
+    "note": "The analysis documents an in-the-wild OAuth attack requiring neither password theft nor MFA bypass, while the resulting token can survive password resets and session revocation.",
     "score": 97
   },
   {
@@ -413,23 +482,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "d907372516c16d2b",
-    "date": "2026-09-15",
-    "source": "Material Security",
-    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
-    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
-    "tags": [
-      "OAuth",
-      "Token Abuse",
-      "Google Cloud",
-      "Session Abuse"
-    ],
-    "note": "Explains how malicious OAuth consent and stolen Google Workspace tokens can provide mailbox and Drive access without password theft or MFA bypass, potentially surviving routine remediation.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-09-15T21:43:14Z",
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
@@ -439,13 +491,12 @@
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
       "IAM",
-      "Session Abuse",
-      "OAuth",
+      "Session Security",
       "ITDR",
-      "Microsoft Entra"
+      "Cloud Security"
     ],
-    "note": "Google Cloud adds programmable, group-targeted and application-specific session controls, including tighter reauthentication boundaries for privileged users and OAuth applications.",
-    "score": 91
+    "note": "Google Cloud adds group- and application-specific session controls plus Terraform, gcloud, and API support to tighten reauthentication boundaries against credential and session theft.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -964,24 +1015,6 @@
     "score": 99
   },
   {
-    "firstSeenAt": "2026-09-13T21:06:45Z",
-    "publishedDate": "2026-09-11",
-    "id": "8f5f50198141b88a",
-    "date": "2026-09-11",
-    "source": "BleepingComputer",
-    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
-    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
-    "tags": [
-      "Microsoft Entra",
-      "passkeys",
-      "MFA bypass",
-      "OAuth",
-      "session theft"
-    ],
-    "note": "Reporting based on Microsoft research details help-desk impersonation, AiTM and device-code phishing, attacker-controlled MFA enrollment, OAuth persistence and Graph-based reconnaissance.",
-    "score": 99
-  },
-  {
     "id": "c22ddbfe304ee871",
     "date": "2026-09-11",
     "source": "BleepingComputer",
@@ -1013,6 +1046,24 @@
     ],
     "note": "State officials attributed the DMV breach to credentials stored on a police employee\u2019s personal device, making this a concrete example of credential hygiene and access-scoping failure.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-13T21:06:45Z",
+    "publishedDate": "2026-09-11",
+    "id": "8f5f50198141b88a",
+    "date": "2026-09-11",
+    "source": "BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Passkeys",
+      "Session Security",
+      "OAuth"
+    ],
+    "note": "Reporting on the same active campaign shows attackers using passkey-themed lures, OAuth/device-code flows, stolen sessions, and attacker-registered authenticators to access Microsoft 365.",
+    "score": 96
   },
   {
     "id": "1464b6c3ba13452f",
@@ -1365,14 +1416,14 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Microsoft Entra",
+      "IAM",
+      "MFA",
       "Passkeys",
       "ITDR",
-      "MFA",
-      "Session Abuse"
+      "OAuth"
     ],
-    "note": "Primary research on active intrusions combining passkey/SSO lures, AiTM or device-code flows, malicious MFA enrollment, Graph reconnaissance, and cloud data collection.",
-    "score": 98
+    "note": "Primary research details passkey- and SSO-themed AiTM and device-code attacks that steal tokens, register attacker authentication methods, and persist in Microsoft cloud identities.",
+    "score": 99
   },
   {
     "id": "3820a0f914db94fe",
@@ -1810,9 +1861,11 @@
     "firstSeenAt": "2026-09-13T16:36:23Z"
   },
   {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-07-13",
     "id": "20e828303a7a15fb",
     "date": "2026-07-13",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft",
     "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
     "tags": [
@@ -1820,9 +1873,8 @@
       "Passkeys",
       "MFA"
     ],
-    "note": "This is newly operationally relevant because Microsoft\u2019s September 1 rollout began nudging SMS- and voice-enabled users toward passkey registration, with native telecom delivery scheduled to end February 1, 2027.",
-    "score": 96,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
+    "note": "This is newly operationally relevant on September 18 because Microsoft\u2019s planned provider list, commercial terms, and migration guidance for SMS and voice retirement are due today.",
+    "score": 94
   },
   {
     "id": "b2d31b97d2d61eba",
