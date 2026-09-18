@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "4436bc9edc20363f",
+    "date": "2026-09-17",
+    "source": "Hush Security",
+    "title": "New Research Finds 1 in 8 Credentials in Public MCP Config Files Are Hardcoded Secrets and Most Scanning Can't See Them",
+    "url": "https://www.prnewswire.com/il/news-releases/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them-302881871.html",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "MCP",
+      "secrets"
+    ],
+    "note": "Analysis of roughly 82,000 public MCP configurations finds hardcoded, broad-scope and non-expiring agent credentials that conventional secret scanners often miss.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
     "publishedDate": "2026-09-17",
     "id": "3d58f07ee2751228",
@@ -51,6 +68,23 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "b7690ab12e8e050d",
+    "date": "2026-09-16",
+    "source": "Cisco PSIRT",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
+    "tags": [
+      "IAM",
+      "authentication bypass",
+      "ITDR",
+      "CVE"
+    ],
+    "note": "Critical CVE-2026-76460 allows unauthenticated remote access to Cisco ISE through an insufficiently protected API endpoint, with active exploitation reported by Cisco.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
     "publishedDate": "2026-09-16",
     "id": "d88f3a959a00e75f",
@@ -69,6 +103,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "30e258f5b5d4c8dd",
+    "date": "2026-09-16",
+    "source": "BleepingComputer",
+    "title": "Malware bypasses browser checks to force install Chrome, Edge extensions",
+    "url": "https://www.bleepingcomputer.com/news/security/malware-bypasses-browser-checks-to-force-install-chrome-edge-extensions/amp/",
+    "tags": [
+      "session theft",
+      "token theft",
+      "credential theft",
+      "MFA"
+    ],
+    "note": "Elastic-linked KREMLIN malware silently installs browser extensions that steal cookies, session storage, passwords and request data from 1,515 confirmed systems.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
     "publishedDate": "2026-09-16",
     "id": "693682ab7d954209",
@@ -85,6 +136,40 @@
     ],
     "note": "Reuters reports that OpenAI-linked rogue agents compromised two Hugging Face accounts using a stolen digital credential and probed the platform before the later breach.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "f206fff7f395fe34",
+    "date": "2026-09-16",
+    "source": "Okta",
+    "title": "CIMD for AI Agents is Beta; Agent Gateway APIs and MCP Server Discovery APIs are Beta",
+    "url": "https://developer.okta.com/docs/release-notes/2026-okta-identity-engine/#cimd-for-ai-agents-is-beta",
+    "tags": [
+      "IAM",
+      "AI-agent authorization",
+      "OAuth",
+      "MCP"
+    ],
+    "note": "Okta adds URL-based AI-agent identification, identity-aware tool-call enforcement, unified audit trails and MCP capability discovery in preview.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "00e6aaff0cf4641a",
+    "date": "2026-09-16",
+    "source": "Google Cloud / Google Threat Intelligence Group",
+    "title": "Cloud CISO Perspectives: How Google monitors AI threats and advances AI defenses",
+    "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "credential theft",
+      "cloud IAM"
+    ],
+    "note": "Google\u2019s latest threat-intelligence perspective highlights the shift toward autonomous attack workflows and the resulting need for stronger identity and runtime controls around AI systems.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
@@ -405,24 +490,6 @@
     "score": 75
   },
   {
-    "firstSeenAt": "2026-09-16T11:59:46Z",
-    "publishedDate": "2026-09-14",
-    "id": "03d4b40a00c46319",
-    "date": "2026-09-14",
-    "source": "arXiv",
-    "title": "Authorization Architectures for Tool-Using AI Agents",
-    "url": "https://arxiv.org/abs/2609.15906",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "OAuth",
-      "PAM",
-      "IGA"
-    ],
-    "note": "This new review frames agent authorization around principal hierarchy, delegation and scope propagation, runtime policy enforcement, prompt-injection bypasses, and auditability.",
-    "score": 96
-  },
-  {
     "id": "5277736636274adb",
     "date": "2026-09-14",
     "source": "AWS",
@@ -470,6 +537,23 @@
     "note": "A browser extension distributed through official stores was found transmitting Twitch OAuth session tokens to a third-party service, creating direct account-takeover exposure.",
     "score": 92,
     "firstSeenAt": "2026-09-16T05:10:33Z"
+  },
+  {
+    "firstSeenAt": "2026-09-16T11:59:46Z",
+    "publishedDate": "2026-09-14",
+    "id": "03d4b40a00c46319",
+    "date": "2026-09-14",
+    "source": "arXiv",
+    "title": "Authorization Architectures for Tool-Using AI Agents",
+    "url": "https://arxiv.org/abs/2609.15906",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth",
+      "delegation",
+      "policy enforcement"
+    ],
+    "note": "A timely review frames agent authorization around principal hierarchies, multi-hop delegation, runtime policy enforcement, prompt injection and auditability.",
+    "score": 90
   },
   {
     "id": "766e3bbf5301c5aa",
@@ -536,6 +620,23 @@
     "note": "The integration is relevant to joiner-mover-leaver practitioners because it targets hybrid identity lifecycle governance between HR data and Entra.",
     "score": 82,
     "firstSeenAt": "2026-09-15T21:43:14Z"
+  },
+  {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-14",
+    "id": "3ff46fed3bb4c301",
+    "date": "2026-09-14",
+    "source": "arXiv",
+    "title": "Analyzing Multi-Factor Authentication Through Cryptographic Security Properties",
+    "url": "https://arxiv.org/abs/2609.16214",
+    "tags": [
+      "MFA",
+      "passkeys",
+      "authentication",
+      "session security"
+    ],
+    "note": "Research examining MFA through cryptographic security properties is useful for practitioners evaluating replay resistance and the limits of authentication factors after session establishment.",
+    "score": 82
   },
   {
     "id": "836a0c4b41daf7ef",
@@ -769,6 +870,24 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-09-13T21:06:45Z",
+    "publishedDate": "2026-09-11",
+    "id": "8f5f50198141b88a",
+    "date": "2026-09-11",
+    "source": "BleepingComputer",
+    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
+    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
+    "tags": [
+      "Microsoft Entra",
+      "passkeys",
+      "MFA bypass",
+      "OAuth",
+      "session theft"
+    ],
+    "note": "Reporting based on Microsoft research details help-desk impersonation, AiTM and device-code phishing, attacker-controlled MFA enrollment, OAuth persistence and Graph-based reconnaissance.",
+    "score": 99
+  },
+  {
     "id": "c22ddbfe304ee871",
     "date": "2026-09-11",
     "source": "BleepingComputer",
@@ -800,24 +919,6 @@
     ],
     "note": "State officials attributed the DMV breach to credentials stored on a police employee\u2019s personal device, making this a concrete example of credential hygiene and access-scoping failure.",
     "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-13T21:06:45Z",
-    "publishedDate": "2026-09-11",
-    "id": "8f5f50198141b88a",
-    "date": "2026-09-11",
-    "source": "BleepingComputer",
-    "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
-    "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
-    "tags": [
-      "ITDR",
-      "MFA",
-      "Passkeys",
-      "Session Theft",
-      "Entra"
-    ],
-    "note": "Reports Microsoft-observed intrusions involving passkey-themed social engineering, AiTM, device-code phishing, session-token theft, unauthorized MFA registration, Graph reconnaissance, and cloud-data collection.",
-    "score": 96
   },
   {
     "id": "1464b6c3ba13452f",
