@@ -309,24 +309,6 @@
     "score": 100
   },
   {
-    "firstSeenAt": "2026-09-15T21:43:14Z",
-    "publishedDate": "2026-09-15",
-    "id": "35e784a66d88abcf",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "IR 8587, Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://csrc.nist.gov/pubs/ir/8587/final",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "ITDR",
-      "NHI",
-      "Federation"
-    ],
-    "note": "Final guidance from NIST and CISA/JCDC addresses token theft, assertion forgery, federation, API access, workload identity, key protection, verification, rotation, and lifecycle controls.",
-    "score": 99
-  },
-  {
     "id": "fce54ff4f5f7a4fc",
     "date": "2026-09-15",
     "source": "NIST",
@@ -358,6 +340,24 @@
     ],
     "note": "New NIST guidance addresses token and assertion protection across SSO, federation, IdPs, authorization servers and API access, with emphasis on verification, key management and lifecycle controls.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-09-15T21:43:14Z",
+    "publishedDate": "2026-09-15",
+    "id": "35e784a66d88abcf",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://csrc.nist.gov/pubs/ir/8587/final",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Federation",
+      "Token Abuse",
+      "Machine Identity"
+    ],
+    "note": "New NIST IR 8587 provides implementation guidance for protecting federation assertions, API tokens, workload credentials, signing keys, and token lifecycles.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
@@ -395,21 +395,22 @@
     "score": 97
   },
   {
-    "id": "fe184999dcccb80e",
+    "firstSeenAt": "2026-09-18T10:41:08.548357-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "e992a1c75e729aab",
     "date": "2026-09-15",
-    "source": "Google Cloud",
-    "title": "Introducing new session management tools with native, granular controls",
-    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "source": "eSentire",
+    "title": "GhostCode: Dissecting a Novel Device Code Phishing Kit",
+    "url": "https://www.esentire.com/blog/ghostcode-dissecting-a-novel-device-code-phishing-kit",
     "tags": [
       "IAM",
       "OAuth",
-      "Session Security",
-      "ITDR",
-      "Google Cloud"
+      "MFA",
+      "Microsoft Entra",
+      "Token Abuse"
     ],
-    "note": "Google Cloud made more granular session controls generally available, directly addressing credential theft, account takeover, OAuth-session duration, and context-aware access.",
-    "score": 94,
-    "firstSeenAt": "2026-09-15T21:43:14Z"
+    "note": "Detailed analysis of a device-code phishing kit that captures MFA-backed Microsoft tokens, registers attacker-controlled devices, obtains long-lived access, and harvests email.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
@@ -421,11 +422,30 @@
     "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
       "OAuth",
-      "Session Security",
-      "Cloud IAM"
+      "Token Abuse",
+      "Google Cloud",
+      "Session Abuse"
     ],
-    "note": "Examines active OAuth-consent abuse against Google Workspace where attackers obtain mailbox and Drive access without stealing passwords or bypassing MFA.",
-    "score": 89
+    "note": "Explains how malicious OAuth consent and stolen Google Workspace tokens can provide mailbox and Drive access without password theft or MFA bypass, potentially surviving routine remediation.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-15T21:43:14Z",
+    "publishedDate": "2026-09-15",
+    "id": "fe184999dcccb80e",
+    "date": "2026-09-15",
+    "source": "Google Cloud",
+    "title": "Introducing new session management tools with native, granular controls",
+    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "tags": [
+      "IAM",
+      "Session Abuse",
+      "OAuth",
+      "ITDR",
+      "Microsoft Entra"
+    ],
+    "note": "Google Cloud adds programmable, group-targeted and application-specific session controls, including tighter reauthentication boundaries for privileged users and OAuth applications.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -544,22 +564,6 @@
     "score": 75
   },
   {
-    "id": "5277736636274adb",
-    "date": "2026-09-14",
-    "source": "AWS",
-    "title": "Manage end-user OAuth consent for AI agents with Amazon Bedrock AgentCore",
-    "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "AI-agents",
-      "NHI"
-    ],
-    "note": "AgentCore\u2019s managed consent portal handles end-user authentication, OAuth session binding, per-user token storage, and auditability for agents connecting to services such as GitHub and Slack.",
-    "score": 94,
-    "firstSeenAt": "2026-09-15T12:03:21Z"
-  },
-  {
     "id": "a08438a7ab1a57d4",
     "date": "2026-09-14",
     "source": "Unit 42",
@@ -610,6 +614,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-09-15T12:03:21Z",
+    "publishedDate": "2026-09-14",
+    "id": "5277736636274adb",
+    "date": "2026-09-14",
+    "source": "AWS",
+    "title": "Manage end-user OAuth consent for AI agents with Amazon Bedrock AgentCore",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "Technical walkthrough of AgentCore\u2019s managed consent portal, session binding, per-user token vaulting, and CloudTrail visibility for agent access to GitHub and Slack.",
+    "score": 89
+  },
+  {
     "id": "766e3bbf5301c5aa",
     "date": "2026-09-14",
     "source": "ITPro",
@@ -627,21 +649,22 @@
     "firstSeenAt": "2026-09-15T17:14:56Z"
   },
   {
+    "firstSeenAt": "2026-09-15T17:14:56Z",
+    "publishedDate": "2026-09-14",
     "id": "5abec13b43b12f63",
     "date": "2026-09-14",
     "source": "Okta",
-    "title": "Shadow AI Endpoint Security: Discover & Govern Local Agents",
+    "title": "Your endpoints are running AI agents you can't see",
     "url": "https://www.okta.com/blog/ai/shadow-ai-agent-discovery/",
     "tags": [
-      "IAM",
-      "IGA",
+      "Okta",
       "NHI",
-      "AI-agent-authorization",
+      "AI Agents",
+      "IGA",
       "ITDR"
     ],
-    "note": "Describes early-access discovery and governance for locally deployed AI agents and MCP servers, including runtime authorization and identity context.",
-    "score": 86,
-    "firstSeenAt": "2026-09-15T17:14:56Z"
+    "note": "Describes endpoint discovery for shadow AI agents and MCP connections, including the identity, ownership, standing-access, auditability, and data-exfiltration gaps they create.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-15T17:14:56Z",
@@ -685,12 +708,12 @@
     "url": "https://arxiv.org/abs/2609.16214",
     "tags": [
       "MFA",
-      "passkeys",
-      "authentication",
-      "session security"
+      "Authentication",
+      "Passkeys",
+      "Research"
     ],
-    "note": "Research examining MFA through cryptographic security properties is useful for practitioners evaluating replay resistance and the limits of authentication factors after session establishment.",
-    "score": 82
+    "note": "New technical research examines MFA mechanisms through cryptographic properties, with emphasis on replay resistance and the security consequences of compromised authentication components.",
+    "score": 76
   },
   {
     "id": "836a0c4b41daf7ef",
@@ -904,6 +927,23 @@
     ],
     "note": "A new standards-track draft explores rechecking client certificate, access token and device posture consistency on each privileged transaction rather than trusting session establishment alone.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-18T10:41:08.548357-06:00",
+    "publishedDate": "2026-09-12",
+    "id": "07e30d1ae0c54331",
+    "date": "2026-09-12",
+    "source": "TechCrunch",
+    "title": "Revolut confirms customer data breach through fake government requests",
+    "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
+    "tags": [
+      "IAM",
+      "Authorization",
+      "Social Engineering",
+      "Incident"
+    ],
+    "note": "A material incident in which attackers impersonated a government entity using a legitimate agency domain and exploited an internal authorization process to obtain sensitive KYC and transaction data.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
@@ -1325,13 +1365,13 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "Passkeys",
+      "ITDR",
       "MFA",
-      "Token Theft",
-      "ITDR"
+      "Session Abuse"
     ],
-    "note": "Microsoft documents help-desk impersonation, AiTM and device-code attacks that capture credentials or sessions, add attacker authentication methods, and lead to Microsoft 365 data access.",
+    "note": "Primary research on active intrusions combining passkey/SSO lures, AiTM or device-code flows, malicious MFA enrollment, Graph reconnaissance, and cloud data collection.",
     "score": 98
   },
   {
