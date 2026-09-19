@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "06d4854d19963488",
+    "date": "2026-09-18",
+    "source": "Dark Reading",
+    "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
+    "tags": [
+      "AI Agents",
+      "IAM",
+      "Authorization",
+      "Incident"
+    ],
+    "note": "Spain\u2019s data-protection authority described a breach in which an AI-assisted attacker used loose credentials and an application vulnerability to alter records and access invoices.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
     "publishedDate": "2026-09-17",
     "id": "bc900014a902a0b4",
@@ -86,6 +103,22 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "b7690ab12e8e050d",
+    "date": "2026-09-16",
+    "source": "Cisco PSIRT",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Authentication Bypass"
+    ],
+    "note": "Critical, actively exploited Cisco ISE and ISE-PIC flaw enables unauthenticated management-interface access and has no workaround beyond upgrading.",
+    "score": 100
+  },
+  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-16",
     "id": "df53bdf4ad38f71c",
@@ -118,23 +151,6 @@
     ],
     "note": "Critical CVE-2026-76460 enables unauthenticated remote access to Cisco ISE management interfaces, and Cisco says active exploitation is occurring with no workaround available.",
     "score": 99
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "b7690ab12e8e050d",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Authentication",
-      "Zero-Day"
-    ],
-    "note": "A CVSS 10.0 unauthenticated API flaw in Cisco ISE and ISE-PIC enables authentication bypass and was reported as actively exploited, making this an urgent identity-control-plane issue.",
-    "score": 98
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -632,6 +648,8 @@
     "firstSeenAt": "2026-09-16T11:59:46Z"
   },
   {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-14",
     "id": "0586e096f0a894b1",
     "date": "2026-09-14",
     "source": "BleepingComputer",
@@ -639,13 +657,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/twitch-extension-with-30k-installs-exposes-users-oauth-tokens/",
     "tags": [
       "OAuth",
+      "Session Security",
       "Token Theft",
-      "Session Abuse",
-      "CIAM"
+      "NHI"
     ],
-    "note": "A browser extension distributed through official stores was found transmitting Twitch OAuth session tokens to a third-party service, creating direct account-takeover exposure.",
-    "score": 92,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
+    "note": "A browser extension routed live Twitch OAuth session tokens through operator-controlled proxy infrastructure and placed them in URL parameters that could enter server logs.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-16T11:59:46Z",
@@ -1029,6 +1046,23 @@
     "note": "The reporting describes automated scanning of 1.8 million APKs for hardcoded secrets, GitHub token acquisition, stolen Azure AD tokens, and movement from a developer token to cloud administrator access.",
     "score": 98,
     "firstSeenAt": "2026-09-15T05:15:16Z"
+  },
+  {
+    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
+    "publishedDate": "2026-09-11",
+    "id": "44a8108e0c55ecaf",
+    "date": "2026-09-11",
+    "source": "SecurityWeek",
+    "title": "Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack",
+    "url": "https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/",
+    "tags": [
+      "SAML",
+      "Federation",
+      "Authorization",
+      "Incident"
+    ],
+    "note": "Brevo disclosed a cross-organization SAML scoping failure that let an attacker using its own identity provider access organizations reachable by invited legitimate users.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-14T21:59:58Z",
@@ -1859,6 +1893,22 @@
     "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.",
     "score": 82,
     "firstSeenAt": "2026-09-13T16:36:23Z"
+  },
+  {
+    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
+    "publishedDate": "2026-07-17",
+    "id": "4d70d81a7ea942f9",
+    "date": "2026-07-17",
+    "source": "OpenID Foundation",
+    "title": "Public Review Period for Proposed OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification",
+    "url": "https://openid.net/public-review-period-for-proposed-openid-connect-ephemeral-subject-identifier-1-0-final-specification/",
+    "tags": [
+      "OpenID",
+      "OIDC",
+      "Privacy"
+    ],
+    "note": "The proposed OIDC Ephemeral Subject Identifier entered its final-specification voting period on September 16, making its privacy and correlation implications newly actionable for federation architects.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
