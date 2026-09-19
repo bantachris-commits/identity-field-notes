@@ -17,6 +17,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "937487800fe2f6b2",
+    "date": "2026-09-18",
+    "source": "AWS",
+    "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "IAM",
+      "Cloud security"
+    ],
+    "note": "AWS added pre-test credential validation and authenticated domain discovery to its agentic penetration-testing service, a meaningful development for safely delegating identity-aware testing to autonomous systems.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
     "publishedDate": "2026-09-17",
     "id": "bc900014a902a0b4",
@@ -32,6 +49,23 @@
       "OAuth"
     ],
     "note": "A practical AWS pattern applies Entra claims, MFA evidence, geofencing, RBAC, tool allowlists, parameter checks, and immutable auditing to every MCP invocation.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "7238e34645fcb6ee",
+    "date": "2026-09-17",
+    "source": "BleepingComputer",
+    "title": "Cisco warns of max severity ISE zero-day exploited in attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Authentication bypass",
+      "Incident"
+    ],
+    "note": "Actively exploited CVE-2026-76460 bypasses authentication on Cisco Identity Services Engine management APIs, directly exposing a control plane used for user and device access policy.",
     "score": 96
   },
   {
@@ -68,6 +102,23 @@
     ],
     "note": "Attackers used a long-lived, full-permission Cloudflare API key hardcoded in source code to deploy a Worker that modified CDN responses and distributed malware across customer-facing sites.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "9efac17a7889488f",
+    "date": "2026-09-17",
+    "source": "BleepingComputer",
+    "title": "Microsoft shares workaround for Windows domain login issues",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-workaround-for-windows-domain-login-authentication-issues/",
+    "tags": [
+      "Active Directory",
+      "Machine identity",
+      "Authentication",
+      "Incident"
+    ],
+    "note": "Microsoft\u2019s workaround addresses domain authentication failures caused by Machine Identity Isolation behavior after September Windows updates, with direct implications for machine-account trust and enterprise availability.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
@@ -393,6 +444,24 @@
     "firstSeenAt": "2026-09-16T05:10:33Z"
   },
   {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "0aa05a6b1187f435",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "IAM",
+      "Federation",
+      "OAuth",
+      "Token security",
+      "Workload identity"
+    ],
+    "note": "NIST IR 8587 provides current implementation guidance for protecting SSO, federation, API, and workload-access tokens against theft, forgery, misuse, and weak lifecycle controls.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
     "publishedDate": "2026-09-15",
     "id": "3db4966b861c26bc",
@@ -407,24 +476,6 @@
       "Token security"
     ],
     "note": "New NIST guidance addresses token and assertion protection across SSO, federation, IdPs, authorization servers and API access, with emphasis on verification, key management and lifecycle controls.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "0aa05a6b1187f435",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Tokens",
-      "Federation",
-      "ITDR"
-    ],
-    "note": "New NISTIR 8587 provides concrete controls for token signing, verification, key management, federation, lifecycle, and response to stolen or misused assertions.",
     "score": 98
   },
   {
@@ -471,12 +522,12 @@
     "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
     "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
-      "OAuth",
-      "Session Security",
-      "Tokens",
-      "ITDR"
+      "OAuth abuse",
+      "Session/token theft",
+      "Google Workspace",
+      "Incident"
     ],
-    "note": "The analysis documents an in-the-wild OAuth attack requiring neither password theft nor MFA bypass, while the resulting token can survive password resets and session revocation.",
+    "note": "The analysis documents Russian-linked campaigns that use genuine Google OAuth flows and attacker-controlled cloud projects to steal tokens without password theft or MFA bypass, with persistence beyond password resets and session revocation.",
     "score": 97
   },
   {
@@ -780,7 +831,7 @@
       "Passkeys",
       "Research"
     ],
-    "note": "New technical research examines MFA mechanisms through cryptographic properties, with emphasis on replay resistance and the security consequences of compromised authentication components.",
+    "note": "This new research examines MFA mechanisms through cryptographic security properties, including replay resistance, offering a useful technical lens for evaluating authentication designs beyond simple factor counting.",
     "score": 76
   },
   {
