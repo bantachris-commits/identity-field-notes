@@ -83,6 +83,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "3e25d109671f8b32",
+    "date": "2026-09-18",
+    "source": "Dark Reading",
+    "title": "MFA Won't Save You From OAuth Consent Abuse",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "Token Security",
+      "ITDR"
+    ],
+    "note": "A useful practitioner analysis of why MFA does not address malicious OAuth consent, excessive scopes, refresh-token persistence, or post-consent detection and revocation.",
+    "score": 80
+  },
+  {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
     "publishedDate": "2026-09-17",
     "id": "bc900014a902a0b4",
@@ -115,6 +132,23 @@
       "Incident"
     ],
     "note": "Actively exploited CVE-2026-76460 bypasses authentication on Cisco Identity Services Engine management APIs, directly exposing a control plane used for user and device access policy.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "55acb2b729bfb598",
+    "date": "2026-09-17",
+    "source": "Brevo",
+    "title": "Security Incident - ClickFix",
+    "url": "https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "API Security",
+      "Incident"
+    ],
+    "note": "Attackers used a stolen long-lived Cloudflare API key hardcoded in source code to deploy an edge Worker that injected malware into Brevo and customer-served scripts.",
     "score": 96
   },
   {
@@ -153,6 +187,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "1f6331a858ab0fc3",
+    "date": "2026-09-17",
+    "source": "Hush Security",
+    "title": "New Research Finds 1 in 8 Credentials in Public MCP Config Files Are Hardcoded Secrets and Most Scanning Can\u2019t See Them",
+    "url": "https://www.hush.security/resources/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them/",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "AI Agents",
+      "Secrets"
+    ],
+    "note": "Analysis of roughly 82,000 public MCP configurations finds widespread hardcoded, opaque, broad-scope and non-expiring credentials in AI-agent tooling.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
     "publishedDate": "2026-09-17",
     "id": "9efac17a7889488f",
@@ -168,6 +219,23 @@
     ],
     "note": "Microsoft\u2019s workaround addresses domain authentication failures caused by Machine Identity Isolation behavior after September Windows updates, with direct implications for machine-account trust and enterprise availability.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "ce8e71e69e69f035",
+    "date": "2026-09-17",
+    "source": "Delinea",
+    "title": "Delinea Joins Anthropic's Project Glasswing",
+    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing",
+    "tags": [
+      "PAM",
+      "Secrets",
+      "AI Agents",
+      "Research"
+    ],
+    "note": "Delinea is applying Anthropic\u2019s frontier models to its own vaulting, secrets and privileged-session-brokering code, making identity infrastructure a direct target for AI-assisted defensive research.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
@@ -230,12 +298,12 @@
     "tags": [
       "ITDR",
       "IGA",
-      "Microsoft Entra",
+      "Entra",
       "Okta",
       "Ping Identity"
     ],
-    "note": "Singapore\u2019s IMDA accreditation is a meaningful regional identity-resilience development, especially for practitioners evaluating recovery and crisis-response capabilities across hybrid identity estates.",
-    "score": 70
+    "note": "The accreditation announcement includes new regional identity-resilience findings, including low confidence in recovering identity infrastructure after AI-agent exposure of administrative credentials.",
+    "score": 69
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -281,10 +349,11 @@
     "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
     "tags": [
       "IAM",
+      "ITDR",
       "Authentication",
-      "ITDR"
+      "Incident"
     ],
-    "note": "Critical CVE-2026-76460 enables unauthenticated remote access to Cisco ISE management interfaces, and Cisco says active exploitation is occurring with no workaround available.",
+    "note": "A CVSS 10.0, actively exploited pre-authentication bypass in Cisco ISE exposes a core network-access control plane and requires urgent patching and investigation.",
     "score": 99
   },
   {
@@ -764,6 +833,23 @@
       "AI-Agent Authorization"
     ],
     "note": "DigiCert\u2019s new service treats AI agents as identifiable, owner-linked entities with authorization controls and revocation capability.",
+    "score": 76
+  },
+  {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "f803d98df99b0c30",
+    "date": "2026-09-15",
+    "source": "WSO2",
+    "title": "WSO2 Agent Manager Brings Sovereign AI Governance to Enterprise Agent Sprawl",
+    "url": "https://wso2.com/about/news/wso2-agent-manager-sovereign-ai-governance/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "IGA"
+    ],
+    "note": "WSO2\u2019s generally available Agent Manager adds agent identity, sandboxed runtime controls, MCP governance and lifecycle oversight across frameworks and deployment models.",
     "score": 76
   },
   {
@@ -2084,17 +2170,16 @@
     "publishedDate": "2026-07-13",
     "id": "20e828303a7a15fb",
     "date": "2026-07-13",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security",
     "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
     "tags": [
       "Microsoft Entra",
       "Passkeys",
-      "FIDO",
       "MFA"
     ],
-    "note": "The September 18 provider-information milestone makes this newly relevant: Microsoft is shifting Entra users from native SMS and voice delivery toward passkeys while defining a third-party telecom model for exceptions.",
-    "score": 91
+    "note": "The September 18 milestone makes this newly operationally relevant: Microsoft is publishing provider and commercial details as Entra shifts users from SMS and voice toward passkeys.",
+    "score": 87
   },
   {
     "id": "b2d31b97d2d61eba",
