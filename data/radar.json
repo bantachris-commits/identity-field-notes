@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "498d2d69e59c9df4",
+    "date": "2026-09-18",
+    "source": "Security.io",
+    "title": "Hijacked AI coding session became a software-supply-chain path",
+    "url": "https://www.security.io/articles/2026/09/18/ai-coding-session-shai-hulud",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth",
+      "Token abuse",
+      "NHI"
+    ],
+    "note": "This documented Mandiant case links a hijacked coding-assistant session to poisoned dependency installation, GitHub OAuth-token theft, and propagation across roughly 100 repositories.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
     "publishedDate": "2026-09-18",
     "id": "06d4854d19963488",
@@ -17,6 +34,22 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "f3de0e1ae86a2dd7",
+    "date": "2026-09-18",
+    "source": "AWS Security Blog",
+    "title": "The new AgentCore runtime: Elastic, optimized, and consistently fast starts",
+    "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "Machine identity"
+    ],
+    "note": "AWS\u2019s new managed AgentCore runtime adds session isolation, identity, and observability foundations for long-running and autonomous agents, making it relevant to teams defining agent trust boundaries.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
     "publishedDate": "2026-09-18",
     "id": "937487800fe2f6b2",
@@ -31,6 +64,22 @@
       "Cloud security"
     ],
     "note": "AWS added pre-test credential validation and authenticated domain discovery to its agentic penetration-testing service, a meaningful development for safely delegating identity-aware testing to autonomous systems.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "fbcd4039ec79f588",
+    "date": "2026-09-18",
+    "source": "Google Cloud Blog",
+    "title": "Using AI agents to secure Google infrastructure",
+    "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure",
+    "tags": [
+      "AI-agent authorization",
+      "ITDR",
+      "Machine identity"
+    ],
+    "note": "Google describes an agentic vulnerability-scanning and remediation pipeline operating across hundreds of millions of lines of infrastructure code, offering a concrete model for governed security-agent autonomy.",
     "score": 82
   },
   {
@@ -154,6 +203,41 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "90c0541940d6fcef",
+    "date": "2026-09-17",
+    "source": "Palo Alto Networks",
+    "title": "Securing Machine and Agentic Identities: The Next Frontier of Modern PAM",
+    "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Machine identity",
+      "AI-agent authorization"
+    ],
+    "note": "The post lays out how PAM must extend to workloads and AI agents, with SPIFFE-style workload identity and controls for standing machine privilege as central design themes.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "0f07ede3193cff6e",
+    "date": "2026-09-17",
+    "source": "Semperis",
+    "title": "Semperis Secures IMDA Accreditation to Strengthen Identity Resilience in the AI Era",
+    "url": "https://www.semperis.com/press-release/semperis-secures-imda-accreditation-to-strengthen-identity-resilience-in-the-ai-era/",
+    "tags": [
+      "ITDR",
+      "IGA",
+      "Microsoft Entra",
+      "Okta",
+      "Ping Identity"
+    ],
+    "note": "Singapore\u2019s IMDA accreditation is a meaningful regional identity-resilience development, especially for practitioners evaluating recovery and crisis-response capabilities across hybrid identity estates.",
+    "score": 70
+  },
+  {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
     "publishedDate": "2026-09-16",
     "id": "b7690ab12e8e050d",
@@ -220,6 +304,23 @@
     ],
     "note": "The update fixes Keycloak issues including realm-admin takeover through impersonation, policy-enforcer bypass, broker username collisions, and filesystem probing.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "9c5afb3580004c78",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerabilities",
+    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ise-multiauth-bypass-sgD2HbL4.html",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "Cisco\u2019s advisory covers multiple unauthenticated ISE weaknesses involving posture manipulation, sensitive configuration disclosure, and certificate/key-material handling; the product is a core network-access identity control point.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -553,33 +654,33 @@
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
-    "source": "Google Cloud",
+    "source": "Google Cloud Blog",
     "title": "Introducing new session management tools with native, granular controls",
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
-      "IAM",
-      "Session Security",
+      "Session security",
+      "Token abuse",
       "ITDR",
-      "Cloud Security"
+      "Google Cloud"
     ],
-    "note": "Google Cloud adds group- and application-specific session controls plus Terraform, gcloud, and API support to tighten reauthentication boundaries against credential and session theft.",
-    "score": 93
+    "note": "Google Cloud completed its 16-hour default session rollout and added programmatic, granular session controls through Context-Aware Access to reduce credential-theft and account-takeover impact.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
     "publishedDate": "2026-09-15",
     "id": "4e2b0941f8803b78",
     "date": "2026-09-15",
-    "source": "AWS",
+    "source": "AWS Security Blog",
     "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
     "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
     "tags": [
       "IAM",
-      "Least Privilege",
-      "CIEM",
-      "AI"
+      "IGA",
+      "Least privilege",
+      "NHI"
     ],
-    "note": "Shows how IAM Access Analyzer, CloudTrail, Bedrock, infrastructure as code, and CI/CD can turn excessive-permission remediation into a repeatable control loop.",
+    "note": "AWS presents a concrete workflow that turns Access Analyzer findings into reviewed code changes, issues, and controlled decommissioning paths for unused roles and permissions.",
     "score": 84
   },
   {
@@ -680,6 +781,23 @@
     ],
     "note": "Cognito multi-Region replication introduces cross-Region failover considerations for user pools, IdP settings, token generation, revocation, and M2M authentication.",
     "score": 75
+  },
+  {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-14",
+    "id": "76d74339c23947ef",
+    "date": "2026-09-14",
+    "source": "AWS Security Bulletin",
+    "title": "CVE-2026-86830 - Incorrect privilege assignment in Temporary Elevated Access Management (TEAM for AWS IAM Identity Center",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-112-aws/",
+    "tags": [
+      "PAM",
+      "AWS",
+      "IAM",
+      "Privilege escalation"
+    ],
+    "note": "An authenticated application-level user could obtain unintended temporary elevated access through the AWS IAM Identity Center TEAM sample solution, making this a direct least-privilege and elevation-control issue.",
+    "score": 96
   },
   {
     "id": "a08438a7ab1a57d4",
@@ -1966,16 +2084,17 @@
     "publishedDate": "2026-07-13",
     "id": "20e828303a7a15fb",
     "date": "2026-07-13",
-    "source": "Microsoft",
+    "source": "Microsoft Security Blog",
     "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
     "tags": [
       "Microsoft Entra",
       "Passkeys",
+      "FIDO",
       "MFA"
     ],
-    "note": "This is newly operationally relevant on September 18 because Microsoft\u2019s planned provider list, commercial terms, and migration guidance for SMS and voice retirement are due today.",
-    "score": 94
+    "note": "The September 18 provider-information milestone makes this newly relevant: Microsoft is shifting Entra users from native SMS and voice delivery toward passkeys while defining a third-party telecom model for exceptions.",
+    "score": 91
   },
   {
     "id": "b2d31b97d2d61eba",
