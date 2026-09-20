@@ -25,14 +25,13 @@
     "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
     "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
     "tags": [
-      "IAM",
-      "Federation",
-      "SAML",
       "NHI",
-      "API keys"
+      "Secrets",
+      "API-Keys",
+      "Supply-Chain"
     ],
-    "note": "Brevo says attackers exploited SAML SSO handling to access customer accounts and later reused a long-lived Cloudflare API key to deploy malicious code at scale.",
-    "score": 96
+    "note": "A separate Brevo incident shows how a long-lived, hardcoded, full-permission Cloudflare API key enabled edge-content injection and malware delivery across customer websites.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -287,6 +286,23 @@
     ],
     "note": "Microsoft\u2019s workaround addresses domain authentication failures caused by Machine Identity Isolation behavior after September Windows updates, with direct implications for machine-account trust and enterprise availability.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "fc4dafc7bc11bbd5",
+    "date": "2026-09-17",
+    "source": "Malwarebytes",
+    "title": "Revolut phishing texts appear days after data breach",
+    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/09/revolut-phishing-texts-appear-days-after-data-breach",
+    "tags": [
+      "Identity-Proofing",
+      "Account-Takeover",
+      "Phishing",
+      "Session-Risk"
+    ],
+    "note": "Malwarebytes reports follow-on phishing against Revolut customers after the disclosure, illustrating how leaked identity documents and account data can support convincing recovery and takeover lures.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
@@ -733,23 +749,6 @@
     "firstSeenAt": "2026-09-16T05:10:33Z"
   },
   {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "0aa05a6b1187f435",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Session/token abuse",
-      "Federation"
-    ],
-    "note": "NISTIR 8587 provides current implementation guidance for token lifecycle, verification, key management, SSO, federation, and API-access protections.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
     "publishedDate": "2026-09-15",
     "id": "3db4966b861c26bc",
@@ -820,6 +819,24 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "0aa05a6b1187f435",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Tokens",
+      "Federation",
+      "Standards"
+    ],
+    "note": "NIST IR 8587 provides implementation guidance for protecting SSO, federation, API and workload-access tokens against forgery, theft and misuse, with concrete lifecycle and key-management recommendations.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-15",
     "id": "d907372516c16d2b",
@@ -862,12 +879,13 @@
     "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
     "tags": [
       "IAM",
-      "IGA",
-      "Least privilege",
-      "NHI"
+      "Least-Privilege",
+      "CI/CD",
+      "NHI",
+      "AI"
     ],
-    "note": "AWS presents a concrete workflow that turns Access Analyzer findings into reviewed code changes, issues, and controlled decommissioning paths for unused roles and permissions.",
-    "score": 84
+    "note": "AWS presents a practical pattern that combines IAM Access Analyzer, CloudTrail, Bedrock and CI/CD workflows to turn unused-permission findings into reviewable policy-remediation changes and controlled role decommissioning.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -1377,13 +1395,13 @@
     "title": "Revolut confirms customer data breach through fake government requests",
     "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
     "tags": [
-      "IAM",
       "Authorization",
-      "Social Engineering",
-      "Incident"
+      "Identity-Proofing",
+      "Social-Engineering",
+      "ITDR"
     ],
-    "note": "A material incident in which attackers impersonated a government entity using a legitimate agency domain and exploited an internal authorization process to obtain sensitive KYC and transaction data.",
-    "score": 82
+    "note": "Revolut disclosed sensitive customer records after employees honored fraudulent requests sent from a legitimate government email domain, exposing a trust and authorization-control failure rather than a system intrusion.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
@@ -1540,6 +1558,23 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
+    "publishedDate": "2026-09-10",
+    "id": "f0fae68644f82a83",
+    "date": "2026-09-10",
+    "source": "Brevo",
+    "title": "Attacker gained access to client accounts",
+    "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
+    "tags": [
+      "IAM",
+      "SAML",
+      "SSO",
+      "ITDR"
+    ],
+    "note": "Brevo\u2019s primary disclosure describes a tenant-boundary failure in SAML SSO that let an attacker-controlled identity provider authenticate as invited users across organizations, affecting 138 customer accounts.",
+    "score": 100
+  },
+  {
     "firstSeenAt": "2026-09-16T05:10:33Z",
     "publishedDate": "2026-09-10",
     "id": "72164e67141f310d",
@@ -1555,23 +1590,6 @@
       "Incident"
     ],
     "note": "Exploitation of an authentication bypass and static-credential flaw in Cisco FMC enabled credential theft, discovery of Active Directory service-account secrets, lateral access and ransomware deployment.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "f0fae68644f82a83",
-    "date": "2026-09-10",
-    "source": "Brevo",
-    "title": "Attacker gained access to client accounts",
-    "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
-    "tags": [
-      "IAM",
-      "Federation",
-      "SAML",
-      "Incident"
-    ],
-    "note": "Brevo\u2019s incident disclosure identifies an SAML SSO organization-boundary failure that let an attacker authenticate as users across 138 customer accounts.",
     "score": 97
   },
   {
@@ -1839,14 +1857,14 @@
     "title": "Passkey-themed social engineering leads to identity and cloud compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
     "tags": [
-      "IAM",
-      "MFA",
+      "Entra",
       "Passkeys",
-      "ITDR",
-      "OAuth"
+      "MFA",
+      "Token-Theft",
+      "ITDR"
     ],
-    "note": "Primary research details passkey- and SSO-themed AiTM and device-code attacks that steal tokens, register attacker authentication methods, and persist in Microsoft cloud identities.",
-    "score": 99
+    "note": "Microsoft documents active campaigns combining passkey-themed impersonation, device-code phishing, AiTM session theft, attacker-added MFA methods, Graph reconnaissance and cloud data collection.",
+    "score": 100
   },
   {
     "id": "3820a0f914db94fe",
@@ -2046,6 +2064,23 @@
     "note": "Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.",
     "score": 96,
     "firstSeenAt": "2026-09-13T16:30:12-06:00"
+  },
+  {
+    "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
+    "publishedDate": "2026-09-08",
+    "id": "85cd626895693702",
+    "date": "2026-09-08",
+    "source": "CSO Online",
+    "title": "BigBear 2.0 phishing campaign hijacks Microsoft 365 sessions after MFA",
+    "url": "https://www.csoonline.com/article/4219606/bigbear-2-0-phishing-campaign-hijacks-microsoft-365-sessions-after-mfa.html",
+    "tags": [
+      "MFA",
+      "Session-Theft",
+      "Phishing",
+      "Entra"
+    ],
+    "note": "CloudSEK\u2019s reporting details a phishing-as-a-service operation that captured Microsoft 365 session cookies after MFA, including 4,148 cookies and 1,032 passwords tied to hundreds of targets.",
+    "score": 96
   },
   {
     "id": "63d92b090ca17491",
