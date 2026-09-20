@@ -4,16 +4,17 @@
     "publishedDate": "2026-09-18",
     "id": "e153090477bae189",
     "date": "2026-09-18",
-    "source": "Unit 42",
+    "source": "Unit 42, Palo Alto Networks",
     "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
     "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
     "tags": [
-      "IAM",
       "NHI",
       "AI-agent authorization",
-      "Secrets"
+      "AWS",
+      "Secrets management",
+      "OAuth/session/token abuse"
     ],
-    "note": "Unit 42 demonstrates how prompt injection and default-enabled shell access in AWS AgentCore Harness can expose plaintext credentials resolved by AgentCore Identity.",
+    "note": "Shows how prompt injection against AWS AgentCore Harness can expose plaintext credentials resolved from AgentCore Identity, making runtime credential handling and tool scoping central controls for agent security.",
     "score": 98
   },
   {
@@ -31,6 +32,24 @@
       "Supply-Chain"
     ],
     "note": "A separate Brevo incident shows how a long-lived, hardcoded, full-permission Cloudflare API key enabled edge-content injection and malware delivery across customer websites.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "73ec0237ab95f6da",
+    "date": "2026-09-18",
+    "source": "CrowdSec",
+    "title": "TanStack Supply Chain Attack Analysis",
+    "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attack-analysis",
+    "tags": [
+      "OAuth/session/token abuse",
+      "Offboarding",
+      "NHI",
+      "Secrets management",
+      "Incident"
+    ],
+    "note": "The incident report traces source-code exposure to a departed employee\u2019s retained GitHub access and identifies a still-live AWS token, providing a concrete offboarding and token-lifecycle case study.",
     "score": 97
   },
   {
@@ -83,6 +102,24 @@
     ],
     "note": "Spain\u2019s data-protection authority described a breach in which an AI-assisted attacker used loose credentials and an application vulnerability to alter records and access invoices.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "dd97c15c6c0f7789",
+    "date": "2026-09-18",
+    "source": "GitHub Advisory Database",
+    "title": "Obot: Server-Side Request Forgery via remote MCP server URL",
+    "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-jgh3-fggc-mcpm",
+    "tags": [
+      "AI-agent authorization",
+      "MCP",
+      "NHI",
+      "Cloud IAM",
+      "Secrets management"
+    ],
+    "note": "A privileged Obot user could register an attacker-controlled MCP URL and make the platform query internal services or cloud metadata, illustrating authorization boundaries and credential-exposure risks in agent infrastructure.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -486,10 +523,10 @@
     "tags": [
       "IAM",
       "Authentication",
-      "Authorization",
-      "ITDR"
+      "ITDR",
+      "Incident response"
     ],
-    "note": "Cisco\u2019s advisory covers multiple unauthenticated ISE weaknesses involving posture manipulation, sensitive configuration disclosure, and certificate/key-material handling; the product is a core network-access identity control point.",
+    "note": "Cisco\u2019s primary advisory covers multiple ISE authentication-bypass flaws, including a pre-authentication weakness in an identity-control platform that was reported as actively exploited.",
     "score": 94
   },
   {
@@ -1019,6 +1056,23 @@
     ],
     "note": "An authenticated application-level user could obtain unintended temporary elevated access through the AWS IAM Identity Center TEAM sample solution, making this a direct least-privilege and elevation-control issue.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
+    "publishedDate": "2026-09-14",
+    "id": "e0b49edf38f7c66b",
+    "date": "2026-09-14",
+    "source": "AEPD",
+    "title": "Primera notificaci\u00f3n de una brecha de datos personales causada por un ataque ejecutado mediante un agente de IA",
+    "url": "https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Incident",
+      "Authorization"
+    ],
+    "note": "Spain\u2019s data-protection authority describes a reported breach in which an AI agent autonomously performed reconnaissance, accessed a system with valid credentials, modified personal data, and accessed invoices.",
+    "score": 95
   },
   {
     "id": "a08438a7ab1a57d4",
