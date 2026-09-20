@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "e153090477bae189",
+    "date": "2026-09-18",
+    "source": "Unit 42",
+    "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
+    "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent authorization",
+      "Secrets"
+    ],
+    "note": "Unit 42 demonstrates how prompt injection and default-enabled shell access in AWS AgentCore Harness can expose plaintext credentials resolved by AgentCore Identity.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
     "publishedDate": "2026-09-18",
     "id": "408ef5d6647039b9",
@@ -357,22 +374,6 @@
     "score": 69
   },
   {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "b7690ab12e8e050d",
-    "date": "2026-09-16",
-    "source": "Cisco PSIRT",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Authentication Bypass"
-    ],
-    "note": "Critical, actively exploited Cisco ISE and ISE-PIC flaw enables unauthenticated management-interface access and has no workaround beyond upgrading.",
-    "score": 100
-  },
-  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-16",
     "id": "df53bdf4ad38f71c",
@@ -408,6 +409,22 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "b7690ab12e8e050d",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Authentication"
+    ],
+    "note": "Cisco disclosed a critical ISE API authentication-control flaw that can enable unauthorized access to the identity-management appliance and web management interface.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
     "publishedDate": "2026-09-16",
     "id": "d88f3a959a00e75f",
@@ -424,6 +441,23 @@
     ],
     "note": "The update fixes Keycloak issues including realm-admin takeover through impersonation, policy-enforcer bypass, broker username collisions, and filesystem probing.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "a972ccaf525ee9f6",
+    "date": "2026-09-16",
+    "source": "Sansec",
+    "title": "Brevo supply chain attack hits 100k+ sites with Wordpress backdoors and Clickfix malware",
+    "url": "https://sansec.io/research/brevo-supply-chain-attack",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "OAuth",
+      "Incident"
+    ],
+    "note": "Sansec\u2019s independent investigation links the Brevo compromise to a long-lived, full-permission Cloudflare API key hardcoded in source and subsequent abuse across customer sites.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -708,13 +742,12 @@
     "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
     "tags": [
       "IAM",
-      "Federation",
       "OAuth",
-      "Token security",
-      "Workload identity"
+      "Session/token abuse",
+      "Federation"
     ],
-    "note": "NIST IR 8587 provides current implementation guidance for protecting SSO, federation, API, and workload-access tokens against theft, forgery, misuse, and weak lifecycle controls.",
-    "score": 99
+    "note": "NISTIR 8587 provides current implementation guidance for token lifecycle, verification, key management, SSO, federation, and API-access protections.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
@@ -769,23 +802,6 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "d907372516c16d2b",
-    "date": "2026-09-15",
-    "source": "Material Security",
-    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
-    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
-    "tags": [
-      "OAuth abuse",
-      "Session/token theft",
-      "Google Workspace",
-      "Incident"
-    ],
-    "note": "The analysis documents Russian-linked campaigns that use genuine Google OAuth flows and attacker-controlled cloud projects to steal tokens without password theft or MFA bypass, with persistence beyond password resets and session revocation.",
-    "score": 97
-  },
-  {
     "firstSeenAt": "2026-09-18T10:41:08.548357-06:00",
     "publishedDate": "2026-09-15",
     "id": "e992a1c75e729aab",
@@ -804,6 +820,22 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "d907372516c16d2b",
+    "date": "2026-09-15",
+    "source": "Material Security",
+    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
+    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
+    "tags": [
+      "OAuth",
+      "Session/token abuse",
+      "Google Workspace"
+    ],
+    "note": "This analysis shows how a malicious OAuth consent flow can grant mailbox and Drive access without password theft or MFA bypass, with tokens surviving common remediation steps.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-15T21:43:14Z",
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
@@ -813,12 +845,12 @@
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
       "IAM",
-      "Session security",
+      "Session/token abuse",
       "OAuth",
-      "Token abuse"
+      "Google Cloud"
     ],
-    "note": "Google Cloud\u2019s expanded session controls add group-, application-, Terraform-, CLI-, and API-level policy enforcement to reduce credential-theft and account-takeover exposure.",
-    "score": 87
+    "note": "Google Cloud made granular session controls generally available, including application-specific policies for the console, gcloud, and OAuth applications, alongside a 16-hour default session length.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -1526,21 +1558,21 @@
     "score": 97
   },
   {
-    "id": "oidc-key-binding-id1",
+    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
+    "publishedDate": "2026-09-10",
+    "id": "f0fae68644f82a83",
     "date": "2026-09-10",
-    "source": "OpenID Foundation",
-    "title": "OpenID Connect Key Binding 1.0 approved as an Implementer's Draft",
-    "url": "https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/",
+    "source": "Brevo",
+    "title": "Attacker gained access to client accounts",
+    "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
     "tags": [
-      "OIDC",
-      "DPoP",
-      "Tokens",
-      "Standards",
-      "Session security"
+      "IAM",
+      "Federation",
+      "SAML",
+      "Incident"
     ],
-    "note": "The first Implementer's Draft standardizes binding a public key to an OIDC ID Token using DPoP, an important step toward making stolen bearer material less reusable.",
-    "score": 96,
-    "firstSeenAt": "2026-09-13T16:30:12-06:00"
+    "note": "Brevo\u2019s incident disclosure identifies an SAML SSO organization-boundary failure that let an attacker authenticate as users across 138 customer accounts.",
+    "score": 97
   },
   {
     "id": "88b1b3c0bd98be58",
@@ -1645,6 +1677,23 @@
     "note": "A useful practitioner framing of privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.",
     "score": 89,
     "firstSeenAt": "2026-09-13T15:35:36-06:00"
+  },
+  {
+    "firstSeenAt": "2026-09-13T16:30:12-06:00",
+    "publishedDate": "2026-09-10",
+    "id": "1495f9ab67252cba",
+    "date": "2026-09-10",
+    "source": "OpenID Foundation",
+    "title": "Implementer\u2019s Draft of OpenID Connect Key Binding Approved",
+    "url": "https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/",
+    "tags": [
+      "OpenID",
+      "OAuth",
+      "Session/token abuse",
+      "Standards"
+    ],
+    "note": "The OpenID Foundation approved the first Implementer\u2019s Draft of OpenID Connect Key Binding, relevant to binding tokens more strongly to cryptographic keys and reducing replay risk.",
+    "score": 88
   },
   {
     "id": "8961d4a3fc975173",
