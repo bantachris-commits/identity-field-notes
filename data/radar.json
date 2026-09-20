@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "408ef5d6647039b9",
+    "date": "2026-09-18",
+    "source": "SecurityWeek",
+    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+    "tags": [
+      "IAM",
+      "Federation",
+      "SAML",
+      "NHI",
+      "API keys"
+    ],
+    "note": "Brevo says attackers exploited SAML SSO handling to access customer accounts and later reused a long-lived Cloudflare API key to deploy malicious code at scale.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
     "publishedDate": "2026-09-18",
     "id": "498d2d69e59c9df4",
@@ -14,6 +32,23 @@
       "NHI"
     ],
     "note": "This documented Mandiant case links a hijacked coding-assistant session to poisoned dependency installation, GitHub OAuth-token theft, and propagation across roughly 100 repositories.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "99bfca94edad0e8b",
+    "date": "2026-09-18",
+    "source": "GitLab Advisory Database",
+    "title": "Obot: OAuth Dynamic Client Registration Enables API Token Theft via Audience Confusion",
+    "url": "https://advisories.gitlab.com/golang/github.com/obot-platform/obot/GHSA-xwmw-prc4-v3cr/",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "MCP",
+      "Token abuse"
+    ],
+    "note": "The advisory describes an unauthenticated OAuth client-registration flaw that redirected authorization codes to attackers and minted victim-group bearer tokens with broader API access than intended.",
     "score": 95
   },
   {
@@ -50,6 +85,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "9332cd2646bb9a2f",
+    "date": "2026-09-18",
+    "source": "World Economic Forum",
+    "title": "Why trust in AI agents requires open global standards",
+    "url": "https://www.weforum.org/stories/artificial-intelligence/why-trust-in-ai-agents-requires-open-global-standards/",
+    "tags": [
+      "AI-agent authorization",
+      "FIDO",
+      "OAuth",
+      "NHI"
+    ],
+    "note": "This practitioner-relevant framework argues that agentic transactions need cryptographically verifiable agent identity, scoped authorization, accountability, and revocation rather than opaque bearer sessions.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
     "publishedDate": "2026-09-18",
     "id": "937487800fe2f6b2",
@@ -58,12 +110,11 @@
     "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent/",
     "tags": [
-      "AI-agent authorization",
-      "NHI",
       "IAM",
-      "Cloud security"
+      "NHI",
+      "AI-agent authorization"
     ],
-    "note": "AWS added pre-test credential validation and authenticated domain discovery to its agentic penetration-testing service, a meaningful development for safely delegating identity-aware testing to autonomous systems.",
+    "note": "AWS\u2019s penetration-testing agent can now validate supplied login credentials and discover authenticated application domains before testing, making credential scope and authentication coverage operationally visible.",
     "score": 82
   },
   {
@@ -349,12 +400,12 @@
     "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
     "tags": [
       "IAM",
-      "ITDR",
       "Authentication",
-      "Incident"
+      "ITDR",
+      "Active exploitation"
     ],
-    "note": "A CVSS 10.0, actively exploited pre-authentication bypass in Cisco ISE exposes a core network-access control plane and requires urgent patching and investigation.",
-    "score": 99
+    "note": "Cisco\u2019s CVSS 10 advisory covers an unauthenticated remote authentication bypass in ISE and confirms active exploitation, making identity-plane exposure and incident scoping urgent.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -459,6 +510,40 @@
     ],
     "note": "Google Threat Intelligence reports adversaries stealing AI-platform credentials, compromising cloud resources, harvesting secrets, and using agentic automation for credential theft and lateral movement.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "07b4c21d1da0fdf6",
+    "date": "2026-09-16",
+    "source": "BleepingComputer",
+    "title": "Spain's data agency gets first report of AI-powered data breach",
+    "url": "https://www.bleepingcomputer.com/news/security/spains-data-agency-gets-first-report-of-ai-powered-data-breach/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Least privilege",
+      "Authorization"
+    ],
+    "note": "The reported breach involved an AI agent using valid access, autonomously finding application weaknesses, modifying personal data, and accessing financial documents, while the regulator cautions that details remain under review.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "f10ecafae009239a",
+    "date": "2026-09-16",
+    "source": "Google Developers Blog",
+    "title": "Agent Anomaly Detection, now in Private Preview on the Gemini Enterprise Agent Platform",
+    "url": "https://developers.googleblog.com/agent-anomaly-detection-now-in-private-preview-on-the-gemini-enterprise-agent-platform/",
+    "tags": [
+      "ITDR",
+      "AI-agent authorization",
+      "NHI",
+      "Privilege abuse"
+    ],
+    "note": "Google\u2019s preview adds detections for agent tool misuse, identity and privilege abuse, cascading failures, rogue agents, and token-usage escalation with findings routed into Security Command Center.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
@@ -723,17 +808,17 @@
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
-    "source": "Google Cloud Blog",
+    "source": "Google Cloud",
     "title": "Introducing new session management tools with native, granular controls",
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
+      "IAM",
       "Session security",
-      "Token abuse",
-      "ITDR",
-      "Google Cloud"
+      "OAuth",
+      "Token abuse"
     ],
-    "note": "Google Cloud completed its 16-hour default session rollout and added programmatic, granular session controls through Context-Aware Access to reduce credential-theft and account-takeover impact.",
-    "score": 89
+    "note": "Google Cloud\u2019s expanded session controls add group-, application-, Terraform-, CLI-, and API-level policy enforcement to reduce credential-theft and account-takeover exposure.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
