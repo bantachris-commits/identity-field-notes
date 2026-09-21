@@ -1,21 +1,38 @@
 [
   {
+    "firstSeenAt": "2026-09-20T23:23:07.561682-06:00",
+    "publishedDate": "2026-09-19",
+    "id": "e1ebc6f438c0e96a",
+    "date": "2026-09-19",
+    "source": "The Hacker News",
+    "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
+    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US",
+    "tags": [
+      "IAM",
+      "SSO",
+      "AI-agent authorization",
+      "OAuth/session abuse"
+    ],
+    "note": "Researchers chained a public-forum compromise with an OpenAI SSO weakness to take over employee ChatGPT and Codex accounts and reach an internal repository, underscoring the blast radius of shared identity trust.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
     "publishedDate": "2026-09-18",
     "id": "e153090477bae189",
     "date": "2026-09-18",
-    "source": "Unit 42, Palo Alto Networks",
+    "source": "Unit 42",
     "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
     "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
     "tags": [
       "NHI",
       "AI-agent authorization",
       "AWS",
-      "Secrets management",
-      "OAuth/session/token abuse"
+      "secrets management",
+      "PAM"
     ],
-    "note": "Shows how prompt injection against AWS AgentCore Harness can expose plaintext credentials resolved from AgentCore Identity, making runtime credential handling and tool scoping central controls for agent security.",
-    "score": 98
+    "note": "Unit 42 shows how AWS AgentCore Harness defaults can let prompt injection reach plaintext downstream service credentials in process memory, with the practical control boundary falling on tool scoping and least privilege.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
@@ -239,23 +256,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "55acb2b729bfb598",
-    "date": "2026-09-17",
-    "source": "Brevo",
-    "title": "Security Incident - ClickFix",
-    "url": "https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "API Security",
-      "Incident"
-    ],
-    "note": "Attackers used a stolen long-lived Cloudflare API key hardcoded in source code to deploy an edge Worker that injected malware into Brevo and customer-served scripts.",
-    "score": 96
-  },
-  {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
     "publishedDate": "2026-09-17",
     "id": "4436bc9edc20363f",
@@ -316,13 +316,13 @@
     "title": "Microsoft shares workaround for Windows domain login issues",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-workaround-for-windows-domain-login-authentication-issues/",
     "tags": [
+      "Microsoft Entra",
       "Active Directory",
-      "Machine identity",
-      "Authentication",
-      "Incident"
+      "machine identity",
+      "authentication"
     ],
-    "note": "Microsoft\u2019s workaround addresses domain authentication failures caused by Machine Identity Isolation behavior after September Windows updates, with direct implications for machine-account trust and enterprise availability.",
-    "score": 88
+    "note": "Microsoft confirmed September updates can trigger Machine Identity Isolation enforcement and break domain trust, producing authentication failures for valid credentials in affected enterprise environments.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
@@ -454,12 +454,12 @@
     "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
     "tags": [
       "IAM",
-      "Authentication",
       "ITDR",
-      "Active exploitation"
+      "authentication bypass",
+      "Cisco ISE"
     ],
-    "note": "Cisco\u2019s CVSS 10 advisory covers an unauthenticated remote authentication bypass in ISE and confirms active exploitation, making identity-plane exposure and incident scoping urgent.",
-    "score": 98
+    "note": "Cisco disclosed a CVSS 10 unauthenticated ISE API authentication bypass with active exploitation, root-level impact potential, no workaround, and specific log indicators for investigation.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -890,23 +890,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-09-15T21:43:14Z",
-    "publishedDate": "2026-09-15",
-    "id": "fe184999dcccb80e",
-    "date": "2026-09-15",
-    "source": "Google Cloud",
-    "title": "Introducing new session management tools with native, granular controls",
-    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
-    "tags": [
-      "IAM",
-      "Session/token abuse",
-      "OAuth",
-      "Google Cloud"
-    ],
-    "note": "Google Cloud made granular session controls generally available, including application-specific policies for the console, gcloud, and OAuth applications, alongside a 16-hour default session length.",
-    "score": 92
-  },
-  {
     "firstSeenAt": "2026-09-16T05:10:33Z",
     "publishedDate": "2026-09-15",
     "id": "4e2b0941f8803b78",
@@ -923,6 +906,23 @@
     ],
     "note": "AWS presents a practical pattern that combines IAM Access Analyzer, CloudTrail, Bedrock and CI/CD workflows to turn unused-permission findings into reviewable policy-remediation changes and controlled role decommissioning.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-15T21:43:14Z",
+    "publishedDate": "2026-09-15",
+    "id": "fe184999dcccb80e",
+    "date": "2026-09-15",
+    "source": "Google Cloud Blog",
+    "title": "Introducing new session management tools with native, granular controls",
+    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "tags": [
+      "IAM",
+      "OAuth/session abuse",
+      "ITDR",
+      "Google Cloud"
+    ],
+    "note": "Google Cloud made granular session controls generally available through Terraform, gcloud, APIs, groups, and application targeting, including tighter reauthentication boundaries for privileged users and OAuth applications.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -1056,6 +1056,24 @@
     ],
     "note": "An authenticated application-level user could obtain unintended temporary elevated access through the AWS IAM Identity Center TEAM sample solution, making this a direct least-privilege and elevation-control issue.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-14",
+    "id": "55acb2b729bfb598",
+    "date": "2026-09-14",
+    "source": "Brevo Status",
+    "title": "Security Incident - ClickFix",
+    "url": "https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up",
+    "tags": [
+      "NHI",
+      "secrets management",
+      "API keys",
+      "PAM",
+      "supply chain"
+    ],
+    "note": "Brevo's post-mortem attributes a customer-facing supply-chain compromise to a long-lived, full-permission Cloudflare API key hardcoded in source code and lacking effective change monitoring.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
