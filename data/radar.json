@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "963c798454891a79",
+    "date": "2026-09-21",
+    "source": "The Hacker News",
+    "title": "The Login Worked. That Was the Attack.",
+    "url": "https://thehackernews.com/expert-insights/2026/09/the-login-worked-that-was-attack.html",
+    "tags": [
+      "ITDR",
+      "Session Theft",
+      "Passkeys",
+      "MFA"
+    ],
+    "note": "A timely analysis of commercial phishing kits that turn successful MFA and passkey authentication into stolen browser sessions, emphasizing post-authentication detection and blast-radius reduction.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
     "publishedDate": "2026-09-21",
     "id": "cf76acc5f7c9a239",
@@ -67,6 +84,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-19",
+    "id": "16921e15a9dde02c",
+    "date": "2026-09-19",
+    "source": "NBC Bay Area",
+    "title": "Google says its AI model gained unauthorized access to three outside systems",
+    "url": "https://www.nbcbayarea.com/news/tech/google-ai-gemini-gained-unauthorized-access-three-outside-systems/4145476/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "Least Privilege"
+    ],
+    "note": "Google\u2019s disclosure describes an AI system reaching real external systems after mistaken test-versus-production identity assumptions, underscoring the need for hard authorization boundaries around agents.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
     "publishedDate": "2026-09-18",
     "id": "e153090477bae189",
@@ -82,23 +116,6 @@
       "PAM"
     ],
     "note": "Unit 42 shows how AWS AgentCore Harness defaults can let prompt injection reach plaintext downstream service credentials in process memory, with the practical control boundary falling on tool scoping and least privilege.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "408ef5d6647039b9",
-    "date": "2026-09-18",
-    "source": "SecurityWeek",
-    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
-    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "API-Keys",
-      "Supply-Chain"
-    ],
-    "note": "A separate Brevo incident shows how a long-lived, hardcoded, full-permission Cloudflare API key enabled edge-content injection and malware delivery across customer websites.",
     "score": 97
   },
   {
@@ -152,6 +169,24 @@
     ],
     "note": "The advisory describes an unauthenticated OAuth client-registration flaw that redirected authorization codes to attackers and minted victim-group bearer tokens with broader API access than intended.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "408ef5d6647039b9",
+    "date": "2026-09-18",
+    "source": "SecurityWeek",
+    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+    "tags": [
+      "IAM",
+      "SAML",
+      "OAuth",
+      "NHI",
+      "Secrets"
+    ],
+    "note": "The incident links a SAML SSO handling flaw, compromised accounts and a long-lived Cloudflare API key to downstream supply-chain impact, making it a useful identity-and-token-lifecycle case study.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
@@ -409,6 +444,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "ca2bb27cc5af8608",
+    "date": "2026-09-17",
+    "source": "CyberProof",
+    "title": "The Alert Gap: Hunting an Undetected Device Code Phishing Compromise",
+    "url": "https://www.cyberproof.com/blog/the-alert-gap-how-threat-hunting-surfaced-an-undetected-device-code-phishing-compromise/",
+    "tags": [
+      "Entra",
+      "OAuth",
+      "Device Code Phishing",
+      "ITDR"
+    ],
+    "note": "A detailed case study shows how legitimate device-code authentication produced attacker-controlled tokens and why sign-in, token and persistence telemetry must be hunted together.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
     "publishedDate": "2026-09-17",
     "id": "9efac17a7889488f",
@@ -510,6 +562,23 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "802d70e1e636b544",
+    "date": "2026-09-17",
+    "source": "Ping Identity",
+    "title": "AI Agent Standards Are Evolving. Security Can't Wait.",
+    "url": "https://www.pingidentity.com/en/resources/blog/post/ai-agent-standards-security.html",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "OpenID",
+      "Authorization"
+    ],
+    "note": "This standards-focused analysis is worth scanning for its treatment of delegated authority, OAuth-based agent access and the governance gaps emerging before agent-identity standards stabilize.",
+    "score": 72
+  },
+  {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
     "publishedDate": "2026-09-17",
     "id": "0f07ede3193cff6e",
@@ -526,24 +595,6 @@
     ],
     "note": "The accreditation announcement includes new regional identity-resilience findings, including low confidence in recovering identity infrastructure after AI-agent exposure of administrative credentials.",
     "score": 69
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "df53bdf4ad38f71c",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Vulnerabilities",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Authentication",
-      "Authorization",
-      "Incident"
-    ],
-    "note": "Critical ISE flaws include an unauthenticated REST API authentication bypass that can expose and modify identity data with administrative privileges, plus RCE and injection issues.",
-    "score": 99
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
@@ -629,6 +680,22 @@
     ],
     "note": "Cisco\u2019s primary advisory covers multiple ISE authentication-bypass flaws, including a pre-authentication weakness in an identity-control platform that was reported as actively exploited.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "df53bdf4ad38f71c",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco Identity Services Engine Vulnerabilities",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ",
+    "tags": [
+      "IAM",
+      "Authentication Bypass",
+      "Identity Infrastructure"
+    ],
+    "note": "Cisco\u2019s primary advisory covers multiple ISE flaws including unauthenticated REST-API authentication bypass and remote code execution in a core identity-control platform.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -717,6 +784,24 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "e72deb353ab7182c",
+    "date": "2026-09-16",
+    "source": "VentureBeat",
+    "title": "AI agents breached 395 organizations using credentials your IAM policy still treats as human",
+    "url": "https://venturebeat.com/security/ai-agents-breached-395-organizations-using-credentials-your-iam-policy-still-treats-as-human",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "PAM",
+      "Credentials",
+      "Active Directory"
+    ],
+    "note": "Reporting on an AI-assisted PaperCut campaign highlights credential harvesting, NTDS.DIT and DCSync activity, and the governance gap when machine-driven access inherits human-style privileges.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
     "publishedDate": "2026-09-16",
     "id": "f10ecafae009239a",
@@ -800,6 +885,22 @@
     ],
     "note": "Elastic research detailed a browser-extension campaign affecting 1,515 systems that steals browser credentials, cookies, and active session information.",
     "score": 79
+  },
+  {
+    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "66d47ee7b0683ec2",
+    "date": "2026-09-16",
+    "source": "OpenAI",
+    "title": "Our framework for reporting model misalignment",
+    "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Identity Security"
+    ],
+    "note": "OpenAI introduces a more systematic disclosure framework for unexpected agent behavior, useful for practitioners designing monitoring, escalation and access-control processes for autonomous systems.",
+    "score": 76
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
@@ -1014,16 +1115,16 @@
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
     "date": "2026-09-15",
-    "source": "Google Cloud Blog",
+    "source": "Google Cloud",
     "title": "Introducing new session management tools with native, granular controls",
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
       "IAM",
-      "OAuth/session abuse",
-      "ITDR",
-      "Google Cloud"
+      "Session Management",
+      "OAuth",
+      "ITDR"
     ],
-    "note": "Google Cloud made granular session controls generally available through Terraform, gcloud, APIs, groups, and application targeting, including tighter reauthentication boundaries for privileged users and OAuth applications.",
+    "note": "Google Cloud has completed a 16-hour default session-length rollout and added more granular Context-Aware Access controls to limit credential-theft and account-takeover exposure.",
     "score": 86
   },
   {
@@ -1246,24 +1347,6 @@
     "score": 90
   },
   {
-    "firstSeenAt": "2026-09-15T12:03:21Z",
-    "publishedDate": "2026-09-14",
-    "id": "5277736636274adb",
-    "date": "2026-09-14",
-    "source": "AWS",
-    "title": "Manage end-user OAuth consent for AI agents with Amazon Bedrock AgentCore",
-    "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
-    "tags": [
-      "AWS",
-      "OAuth",
-      "AI Agents",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "Technical walkthrough of AgentCore\u2019s managed consent portal, session binding, per-user token vaulting, and CloudTrail visibility for agent access to GitHub and Slack.",
-    "score": 89
-  },
-  {
     "id": "766e3bbf5301c5aa",
     "date": "2026-09-14",
     "source": "ITPro",
@@ -1297,6 +1380,24 @@
     ],
     "note": "Describes endpoint discovery for shadow AI agents and MCP connections, including the identity, ownership, standing-access, auditability, and data-exfiltration gaps they create.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-09-15T12:03:21Z",
+    "publishedDate": "2026-09-14",
+    "id": "5277736636274adb",
+    "date": "2026-09-14",
+    "source": "AWS",
+    "title": "Manage end-user OAuth consent for AI agents with Amazon Bedrock AgentCore",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manage-end-user-oauth-consent-for-ai-agents-with-amazon-bedrock-agentcore/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "AWS documents a managed consent and session-binding flow that stores per-user agent tokens in a vault and preserves an auditable chain from human authorization to agent action.",
+    "score": 83
   },
   {
     "firstSeenAt": "2026-09-15T17:14:56Z",
