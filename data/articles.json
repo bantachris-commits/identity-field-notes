@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-09-21-morning-brief",
+    "date": "2026-09-21",
+    "coverageDate": "2026-09-20",
+    "edition": "MORNING EDITION // 2026.09.21",
+    "title": "AI-Agent Sandboxes Fail at the Trust Boundary",
+    "dek": "Highlights from 2026-09-20. Researchers disclosed two OpenAI Codex sandbox escapes that enabled host-level command execution and unauthorized file writes from supposedly constrained agent sessions.",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Privilege",
+      "Sandboxing"
+    ],
+    "readTime": "4 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-20, verified against linked sources. Edition dated 2026-09-21; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Machine IAM",
+        "title": "Researchers Find Two OpenAI Codex Sandbox Escapes",
+        "summary": "Researchers disclosed Heapjack, which exposed a trusted authorization token to untrusted JavaScript and enabled commands to reach an unsandboxed parent process, even in Codex's read-only mode. A second flaw, Overpatch, allowed the agent's patch tool to expand write permissions beyond the workspace and modify files such as a developer's shell configuration. OpenAI fixed the issues in Codex Desktop build 26.818.21641 and Codex CLI 0.149.0, according to the researchers. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/))",
+        "why": "The incident shows that an agent sandbox is only as strong as the authorization and orchestration layers around it; trusted control material must not be reachable from the untrusted execution context. Practitioners should update affected Codex deployments, treat repositories and agent tools as hostile inputs, and review host-level integrations, Unix sockets, configuration files, and approval bypass paths. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/))",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-20",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-18-morning-brief",
     "date": "2026-09-18",
     "coverageDate": "2026-09-17",
@@ -14,7 +45,7 @@
       "Identity Threat"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-17, verified against linked sources. Edition dated 2026-09-18; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
