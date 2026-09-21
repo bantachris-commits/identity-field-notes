@@ -17,6 +17,41 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "94a167fdb1277332",
+    "date": "2026-09-21",
+    "source": "Google Cloud",
+    "title": "Strengthen your CI/CD pipeline with new Secure Source Manager capabilities",
+    "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Machine Identity",
+      "Authorization",
+      "CI/CD"
+    ],
+    "note": "Two generally available Secure Source Manager capabilities address authentication and authorization risks in private-cloud source control and CI/CD workflows.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "d046944ddf74253c",
+    "date": "2026-09-21",
+    "source": "SecurityWeek",
+    "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, \u2018Rapuncel\u2019 Stealer",
+    "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+    "tags": [
+      "Credential Theft",
+      "Session Tokens",
+      "Secrets",
+      "Endpoint"
+    ],
+    "note": "A fake LastPass Authenticator campaign steals browser passwords, Windows credentials, and application tokens after disabling security tooling.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
     "publishedDate": "2026-09-21",
     "id": "cf76acc5f7c9a239",
@@ -31,6 +66,23 @@
     ],
     "note": "Descope\u2019s expansion to seven residency regions is relevant to identity architects handling regulated identity stores, authentication telemetry, and cross-border audit data.",
     "score": 62
+  },
+  {
+    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
+    "publishedDate": "2026-09-20",
+    "id": "533b089bb91a7157",
+    "date": "2026-09-20",
+    "source": "BleepingComputer",
+    "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
+    "url": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Privilege",
+      "Sandboxing"
+    ],
+    "note": "Two flaws show how an AI coding agent can cross a trust boundary and execute commands on a developer host without an approval prompt.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-20T23:23:07.561682-06:00",
@@ -180,29 +232,12 @@
     "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
     "tags": [
       "IAM",
-      "SAML",
+      "Federation",
       "OAuth",
-      "NHI",
-      "Secrets"
+      "Secrets",
+      "Supply Chain"
     ],
-    "note": "The incident links a SAML SSO handling flaw, compromised accounts and a long-lived Cloudflare API key to downstream supply-chain impact, making it a useful identity-and-token-lifecycle case study.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "06d4854d19963488",
-    "date": "2026-09-18",
-    "source": "Dark Reading",
-    "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
-    "tags": [
-      "AI Agents",
-      "IAM",
-      "Authorization",
-      "Incident"
-    ],
-    "note": "Spain\u2019s data-protection authority described a breach in which an AI-assisted attacker used loose credentials and an application vulnerability to alter records and access invoices.",
+    "note": "Attackers abused a SAML SSO handling weakness to reach 138 accounts, then leveraged a compromised long-lived Cloudflare API key to deploy malicious code.",
     "score": 94
   },
   {
@@ -222,6 +257,23 @@
     ],
     "note": "A privileged Obot user could register an attacker-controlled MCP URL and make the platform query internal services or cloud metadata, illustrating authorization boundaries and credential-exposure risks in agent infrastructure.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "06d4854d19963488",
+    "date": "2026-09-18",
+    "source": "Dark Reading",
+    "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
+    "tags": [
+      "AI Agents",
+      "Compromised Credentials",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "Spain\u2019s data-protection regulator described an attack in which AI-assisted reconnaissance found loose credentials and an application weakness that enabled data access and modification.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
@@ -315,12 +367,13 @@
     "url": "https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse",
     "tags": [
       "OAuth",
+      "Consent",
       "Authorization",
-      "Token Security",
-      "ITDR"
+      "ITDR",
+      "Session Tokens"
     ],
-    "note": "A useful practitioner analysis of why MFA does not address malicious OAuth consent, excessive scopes, refresh-token persistence, or post-consent detection and revocation.",
-    "score": 80
+    "note": "The analysis usefully separates authentication strength from post-login authorization risk, emphasizing consent governance, scope discipline, monitoring, and rapid revocation.",
+    "score": 81
   },
   {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
@@ -1400,22 +1453,6 @@
     "score": 83
   },
   {
-    "firstSeenAt": "2026-09-15T17:14:56Z",
-    "publishedDate": "2026-09-14",
-    "id": "66cb64d3cc7e0346",
-    "date": "2026-09-14",
-    "source": "SecurityWeek",
-    "title": "Telus Warns Customers of Account Breaches",
-    "url": "https://www.securityweek.com/telus-warns-customers-of-account-breaches/",
-    "tags": [
-      "IAM",
-      "Credential stuffing",
-      "Account takeover"
-    ],
-    "note": "Telus says compromised credentials were used over a multi-month period to access subscriber accounts and alter services, providing a current example of credential-reuse risk and weak account protection.",
-    "score": 82
-  },
-  {
     "id": "cfe35776fa2ad314",
     "date": "2026-09-14",
     "source": "Microsoft Entra",
@@ -1430,6 +1467,22 @@
     "note": "The integration is relevant to joiner-mover-leaver practitioners because it targets hybrid identity lifecycle governance between HR data and Entra.",
     "score": 82,
     "firstSeenAt": "2026-09-15T21:43:14Z"
+  },
+  {
+    "firstSeenAt": "2026-09-15T17:14:56Z",
+    "publishedDate": "2026-09-14",
+    "id": "66cb64d3cc7e0346",
+    "date": "2026-09-14",
+    "source": "SecurityWeek",
+    "title": "Telus Warns Customers of Account Breaches",
+    "url": "https://www.securityweek.com/telus-warns-customers-of-account-breaches/",
+    "tags": [
+      "Compromised Credentials",
+      "Account Takeover",
+      "CIAM"
+    ],
+    "note": "Telus reported unauthorized access to customer accounts using compromised credentials, with the pattern consistent with a possible credential-stuffing campaign although the source was not confirmed.",
+    "score": 76
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -1713,23 +1766,6 @@
     "firstSeenAt": "2026-09-15T05:15:16Z"
   },
   {
-    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
-    "publishedDate": "2026-09-11",
-    "id": "44a8108e0c55ecaf",
-    "date": "2026-09-11",
-    "source": "SecurityWeek",
-    "title": "Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack",
-    "url": "https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/",
-    "tags": [
-      "SAML",
-      "Federation",
-      "Authorization",
-      "Incident"
-    ],
-    "note": "Brevo disclosed a cross-organization SAML scoping failure that let an attacker using its own identity provider access organizations reachable by invited legitimate users.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-09-14T21:59:58Z",
     "publishedDate": "2026-09-11",
     "id": "0ffcbeaed46d9efe",
@@ -1814,6 +1850,24 @@
     ],
     "note": "Research note connects infostealer-compromised AI-service and enterprise SSO tokens to MFA bypass and highlights session lifecycle and token-revocation requirements for AI identities.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
+    "publishedDate": "2026-09-11",
+    "id": "44a8108e0c55ecaf",
+    "date": "2026-09-11",
+    "source": "SecurityWeek",
+    "title": "Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack",
+    "url": "https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/",
+    "tags": [
+      "Federation",
+      "SAML",
+      "Account Linking",
+      "OAuth",
+      "Supply Chain"
+    ],
+    "note": "Brevo\u2019s incident illustrates how an attacker-created SSO configuration and invited-user trust can turn federation behavior into account access and downstream phishing capability.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-09-13T21:06:45Z",
