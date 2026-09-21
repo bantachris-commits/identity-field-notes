@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "cf76acc5f7c9a239",
+    "date": "2026-09-21",
+    "source": "Descope",
+    "title": "Descope Data Residency Is Now Available in Seven Regions",
+    "url": "https://www.descope.com/blog/post/data-residency",
+    "tags": [
+      "CIAM",
+      "Data Governance",
+      "Identity Security"
+    ],
+    "note": "Descope\u2019s expansion to seven residency regions is relevant to identity architects handling regulated identity stores, authentication telemetry, and cross-border audit data.",
+    "score": 62
+  },
+  {
     "firstSeenAt": "2026-09-20T23:23:07.561682-06:00",
     "publishedDate": "2026-09-19",
     "id": "e1ebc6f438c0e96a",
@@ -15,6 +31,40 @@
     ],
     "note": "Researchers chained a public-forum compromise with an OpenAI SSO weakness to take over employee ChatGPT and Codex accounts and reach an internal repository, underscoring the blast radius of shared identity trust.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-19",
+    "id": "f8afd4069f0941a6",
+    "date": "2026-09-19",
+    "source": "BleepingComputer",
+    "title": "BragJack attacks hijack AI browser agents through malicious extensions",
+    "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+    "tags": [
+      "AI Agents",
+      "Session Security",
+      "OAuth",
+      "Non-Human Identity"
+    ],
+    "note": "The research shows how a malicious browser extension can seize an AI browser agent\u2019s existing privileges and perform actions on the user\u2019s behalf without additional interaction.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-19",
+    "id": "1d48f56297c3af3f",
+    "date": "2026-09-19",
+    "source": "Axios",
+    "title": "Google Gemini accessed three companies during AI hacking test",
+    "url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
+    "tags": [
+      "AI Agents",
+      "Exposed Secrets",
+      "Authentication",
+      "Authorization"
+    ],
+    "note": "Google\u2019s evaluation exposed identity-control weaknesses when Gemini reached real systems by guessing a password and using credentials found in public repositories after unintended internet access.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
@@ -139,6 +189,23 @@
     "score": 92
   },
   {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "524128cfb99a04ce",
+    "date": "2026-09-18",
+    "source": "Red Hat",
+    "title": "CVE-2026-94000",
+    "url": "https://access.redhat.com/security/cve/cve-2026-94000",
+    "tags": [
+      "IAM",
+      "Authorization",
+      "Privilege Escalation",
+      "Keycloak"
+    ],
+    "note": "A Keycloak Admin REST API authorization failure lets a delegated administrator add themselves to a high-privilege group and potentially obtain realm-admin control.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
     "publishedDate": "2026-09-18",
     "id": "f3de0e1ae86a2dd7",
@@ -219,6 +286,40 @@
     ],
     "note": "A useful practitioner analysis of why MFA does not address malicious OAuth consent, excessive scopes, refresh-token persistence, or post-consent detection and revocation.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "454198dd47723dc3",
+    "date": "2026-09-18",
+    "source": "Descope",
+    "title": "Build Auth-Ready MCP Apps With Descope and Skybridge",
+    "url": "https://www.descope.com/blog/post/descope-skybridge-mcp",
+    "tags": [
+      "MCP",
+      "OAuth",
+      "AI Agents",
+      "Authorization"
+    ],
+    "note": "The integration illustrates a concrete OAuth 2.1 and scope-enforcement pattern for MCP applications, including dynamic client registration and authorization before tool execution.",
+    "score": 79
+  },
+  {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "6ee4e43b752e44b0",
+    "date": "2026-09-18",
+    "source": "FIDO Alliance",
+    "title": "Passkeys in the post-quantum era: Why FIDO needs more than new algorithms",
+    "url": "https://fidoalliance.org/biometric-update-passkeys-in-the-post-quantum-era-why-fido-needs-more-than-new-algorithms/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "WebAuthn",
+      "Authentication"
+    ],
+    "note": "The piece usefully frames passkey security as an ecosystem problem spanning authenticators, CTAP, WebAuthn, metadata, and PKI rather than as a cryptography-only issue.",
+    "score": 76
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
@@ -883,10 +984,11 @@
     "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
       "OAuth",
-      "Session/token abuse",
+      "Token Security",
+      "Session Security",
       "Google Workspace"
     ],
-    "note": "This analysis shows how a malicious OAuth consent flow can grant mailbox and Drive access without password theft or MFA bypass, with tokens surviving common remediation steps.",
+    "note": "This analysis documents an in-the-wild OAuth consent and token-theft path that bypasses password and MFA defenses and can survive password resets and ordinary session revocation.",
     "score": 94
   },
   {
