@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "6ccedc5e37be7c18",
+    "date": "2026-09-21",
+    "source": "Microsoft",
+    "title": "Microsoft reminds admins to migrate Entra ID users to passkeys",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "Passkeys",
+      "MFA"
+    ],
+    "note": "Microsoft\u2019s retirement of SMS first-factor sign-in makes phishing-resistant Entra authentication migration and inventory an immediate operational priority.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
     "publishedDate": "2026-09-21",
     "id": "1a49f4625fa1204c",
@@ -11,10 +28,10 @@
       "NHI",
       "OAuth",
       "Secrets",
-      "Supply Chain"
+      "Incident"
     ],
-    "note": "Compromised credentials for third-party applications were used to access merchant data and inject scripts, illustrating the identity and blast-radius risks of delegated SaaS integrations.",
-    "score": 91
+    "note": "Compromised third-party application credentials were used to access merchant data and inject scripts, illustrating the blast radius of unmanaged integration identities.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
@@ -133,6 +150,23 @@
     ],
     "note": "The research shows how a malicious browser extension can seize an AI browser agent\u2019s existing privileges and perform actions on the user\u2019s behalf without additional interaction.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-19",
+    "id": "e700c1ad2dd66f47",
+    "date": "2026-09-19",
+    "source": "arXiv",
+    "title": "Security of Agent-Integrated Software: When Human Operations and Agent Actions Coexist",
+    "url": "https://arxiv.org/abs/2609.23226",
+    "tags": [
+      "AI-agent authorization",
+      "IAM",
+      "Authorization",
+      "Research"
+    ],
+    "note": "The paper frames agent security around context misuse, authorization violations, execution control, and effect integrity across human and agent operation paths.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
@@ -598,6 +632,23 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "e4a8680135abb9ff",
+    "date": "2026-09-17",
+    "source": "BleepingComputer",
+    "title": "What Recent AI-Powered Attacks Mean for Your Identity Security",
+    "url": "https://www.bleepingcomputer.com/news/security/what-recent-ai-powered-attacks-mean-for-your-identity-security/",
+    "tags": [
+      "ITDR",
+      "Compromised credentials",
+      "Token abuse",
+      "AI"
+    ],
+    "note": "The analysis connects recent AI-enabled operations to stolen credentials and tokens as practical initial-access and lateral-movement mechanisms.",
+    "score": 83
+  },
+  {
     "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
     "publishedDate": "2026-09-17",
     "id": "ce8e71e69e69f035",
@@ -673,12 +724,12 @@
     "title": "AI Agent Standards Are Evolving. Security Can't Wait.",
     "url": "https://www.pingidentity.com/en/resources/blog/post/ai-agent-standards-security.html",
     "tags": [
-      "AI Agents",
-      "NHI",
+      "AI-agent authorization",
       "OAuth",
-      "Authorization"
+      "OpenID",
+      "IAM"
     ],
-    "note": "The article provides a concise practitioner view of the unsettled standards landscape across IETF, OpenID, and MCP, and emphasizes ownership, delegation, governance, and runtime controls before standards converge.",
+    "note": "A useful current overview of agent identity standards, delegated authority, Cross-App Access, OAuth extensions, and runtime governance gaps.",
     "score": 78
   },
   {
@@ -1178,6 +1229,24 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "946fac6353a12972",
+    "date": "2026-09-15",
+    "source": "IETF",
+    "title": "AI Identity Management System",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-wimse-aims-00.html",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth",
+      "OpenID",
+      "NHI",
+      "Standards"
+    ],
+    "note": "This new WIMSE Internet-Draft proposes applying and extending existing OAuth and workload-identity standards for authenticating and authorizing AI-agent interactions.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-15",
     "id": "d907372516c16d2b",
@@ -1187,12 +1256,12 @@
     "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
     "tags": [
       "OAuth",
-      "Token Security",
-      "Session Security",
-      "Google Workspace"
+      "Token abuse",
+      "Google Workspace",
+      "Incident"
     ],
-    "note": "This analysis documents an in-the-wild OAuth consent and token-theft path that bypasses password and MFA defenses and can survive password resets and ordinary session revocation.",
-    "score": 94
+    "note": "The report details one-click OAuth consent abuse against Google Workspace and explains why issued tokens can survive password resets and ordinary session revocation.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -1221,12 +1290,12 @@
     "title": "Introducing new session management tools with native, granular controls",
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
-      "IAM",
-      "Session Security",
-      "OAuth",
-      "Token Abuse"
+      "ITDR",
+      "Session security",
+      "Token abuse",
+      "Google Cloud"
     ],
-    "note": "Google Cloud expands session controls with Terraform, CLI, API, group-based targeting, and per-application policies that can shorten reauthentication windows for privileged users and sensitive OAuth applications.",
+    "note": "Google Cloud is moving beyond broad session lifetimes toward granular Context-Aware Access controls intended to reduce credential-theft and account-takeover impact.",
     "score": 89
   },
   {
