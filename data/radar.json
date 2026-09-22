@@ -1,5 +1,41 @@
 [
   {
+    "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "125a18e03bff65c1",
+    "date": "2026-09-22",
+    "source": "Check Point Research",
+    "title": "21st September \u2013 Threat Intelligence Report",
+    "url": "https://research.checkpoint.com/2026/21st-september-threat-intelligence-report/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "MFA",
+      "Token Abuse",
+      "ITDR"
+    ],
+    "note": "Highlights GhostCode, a device-code phishing kit that abuses OAuth to capture Microsoft 365 tokens, register attacker-controlled devices, and establish persistence without stealing passwords or directly bypassing MFA.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "1a49f4625fa1204c",
+    "date": "2026-09-21",
+    "source": "BleepingComputer",
+    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "Secrets",
+      "Supply Chain",
+      "IAM"
+    ],
+    "note": "Documents a real third-party application-key compromise in which attackers accessed merchant customer records through the Ribon integration, underscoring app-credential governance and revocation gaps.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
     "publishedDate": "2026-09-21",
     "id": "6ccedc5e37be7c18",
@@ -17,23 +53,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "1a49f4625fa1204c",
-    "date": "2026-09-21",
-    "source": "BleepingComputer",
-    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
-    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "Secrets",
-      "Incident"
-    ],
-    "note": "Compromised third-party application credentials were used to access merchant data and inject scripts, illustrating the blast radius of unmanaged integration identities.",
-    "score": 88
-  },
-  {
     "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
     "publishedDate": "2026-09-21",
     "id": "963c798454891a79",
@@ -43,12 +62,13 @@
     "url": "https://thehackernews.com/expert-insights/2026/09/the-login-worked-that-was-attack.html",
     "tags": [
       "IAM",
+      "MFA",
+      "Session Theft",
       "ITDR",
-      "Session Security",
-      "Token Abuse"
+      "PAM"
     ],
-    "note": "A useful practitioner-focused analysis of browser-based session theft, including why password resets do not remediate stolen sessions and how privilege, session lifetime, and post-authentication monitoring determine blast radius.",
-    "score": 88
+    "note": "Useful analysis of session-cookie theft at scale and why post-authentication behavior, session lifetime, device binding, and standing privilege matter after MFA succeeds.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
@@ -598,6 +618,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "ce8e71e69e69f035",
+    "date": "2026-09-17",
+    "source": "Delinea",
+    "title": "Delinea Joins Anthropic's Project Glasswing",
+    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing",
+    "tags": [
+      "PAM",
+      "Machine Identity",
+      "AI-Agent Authorization",
+      "Secrets"
+    ],
+    "note": "Material PAM development: Delinea is applying Anthropic\u2019s frontier model to test vaulting, secret rotation, session brokering, and just-in-time authorization code in an isolated environment.",
+    "score": 85
+  },
+  {
     "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
     "publishedDate": "2026-09-17",
     "id": "fc4dafc7bc11bbd5",
@@ -647,23 +684,6 @@
     ],
     "note": "The analysis connects recent AI-enabled operations to stolen credentials and tokens as practical initial-access and lateral-movement mechanisms.",
     "score": 83
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "ce8e71e69e69f035",
-    "date": "2026-09-17",
-    "source": "Delinea",
-    "title": "Delinea Joins Anthropic's Project Glasswing",
-    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing",
-    "tags": [
-      "PAM",
-      "Secrets",
-      "AI Agents",
-      "Research"
-    ],
-    "note": "Delinea is applying Anthropic\u2019s frontier models to its own vaulting, secrets and privileged-session-brokering code, making identity infrastructure a direct target for AI-assisted defensive research.",
-    "score": 82
   },
   {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
@@ -1211,6 +1231,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "d907372516c16d2b",
+    "date": "2026-09-15",
+    "source": "Material Security",
+    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
+    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
+    "tags": [
+      "OAuth",
+      "Session Theft",
+      "Token Abuse",
+      "AI-Agent Authorization"
+    ],
+    "note": "Shows how malicious OAuth consent can grant mailbox and Drive access without credential theft or MFA bypass, while tokens may survive password resets and ordinary session revocation.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
     "publishedDate": "2026-09-15",
     "id": "0aa05a6b1187f435",
@@ -1247,41 +1284,6 @@
     "score": 95
   },
   {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "d907372516c16d2b",
-    "date": "2026-09-15",
-    "source": "Material Security",
-    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
-    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
-    "tags": [
-      "OAuth",
-      "Token abuse",
-      "Google Workspace",
-      "Incident"
-    ],
-    "note": "The report details one-click OAuth consent abuse against Google Workspace and explains why issued tokens can survive password resets and ordinary session revocation.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-15",
-    "id": "4e2b0941f8803b78",
-    "date": "2026-09-15",
-    "source": "AWS Security Blog",
-    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
-    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
-    "tags": [
-      "IAM",
-      "Least-Privilege",
-      "CI/CD",
-      "NHI",
-      "AI"
-    ],
-    "note": "AWS presents a practical pattern that combines IAM Access Analyzer, CloudTrail, Bedrock and CI/CD workflows to turn unused-permission findings into reviewable policy-remediation changes and controlled role decommissioning.",
-    "score": 89
-  },
-  {
     "firstSeenAt": "2026-09-15T21:43:14Z",
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
@@ -1297,6 +1299,24 @@
     ],
     "note": "Google Cloud is moving beyond broad session lifetimes toward granular Context-Aware Access controls intended to reduce credential-theft and account-takeover impact.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-15",
+    "id": "4e2b0941f8803b78",
+    "date": "2026-09-15",
+    "source": "AWS Security Blog",
+    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
+    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "CIEM",
+      "NHI",
+      "Least Privilege"
+    ],
+    "note": "Presents an actionable pattern connecting IAM Access Analyzer, CloudTrail, Bedrock, and CI/CD to turn excessive-permission findings into reviewed code changes and controlled decommissioning.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
