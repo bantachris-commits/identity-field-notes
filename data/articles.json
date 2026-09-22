@@ -1,5 +1,81 @@
 [
   {
+    "id": "2026-09-22-morning-brief",
+    "date": "2026-09-22",
+    "coverageDate": "2026-09-21",
+    "edition": "MORNING EDITION // 2026.09.22",
+    "title": "Identity Field Notes: September 21 Recap",
+    "dek": "Highlights from 2026-09-21. Yesterday\u2019s strongest identity signals were a hardening passkey deadline, a third-party application-key breach, session theft, and new controls for CI/CD authorization.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "NHI",
+      "Authorization",
+      "Threat"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-21, verified against linked sources. Edition dated 2026-09-22; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Authentication",
+        "title": "Microsoft sets a February 2027 deadline for moving Entra users off SMS first-factor sign-in",
+        "summary": "Microsoft reminded Entra ID administrators that SMS and voice sign-in will be retired as native first-factor methods beginning February 1, 2027. Organizations using SMS first factor must migrate users to alternatives such as passkeys, FIDO2 security keys, QR authentication, or other supported phishing-resistant methods; SMS used as a second factor is not covered by this retirement.",
+        "why": "The immediate task is inventory, not enrollment: identify users and applications still dependent on SMS or voice as the initial authentication step, then test passkey registration and recovery paths before the deadline. Microsoft\u2019s automatic passkey prompts may help, but they do not remove device, legacy-app, or exception-management work.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-21",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Breach",
+        "title": "Compromised Ribon application credentials exposed BigCommerce merchant data",
+        "summary": "BigCommerce said credentials belonging to the third-party Ribon and Ribon 1.5 applications were compromised and used to access shopper data and inject malicious scripts into a small number of merchant storefronts between September 13 and September 17. BigCommerce removed the applications from affected stores and said its core platform was not breached; reported exposed data included names, email addresses, phone numbers, and shipping addresses.",
+        "why": "The incident is a practical reminder that application keys and integration identities can cross tenant boundaries with substantial authority. Merchants should review third-party app grants, rotate or revoke integration credentials after suspected compromise, and treat vendor-connected identities as part of the breach-response perimeter.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-21",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Threat",
+        "title": "A fake LastPass Authenticator campaign pairs credential theft with security-tool termination",
+        "summary": "SecurityWeek reported that attackers used fraudulent GitHub-hosted LastPass installers to deliver the Rapuncel infostealer. The campaign reportedly impersonated at least 40 organizations, used a Microsoft-attested kernel driver intended to terminate 145 security products, and targeted browser passwords, Windows credentials, application tokens, cryptocurrency wallets, and other sensitive data.",
+        "why": "For identity teams, the important payload is broader than password theft: browser sessions, tokens, and credential-store material can enable access without a fresh login. Software allowlisting, endpoint remediation that includes token revocation, and tighter controls on high-risk downloads remain necessary even when the lure impersonates a familiar identity product.",
+        "source": "SecurityWeek",
+        "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-21",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authorization",
+        "title": "Google Cloud adds granular Code Owners and private-network CI/CD protections to Secure Source Manager",
+        "summary": "Google Cloud announced general availability of new Secure Source Manager capabilities for CI/CD security. The update adds per-path and per-branch Code Owners, independent approval requirements, and Developer Connect integration for private-network workflows connecting source repositories, Cloud Build, artifact storage, and deployment systems.",
+        "why": "The meaningful identity change is authorization granularity across the delivery chain: repository permissions and pull-request approvals can be tied to files, branches, and independent security teams rather than broad approver roles. Teams should assess whether their current CODEOWNERS and service-account model protects deployment definitions and build infrastructure with the same rigor as production resources.",
+        "source": "Google Cloud",
+        "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-21",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Threat",
+        "title": "Session theft turns successful authentication into the attack path",
+        "summary": "The Hacker News examined adversary-in-the-middle phishing services and infostealer campaigns that capture authenticated browser sessions or refresh material after users complete legitimate sign-ins. The article argues that password resets alone do not remediate stolen sessions and emphasizes session and token revocation, post-authentication monitoring, shorter-lived authority, and reduced standing privilege.",
+        "why": "The analysis is practitioner-relevant but partly vendor-sourced and should not be treated as an independently measured incident report. Its core operational point is sound: incident playbooks must distinguish credential compromise from session compromise and explicitly revoke active sessions and refresh tokens, then contain the endpoint or browser that may recapture them.",
+        "source": "The Hacker News",
+        "url": "https://thehackernews.com/expert-insights/2026/09/the-login-worked-that-was-attack.html",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-21",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-21-morning-brief",
     "date": "2026-09-21",
     "coverageDate": "2026-09-20",
@@ -13,7 +89,7 @@
       "Sandboxing"
     ],
     "readTime": "4 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-20, verified against linked sources. Edition dated 2026-09-21; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
