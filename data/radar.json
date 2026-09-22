@@ -26,14 +26,14 @@
     "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
     "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
     "tags": [
+      "IAM",
       "NHI",
       "OAuth",
-      "Secrets",
-      "Supply Chain",
-      "IAM"
+      "Third-party access",
+      "Breach"
     ],
-    "note": "Documents a real third-party application-key compromise in which attackers accessed merchant customer records through the Ribon integration, underscoring app-credential governance and revocation gaps.",
-    "score": 95
+    "note": "Compromised third-party application credentials were used to access shopper data and inject scripts across affected BigCommerce stores, highlighting SaaS integration and application-key risk.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -69,6 +69,23 @@
     ],
     "note": "Useful analysis of session-cookie theft at scale and why post-authentication behavior, session lifetime, device binding, and standing privilege matter after MFA succeeds.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-22T15:37:29.894588-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "14b245ef346a4d25",
+    "date": "2026-09-21",
+    "source": "Keeper Security",
+    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
+    "url": "https://www.keepersecurity.com/blog/2026/09/21/keeper-and-sailpoint-partner-to-automate-privileged-access-governance/",
+    "tags": [
+      "PAM",
+      "IGA",
+      "Offboarding",
+      "NHI"
+    ],
+    "note": "The new connector links SailPoint provisioning, deprovisioning and certifications with KeeperPAM vaults and entitlements, addressing the IGA-to-PAM enforcement gap.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
@@ -227,18 +244,18 @@
     "publishedDate": "2026-09-18",
     "id": "e153090477bae189",
     "date": "2026-09-18",
-    "source": "Unit 42",
+    "source": "Palo Alto Networks Unit 42",
     "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
     "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
     "tags": [
+      "IAM",
       "NHI",
       "AI-agent authorization",
-      "AWS",
-      "secrets management",
-      "PAM"
+      "Secrets",
+      "AWS"
     ],
-    "note": "Unit 42 shows how AWS AgentCore Harness defaults can let prompt injection reach plaintext downstream service credentials in process memory, with the practical control boundary falling on tool scoping and least privilege.",
-    "score": 97
+    "note": "Demonstrates how prompt injection plus AgentCore Harness\u2019s default shell tool could expose plaintext service credentials from process memory and enable token replay.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
@@ -532,24 +549,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "9e1edda0cb7281f1",
-    "date": "2026-09-17",
-    "source": "Brevo / BleepingComputer",
-    "title": "Brevo supply-chain attack injected ClickFix scripts on customer sites",
-    "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
-    "tags": [
-      "NHI",
-      "Secrets Management",
-      "Least Privilege",
-      "Supply Chain",
-      "Cloud"
-    ],
-    "note": "Attackers used a long-lived, full-permission Cloudflare API key hardcoded in source code to deploy a Worker that modified CDN responses and distributed malware across customer-facing sites.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
     "publishedDate": "2026-09-17",
     "id": "1f6331a858ab0fc3",
@@ -565,6 +564,24 @@
     ],
     "note": "Analysis of roughly 82,000 public MCP configurations finds widespread hardcoded, opaque, broad-scope and non-expiring credentials in AI-agent tooling.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "9e1edda0cb7281f1",
+    "date": "2026-09-17",
+    "source": "BleepingComputer",
+    "title": "Brevo supply-chain attack injected ClickFix scripts on customer sites",
+    "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+    "tags": [
+      "PAM",
+      "Secrets",
+      "API keys",
+      "Supply chain",
+      "Breach"
+    ],
+    "note": "Attackers abused a long-lived, full-permission Cloudflare API key hardcoded in source code to create edge Workers and distribute malware through customer-facing sites.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
@@ -599,6 +616,24 @@
     ],
     "note": "Microsoft confirmed September updates can trigger Machine Identity Isolation enforcement and break domain trust, producing authentication failures for valid credentials in affected enterprise environments.",
     "score": 90
+  },
+  {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "e4a8680135abb9ff",
+    "date": "2026-09-17",
+    "source": "BleepingComputer",
+    "title": "What Recent AI-Powered Attacks Mean for Your Identity Security",
+    "url": "https://www.bleepingcomputer.com/news/security/what-recent-ai-powered-attacks-mean-for-your-identity-security/",
+    "tags": [
+      "Identity security",
+      "NHI",
+      "AI-agent authorization",
+      "Credentials",
+      "Threat research"
+    ],
+    "note": "Useful synthesis of recent campaigns in which AI-augmented operations accelerated credential harvesting, cloud compromise and third-party access abuse.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
@@ -667,23 +702,6 @@
     ],
     "note": "Delinea is applying Anthropic\u2019s frontier model to its own vaulting, secrets, session-brokering, and authorization code, making this a notable security-engineering move from a PAM vendor.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "e4a8680135abb9ff",
-    "date": "2026-09-17",
-    "source": "BleepingComputer",
-    "title": "What Recent AI-Powered Attacks Mean for Your Identity Security",
-    "url": "https://www.bleepingcomputer.com/news/security/what-recent-ai-powered-attacks-mean-for-your-identity-security/",
-    "tags": [
-      "ITDR",
-      "Compromised credentials",
-      "Token abuse",
-      "AI"
-    ],
-    "note": "The analysis connects recent AI-enabled operations to stolen credentials and tokens as practical initial-access and lateral-movement mechanisms.",
-    "score": 83
   },
   {
     "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
@@ -779,12 +797,12 @@
     "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
     "tags": [
       "IAM",
-      "ITDR",
-      "authentication bypass",
-      "Cisco ISE"
+      "Authentication",
+      "Authorization",
+      "Incident response"
     ],
-    "note": "Cisco disclosed a CVSS 10 unauthenticated ISE API authentication bypass with active exploitation, root-level impact potential, no workaround, and specific log indicators for investigation.",
-    "score": 97
+    "note": "Critical advisory for an unauthenticated remote authentication bypass in Cisco ISE\u2019s web-management API, directly relevant to network-access identity infrastructure.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
@@ -1188,11 +1206,11 @@
     "tags": [
       "IAM",
       "OAuth",
+      "Tokens",
       "Federation",
-      "Token Abuse",
-      "Machine Identity"
+      "Standards"
     ],
-    "note": "New NIST IR 8587 provides implementation guidance for protecting federation assertions, API tokens, workload credentials, signing keys, and token lifecycles.",
+    "note": "New final guidance covers token lifecycle, verification, key management, federation, SSO and API-access controls for agencies and cloud providers.",
     "score": 97
   },
   {
