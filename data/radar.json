@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "1a49f4625fa1204c",
+    "date": "2026-09-21",
+    "source": "BleepingComputer",
+    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "Compromised credentials for third-party applications were used to access merchant data and inject scripts, illustrating the identity and blast-radius risks of delegated SaaS integrations.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
     "publishedDate": "2026-09-21",
     "id": "963c798454891a79",
@@ -8,12 +25,12 @@
     "title": "The Login Worked. That Was the Attack.",
     "url": "https://thehackernews.com/expert-insights/2026/09/the-login-worked-that-was-attack.html",
     "tags": [
+      "IAM",
       "ITDR",
-      "Session Theft",
-      "Passkeys",
-      "MFA"
+      "Session Security",
+      "Token Abuse"
     ],
-    "note": "A timely analysis of commercial phishing kits that turn successful MFA and passkey authentication into stolen browser sessions, emphasizing post-authentication detection and blast-radius reduction.",
+    "note": "A useful practitioner-focused analysis of browser-based session theft, including why password resets do not remediate stolen sessions and how privilege, session lifetime, and post-authentication monitoring determine blast radius.",
     "score": 88
   },
   {
@@ -22,17 +39,16 @@
     "id": "94a167fdb1277332",
     "date": "2026-09-21",
     "source": "Google Cloud",
-    "title": "Strengthen your CI/CD pipeline with new Secure Source Manager capabilities",
+    "title": "Strengthen Your CI/CD Pipeline With New Secure Source Manager Capabilities",
     "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities",
     "tags": [
       "IAM",
-      "NHI",
-      "Machine Identity",
+      "CI/CD",
       "Authorization",
-      "CI/CD"
+      "Supply Chain"
     ],
-    "note": "Two generally available Secure Source Manager capabilities address authentication and authorization risks in private-cloud source control and CI/CD workflows.",
-    "score": 82
+    "note": "New generally available controls add granular Code Owners and stronger authentication and authorization mechanisms for protecting source and deployment workflows.",
+    "score": 81
   },
   {
     "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
@@ -232,13 +248,13 @@
     "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
     "tags": [
       "IAM",
-      "Federation",
-      "OAuth",
+      "SAML",
       "Secrets",
+      "API Keys",
       "Supply Chain"
     ],
-    "note": "Attackers abused a SAML SSO handling weakness to reach 138 accounts, then leveraged a compromised long-lived Cloudflare API key to deploy malicious code.",
-    "score": 94
+    "note": "The incident chain began with a SAML SSO weakness exposing accounts and later involved a compromised long-lived Cloudflare API key used to deploy malicious code at scale.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
@@ -268,12 +284,12 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
     "tags": [
       "AI Agents",
-      "Compromised Credentials",
-      "Authorization",
-      "ITDR"
+      "IAM",
+      "NHI",
+      "Credential Abuse"
     ],
-    "note": "Spain\u2019s data-protection regulator described an attack in which AI-assisted reconnaissance found loose credentials and an application weakness that enabled data access and modification.",
-    "score": 91
+    "note": "Reporting based on a Spanish data-protection authority disclosure describes an AI-assisted intrusion that found loose credentials, authenticated to an internal system, exploited an application weakness, and modified records.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
@@ -531,6 +547,23 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "e3e875af4c1faca0",
+    "date": "2026-09-17",
+    "source": "Delinea",
+    "title": "Delinea Joins Anthropic's Project Glasswing",
+    "url": "https://delinea.com/blog/delinea-joins-project-glasswing",
+    "tags": [
+      "PAM",
+      "AI Agents",
+      "Authorization",
+      "Secure SDLC"
+    ],
+    "note": "Delinea\u2019s detailed companion post explains how AI-assisted testing will target privileged-credential handling, session brokering, JIT authorization paths, and feedback into its secure-development process.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
     "publishedDate": "2026-09-17",
     "id": "fc4dafc7bc11bbd5",
@@ -545,6 +578,23 @@
       "Session-Risk"
     ],
     "note": "Malwarebytes reports follow-on phishing against Revolut customers after the disclosure, illustrating how leaked identity documents and account data can support convincing recovery and takeover lures.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "bb67c1b4f36cee8e",
+    "date": "2026-09-17",
+    "source": "Delinea",
+    "title": "Delinea Joins Anthropic's Project Glasswing",
+    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing?hs_amp=true",
+    "tags": [
+      "PAM",
+      "Secrets",
+      "Session Security",
+      "AI Agents"
+    ],
+    "note": "Delinea is applying Anthropic\u2019s frontier model to its own vaulting, secrets, session-brokering, and authorization code, making this a notable security-engineering move from a PAM vendor.",
     "score": 84
   },
   {
@@ -624,12 +674,12 @@
     "url": "https://www.pingidentity.com/en/resources/blog/post/ai-agent-standards-security.html",
     "tags": [
       "AI Agents",
+      "NHI",
       "OAuth",
-      "OpenID",
       "Authorization"
     ],
-    "note": "This standards-focused analysis is worth scanning for its treatment of delegated authority, OAuth-based agent access and the governance gaps emerging before agent-identity standards stabilize.",
-    "score": 72
+    "note": "The article provides a concise practitioner view of the unsettled standards landscape across IETF, OpenID, and MCP, and emphasizes ownership, delegation, governance, and runtime controls before standards converge.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -641,13 +691,12 @@
     "url": "https://www.semperis.com/press-release/semperis-secures-imda-accreditation-to-strengthen-identity-resilience-in-the-ai-era/",
     "tags": [
       "ITDR",
-      "IGA",
-      "Entra",
-      "Okta",
-      "Ping Identity"
+      "Identity Resilience",
+      "AD",
+      "Entra"
     ],
-    "note": "The accreditation announcement includes new regional identity-resilience findings, including low confidence in recovering identity infrastructure after AI-agent exposure of administrative credentials.",
-    "score": 69
+    "note": "The accreditation is relevant to practitioners tracking identity-resilience assurance and regional public-sector requirements, although the announcement is more market signal than technical disclosure.",
+    "score": 67
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
@@ -1173,12 +1222,12 @@
     "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
     "tags": [
       "IAM",
-      "Session Management",
+      "Session Security",
       "OAuth",
-      "ITDR"
+      "Token Abuse"
     ],
-    "note": "Google Cloud has completed a 16-hour default session-length rollout and added more granular Context-Aware Access controls to limit credential-theft and account-takeover exposure.",
-    "score": 86
+    "note": "Google Cloud expands session controls with Terraform, CLI, API, group-based targeting, and per-application policies that can shorten reauthentication windows for privileged users and sensitive OAuth applications.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
