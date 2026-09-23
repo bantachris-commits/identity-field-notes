@@ -43,13 +43,13 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "Entra",
+      "IAM",
+      "Microsoft Entra",
       "MFA",
-      "ITDR",
-      "IAM"
+      "ITDR"
     ],
-    "note": "The TrustSink technique shows how a privileged attacker can register a rogue external MFA provider in Entra and harvest passwords inside an otherwise legitimate authentication flow.",
-    "score": 99
+    "note": "Varonis\u2019 TrustSink research shows how a highly privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning valid signed MFA tokens.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -68,6 +68,41 @@
     ],
     "note": "Highlights GhostCode, a device-code phishing kit that abuses OAuth to capture Microsoft 365 tokens, register attacker-controlled devices, and establish persistence without stealing passwords or directly bypassing MFA.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "bbe00974ebe14bb0",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
+    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "MFA",
+      "OAuth",
+      "Token Abuse"
+    ],
+    "note": "The Microsoft-led disruption covers a device-code phishing service that obtained tokens despite MFA and compromised more than 12,000 Microsoft accounts across over 10,000 organizations.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "8c4e4ffe7f8c0dfd",
+    "date": "2026-09-22",
+    "source": "Dark Reading",
+    "title": "Shai-Hulud Attack Nips Cyber-Firm CrowdSec's GitHub Data",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/shai-hulud-attack-cyber-firm-crowdsec-github-data",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "Token Abuse",
+      "Offboarding"
+    ],
+    "note": "CrowdSec\u2019s disclosure describes a former employee\u2019s retained GitHub repository permission being abused through an OAuth token stolen from the employee\u2019s compromised device, exposing about 170 private repositories.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
@@ -97,10 +132,29 @@
     "tags": [
       "IAM",
       "NHI",
-      "AI-agent authorization"
+      "AI-Agent Authorization",
+      "OAuth",
+      "Machine Identity"
     ],
-    "note": "A broad coalition including Okta, AWS, Google Cloud, Salesforce, ServiceNow and Wiz is proposing shared principles for agent identity, delegated access, traceability, runtime monitoring and containment.",
+    "note": "Okta, AWS, Google Cloud and other vendors announced a cross-industry effort centered on treating agents as identities, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "0e9af621060459a6",
+    "date": "2026-09-22",
+    "source": "Proofpoint",
+    "title": "Proofpoint Breaks Down the Divide Between Data Security and AI Security with the Industry\u2019s First Unified Agentic System",
+    "url": "https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-breaks-down-divide-between-data-security-and-ai-security",
+    "tags": [
+      "AI-Agent Authorization",
+      "IGA",
+      "IAM",
+      "Data Access"
+    ],
+    "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -675,14 +729,13 @@
     "title": "Brevo supply-chain attack injected ClickFix scripts on customer sites",
     "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
     "tags": [
+      "Secrets Management",
+      "NHI",
       "PAM",
-      "Secrets",
-      "API keys",
-      "Supply chain",
-      "Breach"
+      "Cloud Security"
     ],
-    "note": "Attackers abused a long-lived, full-permission Cloudflare API key hardcoded in source code to create edge Workers and distribute malware through customer-facing sites.",
-    "score": 92
+    "note": "Attackers used a long-lived, full-permission Cloudflare API key hardcoded in source code to create workers, routes and DNS records, turning excessive machine privilege and exposed secrets into a customer-facing supply-chain compromise.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
