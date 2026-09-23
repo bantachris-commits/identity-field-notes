@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "1bbc2c4488af2f6a",
+    "date": "2026-09-22",
+    "source": "Microsoft Security",
+    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "OAuth",
+      "Token Abuse",
+      "MFA",
+      "Microsoft Entra"
+    ],
+    "note": "Primary Microsoft research details a device-code phishing service that compromised more than 12,000 inboxes by stealing OAuth tokens, registering devices, creating persistence and abusing Microsoft Graph.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -18,6 +37,25 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "6fe0acb2c0085a05",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "Authorization",
+      "Okta",
+      "AWS",
+      "Google Cloud"
+    ],
+    "note": "A broad coalition including Okta, AWS, Google Cloud, Salesforce, ServiceNow and Wiz is proposing an open reference architecture centered on agent identity, task-scoped access, traceable delegation and runtime containment.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
     "publishedDate": "2026-09-21",
     "id": "1a49f4625fa1204c",
@@ -26,14 +64,14 @@
     "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
     "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
     "tags": [
-      "IAM",
       "NHI",
       "OAuth",
-      "Third-party access",
-      "Breach"
+      "Secrets",
+      "Supply Chain",
+      "Credential Compromise"
     ],
-    "note": "Compromised third-party application credentials were used to access shopper data and inject scripts across affected BigCommerce stores, highlighting SaaS integration and application-key risk.",
-    "score": 93
+    "note": "Attackers used compromised credentials for third-party BigCommerce applications to access merchant customer records and inject scripts, illustrating the blast radius of poorly controlled application keys.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -85,6 +123,24 @@
       "NHI"
     ],
     "note": "The new connector links SailPoint provisioning, deprovisioning and certifications with KeeperPAM vaults and entitlements, addressing the IGA-to-PAM enforcement gap.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "485cd6e90cc61222",
+    "date": "2026-09-21",
+    "source": "Keeper Security",
+    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
+    "url": "https://www.keepersecurity.com/blog/2026/09/keeper-and-sailpoint-partner-to-automate-privileged-access-governance/",
+    "tags": [
+      "PAM",
+      "IGA",
+      "SailPoint",
+      "Offboarding",
+      "Least Privilege"
+    ],
+    "note": "The new SailPoint-Keeper integration connects IGA provisioning, certification and revocation workflows directly to privileged vault entitlements, addressing the enforcement and offboarding gap between governance and PAM.",
     "score": 84
   },
   {
@@ -653,6 +709,24 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-17",
+    "id": "bb67c1b4f36cee8e",
+    "date": "2026-09-17",
+    "source": "Delinea",
+    "title": "Delinea Joins Anthropic's Project Glasswing",
+    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing?hs_amp=true",
+    "tags": [
+      "PAM",
+      "Secrets",
+      "AI Security",
+      "Authorization",
+      "Delinea"
+    ],
+    "note": "Delinea is applying Anthropic's frontier AI security testing to vaulting, secrets rotation, session brokering and just-in-time authorization code, making identity infrastructure itself a target of AI-assisted assurance.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
     "publishedDate": "2026-09-17",
     "id": "ce8e71e69e69f035",
@@ -684,23 +758,6 @@
       "Session-Risk"
     ],
     "note": "Malwarebytes reports follow-on phishing against Revolut customers after the disclosure, illustrating how leaked identity documents and account data can support convincing recovery and takeover lures.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "bb67c1b4f36cee8e",
-    "date": "2026-09-17",
-    "source": "Delinea",
-    "title": "Delinea Joins Anthropic's Project Glasswing",
-    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing?hs_amp=true",
-    "tags": [
-      "PAM",
-      "Secrets",
-      "Session Security",
-      "AI Agents"
-    ],
-    "note": "Delinea is applying Anthropic\u2019s frontier model to its own vaulting, secrets, session-brokering, and authorization code, making this a notable security-engineering move from a PAM vendor.",
     "score": 84
   },
   {
@@ -786,6 +843,24 @@
     ],
     "note": "The accreditation is relevant to practitioners tracking identity-resilience assurance and regional public-sector requirements, although the announcement is more market signal than technical disclosure.",
     "score": 67
+  },
+  {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "a2afd80e5d3d9a98",
+    "date": "2026-09-16",
+    "source": "Varonis Threat Labs",
+    "title": "TrustSink: How a Rogue External MFA Provider Steals Passwords",
+    "url": "https://www.varonis.com/blog/trustsink",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "Authentication",
+      "ITDR",
+      "Credential Theft"
+    ],
+    "note": "The research shows how a privileged attacker can register a rogue external authentication provider in Entra, capture replacement passwords during legitimate sign-ins and remain effective after password resets.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
