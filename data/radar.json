@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "03b9753abd7a90e4",
+    "date": "2026-09-23",
+    "source": "F5 / The Hacker News",
+    "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+    "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR"
+    ],
+    "note": "Critical exploitation of BIG-IP APM configurations acting as OAuth authorization servers creates an urgent identity-plane patching and compromise-hunting priority.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
@@ -16,6 +32,23 @@
       "Microsoft Entra"
     ],
     "note": "Primary Microsoft research details a device-code phishing service that compromised more than 12,000 inboxes by stealing OAuth tokens, registering devices, creating persistence and abusing Microsoft Graph.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Entra",
+      "MFA",
+      "ITDR",
+      "IAM"
+    ],
+    "note": "The TrustSink technique shows how a privileged attacker can register a rogue external MFA provider in Entra and harvest passwords inside an otherwise legitimate authentication flow.",
     "score": 99
   },
   {
@@ -37,6 +70,23 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "c169620ea001e674",
+    "date": "2026-09-22",
+    "source": "TechCrunch",
+    "title": "Stolen passwords are exposing America's water providers to hackers",
+    "url": "https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/",
+    "tags": [
+      "PAM",
+      "IAM",
+      "NHI",
+      "Critical infrastructure"
+    ],
+    "note": "SpyCloud research links infostealer-exposed employee passwords and active sessions to broad exposure across U.S. water and wastewater providers, underscoring credential and session-revocation gaps.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "6fe0acb2c0085a05",
@@ -45,32 +95,11 @@
     "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
     "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
     "tags": [
-      "AI Agents",
+      "IAM",
       "NHI",
-      "Authorization",
-      "Okta",
-      "AWS",
-      "Google Cloud"
+      "AI-agent authorization"
     ],
-    "note": "A broad coalition including Okta, AWS, Google Cloud, Salesforce, ServiceNow and Wiz is proposing an open reference architecture centered on agent identity, task-scoped access, traceable delegation and runtime containment.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "1a49f4625fa1204c",
-    "date": "2026-09-21",
-    "source": "BleepingComputer",
-    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
-    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "Secrets",
-      "Supply Chain",
-      "Credential Compromise"
-    ],
-    "note": "Attackers used compromised credentials for third-party BigCommerce applications to access merchant customer records and inject scripts, illustrating the blast radius of poorly controlled application keys.",
+    "note": "A broad coalition including Okta, AWS, Google Cloud, Salesforce, ServiceNow and Wiz is proposing shared principles for agent identity, delegated access, traceability, runtime monitoring and containment.",
     "score": 91
   },
   {
@@ -107,6 +136,23 @@
     ],
     "note": "Useful analysis of session-cookie theft at scale and why post-authentication behavior, session lifetime, device binding, and standing privilege matter after MFA succeeds.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "1a49f4625fa1204c",
+    "date": "2026-09-21",
+    "source": "BleepingComputer",
+    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
+    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Third-party access",
+      "OAuth"
+    ],
+    "note": "Compromised credentials belonging to third-party applications were used to access merchant data and inject malicious scripts, making this a useful SaaS supply-chain and app-identity case study.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-22T15:37:29.894588-06:00",
@@ -501,6 +547,22 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "6ee4e43b752e44b0",
+    "date": "2026-09-18",
+    "source": "Biometric Update / FIDO Alliance",
+    "title": "Passkeys in the post-quantum era: Why FIDO needs more than new algorithms",
+    "url": "https://fidoalliance.org/biometric-update-passkeys-in-the-post-quantum-era-why-fido-needs-more-than-new-algorithms/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "WebAuthn"
+    ],
+    "note": "The piece examines the broader passkey ecosystem\u2014including authenticators, WebAuthn, CTAP, metadata services and PKI\u2014rather than treating post-quantum migration as an algorithm-only problem.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
     "publishedDate": "2026-09-18",
     "id": "3e25d109671f8b32",
@@ -534,23 +596,6 @@
     ],
     "note": "The integration illustrates a concrete OAuth 2.1 and scope-enforcement pattern for MCP applications, including dynamic client registration and authorization before tool execution.",
     "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "6ee4e43b752e44b0",
-    "date": "2026-09-18",
-    "source": "FIDO Alliance",
-    "title": "Passkeys in the post-quantum era: Why FIDO needs more than new algorithms",
-    "url": "https://fidoalliance.org/biometric-update-passkeys-in-the-post-quantum-era-why-fido-needs-more-than-new-algorithms/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "WebAuthn",
-      "Authentication"
-    ],
-    "note": "The piece usefully frames passkey security as an ecosystem problem spanning authenticators, CTAP, WebAuthn, metadata, and PKI rather than as a cryptography-only issue.",
-    "score": 76
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
@@ -853,14 +898,13 @@
     "title": "TrustSink: How a Rogue External MFA Provider Steals Passwords",
     "url": "https://www.varonis.com/blog/trustsink",
     "tags": [
-      "Microsoft Entra",
+      "Entra",
       "MFA",
-      "Authentication",
       "ITDR",
-      "Credential Theft"
+      "Identity attack research"
     ],
-    "note": "The research shows how a privileged attacker can register a rogue external authentication provider in Entra, capture replacement passwords during legitimate sign-ins and remain effective after password resets.",
-    "score": 97
+    "note": "The primary technical research details the rogue external-authentication-provider attack, its persistence implications and detection opportunities beyond ordinary password resets.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
@@ -1281,12 +1325,12 @@
     "tags": [
       "IAM",
       "OAuth",
-      "Tokens",
+      "ITDR",
       "Federation",
-      "Standards"
+      "Token security"
     ],
-    "note": "New final guidance covers token lifecycle, verification, key management, federation, SSO and API-access controls for agencies and cloud providers.",
-    "score": 97
+    "note": "Final NIST IR 8587 provides implementation guidance for token-signing keys, validation, lifecycle controls, revocation and monitoring across SSO, federation and API access.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
