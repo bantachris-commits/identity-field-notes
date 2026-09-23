@@ -1,5 +1,70 @@
 [
   {
+    "id": "2026-09-23-morning-brief",
+    "date": "2026-09-23",
+    "coverageDate": "2026-09-22",
+    "edition": "MORNING EDITION // 2026.09.23",
+    "title": "Identity Field Notes: Token Theft, Trust Abuse and Agent Control",
+    "dek": "Highlights from 2026-09-22. Yesterday\u2019s strongest identity stories centered on OAuth and session-token abuse, privileged Entra persistence, critical-infrastructure credential exposure, and emerging controls for AI-agent identities.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "ITDR",
+      "Machine IAM",
+      "NHI"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-22, verified against linked sources. Edition dated 2026-09-23; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "EvilTokens industrializes device-code phishing against Microsoft 365",
+        "summary": "Microsoft says the EvilTokens phishing-as-a-service platform compromised more than 12,000 inboxes across over 10,000 organizations by abusing OAuth device-code authentication. The operation stole tokens without directly capturing passwords, then used Microsoft Graph reconnaissance, malicious inbox rules, email exfiltration and device registration to establish persistence.",
+        "why": "Treat device-code authentication as a high-risk exception, not a harmless MFA alternative. Detection should correlate anomalous device-code sign-ins with new device registrations, token activity, Graph reconnaissance and inbox-rule creation; phishing-resistant authentication does not eliminate the need to control token issuance and session lifetime.",
+        "source": "Microsoft Security",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+        "confidence": "Primary source",
+        "published_date": "2026-09-22",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "TrustSink turns a legitimate Entra MFA flow into a password trap",
+        "summary": "Researchers demonstrated that an attacker who already controls a highly privileged Entra account can register a rogue external MFA provider and place a convincing Microsoft password prompt inside the legitimate sign-in flow. The technique captures replacement passwords while returning a valid signed MFA token, so authentication appears to complete normally and password resets alone may not remove the persistence mechanism.",
+        "why": "External authentication methods deserve the same change control and monitoring as applications, service principals and federation configuration. Investigate and remove rogue providers, associated applications, keys and redirect URIs before rotating credentials, while reducing standing Global Administrator and Authentication Policy Administrator access.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-22",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Infostealer-exposed credentials put U.S. water operators at risk",
+        "summary": "SpyCloud research reviewed more than 66,000 public-facing systems associated with U.S. water and wastewater providers and found stolen credentials linked to 1,787 organizations. At least 250 appeared to have credentials that could reach operational networks or remote-access systems; the research also identified one metering technology provider whose infected device exposed credentials for 167 utilities. The reporting does not establish that these stolen credentials caused the recent Iran-linked water-sector intrusions.",
+        "why": "Critical-infrastructure identity programs need to treat infostealer exposure and active session theft as operational risks, not merely user-account hygiene issues. Priorities include rapid session revocation, privileged-access isolation, external-exposure monitoring, removal of shared credentials and verification that remote-access identities cannot reach control systems by default.",
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-22",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Blueprint Alliance proposes a shared control architecture for AI agents",
+        "summary": "Okta announced the Blueprint Alliance with AWS, Google Cloud, Salesforce, ServiceNow, Wiz and other vendors to develop an open reference architecture for securing AI agents. Its principles include treating every agent as a distinct identity, constraining access to the task, preserving delegation traceability, monitoring runtime behavior, and supporting immediate containment and deliberate access recovery.",
+        "why": "The useful part is the shift from agent inventory toward an operational control plane: verified identity, accountable ownership, task-scoped authorization, runtime enforcement and reversible containment. Practitioners should test whether their current IAM, PAM and IGA systems can represent agent owners, sub-agent delegation, model versions, downstream resources and revocation events as auditable relationships.",
+        "source": "Okta",
+        "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-22",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-22-morning-brief",
     "date": "2026-09-22",
     "coverageDate": "2026-09-21",
@@ -14,7 +79,7 @@
       "Threat"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-21, verified against linked sources. Edition dated 2026-09-22; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
