@@ -1,5 +1,91 @@
 [
   {
+    "id": "2026-09-24-morning-brief",
+    "date": "2026-09-24",
+    "coverageDate": "2026-09-23",
+    "edition": "MORNING EDITION // 2026.09.24",
+    "title": "Identity Field Notes: September 23 Recap",
+    "dek": "Highlights from 2026-09-23. Yesterday\u2019s strongest identity developments centered on an actively exploited OAuth authorization-server flaw, agent governance, identity-graph visibility, AD migration risk, and an emerging agentic SOC model.",
+    "tags": [
+      "ITDR",
+      "IAM",
+      "IGA",
+      "Machine IAM"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-23, verified against linked sources. Edition dated 2026-09-24; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "F5 patches exploited BIG-IP APM zero-day in OAuth authorization-server deployments",
+        "summary": "The Hacker News reports that CVE-2026-94127 is an actively exploited heap-based buffer overflow enabling unauthenticated remote code execution on BIG-IP APM systems configured as OAuth authorization servers. F5 has issued engineering hotfixes, while CISA and CERT-EU recommend mitigation, forensic preservation, compromise checks, and rapid patching. ([thehackernews.com](https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html?utm_source=openai))",
+        "why": "Treat internet-facing OAuth authorization infrastructure as an identity-plane asset, not merely an application gateway. Inventory APM virtual servers using OAuth authorization profiles, apply the branch-specific hotfix or mitigation, and hunt for the documented authentication failures, suspicious commands, and TMM crashes.",
+        "source": "The Hacker News / F5",
+        "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Ping adds runtime controls for personal AI agents",
+        "summary": "Ping\u2019s September product update describes Enterprise Personal Agent Access in PingOne Privilege, which can discover supported personal agents, associate sessions with the responsible user and device, and apply allow, deny, logging, approval, or real-time revocation decisions. Ping also says PingOne Protect can recognize supported AI agents and apply risk-based authentication controls. These are vendor-stated capabilities rather than independently validated results. ([pingidentity.com](https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html?utm_source=openai))",
+        "why": "The useful design pattern is session accountability: an agent should remain technically linked to its human sponsor, device context, requested action, and policy decision. Practitioners should test whether these controls survive delegation chains, tool calls, token exchange, and agent impersonation\u2014not just whether an agent can be detected.",
+        "source": "Ping Identity",
+        "url": "https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "IGA",
+        "title": "SailPoint makes Identity Graph broadly available to Business+ customers",
+        "summary": "SailPoint says Identity Graph, built on Atlas, will be activated in customer production environments at no additional charge for current Business+ customers. The graph is designed to visualize human, non-human, and agent identities, expose access paths and entitlement relationships, estimate a compromised identity\u2019s blast radius, and support direct risk-reduction actions. ([developer.sailpoint.com](https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-your-environment/223638?utm_source=openai))",
+        "why": "Graph visibility is only valuable if it changes governance decisions. Teams should test the graph against real entitlement nesting, service-account dependencies, agent-human relationships, and sensitive-data paths, then measure whether it improves certification scope, toxic-combination analysis, and incident containment.",
+        "source": "SailPoint Developer Community",
+        "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-your-environment/223638",
+        "confidence": "Primary source",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "From the Field",
+        "title": "Semperis rebuilds AD migration around staged security validation",
+        "summary": "Semperis announced worldwide availability of Migrator for Active Directory 2.0, positioning migration as a security event rather than a data-copy exercise. The release adds wave-based Directory Synchronization Sets, pre-commit staging reports, agent-based endpoint cutover, unified searchable logging, and deployment validation intended to surface service-account, encryption, and infrastructure dependencies earlier. ([semperis.com](https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/?utm_source=openai))",
+        "why": "AD migration creates temporary trust relationships, credential movement, and coexistence paths that are easy to overlook in project plans. The important operational test is whether migration teams can produce a complete, reviewable inventory of authentication dependencies and rollback points before each cutover wave.",
+        "source": "Semperis",
+        "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Market",
+        "title": "Microsoft previews an integrated security operations center for the agentic era",
+        "summary": "Microsoft announced ISOC in Microsoft Defender, a preview foundation that brings SIEM and threat-protection capabilities together for shared human-and-agent investigation and response. Microsoft describes a continuous loop connecting signals, context, agents, and protective controls, with people retaining responsibility for priorities, judgment, and outcomes. ([microsoft.com](https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/?utm_source=openai))",
+        "why": "For identity teams, the strategic question is whether identity telemetry and enforcement controls become first-class inputs to autonomous investigation rather than another disconnected data source. Validate which Entra signals, authorization changes, privilege events, and response actions are available to agents\u2014and what approval and audit boundaries remain mandatory.",
+        "source": "Microsoft Security Blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+        "confidence": "Primary source",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Vendor Watch",
+        "title": "BeyondTrust connects privilege telemetry with CrowdStrike Falcon Next-Gen SIEM",
+        "summary": "BeyondTrust announced integrations that send privilege, credential, session, policy-change, and identity-risk context from Endpoint Privilege Management, Password Safe, and Privileged Remote Access into CrowdStrike Falcon Next-Gen SIEM. The stated goal is to correlate human, non-human, and AI-agent privilege relationships with threat telemetry in a shared investigation workflow. ([beyondtrust.com](https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations?utm_source=openai))",
+        "why": "The integration addresses a persistent ITDR gap: SIEM alerts often lack enough privilege and relationship context to explain how an identity can move through an environment. Buyers should verify event fidelity, latency, entity resolution, and whether response actions can be safely linked back to PAM policy without creating automation-driven lockouts.",
+        "source": "BeyondTrust",
+        "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-23",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-23-morning-brief",
     "date": "2026-09-23",
     "coverageDate": "2026-09-22",
@@ -14,7 +100,7 @@
       "NHI"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-22, verified against linked sources. Edition dated 2026-09-23; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
