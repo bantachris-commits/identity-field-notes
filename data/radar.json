@@ -16,6 +16,23 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "2a17b85f5863df77",
+    "date": "2026-09-23",
+    "source": "Socket",
+    "title": "MemTensor npm and PyPI Packages Compromised in Credential-Stealing Supply Chain Attack",
+    "url": "https://socket.dev/blog/memtensor-compromise",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "Compromised developer packages execute credential-stealing payloads that target cloud keys, registry tokens, Vault tokens, SSH keys, JWTs and other secrets from developer and CI environments.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
     "id": "ee4ea52c54c1c84a",
@@ -141,19 +158,18 @@
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
     "date": "2026-09-22",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security",
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
       "IAM",
-      "Microsoft Entra",
       "OAuth",
       "Token Abuse",
-      "MFA Bypass",
-      "Incident"
+      "ITDR",
+      "Microsoft Entra"
     ],
-    "note": "Detailed primary research on an AI-assisted phishing service that stole device-code OAuth tokens, compromised more than 12,000 inboxes, and used Graph reconnaissance, inbox rules, device registration, and email exfiltration for persistence and fraud.",
-    "score": 100
+    "note": "Primary research details how the EvilTokens phishing-as-a-service operation abused device-code authentication to steal tokens and compromise more than 12,000 Microsoft accounts across over 10,000 organizations.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -189,6 +205,23 @@
       "ITDR"
     ],
     "note": "Highlights GhostCode, a device-code phishing kit that abuses OAuth to capture Microsoft 365 tokens, register attacker-controlled devices, and establish persistence without stealing passwords or directly bypassing MFA.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e1051ee9bd0aabab",
+    "date": "2026-09-22",
+    "source": "Canadian Centre for Cyber Security",
+    "title": "AL26-022 - Vulnerability impacting F5 BIG-IP Access Policy Manager (APM \u2013 CVE-2026-94127",
+    "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-022-vulnerability-impacting-f5-big-ip-access-policy-manager-apm-cve-2026-94127",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authentication",
+      "Zero-Day"
+    ],
+    "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
     "score": 97
   },
   {
@@ -244,20 +277,21 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
     "publishedDate": "2026-09-22",
-    "id": "e1051ee9bd0aabab",
+    "id": "dace937c271171a5",
     "date": "2026-09-22",
-    "source": "Canadian Centre for Cyber Security",
-    "title": "AL26-022 - Vulnerability impacting F5 BIG-IP Access Policy Manager (APM \u2013 CVE-2026-94127",
-    "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-022-vulnerability-impacting-f5-big-ip-access-policy-manager-apm-cve-2026-94127",
+    "source": "SecurityWeek",
+    "title": "BigCommerce Data Stolen via Ribon Apps Hack",
+    "url": "https://www.securityweek.com/bigcommerce-data-stolen-via-ribon-apps-hack/",
     "tags": [
-      "IAM",
+      "NHI",
+      "Machine Identity",
+      "Secrets",
       "OAuth",
-      "Authentication",
-      "Incident Response"
+      "Third-Party Risk"
     ],
-    "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments that combine an access policy with an OAuth authorization-server profile.",
+    "note": "Attackers used compromised credentials belonging to third-party Ribon applications to access shopper data through BigCommerce stores, illustrating the blast radius of overtrusted app identities and delayed credential revocation.",
     "score": 94
   },
   {
@@ -286,14 +320,14 @@
     "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
     "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
     "tags": [
-      "AI Agents",
+      "AI-Agent Authorization",
       "NHI",
-      "Authorization",
+      "OAuth",
       "IGA",
-      "IAM"
+      "PAM"
     ],
-    "note": "A broad industry coalition from Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others proposes treating agents as first-class identities with scoped access, traceable delegation, runtime monitoring, and reversible containment.",
-    "score": 92
+    "note": "A broad industry coalition published an expanded reference architecture centered on first-class agent identities, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -1159,12 +1193,13 @@
     "title": "TrustSink: How a Rogue External MFA Provider Steals Passwords",
     "url": "https://www.varonis.com/blog/trustsink",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "MFA",
+      "Authentication",
       "ITDR",
-      "Identity attack research"
+      "Identity Persistence"
     ],
-    "note": "The primary technical research details the rogue external-authentication-provider attack, its persistence implications and detection opportunities beyond ordinary password resets.",
+    "note": "Research demonstrates how a privileged attacker can register a rogue Entra external authentication provider that captures replacement passwords while returning valid signed tokens and surviving password resets.",
     "score": 98
   },
   {
