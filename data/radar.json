@@ -16,22 +16,39 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "418eab4b215afd87",
+    "date": "2026-09-23",
+    "source": "Microsoft Security Blog",
+    "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+    "tags": [
+      "ITDR",
+      "Microsoft Entra",
+      "AI Agents",
+      "Security Operations"
+    ],
+    "note": "Microsoft announced a preview integrated security operations center that combines security signals, context and response controls for human- and agent-operated investigations, with implications for identity-centric detection and response.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
     "date": "2026-09-22",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Blog",
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
       "IAM",
-      "ITDR",
-      "OAuth",
-      "Token Abuse",
       "MFA",
-      "Microsoft Entra"
+      "OAuth",
+      "Session/Token Abuse",
+      "ITDR",
+      "Incident"
     ],
-    "note": "Primary Microsoft research details a device-code phishing service that compromised more than 12,000 inboxes by stealing OAuth tokens, registering devices, creating persistence and abusing Microsoft Graph.",
+    "note": "Primary research details how a phishing-as-a-service operation used device-code authentication to steal tokens and compromise more than 12,000 inboxes across over 10,000 organizations.",
     "score": 99
   },
   {
@@ -43,13 +60,14 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "IAM",
       "Microsoft Entra",
       "MFA",
-      "ITDR"
+      "IAM",
+      "ITDR",
+      "Credential Theft"
     ],
-    "note": "Varonis\u2019 TrustSink research shows how a highly privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning valid signed MFA tokens.",
-    "score": 98
+    "note": "Reports the TrustSink technique, in which an attacker with privileged Entra access registers a malicious external MFA provider to capture passwords and obtain valid MFA-completed sessions.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -130,14 +148,15 @@
     "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
     "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
     "tags": [
-      "IAM",
-      "NHI",
+      "Okta",
       "AI-Agent Authorization",
+      "NHI",
       "OAuth",
-      "Machine Identity"
+      "IGA",
+      "PAM"
     ],
-    "note": "Okta, AWS, Google Cloud and other vendors announced a cross-industry effort centered on treating agents as identities, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
-    "score": 91
+    "note": "A broad coalition involving Okta, AWS, Google Cloud and major SaaS and security providers proposes shared principles for agent identity, scoped delegation, traceability, runtime monitoring and rapid containment.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -155,6 +174,23 @@
     ],
     "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "8f28c96c1e2b7e42",
+    "date": "2026-09-22",
+    "source": "SailPoint Developer Community",
+    "title": "GA Announcement: Next Generation Certifications",
+    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
+    "tags": [
+      "SailPoint",
+      "IGA",
+      "Access Reviews",
+      "Governance"
+    ],
+    "note": "SailPoint\u2019s next-generation certification engine is moving to general availability, making the rollout schedule and tenant-impact details relevant to IGA teams planning access-review operations.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
