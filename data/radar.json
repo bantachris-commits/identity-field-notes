@@ -27,10 +27,10 @@
       "PAM",
       "ITDR",
       "NHI",
-      "Privilege"
+      "SIEM"
     ],
-    "note": "Meaningful product move linking privilege, credential, session, and identity-relationship telemetry from BeyondTrust with CrowdStrike threat data for identity-aware detection and response.",
-    "score": 88
+    "note": "New integrations correlate BeyondTrust privilege, credential, session, human, non-human and AI-agent telemetry with Falcon threat data for identity-aware investigation.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -78,11 +78,11 @@
     "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
     "tags": [
       "IGA",
+      "PAM",
       "Active Directory",
-      "Identity Resilience",
-      "Service Accounts"
+      "Identity Resilience"
     ],
-    "note": "The AD migration redesign treats migration as a security event, emphasizing staged validation, service-account and encryption dependency visibility, endpoint cutover controls, and unified audit logging.",
+    "note": "Migrator for Active Directory 2.0 treats migrations as security-sensitive trust-boundary changes, adding staged validation, controlled cutover and unified audit visibility.",
     "score": 84
   },
   {
@@ -120,6 +120,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e158ecac2f7dd6fa",
+    "date": "2026-09-23",
+    "source": "Okta",
+    "title": "Oktane 2026: Setting the standard for the secure agentic future",
+    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "ITDR",
+      "Authorization"
+    ],
+    "note": "Okta details newly emphasized agent-security capabilities including shadow-agent discovery, agent gateways, third-party IdP support and treating agents as first-class governed identities.",
+    "score": 79
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
@@ -137,6 +154,24 @@
     ],
     "note": "Detailed primary research on an AI-assisted phishing service that stole device-code OAuth tokens, compromised more than 12,000 inboxes, and used Graph reconnaissance, inbox rules, device registration, and email exfiltration for persistence and fraud.",
     "score": 100
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "373464fd801623e4",
+    "date": "2026-09-22",
+    "source": "Microsoft",
+    "title": "Disrupting EvilTokens: The AI Chatbot Built for Cybercrime",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+    "tags": [
+      "OAuth",
+      "Token Theft",
+      "MFA Bypass",
+      "AI Agents",
+      "Incident"
+    ],
+    "note": "Microsoft describes a device-code phishing service linked to roughly 12,000 compromised inboxes, with stolen sessions and tokens feeding AI-assisted mailbox analysis and fraud targeting.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -165,14 +200,14 @@
     "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
     "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
     "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "MFA",
       "OAuth",
-      "Token Abuse"
+      "Token Theft",
+      "MFA Bypass",
+      "Microsoft Entra",
+      "Incident"
     ],
-    "note": "The Microsoft-led disruption covers a device-code phishing service that obtained tokens despite MFA and compromised more than 12,000 Microsoft accounts across over 10,000 organizations.",
-    "score": 97
+    "note": "Independent reporting adds operational detail on how EvilTokens abused Microsoft's device-code authorization flow to obtain tokens despite MFA and automate post-compromise mailbox reconnaissance.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
@@ -184,12 +219,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
       "Microsoft Entra",
-      "MFA",
-      "Authentication",
-      "ITDR"
+      "MFA Bypass",
+      "ITDR",
+      "PAM"
     ],
-    "note": "Research on TrustSink, an attack that abuses privileged registration of external Entra MFA providers to harvest passwords and return attacker-signed tokens that satisfy MFA.",
-    "score": 96
+    "note": "The TrustSink technique shows how a privileged Entra compromise can register a malicious external MFA provider that harvests replacement passwords inside an otherwise legitimate sign-in flow.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -206,6 +241,23 @@
       "Offboarding"
     ],
     "note": "CrowdSec\u2019s disclosure describes a former employee\u2019s retained GitHub repository permission being abused through an OAuth token stolen from the employee\u2019s compromised device, exposing about 170 private repositories.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e1051ee9bd0aabab",
+    "date": "2026-09-22",
+    "source": "Canadian Centre for Cyber Security",
+    "title": "AL26-022 - Vulnerability impacting F5 BIG-IP Access Policy Manager (APM \u2013 CVE-2026-94127",
+    "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-022-vulnerability-impacting-f5-big-ip-access-policy-manager-apm-cve-2026-94127",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authentication",
+      "Incident Response"
+    ],
+    "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments that combine an access policy with an OAuth authorization-server profile.",
     "score": 94
   },
   {
@@ -242,6 +294,23 @@
     ],
     "note": "A broad industry coalition from Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others proposes treating agents as first-class identities with scoped access, traceable delegation, runtime monitoring, and reversible containment.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "243d8d30bd2a38f1",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry leaders form the Blueprint Alliance to advance a shared architecture for securing AI agents",
+    "url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "OAuth",
+      "Authorization"
+    ],
+    "note": "A coalition including AWS, Google Cloud, Okta, Proofpoint, Salesforce, ServiceNow, Wiz and others proposes a shared control architecture spanning agent identity, governance, runtime authorization and monitoring.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
