@@ -16,6 +16,76 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "ee4ea52c54c1c84a",
+    "date": "2026-09-23",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
+    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI",
+      "Privilege"
+    ],
+    "note": "Meaningful product move linking privilege, credential, session, and identity-relationship telemetry from BeyondTrust with CrowdStrike threat data for identity-aware detection and response.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "bb1f3698a227bd4f",
+    "date": "2026-09-23",
+    "source": "Ping Identity",
+    "title": "Ping Product Corner: Agentic Identity, Verification Connectors",
+    "url": "https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html",
+    "tags": [
+      "IAM",
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "IGA"
+    ],
+    "note": "Ping documents runtime controls for personal AI agents, including session linkage to users and devices, policy decisions, approvals, logging, and real-time revocation.",
+    "score": 87
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "0ce37d3561b3f3f4",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Your Environment",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-your-environment/223638",
+    "tags": [
+      "IGA",
+      "Identity Graph",
+      "NHI",
+      "AI Agents",
+      "ITDR"
+    ],
+    "note": "SailPoint is making an identity graph broadly available to visualize human, non-human, and agent access paths and identify the blast radius of compromised identities.",
+    "score": 85
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4de0b82706d58314",
+    "date": "2026-09-23",
+    "source": "Semperis",
+    "title": "Semperis Reimagines Active Directory Migration from the Ground Up",
+    "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
+    "tags": [
+      "IGA",
+      "Active Directory",
+      "Identity Resilience",
+      "Service Accounts"
+    ],
+    "note": "The AD migration redesign treats migration as a security event, emphasizing staged validation, service-account and encryption dependency visibility, endpoint cutover controls, and unified audit logging.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
     "publishedDate": "2026-09-23",
     "id": "418eab4b215afd87",
@@ -33,6 +103,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "84d20851445bb56a",
+    "date": "2026-09-23",
+    "source": "Google Cloud",
+    "title": "Secure, intelligent experiences across every endpoint",
+    "url": "https://cloud.google.com/blog/products/chrome-enterprise/secure-intelligent-experiences-across-every-endpoint",
+    "tags": [
+      "AI Agents",
+      "Identity Security",
+      "Authorization",
+      "Passkeys"
+    ],
+    "note": "Google\u2019s latest endpoint direction connects agentic workflows with identity-aware controls, offering practitioners a view into how browser and device security are being redesigned for autonomous agents.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
@@ -42,32 +129,14 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
       "IAM",
-      "MFA",
+      "Microsoft Entra",
       "OAuth",
-      "Session/Token Abuse",
-      "ITDR",
+      "Token Abuse",
+      "MFA Bypass",
       "Incident"
     ],
-    "note": "Primary research details how a phishing-as-a-service operation used device-code authentication to steal tokens and compromise more than 12,000 inboxes across over 10,000 organizations.",
-    "score": 99
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "IAM",
-      "ITDR",
-      "Credential Theft"
-    ],
-    "note": "Reports the TrustSink technique, in which an attacker with privileged Entra access registers a malicious external MFA provider to capture passwords and obtain valid MFA-completed sessions.",
-    "score": 97
+    "note": "Detailed primary research on an AI-assisted phishing service that stole device-code OAuth tokens, compromised more than 12,000 inboxes, and used Graph reconnaissance, inbox rules, device registration, and email exfiltration for persistence and fraud.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -104,6 +173,23 @@
     ],
     "note": "The Microsoft-led disruption covers a device-code phishing service that obtained tokens despite MFA and compromised more than 12,000 Microsoft accounts across over 10,000 organizations.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "Authentication",
+      "ITDR"
+    ],
+    "note": "Research on TrustSink, an attack that abuses privileged registration of external Entra MFA providers to harvest passwords and return attacker-signed tokens that satisfy MFA.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -148,15 +234,14 @@
     "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
     "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
     "tags": [
-      "Okta",
-      "AI-Agent Authorization",
+      "AI Agents",
       "NHI",
-      "OAuth",
+      "Authorization",
       "IGA",
-      "PAM"
+      "IAM"
     ],
-    "note": "A broad coalition involving Okta, AWS, Google Cloud and major SaaS and security providers proposes shared principles for agent identity, scoped delegation, traceability, runtime monitoring and rapid containment.",
-    "score": 88
+    "note": "A broad industry coalition from Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others proposes treating agents as first-class identities with scoped access, traceable delegation, runtime monitoring, and reversible containment.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -174,6 +259,24 @@
     ],
     "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "a80caae3e9d572f1",
+    "date": "2026-09-22",
+    "source": "Proofpoint",
+    "title": "Identity Was Built to Answer Who. The Agentic Workspace Also Needs What and Why.",
+    "url": "https://www.proofpoint.com/us/blog/ai-security/identity-was-built-answer-who-agentic-workspace-also-needs-what-and-why",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "OAuth",
+      "Identity Security"
+    ],
+    "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
+    "score": 80
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -1064,23 +1167,6 @@
     "score": 95
   },
   {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "9c5afb3580004c78",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerabilities",
-    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ise-multiauth-bypass-sgD2HbL4.html",
-    "tags": [
-      "IAM",
-      "Authentication",
-      "ITDR",
-      "Incident response"
-    ],
-    "note": "Cisco\u2019s primary advisory covers multiple ISE authentication-bypass flaws, including a pre-authentication weakness in an identity-control platform that was reported as actively exploited.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
     "publishedDate": "2026-09-16",
     "id": "df53bdf4ad38f71c",
@@ -1112,6 +1198,23 @@
     ],
     "note": "Elastic-linked KREMLIN malware silently installs browser extensions that steal cookies, session storage, passwords and request data from 1,515 confirmed systems.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
+    "publishedDate": "2026-09-16",
+    "id": "9c5afb3580004c78",
+    "date": "2026-09-16",
+    "source": "Cisco",
+    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerabilities",
+    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ise-multiauth-bypass-sgD2HbL4.html",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "Authorization",
+      "Incident Response"
+    ],
+    "note": "Primary advisory covering multiple Cisco ISE authentication-bypass vulnerabilities affecting a core network access-control and identity platform, with no workaround available.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
