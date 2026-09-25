@@ -33,21 +33,21 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
     "publishedDate": "2026-09-23",
-    "id": "ee4ea52c54c1c84a",
+    "id": "93418228b9e585a9",
     "date": "2026-09-23",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
-    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "source": "Astrana Health, SEC filing",
+    "title": "Astrana Health reports material cybersecurity incident involving social-engineering attempts",
+    "url": "https://www.sec.gov/Archives/edgar/data/1083446/000110465926109813/asth-20260922x8k.htm",
     "tags": [
-      "PAM",
-      "ITDR",
-      "NHI",
-      "SIEM"
+      "Incident",
+      "Compromised Credentials",
+      "Social Engineering",
+      "IAM"
     ],
-    "note": "New integrations correlate BeyondTrust privilege, credential, session, human, non-human and AI-agent telemetry with Falcon threat data for identity-aware investigation.",
-    "score": 91
+    "note": "The material-incident filing attributes unauthorized activity to impersonation and spoofed-phone social engineering, with affected credentials reset and remote access restricted.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -66,6 +66,23 @@
     ],
     "note": "Ping documents runtime controls for personal AI agents, including session linkage to users and devices, policy decisions, approvals, logging, and real-time revocation.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "ee4ea52c54c1c84a",
+    "date": "2026-09-23",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
+    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI",
+      "SIEM"
+    ],
+    "note": "The integration brings privileged-access, identity-relationship, and AI-agent context into Falcon SIEM, reflecting the convergence of PAM telemetry and identity threat detection.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -94,12 +111,12 @@
     "title": "Semperis Reimagines Active Directory Migration from the Ground Up",
     "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
     "tags": [
-      "IGA",
+      "AD",
+      "ITDR",
       "PAM",
-      "Active Directory",
       "Identity Resilience"
     ],
-    "note": "Migrator for Active Directory 2.0 treats migrations as security-sensitive trust-boundary changes, adding staged validation, controlled cutover and unified audit visibility.",
+    "note": "The AD Migrator 2.0 release treats directory migration as a security event, adding staged validation, migration-wide logging, and controls for service-account and trust-boundary risks.",
     "score": 84
   },
   {
@@ -163,12 +180,12 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
       "IAM",
+      "Microsoft Entra",
       "OAuth",
       "Token Abuse",
-      "ITDR",
-      "Microsoft Entra"
+      "MFA Bypass"
     ],
-    "note": "Primary research details how the EvilTokens phishing-as-a-service operation abused device-code authentication to steal tokens and compromise more than 12,000 Microsoft accounts across over 10,000 organizations.",
+    "note": "Microsoft details how an AI-enabled phishing-as-a-service platform abuses device-code authentication to steal tokens, compromise more than 12,000 inboxes, and establish persistence through mailbox rules.",
     "score": 99
   },
   {
@@ -187,6 +204,23 @@
       "Incident"
     ],
     "note": "Microsoft describes a device-code phishing service linked to roughly 12,000 compromised inboxes, with stolen sessions and tokens feeding AI-assisted mailbox analysis and fraud targeting.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "ITDR",
+      "Credential Theft"
+    ],
+    "note": "The TrustSink technique shows how a highly privileged Entra compromise can register a malicious external MFA provider that captures replacement passwords and survives password resets.",
     "score": 98
   },
   {
@@ -241,23 +275,6 @@
     ],
     "note": "Independent reporting adds operational detail on how EvilTokens abused Microsoft's device-code authorization flow to obtain tokens despite MFA and automate post-compromise mailbox reconnaissance.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA Bypass",
-      "ITDR",
-      "PAM"
-    ],
-    "note": "The TrustSink technique shows how a privileged Entra compromise can register a malicious external MFA provider that harvests replacement passwords inside an otherwise legitimate sign-in flow.",
-    "score": 95
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -347,6 +364,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "70d64c262cb2ead0",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "OAuth"
+    ],
+    "note": "The multi-vendor alliance proposes a reference architecture centered on first-class agent identities, task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "0e9af621060459a6",
@@ -362,6 +396,22 @@
     ],
     "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "8f28c96c1e2b7e42",
+    "date": "2026-09-22",
+    "source": "SailPoint Developer Community",
+    "title": "GA Announcement: Next Generation Certifications",
+    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
+    "tags": [
+      "IGA",
+      "Access Certification",
+      "Governance"
+    ],
+    "note": "SailPoint documents the regional production rollout and operational constraints for its next-generation certification engine, making this relevant to IGA teams planning certification changes.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -380,23 +430,6 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "8f28c96c1e2b7e42",
-    "date": "2026-09-22",
-    "source": "SailPoint Developer Community",
-    "title": "GA Announcement: Next Generation Certifications",
-    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
-    "tags": [
-      "SailPoint",
-      "IGA",
-      "Access Reviews",
-      "Governance"
-    ],
-    "note": "SailPoint\u2019s next-generation certification engine is moving to general availability, making the rollout schedule and tenant-impact details relevant to IGA teams planning access-review operations.",
-    "score": 78
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -1717,6 +1750,24 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "6c0ce9e5b02a4070",
+    "date": "2026-09-15",
+    "source": "IETF WIMSE",
+    "title": "AI Identity Management System",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "OAuth",
+      "Standards",
+      "Authorization"
+    ],
+    "note": "This Internet-Draft profiles how WIMSE, OAuth, workload identity, delegation, transaction tokens, monitoring, and policy can be composed for AI-agent authentication and authorization.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-15T21:43:14Z",
     "publishedDate": "2026-09-15",
     "id": "fe184999dcccb80e",
@@ -2462,17 +2513,18 @@
     "publishedDate": "2026-09-10",
     "id": "f0fae68644f82a83",
     "date": "2026-09-10",
-    "source": "Brevo",
+    "source": "Brevo Status",
     "title": "Attacker gained access to client accounts",
     "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
     "tags": [
       "IAM",
       "SAML",
       "SSO",
-      "ITDR"
+      "Federation",
+      "Incident"
     ],
-    "note": "Brevo\u2019s primary disclosure describes a tenant-boundary failure in SAML SSO that let an attacker-controlled identity provider authenticate as invited users across organizations, affecting 138 customer accounts.",
-    "score": 100
+    "note": "Brevo\u2019s primary disclosure identifies an SSO tenant-boundary failure that let an attacker authenticate as users across organizations, access 138 accounts, and export contacts from 43.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
