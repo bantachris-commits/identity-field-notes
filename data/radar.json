@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "bfbf7cb5870522d0",
+    "date": "2026-09-24",
+    "source": "BleepingComputer",
+    "title": "Exposed GitLab project email addresses let attackers push code",
+    "url": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "Aikido researchers found GitLab project email addresses embed long-lived credentials that can let attackers create work items, push code, access private repositories, and expose CI/CD secrets.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-24",
     "id": "b0071db721a96058",
@@ -104,23 +120,6 @@
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
-    "id": "ee4ea52c54c1c84a",
-    "date": "2026-09-23",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
-    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "NHI",
-      "SIEM"
-    ],
-    "note": "The integration brings privileged-access, identity-relationship, and AI-agent context into Falcon SIEM, reflecting the convergence of PAM telemetry and identity threat detection.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
     "id": "0ce37d3561b3f3f4",
     "date": "2026-09-23",
     "source": "SailPoint Developer Community",
@@ -154,6 +153,38 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e158ecac2f7dd6fa",
+    "date": "2026-09-23",
+    "source": "Okta",
+    "title": "Oktane 2026: Setting the standard for the secure agentic future",
+    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
+    "tags": [
+      "IAM",
+      "AI Agents",
+      "Authorization"
+    ],
+    "note": "Okta describes new agent-security capabilities including shadow-agent discovery, agent gateway controls, and support for third-party identity providers.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "ee4ea52c54c1c84a",
+    "date": "2026-09-23",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
+    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "The integration brings human, machine, and AI-agent privilege relationships into SIEM investigations, reflecting the continuing convergence of PAM, identity analytics, and detection response.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
     "publishedDate": "2026-09-23",
     "id": "418eab4b215afd87",
@@ -180,29 +211,30 @@
     "url": "https://cloud.google.com/blog/products/chrome-enterprise/secure-intelligent-experiences-across-every-endpoint",
     "tags": [
       "AI Agents",
-      "Identity Security",
+      "IAM",
       "Authorization",
-      "Passkeys"
+      "Endpoint Identity"
     ],
-    "note": "Google\u2019s latest endpoint direction connects agentic workflows with identity-aware controls, offering practitioners a view into how browser and device security are being redesigned for autonomous agents.",
-    "score": 82
+    "note": "Google outlines how agentic workflows are changing endpoint and workforce identity assumptions, with implications for device trust, delegated authority, and policy enforcement around autonomous actions.",
+    "score": 76
   },
   {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e158ecac2f7dd6fa",
-    "date": "2026-09-23",
-    "source": "Okta",
-    "title": "Oktane 2026: Setting the standard for the secure agentic future",
-    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "1bbc2c4488af2f6a",
+    "date": "2026-09-22",
+    "source": "Microsoft Security",
+    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
-      "AI Agents",
-      "NHI",
-      "ITDR",
-      "Authorization"
+      "Entra",
+      "OAuth",
+      "Token Abuse",
+      "MFA Bypass",
+      "ITDR"
     ],
-    "note": "Okta details newly emphasized agent-security capabilities including shadow-agent discovery, agent gateways, third-party IdP support and treating agents as first-class governed identities.",
-    "score": 79
+    "note": "Microsoft documents how the EvilTokens phishing service industrialized device-code authentication abuse, token theft, inbox persistence, device registration, and AI-assisted business-email compromise across more than 10,000 organizations.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -231,12 +263,12 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "Microsoft Entra",
+      "Entra",
       "MFA",
-      "ITDR",
-      "Credential Theft"
+      "Federation",
+      "Privilege Abuse"
     ],
-    "note": "The TrustSink technique shows how a highly privileged Entra compromise can register a malicious external MFA provider that captures replacement passwords and survives password resets.",
+    "note": "Varonis demonstrated TrustSink, a post-compromise technique in which a privileged Entra attacker registers a rogue external MFA provider that captures replacement passwords inside an otherwise valid login flow.",
     "score": 98
   },
   {
@@ -275,24 +307,6 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "1bbc2c4488af2f6a",
-    "date": "2026-09-22",
-    "source": "Microsoft Security Blog",
-    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-    "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "OAuth",
-      "Token theft",
-      "MFA bypass"
-    ],
-    "note": "Microsoft details how EvilTokens abused device-code authentication to steal tokens, establish persistence, register devices, create inbox rules and perform Graph reconnaissance across more than 10,000 organizations.",
-    "score": 96
-  },
-  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "bbe00974ebe14bb0",
@@ -301,14 +315,29 @@
     "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
     "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
     "tags": [
+      "Entra",
       "OAuth",
-      "Token Theft",
-      "MFA Bypass",
-      "Microsoft Entra",
-      "Incident"
+      "Token Abuse",
+      "MFA Bypass"
     ],
-    "note": "Independent reporting adds operational detail on how EvilTokens abused Microsoft's device-code authorization flow to obtain tokens despite MFA and automate post-compromise mailbox reconnaissance.",
+    "note": "The disruption operation provides concrete impact data on device-code phishing, including more than 12,000 compromised Microsoft accounts and persistent access obtained despite MFA.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "682952e74bdefc30",
+    "date": "2026-09-22",
+    "source": "F5",
+    "title": "Security Advisory: BIG-IP APM Remote Code Execution Vulnerability CVE-2026-94127",
+    "url": "https://my.f5.com/manage/s/article/K000149843",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authentication"
+    ],
+    "note": "F5 disclosed active exploitation of a BIG-IP APM flaw affecting OAuth Authorization Server deployments, making this an urgent identity-proxy and federation control review item.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -378,6 +407,23 @@
     ],
     "note": "SpyCloud research links infostealer-exposed employee passwords and active sessions to broad exposure across U.S. water and wastewater providers, underscoring credential and session-revocation gaps.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "5951215eea492b0b",
+    "date": "2026-09-22",
+    "source": "Cloudflare",
+    "title": "Cloudflare participates in global operation to disrupt EvilTokens Phishing-as-a-Service",
+    "url": "https://www.cloudflare.com/threat-intelligence/research/report/cloudflare-participates-in-global-operation-to-disrupt-eviltokens-phishing-as-a-service/",
+    "tags": [
+      "OAuth",
+      "Token Abuse",
+      "MFA Bypass",
+      "Cloud Security"
+    ],
+    "note": "Cloudflare explains how EvilTokens abused Cloudflare Workers and customer-supplied API keys to automate Microsoft token theft and persistent access at scale.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
@@ -809,23 +855,6 @@
     "score": 95
   },
   {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "408ef5d6647039b9",
-    "date": "2026-09-18",
-    "source": "SecurityWeek",
-    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
-    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
-    "tags": [
-      "SAML",
-      "API keys",
-      "Machine identity",
-      "Supply chain"
-    ],
-    "note": "Independent reporting connects the Brevo campaign\u2019s SAML SSO compromise and subsequent long-lived API-key abuse to phishing, customer-data access and malicious script injection at scale.",
-    "score": 92
-  },
-  {
     "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
     "publishedDate": "2026-09-18",
     "id": "dd97c15c6c0f7789",
@@ -859,6 +888,23 @@
     ],
     "note": "Reporting based on a Spanish data-protection authority disclosure describes an AI-assisted intrusion that found loose credentials, authenticated to an internal system, exploited an application weakness, and modified records.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
+    "publishedDate": "2026-09-18",
+    "id": "408ef5d6647039b9",
+    "date": "2026-09-18",
+    "source": "SecurityWeek",
+    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+    "tags": [
+      "SAML",
+      "Federation",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "Reporting links the compromise of 138 Brevo accounts, including a Trezor account, to a vulnerability in SAML SSO handling and subsequent abuse of an API key and credentials.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
@@ -3317,54 +3363,5 @@
     "note": "Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and a separate campaign involving credential stuffing and OAuth token-grant attempts.",
     "score": 92,
     "firstSeenAt": "2026-09-13T16:36:23Z"
-  },
-  {
-    "id": "cd08e41344097314",
-    "date": "2026-07-28",
-    "source": "Agentic AI Foundation",
-    "title": "Authorization in MCP 2026-07-28: Clarifying trust relationships for agentic systems",
-    "url": "https://aaif.io/blog/authorization-in-mcp-2026-07-28-clarifying-trust-relationships-for-agentic-systems",
-    "tags": [
-      "AUTHZ",
-      "MCP",
-      "OAuth",
-      "OIDC",
-      "Delegation"
-    ],
-    "note": "Architecture-focused treatment of trust relationships among users, hosts, agents, MCP servers, authorization servers and downstream resources; older, but durable enough to retain as a reference.",
-    "score": 82,
-    "firstSeenAt": "2026-09-13T16:36:23Z"
-  },
-  {
-    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
-    "publishedDate": "2026-07-17",
-    "id": "4d70d81a7ea942f9",
-    "date": "2026-07-17",
-    "source": "OpenID Foundation",
-    "title": "Public Review Period for Proposed OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification",
-    "url": "https://openid.net/public-review-period-for-proposed-openid-connect-ephemeral-subject-identifier-1-0-final-specification/",
-    "tags": [
-      "OpenID",
-      "OIDC",
-      "Privacy"
-    ],
-    "note": "The proposed OIDC Ephemeral Subject Identifier entered its final-specification voting period on September 16, making its privacy and correlation implications newly actionable for federation architects.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-07-13",
-    "id": "20e828303a7a15fb",
-    "date": "2026-07-13",
-    "source": "Microsoft Security",
-    "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
-    "tags": [
-      "Microsoft Entra",
-      "Passkeys",
-      "MFA"
-    ],
-    "note": "The September 18 milestone makes this newly operationally relevant: Microsoft is publishing provider and commercial details as Entra shifts users from SMS and voice toward passkeys.",
-    "score": 87
   }
 ]
