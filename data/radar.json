@@ -1,5 +1,39 @@
 [
   {
+    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "b0071db721a96058",
+    "date": "2026-09-24",
+    "source": "Microsoft Security Blog",
+    "title": "Beyond the ransomware: Tracking Storm-2570\u2019s consistent tradecraft across deployments",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "Active Directory",
+      "Credential theft"
+    ],
+    "note": "Microsoft documents repeated use of NTDS.dit credential dumping, privileged access, RMM tooling, RDP enablement and cloud credentials across ransomware intrusions, with practical hunting guidance.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "a6f01a8ed6a8b6a0",
+    "date": "2026-09-24",
+    "source": "Microsoft Security Blog",
+    "title": "What\u2019s new in Microsoft Security: September 2026",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "AI-agent authorization",
+      "Zero Trust"
+    ],
+    "note": "Microsoft describes generally available controls that apply Purview data policies at the Entra network layer to human and on-behalf-of agent traffic, including blocking sensitive uploads to unsanctioned AI tools.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
     "publishedDate": "2026-09-23",
     "id": "03b9753abd7a90e4",
@@ -171,24 +205,6 @@
     "score": 79
   },
   {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "1bbc2c4488af2f6a",
-    "date": "2026-09-22",
-    "source": "Microsoft Security",
-    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-    "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "OAuth",
-      "Token Abuse",
-      "MFA Bypass"
-    ],
-    "note": "Microsoft details how an AI-enabled phishing-as-a-service platform abuses device-code authentication to steal tokens, compromise more than 12,000 inboxes, and establish persistence through mailbox rules.",
-    "score": 99
-  },
-  {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
     "publishedDate": "2026-09-22",
     "id": "373464fd801623e4",
@@ -259,6 +275,24 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "1bbc2c4488af2f6a",
+    "date": "2026-09-22",
+    "source": "Microsoft Security Blog",
+    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "OAuth",
+      "Token theft",
+      "MFA bypass"
+    ],
+    "note": "Microsoft details how EvilTokens abused device-code authentication to steal tokens, establish persistence, register devices, create inbox rules and perform Graph reconnaissance across more than 10,000 organizations.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "bbe00974ebe14bb0",
@@ -312,6 +346,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "a06e579e4539eb2a",
+    "date": "2026-09-22",
+    "source": "CERT-EU",
+    "title": "Security Advisory 2026-013: Critical Vulnerability in F5 BIG-IP APM",
+    "url": "https://cert.europa.eu/publications/security-advisories/2026-013",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "CERT-EU reports active exploitation of an unauthenticated RCE in BIG-IP APM configurations using OAuth authorization-server profiles and provides compromise indicators tied to OAuth failures and suspicious commands.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
     "publishedDate": "2026-09-22",
     "id": "c169620ea001e674",
@@ -345,6 +396,23 @@
     ],
     "note": "A broad industry coalition published an expanded reference architecture centered on first-class agent identities, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "a62a122af144e52c",
+    "date": "2026-09-22",
+    "source": "SecurityWeek",
+    "title": "BigCommerce Data Breach Caused by Compromised Third-Party App Credentials",
+    "url": "https://www.securityweek.com/bigcommerce-data-breach-caused-by-compromised-third-party-app-credentials/",
+    "tags": [
+      "NHI",
+      "API keys",
+      "OAuth",
+      "Supply chain"
+    ],
+    "note": "The incident shows how compromised credentials belonging to a third-party storefront application enabled customer-data access and script injection across BigCommerce merchant environments.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -749,14 +817,13 @@
     "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
     "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
     "tags": [
-      "IAM",
       "SAML",
-      "Secrets",
-      "API Keys",
-      "Supply Chain"
+      "API keys",
+      "Machine identity",
+      "Supply chain"
     ],
-    "note": "The incident chain began with a SAML SSO weakness exposing accounts and later involved a compromised long-lived Cloudflare API key used to deploy malicious code at scale.",
-    "score": 95
+    "note": "Independent reporting connects the Brevo campaign\u2019s SAML SSO compromise and subsequent long-lived API-key abuse to phishing, customer-data access and malicious script injection at scale.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
@@ -1941,16 +2008,15 @@
     "id": "55acb2b729bfb598",
     "date": "2026-09-14",
     "source": "Brevo Status",
-    "title": "Security Incident - ClickFix",
+    "title": "Post-mortem: malicious \u201cClickFix\u201d script served via Brevo\u2019s Cloudflare account",
     "url": "https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up",
     "tags": [
-      "NHI",
-      "secrets management",
-      "API keys",
       "PAM",
-      "supply chain"
+      "Secrets management",
+      "Machine identity",
+      "API keys"
     ],
-    "note": "Brevo's post-mortem attributes a customer-facing supply-chain compromise to a long-lived, full-permission Cloudflare API key hardcoded in source code and lacking effective change monitoring.",
+    "note": "Brevo attributes a five-and-a-half-hour supply-chain incident to a long-lived full-permission Cloudflare API key hardcoded in source code, enabling malicious Worker and route deployment.",
     "score": 95
   },
   {
@@ -2519,12 +2585,11 @@
     "tags": [
       "IAM",
       "SAML",
-      "SSO",
       "Federation",
-      "Incident"
+      "Account linking"
     ],
-    "note": "Brevo\u2019s primary disclosure identifies an SSO tenant-boundary failure that let an attacker authenticate as users across organizations, access 138 accounts, and export contacts from 43.",
-    "score": 99
+    "note": "Brevo\u2019s postmortem identifies a federation-boundary failure in which an attacker\u2019s SSO configuration granted access to invited users across organizations rather than only the owning tenant.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -3301,22 +3366,5 @@
     ],
     "note": "The September 18 milestone makes this newly operationally relevant: Microsoft is publishing provider and commercial details as Entra shifts users from SMS and voice toward passkeys.",
     "score": 87
-  },
-  {
-    "id": "b2d31b97d2d61eba",
-    "date": "2026-07-13",
-    "source": "Microsoft Security Blog",
-    "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-microsoft-entra-id/",
-    "tags": [
-      "Microsoft Entra",
-      "Passkeys",
-      "FIDO2",
-      "MFA",
-      "Authentication"
-    ],
-    "note": "The September 1 rollout makes passkeys the default Entra authentication experience for users relying on SMS or voice, making this a newly operationally relevant migration item for identity teams.",
-    "score": 86,
-    "firstSeenAt": "2026-09-14T21:59:58Z"
   }
 ]
