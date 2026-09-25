@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "403c55824d205c82",
+    "date": "2026-09-25",
+    "source": "SailPoint Developer Community",
+    "title": "New Capability: Manual Task Support for Governance Groups",
+    "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
+    "tags": [
+      "IGA",
+      "Provisioning",
+      "Accountability",
+      "Offboarding"
+    ],
+    "note": "The capability replaces shared service-account workarounds for manual provisioning with group-based fulfillment and audit records naming the individual who completed each task.",
+    "score": 79
+  },
+  {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
     "publishedDate": "2026-09-24",
     "id": "bfbf7cb5870522d0",
@@ -33,6 +50,40 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "849a3d02ea1aace5",
+    "date": "2026-09-24",
+    "source": "BleepingComputer",
+    "title": "CISA: Ransomware gangs now exploiting critical TeamCity flaw",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/",
+    "tags": [
+      "PAM",
+      "CI/CD",
+      "Authentication Bypass",
+      "Machine Identity"
+    ],
+    "note": "Active exploitation of an unauthenticated TeamCity flaw can expose stored credentials and compromise build artifacts and downstream CI/CD pipelines under the server\u2019s privileges.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "81ef64c003d766d1",
+    "date": "2026-09-24",
+    "source": "BleepingComputer",
+    "title": "New Carbonato malware uses AI agents to hijack exposed Docker hosts",
+    "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "Secrets",
+      "Cloud Security"
+    ],
+    "note": "Carbonato abuses unauthenticated Docker APIs to deploy a privileged AI-agent framework that collects cloud keys, SSH credentials, Kubernetes tokens, and other access material.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-24",
     "id": "a6f01a8ed6a8b6a0",
@@ -50,6 +101,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "5bcb4c4c91af9446",
+    "date": "2026-09-24",
+    "source": "SailPoint Developer Community",
+    "title": "New Capability: Purview, Cyera & BigID Data Classification Labels Integration in Data Access Security",
+    "url": "https://developer.sailpoint.com/discuss/t/new-capability-purview-cyera-bigid-data-classification-labels-integration-in-data-access-security/223826",
+    "tags": [
+      "IGA",
+      "Data Access Governance",
+      "Microsoft Purview",
+      "Least Privilege"
+    ],
+    "note": "The integration brings third-party data-classification labels into SailPoint access analysis so entitlement reviews can incorporate sensitivity context without duplicating classification work.",
+    "score": 74
+  },
+  {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
     "publishedDate": "2026-09-23",
     "id": "03b9753abd7a90e4",
@@ -63,6 +131,23 @@
       "ITDR"
     ],
     "note": "Critical exploitation of BIG-IP APM configurations acting as OAuth authorization servers creates an urgent identity-plane patching and compromise-hunting priority.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e82bf04022f67ea0",
+    "date": "2026-09-23",
+    "source": "Transluce",
+    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+    "url": "https://transluce.org/agent-activity",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "OAuth",
+      "Identity Security"
+    ],
+    "note": "Primary research documents AI agents bypassing access restrictions, probing public services for vulnerabilities, and reaching non-public data through a remote-browser security service.",
     "score": 97
   },
   {
@@ -87,16 +172,16 @@
     "publishedDate": "2026-09-23",
     "id": "93418228b9e585a9",
     "date": "2026-09-23",
-    "source": "Astrana Health, SEC filing",
-    "title": "Astrana Health reports material cybersecurity incident involving social-engineering attempts",
+    "source": "U.S. Securities and Exchange Commission",
+    "title": "Astrana Health, Inc. Form 8-K \u2014 Material Cybersecurity Incident",
     "url": "https://www.sec.gov/Archives/edgar/data/1083446/000110465926109813/asth-20260922x8k.htm",
     "tags": [
       "Incident",
-      "Compromised Credentials",
+      "Credentials",
       "Social Engineering",
-      "IAM"
+      "ITDR"
     ],
-    "note": "The material-incident filing attributes unauthorized activity to impersonation and spoofed-phone social engineering, with affected credentials reset and remote access restricted.",
+    "note": "Astrana reports that impersonation and phone-number spoofing targeted employees to obtain unauthorized system access, followed by credential resets, remote-access restrictions, and restoration from clean backups.",
     "score": 94
   },
   {
@@ -166,6 +251,23 @@
       "Authorization"
     ],
     "note": "Okta describes new agent-security capabilities including shadow-agent discovery, agent gateway controls, and support for third-party identity providers.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4196216303b7486e",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
+    "tags": [
+      "IGA",
+      "ITDR",
+      "NHI",
+      "Identity Graph"
+    ],
+    "note": "SailPoint is extending Identity Graph availability to Business+ tenants with visibility into human, non-human, and agent access paths, blast radius, privilege, and identity relationships.",
     "score": 84
   },
   {
@@ -263,12 +365,12 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "MFA",
-      "Federation",
-      "Privilege Abuse"
+      "ITDR",
+      "Identity Security"
     ],
-    "note": "Varonis demonstrated TrustSink, a post-compromise technique in which a privileged Entra attacker registers a rogue external MFA provider that captures replacement passwords inside an otherwise valid login flow.",
+    "note": "Varonis\u2019s TrustSink research shows how a privileged attacker can register a malicious external MFA provider, phish passwords during legitimate sign-ins, and mint apparently valid MFA-completion tokens.",
     "score": 98
   },
   {
@@ -489,10 +591,11 @@
       "AI Agents",
       "Authorization",
       "NHI",
-      "OAuth"
+      "AWS",
+      "Google Cloud"
     ],
-    "note": "The multi-vendor alliance proposes a reference architecture centered on first-class agent identities, task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
-    "score": 88
+    "note": "Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others published a multi-vendor architecture centered on first-class agent identities, task-scoped access, traceable delegation, and reversible containment.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -512,22 +615,6 @@
     "score": 84
   },
   {
-    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "8f28c96c1e2b7e42",
-    "date": "2026-09-22",
-    "source": "SailPoint Developer Community",
-    "title": "GA Announcement: Next Generation Certifications",
-    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
-    "tags": [
-      "IGA",
-      "Access Certification",
-      "Governance"
-    ],
-    "note": "SailPoint documents the regional production rollout and operational constraints for its next-generation certification engine, making this relevant to IGA teams planning certification changes.",
-    "score": 82
-  },
-  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-22",
     "id": "a80caae3e9d572f1",
@@ -544,6 +631,22 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "8f28c96c1e2b7e42",
+    "date": "2026-09-22",
+    "source": "SailPoint Developer Community",
+    "title": "GA Announcement: Next Generation Certifications",
+    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
+    "tags": [
+      "IGA",
+      "Access Reviews",
+      "Governance"
+    ],
+    "note": "SailPoint\u2019s next-generation certification engine is entering regional GA rollout, with material migration constraints, API changes, and limitations affecting large certification campaigns.",
+    "score": 77
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -811,14 +914,14 @@
     "title": "TanStack Supply Chain Attack Analysis",
     "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attack-analysis",
     "tags": [
-      "OAuth/session/token abuse",
+      "OAuth",
+      "Machine Identity",
+      "Secrets",
       "Offboarding",
-      "NHI",
-      "Secrets management",
-      "Incident"
+      "Supply Chain"
     ],
-    "note": "The incident report traces source-code exposure to a departed employee\u2019s retained GitHub access and identifies a still-live AWS token, providing a concrete offboarding and token-lifecycle case study.",
-    "score": 97
+    "note": "CrowdSec\u2019s incident analysis traces private-repository theft to a former employee\u2019s still-active GitHub access and a token harvested through a compromised developer package.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -3262,106 +3365,5 @@
     "note": "Primary disclosure from an identity-verification provider concerning unauthorized access to cloud-stored identity information, including government-ID numbers.",
     "score": 84,
     "firstSeenAt": "2026-09-13T14:25:18Z"
-  },
-  {
-    "id": "dropbox-lenovo-idp-2026",
-    "date": "2026-09-02",
-    "source": "BleepingComputer",
-    "title": "Dropbox accounts breached through Lenovo email verification flaw",
-    "url": "https://www.bleepingcomputer.com/news/security/dropbox-accounts-breached-through-lenovo-email-verification-flaw/",
-    "tags": [
-      "IAM",
-      "Federation",
-      "Account linking",
-      "Authentication",
-      "Trust boundaries"
-    ],
-    "note": "Security reporting on an identity-linking failure where fraudulent Lenovo IDs could be trusted into existing Dropbox accounts without the victim's Dropbox password.",
-    "score": 93,
-    "firstSeenAt": "2026-09-13T16:30:12-06:00"
-  },
-  {
-    "id": "afd2012573ed7e06",
-    "date": "2026-09-02",
-    "source": "OpenID Foundation",
-    "title": "Notice of Vote for Proposed OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification",
-    "url": "https://openid.net/notice-of-vote-for-proposed-openid-connect-ephemeral-subject-identifier-1-0-final-specification/",
-    "tags": [
-      "OpenID",
-      "Federation",
-      "Privacy",
-      "CIAM",
-      "Standards"
-    ],
-    "note": "The proposed ephemeral subject identifier specification is a meaningful federation change for reducing persistent cross-party correlation and improving identity privacy in OpenID Connect deployments.",
-    "score": 84,
-    "firstSeenAt": "2026-09-15T21:43:14Z"
-  },
-  {
-    "id": "347c454cf81fe238",
-    "date": "2026-09-02",
-    "source": "AWS Security Blog",
-    "title": "Agentic security: Detection and response at machine speed",
-    "url": "https://aws.amazon.com/blogs/security/agentic-security-detection-and-response-at-machine-speed/",
-    "tags": [
-      "AI Agents",
-      "ITDR",
-      "NHI",
-      "Authorization"
-    ],
-    "note": "AWS outlines an identity-centered detection and response model for autonomous agents that authenticate for users, execute multistep workflows, and require machine-speed containment.",
-    "score": 84,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
-  },
-  {
-    "id": "23e5fbe83235a9c9",
-    "date": "2026-09-01",
-    "source": "Auth0",
-    "title": "How to Make Your AI Agent Enterprise-Ready: Enabling Enterprise-Managed Authorization for Client Apps in Auth0",
-    "url": "https://auth0.com/blog/enabling-enterprise-managed-authorization-for-client-apps/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "Authorization",
-      "NHI",
-      "MCP",
-      "Okta"
-    ],
-    "note": "Auth0\u2019s early-access implementation of Cross App Access, Enterprise-Managed Authorization, and ID-JAG shows how enterprise IdPs can govern app-to-app and agent-to-tool authorization with short-lived exchanged tokens.",
-    "score": 88,
-    "firstSeenAt": "2026-09-14T21:59:58Z"
-  },
-  {
-    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
-    "publishedDate": "2026-09-01",
-    "id": "afad679b72d1a28d",
-    "date": "2026-09-01",
-    "source": "Amazon Web Services",
-    "title": "Amazon Bedrock AgentCore Identity now offers a managed consent portal",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-agentcore/",
-    "tags": [
-      "AI-Agent Authorization",
-      "OAuth",
-      "NHI"
-    ],
-    "note": "The managed consent portal removes custom OAuth callback and session-binding infrastructure for agents connecting to third-party services such as GitHub, Salesforce, and Slack.",
-    "score": 86
-  },
-  {
-    "id": "5eb7907d4adfd0ac",
-    "date": "2026-08-31",
-    "source": "METR",
-    "title": "Update on Security at METR",
-    "url": "https://metr.org/blog/2026-08-31-security-update/",
-    "tags": [
-      "NHI",
-      "API keys",
-      "Secrets",
-      "AI agents",
-      "Authentication"
-    ],
-    "note": "Primary incident disclosure covering a fail-open authentication bug, API-key theft, SSH persistence and a separate campaign involving credential stuffing and OAuth token-grant attempts.",
-    "score": 92,
-    "firstSeenAt": "2026-09-13T16:36:23Z"
   }
 ]
