@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-09-25-morning-brief",
+    "date": "2026-09-25",
+    "coverageDate": "2026-09-24",
+    "edition": "MORNING EDITION // 2026.09.25",
+    "title": "Identity Field Notes: September 24 Recap",
+    "dek": "Highlights from 2026-09-24. Yesterday\u2019s verified highlights span ransomware credential theft and a Microsoft Entra control for governing sensitive data moving through human and AI-agent traffic.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "ITDR",
+      "Machine IAM"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-24, verified against linked sources. Edition dated 2026-09-25; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Storm-2570 shows why ransomware defense must track privileged-access tradecraft, not payload brands",
+        "summary": "Microsoft Threat Intelligence says the Storm-2570 ransomware affiliate has reused a broadly consistent intrusion pattern across Qilin, DragonForce, Anubis, and BERT deployments. Observed activity includes RMM tooling, NTDS.dit credential dumping, PsExec and RDP-based lateral movement, Defender tampering, and cloud-assisted exfiltration; Microsoft also provides hunting queries and mitigation guidance. ([microsoft.com](https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/))",
+        "why": "Treat RMM services, domain-controller database access, RDP enablement, and privileged account activity as connected signals rather than isolated alerts. The report reinforces the value of identity-aware detection before ransomware execution, while noting that Storm-2570\u2019s initial-access method remains unconfirmed.",
+        "source": "Microsoft Security Blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+        "confidence": "Primary source",
+        "published_date": "2026-09-24",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Microsoft Entra and Purview add network-layer controls for human and agent data transfers",
+        "summary": "Microsoft says Microsoft Purview and Microsoft Entra Global Secure Access are generally available for enforcing context-aware data policies at the network layer across human actions and on-behalf-of agent traffic. The stated use case is detecting sensitive files or text in real time and blocking uploads to risky destinations, including unsanctioned AI tools. ([microsoft.com](https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/))",
+        "why": "This is a meaningful shift from governing only user identities toward controlling what delegated or agent-mediated sessions can send over the network. Practitioners should validate how policy context, agent attribution, destination risk, and failure handling work in production; the capability description is a Microsoft product claim rather than independent validation.",
+        "source": "Microsoft Security Blog",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-24",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-24-morning-brief",
     "date": "2026-09-24",
     "coverageDate": "2026-09-23",
@@ -13,7 +55,7 @@
       "Machine IAM"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-23, verified against linked sources. Edition dated 2026-09-24; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
