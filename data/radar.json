@@ -64,13 +64,13 @@
     "title": "Simplifying Passwordless Sign-In with FIDO2 Discoverable Credentials",
     "url": "https://blogs.oracle.com/cloud-infrastructure/oci-iam-discoverable-credentials",
     "tags": [
-      "passkeys",
+      "Passkeys",
       "FIDO",
       "IAM",
-      "authentication"
+      "Authentication"
     ],
-    "note": "Announces OCI IAM support for FIDO2 discoverable credentials and provides operational guidance for making passkeys mandatory for privileged and high-risk accounts. (blogs.oracle.com",
-    "score": 83
+    "note": "OCI IAM added support for FIDO2 discoverable credentials, extending passwordless sign-in and passkey-oriented authentication to Oracle cloud identity workflows.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -88,6 +88,42 @@
     ],
     "note": "The capability replaces shared service-account workarounds for manual provisioning with group-based fulfillment and audit records naming the individual who completed each task.",
     "score": 79
+  },
+  {
+    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "8e4e4844f4e587c9",
+    "date": "2026-09-24",
+    "source": "Dark Reading",
+    "title": "Ghost Service Accounts Enable M365 Data Theft in Chile",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ghost-service-accounts-m365-data-theft-chile",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "Service Accounts",
+      "Microsoft 365",
+      "Incident"
+    ],
+    "note": "A campaign against Chilean organizations reportedly bypassed hardened employee accounts by abusing forgotten Microsoft 365 service accounts with weak or missing MFA controls.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "2a0056ca5df91e79",
+    "date": "2026-09-24",
+    "source": "Zenity Labs",
+    "title": "SalesBleed: Hijacking Agentforce in Slack for Anonymous Phishing Attacks",
+    "url": "https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "OAuth",
+      "Session Abuse",
+      "Incident"
+    ],
+    "note": "Zenity shows how Salesforce Agentforce integrations could be hijacked to send unattributed phishing messages through trusted Slack channels without user confirmation.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
@@ -345,6 +381,42 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "3a5e2fec5352e727",
+    "date": "2026-09-23",
+    "source": "Dark Reading",
+    "title": "GitLab Email Addresses Can Be Weaponized for Supply Chain Attacks",
+    "url": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Machine Identity",
+      "Supply Chain"
+    ],
+    "note": "Aikido Security found that GitLab\u2019s project-specific incoming email addresses function as highly privileged, bearer-like tokens capable of creating content in private projects.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "8f47d015c58dd0c1",
+    "date": "2026-09-23",
+    "source": "Okta",
+    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
+    "url": "https://www.okta.com/en-ca/newsroom/press-releases/ai-innovations-oktane-2026/",
+    "tags": [
+      "Okta",
+      "Auth0",
+      "AI Agents",
+      "NHI",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "Okta announced agent discovery, an agent gateway, third-party IdP support, and governance controls aimed at treating AI agents as first-class identities.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-23",
     "id": "e82bf04022f67ea0",
@@ -398,6 +470,24 @@
     "score": 87
   },
   {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "ee4ea52c54c1c84a",
+    "date": "2026-09-23",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
+    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "tags": [
+      "BeyondTrust",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "SIEM"
+    ],
+    "note": "The integration brings privilege exposure, privileged-session activity, and human, workload, non-human, and AI-agent identity context into Falcon investigations.",
+    "score": 87
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-23",
     "id": "4196216303b7486e",
@@ -413,6 +503,24 @@
       "privilege"
     ],
     "note": "Adds identity-graph visibility across human, non-human, and agent access paths, including blast-radius analysis and direct risk-reduction actions for Business+ tenants. (developer.sailpoint.com",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e158ecac2f7dd6fa",
+    "date": "2026-09-23",
+    "source": "Okta",
+    "title": "Oktane 2026: Setting the standard for the secure agentic future",
+    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
+    "tags": [
+      "Okta",
+      "Auth0",
+      "AI Agents",
+      "Authorization",
+      "Standards"
+    ],
+    "note": "Okta outlines Agent SSO, Cross App Access, and a multi-vendor blueprint intended to standardize agent discovery, authorization, runtime visibility, and response.",
     "score": 86
   },
   {
@@ -449,38 +557,6 @@
     ],
     "note": "The AD Migrator 2.0 release treats directory migration as a security event, adding staged validation, migration-wide logging, and controls for service-account and trust-boundary risks.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e158ecac2f7dd6fa",
-    "date": "2026-09-23",
-    "source": "Okta",
-    "title": "Oktane 2026: Setting the standard for the secure agentic future",
-    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
-    "tags": [
-      "IAM",
-      "AI Agents",
-      "Authorization"
-    ],
-    "note": "Okta describes new agent-security capabilities including shadow-agent discovery, agent gateway controls, and support for third-party identity providers.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "ee4ea52c54c1c84a",
-    "date": "2026-09-23",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
-    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "The integration brings human, machine, and AI-agent privilege relationships into SIEM investigations, reflecting the continuing convergence of PAM, identity analytics, and detection response.",
-    "score": 82
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -537,17 +613,18 @@
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
     "date": "2026-09-22",
-    "source": "Microsoft Threat Intelligence",
+    "source": "Microsoft Security Blog",
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
-      "OAuth/session/token abuse",
-      "MFA bypass",
-      "Microsoft Entra",
-      "ITDR"
+      "IAM",
+      "Entra",
+      "OAuth",
+      "ITDR",
+      "Token Abuse"
     ],
-    "note": "Primary analysis of a large PhaaS operation shows how device-code authentication is abused to steal tokens, establish mailbox persistence and bypass the security value practitioners expect from MFA.",
-    "score": 98
+    "note": "Microsoft details a device-code phishing service that compromised more than 12,000 accounts, stole OAuth tokens despite MFA, and enabled Graph reconnaissance, inbox-rule persistence, and data theft.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -587,6 +664,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Entra",
+      "MFA",
+      "IAM",
+      "Authentication Bypass"
+    ],
+    "note": "Varonis researchers demonstrate how a privileged attacker can register a rogue external MFA provider in Entra to capture passwords and return a valid MFA-completion token.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -619,24 +713,6 @@
       "Zero-Day"
     ],
     "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Entra",
-      "MFA-bypass",
-      "authentication",
-      "privilege",
-      "ITDR"
-    ],
-    "note": "Covers TrustSink, in which an attacker with sufficiently privileged Entra access registers a rogue external MFA provider that captures passwords while returning a valid signed MFA result. (bleepingcomputer.com",
     "score": 97
   },
   {
@@ -793,24 +869,6 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "70d64c262cb2ead0",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "AWS",
-      "Google Cloud"
-    ],
-    "note": "Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others published a multi-vendor architecture centered on first-class agent identities, task-scoped access, traceable delegation, and reversible containment.",
-    "score": 86
-  },
-  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "0e9af621060459a6",
@@ -844,6 +902,25 @@
     ],
     "note": "A significant cross-vendor platform development proposes treating agents as first-class identities with task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "70d64c262cb2ead0",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "Standards",
+      "AWS",
+      "Google Cloud"
+    ],
+    "note": "Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others announced a cross-industry architecture for agent inventory, scoped access, traceable delegation, runtime monitoring, and containment.",
+    "score": 83
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -3311,72 +3388,5 @@
     "note": "Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.",
     "score": 91,
     "firstSeenAt": "2026-09-13T21:06:45Z"
-  },
-  {
-    "id": "56efd949aedf050d",
-    "date": "2026-09-09",
-    "source": "BleepingComputer",
-    "title": "AdaptHealth confirms 4.1 million people exposed in July cyberattack",
-    "url": "https://www.bleepingcomputer.com/news/security/adapthealth-confirms-41-million-people-exposed-in-july-cyberattack/",
-    "tags": [
-      "PAM",
-      "Third-Party Risk",
-      "Privileged Account",
-      "Social Engineering"
-    ],
-    "note": "AdaptHealth said a social-engineering attack compromised a privileged third-party contractor account and exposed data from cloud business applications and clinical portals.",
-    "score": 90,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-09",
-    "id": "0deaadf3ec28089b",
-    "date": "2026-09-09",
-    "source": "BleepingComputer",
-    "title": "MFA's Weakest Link: Account Recovery Is the New Attack Path",
-    "url": "https://www.bleepingcomputer.com/news/security/mfas-weakest-link-account-recovery-is-the-new-attack-path/",
-    "tags": [
-      "MFA",
-      "Help Desk",
-      "Account Recovery",
-      "ITDR"
-    ],
-    "note": "The analysis ties recent Scattered Spider-style intrusions to social-engineered password and MFA resets, treating service-desk recovery as part of the authentication boundary.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-09-13T15:35:36-06:00",
-    "publishedDate": "2026-09-09",
-    "id": "0bc125f22c0feaec",
-    "date": "2026-09-09",
-    "source": "Okta",
-    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
-    "url": "https://www.okta.com/newsroom/press-releases/okta-product-innovations-september-2026/",
-    "tags": [
-      "IGA",
-      "PAM",
-      "ITDR",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "A significant platform move combining AWS entitlement management, access-drift remediation, privileged access, and identity-threat capabilities for human, machine, and AI-agent identities.",
-    "score": 88
-  },
-  {
-    "id": "3b38bf26c38c7d3a",
-    "date": "2026-09-09",
-    "source": "Okta Threat Intelligence",
-    "title": "Inside the underground market for AI access",
-    "url": "https://www.okta.com/newsroom/articles/inside-the-underground-market-for-ai-access/",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "Account Takeover",
-      "Token Abuse"
-    ],
-    "note": "Okta documents the criminal market for hijacked AI accounts and trial credits, including account takeover, stolen credentials, and machine-access resale dynamics.",
-    "score": 86,
-    "firstSeenAt": "2026-09-14T05:23:26Z"
   }
 ]
