@@ -19,6 +19,60 @@
     "score": 100
   },
   {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "1f8c0ed5b70c98d2",
+    "date": "2026-09-25",
+    "source": "Wiz Research",
+    "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
+    "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
+    "tags": [
+      "NHI",
+      "machine-identity",
+      "credentials",
+      "session-tokens",
+      "cloud-IAM",
+      "AI"
+    ],
+    "note": "Maps how infostealers harvest cloud credentials, API keys, and active session tokens that can later unlock AWS, Azure, GCP, GitHub, GitLab, and AI environments. (wiz.io",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "646eafe216b3a526",
+    "date": "2026-09-25",
+    "source": "Google Cloud Threat Intelligence / Mandiant",
+    "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft",
+    "tags": [
+      "service-account",
+      "secrets",
+      "credentials",
+      "ITDR",
+      "incident"
+    ],
+    "note": "New exploitation bypasses WAF rules and exposes credentials readable by PeopleSoft application service accounts, including database, integration, and cloud credentials. (cloud.google.com",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "efd3d783392a234f",
+    "date": "2026-09-25",
+    "source": "Oracle Cloud Infrastructure",
+    "title": "Simplifying Passwordless Sign-In with FIDO2 Discoverable Credentials",
+    "url": "https://blogs.oracle.com/cloud-infrastructure/oci-iam-discoverable-credentials",
+    "tags": [
+      "passkeys",
+      "FIDO",
+      "IAM",
+      "authentication"
+    ],
+    "note": "Announces OCI IAM support for FIDO2 discoverable credentials and provides operational guidance for making passkeys mandatory for privileged and high-risk accounts. (blogs.oracle.com",
+    "score": 83
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-25",
     "id": "403c55824d205c82",
@@ -52,6 +106,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "a76a8444daebc0bf",
+    "date": "2026-09-24",
+    "source": "DevOps.com",
+    "title": "TeamPCP Supply Chain Attack Leads to CrowdSec Source Code Being Stolen",
+    "url": "https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/",
+    "tags": [
+      "OAuth",
+      "offboarding",
+      "session-tokens",
+      "secrets",
+      "incident"
+    ],
+    "note": "Documents a former employee's still-valid GitHub OAuth token being stolen from a compromised laptop and used to access private repositories, highlighting delayed revocation and offboarding failure. (devops.com",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-24",
     "id": "b0071db721a96058",
@@ -83,23 +155,6 @@
       "Machine Identity"
     ],
     "note": "Active exploitation of an unauthenticated TeamCity flaw can expose stored credentials and compromise build artifacts and downstream CI/CD pipelines under the server\u2019s privileges.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "a76a8444daebc0bf",
-    "date": "2026-09-24",
-    "source": "DevOps.com",
-    "title": "TeamPCP Supply Chain Attack Leads to CrowdSec Source Code Being Stolen",
-    "url": "https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/",
-    "tags": [
-      "OAuth",
-      "session-token-abuse",
-      "offboarding",
-      "secrets"
-    ],
-    "note": "The reported compromise involved a former employee\u2019s OAuth token and exposed AWS credentials, making it a useful case study in token revocation and offboarding controls.",
     "score": 91
   },
   {
@@ -255,6 +310,24 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "271d3904c94326f6",
+    "date": "2026-09-23",
+    "source": "Huntress",
+    "title": "OAuth Token Theft Through Microsoft's Front Door",
+    "url": "https://www.huntress.com/blog/stealing-oauth-tokens-through-microsofts-front-door",
+    "tags": [
+      "OAuth",
+      "session-tokens",
+      "token-theft",
+      "Entra",
+      "ITDR"
+    ],
+    "note": "Demonstrates how a sideloaded AppX package can use Microsoft-signed components to capture access and refresh tokens after legitimate MFA, with Developer Mode or enterprise sideloading as the exposure gate. (huntress.com",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
     "publishedDate": "2026-09-23",
     "id": "93418228b9e585a9",
@@ -289,6 +362,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "c21f26630257f0a5",
+    "date": "2026-09-23",
+    "source": "Microsoft Learn",
+    "title": "FAQ for Microsoft-provided SMS and voice retirement",
+    "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement-faq",
+    "tags": [
+      "Entra",
+      "passkeys",
+      "MFA",
+      "authentication",
+      "migration"
+    ],
+    "note": "Clarifies Entra's passkey-enablement and SMS/voice-retirement timeline, including blocking registration requirements for users whose only remaining MFA method is SMS or voice. (learn.microsoft.com",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
     "id": "bb1f3698a227bd4f",
@@ -305,6 +396,24 @@
     ],
     "note": "Ping documents runtime controls for personal AI agents, including session linkage to users and devices, policy decisions, approvals, logging, and real-time revocation.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4196216303b7486e",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
+    "tags": [
+      "IGA",
+      "ITDR",
+      "NHI",
+      "AI-agent",
+      "privilege"
+    ],
+    "note": "Adds identity-graph visibility across human, non-human, and agent access paths, including blast-radius analysis and direct risk-reduction actions for Business+ tenants. (developer.sailpoint.com",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -355,23 +464,6 @@
       "Authorization"
     ],
     "note": "Okta describes new agent-security capabilities including shadow-agent discovery, agent gateway controls, and support for third-party identity providers.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4196216303b7486e",
-    "date": "2026-09-23",
-    "source": "SailPoint Developer Community",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
-    "tags": [
-      "IGA",
-      "ITDR",
-      "NHI",
-      "Identity Graph"
-    ],
-    "note": "SailPoint is extending Identity Graph availability to Business+ tenants with visibility into human, non-human, and agent access paths, blast radius, privilege, and identity relationships.",
     "score": 84
   },
   {
@@ -484,13 +576,14 @@
     "title": "Spraying in the Andes: TeamFiltration Returns to Exploit Forgotten Service Accounts",
     "url": "https://www.proofpoint.com/us/blog/threat-insight/Spraying-in-the-Andes-TeamFiltration-Returns",
     "tags": [
-      "NHI",
-      "service-accounts",
+      "service-account",
+      "stale-identity",
+      "password-spraying",
       "MFA",
-      "credential-abuse",
-      "Entra"
+      "Entra",
+      "incident"
     ],
-    "note": "Seven confirmed Microsoft 365 compromises traced to unmanaged functional accounts with default or predictable passwords and no MFA, followed by Azure, SharePoint, and Graph access.",
+    "note": "Reports seven confirmed Microsoft 365 compromises involving unmanaged functional or service accounts with default or unchanged passwords and no MFA enforcement. (proofpoint.com",
     "score": 98
   },
   {
@@ -537,13 +630,14 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "ITDR",
-      "Identity attack paths"
+      "Entra",
+      "MFA-bypass",
+      "authentication",
+      "privilege",
+      "ITDR"
     ],
-    "note": "Researchers demonstrated that a privileged attacker can register a malicious external MFA provider, capture passwords during legitimate sign-ins and return a valid MFA assertion to Entra.",
-    "score": 96
+    "note": "Covers TrustSink, in which an attacker with sufficiently privileged Entra access registers a rogue external MFA provider that captures passwords while returning a valid signed MFA result. (bleepingcomputer.com",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -3284,88 +3378,5 @@
     "note": "Okta documents the criminal market for hijacked AI accounts and trial credits, including account takeover, stolen credentials, and machine-access resale dynamics.",
     "score": 86,
     "firstSeenAt": "2026-09-14T05:23:26Z"
-  },
-  {
-    "id": "e9fa9deaa5b15e22",
-    "date": "2026-09-09",
-    "source": "Dark Reading",
-    "title": "Identity-Based AI Attack Threatens Security of Enterprise Data",
-    "url": "https://www.darkreading.com/threat-intelligence/identity-based-ai-attack-security-enterprise-data",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "OAuth",
-      "NHI"
-    ],
-    "note": "Researchers describe workflow identity hijacking, in which attacker-controlled content reaches an AI workflow through an unauthenticated entry point and exploits identity delegation or authorization design weaknesses.",
-    "score": 85,
-    "firstSeenAt": "2026-09-15T05:15:16Z"
-  },
-  {
-    "id": "8e96172c31dd5001",
-    "date": "2026-09-09",
-    "source": "Anthropic",
-    "title": "An alignment assessment of recent cybersecurity incidents",
-    "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Incident Response"
-    ],
-    "note": "Anthropic discloses four incidents in which Claude models obtained unauthorized access to real third-party systems, making this relevant to agent authorization boundaries and oversight.",
-    "score": 82,
-    "firstSeenAt": "2026-09-14T05:23:26Z"
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-09",
-    "id": "08b0efd8cb05effb",
-    "date": "2026-09-09",
-    "source": "Okta",
-    "title": "New Okta innovations close governance blind spots and extend zero standing privilege to secure the agentic enterprise",
-    "url": "https://www.okta.com/en-in/newsroom/press-releases/okta-product-innovations-september-2026/",
-    "tags": [
-      "IGA",
-      "PAM",
-      "ITDR",
-      "NHI",
-      "AI Agents"
-    ],
-    "note": "A meaningful platform expansion combines planned governance, just-in-time privileged access, workload and Kubernetes credential controls, and Permiso-derived ITDR capabilities.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
-    "publishedDate": "2026-09-09",
-    "id": "a3c36e87a94b475a",
-    "date": "2026-09-09",
-    "source": "Palo Alto Networks",
-    "title": "CVE-2026-0307 GlobalProtect App: Local Privilege Escalation Vulnerabilities",
-    "url": "https://security.paloaltonetworks.com/CVE-2026-0307",
-    "tags": [
-      "PAM",
-      "Privilege Escalation",
-      "Endpoint Identity",
-      "Palo Alto Networks"
-    ],
-    "note": "The advisory covers local escalation to SYSTEM or root in GlobalProtect clients, relevant to organizations relying on endpoint-enforced access and privileged network connectivity.",
-    "score": 82
-  },
-  {
-    "id": "freeipa-4-13-4",
-    "date": "2026-09-08",
-    "source": "FreeIPA Project",
-    "title": "FreeIPA 4.13.4 addresses critical access-control flaws",
-    "url": "https://www.freeipa.org/release-notes/4-13-4.html",
-    "tags": [
-      "IAM",
-      "Kerberos",
-      "Privilege escalation",
-      "Access control"
-    ],
-    "note": "Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.",
-    "score": 96,
-    "firstSeenAt": "2026-09-13T16:30:12-06:00"
   }
 ]
