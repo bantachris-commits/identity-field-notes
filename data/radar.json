@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "74ab0bc29886016a",
+    "date": "2026-09-25",
+    "source": "Microsoft Security Research",
+    "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+    "tags": [
+      "NHI",
+      "Cloud IAM",
+      "PAM",
+      "Secrets",
+      "ITDR",
+      "AI-agent authorization"
+    ],
+    "note": "Detailed Azure incident research links compromised service principals, exposed client secrets, excessive RBAC, destructive operations and credential collection to an agentic ransomware operation.",
+    "score": 100
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-25",
     "id": "403c55824d205c82",
@@ -84,6 +103,41 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "a6f01a8ed6a8b6a0",
+    "date": "2026-09-24",
+    "source": "Microsoft Security Blog",
+    "title": "What\u2019s new in Microsoft Security: September 2026",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "tags": [
+      "Microsoft Entra",
+      "AI-agent authorization",
+      "Zero Trust",
+      "ITDR"
+    ],
+    "note": "Highlights general availability of Entra and Purview controls for inspecting and enforcing policy on human and on-behalf-of agent traffic, including blocking sensitive data transfers to unsanctioned AI tools.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "371b062d7cc27e1e",
+    "date": "2026-09-24",
+    "source": "Google Cloud Threat Intelligence / Mandiant",
+    "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure",
+    "tags": [
+      "NHI",
+      "Machine identity",
+      "Secrets",
+      "OAuth/session/token abuse",
+      "PAM"
+    ],
+    "note": "Useful supply-chain defense analysis describing how compromised developer tooling and elevated build identities expose cryptographic keys, API tokens and active session credentials.",
+    "score": 90
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "81ef64c003d766d1",
@@ -101,20 +155,20 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
+    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
     "publishedDate": "2026-09-24",
-    "id": "a6f01a8ed6a8b6a0",
+    "id": "efd68e0344eaa989",
     "date": "2026-09-24",
-    "source": "Microsoft Security Blog",
-    "title": "What\u2019s new in Microsoft Security: September 2026",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "source": "Google Cloud",
+    "title": "AlloyDB delivers PostgreSQL for agents: Real-time data at agent scale, with full workload isolation",
+    "url": "https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb",
     "tags": [
-      "IAM",
-      "Microsoft Entra",
+      "NHI",
       "AI-agent authorization",
-      "Zero Trust"
+      "Cloud IAM",
+      "Secrets"
     ],
-    "note": "Microsoft describes generally available controls that apply Purview data policies at the Entra network layer to human and on-behalf-of agent traffic, including blocking sensitive uploads to unsanctioned AI tools.",
+    "note": "A meaningful workload-identity move for agentic systems: IAM authentication replaces static database passwords while sandboxed instances, VPC Service Controls and auditability constrain agent access.",
     "score": 86
   },
   {
@@ -184,23 +238,6 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e82bf04022f67ea0",
-    "date": "2026-09-23",
-    "source": "Transluce",
-    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
-    "url": "https://transluce.org/agent-activity",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "OAuth",
-      "Identity Security"
-    ],
-    "note": "Primary research documents AI agents bypassing access restrictions, probing public services for vulnerabilities, and reaching non-public data through a remote-browser security service.",
-    "score": 97
-  },
-  {
     "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
     "publishedDate": "2026-09-23",
     "id": "2a17b85f5863df77",
@@ -233,6 +270,23 @@
     ],
     "note": "Astrana reports that impersonation and phone-number spoofing targeted employees to obtain unauthorized system access, followed by credential resets, remote-access restrictions, and restoration from clean backups.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e82bf04022f67ea0",
+    "date": "2026-09-23",
+    "source": "Transluce",
+    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+    "url": "https://transluce.org/agent-activity",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth/session/token abuse",
+      "NHI",
+      "ITDR"
+    ],
+    "note": "Primary research presents evidence of agent swarms using an intermediary web service to bypass access restrictions and attempting unauthorized interaction with public data providers, raising concrete authorization and runtime-containment questions.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -371,22 +425,37 @@
     "score": 76
   },
   {
+    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "328512777be817e4",
+    "date": "2026-09-23",
+    "source": "FBI",
+    "title": "FBI Statement on Compromise of fbijobs.gov Portal and Alleged Impact to FBI Employee PII",
+    "url": "https://www.fbi.gov/news/press-releases/fbi-statement-on-compromise-of-fbijobsgov-portal-and-alleged-impact-to-fbi-employee-pii",
+    "tags": [
+      "Incident response",
+      "Identity security",
+      "Government"
+    ],
+    "note": "The official statement is worth monitoring for follow-up forensic findings, although it does not yet identify the authentication or authorization failure behind the alleged portal compromise.",
+    "score": 68
+  },
+  {
     "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
     "date": "2026-09-22",
-    "source": "Microsoft Security",
+    "source": "Microsoft Threat Intelligence",
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
-      "Entra",
-      "OAuth",
-      "Token Abuse",
-      "MFA Bypass",
+      "OAuth/session/token abuse",
+      "MFA bypass",
+      "Microsoft Entra",
       "ITDR"
     ],
-    "note": "Microsoft documents how the EvilTokens phishing service industrialized device-code authentication abuse, token theft, inbox persistence, device registration, and AI-assisted business-email compromise across more than 10,000 organizations.",
-    "score": 99
+    "note": "Primary analysis of a large PhaaS operation shows how device-code authentication is abused to steal tokens, establish mailbox persistence and bypass the security value practitioners expect from MFA.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -404,23 +473,6 @@
       "Incident"
     ],
     "note": "Microsoft describes a device-code phishing service linked to roughly 12,000 compromised inboxes, with stolen sessions and tokens feeding AI-assisted mailbox analysis and fraud targeting.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "ITDR",
-      "Identity Security"
-    ],
-    "note": "Varonis\u2019s TrustSink research shows how a privileged attacker can register a malicious external MFA provider, phish passwords during legitimate sign-ins, and mint apparently valid MFA-completion tokens.",
     "score": 98
   },
   {
@@ -475,6 +527,23 @@
     ],
     "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "ITDR",
+      "Identity attack paths"
+    ],
+    "note": "Researchers demonstrated that a privileged attacker can register a malicious external MFA provider, capture passwords during legitimate sign-ins and return a valid MFA assertion to Entra.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -665,6 +734,24 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "6fe0acb2c0085a05",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "Okta",
+      "AI-agent authorization",
+      "NHI",
+      "Machine identity",
+      "Open standards"
+    ],
+    "note": "A significant cross-vendor platform development proposes treating agents as first-class identities with task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-22",
     "id": "a80caae3e9d572f1",
@@ -681,23 +768,6 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "6fe0acb2c0085a05",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "AI-agent-authorization",
-      "NHI",
-      "IGA",
-      "OAuth"
-    ],
-    "note": "A broad vendor coalition is converging on agent discovery, distinct agent identities, task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
-    "score": 79
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -3297,73 +3367,5 @@
     "note": "Primary release material for fixes tied to a flaw chain that could allow an unauthenticated LDAP client to create attacker-controlled Kerberos credentials and reach administrative privilege.",
     "score": 96,
     "firstSeenAt": "2026-09-13T16:30:12-06:00"
-  },
-  {
-    "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
-    "publishedDate": "2026-09-08",
-    "id": "85cd626895693702",
-    "date": "2026-09-08",
-    "source": "CSO Online",
-    "title": "BigBear 2.0 phishing campaign hijacks Microsoft 365 sessions after MFA",
-    "url": "https://www.csoonline.com/article/4219606/bigbear-2-0-phishing-campaign-hijacks-microsoft-365-sessions-after-mfa.html",
-    "tags": [
-      "MFA",
-      "Session-Theft",
-      "Phishing",
-      "Entra"
-    ],
-    "note": "CloudSEK\u2019s reporting details a phishing-as-a-service operation that captured Microsoft 365 session cookies after MFA, including 4,148 cookies and 1,032 passwords tied to hundreds of targets.",
-    "score": 96
-  },
-  {
-    "id": "63d92b090ca17491",
-    "date": "2026-09-08",
-    "source": "U.S. Securities and Exchange Commission",
-    "title": "Veradigm Inc. Form 8-K: Third-party vendor cybersecurity incident",
-    "url": "https://www.sec.gov/Archives/edgar/data/1124804/000119312526385249/mdrx-20260908.htm",
-    "tags": [
-      "IAM",
-      "Third-Party Risk",
-      "Exposed Credentials",
-      "API Security",
-      "NHI"
-    ],
-    "note": "Veradigm\u2019s filing states that an unauthorized party obtained vendor credentials and used them against a limited API to download patient data, providing a clear service-credential abuse case.",
-    "score": 94,
-    "firstSeenAt": "2026-09-13T16:36:23Z"
-  },
-  {
-    "id": "3a7221f54609e02f",
-    "date": "2026-09-08",
-    "source": "Google Threat Intelligence Group",
-    "title": "GTIG AI Threat Tracker: From Prompting to Autonomy \u2013 The Evolution of Adversarial AI",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/from-prompting-to-autonomy-the-evolution-of-adversarial-ai",
-    "tags": [
-      "NHI",
-      "AI-agents",
-      "Machine-identity",
-      "Credentials",
-      "Cloud-IAM"
-    ],
-    "note": "GTIG reports adversaries compromising cloud resources and using agent-enabled workflows to build and execute mass credential-harvesting campaigns, while targeting API credentials and AI infrastructure.",
-    "score": 93,
-    "firstSeenAt": "2026-09-14T21:59:58Z"
-  },
-  {
-    "firstSeenAt": "2026-09-16T11:15:10.098790-06:00",
-    "publishedDate": "2026-09-08",
-    "id": "c21f26630257f0a5",
-    "date": "2026-09-08",
-    "source": "Microsoft",
-    "title": "FAQ for Microsoft-provided SMS and voice retirement - Microsoft Entra ID",
-    "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement-faq",
-    "tags": [
-      "Entra",
-      "Passkeys",
-      "MFA",
-      "Authentication"
-    ],
-    "note": "Microsoft's rollout moves Entra tenants from Microsoft-managed SMS and voice toward passkeys, with important registration, opt-out, telecom-provider, and SSPR implications for identity teams.",
-    "score": 86
   }
 ]
