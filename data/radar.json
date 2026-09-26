@@ -67,6 +67,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "a76a8444daebc0bf",
+    "date": "2026-09-24",
+    "source": "DevOps.com",
+    "title": "TeamPCP Supply Chain Attack Leads to CrowdSec Source Code Being Stolen",
+    "url": "https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/",
+    "tags": [
+      "OAuth",
+      "session-token-abuse",
+      "offboarding",
+      "secrets"
+    ],
+    "note": "The reported compromise involved a former employee\u2019s OAuth token and exposed AWS credentials, making it a useful case study in token revocation and offboarding controls.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "81ef64c003d766d1",
@@ -76,12 +93,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
     "tags": [
       "NHI",
-      "AI Agents",
-      "Secrets",
-      "Cloud Security"
+      "machine-identity",
+      "secrets",
+      "AI-agent-authorization"
     ],
-    "note": "Carbonato abuses unauthenticated Docker APIs to deploy a privileged AI-agent framework that collects cloud keys, SSH credentials, Kubernetes tokens, and other access material.",
-    "score": 89
+    "note": "ThreatDown evidence shows a botnet using an AI agent to collect API keys, SSH credentials, and access tokens after taking over unauthenticated Docker hosts.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
@@ -101,6 +118,22 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "299848cb4a041aa9",
+    "date": "2026-09-24",
+    "source": "Omada",
+    "title": "Omada Acquires EmpowerID to Close the AI Agent Security Gap",
+    "url": "https://omadaidentity.com/press/omada-acquires-empowerid/",
+    "tags": [
+      "IGA",
+      "NHI",
+      "AI-agent-authorization"
+    ],
+    "note": "A meaningful IGA market move that brings EmpowerID\u2019s runtime agent-governance capabilities into Omada\u2019s human, non-human, and AI-identity lifecycle platform.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "5bcb4c4c91af9446",
@@ -116,6 +149,23 @@
     ],
     "note": "The integration brings third-party data-classification labels into SailPoint access analysis so entitlement reviews can incorporate sensitivity context without duplicating classification work.",
     "score": 74
+  },
+  {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "537ed650ee9e43f6",
+    "date": "2026-09-24",
+    "source": "Semperis",
+    "title": "Why Backup Testing Is Not Cyber Resilience: Lessons Learned Robbing a Bank",
+    "url": "https://www.semperis.com/blog/backup-testing-is-not-cyber-resilience-lessons-learned-robbing-a-bank/",
+    "tags": [
+      "ITDR",
+      "PAM",
+      "identity-resilience",
+      "incident-response"
+    ],
+    "note": "The piece makes the operationally important point that recovery plans often assume identity, privileged access, authentication, and trusted communications still work during a cyber crisis.",
+    "score": 73
   },
   {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
@@ -374,6 +424,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "b5e3deaac0408e1c",
+    "date": "2026-09-22",
+    "source": "Proofpoint",
+    "title": "Spraying in the Andes: TeamFiltration Returns to Exploit Forgotten Service Accounts",
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/Spraying-in-the-Andes-TeamFiltration-Returns",
+    "tags": [
+      "NHI",
+      "service-accounts",
+      "MFA",
+      "credential-abuse",
+      "Entra"
+    ],
+    "note": "Seven confirmed Microsoft 365 compromises traced to unmanaged functional accounts with default or predictable passwords and no MFA, followed by Azure, SharePoint, and Graph access.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -528,24 +596,6 @@
     "score": 92
   },
   {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "6fe0acb2c0085a05",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "OAuth",
-      "IGA",
-      "PAM"
-    ],
-    "note": "A broad industry coalition published an expanded reference architecture centered on first-class agent identities, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
-    "score": 91
-  },
-  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-22",
     "id": "a62a122af144e52c",
@@ -631,6 +681,23 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "6fe0acb2c0085a05",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "IGA",
+      "OAuth"
+    ],
+    "note": "A broad vendor coalition is converging on agent discovery, distinct agent identities, task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
+    "score": 79
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -3298,72 +3365,5 @@
     ],
     "note": "Microsoft's rollout moves Entra tenants from Microsoft-managed SMS and voice toward passkeys, with important registration, opt-out, telecom-provider, and SSPR implications for identity teams.",
     "score": 86
-  },
-  {
-    "id": "c34ce1458f4aee8e",
-    "date": "2026-09-07",
-    "source": "BleepingComputer",
-    "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
-    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/",
-    "tags": [
-      "IAM",
-      "MFA",
-      "Entra",
-      "Session Security",
-      "Token Theft"
-    ],
-    "note": "CloudSEK researchers found an Evilginx-based phishing service that intercepted Microsoft 365 credentials, MFA completions, and session cookies, with 258 organizations experiencing completed MFA-bypass compromises.",
-    "score": 99,
-    "firstSeenAt": "2026-09-14T05:23:26Z"
-  },
-  {
-    "id": "a18c05bcb0e46665",
-    "date": "2026-09-07",
-    "source": "CloudSEK",
-    "title": "Tracking BigBear 2.0 Evilginx2 Phishing Campaign",
-    "url": "https://www.cloudsek.com/blog/tracking-bigbear-2-0-evilginx2-phishing-campaign",
-    "tags": [
-      "Microsoft Entra",
-      "MFA-bypass",
-      "Passkeys",
-      "Session-token-abuse",
-      "OAuth"
-    ],
-    "note": "The investigation exposes a Microsoft 365 phishing-as-a-service operation that captured thousands of credentials and session cookies, disabled WebAuthn in the browser, and replayed authenticated sessions after MFA.",
-    "score": 99,
-    "firstSeenAt": "2026-09-15T12:03:21Z"
-  },
-  {
-    "id": "2896214c3d4c5f96",
-    "date": "2026-09-07",
-    "source": "BleepingComputer",
-    "title": "BigBear Microsoft 365 phishing service bypassed MFA at 258 organizations",
-    "url": "https://www.bleepingcomputer.com/news/security/bigbear-microsoft-365-phishing-service-bypassed-mfa-at-258-organizations/amp/",
-    "tags": [
-      "Entra",
-      "MFA bypass",
-      "Session theft",
-      "Token theft",
-      "OAuth"
-    ],
-    "note": "CloudSEK evidence shows a phishing-as-a-service operation using AiTM proxies to capture credentials and authenticated session cookies from more than 258 organizations.",
-    "score": 97,
-    "firstSeenAt": "2026-09-16T11:59:46Z"
-  },
-  {
-    "id": "99680276e400d3fb",
-    "date": "2026-09-04",
-    "source": "IDScan.net",
-    "title": "Notification of Data Security Incident",
-    "url": "https://idscan.net/press-release/notification-of-data-security-incident/",
-    "tags": [
-      "CIAM",
-      "Identity-proofing",
-      "Cloud-security",
-      "Incident-response"
-    ],
-    "note": "Primary disclosure from an identity-verification provider concerning unauthorized access to cloud-stored identity information, including government-ID numbers.",
-    "score": 84,
-    "firstSeenAt": "2026-09-13T14:25:18Z"
   }
 ]
