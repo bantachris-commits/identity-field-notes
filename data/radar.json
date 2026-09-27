@@ -56,21 +56,20 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
     "publishedDate": "2026-09-25",
-    "id": "efd3d783392a234f",
+    "id": "ef33b8cf9b798c4a",
     "date": "2026-09-25",
-    "source": "Oracle Cloud Infrastructure",
-    "title": "Simplifying Passwordless Sign-In with FIDO2 Discoverable Credentials",
-    "url": "https://blogs.oracle.com/cloud-infrastructure/oci-iam-discoverable-credentials",
+    "source": "TechCrunch",
+    "title": "For months, OpenAI's agent swarms have been attacking online databases to find obscure facts",
+    "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
     "tags": [
-      "Passkeys",
-      "FIDO",
-      "IAM",
-      "Authentication"
+      "AI-agent authorization",
+      "NHI",
+      "ITDR"
     ],
-    "note": "OCI IAM added support for FIDO2 discoverable credentials, extending passwordless sign-in and passkey-oriented authentication to Oracle cloud identity workflows.",
-    "score": 84
+    "note": "Independent reporting on agent swarms accessing or probing external systems, underscoring the need for constrained tool permissions, attribution, monitoring and kill-switches for autonomous identities.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -88,6 +87,22 @@
     ],
     "note": "The capability replaces shared service-account workarounds for manual provisioning with group-based fulfillment and audit records naming the individual who completed each task.",
     "score": 79
+  },
+  {
+    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "efd3d783392a234f",
+    "date": "2026-09-25",
+    "source": "Oracle Cloud Infrastructure",
+    "title": "Simplifying Passwordless Sign-In with FIDO2 Discoverable Credentials",
+    "url": "https://blogs.oracle.com/cloud-infrastructure/oci-iam-discoverable-credentials",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "IAM"
+    ],
+    "note": "OCI IAM's move toward FIDO2 discoverable credentials is a concrete passwordless deployment update relevant to workforce authentication and passkey lifecycle design.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
@@ -246,6 +261,22 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "299848cb4a041aa9",
+    "date": "2026-09-24",
+    "source": "Omada",
+    "title": "Omada Acquires EmpowerID to Close the AI Agent Security Gap",
+    "url": "https://omadaidentity.com/press/omada-acquires-empowerid/",
+    "tags": [
+      "IGA",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "The acquisition combines IGA lifecycle and certification capabilities with runtime governance for human, non-human and AI-agent identities.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
     "publishedDate": "2026-09-24",
     "id": "efd68e0344eaa989",
@@ -261,22 +292,6 @@
     ],
     "note": "A meaningful workload-identity move for agentic systems: IAM authentication replaces static database passwords while sandboxed instances, VPC Service Controls and auditability constrain agent access.",
     "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "299848cb4a041aa9",
-    "date": "2026-09-24",
-    "source": "Omada",
-    "title": "Omada Acquires EmpowerID to Close the AI Agent Security Gap",
-    "url": "https://omadaidentity.com/press/omada-acquires-empowerid/",
-    "tags": [
-      "IGA",
-      "NHI",
-      "AI-agent-authorization"
-    ],
-    "note": "A meaningful IGA market move that brings EmpowerID\u2019s runtime agent-governance capabilities into Omada\u2019s human, non-human, and AI-identity lifecycle platform.",
-    "score": 84
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -378,6 +393,22 @@
       "ITDR"
     ],
     "note": "Astrana reports that impersonation and phone-number spoofing targeted employees to obtain unauthorized system access, followed by credential resets, remote-access restrictions, and restoration from clean backups.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "d14c028c0f089f21",
+    "date": "2026-09-23",
+    "source": "BleepingComputer",
+    "title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Incident"
+    ],
+    "note": "An exploited BIG-IP APM vulnerability affects deployments acting as OAuth authorization servers, making this a high-priority review for identity-proxy and federation operators.",
     "score": 94
   },
   {
@@ -550,13 +581,13 @@
     "title": "Semperis Reimagines Active Directory Migration from the Ground Up",
     "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
     "tags": [
-      "AD",
-      "ITDR",
       "PAM",
-      "Identity Resilience"
+      "IGA",
+      "Active Directory",
+      "ITDR"
     ],
-    "note": "The AD Migrator 2.0 release treats directory migration as a security event, adding staged validation, migration-wide logging, and controls for service-account and trust-boundary risks.",
-    "score": 84
+    "note": "Migrator 2.0 treats directory migration as an identity-security event, adding staged validation, controlled synchronization and unified operational evidence across migration components.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -672,12 +703,12 @@
     "title": "Rogue external MFA providers can steal passwords during logins",
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "MFA",
-      "IAM",
-      "Authentication Bypass"
+      "Credential theft",
+      "ITDR"
     ],
-    "note": "Varonis researchers demonstrate how a privileged attacker can register a rogue external MFA provider in Entra to capture passwords and return a valid MFA-completion token.",
+    "note": "Varonis' TrustSink research shows how a privileged Entra compromise can register a rogue external MFA provider that harvests replacement passwords while returning valid MFA tokens.",
     "score": 98
   },
   {
@@ -724,13 +755,13 @@
     "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
     "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "OAuth",
-      "Token Abuse",
-      "MFA Bypass"
+      "Token theft",
+      "Incident"
     ],
-    "note": "The disruption operation provides concrete impact data on device-code phishing, including more than 12,000 compromised Microsoft accounts and persistent access obtained despite MFA.",
-    "score": 96
+    "note": "The takedown highlights device-code phishing at scale, where attackers obtain OAuth tokens despite MFA and gain access to Microsoft 365 and connected SaaS applications.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
@@ -912,15 +943,13 @@
     "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
     "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
     "tags": [
-      "AI Agents",
-      "Authorization",
+      "Okta",
+      "AI-agent authorization",
       "NHI",
-      "Standards",
-      "AWS",
-      "Google Cloud"
+      "Authorization"
     ],
-    "note": "Okta, AWS, Google Cloud, Salesforce, ServiceNow, Wiz, and others announced a cross-industry architecture for agent inventory, scoped access, traceable delegation, runtime monitoring, and containment.",
-    "score": 83
+    "note": "The cross-industry alliance signals a meaningful platform shift toward shared identity, authorization, governance and observability controls for enterprise agent ecosystems.",
+    "score": 80
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -2292,21 +2321,20 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-09-15T21:43:14Z",
+    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
     "publishedDate": "2026-09-15",
-    "id": "fe184999dcccb80e",
+    "id": "969280c9c1e15639",
     "date": "2026-09-15",
-    "source": "Google Cloud",
-    "title": "Introducing new session management tools with native, granular controls",
-    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "source": "W3C",
+    "title": "First Public Working Draft: Web Authentication: An API for accessing Public Key Credentials Level 4",
+    "url": "https://www.w3.org/news/2026/first-public-working-draft-web-authentication-an-api-for-accessing-public-key-credentials-level-4/",
     "tags": [
-      "ITDR",
-      "Session security",
-      "Token abuse",
-      "Google Cloud"
+      "Passkeys",
+      "FIDO",
+      "Standards"
     ],
-    "note": "Google Cloud is moving beyond broad session lifetimes toward granular Context-Aware Access controls intended to reduce credential-theft and account-takeover impact.",
-    "score": 89
+    "note": "WebAuthn Level 4 introduces future-facing scope for agentic AI, additional signed data, credential durability and authenticator trust signals that identity architects should track early.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-16T05:10:33Z",
@@ -2325,6 +2353,22 @@
     ],
     "note": "Presents an actionable pattern connecting IAM Access Analyzer, CloudTrail, Bedrock, and CI/CD to turn excessive-permission findings into reviewed code changes and controlled decommissioning.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-15T21:43:14Z",
+    "publishedDate": "2026-09-15",
+    "id": "fe184999dcccb80e",
+    "date": "2026-09-15",
+    "source": "Google Cloud",
+    "title": "Introducing new session management tools with native, granular controls",
+    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
+    "tags": [
+      "ITDR",
+      "Session security",
+      "Cloud IAM"
+    ],
+    "note": "Google Cloud's granular Context-Aware Access session controls provide a practical response to credential theft and account-takeover risk from overly long-lived sessions.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
@@ -2424,6 +2468,22 @@
       "IGA"
     ],
     "note": "WSO2\u2019s generally available Agent Manager adds agent identity, sandboxed runtime controls, MCP governance and lifecycle oversight across frameworks and deployment models.",
+    "score": 76
+  },
+  {
+    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "52fd7c156fb95675",
+    "date": "2026-09-15",
+    "source": "BeyondTrust",
+    "title": "Identity Security Insights 26.09",
+    "url": "https://docs.beyondtrust.com/insights/changelog/identity-security-insights-2609",
+    "tags": [
+      "ITDR",
+      "PAM",
+      "NHI"
+    ],
+    "note": "The release adds identity-threat forwarding to CrowdStrike SIEM, narrower privilege scoring for ServiceNow and more controlled GCP connector provisioning.",
     "score": 76
   },
   {
@@ -2936,13 +2996,13 @@
     "title": "Passkey-themed phishing attacks lead to Microsoft 365 data theft",
     "url": "https://www.bleepingcomputer.com/news/security/passkey-themed-phishing-attacks-lead-to-microsoft-365-data-theft/",
     "tags": [
-      "IAM",
-      "MFA",
       "Passkeys",
-      "Session Security",
-      "OAuth"
+      "Microsoft Entra",
+      "OAuth",
+      "Session theft",
+      "Incident"
     ],
-    "note": "Reporting on the same active campaign shows attackers using passkey-themed lures, OAuth/device-code flows, stolen sessions, and attacker-registered authenticators to access Microsoft 365.",
+    "note": "The campaign demonstrates that passkey-themed social engineering, OAuth consent and stolen session tokens can still defeat otherwise strong authentication controls when recovery and token protections are weak.",
     "score": 96
   },
   {
@@ -3321,72 +3381,5 @@
     "note": "Introduces badge-and-PIN authentication for shared frontline workstations, with individually attributable access and automated provisioning and deprovisioning.",
     "score": 78,
     "firstSeenAt": "2026-09-15T17:14:56Z"
-  },
-  {
-    "firstSeenAt": "2026-09-13T16:36:23Z",
-    "publishedDate": "2026-09-09",
-    "id": "e7045162419c265f",
-    "date": "2026-09-09",
-    "source": "Microsoft Security Research",
-    "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-    "tags": [
-      "Entra",
-      "Passkeys",
-      "MFA",
-      "Token-Theft",
-      "ITDR"
-    ],
-    "note": "Microsoft documents active campaigns combining passkey-themed impersonation, device-code phishing, AiTM session theft, attacker-added MFA methods, Graph reconnaissance and cloud data collection.",
-    "score": 100
-  },
-  {
-    "id": "3820a0f914db94fe",
-    "date": "2026-09-09",
-    "source": "Okta Threat Intelligence",
-    "title": "Signing in without actually signing in",
-    "url": "https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/",
-    "tags": [
-      "Tokens",
-      "Session hijacking",
-      "AI",
-      "ITDR"
-    ],
-    "note": "Okta analyzes infostealer data containing reusable session tokens and API keys, a strong reminder that authenticated state can be stolen and replayed without a fresh sign-in.",
-    "score": 97,
-    "firstSeenAt": "2026-09-13T15:35:36-06:00"
-  },
-  {
-    "id": "df020bc56450618a",
-    "date": "2026-09-09",
-    "source": "Cisco Talos",
-    "title": "Active exploitation of Cisco Secure Firewall Management Center vulnerabilities",
-    "url": "https://blog.talosintelligence.com/fmc-ongoing-exploitation/",
-    "tags": [
-      "PAM",
-      "IAM",
-      "ITDR",
-      "Credentials",
-      "Authentication-bypass"
-    ],
-    "note": "Talos identifies in-the-wild exploitation of an authentication bypass and static-credential flaw that enabled root access, credential harvesting, tunneling, and ransomware or destructive malware deployment.",
-    "score": 97,
-    "firstSeenAt": "2026-09-15T12:03:21Z"
-  },
-  {
-    "id": "eb77ddbb1f967f57",
-    "date": "2026-09-09",
-    "source": "Surfshark",
-    "title": "Security update: September 2026 incident report",
-    "url": "https://surfshark.com/blog/security-update-september-2026-incident-report",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Build credentials",
-      "Incident response"
-    ],
-    "note": "Affected-party disclosure tracing unauthorized access to an exposed internal test server and build-related credentials that required rotation and token revocation.",
-    "score": 91,
-    "firstSeenAt": "2026-09-13T21:06:45Z"
   }
 ]
