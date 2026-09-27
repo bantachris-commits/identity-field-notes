@@ -309,6 +309,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "1d56efbaf8df354f",
+    "date": "2026-09-24",
+    "source": "Insomnia",
+    "title": "OAuth Device-Code Phishing \u2014 Bypassing MFA Without Touching a Password",
+    "url": "https://insom.ai/en/blog/oauth-device-code-phishing-bypassing-mfa-without-touching-a-password-20260924",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR",
+      "Session Security"
+    ],
+    "note": "Field telemetry describes a sharp rise in device-code phishing that yields attacker-controlled refresh tokens without stealing passwords, reinforcing the need to monitor device-code issuance and revoke delegated sessions.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
     "publishedDate": "2026-09-24",
     "id": "efd68e0344eaa989",
@@ -744,23 +761,6 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "ITDR",
-      "PAM"
-    ],
-    "note": "Varonis\u2019 TrustSink research shows how a privileged attacker can register a malicious Entra external MFA provider that captures passwords while returning a token that makes the login appear successful.",
-    "score": 97
-  },
-  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -794,6 +794,23 @@
     ],
     "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "ITDR",
+      "PAM"
+    ],
+    "note": "Varonis\u2019s TrustSink research shows how a highly privileged Entra compromise can persist by registering a malicious external MFA provider that captures replacement passwords inside an otherwise successful authentication flow.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
@@ -864,23 +881,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "c169620ea001e674",
-    "date": "2026-09-22",
-    "source": "TechCrunch",
-    "title": "Stolen passwords are exposing America's water providers to hackers",
-    "url": "https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/",
-    "tags": [
-      "PAM",
-      "IAM",
-      "NHI",
-      "Critical infrastructure"
-    ],
-    "note": "SpyCloud research links infostealer-exposed employee passwords and active sessions to broad exposure across U.S. water and wastewater providers, underscoring credential and session-revocation gaps.",
-    "score": 93
-  },
-  {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
     "publishedDate": "2026-09-22",
     "id": "5951215eea492b0b",
@@ -896,6 +896,23 @@
     ],
     "note": "Cloudflare explains how EvilTokens abused Cloudflare Workers and customer-supplied API keys to automate Microsoft token theft and persistent access at scale.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "c169620ea001e674",
+    "date": "2026-09-22",
+    "source": "TechCrunch",
+    "title": "Stolen passwords are exposing America's water providers to hackers",
+    "url": "https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Session Security",
+      "Critical Infrastructure"
+    ],
+    "note": "SpyCloud research found infostealer-exposed credentials and active sessions across thousands of U.S. water providers, including cases where one compromised technology provider exposed access paths to many utilities.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
@@ -930,23 +947,6 @@
     ],
     "note": "The incident shows how compromised credentials belonging to a third-party storefront application enabled customer-data access and script injection across BigCommerce merchant environments.",
     "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "243d8d30bd2a38f1",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry leaders form the Blueprint Alliance to advance a shared architecture for securing AI agents",
-    "url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "OAuth",
-      "Authorization"
-    ],
-    "note": "A coalition including AWS, Google Cloud, Okta, Proofpoint, Salesforce, ServiceNow, Wiz and others proposes a shared control architecture spanning agent identity, governance, runtime authorization and monitoring.",
-    "score": 88
   },
   {
     "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
@@ -1000,6 +1000,23 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "243d8d30bd2a38f1",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry leaders form the Blueprint Alliance to advance a shared architecture for securing AI agents",
+    "url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/",
+    "tags": [
+      "AI-Agent Authorization",
+      "NHI",
+      "IAM",
+      "OAuth"
+    ],
+    "note": "The cross-industry alliance proposes treating AI agents as first-class identities with scoped access, traceable delegation, runtime monitoring, and rapid reversible containment.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-22",
     "id": "a80caae3e9d572f1",
@@ -1016,6 +1033,23 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e39b107a18ede821",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
+    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
+    "tags": [
+      "AI-Agent Authorization",
+      "NHI",
+      "ITDR",
+      "IGA"
+    ],
+    "note": "Okta\u2019s newly announced agent controls cover shadow-agent discovery, agent gateways, third-party IdP support, and governance of agents as first-class identities\u2014useful signals for emerging agent authorization architectures.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -3347,38 +3381,5 @@
     ],
     "note": "Okta discloses newly identified vulnerabilities affecting Access Gateway, Hyperdrive Agent, Privileged Access, and Okta Verify for Windows, with updates required and no observed exploitation.",
     "score": 86
-  },
-  {
-    "id": "04db7bfd27e87e28",
-    "date": "2026-09-10",
-    "source": "Google Cloud",
-    "title": "Introducing the Google Cloud Developer Plugin for AI Coding Agents",
-    "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents",
-    "tags": [
-      "Cloud-IAM",
-      "AI-agents",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "Google\u2019s new agent plugin packages authentication, authorization, project-management skills, and guardrails intended to reduce accidental key exposure and unsafe gcloud operations by coding agents.",
-    "score": 84,
-    "firstSeenAt": "2026-09-15T12:03:21Z"
-  },
-  {
-    "firstSeenAt": "2026-09-16T08:26:52.443047-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "c06e80fbcb86b5b0",
-    "date": "2026-09-10",
-    "source": "Biometric Update",
-    "title": "Singapore expands Singpass passkeys to Android users",
-    "url": "https://www.biometricupdate.com/202609/singapore-expands-singpass-passkeys-to-android-users",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "MFA",
-      "CIAM"
-    ],
-    "note": "Useful deployment signal for practitioners: Singapore expanded national-ID passkeys to Android after reporting roughly 800,000 registered passkeys during the initial rollout.",
-    "score": 84
   }
 ]
