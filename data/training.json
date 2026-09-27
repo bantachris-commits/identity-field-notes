@@ -1,90 +1,90 @@
 [
   {
     "provider": "Microsoft Learn",
-    "title": "Perform basic identity and access tasks",
-    "level": "Beginner",
-    "focus": "Microsoft Entra fundamentals, users and groups, authentication, Conditional Access, RBAC, identity protection, IGA and access reviews.",
-    "url": "https://learn.microsoft.com/en-us/training/paths/perform-basic-identity-access-tasks/",
-    "sponsored": false
-  },
-  {
-    "provider": "Microsoft Learn",
-    "title": "Implement an identity management solution using Microsoft Entra ID",
+    "title": "Plan and implement an identity governance strategy",
     "level": "Intermediate",
-    "focus": "Entra tenant configuration, identity lifecycle, external identities, hybrid identity and workload identities; aligned to SC-300.",
-    "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
+    "focus": "Microsoft Entra ID Governance, entitlement management, access reviews, privileged access, and monitoring",
+    "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
     "sponsored": false
   },
   {
     "provider": "Microsoft Learn",
     "title": "Secure AI identity infrastructure with Microsoft Entra",
     "level": "Intermediate",
-    "focus": "AI workload identity architecture, managed identities, Azure RBAC, Conditional Access, workload identity security and identity risk.",
+    "focus": "Workload identities, managed identities, RBAC, conditional access, identity protection, and AI workloads",
     "url": "https://learn.microsoft.com/en-us/training/paths/entra-ai-secure-workloads/",
     "sponsored": false
   },
   {
     "provider": "Microsoft Learn",
-    "title": "Training for Identity and Access Administrators",
-    "level": "Intermediate",
-    "focus": "Role-based learning path covering authentication, authorization, Entra identity administration, access management and Zero Trust.",
-    "url": "https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-admin",
+    "title": "AZ-305: Design identity, governance, and monitor solutions",
+    "level": "Advanced",
+    "focus": "IAM architecture, authentication, authorization, service principals, managed identities, B2B, conditional access, and governance",
+    "url": "https://learn.microsoft.com/en-us/training/paths/design-identity-governance-monitor-solutions/",
     "sponsored": false
   },
   {
-    "provider": "Okta Developer",
-    "title": "Okta Developer Journeys",
+    "provider": "Microsoft Learn",
+    "title": "Govern and secure Microsoft 365 tenants and workloads",
+    "level": "Intermediate",
+    "focus": "Identity lifecycle, Entra authentication, conditional access, privileged identity management, and identity threat protection",
+    "url": "https://learn.microsoft.com/en-us/training/paths/govern-secure-microsoft-365-tenants-workloads/",
+    "sponsored": false
+  },
+  {
+    "provider": "FIDO Alliance",
+    "title": "Passkeys: Passwordless Authentication",
     "level": "Beginner to Intermediate",
-    "focus": "Guided implementation paths for web and mobile authentication, customer identity, sign-up, MFA, policy configuration and identity lifecycle integration.",
-    "url": "https://developer.okta.com/docs/journeys/",
+    "focus": "Passkey fundamentals, FIDO2, phishing-resistant authentication, deployment planning, user experience, and account recovery",
+    "url": "https://fidoalliance.org/passkeys/",
     "sponsored": false
   },
   {
-    "provider": "Okta Developer",
-    "title": "Authenticators overview",
+    "provider": "FIDO Alliance",
+    "title": "Enterprise Passkeys: What Works, What Doesn't, and How to Roll Them Out",
     "level": "Intermediate",
-    "focus": "Authenticator enrollment and challenge flows, MFA policies, Okta Verify and Passkey/FIDO2 WebAuthn integration.",
-    "url": "https://developer.okta.com/docs/guides/authenticators-overview/main/",
+    "focus": "Enterprise passkey deployment, enrollment, recovery, legacy applications, audit requirements, rollout strategy, and adoption",
+    "url": "https://fidoalliance.org/fido-webinar-enterprise-passkeys-what-works-what-doesnt-and-how-to-roll-them-out/",
     "sponsored": false
   },
   {
-    "provider": "Okta Developer",
-    "title": "Launch a security access review",
-    "level": "Intermediate",
-    "focus": "Okta Identity Governance APIs, security access reviews, access certification workflows and programmatic access remediation.",
-    "url": "https://developer.okta.com/docs/guides/iga-security-access-review/main/",
+    "provider": "OpenID Foundation",
+    "title": "OpenID Foundation Conformance Testing",
+    "level": "Intermediate to Advanced",
+    "focus": "OAuth and OpenID Connect implementation testing, interoperability, conformance, certification, and secure protocol deployment",
+    "url": "https://openid.net/certification/",
     "sponsored": false
   },
   {
     "provider": "CyberArk University",
-    "title": "Introduction to CyberArk Privileged Access Management",
-    "level": "Beginner",
-    "focus": "PAM concepts, privileged account risk, vaulting, credential protection and CyberArk PAM fundamentals.",
-    "url": "https://training.cyberark.com/learn",
-    "sponsored": false
-  },
-  {
-    "provider": "IDPro",
-    "title": "Authentication and Authorization",
-    "level": "Beginner to Intermediate",
-    "focus": "Vendor-neutral foundations of authentication, authorization, federation, identity providers and access-control decisions.",
-    "url": "https://bok.idpro.org/article/id/78/",
-    "sponsored": false
-  },
-  {
-    "provider": "IDPro",
-    "title": "Introduction to Privileged Access Management",
+    "title": "Sentry - Modern PAM Study Guide",
     "level": "Intermediate",
-    "focus": "Vendor-neutral PAM concepts, privileged access risk, least privilege, administrative accounts and governance.",
-    "url": "https://bok.idpro.org/article/101/galley/256/view/",
+    "focus": "Modern privileged access management, PAM concepts, secrets, privileged accounts, and Sentry certification preparation",
+    "url": "https://training.cyberark.com/learn/public/catalog/view/1",
     "sponsored": false
   },
   {
-    "provider": "OAuth.net",
-    "title": "OAuth 2.0 Security Best Current Practice",
+    "provider": "SailPoint Identity University",
+    "title": "Identity Security Leader training and certification",
+    "level": "Beginner to Intermediate",
+    "focus": "Identity security strategy, governance, access management, business value, program leadership, and IAM fundamentals",
+    "url": "https://www.sailpoint.com/university/training-paths/identity-security-leader",
+    "sponsored": false
+  },
+  {
+    "provider": "SailPoint Identity University",
+    "title": "IdentityIQ training path",
     "level": "Intermediate to Advanced",
-    "focus": "OAuth threat models and secure implementation, PKCE, redirect URI validation, authorization-code flows, PAR, DPoP and sender-constrained tokens.",
-    "url": "https://oauth.net/2/oauth-best-practice/",
+    "focus": "IGA, lifecycle management, provisioning, access requests, access certifications, segregation of duties, workflows, APIs, and implementation",
+    "url": "https://sitedev.sailpoint.com/university/training-paths/identityiq",
+    "sponsored": false
+  },
+  {
+    "provider": "Saviynt University",
+    "title": "Saviynt IGA Fundamentals Training",
+    "level": "Beginner",
+    "focus": "IGA and IAM fundamentals, access governance, segregation of duties, access requests, password management, reviews, and analytics",
+    "url": "https://saviynt.com/hubfs/Datasheets/Training%20Catalog%202024.pdf?hsLang=en",
     "sponsored": false
   }
 ]
