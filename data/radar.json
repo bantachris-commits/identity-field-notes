@@ -38,6 +38,22 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "dcf71dcee557ca9d",
+    "date": "2026-09-25",
+    "source": "Apache Roller / Openwall oss-security",
+    "title": "CVE-2026-82378: Apache Roller OAuth authorization endpoint trusts request-supplied identity",
+    "url": "https://www.openwall.com/lists/oss-security/2026/09/25/11",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authorization"
+    ],
+    "note": "A critical OAuth authorization flaw can bind an outstanding request token to an arbitrary account, including an administrator, because identity is taken from the request rather than the authenticated session.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
     "publishedDate": "2026-09-25",
     "id": "646eafe216b3a526",
@@ -81,12 +97,11 @@
     "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
     "tags": [
       "IGA",
-      "Provisioning",
-      "Accountability",
-      "Offboarding"
+      "Lifecycle Management",
+      "Auditability"
     ],
-    "note": "The capability replaces shared service-account workarounds for manual provisioning with group-based fulfillment and audit records naming the individual who completed each task.",
-    "score": 79
+    "note": "The change removes a shared-service-account workaround for manual provisioning and records the individual governance-group member who completed each task.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -277,6 +292,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "b1239021871d445f",
+    "date": "2026-09-24",
+    "source": "Constella Intelligence",
+    "title": "Infostealers Are Exposing More Than Passwords. Here\u2019s What Security Teams Need to Know",
+    "url": "https://constella.ai/blog/infostealers-are-exposing-more-than-passwords-heres-what-security-teams-need-to-know/",
+    "tags": [
+      "Identity Security",
+      "Session Theft",
+      "Machine Identity",
+      "ITDR"
+    ],
+    "note": "The report highlights the operational need to investigate stolen browser sessions and authentication artifacts\u2014not just reset exposed passwords\u2014after infostealer infections.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
     "publishedDate": "2026-09-24",
     "id": "efd68e0344eaa989",
@@ -332,16 +364,17 @@
     "publishedDate": "2026-09-23",
     "id": "03b9753abd7a90e4",
     "date": "2026-09-23",
-    "source": "F5 / The Hacker News",
+    "source": "The Hacker News",
     "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
     "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
     "tags": [
       "IAM",
       "OAuth",
-      "ITDR"
+      "Access Gateway",
+      "Vulnerability"
     ],
-    "note": "Critical exploitation of BIG-IP APM configurations acting as OAuth authorization servers creates an urgent identity-plane patching and compromise-hunting priority.",
-    "score": 97
+    "note": "The exploited CVE-2026-94127 affects BIG-IP APM deployments acting as OAuth authorization servers and enables unauthenticated remote code execution through the identity gateway.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
@@ -485,24 +518,6 @@
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
-    "id": "bb1f3698a227bd4f",
-    "date": "2026-09-23",
-    "source": "Ping Identity",
-    "title": "Ping Product Corner: Agentic Identity, Verification Connectors",
-    "url": "https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html",
-    "tags": [
-      "IAM",
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "IGA"
-    ],
-    "note": "Ping documents runtime controls for personal AI agents, including session linkage to users and devices, policy decisions, approvals, logging, and real-time revocation.",
-    "score": 87
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
     "id": "ee4ea52c54c1c84a",
     "date": "2026-09-23",
     "source": "BeyondTrust",
@@ -571,6 +586,23 @@
     ],
     "note": "SailPoint is making an identity graph broadly available to visualize human, non-human, and agent access paths and identify the blast radius of compromised identities.",
     "score": 85
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "bb1f3698a227bd4f",
+    "date": "2026-09-23",
+    "source": "Ping Identity",
+    "title": "September Product Updates: Agentic Identity & Connectors",
+    "url": "https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html",
+    "tags": [
+      "IAM",
+      "AI Agents",
+      "IGA",
+      "Microsoft Entra"
+    ],
+    "note": "The update adds identity operations across Entra ID and Snowflake and describes controls for discovering, attributing, approving, denying, logging, and revoking personal AI-agent activity.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -658,6 +690,23 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "bbe00974ebe14bb0",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
+    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "MFA Bypass",
+      "Session Security"
+    ],
+    "note": "The device-code phishing service compromised more than 12,000 Microsoft accounts across over 10,000 organizations by obtaining authentication tokens despite MFA protections.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
     "publishedDate": "2026-09-22",
     "id": "373464fd801623e4",
@@ -705,11 +754,11 @@
     "tags": [
       "Microsoft Entra",
       "MFA",
-      "Credential theft",
-      "ITDR"
+      "ITDR",
+      "PAM"
     ],
-    "note": "Varonis' TrustSink research shows how a privileged Entra compromise can register a rogue external MFA provider that harvests replacement passwords while returning valid MFA tokens.",
-    "score": 98
+    "note": "Varonis\u2019 TrustSink research shows how a privileged attacker can register a malicious Entra external MFA provider that captures passwords while returning a token that makes the login appear successful.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -744,23 +793,6 @@
       "Zero-Day"
     ],
     "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "bbe00974ebe14bb0",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
-    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "Token theft",
-      "Incident"
-    ],
-    "note": "The takedown highlights device-code phishing at scale, where attackers obtain OAuth tokens despite MFA and gain access to Microsoft 365 and connected SaaS applications.",
     "score": 97
   },
   {
@@ -866,6 +898,23 @@
     "score": 92
   },
   {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "70d64c262cb2ead0",
+    "date": "2026-09-22",
+    "source": "Okta Investor Relations",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "The multi-vendor alliance proposes treating agents as first-class identities, task-scoping access, tracing delegation, monitoring runtime behavior, and enabling reversible containment.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-22",
     "id": "a62a122af144e52c",
@@ -898,6 +947,22 @@
     ],
     "note": "A coalition including AWS, Google Cloud, Okta, Proofpoint, Salesforce, ServiceNow, Wiz and others proposes a shared control architecture spanning agent identity, governance, runtime authorization and monitoring.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "fb62c95c8e9d45dc",
+    "date": "2026-09-22",
+    "source": "Microsoft Support",
+    "title": "September 22, 2026\u2014KB5124006 (OS Build 28000.3086 Preview",
+    "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5124006-windows-11-26h1-update",
+    "tags": [
+      "Microsoft Entra",
+      "Active Directory",
+      "Machine Identity"
+    ],
+    "note": "Microsoft documents a sign-in and secure-channel failure affecting some Credential Guard-protected machine accounts when Machine Identity Isolation is honored outside supported domain-functional-level conditions.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -933,23 +998,6 @@
     ],
     "note": "A significant cross-vendor platform development proposes treating agents as first-class identities with task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "70d64c262cb2ead0",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "Okta",
-      "AI-agent authorization",
-      "NHI",
-      "Authorization"
-    ],
-    "note": "The cross-industry alliance signals a meaningful platform shift toward shared identity, authorization, governance and observability controls for enterprise agent ecosystems.",
-    "score": 80
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -2164,6 +2212,8 @@
     "score": 100
   },
   {
+    "firstSeenAt": "2026-09-16T05:10:33Z",
+    "publishedDate": "2026-09-15",
     "id": "fce54ff4f5f7a4fc",
     "date": "2026-09-15",
     "source": "NIST",
@@ -2172,12 +2222,11 @@
     "tags": [
       "IAM",
       "OAuth",
-      "Tokens",
-      "ITDR"
+      "Token Security",
+      "Federation"
     ],
-    "note": "New NIST/CISA guidance addresses token and assertion forgery, theft, misuse, key management, revocation, and lifecycle controls, with added considerations for AI agents.",
-    "score": 99,
-    "firstSeenAt": "2026-09-16T05:10:33Z"
+    "note": "NIST IR 8587 provides current implementation guidance for protecting identity tokens, access tokens, assertions, signing keys, revocation, and federation infrastructure against forgery, theft, and misuse.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
@@ -3331,55 +3380,5 @@
     ],
     "note": "Useful deployment signal for practitioners: Singapore expanded national-ID passkeys to Android after reporting roughly 800,000 registered passkeys during the initial rollout.",
     "score": 84
-  },
-  {
-    "id": "b4218bf0eea91afa",
-    "date": "2026-09-10",
-    "source": "Google",
-    "title": "Switching password managers is easy and safe on Android",
-    "url": "https://blog.google/products-and-platforms/platforms/android/switch-password-managers/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "Credential Exchange",
-      "IAM"
-    ],
-    "note": "Google announced Android support for direct password and passkey transfers between credential managers, materially advancing deployment and lifecycle considerations around FIDO Credential Exchange.",
-    "score": 82,
-    "firstSeenAt": "2026-09-14T13:17:54Z"
-  },
-  {
-    "id": "ea3ac4c1b3d41bdf",
-    "date": "2026-09-10",
-    "source": "Palo Alto Networks",
-    "title": "Secure AI Coding: Governing every agent, artifact, and identity",
-    "url": "https://www.paloaltonetworks.com/blog/2026/09/secure-ai-coding-governing-every-agent-artifact-and-identity/",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "PAM",
-      "MCP",
-      "Secrets"
-    ],
-    "note": "The product move is relevant because coding agents increasingly operate with human identity, filesystem, terminal and business-system access, requiring task-scoped identities and removal of standing privilege.",
-    "score": 82,
-    "firstSeenAt": "2026-09-16T11:59:46Z"
-  },
-  {
-    "id": "34f207af605a4f2e",
-    "date": "2026-09-10",
-    "source": "Okta",
-    "title": "Closing the frontline MFA coverage gap with Okta NFC",
-    "url": "https://www.okta.com/newsroom/articles/nfc-authentication-frontline-workers/",
-    "tags": [
-      "IAM",
-      "MFA",
-      "PAM",
-      "IGA",
-      "Offboarding"
-    ],
-    "note": "Introduces badge-and-PIN authentication for shared frontline workstations, with individually attributable access and automated provisioning and deprovisioning.",
-    "score": 78,
-    "firstSeenAt": "2026-09-15T17:14:56Z"
   }
 ]
