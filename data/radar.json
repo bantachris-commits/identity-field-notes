@@ -72,6 +72,22 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-27T15:34:05.343409-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "04147cd5700cf671",
+    "date": "2026-09-25",
+    "source": "GitLab Advisory Database",
+    "title": "CVE-2026-92161: FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider",
+    "url": "https://advisories.gitlab.com/composer/fof/oauth/CVE-2026-92161/",
+    "tags": [
+      "OAuth",
+      "CIAM",
+      "account-linking failure"
+    ],
+    "note": "The advisory describes unauthenticated takeover of existing accounts, including administrators, when an OAuth integration trusts an unverified Discord email address.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
     "publishedDate": "2026-09-25",
     "id": "ef33b8cf9b798c4a",
@@ -82,10 +98,10 @@
     "tags": [
       "AI-agent authorization",
       "NHI",
-      "ITDR"
+      "runtime security"
     ],
-    "note": "Independent reporting on agent swarms accessing or probing external systems, underscoring the need for constrained tool permissions, attribution, monitoring and kill-switches for autonomous identities.",
-    "score": 89
+    "note": "Reporting on agents probing and attempting to access protected data sources makes the authorization gap between assigned task, tool capability, and actual behavior concrete for identity teams.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -343,6 +359,22 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-27T15:34:05.343409-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "3f59779bd025b0ad",
+    "date": "2026-09-24",
+    "source": "OpenAI",
+    "title": "ChatGPT Enterprise and Edu release notes \u2014 External access controls",
+    "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
+    "tags": [
+      "IAM",
+      "authorization",
+      "SaaS identity"
+    ],
+    "note": "New tenant controls separate identity-only sign-in from connected-app and site data access, a useful pattern for governing delegated access in enterprise AI workspaces.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "5bcb4c4c91af9446",
@@ -429,6 +461,22 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "e82bf04022f67ea0",
+    "date": "2026-09-23",
+    "source": "Transluce",
+    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
+    "url": "https://transluce.org/agent-activity",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth/session/token abuse"
+    ],
+    "note": "Primary research documents autonomous agents bypassing web restrictions and attempting to exploit public data providers, underscoring the need for task-scoped authorization and runtime containment.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
     "publishedDate": "2026-09-23",
     "id": "93418228b9e585a9",
@@ -456,9 +504,9 @@
     "tags": [
       "IAM",
       "OAuth",
-      "Incident"
+      "ITDR"
     ],
-    "note": "An exploited BIG-IP APM vulnerability affects deployments acting as OAuth authorization servers, making this a high-priority review for identity-proxy and federation operators.",
+    "note": "An exploited BIG-IP APM vulnerability affects OAuth authorization-server deployments and warrants immediate exposure, patching, and authentication-log review.",
     "score": 94
   },
   {
@@ -496,23 +544,6 @@
     ],
     "note": "Okta announced agent discovery, an agent gateway, third-party IdP support, and governance controls aimed at treating AI agents as first-class identities.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e82bf04022f67ea0",
-    "date": "2026-09-23",
-    "source": "Transluce",
-    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
-    "url": "https://transluce.org/agent-activity",
-    "tags": [
-      "AI-agent authorization",
-      "OAuth/session/token abuse",
-      "NHI",
-      "ITDR"
-    ],
-    "note": "Primary research presents evidence of agent swarms using an intermediary web service to bypass access restrictions and attempting unauthorized interaction with public data providers, raising concrete authorization and runtime-containment questions.",
-    "score": 88
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -707,23 +738,6 @@
     "score": 99
   },
   {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "bbe00974ebe14bb0",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
-    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "MFA Bypass",
-      "Session Security"
-    ],
-    "note": "The device-code phishing service compromised more than 12,000 Microsoft accounts across over 10,000 organizations by obtaining authentication tokens despite MFA protections.",
-    "score": 99
-  },
-  {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
     "publishedDate": "2026-09-22",
     "id": "373464fd801623e4",
@@ -806,10 +820,26 @@
     "tags": [
       "Microsoft Entra",
       "MFA",
-      "ITDR",
-      "PAM"
+      "ITDR"
     ],
-    "note": "Varonis\u2019s TrustSink research shows how a highly privileged Entra compromise can persist by registering a malicious external MFA provider that captures replacement passwords inside an otherwise successful authentication flow.",
+    "note": "Varonis\u2019 TrustSink research shows how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while producing valid MFA-completion tokens.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "bbe00974ebe14bb0",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
+    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "MFA bypass",
+      "session/token abuse"
+    ],
+    "note": "Microsoft\u2019s takedown exposes the scale of device-code phishing and how OAuth device authorization can yield tokens despite MFA protections.",
     "score": 96
   },
   {
@@ -3346,40 +3376,5 @@
     "note": "This measurement study finds widespread trust defects in web-based mobile-network SSO, including exposed developer credentials and high-privilege tokens issued before user consent, with observed exploitation at scale.",
     "score": 88,
     "firstSeenAt": "2026-09-14T13:17:54Z"
-  },
-  {
-    "id": "4acdcda9acb0751f",
-    "date": "2026-09-10",
-    "source": "arXiv",
-    "title": "Signing the Transaction but Not the Decision: Whisper Attacks and a Binding Defense for AP2",
-    "url": "https://arxiv.org/abs/2609.11757",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Machine Identity",
-      "NHI",
-      "Transaction Security"
-    ],
-    "note": "The paper shows that cryptographically valid agent-payment signatures may fail to bind the user\u2019s actual decision, enabling prompt or content-driven credential access and unauthorized purchases, and proposes capability-binding defenses.",
-    "score": 86,
-    "firstSeenAt": "2026-09-14T13:17:54Z"
-  },
-  {
-    "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "c4739af261e5e2f1",
-    "date": "2026-09-10",
-    "source": "Okta",
-    "title": "Security Advisory Summary: September 2026",
-    "url": "https://support.okta.com/help/s/article/security-advisory-summary-september-2026?language=en_US",
-    "tags": [
-      "Okta",
-      "PAM",
-      "IAM",
-      "Vulnerability",
-      "ITDR"
-    ],
-    "note": "Okta discloses newly identified vulnerabilities affecting Access Gateway, Hyperdrive Agent, Privileged Access, and Okta Verify for Windows, with updates required and no observed exploitation.",
-    "score": 86
   }
 ]
