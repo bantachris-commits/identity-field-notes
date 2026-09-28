@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "b54a74d3c721b762",
+    "date": "2026-09-28",
+    "source": "SiliconANGLE",
+    "title": "1Password ties AI agent access to individual tasks",
+    "url": "https://siliconangle.com/2026/09/28/1password-limits-ai-agent-access-task-based-verification-oktane/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "Explains a task-scoped credential-broker model that keeps secrets out of AI-agent contexts and rejects standing privilege.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
     "publishedDate": "2026-09-27",
     "id": "8509949b9dc891a6",
@@ -55,18 +71,18 @@
     "publishedDate": "2026-09-25",
     "id": "74ab0bc29886016a",
     "date": "2026-09-25",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security Research",
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
+      "IAM",
       "NHI",
-      "Cloud IAM",
-      "Azure",
-      "AI Agents",
-      "ITDR"
+      "ITDR",
+      "Secrets",
+      "AI-agent authorization"
     ],
-    "note": "Microsoft documents destructive Azure activity conducted through compromised service principals, including exposed secrets, excessive RBAC, storage deletion, recovery-control attacks, and key collection.",
-    "score": 100
+    "note": "Primary research details Azure resource destruction and credential collection through exposed service-principal secrets, excessive permissions and automated token use.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -180,13 +196,11 @@
     "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
     "tags": [
       "IGA",
-      "SailPoint",
-      "Offboarding",
-      "Auditability",
-      "Service accounts"
+      "Access governance",
+      "Offboarding"
     ],
-    "note": "The enhancement removes a recurring governance weakness in manual provisioning by replacing opaque shared service-account workarounds with group assignment and individual completion audit trails.",
-    "score": 80
+    "note": "Replaces opaque shared-service-account workarounds for manual provisioning with group assignment and individual audit attribution.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -859,24 +873,6 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "373464fd801623e4",
-    "date": "2026-09-22",
-    "source": "Microsoft",
-    "title": "Disrupting EvilTokens: The AI Chatbot Built for Cybercrime",
-    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
-    "tags": [
-      "OAuth",
-      "Token Theft",
-      "MFA Bypass",
-      "AI Agents",
-      "Incident"
-    ],
-    "note": "Microsoft describes a device-code phishing service linked to roughly 12,000 compromised inboxes, with stolen sessions and tokens feeding AI-assisted mailbox analysis and fraud targeting.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
     "publishedDate": "2026-09-22",
     "id": "b5e3deaac0408e1c",
@@ -885,14 +881,13 @@
     "title": "Spraying in the Andes: TeamFiltration Returns to Exploit Forgotten Service Accounts",
     "url": "https://www.proofpoint.com/us/blog/threat-insight/Spraying-in-the-Andes-TeamFiltration-Returns",
     "tags": [
-      "service-account",
-      "stale-identity",
-      "password-spraying",
+      "IAM",
+      "NHI",
       "MFA",
-      "Entra",
-      "incident"
+      "Stale identities",
+      "Service accounts"
     ],
-    "note": "Reports seven confirmed Microsoft 365 compromises involving unmanaged functional or service accounts with default or unchanged passwords and no MFA enforcement. (proofpoint.com",
+    "note": "Documents seven Microsoft 365 compromises involving dormant service accounts with default or predictable passwords and no MFA.",
     "score": 98
   },
   {
@@ -1034,6 +1029,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "0c6eca8485a71cfa",
+    "date": "2026-09-22",
+    "source": "CERT-EU",
+    "title": "Critical Vulnerability in F5 BIG-IP APM",
+    "url": "https://www.cert.europa.eu/publications/security-advisories/2026-013/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Authentication",
+      "ITDR"
+    ],
+    "note": "Identity-gateway advisory for an actively exploited unauthenticated RCE affecting BIG-IP APM deployments combining access policies with OAuth authorization-server profiles.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
     "publishedDate": "2026-09-22",
     "id": "5951215eea492b0b",
@@ -1049,6 +1061,22 @@
     ],
     "note": "Cloudflare explains how EvilTokens abused Cloudflare Workers and customer-supplied API keys to automate Microsoft token theft and persistent access at scale.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "373464fd801623e4",
+    "date": "2026-09-22",
+    "source": "Microsoft Digital Crimes Unit",
+    "title": "Disrupting EvilTokens: The AI Chatbot Built for Cybercrime",
+    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+    "tags": [
+      "IAM",
+      "Account takeover",
+      "AI-agent authorization"
+    ],
+    "note": "Primary disruption report shows how compromised email accounts and mailbox analysis were operationalized into targeted fraud and impersonation.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
@@ -1138,6 +1166,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e39b107a18ede821",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
+    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent authorization",
+      "OAuth"
+    ],
+    "note": "Material platform move introducing agent-to-agent policy, runtime token revocation, connection certification and short-lived agent access.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "0e9af621060459a6",
@@ -1205,23 +1250,6 @@
     ],
     "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e39b107a18ede821",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
-    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "ITDR",
-      "IGA"
-    ],
-    "note": "Okta\u2019s newly announced agent controls cover shadow-agent discovery, agent gateways, third-party IdP support, and governance of agents as first-class identities\u2014useful signals for emerging agent authorization architectures.",
-    "score": 78
   },
   {
     "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
@@ -3347,40 +3375,5 @@
     ],
     "note": "Research note connects infostealer-compromised AI-service and enterprise SSO tokens to MFA bypass and highlights session lifecycle and token-revocation requirements for AI identities.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
-    "publishedDate": "2026-09-11",
-    "id": "44a8108e0c55ecaf",
-    "date": "2026-09-11",
-    "source": "SecurityWeek",
-    "title": "Trezor Says 347,000 Users Received Phishing Emails After Brevo Hack",
-    "url": "https://www.securityweek.com/trezor-says-347000-users-received-phishing-emails-after-brevo-hack/",
-    "tags": [
-      "Federation",
-      "SAML",
-      "Account Linking",
-      "OAuth",
-      "Supply Chain"
-    ],
-    "note": "Brevo\u2019s incident illustrates how an attacker-created SSO configuration and invited-user trust can turn federation behavior into account access and downstream phishing capability.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-09-13T21:06:45Z",
-    "publishedDate": "2026-09-11",
-    "id": "cd0695560dd007cc",
-    "date": "2026-09-11",
-    "source": "SecurityWeek",
-    "title": "Surfshark Systems Targeted by Hackers",
-    "url": "https://www.securityweek.com/surfshark-systems-targeted-by-hackers/",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Supply chain",
-      "Credential exposure"
-    ],
-    "note": "An internet-exposed engineering test server contained committed build credentials, illustrating how misconfiguration and exposed secrets can create identity-control risk even when production user data is segregated.",
-    "score": 78
   }
 ]
