@@ -1,5 +1,39 @@
 [
   {
+    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
+    "publishedDate": "2026-09-27",
+    "id": "8509949b9dc891a6",
+    "date": "2026-09-27",
+    "source": "SC Media",
+    "title": "OAuth token abuse: how the attack works and how to stop it",
+    "url": "https://www.scworld.com/tech-explainer/oauth-token-abuse-how-the-attack-works-and-how-to-stop-it",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "A timely practitioner-oriented breakdown of consent phishing, persistent OAuth grants, service-principal credential additions, and why password resets alone do not contain token abuse.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
+    "publishedDate": "2026-09-27",
+    "id": "47903fccd0c43f12",
+    "date": "2026-09-27",
+    "source": "Insomnia Security",
+    "title": "OAuth Device-Code Phishing \u2014 Bypassing MFA Without Touching a Password",
+    "url": "https://insom.ai/en/blog/oauth-device-code-phishing-bypassing-mfa-without-touching-a-password-20260927",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "MFA",
+      "Token Abuse"
+    ],
+    "note": "Field telemetry on device-code phishing shows how attackers can obtain refresh-token access after users complete legitimate Microsoft or Google authorization steps.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
     "publishedDate": "2026-09-26",
     "id": "3fa8683c0f109c52",
@@ -26,12 +60,12 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
       "NHI",
-      "ITDR",
-      "Microsoft Entra",
       "Cloud IAM",
-      "AI-agent authorization"
+      "Azure",
+      "AI Agents",
+      "ITDR"
     ],
-    "note": "Microsoft details destructive Azure activity performed through compromised service principals, exposed secrets, broad role assignments, overlapping tokens, and attempts to collect storage keys and impair recovery resources.",
+    "note": "Microsoft documents destructive Azure activity conducted through compromised service principals, including exposed secrets, excessive RBAC, storage deletion, recovery-control attacks, and key collection.",
     "score": 100
   },
   {
@@ -555,9 +589,10 @@
     "tags": [
       "IAM",
       "OAuth",
-      "ITDR"
+      "Authentication",
+      "Vulnerability"
     ],
-    "note": "An exploited BIG-IP APM vulnerability affects OAuth authorization-server deployments and warrants immediate exposure, patching, and authentication-log review.",
+    "note": "An actively exploited unauthenticated flaw affects BIG-IP APM deployments acting as OAuth authorization servers, making this a high-priority identity-plane exposure.",
     "score": 94
   },
   {
@@ -615,24 +650,6 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "ee4ea52c54c1c84a",
-    "date": "2026-09-23",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
-    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
-    "tags": [
-      "BeyondTrust",
-      "PAM",
-      "ITDR",
-      "NHI",
-      "SIEM"
-    ],
-    "note": "The integration brings privilege exposure, privileged-session activity, and human, workload, non-human, and AI-agent identity context into Falcon investigations.",
-    "score": 87
-  },
-  {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
     "publishedDate": "2026-09-23",
     "id": "e158ecac2f7dd6fa",
@@ -678,12 +695,11 @@
     "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
     "tags": [
       "IGA",
-      "SailPoint",
       "ITDR",
       "NHI",
-      "Identity graph"
+      "AI Agents"
     ],
-    "note": "SailPoint is extending Identity Graph visibility to Business+ tenants, including blast-radius analysis, entitlement paths, human-agent relationships, and direct risk-reduction actions.",
+    "note": "SailPoint is extending identity-graph visibility to Business+ tenants with blast-radius analysis across human, non-human, and agent identities and direct risk-reduction actions.",
     "score": 84
   },
   {
@@ -736,6 +752,23 @@
     ],
     "note": "Microsoft announced a preview integrated security operations center that combines security signals, context and response controls for human- and agent-operated investigations, with implications for identity-centric detection and response.",
     "score": 82
+  },
+  {
+    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "ee4ea52c54c1c84a",
+    "date": "2026-09-23",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
+    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI",
+      "SIEM"
+    ],
+    "note": "The integration brings privileged credential, elevation, remote-access, and session context into SIEM investigations across human, workload, and AI-agent identities.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -826,23 +859,6 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "Authentication attacks",
-      "ITDR"
-    ],
-    "note": "Varonis research shows how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning a valid signed MFA token and preserving a normal-looking login.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -893,6 +909,23 @@
     ],
     "note": "Microsoft\u2019s takedown exposes the scale of device-code phishing and how OAuth device authorization can yield tokens despite MFA protections.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Entra",
+      "Authentication"
+    ],
+    "note": "Research into Microsoft Entra external MFA providers highlights a federation trust failure in which a malicious provider can capture credentials while returning a valid signed MFA-completion token.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
@@ -1100,6 +1133,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "be7c79ca30059e44",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
+    "url": "https://www.okta.com/es-es/newsroom/press-releases/ai-innovations-oktane-2026/",
+    "tags": [
+      "IAM",
+      "AI Agents",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "Okta\u2019s new agent capabilities are relevant for practitioners tracking runtime authorization, agent behavior visibility, lifecycle governance, and enterprise-wide access revocation.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-22",
     "id": "a80caae3e9d572f1",
@@ -1149,6 +1199,24 @@
     ],
     "note": "SailPoint\u2019s next-generation certification engine is entering regional GA rollout, with material migration constraints, API changes, and limitations affecting large certification campaigns.",
     "score": 77
+  },
+  {
+    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "23217871c1aace5d",
+    "date": "2026-09-21",
+    "source": "CrowdSec",
+    "title": "Analyse de l\u2019attaque de la supply chain TanStack",
+    "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attaque-analyse",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Offboarding",
+      "Supply Chain",
+      "NHI"
+    ],
+    "note": "CrowdSec\u2019s primary reconstruction links a poisoned developer dependency to theft of a former employee\u2019s GitHub OAuth token and cloning of roughly 170 private repositories before access was revoked.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
@@ -3308,75 +3376,5 @@
     "note": "Unit 42 details how root access on a Kubernetes node can enable spoofing or harvesting of co-located workload identities through SPIFFE/SPIRE metadata.",
     "score": 95,
     "firstSeenAt": "2026-09-16T11:59:46Z"
-  },
-  {
-    "firstSeenAt": "2026-09-13T16:36:23Z",
-    "publishedDate": "2026-09-10",
-    "id": "348626d9ce7a6f9b",
-    "date": "2026-09-10",
-    "source": "Anthropic",
-    "title": "Detecting and countering misuse of AI: September 2026",
-    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "OAuth",
-      "Token Theft",
-      "AI Agents"
-    ],
-    "note": "Anthropic\u2019s threat report details AI-assisted intrusions built around stolen credentials, API keys, session tokens, cloud secrets and OAuth fan-out, including operational indicators useful to defenders.",
-    "score": 95
-  },
-  {
-    "id": "6e6808f3261047ff",
-    "date": "2026-09-10",
-    "source": "Microsoft Security Blog",
-    "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Device-Code Phishing",
-      "ITDR",
-      "Session Theft"
-    ],
-    "note": "Microsoft documents AI-themed campaigns that steal credentials and access tokens, including a business-email-compromise case using OAuth device-code phishing without conventional password theft.",
-    "score": 93,
-    "firstSeenAt": "2026-09-13T21:06:45Z"
-  },
-  {
-    "firstSeenAt": "2026-09-13T16:36:23Z",
-    "publishedDate": "2026-09-10",
-    "id": "82870bf6f1bec574",
-    "date": "2026-09-10",
-    "source": "BleepingComputer",
-    "title": "The Top 4 Threats We Found by Investigating Every Alert for a Quarter",
-    "url": "https://www.bleepingcomputer.com/news/security/the-top-4-threats-we-found-by-investigating-every-alert-for-a-quarter/",
-    "tags": [
-      "ITDR",
-      "Session security",
-      "Token theft",
-      "MFA bypass",
-      "OAuth"
-    ],
-    "note": "A field-based threat report finds authenticated-session hijacking, token replay, MFA bypass, OAuth consent, and persistence surviving password resets among the dominant identity attack patterns.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "55bae0f7524b8d16",
-    "date": "2026-09-10",
-    "source": "IETF",
-    "title": "OAuth Authorization Request Delegation Chain",
-    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-zehavi-oauth-authz-req-del-chain-01.html",
-    "tags": [
-      "OAuth",
-      "Authorization",
-      "AI-agent authorization",
-      "Federation"
-    ],
-    "note": "This new OAuth draft proposes signed, hash-linked delegation chains so upstream authorization servers can evaluate downstream clients and intermediary brokers before issuing tokens.",
-    "score": 91
   }
 ]

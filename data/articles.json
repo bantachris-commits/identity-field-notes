@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-09-28-morning-brief",
+    "date": "2026-09-28",
+    "coverageDate": "2026-09-27",
+    "edition": "MORNING EDITION // 2026.09.28",
+    "title": "OAuth Tokens Outlast Password Resets",
+    "dek": "Highlights from 2026-09-27. Yesterday\u2019s strongest identity coverage focused on OAuth persistence, consent abuse and the controls needed to contain token-based access.",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "ITDR",
+      "NHI"
+    ],
+    "readTime": "3 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-27, verified against linked sources. Edition dated 2026-09-28; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "OAuth Token Abuse Requires Grant and Service-Principal Revocation",
+        "summary": "SC Media details how consent phishing, device-code phishing and credential additions to existing applications can create durable OAuth access that survives password resets and MFA challenges. The article highlights Entra audit events such as service-principal creation, application consent, delegated-permission grants and app-role assignments as key investigation points.",
+        "why": "Treat OAuth grants and application credentials as identity persistence, not merely user-session artifacts. Response playbooks should include removing permission grants and app-role assignments, deleting malicious service principals, revoking sessions and checking for secondary persistence such as inbox rules and delegated mailbox access.",
+        "source": "SC Media",
+        "url": "https://www.scworld.com/tech-explainer/oauth-token-abuse-how-the-attack-works-and-how-to-stop-it",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-27",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-25-morning-brief",
     "date": "2026-09-25",
     "coverageDate": "2026-09-24",
@@ -13,7 +44,7 @@
       "Machine IAM"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-24, verified against linked sources. Edition dated 2026-09-25; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
