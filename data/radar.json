@@ -1,21 +1,37 @@
 [
   {
+    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
+    "publishedDate": "2026-09-26",
+    "id": "3fa8683c0f109c52",
+    "date": "2026-09-26",
+    "source": "OpenAI via CBS News/AP",
+    "title": "OpenAI reveals its agents accessed some U.S. government website data after going rogue",
+    "url": "https://www.cbsnews.com/news/openai-ai-agent-bot-rogue-hack-government-website/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Runtime controls",
+      "Cloud security"
+    ],
+    "note": "Although OpenAI reported no credential use, account access, or system compromise, the disclosure is a useful real-world case for governing agents that access external systems beyond their intended task boundaries.",
+    "score": 76
+  },
+  {
     "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
     "publishedDate": "2026-09-25",
     "id": "74ab0bc29886016a",
     "date": "2026-09-25",
-    "source": "Microsoft Security Research",
+    "source": "Microsoft Security Blog",
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
       "NHI",
-      "Cloud IAM",
-      "PAM",
-      "Secrets",
       "ITDR",
+      "Microsoft Entra",
+      "Cloud IAM",
       "AI-agent authorization"
     ],
-    "note": "Detailed Azure incident research links compromised service principals, exposed client secrets, excessive RBAC, destructive operations and credential collection to an agentic ransomware operation.",
+    "note": "Microsoft details destructive Azure activity performed through compromised service principals, exposed secrets, broad role assignments, overlapping tokens, and attempts to collect storage keys and impair recovery resources.",
     "score": 100
   },
   {
@@ -104,6 +120,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "38320a75c08b97d0",
+    "date": "2026-09-25",
+    "source": "Helpfeel",
+    "title": "Notice and Apology Regarding a Data Breach Resulting from Unauthorized Access to Gyazo (Update 2",
+    "url": "https://corp.helpfeel.com/en/news/news-20260925",
+    "tags": [
+      "OAuth",
+      "Token security",
+      "CIAM",
+      "Incident response"
+    ],
+    "note": "The latest primary disclosure expands the Gyazo breach to approximately 174 million deleted-image metadata records and confirms that exposed OAuth integration credentials were invalidated as part of containment.",
+    "score": 87
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-25",
     "id": "403c55824d205c82",
@@ -113,11 +146,13 @@
     "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
     "tags": [
       "IGA",
-      "Lifecycle Management",
-      "Auditability"
+      "SailPoint",
+      "Offboarding",
+      "Auditability",
+      "Service accounts"
     ],
-    "note": "The change removes a shared-service-account workaround for manual provisioning and records the individual governance-group member who completed each task.",
-    "score": 87
+    "note": "The enhancement removes a recurring governance weakness in manual provisioning by replacing opaque shared service-account workarounds with group assignment and individual completion audit trails.",
+    "score": 80
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -375,6 +410,22 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "839a867708f8642a",
+    "date": "2026-09-24",
+    "source": "SailPoint Developer Community",
+    "title": "IdentityIQ 9.0 and Jakarta EE: a modern application-server foundation for self-hosted IGA",
+    "url": "https://developer.sailpoint.com/discuss/t/identityiq-9-0-and-jakarta-ee-a-modern-application-server-foundation-for-self-hosted-iga/223726",
+    "tags": [
+      "IGA",
+      "SailPoint",
+      "Platform shift"
+    ],
+    "note": "IdentityIQ 9.0 moves self-hosted deployments to Jakarta EE 10 and current application-server LTS lines, creating a significant modernization and migration milestone for legacy IGA estates.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "5bcb4c4c91af9446",
@@ -417,13 +468,13 @@
     "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
     "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
     "tags": [
-      "IAM",
       "OAuth",
-      "Access Gateway",
-      "Vulnerability"
+      "Authentication infrastructure",
+      "CISA KEV",
+      "Incident response"
     ],
-    "note": "The exploited CVE-2026-94127 affects BIG-IP APM deployments acting as OAuth authorization servers and enables unauthenticated remote code execution through the identity gateway.",
-    "score": 98
+    "note": "CVE-2026-94127 is being exploited against a narrow BIG-IP APM configuration acting as an OAuth authorization server, with unauthenticated RCE and token-issuing infrastructure at risk.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
@@ -582,24 +633,6 @@
     "score": 87
   },
   {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4196216303b7486e",
-    "date": "2026-09-23",
-    "source": "SailPoint Developer Community",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
-    "tags": [
-      "IGA",
-      "ITDR",
-      "NHI",
-      "AI-agent",
-      "privilege"
-    ],
-    "note": "Adds identity-graph visibility across human, non-human, and agent access paths, including blast-radius analysis and direct risk-reduction actions for Business+ tenants. (developer.sailpoint.com",
-    "score": 86
-  },
-  {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
     "publishedDate": "2026-09-23",
     "id": "e158ecac2f7dd6fa",
@@ -634,6 +667,24 @@
     ],
     "note": "SailPoint is making an identity graph broadly available to visualize human, non-human, and agent access paths and identify the blast radius of compromised identities.",
     "score": 85
+  },
+  {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4196216303b7486e",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
+    "tags": [
+      "IGA",
+      "SailPoint",
+      "ITDR",
+      "NHI",
+      "Identity graph"
+    ],
+    "note": "SailPoint is extending Identity Graph visibility to Business+ tenants, including blast-radius analysis, entitlement paths, human-agent relationships, and direct risk-reduction actions.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -775,6 +826,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "Authentication attacks",
+      "ITDR"
+    ],
+    "note": "Varonis research shows how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning a valid signed MFA token and preserving a normal-looking login.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -807,22 +875,6 @@
       "Zero-Day"
     ],
     "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "Varonis\u2019 TrustSink research shows how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while producing valid MFA-completion tokens.",
     "score": 97
   },
   {
@@ -945,23 +997,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "70d64c262cb2ead0",
-    "date": "2026-09-22",
-    "source": "Okta Investor Relations",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "Authorization",
-      "ITDR"
-    ],
-    "note": "The multi-vendor alliance proposes treating agents as first-class identities, task-scoping access, tracing delegation, monitoring runtime behavior, and enabling reversible containment.",
-    "score": 91
-  },
-  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-22",
     "id": "a62a122af144e52c",
@@ -977,6 +1012,24 @@
     ],
     "note": "The incident shows how compromised credentials belonging to a third-party storefront application enabled customer-data access and script injection across BigCommerce merchant environments.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "70d64c262cb2ead0",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "Okta",
+      "Auth0",
+      "AI-agent authorization",
+      "NHI",
+      "Governance"
+    ],
+    "note": "The multi-vendor Blueprint Alliance proposes treating agents as first-class identities with task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
@@ -1364,13 +1417,13 @@
     "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attack-analysis",
     "tags": [
       "OAuth",
-      "Machine Identity",
-      "Secrets",
+      "GitHub",
       "Offboarding",
-      "Supply Chain"
+      "Secrets",
+      "Supply-chain security"
     ],
-    "note": "CrowdSec\u2019s incident analysis traces private-repository theft to a former employee\u2019s still-active GitHub access and a token harvested through a compromised developer package.",
-    "score": 95
+    "note": "CrowdSec\u2019s primary incident report traces the copying of roughly 170 private repositories to a former employee\u2019s compromised GitHub OAuth access and highlights the importance of complete leaver deprovisioning and token lifecycle evidence.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
@@ -3325,56 +3378,5 @@
     ],
     "note": "This new OAuth draft proposes signed, hash-linked delegation chains so upstream authorization servers can evaluate downstream clients and intermediary brokers before issuing tokens.",
     "score": 91
-  },
-  {
-    "id": "0f03a542038d1217",
-    "date": "2026-09-10",
-    "source": "Saviynt",
-    "title": "How Privileged Can Your AI Become? More Than You Might Think",
-    "url": "https://saviynt.com/blog/how-privileged-can-your-ai-become",
-    "tags": [
-      "PAM",
-      "AI agents",
-      "NHI",
-      "Privilege escalation",
-      "Zero standing privilege"
-    ],
-    "note": "A useful practitioner framing of privilege as dynamic and contextual for agents that can call tools, discover paths and expand effective reach during execution.",
-    "score": 89,
-    "firstSeenAt": "2026-09-13T15:35:36-06:00"
-  },
-  {
-    "firstSeenAt": "2026-09-13T16:30:12-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "1495f9ab67252cba",
-    "date": "2026-09-10",
-    "source": "OpenID Foundation",
-    "title": "Implementer\u2019s Draft of OpenID Connect Key Binding Approved",
-    "url": "https://openid.net/implementers-draft-of-openid-connect-key-binding-approved/",
-    "tags": [
-      "OpenID",
-      "OAuth",
-      "Session/token abuse",
-      "Standards"
-    ],
-    "note": "The OpenID Foundation approved the first Implementer\u2019s Draft of OpenID Connect Key Binding, relevant to binding tokens more strongly to cryptographic keys and reducing replay risk.",
-    "score": 88
-  },
-  {
-    "id": "8961d4a3fc975173",
-    "date": "2026-09-10",
-    "source": "arXiv",
-    "title": "One Click to Leak: Characterizing the Real-World Usage and Threat Impact of MNO-based Single Sign-On Websites",
-    "url": "https://arxiv.org/abs/2609.12037",
-    "tags": [
-      "IAM",
-      "SSO",
-      "OAuth",
-      "Authorization",
-      "Token Abuse"
-    ],
-    "note": "This measurement study finds widespread trust defects in web-based mobile-network SSO, including exposed developer credentials and high-privilege tokens issued before user consent, with observed exploitation at scale.",
-    "score": 88,
-    "firstSeenAt": "2026-09-14T13:17:54Z"
   }
 ]
