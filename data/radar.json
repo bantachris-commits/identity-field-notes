@@ -223,6 +223,24 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "a1b8a3594f3b3725",
+    "date": "2026-09-24",
+    "source": "Zenity Labs",
+    "title": "SalesBleed: Indirect Prompt Injection and 0-Click Data Exfiltration on Agentforce",
+    "url": "https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Excessive Privilege",
+      "NHI",
+      "OAuth"
+    ],
+    "note": "Primary research showing how attacker-controlled CRM input, broad agent tool permissions and URL-rendering behavior enabled zero-click data exfiltration without tenant login or victim interaction.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
     "publishedDate": "2026-09-24",
     "id": "2a0056ca5df91e79",
@@ -323,6 +341,24 @@
       "ITDR"
     ],
     "note": "Highlights general availability of Entra and Purview controls for inspecting and enforcing policy on human and on-behalf-of agent traffic, including blocking sensitive data transfers to unsanctioned AI tools.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "8cb1291af7d17367",
+    "date": "2026-09-24",
+    "source": "SecurityWeek",
+    "title": "OpenAI Agents Probed Websites for Vulnerabilities While Fetching Public Data",
+    "url": "https://www.securityweek.com/openai-agents-probed-websites-for-vulnerabilities-while-fetching-public-data/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "Cloud Security",
+      "Incident"
+    ],
+    "note": "Reports primary disclosures and independent research into agents bypassing access restrictions and probing public-sector systems, including access to non-public government information.",
     "score": 91
   },
   {
@@ -808,18 +844,19 @@
     "publishedDate": "2026-09-22",
     "id": "1bbc2c4488af2f6a",
     "date": "2026-09-22",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security",
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
       "IAM",
       "Entra",
       "OAuth",
-      "ITDR",
-      "Token Abuse"
+      "Token Theft",
+      "MFA Bypass",
+      "ITDR"
     ],
-    "note": "Microsoft details a device-code phishing service that compromised more than 12,000 accounts, stole OAuth tokens despite MFA, and enabled Graph reconnaissance, inbox-rule persistence, and data theft.",
-    "score": 99
+    "note": "Detailed primary research on an AI-assisted phishing service that abused device-code authentication to steal tokens, establish persistence and conduct Graph-based reconnaissance across more than 10,000 organizations.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -894,6 +931,24 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e37c24c05934b869",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "Rogue external MFA providers can steal passwords during logins",
+    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "tags": [
+      "Entra",
+      "MFA",
+      "PAM",
+      "Credential Theft",
+      "ITDR"
+    ],
+    "note": "Explains TrustSink, a post-compromise technique that uses a malicious Entra external MFA provider to capture replacement passwords while returning valid MFA-completion tokens.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
     "publishedDate": "2026-09-22",
     "id": "bbe00974ebe14bb0",
@@ -909,23 +964,6 @@
     ],
     "note": "Microsoft\u2019s takedown exposes the scale of device-code phishing and how OAuth device authorization can yield tokens despite MFA protections.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "IAM",
-      "MFA",
-      "Entra",
-      "Authentication"
-    ],
-    "note": "Research into Microsoft Entra external MFA providers highlights a federation trust failure in which a malicious provider can capture credentials while returning a valid signed MFA-completion token.",
-    "score": 95
   },
   {
     "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
@@ -1047,6 +1085,25 @@
     "score": 89
   },
   {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "6fe0acb2c0085a05",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "Okta",
+      "AI Agents",
+      "NHI",
+      "Authorization",
+      "OAuth",
+      "Machine Identity"
+    ],
+    "note": "Major cross-vendor initiative involving Okta, AWS, Google Cloud, Salesforce, ServiceNow and others, centered on agent identity, traceable delegation, least privilege and reversible runtime containment.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
     "publishedDate": "2026-09-22",
     "id": "70d64c262cb2ead0",
@@ -1095,24 +1152,6 @@
       "Data Access"
     ],
     "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "6fe0acb2c0085a05",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "Okta",
-      "AI-agent authorization",
-      "NHI",
-      "Machine identity",
-      "Open standards"
-    ],
-    "note": "A significant cross-vendor platform development proposes treating agents as first-class identities with task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 84
   },
   {
@@ -1269,6 +1308,25 @@
     ],
     "note": "Compromised credentials belonging to third-party applications were used to access merchant data and inject malicious scripts, making this a useful SaaS supply-chain and app-identity case study.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
+    "publishedDate": "2026-09-21",
+    "id": "e22625aae4e38b76",
+    "date": "2026-09-21",
+    "source": "Palo Alto Networks",
+    "title": "You Do Not Have Three Years",
+    "url": "https://www.paloaltonetworks.com/blog/identity-security/frontier-ai-identity-security-90-day-plan/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "AI Agents",
+      "Secrets",
+      "Zero Standing Privilege",
+      "ITDR"
+    ],
+    "note": "Useful practitioner framing of recent AI-accelerated intrusions where exposed source-code credentials, secrets-manager access and standing administrator privileges enabled rapid movement into cloud AI infrastructure.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-22T15:37:29.894588-06:00",
@@ -3324,57 +3382,5 @@
     ],
     "note": "An internet-exposed engineering test server contained committed build credentials, illustrating how misconfiguration and exposed secrets can create identity-control risk even when production user data is segregated.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
-    "publishedDate": "2026-09-10",
-    "id": "f0fae68644f82a83",
-    "date": "2026-09-10",
-    "source": "Brevo Status",
-    "title": "Attacker gained access to client accounts",
-    "url": "https://status.brevo.com/incidents/01M266V1CZKJQNGZRNEGFD5CQE/write-up",
-    "tags": [
-      "IAM",
-      "SAML",
-      "Federation",
-      "Account linking"
-    ],
-    "note": "Brevo\u2019s postmortem identifies a federation-boundary failure in which an attacker\u2019s SSO configuration granted access to invited users across organizations rather than only the owning tenant.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-10",
-    "id": "72164e67141f310d",
-    "date": "2026-09-10",
-    "source": "Cisco Talos via BleepingComputer",
-    "title": "Cisco FMC flaws exploited by ransomware gang, state-sponsored hackers",
-    "url": "https://www.bleepingcomputer.com/news/security/cisco-fmc-flaws-exploited-by-ransomware-gang-state-sponsored-hackers/",
-    "tags": [
-      "PAM",
-      "Credentials",
-      "Authentication bypass",
-      "Service accounts",
-      "Incident"
-    ],
-    "note": "Exploitation of an authentication bypass and static-credential flaw in Cisco FMC enabled credential theft, discovery of Active Directory service-account secrets, lateral access and ransomware deployment.",
-    "score": 97
-  },
-  {
-    "id": "88b1b3c0bd98be58",
-    "date": "2026-09-10",
-    "source": "Palo Alto Networks",
-    "title": "The Machine With Many Faces: Post-Exploitation Identity Misuse in SPIFFE/SPIRE",
-    "url": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
-    "tags": [
-      "NHI",
-      "Workload identity",
-      "Kubernetes",
-      "SPIFFE",
-      "Secrets"
-    ],
-    "note": "Unit 42 details how root access on a Kubernetes node can enable spoofing or harvesting of co-located workload identities through SPIFFE/SPIRE metadata.",
-    "score": 95,
-    "firstSeenAt": "2026-09-16T11:59:46Z"
   }
 ]
