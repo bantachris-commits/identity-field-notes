@@ -1,5 +1,70 @@
 [
   {
+    "id": "2026-09-29-morning-brief",
+    "date": "2026-09-29",
+    "coverageDate": "2026-09-28",
+    "edition": "MORNING EDITION // 2026.09.29",
+    "title": "Identity Field Notes: September 28 Recap",
+    "dek": "Highlights from 2026-09-28. Yesterday\u2019s strongest identity signals were a post-compromise Entra attack, task-scoped authorization for AI agents, and two concrete deployments of cryptographic device and payment authentication.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "Authentication",
+      "Machine Identity",
+      "AI-Agent Authorization"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-28, verified against linked sources. Edition dated 2026-09-29; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "TrustSink turns Microsoft Entra\u2019s MFA plumbing into a password trap",
+        "summary": "Cyber Security News reported on Varonis research describing TrustSink, a post-compromise technique that uses an attacker-controlled External Authentication Method in Microsoft Entra. The rogue provider can display a convincing Microsoft password prompt while returning a valid-looking MFA completion response, allowing the victim to finish the legitimate login.",
+        "why": "This is an identity-control-plane problem, not ordinary phishing. Defenders should alert on unexpected external authentication methods, app registrations, consent grants, signing keys, redirect URIs and issuer values\u2014and remove the rogue provider before resetting captured credentials.",
+        "source": "Cybersecurity News",
+        "url": "https://cybersecuritynews.com/trustsink-attack/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Vendor Watch",
+        "title": "1Password frames AI-agent privilege around individual tasks",
+        "summary": "SiliconANGLE reported that 1Password is applying just-in-time, task-scoped authorization to AI agents rather than granting standing access. Its credential-broker model is designed to release secrets only when required, keeping them outside the agent and underlying model while preserving authorization context across systems.",
+        "why": "Task boundaries are more useful than treating an agent as a permanent service account or simply inheriting a human identity. The operational test will be whether organizations can verify task completion, attribute actions to both agent and principal, and revoke access cleanly between steps.",
+        "source": "SiliconANGLE",
+        "url": "https://siliconangle.com/2026/09/28/1password-limits-ai-agent-access-task-based-verification-oktane/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-09-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "WBA and FIDO test zero-touch onboarding for industrial IoT",
+        "summary": "The FIDO Alliance reported interoperability testing that combines Wireless Broadband Alliance OpenRoaming with FIDO Device Onboard. The approach is intended to replace manual provisioning of MAC addresses, Wi-Fi keys and administrative credentials with cryptographic device authentication and automated placement on designated enterprise networks.",
+        "why": "Zero-touch onboarding can reduce both deployment labor and the risks created by shared installation credentials. Practitioners should still validate ownership transfer, device attestation, network-segmentation policy and recovery paths before treating it as a full machine-identity lifecycle control.",
+        "source": "FIDO Alliance",
+        "url": "https://fidoalliance.org/iot-news-wba-and-fido-test-zero-touch-iot-wi-fi-onboarding/",
+        "confidence": "Primary source",
+        "published_date": "2026-09-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authentication",
+        "title": "Visa Payment Passkey activated at five Indian state-owned banks",
+        "summary": "The FIDO Alliance reported that Visa Payment Passkey was activated for cardholders at Union Bank of India, Central Bank of India, Bank of Maharashtra, Indian Overseas Bank and Indian Bank. The deployment replaces OTP-based payment authentication with a passkey-based flow through a shared issuer-processing platform.",
+        "why": "The significance is deployment scale rather than another passkey announcement: a shared integration path may lower the adoption barrier for institutions that cannot implement passkeys bank by bank. Teams should distinguish the announced rollout from independently measured fraud reduction, which was not established in the report.",
+        "source": "FIDO Alliance",
+        "url": "https://fidoalliance.org/tech-times-visa-payment-passkey-goes-live-at-five-india-state-banks-otp-attack-surface-eliminated/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-28",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-28-morning-brief",
     "date": "2026-09-28",
     "coverageDate": "2026-09-27",
@@ -13,7 +78,7 @@
       "NHI"
     ],
     "readTime": "3 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-27, verified against linked sources. Edition dated 2026-09-28; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
