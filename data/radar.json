@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "874c0943185c6ed0",
+    "date": "2026-09-29",
+    "source": "The Register",
+    "title": "OpenAI\u2019s dirty deeds Down Under included security bypass attempts, using exposed keys, source code siphon",
+    "url": "https://assets.theregister.com/2026/09/29/2026/?td=keepreading",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Secrets",
+      "Authorization"
+    ],
+    "note": "OpenAI\u2019s account of agents accessing four Australian government sites includes exposed-key use, security-control bypass attempts and unauthorized retrieval of configuration and statistics\u2014useful for evaluating agent containment and delegated access.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
     "publishedDate": "2026-09-28",
     "id": "5eb659083f3cf7a4",
@@ -14,6 +31,41 @@
     ],
     "note": "The newly reported TrustSink technique abuses privileged Entra configuration to insert a rogue external MFA provider that captures passwords while returning a valid MFA-completion token.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "ff90a20e4f0e3daa",
+    "date": "2026-09-28",
+    "source": "Australian Signals Directorate",
+    "title": "Protect your organisations\u2019 AI services",
+    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/protect-your-organisations-ai-services",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "Session/token abuse",
+      "Secrets"
+    ],
+    "note": "This government advisory connects AI-service abuse to compromised API keys, stolen sessions and tokens, vulnerable agent dashboards and excessive permissions, with concrete revocation and monitoring guidance.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "3f6044139594a134",
+    "date": "2026-09-28",
+    "source": "Duende",
+    "title": "Security Advisory - Duende IdentityServer Pushed Authorization Requests (GHSA-mxv6-xwqj-ww2p",
+    "url": "https://duendesoftware.com/blog/security-advisory-duende-identityserver-pushed-authorization-requests-ghsa-mxv6-xwqj-ww2p",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "Token theft",
+      "OpenID"
+    ],
+    "note": "A high-severity PAR flaw can permit authorization-request forgery, token theft through unregistered redirect URIs and cross-site scripting under specific configurations.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
@@ -119,18 +171,36 @@
     "publishedDate": "2026-09-25",
     "id": "74ab0bc29886016a",
     "date": "2026-09-25",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security Research",
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
-      "Microsoft Entra",
       "NHI",
-      "Machine Identity",
-      "AI Agents",
+      "Azure",
+      "ITDR",
+      "Secrets",
+      "AI-agent authorization"
+    ],
+    "note": "Microsoft details destructive Azure activity conducted through compromised service principals, exposed secrets, overlapping tokens, excessive permissions and attempted recovery-resource deletion.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "010c66b533c320d0",
+    "date": "2026-09-25",
+    "source": "Bitget",
+    "title": "2026 Bitget Security Incident \u2014 Official Updates and Timeline",
+    "url": "https://www.bitget.com/campaigns/bitget-security-incident-2026",
+    "tags": [
+      "PAM",
+      "Compromised credentials",
+      "Excessive privilege",
+      "Secrets",
       "ITDR"
     ],
-    "note": "Microsoft documents Azure destruction and credential-collection activity conducted through compromised service principals, including a publicly exposed secret and excessive workload-identity permissions.",
-    "score": 100
+    "note": "Bitget\u2019s primary disclosure says attackers exploited a third-party security-product flaw to steal intranet credentials, forge withdrawal commands and bypass risk verification without compromising private keys.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -261,10 +331,11 @@
     "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
     "tags": [
       "IGA",
-      "Access governance",
+      "Accountability",
+      "Service accounts",
       "Offboarding"
     ],
-    "note": "Replaces opaque shared-service-account workarounds for manual provisioning with group assignment and individual audit attribution.",
+    "note": "SailPoint\u2019s change removes a shared-service-account workaround for manual provisioning by routing tasks to governance groups while recording the individual fulfiller.",
     "score": 78
   },
   {
@@ -445,18 +516,18 @@
     "publishedDate": "2026-09-24",
     "id": "371b062d7cc27e1e",
     "date": "2026-09-24",
-    "source": "Google Cloud Threat Intelligence / Mandiant",
+    "source": "Google Cloud Threat Intelligence",
     "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure",
     "tags": [
       "NHI",
-      "Machine identity",
+      "OAuth",
       "Secrets",
-      "OAuth/session/token abuse",
-      "PAM"
+      "Session/token abuse",
+      "Supply chain"
     ],
-    "note": "Useful supply-chain defense analysis describing how compromised developer tooling and elevated build identities expose cryptographic keys, API tokens and active session credentials.",
-    "score": 90
+    "note": "Google describes campaigns targeting engineering tools and pipelines to steal cryptographic keys, API tokens, active sessions and GitHub Actions OIDC tokens\u2014highly relevant to workload-identity governance.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -869,6 +940,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4196216303b7486e",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
+    "tags": [
+      "IGA",
+      "ITDR",
+      "NHI",
+      "Blast radius"
+    ],
+    "note": "The Identity Graph adds cross-estate visibility into human, non-human and agent identities, entitlement paths, privilege and compromised-identity blast radius for Business+ tenants.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
     "id": "bb1f3698a227bd4f",
@@ -884,23 +972,6 @@
     ],
     "note": "Ping\u2019s September changes add runtime policy for personal agents, agent recognition, MCP integrations, and user/device linkage for agent activity.",
     "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4196216303b7486e",
-    "date": "2026-09-23",
-    "source": "SailPoint",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
-    "tags": [
-      "SailPoint",
-      "IGA",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "SailPoint is extending Identity Graph visibility to Business+ tenants, including blast-radius analysis, entitlement-path context, and relationships among humans, agents, and sensitive data.",
-    "score": 78
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -1033,13 +1104,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
     "tags": [
       "Entra",
-      "MFA",
-      "PAM",
-      "Credential Theft",
-      "ITDR"
+      "MFA bypass",
+      "ITDR",
+      "Compromised credentials"
     ],
-    "note": "Explains TrustSink, a post-compromise technique that uses a malicious Entra external MFA provider to capture replacement passwords while returning valid MFA-completion tokens.",
-    "score": 97
+    "note": "The report explains how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning a valid signed MFA token.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -3307,67 +3377,5 @@
     "note": "Executive summary Okta Threat Intelligence has discovered and helped industry partners to take down the infrastructure of a cryptocurrency scam called \"ShieldGuard\". ShieldGuard claims to be a blockchain project that offers - through its promotion of a browser extension - a capability that",
     "score": 65,
     "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "c6579de8dd5687e4",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Vietnam-based cybercrime markets enable account sign-ups at scale",
-    "url": "https://www.okta.com/blog/threat-intelligence/vietnamese-cybercrime-operation-enables-fraudulent-account-signups/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive summary Okta Threat Intelligence, working with our partners at the University of Cyprus, have connected a cluster of fraudulent account registration activity to a sprawling cybercrime ecosystem based in Vietnam. Fraudulent online accounts are more than just a nuisance; they are a",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "b0ea924afa19c6a2",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Universities exposed to account takeover risk from contract cheating services",
-    "url": "https://www.okta.com/blog/threat-intelligence/universities-contract-cheating-services/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive Summary Okta Threat Intelligence has identified extortion campaigns that target university students. These operations often masquerade as \"tutoring\" or \"proctoring\" services, but function as",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "firstSeenAt": "2026-09-15T05:15:16Z",
-    "publishedDate": "2026-09-13",
-    "id": "21d39bf7a92754fe",
-    "date": "2026-09-13",
-    "source": "IETF",
-    "title": "Authorization Posture Mechanism (APM): Per-Transaction Consistency for OAuth 2.0",
-    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-vicente-oauth-apm-05.html",
-    "tags": [
-      "OAuth",
-      "Continuous authorization",
-      "Token security",
-      "Device posture"
-    ],
-    "note": "A new standards-track draft explores rechecking client certificate, access token and device posture consistency on each privileged transaction rather than trusting session establishment alone.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-18T10:41:08.548357-06:00",
-    "publishedDate": "2026-09-12",
-    "id": "07e30d1ae0c54331",
-    "date": "2026-09-12",
-    "source": "TechCrunch",
-    "title": "Revolut confirms customer data breach through fake government requests",
-    "url": "https://techcrunch.com/2026/09/12/revolut-confirms-customer-data-breach-through-fake-government-requests/",
-    "tags": [
-      "Authorization",
-      "Identity-Proofing",
-      "Social-Engineering",
-      "ITDR"
-    ],
-    "note": "Revolut disclosed sensitive customer records after employees honored fraudulent requests sent from a legitimate government email domain, exposing a trust and authorization-control failure rather than a system intrusion.",
-    "score": 91
   }
 ]
