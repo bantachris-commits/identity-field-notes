@@ -17,6 +17,22 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-09-29T16:33:06.967759-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "351d3dc48779abcc",
+    "date": "2026-09-29",
+    "source": "Ping Identity",
+    "title": "Ping Identity Launches Identity Agents on Google Cloud Marketplace",
+    "url": "https://press.pingidentity.com/2026-09-29-Ping-Identity-Launches-Identity-Agents-on-Google-Cloud-Marketplace",
+    "tags": [
+      "IAM",
+      "AI-agent authorization",
+      "Google Cloud"
+    ],
+    "note": "Introduces identity agents in Gemini Enterprise for device authentication, password resets, session termination and access administration under delegated authority and least-privilege controls.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
     "publishedDate": "2026-09-28",
     "id": "5eb659083f3cf7a4",
@@ -35,6 +51,23 @@
   {
     "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
     "publishedDate": "2026-09-28",
+    "id": "3f6044139594a134",
+    "date": "2026-09-28",
+    "source": "Duende",
+    "title": "Security Advisory - Duende IdentityServer Pushed Authorization Requests (GHSA-mxv6-xwqj-ww2p",
+    "url": "https://duendesoftware.com/blog/security-advisory-duende-identityserver-pushed-authorization-requests-ghsa-mxv6-xwqj-ww2p",
+    "tags": [
+      "OAuth",
+      "OIDC",
+      "Authorization",
+      "Token security"
+    ],
+    "note": "High-severity PAR validation weaknesses can enable authorization-request forgery, arbitrary redirect handling and token theft in affected IdentityServer deployments.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-28",
     "id": "ff90a20e4f0e3daa",
     "date": "2026-09-28",
     "source": "Australian Signals Directorate",
@@ -49,23 +82,6 @@
     ],
     "note": "This government advisory connects AI-service abuse to compromised API keys, stolen sessions and tokens, vulnerable agent dashboards and excessive permissions, with concrete revocation and monitoring guidance.",
     "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "3f6044139594a134",
-    "date": "2026-09-28",
-    "source": "Duende",
-    "title": "Security Advisory - Duende IdentityServer Pushed Authorization Requests (GHSA-mxv6-xwqj-ww2p",
-    "url": "https://duendesoftware.com/blog/security-advisory-duende-identityserver-pushed-authorization-requests-ghsa-mxv6-xwqj-ww2p",
-    "tags": [
-      "OAuth",
-      "Authorization",
-      "Token theft",
-      "OpenID"
-    ],
-    "note": "A high-severity PAR flaw can permit authorization-request forgery, token theft through unregistered redirect URIs and cross-site scripting under specific configurations.",
-    "score": 93
   },
   {
     "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
@@ -171,17 +187,18 @@
     "publishedDate": "2026-09-25",
     "id": "74ab0bc29886016a",
     "date": "2026-09-25",
-    "source": "Microsoft Security Research",
+    "source": "Microsoft Security Blog",
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
       "NHI",
+      "Machine identity",
+      "Entra",
       "Azure",
       "ITDR",
-      "Secrets",
       "AI-agent authorization"
     ],
-    "note": "Microsoft details destructive Azure activity conducted through compromised service principals, exposed secrets, overlapping tokens, excessive permissions and attempted recovery-resource deletion.",
+    "note": "Primary research details how compromised Azure service principals performed reconnaissance, credential collection and rapid destructive actions against cloud resources, illustrating the blast radius of excessive workload identity privilege.",
     "score": 100
   },
   {
@@ -857,17 +874,16 @@
     "id": "c21f26630257f0a5",
     "date": "2026-09-23",
     "source": "Microsoft Learn",
-    "title": "FAQ for Microsoft-provided SMS and voice retirement",
+    "title": "FAQ for Microsoft-provided SMS and voice retirement - Microsoft Entra ID",
     "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement-faq",
     "tags": [
       "Entra",
-      "passkeys",
+      "Passkeys",
       "MFA",
-      "authentication",
-      "migration"
+      "Authentication"
     ],
-    "note": "Clarifies Entra's passkey-enablement and SMS/voice-retirement timeline, including blocking registration requirements for users whose only remaining MFA method is SMS or voice. (learn.microsoft.com",
-    "score": 88
+    "note": "Updated migration guidance explains automatic passkey enablement for SMS- and voice-dependent users and the February 1, 2027 retirement deadline for most affected populations.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
@@ -1060,6 +1076,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "bbe00974ebe14bb0",
+    "date": "2026-09-22",
+    "source": "BleepingComputer",
+    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
+    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
+    "tags": [
+      "Entra",
+      "OAuth",
+      "MFA bypass",
+      "Token theft",
+      "ITDR"
+    ],
+    "note": "Reports the disruption of an OAuth device-code phishing service that compromised more than 12,000 accounts despite MFA and enabled mailbox reconnaissance and business-email-compromise activity.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
     "publishedDate": "2026-09-22",
     "id": "125a18e03bff65c1",
@@ -1109,23 +1143,6 @@
       "Compromised credentials"
     ],
     "note": "The report explains how a privileged Entra compromise can register a rogue external MFA provider that captures replacement passwords while returning a valid signed MFA token.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "bbe00974ebe14bb0",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
-    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "MFA bypass",
-      "session/token abuse"
-    ],
-    "note": "Microsoft\u2019s takedown exposes the scale of device-code phishing and how OAuth device authorization can yield tokens despite MFA protections.",
     "score": 96
   },
   {
@@ -1317,6 +1334,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "e39b107a18ede821",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
+    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
+    "tags": [
+      "Okta",
+      "AI-agent authorization",
+      "NHI",
+      "ITDR",
+      "Token security"
+    ],
+    "note": "Meaningful platform move adding endpoint discovery, runtime connection controls, lifecycle governance and an agent-gateway kill switch capable of revoking active tokens.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
     "publishedDate": "2026-09-22",
     "id": "fb62c95c8e9d45dc",
@@ -1330,23 +1365,6 @@
       "Machine Identity"
     ],
     "note": "Microsoft documents a sign-in and secure-channel failure affecting some Credential Guard-protected machine accounts when Machine Identity Isolation is honored outside supported domain-functional-level conditions.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e39b107a18ede821",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
-    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "AI-agent authorization",
-      "OAuth"
-    ],
-    "note": "Material platform move introducing agent-to-agent policy, runtime token revocation, connection certification and short-lived agent access.",
     "score": 86
   },
   {
@@ -3361,20 +3379,6 @@
       "Threat"
     ],
     "note": "In June 2025, Okta Threat Intelligence predicted that the rapid adoption of AI agents would generate \"identity debt\" as developers experimented with these new technologies. This scenario has played out",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "2f96aca7fb7d9e04",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Disrupting ShieldGuard: a security extension primed to drain crypto wallets",
-    "url": "https://www.okta.com/blog/threat-intelligence/disrupting-shieldguard--a-security-extension-primed-to-drain-cry/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive summary Okta Threat Intelligence has discovered and helped industry partners to take down the infrastructure of a cryptocurrency scam called \"ShieldGuard\". ShieldGuard claims to be a blockchain project that offers - through its promotion of a browser extension - a capability that",
     "score": 65,
     "firstSeenAt": "2026-09-14T14:44:59Z"
   }
