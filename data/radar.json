@@ -33,6 +33,25 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "be5ce4a651a9d68a",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "JadePuffer agentic AI attacks target Azure, destroy cloud resources",
+    "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/",
+    "tags": [
+      "Microsoft Entra",
+      "NHI",
+      "Machine Identity",
+      "ITDR",
+      "Cloud IAM",
+      "AI-Agent Authorization"
+    ],
+    "note": "Microsoft observed Storm-3168 using compromised service principals to enumerate Azure, retrieve keys, delete more than 100 storage accounts, and target recovery controls, underscoring the destructive impact of over-privileged workload identities.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
     "publishedDate": "2026-09-28",
     "id": "5eb659083f3cf7a4",
@@ -82,6 +101,61 @@
     ],
     "note": "This government advisory connects AI-service abuse to compromised API keys, stolen sessions and tokens, vulnerable agent dashboards and excessive permissions, with concrete revocation and monitoring guidance.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "63da7af8f2fa80ae",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
+    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjjacking/",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "OAuth",
+      "Session Theft",
+      "Token Abuse",
+      "AI-Agent Authorization"
+    ],
+    "note": "SOCRadar data tied infostealer-exposed AI credentials and sessions to more than 80,000 corporate domains, highlighting shadow accounts, replayable sessions, API-key abuse, and delegated automation risk.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "37378583fce2b515",
+    "date": "2026-09-28",
+    "source": "arXiv",
+    "title": "API Secrets Should Never Become Tokens in the LLM's Vocabulary: A Threat Analysis of API Credential Handling in LLM Agent Systems and an Empirical Evaluation of a Vault-Mediated Execution Boundary",
+    "url": "https://arxiv.org/abs/2609.33371",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "Secrets Management",
+      "AI-Agent Authorization",
+      "OAuth"
+    ],
+    "note": "New research treats agent credential handling as an execution-boundary problem and evaluates whether vault-mediated access can keep API secrets out of prompts, logs, files, and tool-visible request data.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "51f3f2ec27aaa072",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "Over 16,000 Supabase databases expose PII, passwords, auth tokens",
+    "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
+    "tags": [
+      "Authorization",
+      "Secrets Management",
+      "NHI",
+      "Machine Identity",
+      "AI-Agent Authorization"
+    ],
+    "note": "UpGuard found widespread Supabase exposure caused by missing or ineffective row-level security and public-key misuse, including plaintext passwords and authentication tokens in application backends increasingly built with AI assistance.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
@@ -191,14 +265,14 @@
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
+      "Microsoft Entra",
       "NHI",
-      "Machine identity",
-      "Entra",
-      "Azure",
+      "Machine Identity",
       "ITDR",
-      "AI-agent authorization"
+      "Secrets Management",
+      "AI-Agent Authorization"
     ],
-    "note": "Primary research details how compromised Azure service principals performed reconnaissance, credential collection and rapid destructive actions against cloud resources, illustrating the blast radius of excessive workload identity privilege.",
+    "note": "Primary Microsoft research links the Azure attacks to exposed service-principal credentials, fragmented permission planes, credential collection, and automated destructive operations, with useful telemetry and mitigation detail.",
     "score": 100
   },
   {
@@ -319,6 +393,24 @@
       "Incident"
     ],
     "note": "Bromcom\u2019s incident update attributes unauthorized SSO-registration reads and deletions to missing authorization checks in account-linking functions, with suspicious activity dating back to August.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "7628309360512418",
+    "date": "2026-09-25",
+    "source": "IETF",
+    "title": "Agent Identity Problem Statement",
+    "url": "https://datatracker.ietf.org/doc/html/draft-drake-agent-identity-problem-statement-00",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "AI-Agent Authorization",
+      "OAuth",
+      "Identity Standards"
+    ],
+    "note": "This new Internet-Draft frames identity continuity, delegation, attestation, authorization, auditability, and liability as distinct problems for autonomous software agents and robots.",
     "score": 88
   },
   {
@@ -1040,24 +1132,6 @@
     "score": 68
   },
   {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "1bbc2c4488af2f6a",
-    "date": "2026-09-22",
-    "source": "Microsoft Security Blog",
-    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "Token Theft",
-      "MFA Bypass",
-      "ITDR"
-    ],
-    "note": "This primary analysis details how EvilTokens abused OAuth device-code authentication to steal tokens, persist through registered devices and inbox rules, and compromise more than 12,000 inboxes.",
-    "score": 100
-  },
-  {
     "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
     "publishedDate": "2026-09-22",
     "id": "b5e3deaac0408e1c",
@@ -1092,6 +1166,25 @@
     ],
     "note": "Reports the disruption of an OAuth device-code phishing service that compromised more than 12,000 accounts despite MFA and enabled mailbox reconnaissance and business-email-compromise activity.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "1bbc2c4488af2f6a",
+    "date": "2026-09-22",
+    "source": "Microsoft Security Blog",
+    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "Token Abuse",
+      "MFA Bypass",
+      "Session Theft",
+      "ITDR"
+    ],
+    "note": "Microsoft\u2019s primary analysis of EvilTokens documents large-scale device-code phishing that obtains usable Microsoft 365 tokens despite MFA and provides hunting context for token issuance, polling infrastructure, and post-compromise activity.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -1315,25 +1408,6 @@
     "score": 89
   },
   {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "6fe0acb2c0085a05",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "Okta",
-      "AI Agents",
-      "NHI",
-      "Authorization",
-      "OAuth",
-      "Machine Identity"
-    ],
-    "note": "Major cross-vendor initiative involving Okta, AWS, Google Cloud, Salesforce, ServiceNow and others, centered on agent identity, traceable delegation, least privilege and reversible runtime containment.",
-    "score": 88
-  },
-  {
     "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
     "publishedDate": "2026-09-22",
     "id": "e39b107a18ede821",
@@ -1366,6 +1440,24 @@
     ],
     "note": "Microsoft documents a sign-in and secure-channel failure affecting some Credential Guard-protected machine accounts when Machine Identity Isolation is honored outside supported domain-functional-level conditions.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "6fe0acb2c0085a05",
+    "date": "2026-09-22",
+    "source": "Okta",
+    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
+    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
+    "tags": [
+      "AI-Agent Authorization",
+      "NHI",
+      "Machine Identity",
+      "OAuth",
+      "IGA"
+    ],
+    "note": "The cross-vendor Blueprint Alliance proposes treating agents as first-class identities, scoping access to tasks, preserving delegation provenance, continuously monitoring runtime behavior, and enabling reversible containment.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
@@ -3309,76 +3401,6 @@
       "Threat"
     ],
     "note": "Executive Summary Since April 2026, a threat actor tracked as O-UNC-066 that operates a DLS site with the name Pink (reported as \"CL-CRI-1147\" by Palo Alto Networks Unit 42 has deployed a panel-controlled phishing kit targeting the passkey enrollment process for Microsoft 365 customers.",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "d0e12ef87f1c75eb",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Defending against TeamPCP software supply chain attacks | Threat Intelligence",
-    "url": "https://www.okta.com/blog/threat-intelligence/defending_against_team_pcp_software_supply_chain_attacks/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive summary From late 2025, a threat actor group calling itself TeamPCP has turned the tools and practices built for high-velocity software deployment into delivery mechanisms for malware. While the group has used a variety of methods to target organizations, the most impa",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "dfdfc44273e968ff",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Device code phishing: it's phishing with dynamite",
-    "url": "https://www.okta.com/blog/threat-intelligence/device-code-phishing--it-s-phishing-with-dynamite/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "When most people think of \"phishing\", they usually think of users being tricked into disclosing credentials or downloading malware One of the fastest growing methods of attack does neither. Instead, a targeted user is tricked into authorizing an attacker-controlled client. These attacks abuse user trust in the",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "67c36735f67e07fb",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Tycoon 2FA phishing actors disperse, branch into new attacks | Threat Intelligence",
-    "url": "https://www.okta.com/blog/threat-intelligence/tycoon_2fa_phishing_actors_scatter/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "At one stage in mid-2025, Tycoon 2FA was responsible for more Identity Threat Protection (ITP detections than any other phishing kit. Tycoon 2FA offered threat actors an affordable, reliable service for MFA bypass against Microsoft 365 and Google Workspace tenants, without having to build and maintain the infr",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "2e214b70903bf177",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "BreachForums logs reveal anonymizers of choice for shady characters",
-    "url": "https://www.okta.com/blog/threat-intelligence/blocking_shady_network/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "When threat actors log into systems, they don't use their real IP addresses. Instead, they route their traffic through VPNs, proxies, and anonymizing networks. We analyzed a January 2026 data leak from BreachForums - a major English-language cybercrime marketplace - that contained threat actor IP addresses. The analysis",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "121471d3d23f2837",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "LiteLLM supply chain attack: an explainer for identity pros",
-    "url": "https://www.okta.com/blog/threat-intelligence/litellm-supply-chain-attack--an-explainer-for-identity-pros/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "In June 2025, Okta Threat Intelligence predicted that the rapid adoption of AI agents would generate \"identity debt\" as developers experimented with these new technologies. This scenario has played out",
     "score": 65,
     "firstSeenAt": "2026-09-14T14:44:59Z"
   }
