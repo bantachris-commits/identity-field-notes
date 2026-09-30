@@ -50,6 +50,54 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "6bad01184f27e279",
+    "date": "2026-09-29",
+    "source": "Auth0",
+    "title": "Integrating Claude Code with Auth0 APIs",
+    "url": "https://auth0.com/blog/integrating-claude-code-with-auth0-apis/",
+    "tags": [
+      "IAM",
+      "AI-agent authorization",
+      "OAuth"
+    ],
+    "note": "This practical example shows an AI coding agent operating against identity-management APIs and highlights the need for scoped access, guardrails and auditable administrative actions.",
+    "score": 80
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "28594b2bec10c628",
+    "date": "2026-09-29",
+    "source": "Microsoft Security Blog",
+    "title": "Phishing Abuses RMM Tools for Persistent Access",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "MFA"
+    ],
+    "note": "Microsoft documents phishing campaigns that abused legitimate remote-management tooling to establish redundant access paths, offering useful detection lessons for identity and remote-access teams.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "c76eff62cfae071f",
+    "date": "2026-09-29",
+    "source": "Google Cloud Blog",
+    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
+    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "Google Cloud is expanding its Gemini Enterprise security ecosystem with partner-built agents, bringing agent discovery, governance and security operations into a unified workflow.",
+    "score": 76
+  },
+  {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
     "publishedDate": "2026-09-28",
     "id": "be5ce4a651a9d68a",
@@ -153,6 +201,23 @@
       "AI-Agent Authorization"
     ],
     "note": "SOCRadar data tied infostealer-exposed AI credentials and sessions to more than 80,000 corporate domains, highlighting shadow accounts, replayable sessions, API-key abuse, and delegated automation risk.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "010c66b533c320d0",
+    "date": "2026-09-28",
+    "source": "Bitget",
+    "title": "2026 Bitget Security Incident \u2014 Official Updates and Timeline",
+    "url": "https://www.bitget.com/campaigns/bitget-security-incident-2026",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI",
+      "Secrets"
+    ],
+    "note": "Bitget\u2019s official incident timeline attributes a $387.5 million theft to a third-party security-product flaw that exposed intranet credentials, enabling forged withdrawal commands and bypass of risk verification.",
     "score": 94
   },
   {
@@ -316,33 +381,14 @@
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
-      "Microsoft Entra",
       "NHI",
-      "Machine Identity",
-      "ITDR",
-      "Secrets Management",
-      "AI-Agent Authorization"
-    ],
-    "note": "Primary Microsoft research links the Azure attacks to exposed service-principal credentials, fragmented permission planes, credential collection, and automated destructive operations, with useful telemetry and mitigation detail.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "010c66b533c320d0",
-    "date": "2026-09-25",
-    "source": "Bitget",
-    "title": "2026 Bitget Security Incident \u2014 Official Updates and Timeline",
-    "url": "https://www.bitget.com/campaigns/bitget-security-incident-2026",
-    "tags": [
       "PAM",
-      "Compromised credentials",
-      "Excessive privilege",
-      "Secrets",
-      "ITDR"
+      "ITDR",
+      "Entra",
+      "AI-agent authorization"
     ],
-    "note": "Bitget\u2019s primary disclosure says attackers exploited a third-party security-product flaw to steal intranet credentials, forge withdrawal commands and bypass risk verification without compromising private keys.",
-    "score": 97
+    "note": "Microsoft details destructive Azure activity conducted through compromised service principals, including public secret exposure, excessive RBAC, resource deletion and storage-key collection.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
@@ -841,22 +887,6 @@
     "score": 80
   },
   {
-    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "839a867708f8642a",
-    "date": "2026-09-24",
-    "source": "SailPoint Developer Community",
-    "title": "IdentityIQ 9.0 and Jakarta EE: a modern application-server foundation for self-hosted IGA",
-    "url": "https://developer.sailpoint.com/discuss/t/identityiq-9-0-and-jakarta-ee-a-modern-application-server-foundation-for-self-hosted-iga/223726",
-    "tags": [
-      "IGA",
-      "SailPoint",
-      "Platform shift"
-    ],
-    "note": "IdentityIQ 9.0 moves self-hosted deployments to Jakarta EE 10 and current application-server LTS lines, creating a significant modernization and migration milestone for legacy IGA estates.",
-    "score": 78
-  },
-  {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
     "publishedDate": "2026-09-24",
     "id": "5bcb4c4c91af9446",
@@ -889,6 +919,21 @@
     ],
     "note": "The piece makes the operationally important point that recovery plans often assume identity, privileged access, authentication, and trusted communications still work during a cyber crisis.",
     "score": 73
+  },
+  {
+    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "839a867708f8642a",
+    "date": "2026-09-24",
+    "source": "SailPoint Developer Community",
+    "title": "IdentityIQ 9.0 and Jakarta EE: a modern application-server foundation for self-hosted IGA",
+    "url": "https://developer.sailpoint.com/discuss/t/identityiq-9-0-and-jakarta-ee-a-modern-application-server-foundation-for-self-hosted-iga/223726",
+    "tags": [
+      "IGA",
+      "IAM"
+    ],
+    "note": "IdentityIQ 9.0\u2019s Jakarta EE 10 foundation and support for current application-server LTS lines are materially relevant to self-hosted IGA lifecycle and platform-modernization planning.",
+    "score": 72
   },
   {
     "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
@@ -956,23 +1001,6 @@
       "Vulnerability"
     ],
     "note": "An actively exploited BIG-IP APM flaw affects deployments acting as OAuth authorization servers and can provide unauthenticated remote code execution against identity-edge infrastructure.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "93418228b9e585a9",
-    "date": "2026-09-23",
-    "source": "U.S. Securities and Exchange Commission",
-    "title": "Astrana Health, Inc. Form 8-K \u2014 Material Cybersecurity Incident",
-    "url": "https://www.sec.gov/Archives/edgar/data/1083446/000110465926109813/asth-20260922x8k.htm",
-    "tags": [
-      "Incident",
-      "Credentials",
-      "Social Engineering",
-      "ITDR"
-    ],
-    "note": "Astrana reports that impersonation and phone-number spoofing targeted employees to obtain unauthorized system access, followed by credential resets, remote-access restrictions, and restoration from clean backups.",
     "score": 94
   },
   {
@@ -1099,6 +1127,23 @@
     "score": 85
   },
   {
+    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "4196216303b7486e",
+    "date": "2026-09-23",
+    "source": "SailPoint Developer Community",
+    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
+    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
+    "tags": [
+      "IGA",
+      "ITDR",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "SailPoint is extending Identity Graph availability to Business+ tenants with unified visibility across human, non-human and agent identities, blast-radius analysis and direct remediation actions.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
     "id": "4de0b82706d58314",
@@ -1133,23 +1178,6 @@
     "score": 82
   },
   {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4196216303b7486e",
-    "date": "2026-09-23",
-    "source": "SailPoint Developer Community",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
-    "tags": [
-      "IGA",
-      "ITDR",
-      "NHI",
-      "Blast radius"
-    ],
-    "note": "The Identity Graph adds cross-estate visibility into human, non-human and agent identities, entitlement paths, privilege and compromised-identity blast radius for Business+ tenants.",
-    "score": 82
-  },
-  {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
     "publishedDate": "2026-09-23",
     "id": "bb1f3698a227bd4f",
@@ -1177,11 +1205,10 @@
     "tags": [
       "PAM",
       "ITDR",
-      "NHI",
-      "SIEM"
+      "NHI"
     ],
-    "note": "The integration brings privileged credential, elevation, remote-access, and session context into SIEM investigations across human, workload, and AI-agent identities.",
-    "score": 78
+    "note": "The integration brings privilege relationships and exposure context for human, non-human and AI identities into SIEM investigations, reinforcing the convergence of PAM telemetry and SOC response.",
+    "score": 79
   },
   {
     "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
@@ -1261,15 +1288,14 @@
     "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
     "tags": [
-      "Microsoft Entra",
+      "Entra",
       "OAuth",
-      "Token Abuse",
-      "MFA Bypass",
-      "Session Theft",
-      "ITDR"
+      "MFA",
+      "ITDR",
+      "Token abuse"
     ],
-    "note": "Microsoft\u2019s primary analysis of EvilTokens documents large-scale device-code phishing that obtains usable Microsoft 365 tokens despite MFA and provides hunting context for token issuance, polling infrastructure, and post-compromise activity.",
-    "score": 97
+    "note": "Microsoft analyzes an AI-assisted phishing-as-a-service platform that abused OAuth device-code authentication to steal tokens, register devices, create persistence and access mailboxes at scale.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
@@ -1491,6 +1517,22 @@
     ],
     "note": "The incident shows how compromised credentials belonging to a third-party storefront application enabled customer-data access and script injection across BigCommerce merchant environments.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
+    "publishedDate": "2026-09-22",
+    "id": "93418228b9e585a9",
+    "date": "2026-09-22",
+    "source": "U.S. Securities and Exchange Commission",
+    "title": "Astrana Health, Inc. Form 8-K \u2014 Material Cybersecurity Incident",
+    "url": "https://www.sec.gov/Archives/edgar/data/1083446/000110465926109813/asth-20260922x8k.htm",
+    "tags": [
+      "IAM",
+      "MFA",
+      "ITDR"
+    ],
+    "note": "Astrana Health disclosed a material incident in which attackers impersonated personnel and spoofed the company phone number to socially engineer employees into granting unauthorized system access.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
@@ -3371,52 +3413,5 @@
     "note": "The integration is relevant to joiner-mover-leaver practitioners because it targets hybrid identity lifecycle governance between HR data and Entra.",
     "score": 82,
     "firstSeenAt": "2026-09-15T21:43:14Z"
-  },
-  {
-    "firstSeenAt": "2026-09-15T17:14:56Z",
-    "publishedDate": "2026-09-14",
-    "id": "66cb64d3cc7e0346",
-    "date": "2026-09-14",
-    "source": "SecurityWeek",
-    "title": "Telus Warns Customers of Account Breaches",
-    "url": "https://www.securityweek.com/telus-warns-customers-of-account-breaches/",
-    "tags": [
-      "Compromised Credentials",
-      "Account Takeover",
-      "CIAM"
-    ],
-    "note": "Telus reported unauthorized access to customer accounts using compromised credentials, with the pattern consistent with a possible credential-stuffing campaign although the source was not confirmed.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-14",
-    "id": "3ff46fed3bb4c301",
-    "date": "2026-09-14",
-    "source": "arXiv",
-    "title": "Analyzing Multi-Factor Authentication Through Cryptographic Security Properties",
-    "url": "https://arxiv.org/abs/2609.16214",
-    "tags": [
-      "MFA",
-      "Authentication",
-      "Passkeys",
-      "Research"
-    ],
-    "note": "This new research examines MFA mechanisms through cryptographic security properties, including replay resistance, offering a useful technical lens for evaluating authentication designs beyond simple factor counting.",
-    "score": 76
-  },
-  {
-    "id": "836a0c4b41daf7ef",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "First on the scene of the cybercrime",
-    "url": "https://www.okta.com/blog/threat-intelligence/first-on-the-scene-of-the-cybercrime/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive summary Okta Threat Intelligence (OTI recently hit a significant milestone: we sent our 10,000th suspicious domain notification to a customer. I wanted to mark the moment by explaining how and why we do this important work. I also want to share some r",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
   }
 ]
