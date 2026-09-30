@@ -1,5 +1,46 @@
 [
   {
+    "id": "2026-09-30-morning-brief",
+    "date": "2026-09-30",
+    "coverageDate": "2026-09-29",
+    "edition": "MORNING EDITION // 2026.09.30",
+    "title": "Identity Agents Move Into the Control Plane",
+    "dek": "Highlights from 2026-09-29. Yesterday\u2019s verified highlights centered on delegated identity actions in Gemini Enterprise and browser-based passkey support for federated Microsoft app sign-ins.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "AI-agent identity"
+    ],
+    "readTime": "4 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-29, verified against linked sources. Edition dated 2026-09-30; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Machine IAM",
+        "title": "Ping Identity brings delegated identity agents to Google Cloud Marketplace",
+        "summary": "Ping Identity announced three agents for Google Cloud Gemini Enterprise: one for employee device-authentication management and two for administrator tasks such as password resets, MFA enrollment, session termination and access management. Ping says the agents operate through its APIs, under the authenticated user\u2019s authority, with least-privilege controls and explicit confirmation for certain administrative actions. ([press.pingidentity.com](https://press.pingidentity.com/2026-09-29-Ping-Identity-Launches-Identity-Agents-on-Google-Cloud-Marketplace))",
+        "why": "The meaningful question is not whether a chatbot can call identity APIs, but whether authorization, confirmation, auditability and separation of duties survive the conversational interface. Practitioners should test delegated scope, standing credentials, high-risk action controls and the quality of resulting audit records.",
+        "source": "Ping Identity",
+        "url": "https://press.pingidentity.com/2026-09-29-Ping-Identity-Launches-Identity-Agents-on-Google-Cloud-Marketplace",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-29",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authentication",
+        "title": "Microsoft extends external-IdP passkeys to brokered Microsoft app sign-ins",
+        "summary": "Microsoft announced support for browser-based passkeys, FIDO2 security keys and eligible single sign-on sessions from external identity providers during brokered sign-ins to Microsoft apps. The capability covers supported Android, iOS and managed macOS scenarios using WS-Fed or SAML 2.0 federation, while OIDC federation, Linux and unmanaged macOS are excluded for now. ([techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/sign-in-to-microsoft-apps-with-passkeys-from-external-identity-providers/4556448?utm_source=openai))",
+        "why": "This closes a practical gap in passwordless deployments where embedded web views blocked WebAuthn or conflicted with an external IdP\u2019s browser requirements. Rollouts will need platform-specific testing, broker-version validation and careful treatment of the remaining federation and operating-system limitations.",
+        "source": "Microsoft Security Community",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/sign-in-to-microsoft-apps-with-passkeys-from-external-identity-providers/4556448",
+        "confidence": "Primary source",
+        "published_date": "2026-09-29",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-29-morning-brief",
     "date": "2026-09-29",
     "coverageDate": "2026-09-28",
@@ -14,7 +55,7 @@
       "AI-Agent Authorization"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-28, verified against linked sources. Edition dated 2026-09-29; coverage uses America/Denver. Verify material details at the source.",
     "stories": [

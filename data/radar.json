@@ -33,6 +33,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "d9e9dda18c7cfb58",
+    "date": "2026-09-29",
+    "source": "Microsoft Security Community",
+    "title": "Sign in to Microsoft apps with passkeys from external identity providers",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/sign-in-to-microsoft-apps-with-passkeys-from-external-identity-providers/4556448",
+    "tags": [
+      "IAM",
+      "Entra",
+      "Passkeys",
+      "FIDO"
+    ],
+    "note": "Microsoft now supports passkeys and external-IdP browser SSO in brokered Microsoft app sign-ins across Android, iOS, and managed macOS, with important platform and OIDC limitations.",
+    "score": 90
+  },
+  {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
     "publishedDate": "2026-09-28",
     "id": "be5ce4a651a9d68a",
@@ -50,6 +67,23 @@
     ],
     "note": "Microsoft observed Storm-3168 using compromised service principals to enumerate Azure, retrieve keys, delete more than 100 storage accounts, and target recovery controls, underscoring the destructive impact of over-privileged workload identities.",
     "score": 99
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "fd81cca5ab8a9667",
+    "date": "2026-09-28",
+    "source": "GitHub / Model Context Protocol",
+    "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
+    "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
+    "tags": [
+      "OAuth",
+      "NHI",
+      "AI-agents",
+      "Authorization"
+    ],
+    "note": "A high-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers, or signed assertions to attacker-chosen endpoints.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
@@ -138,6 +172,23 @@
     ],
     "note": "New research treats agent credential handling as an execution-boundary problem and evaluates whether vault-mediated access can keep API secrets out of prompts, logs, files, and tool-visible request data.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "c97ff75e84c28b08",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
+    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
+    "tags": [
+      "NHI",
+      "Machine-identity",
+      "Session-theft",
+      "OAuth"
+    ],
+    "note": "SOCRadar\u2019s analysis found more than one million infostealer records tied to AI services across 80,000-plus corporate domains, highlighting stolen sessions, exposed credentials, and LLMjacking risk.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
@@ -429,6 +480,23 @@
     ],
     "note": "The latest primary disclosure expands the Gyazo breach to approximately 174 million deleted-image metadata records and confirms that exposed OAuth integration credentials were invalidated as part of containment.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "b9e09eb7f6ca00ab",
+    "date": "2026-09-25",
+    "source": "BleepingComputer",
+    "title": "CISA warns of SharePoint, WSO2, Adobe Commerce flaws exploited in attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
+    "tags": [
+      "IAM",
+      "Authentication-bypass",
+      "CISA",
+      "ITDR"
+    ],
+    "note": "CISA added a critical WSO2 authentication-bypass vulnerability to the exploited-vulnerability catalog, making identity-edge and federation infrastructure a near-term remediation priority.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -823,23 +891,6 @@
     "score": 73
   },
   {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "03b9753abd7a90e4",
-    "date": "2026-09-23",
-    "source": "The Hacker News",
-    "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-    "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-    "tags": [
-      "OAuth",
-      "Authentication infrastructure",
-      "CISA KEV",
-      "Incident response"
-    ],
-    "note": "CVE-2026-94127 is being exploited against a narrow BIG-IP APM configuration acting as an OAuth authorization server, with unauthenticated RCE and token-issuing infrastructure at risk.",
-    "score": 96
-  },
-  {
     "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
     "publishedDate": "2026-09-23",
     "id": "2a17b85f5863df77",
@@ -889,6 +940,23 @@
     ],
     "note": "Primary research documents autonomous agents bypassing web restrictions and attempting to exploit public data providers, underscoring the need for task-scoped authorization and runtime containment.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "03b9753abd7a90e4",
+    "date": "2026-09-23",
+    "source": "The Hacker News",
+    "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
+    "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+    "tags": [
+      "OAuth",
+      "IAM",
+      "ITDR",
+      "Vulnerability"
+    ],
+    "note": "An actively exploited BIG-IP APM flaw affects deployments acting as OAuth authorization servers and can provide unauthenticated remote code execution against identity-edge infrastructure.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
@@ -958,6 +1026,23 @@
       "ITDR"
     ],
     "note": "Okta announced agent discovery, an agent gateway, third-party IdP support, and governance controls aimed at treating AI agents as first-class identities.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-23",
+    "id": "f0bc4949993e9f24",
+    "date": "2026-09-23",
+    "source": "Security.io",
+    "title": "TrustSink shows why external MFA providers need control-plane monitoring",
+    "url": "https://www.security.io/articles/2026/09/23/trustsink-external-mfa-provider-control",
+    "tags": [
+      "Entra",
+      "MFA",
+      "PAM",
+      "ITDR"
+    ],
+    "note": "The report operationalizes the TrustSink technique: a privileged attacker can register a rogue Entra external MFA provider that captures replacement passwords, so provider removal must precede password rotation.",
     "score": 91
   },
   {
@@ -2921,18 +3006,18 @@
     "publishedDate": "2026-09-15",
     "id": "6c0ce9e5b02a4070",
     "date": "2026-09-15",
-    "source": "IETF WIMSE",
+    "source": "IETF",
     "title": "AI Identity Management System",
     "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
     "tags": [
-      "AI Agents",
       "NHI",
+      "AI-agents",
+      "Authorization",
       "OAuth",
-      "Standards",
-      "Authorization"
+      "Machine-identity"
     ],
-    "note": "This Internet-Draft profiles how WIMSE, OAuth, workload identity, delegation, transaction tokens, monitoring, and policy can be composed for AI-agent authentication and authorization.",
-    "score": 91
+    "note": "The new WIMSE AIMS draft proposes a lifecycle model for agent identifiers, credentials, delegated authority, observability, remediation, and transaction-scoped authorization.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
@@ -3331,76 +3416,6 @@
       "Threat"
     ],
     "note": "Executive summary Okta Threat Intelligence (OTI recently hit a significant milestone: we sent our 10,000th suspicious domain notification to a customer. I wanted to mark the moment by explaining how and why we do this important work. I also want to share some r",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "b981ac8a27c0facd",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Using advanced posture checks as a tooling watchdog",
-    "url": "https://www.okta.com/blog/threat-intelligence/using-advanced-posture-checks-as-a-tooling-watchdog/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Adversaries love to make life difficult for defenders. One of the best ways for attackers to operate undetected is to disable security tools on a compromised device. Sometimes users do the hard work for them. When a frustrated user disables a security service that appears to be getting in the way of getting the",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "6fb031fcad27832f",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Free tokens for sale: How fake signups drive AI fraud",
-    "url": "https://www.okta.com/blog/threat-intelligence/free_tokens_for_sale/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Introduction As AI models have become vastly more capable, these multifunctional tools are being used for a wide range of tasks-from coding and analysis to software testing, research, and vulnerability hunting. This has given rise to expansive gray and often illegal market offerings for acc",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "da37d438ea401026",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Behind the scenes of a vishing operation",
-    "url": "https://www.okta.com/blog/threat-intelligence/behind-the-scenes-of-a-vishing-operation/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive Summary Okta Threat Intelligence recently obtained material from a sensitive source that provides an inside view of Work Panel , an operator console used by threat actors running vishing campaigns that target customers of multiple identity providers, including Okta.",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "3682befdd9ccab8a",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "How to stop attackers from self-serving their way into accounts",
-    "url": "https://www.okta.com/blog/threat-intelligence/intrusion-actors-self-serve-their-way-into-accounts/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive Summary Over the last 12 months, Okta Threat Intelligence has observed a growing number of attacks in which users are tricked into approving attacker-initiated MFA enrollments and password resets. We have observed numerous related clusters of activity in which threat act",
-    "score": 65,
-    "firstSeenAt": "2026-09-14T14:44:59Z"
-  },
-  {
-    "id": "019dea158ec05d94",
-    "date": "2026-09-14",
-    "source": "Okta Threat Intelligence",
-    "title": "Vishing actors target Entra passkey enrollment",
-    "url": "https://www.okta.com/blog/threat-intelligence/vishing-actors-target-microsoft-entra-passkey-enrollment-/",
-    "tags": [
-      "Okta",
-      "Threat"
-    ],
-    "note": "Executive Summary Since April 2026, a threat actor tracked as O-UNC-066 that operates a DLS site with the name Pink (reported as \"CL-CRI-1147\" by Palo Alto Networks Unit 42 has deployed a panel-controlled phishing kit targeting the passkey enrollment process for Microsoft 365 customers.",
     "score": 65,
     "firstSeenAt": "2026-09-14T14:44:59Z"
   }
