@@ -1,5 +1,60 @@
 [
   {
+    "id": "2026-10-01-morning-brief",
+    "date": "2026-10-01",
+    "coverageDate": "2026-09-30",
+    "edition": "MORNING EDITION // 2026.10.01",
+    "title": "Identity Field Notes: Agent Trust, Machine Identity and CISO Priorities",
+    "dek": "Highlights from 2026-09-30. The September 30 recap centers on an MCP OAuth credential-redirection flaw, new controls for agent and workload identity, and a call to govern AI systems by action privilege.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "Authorization",
+      "Machine identity",
+      "AI-agent identity",
+      "PAM"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-09-30, verified against linked sources. Edition dated 2026-10-01; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "MCP Python SDK flaw exposed OAuth flows to malicious servers",
+        "summary": "Cloud Security Alliance analyzed a high-severity flaw in the MCP Python SDK that allowed malicious servers to redirect OAuth client secrets, authorization codes and PKCE material to attacker-controlled endpoints. The affected discovery and machine-to-machine paths were fixed in SDK versions 1.30.0 and 2.2.0; the disclosure reported no confirmed exploitation in the wild. ([labs.cloudsecurityalliance.org](https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-python-sdk-oauth-flaw-20260930-csa-sty/))",
+        "why": "MCP clients should treat server-supplied authorization metadata as untrusted input. Upgrade affected dependencies, bind credentials to an expected issuer, review downstream applications that embed the SDK and avoid assuming standard OAuth automatically protects agent-to-service flows. ([labs.cloudsecurityalliance.org](https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-python-sdk-oauth-flaw-20260930-csa-sty/))",
+        "source": "Cloud Security Alliance",
+        "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-python-sdk-oauth-flaw-20260930-csa-sty/",
+        "confidence": "Research",
+        "published_date": "2026-09-30",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Idira adds tighter controls for MCP tools, SPIFFE agents and secrets",
+        "summary": "Palo Alto Networks\u2019 Idira August update, published September 30, describes policies that restrict agents to approved MCP tools and link users, agents and tool access. It also adds SPIFFE identities and short-lived tokens for Google Gemini Enterprise agents, workload-level least-privilege controls and near-real-time account synchronization between Privilege Cloud and Secrets Manager SaaS. ([paloaltonetworks.com](https://www.paloaltonetworks.com/blog/identity-security/machine-agentic-identity-updates-august-2026/))",
+        "why": "The practical direction is clear: agent identity is moving toward governed workload identity rather than inherited user tokens or static secrets. Practitioners should test whether these controls produce enforceable tool-level authorization, reliable identity-to-inventory correlation and auditable credential rotation\u2014not merely new inventory records. ([paloaltonetworks.com](https://www.paloaltonetworks.com/blog/identity-security/machine-agentic-identity-updates-august-2026/))",
+        "source": "Palo Alto Networks / Idira",
+        "url": "https://www.paloaltonetworks.com/blog/identity-security/machine-agentic-identity-updates-august-2026/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-09-30",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "From the Field",
+        "title": "Gartner urges CISOs to govern AI agents by action privilege",
+        "summary": "Gartner\u2019s September 30 guidance tells CISOs to treat frontier AI deployments as insider-risk concerns and govern autonomous multi-agent systems by the actions they can perform rather than by model intelligence. It also recommends replacing recognition-based identity decisions with contextual signals, stronger authentication and authorization layers, and content-provenance checks. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2026-09-30-gartner-identifies-top-five-actions-for-cisos-to-take-by-end-of-2026))",
+        "why": "For IAM teams, the useful shift is from asking whether an agent is trustworthy to defining which actions it may take, under what context and with what blast-radius limits. That points toward explicit agent entitlements, step-up authorization, transaction controls and independent verification for high-impact operations. ([gartner.com](https://www.gartner.com/en/newsroom/press-releases/2026-09-30-gartner-identifies-top-five-actions-for-cisos-to-take-by-end-of-2026))",
+        "source": "Gartner",
+        "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-30-gartner-identifies-top-five-actions-for-cisos-to-take-by-end-of-2026",
+        "confidence": "Primary source",
+        "published_date": "2026-09-30",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-09-30-morning-brief",
     "date": "2026-09-30",
     "coverageDate": "2026-09-29",
@@ -12,7 +67,7 @@
       "AI-agent identity"
     ],
     "readTime": "4 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-29, verified against linked sources. Edition dated 2026-09-30; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
