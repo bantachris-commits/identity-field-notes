@@ -35,6 +35,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "348546cb160e0d0e",
+    "date": "2026-09-30",
+    "source": "Google Threat Intelligence Group",
+    "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
+    "tags": [
+      "ITDR",
+      "NHI",
+      "AI-agent authorization",
+      "PAM"
+    ],
+    "note": "GTIG data shows AI-assisted discovery is increasing high-risk vulnerability output and highlights exploited identity-adjacent flaws including BeyondTrust PRA command injection and AI middleware credential theft.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
@@ -70,24 +87,6 @@
     "score": 90
   },
   {
-    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "c76eff62cfae071f",
-    "date": "2026-09-30",
-    "source": "Google Cloud",
-    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
-    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
-    "tags": [
-      "ITDR",
-      "NHI",
-      "AI-agents",
-      "PAM",
-      "Google Cloud"
-    ],
-    "note": "Google Cloud announced a Gemini Enterprise ecosystem combining identity containment, privileged-session revocation, agent discovery and runtime controls for AI workloads and non-human identities.",
-    "score": 86
-  },
-  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "dc9136a95d123a08",
@@ -103,6 +102,23 @@
     ],
     "note": "Calls for governing autonomous systems by action privileges rather than model intelligence and for replacing recognition-based trust with stronger contextual authentication and authorization controls.",
     "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "5493a0f18347df93",
+    "date": "2026-09-30",
+    "source": "Prove",
+    "title": "Prove Extends Silent Authentication to Wi-Fi and Mobile Web, Removing a Longstanding Limitation in Digital Identity",
+    "url": "https://www.prove.com/blog/prove-silent-authentication-wifi-mobile-web",
+    "tags": [
+      "IAM",
+      "authentication",
+      "passkeys",
+      "CIAM"
+    ],
+    "note": "A materially relevant authentication move that extends SIM-backed cryptographic device-possession checks beyond mobile-network connectivity and reduces reliance on SMS OTP fallback.",
+    "score": 73
   },
   {
     "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
@@ -208,6 +224,23 @@
   {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
     "publishedDate": "2026-09-29",
+    "id": "c76eff62cfae071f",
+    "date": "2026-09-29",
+    "source": "Google Threat Intelligence Group",
+    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
+    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "ITDR",
+      "Google Cloud"
+    ],
+    "note": "Google Cloud is expanding an agent ecosystem tied to Agent Gateway and Agent Registry, making runtime identity, policy and third-party agent governance increasingly operational concerns for IAM teams.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "publishedDate": "2026-09-29",
     "id": "28594b2bec10c628",
     "date": "2026-09-29",
     "source": "Microsoft Security Blog",
@@ -262,17 +295,17 @@
     "publishedDate": "2026-09-28",
     "id": "fd81cca5ab8a9667",
     "date": "2026-09-28",
-    "source": "GitHub / Model Context Protocol",
+    "source": "Model Context Protocol Python SDK maintainers",
     "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
     "tags": [
       "OAuth",
-      "NHI",
-      "AI-agents",
-      "Authorization"
+      "token abuse",
+      "AI-agent authorization",
+      "NHI"
     ],
-    "note": "A high-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers, or signed assertions to attacker-chosen endpoints.",
-    "score": 98
+    "note": "A high-severity SDK flaw allowed malicious MCP servers to redirect client secrets, authorization codes, PKCE verifiers or signed assertions to attacker-controlled token endpoints; patched versions and issuer-binding actions are specified.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
@@ -551,6 +584,23 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "9e9081f1667bcfa5",
+    "date": "2026-09-25",
+    "source": "Mandiant and Google Threat Intelligence Group",
+    "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/?hl=en",
+    "tags": [
+      "IGA",
+      "PAM",
+      "service-account abuse",
+      "credential exposure"
+    ],
+    "note": "The campaign bypassed superficial WAF mitigations against an exploited PeopleSoft flaw, then operated through PeopleSoft or WebLogic service accounts to reach configuration files, database credentials and application data.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
     "publishedDate": "2026-09-25",
     "id": "1f8c0ed5b70c98d2",
@@ -583,6 +633,23 @@
       "Authorization"
     ],
     "note": "A critical OAuth authorization flaw can bind an outstanding request token to an arbitrary account, including an administrator, because identity is taken from the request rather than the authenticated session.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "726b5dc813784159",
+    "date": "2026-09-25",
+    "source": "BleepingComputer",
+    "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/amp/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "token abuse",
+      "authorization"
+    ],
+    "note": "The report documents active exploitation of a WSO2 JWT authentication-bypass flaw in which unsupported token algorithms could enable forged tokens, administrative compromise and exposure of API credentials.",
     "score": 94
   },
   {
@@ -826,6 +893,24 @@
     "score": 92
   },
   {
+    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
+    "publishedDate": "2026-09-24",
+    "id": "371b062d7cc27e1e",
+    "date": "2026-09-24",
+    "source": "Mandiant",
+    "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure",
+    "tags": [
+      "NHI",
+      "machine identity",
+      "OAuth",
+      "token abuse",
+      "secrets management"
+    ],
+    "note": "Mandiant describes active supply-chain tactics involving OIDC token extraction, GitHub Actions cache poisoning, stolen developer secrets and elevated pipeline identities, with direct implications for workload identity and short-lived authorization.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
     "publishedDate": "2026-09-24",
     "id": "b0071db721a96058",
@@ -892,24 +977,6 @@
       "Incident"
     ],
     "note": "Reports primary disclosures and independent research into agents bypassing access restrictions and probing public-sector systems, including access to non-public government information.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "371b062d7cc27e1e",
-    "date": "2026-09-24",
-    "source": "Google Cloud Threat Intelligence",
-    "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "Secrets",
-      "Session/token abuse",
-      "Supply chain"
-    ],
-    "note": "Google describes campaigns targeting engineering tools and pipelines to steal cryptographic keys, API tokens, active sessions and GitHub Actions OIDC tokens\u2014highly relevant to workload-identity governance.",
     "score": 91
   },
   {
@@ -3353,71 +3420,5 @@
     ],
     "note": "DigiCert\u2019s new service treats AI agents as identifiable, owner-linked entities with authorization controls and revocation capability.",
     "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "f803d98df99b0c30",
-    "date": "2026-09-15",
-    "source": "WSO2",
-    "title": "WSO2 Agent Manager Brings Sovereign AI Governance to Enterprise Agent Sprawl",
-    "url": "https://wso2.com/about/news/wso2-agent-manager-sovereign-ai-governance/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "IGA"
-    ],
-    "note": "WSO2\u2019s generally available Agent Manager adds agent identity, sandboxed runtime controls, MCP governance and lifecycle oversight across frameworks and deployment models.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "52fd7c156fb95675",
-    "date": "2026-09-15",
-    "source": "BeyondTrust",
-    "title": "Identity Security Insights 26.09",
-    "url": "https://docs.beyondtrust.com/insights/changelog/identity-security-insights-2609",
-    "tags": [
-      "ITDR",
-      "PAM",
-      "NHI"
-    ],
-    "note": "The release adds identity-threat forwarding to CrowdStrike SIEM, narrower privilege scoring for ServiceNow and more controlled GCP connector provisioning.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-15",
-    "id": "cf856eb7adda9046",
-    "date": "2026-09-15",
-    "source": "AWS",
-    "title": "Architecting resilient authentication with Amazon Cognito multi-Region replication",
-    "url": "https://aws.amazon.com/blogs/security/architecting-resilient-authentication-with-amazon-cognito-multi-region-replication/",
-    "tags": [
-      "CIAM",
-      "Authentication",
-      "Resilience"
-    ],
-    "note": "Cognito multi-Region replication introduces cross-Region failover considerations for user pools, IdP settings, token generation, revocation, and M2M authentication.",
-    "score": 75
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-14",
-    "id": "76d74339c23947ef",
-    "date": "2026-09-14",
-    "source": "AWS Security Bulletin",
-    "title": "CVE-2026-86830 - Incorrect privilege assignment in Temporary Elevated Access Management (TEAM for AWS IAM Identity Center",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-112-aws/",
-    "tags": [
-      "PAM",
-      "AWS",
-      "IAM",
-      "Privilege escalation"
-    ],
-    "note": "An authenticated application-level user could obtain unintended temporary elevated access through the AWS IAM Identity Center TEAM sample solution, making this a direct least-privilege and elevation-control issue.",
-    "score": 96
   }
 ]
