@@ -17,6 +17,41 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "736b5634430d03f1",
+    "date": "2026-09-30",
+    "source": "Dutch Institute for Vulnerability Disclosure / BleepingComputer",
+    "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
+    "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
+    "tags": [
+      "ITDR",
+      "session-security",
+      "PAM",
+      "AI-agents",
+      "privilege-escalation"
+    ],
+    "note": "A reported AI-driven intrusion chained Zammad flaws for session hijacking, remote code execution and escalation from an application user to root, making it a useful case study in agent-speed identity abuse and containment.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "3fbdf9fddda9b6c3",
+    "date": "2026-09-30",
+    "source": "Microsoft / BleepingComputer",
+    "title": "Microsoft to block Entra ID script injection attacks starting October",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
+    "tags": [
+      "IAM",
+      "Microsoft Entra",
+      "ITDR",
+      "session-security"
+    ],
+    "note": "Microsoft will enforce CSP on browser-based Entra sign-ins to block externally injected scripts that could steal credentials or hijack sessions, while requiring customers to remove incompatible sign-in-page extensions and tooling.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "f266688a3274c76d",
@@ -35,6 +70,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "c76eff62cfae071f",
+    "date": "2026-09-30",
+    "source": "Google Cloud",
+    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
+    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
+    "tags": [
+      "ITDR",
+      "NHI",
+      "AI-agents",
+      "PAM",
+      "Google Cloud"
+    ],
+    "note": "Google Cloud announced a Gemini Enterprise ecosystem combining identity containment, privileged-session revocation, agent discovery and runtime controls for AI workloads and non-human identities.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "dc9136a95d123a08",
@@ -50,6 +103,23 @@
     ],
     "note": "Calls for governing autonomous systems by action privileges rather than model intelligence and for replacing recognition-based trust with stronger contextual authentication and authorization controls.",
     "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "d5105854def1ec5c",
+    "date": "2026-09-30",
+    "source": "AWS",
+    "title": "AWS IAM Identity Center Identity Store APIs now accept resource ARNs in addition to resource IDs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "AWS",
+      "automation"
+    ],
+    "note": "IAM Identity Center APIs now accept resource ARNs directly, simplifying identity integrations with policy evaluation and CloudTrail workflows and reducing identifier-parsing errors in automation.",
+    "score": 72
   },
   {
     "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
@@ -102,6 +172,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "7e79e113e4dfb09c",
+    "date": "2026-09-29",
+    "source": "AWS",
+    "title": "Amazon Bedrock Managed Agents, powered by OpenAI, is now available in preview",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
+    "tags": [
+      "AWS",
+      "AI-agents",
+      "NHI",
+      "authorization",
+      "CloudTrail"
+    ],
+    "note": "The preview gives each managed agent its own IAM role, supports human approval for consequential actions and records supported API activity in CloudTrail, making it relevant to agent identity and authorization design.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
     "publishedDate": "2026-09-29",
     "id": "6bad01184f27e279",
@@ -134,20 +222,21 @@
     "score": 78
   },
   {
-    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
     "publishedDate": "2026-09-29",
-    "id": "c76eff62cfae071f",
+    "id": "6147261bb960aa35",
     "date": "2026-09-29",
-    "source": "Google Cloud Blog",
-    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
-    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
+    "source": "CrowdStrike",
+    "title": "CrowdStrike Brings the Falcon Platform to the OpenAI Marketplace",
+    "url": "https://ir.crowdstrike.com/node/17741/pdf",
     "tags": [
-      "IAM",
-      "NHI",
-      "AI-agent authorization"
+      "AI-agents",
+      "ITDR",
+      "runtime-security",
+      "OpenAI"
     ],
-    "note": "Google Cloud is expanding its Gemini Enterprise security ecosystem with partner-built agents, bringing agent discovery, governance and security operations into a unified workflow.",
-    "score": 76
+    "note": "CrowdStrike says Falcon Guardian will provide visibility and runtime controls for supported Codex agents, signaling a platform shift toward security enforcement inside agent execution paths.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
@@ -295,17 +384,18 @@
     "publishedDate": "2026-09-28",
     "id": "c97ff75e84c28b08",
     "date": "2026-09-28",
-    "source": "BleepingComputer",
+    "source": "BleepingComputer / SOCRadar",
     "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
     "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
     "tags": [
+      "credential-theft",
+      "session-security",
+      "OAuth",
       "NHI",
-      "Machine-identity",
-      "Session-theft",
-      "OAuth"
+      "shadow-IT"
     ],
-    "note": "SOCRadar\u2019s analysis found more than one million infostealer records tied to AI services across 80,000-plus corporate domains, highlighting stolen sessions, exposed credentials, and LLMjacking risk.",
-    "score": 92
+    "note": "The report analyzes infostealer records tied to more than 80,000 corporate domains and highlights stolen AI sessions, standing OAuth grants, API keys and shadow accounts as identity-control exposure.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
@@ -339,6 +429,24 @@
       "AI-agent authorization"
     ],
     "note": "Explains a task-scoped credential-broker model that keeps secrets out of AI-agent contexts and rejects standing privilege.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "89a3c0e8c074489a",
+    "date": "2026-09-28",
+    "source": "Auth0",
+    "title": "Securing Agentic Commerce Using Auth0 and the Universal Commerce Protocol (UCP",
+    "url": "https://auth0.com/blog/securing-agentic-commerce-using-auth0-universal-commerce-protocol-ucp/",
+    "tags": [
+      "authorization",
+      "OAuth",
+      "AI-agents",
+      "account-linking",
+      "session-security"
+    ],
+    "note": "The proposal uses verified account linking, on-behalf-of token exchange and short-lived purchase-scoped tokens to constrain agentic commerce actions and preserve human attribution.",
     "score": 84
   },
   {
@@ -3311,107 +3419,5 @@
     ],
     "note": "An authenticated application-level user could obtain unintended temporary elevated access through the AWS IAM Identity Center TEAM sample solution, making this a direct least-privilege and elevation-control issue.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-14",
-    "id": "55acb2b729bfb598",
-    "date": "2026-09-14",
-    "source": "Brevo Status",
-    "title": "Post-mortem: malicious \u201cClickFix\u201d script served via Brevo\u2019s Cloudflare account",
-    "url": "https://status.brevo.com/incidents/01M2QBC4EZ24ZACW6SWQYVW8N3/write-up",
-    "tags": [
-      "PAM",
-      "Secrets management",
-      "Machine identity",
-      "API keys"
-    ],
-    "note": "Brevo attributes a five-and-a-half-hour supply-chain incident to a long-lived full-permission Cloudflare API key hardcoded in source code, enabling malicious Worker and route deployment.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
-    "publishedDate": "2026-09-14",
-    "id": "e0b49edf38f7c66b",
-    "date": "2026-09-14",
-    "source": "AEPD",
-    "title": "Primera notificaci\u00f3n de una brecha de datos personales causada por un ataque ejecutado mediante un agente de IA",
-    "url": "https://www.aepd.es/prensa-y-comunicacion/blog/primera-notiviacion-brecha-datos-personales-causada-por-ataque-ejecutado-mediante-agente-ia",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "Incident",
-      "Authorization"
-    ],
-    "note": "Spain\u2019s data-protection authority describes a reported breach in which an AI agent autonomously performed reconnaissance, accessed a system with valid credentials, modified personal data, and accessed invoices.",
-    "score": 95
-  },
-  {
-    "id": "a08438a7ab1a57d4",
-    "date": "2026-09-14",
-    "source": "Unit 42",
-    "title": "Unmasking Cloud Identities: From Behavioral Clustering to Automated Detection",
-    "url": "https://unit42.paloaltonetworks.com/behavioral-clustering-map-to-cloud-identities/",
-    "tags": [
-      "ITDR",
-      "NHI",
-      "AWS",
-      "IAM",
-      "Cloud"
-    ],
-    "note": "Research using more than 40,000 identities across 125 cloud environments shows how behavioral clustering can classify human and machine roles and detect deviations that static permissions miss.",
-    "score": 93,
-    "firstSeenAt": "2026-09-16T11:59:46Z"
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-14",
-    "id": "0586e096f0a894b1",
-    "date": "2026-09-14",
-    "source": "BleepingComputer",
-    "title": "Twitch extension with 30K installs exposes users\u2019 OAuth tokens",
-    "url": "https://www.bleepingcomputer.com/news/security/twitch-extension-with-30k-installs-exposes-users-oauth-tokens/",
-    "tags": [
-      "OAuth",
-      "Session Security",
-      "Token Theft",
-      "NHI"
-    ],
-    "note": "A browser extension routed live Twitch OAuth session tokens through operator-controlled proxy infrastructure and placed them in URL parameters that could enter server logs.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-16T11:59:46Z",
-    "publishedDate": "2026-09-14",
-    "id": "03d4b40a00c46319",
-    "date": "2026-09-14",
-    "source": "arXiv",
-    "title": "Authorization Architectures for Tool-Using AI Agents",
-    "url": "https://arxiv.org/abs/2609.15906",
-    "tags": [
-      "AI-agent authorization",
-      "OAuth",
-      "delegation",
-      "policy enforcement"
-    ],
-    "note": "A timely review frames agent authorization around principal hierarchies, multi-hop delegation, runtime policy enforcement, prompt injection and auditability.",
-    "score": 90
-  },
-  {
-    "id": "766e3bbf5301c5aa",
-    "date": "2026-09-14",
-    "source": "ITPro",
-    "title": "Revolut hands over customer data after fake government request",
-    "url": "https://www.itpro.com/security/data-breaches/revolut-hands-over-customer-data-after-fake-government-request",
-    "tags": [
-      "IAM",
-      "Authorization",
-      "Federation",
-      "Social-engineering",
-      "Identity-proofing"
-    ],
-    "note": "Examines an identity-control failure in which attackers abused trust in a legitimate government email domain to obtain sensitive customer records.",
-    "score": 88,
-    "firstSeenAt": "2026-09-15T17:14:56Z"
   }
 ]
