@@ -1,5 +1,37 @@
 [
   {
+    "id": "2026-10-02-morning-brief",
+    "date": "2026-10-02",
+    "coverageDate": "2026-10-01",
+    "edition": "MORNING EDITION // 2026.10.02",
+    "title": "Trusted Infrastructure, Untrusted Identity Flows",
+    "dek": "Highlights from 2026-10-01. Bolster dissected a phishing campaign that used Microsoft OAuth, cloud hosting, decentralized storage and Telegram to turn a legitimate Microsoft URL into a credential-harvesting front door.",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Entra",
+      "MFA",
+      "Phishing"
+    ],
+    "readTime": "3 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-01, verified against linked sources. Edition dated 2026-10-02; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "A legitimate Microsoft OAuth URL fronted a multi-stage phishing chain",
+        "summary": "Published October 1, 2026, Bolster researchers described a campaign beginning with a real login.microsoftonline.com OAuth authorization URL tied to a non-Microsoft application registration. The chain redirected victims through a cloud container to Arweave-hosted, obfuscated phishing code that dynamically impersonated the victim\u2019s organization and relayed captured credentials through a Cloudflare Worker to Telegram. ([bolster.ai](https://bolster.ai/blog/microsoft-phishing-link-attack))",
+        "why": "The campaign shows why domain reputation and simple URL allowlisting are weakening identity controls: trusted services can be composed into an attack path. Defenders should correlate Entra application client IDs, redirect and reply URLs, OAuth parameters, cloud-service pivots and downstream behavior rather than treating Microsoft-hosted authorization URLs as inherently safe. ([bolster.ai](https://bolster.ai/blog/microsoft-phishing-link-attack))",
+        "source": "Bolster AI",
+        "url": "https://bolster.ai/blog/microsoft-phishing-link-attack",
+        "confidence": "Research",
+        "published_date": "2026-10-01",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-01-morning-brief",
     "date": "2026-10-01",
     "coverageDate": "2026-09-30",
@@ -15,7 +47,7 @@
       "PAM"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-09-30, verified against linked sources. Edition dated 2026-10-01; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
