@@ -18,6 +18,40 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "afd4a8a66b7c8ed4",
+    "date": "2026-10-01",
+    "source": "BleepingComputer",
+    "title": "Autonomous AI agents tried to hack US, Canadian government websites",
+    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "credential abuse",
+      "identity security"
+    ],
+    "note": "Reporting on autonomous agents attempting SQL injection, anti-bot evasion, disposable-account creation and reuse of exposed credentials provides a concrete preview of machine-speed identity and access abuse.",
+    "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "605991a228701be1",
+    "date": "2026-10-01",
+    "source": "VentureBeat",
+    "title": "AI agents need more than access control \u2014 they need identity at runtime",
+    "url": "https://venturebeat.com/security/ai-agents-need-more-than-access-control-they-need-identity-at-runtime",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "machine identity",
+      "PAM"
+    ],
+    "note": "A timely practitioner-oriented analysis frames agent discovery, cryptographic identity, action-level authorization and continuous auditability as distinct requirements beyond conventional IAM.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "854bd82d12eaf31b",
@@ -53,6 +87,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "010c20fc0f6b588b",
+    "date": "2026-09-30",
+    "source": "Microsoft Security Research",
+    "title": "Approval Laundering: Systematizing Approval--Execution Binding Failures in AI Coding-Agent Harnesses",
+    "url": "https://arxiv.org/abs/2609.38983",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "ITDR"
+    ],
+    "note": "Primary research shows how coding-agent harnesses can execute actions that differ from what a human approved, and evaluates capability-style approval tokens as a mitigation.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
     "publishedDate": "2026-09-30",
     "id": "348546cb160e0d0e",
@@ -68,23 +119,6 @@
     ],
     "note": "GTIG data shows AI-assisted discovery is increasing high-risk vulnerability output and highlights exploited identity-adjacent flaws including BeyondTrust PRA command injection and AI middleware credential theft.",
     "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "3fbdf9fddda9b6c3",
-    "date": "2026-09-30",
-    "source": "Microsoft / BleepingComputer",
-    "title": "Microsoft to block Entra ID script injection attacks starting October",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
-    "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "ITDR",
-      "session-security"
-    ],
-    "note": "Microsoft will enforce CSP on browser-based Entra sign-ins to block externally injected scripts that could steal credentials or hijack sessions, while requiring customers to remove incompatible sign-in-page extensions and tooling.",
-    "score": 92
   },
   {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
@@ -103,6 +137,23 @@
     ],
     "note": "Provides an itemized view of new controls for MCP tool execution, agent discovery, SPIFFE identities, short-lived tokens, workload least privilege and near-real-time privileged-account synchronization.",
     "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "3fbdf9fddda9b6c3",
+    "date": "2026-09-30",
+    "source": "BleepingComputer",
+    "title": "Microsoft to block Entra ID script injection attacks starting October",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
+    "tags": [
+      "Microsoft Entra",
+      "IAM",
+      "authentication",
+      "credential theft"
+    ],
+    "note": "Microsoft is rolling out stricter CSP enforcement for Entra browser sign-ins to block externally injected scripts that could steal credentials during authentication.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
@@ -538,6 +589,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "45a2ea141f7a2ee1",
+    "date": "2026-09-28",
+    "source": "eSentire",
+    "title": "PaperCut MF Zero-Day Intrusion: Java Loader, Web Shell, and AdaptixC2 via CVE-2026-82078 and CVE-2026-81578",
+    "url": "https://www.esentire.com/blog/papercut-mf-zero-day-intrusion-java-loader-web-shell-and-adaptixc2-via-cve-2026-82078-and-cve-2026-81578",
+    "tags": [
+      "PAM",
+      "service accounts",
+      "credential theft",
+      "Active Directory"
+    ],
+    "note": "The incident investigation documents theft of a token from a domain-privileged service account, credential dumping and NTLM-hash-based lateral movement to a domain controller.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
     "publishedDate": "2026-09-28",
     "id": "b54a74d3c721b762",
@@ -606,23 +674,6 @@
   {
     "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
     "publishedDate": "2026-09-27",
-    "id": "8509949b9dc891a6",
-    "date": "2026-09-27",
-    "source": "SC Media",
-    "title": "OAuth token abuse: how the attack works and how to stop it",
-    "url": "https://www.scworld.com/tech-explainer/oauth-token-abuse-how-the-attack-works-and-how-to-stop-it",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "A timely practitioner-oriented breakdown of consent phishing, persistent OAuth grants, service-principal credential additions, and why password resets alone do not contain token abuse.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
-    "publishedDate": "2026-09-27",
     "id": "47903fccd0c43f12",
     "date": "2026-09-27",
     "source": "Insomnia Security",
@@ -636,6 +687,23 @@
     ],
     "note": "Field telemetry on device-code phishing shows how attackers can obtain refresh-token access after users complete legitimate Microsoft or Google authorization steps.",
     "score": 89
+  },
+  {
+    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
+    "publishedDate": "2026-09-27",
+    "id": "8509949b9dc891a6",
+    "date": "2026-09-27",
+    "source": "SC Media",
+    "title": "OAuth token abuse: how the attack works and how to stop it",
+    "url": "https://www.scworld.com/tech-explainer/oauth-token-abuse-how-the-attack-works-and-how-to-stop-it",
+    "tags": [
+      "OAuth",
+      "token abuse",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "A focused technical explainer covers consent phishing, over-privileged application identities and persistence through added credentials, client secrets and service-principal roles.",
+    "score": 76
   },
   {
     "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
@@ -3358,73 +3426,5 @@
     ],
     "note": "This standards draft provides a useful reference architecture for agent identifiers, credentials, delegated authority, runtime authorization, observability and remediation using WIMSE, SPIFFE, OAuth and OpenID SSF.",
     "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "0aa05a6b1187f435",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "Token security",
-      "OAuth",
-      "Federation",
-      "SSO",
-      "ITDR"
-    ],
-    "note": "NISTIR 8587 gives implementation guidance on token verification, signing-key protection, token lifecycle controls, revocation, federation and continuous monitoring after recent token-forgery incidents.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "969280c9c1e15639",
-    "date": "2026-09-15",
-    "source": "W3C",
-    "title": "First Public Working Draft: Web Authentication: An API for accessing Public Key Credentials Level 4",
-    "url": "https://www.w3.org/news/2026/first-public-working-draft-web-authentication-an-api-for-accessing-public-key-credentials-level-4/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "Standards"
-    ],
-    "note": "WebAuthn Level 4 introduces future-facing scope for agentic AI, additional signed data, credential durability and authenticator trust signals that identity architects should track early.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-15",
-    "id": "4e2b0941f8803b78",
-    "date": "2026-09-15",
-    "source": "AWS Security Blog",
-    "title": "Operationalizing least privilege: Automate IAM remediation through your CI/CD pipeline",
-    "url": "https://aws.amazon.com/blogs/security/operationalizing-least-privilege-automate-iam-remediation-through-your-ci-cd-pipeline/",
-    "tags": [
-      "IAM",
-      "IGA",
-      "CIEM",
-      "NHI",
-      "Least Privilege"
-    ],
-    "note": "Presents an actionable pattern connecting IAM Access Analyzer, CloudTrail, Bedrock, and CI/CD to turn excessive-permission findings into reviewed code changes and controlled decommissioning.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-15T21:43:14Z",
-    "publishedDate": "2026-09-15",
-    "id": "fe184999dcccb80e",
-    "date": "2026-09-15",
-    "source": "Google Cloud",
-    "title": "Introducing new session management tools with native, granular controls",
-    "url": "https://cloud.google.com/blog/products/identity-security/introducing-new-session-management-tools-with-native-granular-controls",
-    "tags": [
-      "ITDR",
-      "Session security",
-      "Cloud IAM"
-    ],
-    "note": "Google Cloud's granular Context-Aware Access session controls provide a practical response to credential theft and account-takeover risk from overly long-lived sessions.",
-    "score": 84
   }
 ]
