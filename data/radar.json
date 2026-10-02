@@ -383,17 +383,18 @@
     "publishedDate": "2026-09-28",
     "id": "fd81cca5ab8a9667",
     "date": "2026-09-28",
-    "source": "Model Context Protocol Python SDK maintainers",
+    "source": "GitHub Security Advisory",
     "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
     "tags": [
       "OAuth",
-      "token abuse",
-      "AI-agent authorization",
-      "NHI"
+      "AI agents",
+      "NHI",
+      "Machine identity",
+      "Token security"
     ],
-    "note": "A high-severity SDK flaw allowed malicious MCP servers to redirect client secrets, authorization codes, PKCE verifiers or signed assertions to attacker-controlled token endpoints; patched versions and issuer-binding actions are specified.",
-    "score": 99
+    "note": "The MCP Python SDK could allow an untrusted server to redirect client secrets, authorization codes, PKCE verifiers or signed assertions to an attacker-chosen endpoint, making issuer binding and credential rotation urgent.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
@@ -416,17 +417,17 @@
     "publishedDate": "2026-09-28",
     "id": "3f6044139594a134",
     "date": "2026-09-28",
-    "source": "Duende",
+    "source": "Duende Software",
     "title": "Security Advisory - Duende IdentityServer Pushed Authorization Requests (GHSA-mxv6-xwqj-ww2p",
     "url": "https://duendesoftware.com/blog/security-advisory-duende-identityserver-pushed-authorization-requests-ghsa-mxv6-xwqj-ww2p",
     "tags": [
       "OAuth",
-      "OIDC",
       "Authorization",
-      "Token security"
+      "Token security",
+      "Federation"
     ],
-    "note": "High-severity PAR validation weaknesses can enable authorization-request forgery, arbitrary redirect handling and token theft in affected IdentityServer deployments.",
-    "score": 95
+    "note": "A high-severity PAR flaw can permit authorization-request forgery and, under affected configurations, token theft through attacker-controlled redirect URIs.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
@@ -658,17 +659,17 @@
     "publishedDate": "2026-09-25",
     "id": "74ab0bc29886016a",
     "date": "2026-09-25",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security Research",
     "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
     "tags": [
       "NHI",
-      "PAM",
       "ITDR",
-      "Entra",
-      "AI-agent authorization"
+      "Microsoft Entra",
+      "Cloud IAM",
+      "Secrets"
     ],
-    "note": "Microsoft details destructive Azure activity conducted through compromised service principals, including public secret exposure, excessive RBAC, resource deletion and storage-key collection.",
+    "note": "A detailed incident analysis shows compromised service principals, exposed client secrets, excessive Azure permissions and automated destructive activity combining into a high-impact cloud identity attack.",
     "score": 99
   },
   {
@@ -3323,42 +3324,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "0aa05a6b1187f435",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Tokens",
-      "Federation",
-      "Standards"
-    ],
-    "note": "NIST IR 8587 provides implementation guidance for protecting SSO, federation, API and workload-access tokens against forgery, theft and misuse, with concrete lifecycle and key-management recommendations.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "946fac6353a12972",
-    "date": "2026-09-15",
-    "source": "IETF",
-    "title": "AI Identity Management System",
-    "url": "https://www.ietf.org/archive/id/draft-ietf-wimse-aims-00.html",
-    "tags": [
-      "AI-agent authorization",
-      "OAuth",
-      "OpenID",
-      "NHI",
-      "Standards"
-    ],
-    "note": "This new WIMSE Internet-Draft proposes applying and extending existing OAuth and workload-identity standards for authenticating and authorizing AI-agent interactions.",
-    "score": 95
-  },
-  {
     "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
     "publishedDate": "2026-09-15",
     "id": "6c0ce9e5b02a4070",
@@ -3375,6 +3340,42 @@
     ],
     "note": "The new WIMSE AIMS draft proposes a lifecycle model for agent identifiers, credentials, delegated authority, observability, remediation, and transaction-scoped authorization.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "946fac6353a12972",
+    "date": "2026-09-15",
+    "source": "IETF WIMSE Working Group",
+    "title": "AI Identity Management System",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-wimse-aims-00.html",
+    "tags": [
+      "AI agents",
+      "NHI",
+      "Machine identity",
+      "OAuth",
+      "Authorization"
+    ],
+    "note": "This standards draft provides a useful reference architecture for agent identifiers, credentials, delegated authority, runtime authorization, observability and remediation using WIMSE, SPIFFE, OAuth and OpenID SSF.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
+    "publishedDate": "2026-09-15",
+    "id": "0aa05a6b1187f435",
+    "date": "2026-09-15",
+    "source": "NIST",
+    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
+    "url": "https://www.nist.gov/publications/protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
+    "tags": [
+      "Token security",
+      "OAuth",
+      "Federation",
+      "SSO",
+      "ITDR"
+    ],
+    "note": "NISTIR 8587 gives implementation guidance on token verification, signing-key protection, token lifecycle controls, revocation, federation and continuous monitoring after recent token-forgery incidents.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
