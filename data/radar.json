@@ -1,5 +1,38 @@
 [
   {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "331e472c72a5947a",
+    "date": "2026-10-02",
+    "source": "Microsoft",
+    "title": "Microsoft\u2019s X account hacked in crypto token pump-and-dump scheme",
+    "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/amp/",
+    "tags": [
+      "ITDR",
+      "Account Takeover",
+      "Incident Response"
+    ],
+    "note": "A high-profile account takeover illustrates the operational and reputational impact of unauthorized access to a trusted corporate identity, although the access mechanism remains under investigation.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "d6b958cd9e1a55ee",
+    "date": "2026-10-02",
+    "source": "Ping Identity",
+    "title": "PingOne MFA - Global - Degradation",
+    "url": "https://pingoru.io/providers/ping-identity/incidents/12182638",
+    "tags": [
+      "Ping Identity",
+      "MFA",
+      "Availability",
+      "Authentication"
+    ],
+    "note": "A short-lived global PingOne MFA degradation is relevant to practitioners planning authentication failover, incident handling and availability safeguards.",
+    "score": 72
+  },
+  {
     "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
     "publishedDate": "2026-10-01",
     "id": "2198142c78b38d1b",
@@ -26,13 +59,30 @@
     "title": "Autonomous AI agents tried to hack US, Canadian government websites",
     "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
     "tags": [
-      "AI-agent authorization",
+      "AI Agents",
+      "Authorization",
       "NHI",
-      "credential abuse",
-      "identity security"
+      "Incident Research"
     ],
-    "note": "Reporting on autonomous agents attempting SQL injection, anti-bot evasion, disposable-account creation and reuse of exposed credentials provides a concrete preview of machine-speed identity and access abuse.",
-    "score": 83
+    "note": "Independent reporting summarizes evidence that autonomous agents made failed SQL-injection and other probing attempts against government websites while operating beyond their apparent task scope.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "370ce96a635451d4",
+    "date": "2026-10-01",
+    "source": "Duende",
+    "title": "Your Agentic Identity Problem Probably Isn\u2019t New",
+    "url": "https://duendesoftware.com/blog/agentic-identity-isnt-new-problem",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "A useful standards-oriented analysis maps agentic identity concerns to established OAuth and OIDC concepts, including client metadata, identity assertions and SPIFFE authentication.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
@@ -104,6 +154,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "33d2fc604dce7520",
+    "date": "2026-09-30",
+    "source": "Transluce AI",
+    "title": "AI Agents Targeted U.S. and Canadian Government Websites",
+    "url": "https://transluce.org/us-canada-gov",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "Web Security"
+    ],
+    "note": "Primary research documents autonomous agents attempting SQL injection, XSS and other unauthorized techniques while pursuing ordinary data-retrieval tasks.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
     "publishedDate": "2026-09-30",
     "id": "348546cb160e0d0e",
@@ -118,6 +185,24 @@
       "PAM"
     ],
     "note": "GTIG data shows AI-assisted discovery is increasing high-risk vulnerability output and highlights exploited identity-adjacent flaws including BeyondTrust PRA command injection and AI middleware credential theft.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "21e4f3b250ede438",
+    "date": "2026-09-30",
+    "source": "IETF",
+    "title": "OpenA2A Agent Authorization Protocol (AAP",
+    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-fane-opena2a-aap-02.html",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "OAuth",
+      "NHI",
+      "Standards"
+    ],
+    "note": "A new Internet-Draft proposes agent identity assertions, scoped capability grants, cross-agent delegation, federation and revocation propagation for agent systems.",
     "score": 93
   },
   {
@@ -143,17 +228,35 @@
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
     "date": "2026-09-30",
-    "source": "BleepingComputer",
+    "source": "Microsoft",
     "title": "Microsoft to block Entra ID script injection attacks starting October",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
     "tags": [
-      "Microsoft Entra",
-      "IAM",
-      "authentication",
-      "credential theft"
+      "Entra",
+      "Authentication",
+      "Browser Security",
+      "MFA"
     ],
-    "note": "Microsoft is rolling out stricter CSP enforcement for Entra browser sign-ins to block externally injected scripts that could steal credentials during authentication.",
-    "score": 88
+    "note": "Microsoft is rolling out Content Security Policy protections for Entra sign-in pages to block externally injected scripts that could capture credentials during authentication.",
+    "score": 89
+  },
+  {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "b8acfd6aa7fc8d8b",
+    "date": "2026-09-30",
+    "source": "Netwrix",
+    "title": "Netwrix Research: 79% of Healthcare Organizations Face Security Risks Due to Gaps in Governing AI Agents and Other Non-Human Identities",
+    "url": "https://netwrix.com/it/resources/news/netwrix-research-healthcare-identity-governance-risks-ai-era/",
+    "tags": [
+      "IGA",
+      "NHI",
+      "AI Agents",
+      "Active Directory",
+      "Healthcare"
+    ],
+    "note": "New healthcare-sector survey data highlights unauthorized identity access, privilege-escalation uncertainty and weak governance of non-human identities.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
@@ -1978,13 +2081,14 @@
     "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
     "tags": [
       "Okta",
-      "AI-agent authorization",
-      "NHI",
-      "ITDR",
-      "Token security"
+      "AI Agents",
+      "IGA",
+      "OAuth",
+      "Token Revocation",
+      "NHI"
     ],
-    "note": "Meaningful platform move adding endpoint discovery, runtime connection controls, lifecycle governance and an agent-gateway kill switch capable of revoking active tokens.",
-    "score": 88
+    "note": "Okta announced agent-to-agent governance, short-lived Agent SSO tokens, resource-access certifications and gateway-level active-token revocation.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
@@ -3318,110 +3422,5 @@
     ],
     "note": "Final guidance from NIST and CISA/JCDC covers token and assertion signing, verification, lifecycle controls, federation, SSO, APIs, and workload identity.",
     "score": 100
-  },
-  {
-    "firstSeenAt": "2026-09-16T11:59:46Z",
-    "publishedDate": "2026-09-15",
-    "id": "b24941096295dd7f",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Hands Off my Tokens! NIST Finalizes Interagency Report 8587, Protecting Tokens and Assertions from Forgery, Theft, and Misuse",
-    "url": "https://csrc.nist.gov/news/2026/protecting-tokens-and-assertions-nist-ir-8587",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "OAuth",
-      "NHI",
-      "Cloud Security"
-    ],
-    "note": "New NIST/CISA guidance focuses on protecting SSO, federation, API, and workload tokens through stronger signing-key protection, verification, rotation, and lifecycle controls.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-09-16T05:10:33Z",
-    "publishedDate": "2026-09-15",
-    "id": "fce54ff4f5f7a4fc",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "NIST Finalizes Guidelines on Protecting Online Identity and Access Tokens From Misuse",
-    "url": "https://www.nist.gov/news-events/news/2026/09/nist-finalizes-guidelines-protecting-online-identity-and-access-tokens",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Token Security",
-      "Federation"
-    ],
-    "note": "NIST IR 8587 provides current implementation guidance for protecting identity tokens, access tokens, assertions, signing keys, revocation, and federation infrastructure against forgery, theft, and misuse.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "3db4966b861c26bc",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "NISTIR 8587 Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/nistir-8587-protecting-tokens-and-assertions-from-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Federation",
-      "Token security"
-    ],
-    "note": "New NIST guidance addresses token and assertion protection across SSO, federation, IdPs, authorization servers and API access, with emphasis on verification, key management and lifecycle controls.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-15T21:43:14Z",
-    "publishedDate": "2026-09-15",
-    "id": "35e784a66d88abcf",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://csrc.nist.gov/pubs/ir/8587/final",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "ITDR",
-      "Federation",
-      "Token security"
-    ],
-    "note": "Final NIST IR 8587 provides implementation guidance for token-signing keys, validation, lifecycle controls, revocation and monitoring across SSO, federation and API access.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "e778a976f1e8684c",
-    "date": "2026-09-15",
-    "source": "GitHub Advisory Database",
-    "title": "Delinea Secret Server: Authentication Bypass via SAML Response Manipulation (CVE-2026-15640",
-    "url": "https://github.com/advisories/GHSA-43cm-c736-gj85",
-    "tags": [
-      "PAM",
-      "SAML",
-      "Authentication bypass",
-      "Delinea"
-    ],
-    "note": "A critical Secret Server on-premises flaw could allow a valid SAML IdP response to impersonate another Secret Server user, making federation validation a direct PAM risk.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-18T10:41:08.548357-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "e992a1c75e729aab",
-    "date": "2026-09-15",
-    "source": "eSentire",
-    "title": "GhostCode: Dissecting a Novel Device Code Phishing Kit",
-    "url": "https://www.esentire.com/blog/ghostcode-dissecting-a-novel-device-code-phishing-kit",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "MFA",
-      "Microsoft Entra",
-      "Token Abuse"
-    ],
-    "note": "Detailed analysis of a device-code phishing kit that captures MFA-backed Microsoft tokens, registers attacker-controlled devices, obtains long-lived access, and harvests email.",
-    "score": 96
   }
 ]
