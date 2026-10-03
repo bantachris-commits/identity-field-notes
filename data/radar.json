@@ -33,6 +33,57 @@
     "score": 72
   },
   {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "ae8ef60ed39121c0",
+    "date": "2026-10-02",
+    "source": "Auth0",
+    "title": "Architecting Secure Identity: Extending Auth0 PrivateLink with Intelligent Gateways",
+    "url": "https://auth0.com/blog/extending-auth0-privatelink-with-intelligent-gateways/",
+    "tags": [
+      "IAM",
+      "CIAM",
+      "AWS",
+      "Network Security"
+    ],
+    "note": "A concrete architecture for routing Auth0 outbound identity traffic across isolated AWS VPCs while preserving centralized policy and auditability.",
+    "score": 72
+  },
+  {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "4f4244d6a71d4055",
+    "date": "2026-10-01",
+    "source": "DIVD CSIRT",
+    "title": "DIVD-2026-00014 - When, not if\u2026",
+    "url": "https://csirt.divd.nl/cases/DIVD-2026-00014/",
+    "tags": [
+      "ITDR",
+      "Session Hijacking",
+      "Privilege Escalation",
+      "AI Agents"
+    ],
+    "note": "Primary incident reporting describes an agentic attack that chained Zammad flaws to hijack sessions, execute code, escalate to root and exfiltrate volunteer data.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "153ed042230555ad",
+    "date": "2026-10-01",
+    "source": "Truffle Security",
+    "title": "Why exposed credentials stay live for years",
+    "url": "https://trufflesecurity.com/blog/why-exposed-credentials-stay-live-for-years",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Machine Identity",
+      "AWS"
+    ],
+    "note": "Research found 543,699 credentials in public repositories that still authenticated, underscoring persistent failures in rotation, ownership and offboarding.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
     "publishedDate": "2026-10-01",
     "id": "2198142c78b38d1b",
@@ -51,20 +102,20 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
     "publishedDate": "2026-10-01",
-    "id": "afd4a8a66b7c8ed4",
+    "id": "62aaa2495778a410",
     "date": "2026-10-01",
-    "source": "BleepingComputer",
-    "title": "Autonomous AI agents tried to hack US, Canadian government websites",
-    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "source": "Proofpoint",
+    "title": "Hallucinating Credibility: China-Aligned TA419 Impersonates its Way into US AI Policy Circles",
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
     "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Incident Research"
+      "IAM",
+      "Entra",
+      "Credential Phishing",
+      "AiTM"
     ],
-    "note": "Independent reporting summarizes evidence that autonomous agents made failed SQL-injection and other probing attempts against government websites while operating beyond their apparent task scope.",
+    "note": "Documents credential-phishing campaigns targeting Microsoft 365 and Entra ID through impersonation and adversary-in-the-middle techniques.",
     "score": 91
   },
   {
@@ -83,6 +134,23 @@
     ],
     "note": "A useful standards-oriented analysis maps agentic identity concerns to established OAuth and OIDC concepts, including client metadata, identity assertions and SPIFFE authentication.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "afd4a8a66b7c8ed4",
+    "date": "2026-10-01",
+    "source": "BleepingComputer",
+    "title": "Autonomous AI agents tried to hack US, Canadian government websites",
+    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Credential Abuse",
+      "Machine Identity"
+    ],
+    "note": "Reports autonomous agents using exposed credentials, disposable accounts and anti-bot bypass attempts while conducting large-scale retrieval and rudimentary attacks.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
@@ -224,6 +292,23 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "d26df91884856c43",
+    "date": "2026-09-30",
+    "source": "watchTowr",
+    "title": "Frequently Asked Questions About the Cisco Catalyst SD-WAN Manager Authentication Bypass (CVE-2026-76504",
+    "url": "https://watchtowr.com/intelligence/cisco-catalyst-sd-wan-manager-cve-2026-76504-faq/",
+    "tags": [
+      "Authentication Bypass",
+      "PAM",
+      "ITDR",
+      "CISA KEV"
+    ],
+    "note": "A useful technical treatment of an actively exploited management-plane authentication bypass that grants unauthenticated access to privileged APIs.",
+    "score": 90
+  },
+  {
     "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
@@ -256,6 +341,23 @@
       "Healthcare"
     ],
     "note": "New healthcare-sector survey data highlights unauthorized identity access, privilege-escalation uncertainty and weak governance of non-human identities.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "13b0512e129b3ae6",
+    "date": "2026-09-30",
+    "source": "SC Media",
+    "title": "Okta: The Blueprint Alliance AI-agent framework isn't ours, but everybody's",
+    "url": "https://www.scworld.com/resource/okta-the-blueprint-alliance-ai-agent-framework-isnt-ours-but-everybodys",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Open Standards",
+      "Okta"
+    ],
+    "note": "Explains the Blueprint Alliance's proposed principles for agent identity, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
     "score": 84
   },
   {
@@ -757,6 +859,23 @@
     ],
     "note": "The incident investigation documents theft of a token from a domain-privileged service account, credential dumping and NTLM-hash-based lateral movement to a domain controller.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "6b0cb1680fa86bae",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
+    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjack ing/amp/",
+    "tags": [
+      "Credential Theft",
+      "Session Theft",
+      "NHI",
+      "AI Security"
+    ],
+    "note": "Connects infostealer-compromised AI service logins to enterprise exposure, showing how stolen user sessions and shadow-AI access become organizational identity risks.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
@@ -3305,122 +3424,5 @@
     ],
     "note": "Okta describes new detection checks for endpoint AI tools, MCP servers and OAuth-connected agents, highlighting how unmanaged agent identities and grants evade traditional IAM inventories.",
     "score": 87
-  },
-  {
-    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "2bf4e28eff7d32fd",
-    "date": "2026-09-16",
-    "source": "OpenID Foundation",
-    "title": "OIDF welcomes CISA and NIST\u2019s new guidance on token security",
-    "url": "https://openid.net/news/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Federation",
-      "Tokens",
-      "Standards"
-    ],
-    "note": "The standards community\u2019s response highlights the significance of NISTIR 8587 for SSO, federation, authorization servers, and token-protection architecture.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "1a1dabef8154e06d",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco BroadWorks CommPilot Application Software Authorization Bypass Vulnerability",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-auth-bypass-broadwor-57m9dmm5",
-    "tags": [
-      "IAM",
-      "Authorization",
-      "ITDR"
-    ],
-    "note": "A newly published advisory covers a missing-authorization-check flaw that lets low-privilege authenticated users alter selected BroadWorks configurations.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "51a6cad47b456c46",
-    "date": "2026-09-16",
-    "source": "TechRadar",
-    "title": "Chrome and Edge browsers hijacked by KREMLIN malware for credential and token session theft",
-    "url": "https://www.techradar.com/pro/security/chrome-and-edge-browsers-hijacked-by-kremlin-malware-for-credential-and-token-session-theft",
-    "tags": [
-      "Session-theft",
-      "Token-abuse",
-      "NHI"
-    ],
-    "note": "Elastic research detailed a browser-extension campaign affecting 1,515 systems that steals browser credentials, cookies, and active session information.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "66d47ee7b0683ec2",
-    "date": "2026-09-16",
-    "source": "OpenAI",
-    "title": "Our framework for reporting model misalignment",
-    "url": "https://openai.com/index/model-misalignment-reporting-framework/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Identity Security"
-    ],
-    "note": "OpenAI introduces a more systematic disclosure framework for unexpected agent behavior, useful for practitioners designing monitoring, escalation and access-control processes for autonomous systems.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-16T15:39:03.521285-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "ffa6cd36bbea9acd",
-    "date": "2026-09-16",
-    "source": "TechCrunch",
-    "title": "Your AI agents can now control your Google Home devices",
-    "url": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
-    "tags": [
-      "AI-agent authorization",
-      "MCP",
-      "OAuth",
-      "Consumer identity"
-    ],
-    "note": "Google Home\u2019s early-access MCP server illustrates the rapidly expanding authorization surface when general-purpose AI agents can invoke real-world devices and access event history.",
-    "score": 72
-  },
-  {
-    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "5dd58e4e05d5abf3",
-    "date": "2026-09-16",
-    "source": "AWS",
-    "title": "Architecting a secure landing zone in the AWS European Sovereign Cloud",
-    "url": "https://aws.amazon.com/blogs/security/architecting-a-secure-landing-zone-in-the-aws-european-sovereign-cloud/",
-    "tags": [
-      "IAM",
-      "Cloud IAM",
-      "AWS"
-    ],
-    "note": "Useful architecture guidance for identity and control-plane design in AWS\u2019s separate European Sovereign Cloud partition.",
-    "score": 72
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "35e71bee1f18567b",
-    "date": "2026-09-15",
-    "source": "NIST",
-    "title": "NISTIR 8587 Protecting Tokens and Assertions from Forgery, Theft, and Misuse: Implementation Recommendations for Agencies and Cloud Service Providers",
-    "url": "https://www.nist.gov/publications/nistir-8587-protecting-tokens-and-assertions-forgery-theft-and-misuse-implementation",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Tokens",
-      "Federation",
-      "NHI"
-    ],
-    "note": "Final guidance from NIST and CISA/JCDC covers token and assertion signing, verification, lifecycle controls, federation, SSO, APIs, and workload identity.",
-    "score": 100
   }
 ]
