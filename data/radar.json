@@ -173,6 +173,40 @@
     "score": 83
   },
   {
+    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "0d0c1a669cd0f636",
+    "date": "2026-09-30",
+    "source": "Oracle Cloud Infrastructure Documentation",
+    "title": "Managing One-Click Sign-In with Passkeys",
+    "url": "https://docs.oracle.com/en-us/iaas/releasenotes/identity/one-click-sign-in-with-passkeys.htm",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "IAM",
+      "Authentication"
+    ],
+    "note": "OCI IAM added one-click sign-in using discoverable FIDO passkeys, with WebAuthn resident-key enrollment requirements and recorded attestation outcomes.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "d5105854def1ec5c",
+    "date": "2026-09-30",
+    "source": "AWS",
+    "title": "AWS IAM Identity Center Identity Store APIs now accept resource ARNs in addition to resource IDs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "AWS",
+      "Cloud identity"
+    ],
+    "note": "IAM Identity Center API support for resource ARNs simplifies integrations with policy evaluation and CloudTrail data while reducing identifier parsing and mapping errors in identity automation.",
+    "score": 72
+  },
+  {
     "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
     "publishedDate": "2026-09-30",
     "id": "5493a0f18347df93",
@@ -188,23 +222,6 @@
     ],
     "note": "A materially relevant authentication move extending SIM-backed cryptographic device-possession signals beyond direct mobile-network sessions and reducing reliance on SMS OTPs.",
     "score": 69
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "d5105854def1ec5c",
-    "date": "2026-09-30",
-    "source": "AWS",
-    "title": "AWS IAM Identity Center Identity Store APIs now accept resource ARNs in addition to resource IDs",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
-    "tags": [
-      "IAM",
-      "IGA",
-      "AWS",
-      "Automation"
-    ],
-    "note": "Small but useful IAM integration change that removes ARN-to-ID parsing from Identity Center automations and reduces identifier-handling errors across policy and audit workflows.",
-    "score": 66
   },
   {
     "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
@@ -310,6 +327,57 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "874baac2b2ebf2b7",
+    "date": "2026-09-29",
+    "source": "Curity",
+    "title": "Curity Identity Server 11.5: passkeys across domains, custom hashing, refreshed Admin UI",
+    "url": "https://curity.io/blog/curity-identity-server-11-5/",
+    "tags": [
+      "Passkeys",
+      "OAuth",
+      "Token security",
+      "IAM"
+    ],
+    "note": "The release adds cross-domain passkeys, configurable Argon2 and SCrypt hashing, default JWT issuer validation during introspection and revocation, and DPoP-bound access tokens.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "c76657c2f12ba775",
+    "date": "2026-09-29",
+    "source": "C1.ai",
+    "title": "C1.ai launches sign-in and permissions for the apps you build",
+    "url": "https://www.c1.ai/news/press-release/c1-launches-governed-sign-in-and-application-permissions",
+    "tags": [
+      "IGA",
+      "IAM",
+      "AI-agent authorization",
+      "AuthZEN"
+    ],
+    "note": "C1.ai applies governed SSO, entitlement reviews, separation-of-duties checks and live AuthZEN authorization to AI-built applications instead of relying on stale hardcoded user lists.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "1d01e2ad89f3529a",
+    "date": "2026-09-29",
+    "source": "RSA Security",
+    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
+    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "IGA",
+      "ITDR"
+    ],
+    "note": "RSA announced Agent ID modules for discovering agents and MCP servers, assigning ownership, enforcing per-call authorization and governing agent lifecycle in cloud, hybrid or on-premises environments.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
     "publishedDate": "2026-09-29",
     "id": "6bad01184f27e279",
@@ -373,24 +441,6 @@
       "OpenAI"
     ],
     "note": "CrowdStrike says Falcon Guardian will provide visibility and runtime controls for supported Codex agents, signaling a platform shift toward security enforcement inside agent execution paths.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "1d01e2ad89f3529a",
-    "date": "2026-09-29",
-    "source": "RSA",
-    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
-    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "IGA",
-      "ITDR",
-      "Authorization"
-    ],
-    "note": "RSA announced an agent-identity platform focused on agent discovery, lifecycle governance, provenance and accountable authorization for regulated environments.",
     "score": 78
   },
   {
@@ -3373,58 +3423,5 @@
     ],
     "note": "Detailed analysis of a device-code phishing kit that captures MFA-backed Microsoft tokens, registers attacker-controlled devices, obtains long-lived access, and harvests email.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "d907372516c16d2b",
-    "date": "2026-09-15",
-    "source": "Material Security",
-    "title": "When a Demo Becomes a Real Attack: OAuth Abuse Against Google Workspace",
-    "url": "https://material.security/resources/when-a-demo-becomes-a-real-attack-oauth-abuse-against-google-workspace",
-    "tags": [
-      "OAuth",
-      "Session Theft",
-      "Token Abuse",
-      "AI-Agent Authorization"
-    ],
-    "note": "Shows how malicious OAuth consent can grant mailbox and Drive access without credential theft or MFA bypass, while tokens may survive password resets and ordinary session revocation.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "6c0ce9e5b02a4070",
-    "date": "2026-09-15",
-    "source": "IETF",
-    "title": "AI Identity Management System",
-    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
-    "tags": [
-      "NHI",
-      "AI-agents",
-      "Authorization",
-      "OAuth",
-      "Machine-identity"
-    ],
-    "note": "The new WIMSE AIMS draft proposes a lifecycle model for agent identifiers, credentials, delegated authority, observability, remediation, and transaction-scoped authorization.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
-    "publishedDate": "2026-09-15",
-    "id": "946fac6353a12972",
-    "date": "2026-09-15",
-    "source": "IETF WIMSE Working Group",
-    "title": "AI Identity Management System",
-    "url": "https://www.ietf.org/archive/id/draft-ietf-wimse-aims-00.html",
-    "tags": [
-      "AI agents",
-      "NHI",
-      "Machine identity",
-      "OAuth",
-      "Authorization"
-    ],
-    "note": "This standards draft provides a useful reference architecture for agent identifiers, credentials, delegated authority, runtime authorization, observability and remediation using WIMSE, SPIFFE, OAuth and OpenID SSF.",
-    "score": 92
   }
 ]
