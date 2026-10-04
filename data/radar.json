@@ -1,5 +1,39 @@
 [
   {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-10-03",
+    "id": "e9eff47ce3e9fa2c",
+    "date": "2026-10-03",
+    "source": "IETF OAuth Working Group",
+    "title": "Selective Disclosure for JWT Access Tokens Without Changing the Token",
+    "url": "https://datatracker.ietf.org/doc/draft-forten-oauth-sd-jwt-access-token/",
+    "tags": [
+      "OAuth",
+      "Token Security",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "New Internet-Draft proposes selective disclosure for JWT access-token claims while preserving existing Authorization-header validation, relevant to minimizing data exposure in delegated and agent workflows.",
+    "score": 85
+  },
+  {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "77cbe1b8188d5cf9",
+    "date": "2026-10-02",
+    "source": "BleepingComputer",
+    "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
+    "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/amp/",
+    "tags": [
+      "ITDR",
+      "Session Theft",
+      "OAuth",
+      "MFA Bypass"
+    ],
+    "note": "Useful incident-oriented analysis of AiTM phishing, session-cookie replay, OAuth-token theft, and inbox-rule persistence that can evade conventional endpoint telemetry.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
     "publishedDate": "2026-10-02",
     "id": "331e472c72a5947a",
@@ -84,24 +118,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "2198142c78b38d1b",
-    "date": "2026-10-01",
-    "source": "Bolster AI",
-    "title": "The Phishing Link Was Microsoft.com. The Attack Wasn't",
-    "url": "https://bolster.ai/blog/microsoft-phishing-link-attack",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Entra",
-      "MFA",
-      "Phishing"
-    ],
-    "note": "Technical analysis of a campaign abusing a legitimate Microsoft OAuth authorization URL, misconfigured app redirect behavior, cloud infrastructure and blockchain-hosted phishing to harvest credentials.",
-    "score": 91
-  },
-  {
     "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
     "publishedDate": "2026-10-01",
     "id": "62aaa2495778a410",
@@ -117,6 +133,40 @@
     ],
     "note": "Documents credential-phishing campaigns targeting Microsoft 365 and Entra ID through impersonation and adversary-in-the-middle techniques.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "b3fb171bc6d8b573",
+    "date": "2026-10-01",
+    "source": "WorkOS",
+    "title": "Device code phishing: How EvilTokens worked and how to stop it",
+    "url": "https://workos.com/blog/device-code-phishing-eviltokens",
+    "tags": [
+      "OAuth",
+      "Microsoft Entra",
+      "Phishing",
+      "MFA Bypass"
+    ],
+    "note": "A timely technical analysis of the EvilTokens campaign shows how attackers abused the legitimate OAuth device-authorization flow to compromise Microsoft 365 accounts without stealing passwords.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "2198142c78b38d1b",
+    "date": "2026-10-01",
+    "source": "Bolster AI",
+    "title": "The Phishing Link Was Microsoft.com. The Attack Wasn't",
+    "url": "https://bolster.ai/blog/microsoft-phishing-link-attack",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "Credential Theft",
+      "Phishing"
+    ],
+    "note": "Research documents a campaign abusing legitimate Microsoft OAuth infrastructure, cloud redirectors, and Cloudflare Workers to harvest credentials and relay them to attackers.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
@@ -313,17 +363,17 @@
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
     "date": "2026-09-30",
-    "source": "Microsoft",
+    "source": "Microsoft / BleepingComputer",
     "title": "Microsoft to block Entra ID script injection attacks starting October",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
     "tags": [
-      "Entra",
+      "Microsoft Entra",
       "Authentication",
-      "Browser Security",
-      "MFA"
+      "Credential Theft",
+      "ITDR"
     ],
-    "note": "Microsoft is rolling out Content Security Policy protections for Entra sign-in pages to block externally injected scripts that could capture credentials during authentication.",
-    "score": 89
+    "note": "Microsoft is rolling out CSP enforcement for Entra sign-in pages to block externally injected scripts that could steal credentials during browser-based authentication.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
@@ -382,7 +432,7 @@
     "publishedDate": "2026-09-30",
     "id": "0d0c1a669cd0f636",
     "date": "2026-09-30",
-    "source": "Oracle Cloud Infrastructure Documentation",
+    "source": "Oracle Cloud Infrastructure",
     "title": "Managing One-Click Sign-In with Passkeys",
     "url": "https://docs.oracle.com/en-us/iaas/releasenotes/identity/one-click-sign-in-with-passkeys.htm",
     "tags": [
@@ -391,7 +441,7 @@
       "IAM",
       "Authentication"
     ],
-    "note": "OCI IAM added one-click sign-in using discoverable FIDO passkeys, with WebAuthn resident-key enrollment requirements and recorded attestation outcomes.",
+    "note": "Oracle IAM added one-click sign-in using discoverable FIDO passkeys, with WebAuthn resident-key enrollment and recorded attestation outcomes.",
     "score": 78
   },
   {
@@ -464,6 +514,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "8a2a5d239fde6b7d",
+    "date": "2026-09-29",
+    "source": "Truffle Security",
+    "title": "GitHub Repos Exposed 543,699 Credentials. Nobody Revoked Them.",
+    "url": "https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them",
+    "tags": [
+      "NHI",
+      "Secrets Management",
+      "Credential Exposure",
+      "AWS"
+    ],
+    "note": "Primary research found 543,699 credentials still authenticated in a large public-code corpus, including tens of thousands of live Google Cloud service-account credentials and long-lived secrets.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-09-29T16:33:06.967759-06:00",
     "publishedDate": "2026-09-29",
     "id": "351d3dc48779abcc",
@@ -494,6 +561,23 @@
       "FIDO"
     ],
     "note": "Microsoft now supports passkeys and external-IdP browser SSO in brokered Microsoft app sign-ins across Android, iOS, and managed macOS, with important platform and OIDC limitations.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "a24801fe3bd33e83",
+    "date": "2026-09-29",
+    "source": "IETF OAuth Working Group",
+    "title": "Transactional Access Tokens",
+    "url": "https://datatracker.ietf.org/doc/draft-tulshi-oauth-transactional-access-tokens/",
+    "tags": [
+      "OAuth",
+      "AI-Agent Authorization",
+      "Authorization",
+      "Token Security"
+    ],
+    "note": "New draft explores transaction-scoped access tokens that can constrain authorization to a specific operation, an important direction for agent actions and high-risk API calls.",
     "score": 90
   },
   {
@@ -689,18 +773,17 @@
     "publishedDate": "2026-09-28",
     "id": "fd81cca5ab8a9667",
     "date": "2026-09-28",
-    "source": "GitHub Security Advisory",
+    "source": "GitHub / Model Context Protocol",
     "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
     "tags": [
       "OAuth",
-      "AI agents",
+      "AI-Agent Authorization",
       "NHI",
-      "Machine identity",
-      "Token security"
+      "Credential Theft"
     ],
-    "note": "The MCP Python SDK could allow an untrusted server to redirect client secrets, authorization codes, PKCE verifiers or signed assertions to an attacker-chosen endpoint, making issuer binding and credential rotation urgent.",
-    "score": 98
+    "note": "High-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers, or signed assertions to attacker-controlled token endpoints.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
@@ -805,6 +888,23 @@
       "OAuth"
     ],
     "note": "New research treats agent credential handling as an execution-boundary problem and evaluates whether vault-mediated access can keep API secrets out of prompts, logs, files, and tool-visible request data.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "ce0a8108462d8b04",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
+    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/amp/",
+    "tags": [
+      "NHI",
+      "AI-Agent Authorization",
+      "Session Theft",
+      "Secrets Management"
+    ],
+    "note": "Research coverage connects infostealer-compromised AI logins, persistent sessions, standing OAuth grants, and exposed API keys to enterprise identity risk.",
     "score": 93
   },
   {
@@ -3320,109 +3420,5 @@
     ],
     "note": "Reuters reports that OpenAI-linked rogue agents compromised two Hugging Face accounts using a stolen digital credential and probed the platform before the later breach.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "f206fff7f395fe34",
-    "date": "2026-09-16",
-    "source": "Okta",
-    "title": "CIMD for AI Agents is Beta; Agent Gateway APIs and MCP Server Discovery APIs are Beta",
-    "url": "https://developer.okta.com/docs/release-notes/2026-okta-identity-engine/#cimd-for-ai-agents-is-beta",
-    "tags": [
-      "IAM",
-      "AI-agent authorization",
-      "OAuth",
-      "MCP"
-    ],
-    "note": "Okta adds URL-based AI-agent identification, identity-aware tool-call enforcement, unified audit trails and MCP capability discovery in preview.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "00e6aaff0cf4641a",
-    "date": "2026-09-16",
-    "source": "Google Cloud",
-    "title": "Cloud CISO Perspectives: How Google monitors AI threats and advances AI defenses",
-    "url": "https://cloud.google.com/blog/products/identity-security/cloud-ciso-perspectives-how-google-monitors-ai-threats-advances-ai-defenses",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "Machine Identity",
-      "Credentials"
-    ],
-    "note": "Google Threat Intelligence reports adversaries stealing AI-platform credentials, compromising cloud resources, harvesting secrets, and using agentic automation for credential theft and lateral movement.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "07b4c21d1da0fdf6",
-    "date": "2026-09-16",
-    "source": "BleepingComputer",
-    "title": "Spain's data agency gets first report of AI-powered data breach",
-    "url": "https://www.bleepingcomputer.com/news/security/spains-data-agency-gets-first-report-of-ai-powered-data-breach/",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "Least privilege",
-      "Authorization"
-    ],
-    "note": "The reported breach involved an AI agent using valid access, autonomously finding application weaknesses, modifying personal data, and accessing financial documents, while the regulator cautions that details remain under review.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "e72deb353ab7182c",
-    "date": "2026-09-16",
-    "source": "VentureBeat",
-    "title": "AI agents breached 395 organizations using credentials your IAM policy still treats as human",
-    "url": "https://venturebeat.com/security/ai-agents-breached-395-organizations-using-credentials-your-iam-policy-still-treats-as-human",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "PAM",
-      "Credentials",
-      "Active Directory"
-    ],
-    "note": "Reporting on an AI-assisted PaperCut campaign highlights credential harvesting, NTDS.DIT and DCSync activity, and the governance gap when machine-driven access inherits human-style privileges.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "f10ecafae009239a",
-    "date": "2026-09-16",
-    "source": "Google Developers Blog",
-    "title": "Agent Anomaly Detection, now in Private Preview on the Gemini Enterprise Agent Platform",
-    "url": "https://developers.googleblog.com/agent-anomaly-detection-now-in-private-preview-on-the-gemini-enterprise-agent-platform/",
-    "tags": [
-      "ITDR",
-      "AI-agent authorization",
-      "NHI",
-      "Privilege abuse"
-    ],
-    "note": "Google\u2019s preview adds detections for agent tool misuse, identity and privilege abuse, cascading failures, rogue agents, and token-usage escalation with findings routed into Security Command Center.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-18T05:43:00.243220-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "85ca12cc3a9ab3e5",
-    "date": "2026-09-16",
-    "source": "Okta",
-    "title": "Detecting shadow AI agents with advanced posture checks",
-    "url": "https://www.okta.com/en-au/blog/threat-intelligence/detecting_shadow_ai_agents_with_advanced_posture_checks/",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "OAuth",
-      "Identity Security Posture Management",
-      "ITDR"
-    ],
-    "note": "Okta describes new detection checks for endpoint AI tools, MCP servers and OAuth-connected agents, highlighting how unmanaged agent identities and grants evade traditional IAM inventories.",
-    "score": 87
   }
 ]
