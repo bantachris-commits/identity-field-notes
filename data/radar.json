@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-10-03",
+    "id": "1b4e9709193b240f",
+    "date": "2026-10-03",
+    "source": "BleepingComputer",
+    "title": "Danish university DTU breach exposes data of up to 200,000 people",
+    "url": "https://www.bleepingcomputer.com/news/security/danish-university-dtu-breach-exposes-data-of-up-to-200000-people/",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "Incident"
+    ],
+    "note": "Hackers accessed the university\u2019s identity and access management system and downloaded data tied to as many as 200,000 users, making this a direct IAM-system compromise to review for containment and downstream access risk.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
     "publishedDate": "2026-10-03",
     "id": "e9eff47ce3e9fa2c",
@@ -85,6 +101,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "2b92c4ceeda71991",
+    "date": "2026-10-02",
+    "source": "BleepingComputer",
+    "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "tags": [
+      "AD",
+      "PAM",
+      "Credential Abuse",
+      "Incident"
+    ],
+    "note": "Post-compromise activity included Active Directory enumeration, credential spraying and remote command execution, illustrating how an initial application compromise can become an identity and privilege attack path.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
     "publishedDate": "2026-10-02",
     "id": "331e472c72a5947a",
@@ -133,6 +166,22 @@
     ],
     "note": "A concrete architecture for routing Auth0 outbound identity traffic across isolated AWS VPCs while preserving centralized policy and auditability.",
     "score": 72
+  },
+  {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "c2bc59a43e0e4ef6",
+    "date": "2026-10-02",
+    "source": "BleepingComputer",
+    "title": "Microsoft\u2019s X account hacked in crypto token pump-and-dump scheme",
+    "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
+    "tags": [
+      "IAM",
+      "Account Takeover",
+      "Incident"
+    ],
+    "note": "Microsoft confirmed unauthorized access to its high-profile X account, a useful recent case for examining social-account recovery, session control and privileged brand-account protection.",
+    "score": 70
   },
   {
     "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
@@ -289,6 +338,23 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "9c9742ebbf4e85dc",
+    "date": "2026-09-30",
+    "source": "BleepingComputer",
+    "title": "Over 543,000 valid credentials exposed in public GitHub repositories",
+    "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
+    "tags": [
+      "NHI",
+      "Secrets Management",
+      "Cloud IAM",
+      "Incident"
+    ],
+    "note": "Truffle Security found 543,699 working credentials, including 69,041 valid Google Cloud service-account credentials, highlighting persistent secret exposure and inadequate revocation.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "854bd82d12eaf31b",
@@ -393,6 +459,24 @@
     "score": 93
   },
   {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "c328be79f138af80",
+    "date": "2026-09-30",
+    "source": "Okta",
+    "title": "Okta Identity Engine API release notes (2026",
+    "url": "https://developer.okta.com/docs/release-notes/2026-okta-identity-engine/",
+    "tags": [
+      "Okta",
+      "CIAM",
+      "AI Agents",
+      "MCP",
+      "Passkeys"
+    ],
+    "note": "The September 30 release adds preview support for third-party OIDC Agent SSO, MCP-server authorization controls, AI-agent profile attributes and automatic phishing resistance for FastPass authentication chains.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
     "publishedDate": "2026-09-30",
     "id": "f266688a3274c76d",
@@ -450,17 +534,16 @@
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
     "date": "2026-09-30",
-    "source": "Microsoft / BleepingComputer",
+    "source": "BleepingComputer",
     "title": "Microsoft to block Entra ID script injection attacks starting October",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
     "tags": [
       "Microsoft Entra",
-      "Authentication",
-      "Credential Theft",
-      "ITDR"
+      "IAM",
+      "Authentication"
     ],
-    "note": "Microsoft is rolling out CSP enforcement for Entra sign-in pages to block externally injected scripts that could steal credentials during browser-based authentication.",
-    "score": 84
+    "note": "Microsoft\u2019s planned CSP enforcement will block externally injected scripts in browser-based Entra sign-in flows, with migration implications for extensions and tools that modify authentication pages.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
@@ -512,6 +595,23 @@
       "Privilege management"
     ],
     "note": "Calls for governing autonomous systems by action privileges rather than model intelligence and for replacing recognition-based trust with stronger contextual authentication and authorization controls.",
+    "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "f02e730c7b1238c7",
+    "date": "2026-09-30",
+    "source": "BleepingComputer",
+    "title": "AI\u2019s Third Wave: Coworkers Break the Security Model That Worked for Agents",
+    "url": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "OAuth",
+      "Authorization"
+    ],
+    "note": "The analysis examines how persistent AI coworkers can inherit standing human privileges, contaminate audit trails and create ungoverned agent-to-agent delegation when agents lack distinct identities.",
     "score": 83
   },
   {
@@ -736,23 +836,6 @@
     "score": 84
   },
   {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "1d01e2ad89f3529a",
-    "date": "2026-09-29",
-    "source": "RSA Security",
-    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
-    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "IGA",
-      "ITDR"
-    ],
-    "note": "RSA announced Agent ID modules for discovering agents and MCP servers, assigning ownership, enforcing per-call authorization and governing agent lifecycle in cloud, hybrid or on-premises environments.",
-    "score": 82
-  },
-  {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
     "publishedDate": "2026-09-29",
     "id": "6bad01184f27e279",
@@ -767,6 +850,23 @@
     ],
     "note": "This practical example shows an AI coding agent operating against identity-management APIs and highlights the need for scoped access, guardrails and auditable administrative actions.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "1d01e2ad89f3529a",
+    "date": "2026-09-29",
+    "source": "RSA",
+    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
+    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
+    "tags": [
+      "AI Agents",
+      "NHI",
+      "IGA",
+      "Authorization"
+    ],
+    "note": "RSA announced Agent ID for discovering, registering and governing AI agents while proving the authority behind consequential actions, making it a notable regulated-market move in agent identity.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
@@ -846,13 +946,12 @@
     "tags": [
       "Microsoft Entra",
       "NHI",
-      "Machine Identity",
-      "ITDR",
-      "Cloud IAM",
-      "AI-Agent Authorization"
+      "Service Accounts",
+      "PAM",
+      "Incident"
     ],
-    "note": "Microsoft observed Storm-3168 using compromised service principals to enumerate Azure, retrieve keys, delete more than 100 storage accounts, and target recovery controls, underscoring the destructive impact of over-privileged workload identities.",
-    "score": 99
+    "note": "Microsoft observed compromised Azure service principals conducting reconnaissance, credential collection and destructive actions against more than 100 storage accounts, with public credential exposure and excessive permissions implicated.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
@@ -959,6 +1058,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
+    "publishedDate": "2026-09-28",
+    "id": "c97ff75e84c28b08",
+    "date": "2026-09-28",
+    "source": "BleepingComputer",
+    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
+    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
+    "tags": [
+      "OAuth",
+      "Session Theft",
+      "AI Agents",
+      "NHI",
+      "Incident"
+    ],
+    "note": "SOCRadar\u2019s analysis of infostealer records tied stolen AI-service sessions and credentials to more than 80,000 corporate domains, underscoring replayable cookies, OAuth grants and API keys as identity-control failures.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
     "publishedDate": "2026-09-28",
     "id": "37378583fce2b515",
@@ -992,24 +1109,6 @@
     ],
     "note": "Research coverage connects infostealer-compromised AI logins, persistent sessions, standing OAuth grants, and exposed API keys to enterprise identity risk.",
     "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "c97ff75e84c28b08",
-    "date": "2026-09-28",
-    "source": "BleepingComputer / SOCRadar",
-    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-    "tags": [
-      "credential-theft",
-      "session-security",
-      "OAuth",
-      "NHI",
-      "shadow-IT"
-    ],
-    "note": "The report analyzes infostealer records tied to more than 80,000 corporate domains and highlights stolen AI sessions, standing OAuth grants, API keys and shadow accounts as identity-control exposure.",
-    "score": 91
   },
   {
     "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
@@ -1368,6 +1467,23 @@
     ],
     "note": "CISA added a critical WSO2 authentication-bypass vulnerability to the exploited-vulnerability catalog, making identity-edge and federation infrastructure a near-term remediation priority.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
+    "publishedDate": "2026-09-25",
+    "id": "f68c3e112be34bb3",
+    "date": "2026-09-25",
+    "source": "arXiv",
+    "title": "Crypto-bound identity-verified capability tokens for coordinating distributed AI agents: A proposal",
+    "url": "https://arxiv.org/abs/2609.30824",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "OAuth"
+    ],
+    "note": "The proposal explores cryptographically binding capability tokens to agent and issuer identities so delegated authority can be scoped, verified and audited across distributed agent workflows.",
+    "score": 81
   },
   {
     "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
@@ -3301,125 +3417,5 @@
     ],
     "note": "The post lays out how PAM must extend to workloads and AI agents, with SPIFFE-style workload identity and controls for standing machine privilege as central design themes.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "802d70e1e636b544",
-    "date": "2026-09-17",
-    "source": "Ping Identity",
-    "title": "AI Agent Standards Are Evolving. Security Can't Wait.",
-    "url": "https://www.pingidentity.com/en/resources/blog/post/ai-agent-standards-security.html",
-    "tags": [
-      "AI-agent authorization",
-      "OAuth",
-      "OpenID",
-      "IAM"
-    ],
-    "note": "A useful current overview of agent identity standards, delegated authority, Cross-App Access, OAuth extensions, and runtime governance gaps.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "0f07ede3193cff6e",
-    "date": "2026-09-17",
-    "source": "Semperis",
-    "title": "Semperis Secures IMDA Accreditation to Strengthen Identity Resilience in the AI Era",
-    "url": "https://www.semperis.com/press-release/semperis-secures-imda-accreditation-to-strengthen-identity-resilience-in-the-ai-era/",
-    "tags": [
-      "ITDR",
-      "Identity Resilience",
-      "AD",
-      "Entra"
-    ],
-    "note": "The accreditation is relevant to practitioners tracking identity-resilience assurance and regional public-sector requirements, although the announcement is more market signal than technical disclosure.",
-    "score": 67
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "a2afd80e5d3d9a98",
-    "date": "2026-09-16",
-    "source": "Varonis Threat Labs",
-    "title": "TrustSink: How a Rogue External MFA Provider Steals Passwords",
-    "url": "https://www.varonis.com/blog/trustsink",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "Authentication",
-      "ITDR",
-      "Identity Persistence"
-    ],
-    "note": "Research demonstrates how a privileged attacker can register a rogue Entra external authentication provider that captures replacement passwords while returning valid signed tokens and surviving password resets.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "f421c661cb5dd293",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
-    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ISE-ABP-VNSW7Tn5.html",
-    "tags": [
-      "IAM",
-      "Authentication",
-      "Authorization",
-      "Incident response"
-    ],
-    "note": "Critical advisory for an unauthenticated remote authentication bypass in Cisco ISE\u2019s web-management API, directly relevant to network-access identity infrastructure.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "b7690ab12e8e050d",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerability",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ISE-ABP-VNSW7Tn5",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Authentication"
-    ],
-    "note": "Cisco disclosed a critical ISE API authentication-control flaw that can enable unauthorized access to the identity-management appliance and web management interface.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "d88f3a959a00e75f",
-    "date": "2026-09-16",
-    "source": "Red Hat",
-    "title": "RHSA-2026:68280 - Security Advisory: Red Hat build of Keycloak 26.4.16 Security Update",
-    "url": "https://access.redhat.com/errata/RHSA-2026:68280",
-    "tags": [
-      "IAM",
-      "SSO",
-      "Authorization",
-      "Privilege Escalation",
-      "Federation"
-    ],
-    "note": "The update fixes Keycloak issues including realm-admin takeover through impersonation, policy-enforcer bypass, broker username collisions, and filesystem probing.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "a972ccaf525ee9f6",
-    "date": "2026-09-16",
-    "source": "Sansec",
-    "title": "Brevo supply chain attack hits 100k+ sites with Wordpress backdoors and Clickfix malware",
-    "url": "https://sansec.io/research/brevo-supply-chain-attack",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "OAuth",
-      "Incident"
-    ],
-    "note": "Sansec\u2019s independent investigation links the Brevo compromise to a long-lived, full-permission Cloudflare API key hardcoded in source and subsequent abuse across customer sites.",
-    "score": 95
   }
 ]
