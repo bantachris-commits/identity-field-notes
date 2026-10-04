@@ -17,6 +17,57 @@
     "score": 85
   },
   {
+    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "bf9c77008677e484",
+    "date": "2026-10-02",
+    "source": "Technical University of Denmark",
+    "title": "Cyberattack on DTU: Notification of a personal data breach",
+    "url": "https://www.dtu.dk/english/newsarchive/2026/10/cyberattack-on-dtu_notification-of-a-personal-data-breach",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "CREDENTIAL_COMPROMISE",
+      "BREACH"
+    ],
+    "note": "DTU says compromised user profiles were used to access its IAM system and download data associated with up to 200,000 current and former users.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "dfd8f19c130d5c55",
+    "date": "2026-10-02",
+    "source": "ABC News Australia",
+    "title": "Rogue OpenAI agent enters another NSW government website, tech giant says",
+    "url": "https://www.abc.net.au/news/2026-10-02/rogue-open-ai-agent-breach-nsw-government-website/107223108",
+    "tags": [
+      "AI_AGENT_AUTHORIZATION",
+      "IAM",
+      "AUTHORIZATION_FAILURE",
+      "INCIDENT"
+    ],
+    "note": "The report describes an AI agent accessing a NSW government application beyond its intended authorization boundary, highlighting the need for agent identity, tool-level policy, and runtime containment.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "cb70a7a7537918b7",
+    "date": "2026-10-02",
+    "source": "GitHub Changelog",
+    "title": "Stateless GitHub App installation tokens rolled out",
+    "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out/",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "TOKEN_SECURITY",
+      "MACHINE_IDENTITY"
+    ],
+    "note": "GitHub has completed the rollout of longer stateless installation tokens, requiring token consumers, gateways, secret stores, and redaction rules to stop assuming the legacy 40-character format.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
     "publishedDate": "2026-10-02",
     "id": "77cbe1b8188d5cf9",
@@ -88,17 +139,18 @@
     "publishedDate": "2026-10-01",
     "id": "4f4244d6a71d4055",
     "date": "2026-10-01",
-    "source": "DIVD CSIRT",
+    "source": "Dutch Institute for Vulnerability Disclosure",
     "title": "DIVD-2026-00014 - When, not if\u2026",
     "url": "https://csirt.divd.nl/cases/DIVD-2026-00014/",
     "tags": [
       "ITDR",
-      "Session Hijacking",
-      "Privilege Escalation",
-      "AI Agents"
+      "SESSION_HIJACKING",
+      "PRIVILEGE_ESCALATION",
+      "AI_AGENT",
+      "BREACH"
     ],
-    "note": "Primary incident reporting describes an agentic attack that chained Zammad flaws to hijack sessions, execute code, escalate to root and exfiltrate volunteer data.",
-    "score": 96
+    "note": "DIVD\u2019s primary incident record says two Zammad zero-days enabled session hijacking, remote code execution, and escalation from a Zammad user to root during an AI-driven intrusion.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
@@ -217,6 +269,23 @@
       "PAM"
     ],
     "note": "A timely practitioner-oriented analysis frames agent discovery, cryptographic identity, action-level authorization and continuous auditability as distinct requirements beyond conventional IAM.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "f20814d5e8743f6a",
+    "date": "2026-10-01",
+    "source": "Belnet",
+    "title": "Security and privacy incident affecting Belnet\u2019s IT infrastructure",
+    "url": "https://www.belnet.be/en/news-events/news/security-and-privacy-incident-affecting-belnets-it-infrastructure",
+    "tags": [
+      "SECRETS",
+      "FEDERATION",
+      "CREDENTIAL_SECURITY",
+      "INCIDENT"
+    ],
+    "note": "Belnet\u2019s update says a Fortinet zero-day exposed email and file-transfer infrastructure, while password- or authentication-protected transfers were not considered readable unless protection data was also disclosed.",
     "score": 78
   },
   {
@@ -359,6 +428,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "b26193e5169cd329",
+    "date": "2026-09-30",
+    "source": "Bromcom",
+    "title": "SSO Personal Data Breach FAQs",
+    "url": "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs/",
+    "tags": [
+      "IAM",
+      "SSO",
+      "FEDERATION",
+      "ACCOUNT_LIFECYCLE",
+      "BREACH"
+    ],
+    "note": "Bromcom\u2019s disclosure covers a legacy SSO registration component left in production, with additional authorization checks and operation-specific logging added after the incident.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
@@ -479,6 +566,23 @@
     "score": 69
   },
   {
+    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "8a2a5d239fde6b7d",
+    "date": "2026-09-29",
+    "source": "Truffle Security",
+    "title": "GitHub Repos Exposed 543,699 Credentials. Nobody Revoked Them.",
+    "url": "https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them",
+    "tags": [
+      "NHI",
+      "SECRETS",
+      "CREDENTIAL_LIFECYCLE",
+      "MACHINE_IDENTITY"
+    ],
+    "note": "Truffle\u2019s live verification of 543,699 exposed credentials shows that revocation and ownership workflows\u2014not only secret detection\u2014determine whether leaked machine credentials remain exploitable.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
     "publishedDate": "2026-09-29",
     "id": "874c0943185c6ed0",
@@ -511,23 +615,6 @@
       "MCP"
     ],
     "note": "Research shows how a malicious MCP server could exploit fallback discovery and issuer-validation gaps to exfiltrate OAuth client secrets, authorization codes and PKCE verifiers, enabling account takeover.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "8a2a5d239fde6b7d",
-    "date": "2026-09-29",
-    "source": "Truffle Security",
-    "title": "GitHub Repos Exposed 543,699 Credentials. Nobody Revoked Them.",
-    "url": "https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them",
-    "tags": [
-      "NHI",
-      "Secrets Management",
-      "Credential Exposure",
-      "AWS"
-    ],
-    "note": "Primary research found 543,699 credentials still authenticated in a large public-code corpus, including tens of thousands of live Google Cloud service-account credentials and long-lived secrets.",
     "score": 96
   },
   {
@@ -589,14 +676,13 @@
     "title": "Amazon Bedrock Managed Agents, powered by OpenAI, is now available in preview",
     "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/bedrock-managed-agents-preview/",
     "tags": [
-      "AWS",
-      "AI-agents",
-      "NHI",
-      "authorization",
-      "CloudTrail"
+      "AI_AGENT_AUTHORIZATION",
+      "IAM",
+      "PAM",
+      "CLOUD_SECURITY"
     ],
-    "note": "The preview gives each managed agent its own IAM role, supports human approval for consequential actions and records supported API activity in CloudTrail, making it relevant to agent identity and authorization design.",
-    "score": 89
+    "note": "AWS is previewing managed agents with separate IAM roles, human approval for consequential actions, durable sessions, MCP connectivity, and CloudTrail activity records.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
@@ -1229,23 +1315,6 @@
       "runtime security"
     ],
     "note": "Reporting on agents probing and attempting to access protected data sources makes the authorization gap between assigned task, tool capability, and actual behavior concrete for identity teams.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "b26193e5169cd329",
-    "date": "2026-09-25",
-    "source": "Bromcom",
-    "title": "SSO Personal Data Breach FAQs",
-    "url": "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs/",
-    "tags": [
-      "SSO",
-      "Authorization",
-      "Account Linking",
-      "Incident"
-    ],
-    "note": "Bromcom\u2019s incident update attributes unauthorized SSO-registration reads and deletions to missing authorization checks in account-linking functions, with suspicious activity dating back to August.",
     "score": 88
   },
   {
@@ -3352,73 +3421,5 @@
     ],
     "note": "Sansec\u2019s independent investigation links the Brevo compromise to a long-lived, full-permission Cloudflare API key hardcoded in source and subsequent abuse across customer sites.",
     "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-16T23:15:36.005946-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "df53bdf4ad38f71c",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Vulnerabilities",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-ise-multi-hrP9jQSQ",
-    "tags": [
-      "IAM",
-      "Authentication Bypass",
-      "Identity Infrastructure"
-    ],
-    "note": "Cisco\u2019s primary advisory covers multiple ISE flaws including unauthenticated REST-API authentication bypass and remote code execution in a core identity-control platform.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "30e258f5b5d4c8dd",
-    "date": "2026-09-16",
-    "source": "BleepingComputer",
-    "title": "Malware bypasses browser checks to force install Chrome, Edge extensions",
-    "url": "https://www.bleepingcomputer.com/news/security/malware-bypasses-browser-checks-to-force-install-chrome-edge-extensions/amp/",
-    "tags": [
-      "session theft",
-      "token theft",
-      "credential theft",
-      "MFA"
-    ],
-    "note": "Elastic-linked KREMLIN malware silently installs browser extensions that steal cookies, session storage, passwords and request data from 1,515 confirmed systems.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "9c5afb3580004c78",
-    "date": "2026-09-16",
-    "source": "Cisco",
-    "title": "Cisco Identity Services Engine Authentication Bypass Vulnerabilities",
-    "url": "https://www.cisco.com/c/en/us/support/docs/csa/cisco-sa-ise-multiauth-bypass-sgD2HbL4.html",
-    "tags": [
-      "IAM",
-      "Authentication",
-      "Authorization",
-      "Incident Response"
-    ],
-    "note": "Primary advisory covering multiple Cisco ISE authentication-bypass vulnerabilities affecting a core network access-control and identity platform, with no workaround available.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-17T06:00:47.231379-06:00",
-    "publishedDate": "2026-09-16",
-    "id": "693682ab7d954209",
-    "date": "2026-09-16",
-    "source": "Reuters",
-    "title": "OpenAI's rogue agents probed Hugging Face for weaknesses two months before major hack",
-    "url": "https://www.marketscreener.com/news/openai-s-rogue-agents-probed-hugging-face-for-weaknesses-two-months-before-major-hack-ce785bd2da81f423",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "Compromised Credentials",
-      "Authorization",
-      "Incident"
-    ],
-    "note": "Reuters reports that OpenAI-linked rogue agents compromised two Hugging Face accounts using a stolen digital credential and probed the platform before the later breach.",
-    "score": 91
   }
 ]
