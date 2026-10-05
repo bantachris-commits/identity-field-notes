@@ -322,6 +322,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
+    "publishedDate": "2026-10-01",
+    "id": "5d72109a0b3eaeee",
+    "date": "2026-10-01",
+    "source": "Nextgov/FCW",
+    "title": "China-linked hackers posed as former US officials, Anthropic employee to target AI experts",
+    "url": "https://www.nextgov.com/cybersecurity/2026/10/china-linked-hackers-posed-former-us-officials-anthropic-employee-target-ai-experts/416356/?oref=ng-homepage-noscript-river",
+    "tags": [
+      "IAM",
+      "Credential theft",
+      "Cloud identity",
+      "Phishing"
+    ],
+    "note": "Proofpoint-linked reporting describes impersonation campaigns directing AI-policy targets to fake OneDrive pages designed to steal Microsoft cloud credentials, highlighting trusted-relationship abuse against high-value identities.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
     "publishedDate": "2026-10-01",
     "id": "605991a228701be1",
@@ -406,6 +423,23 @@
     ],
     "note": "A reported AI-driven intrusion chained Zammad flaws for session hijacking, remote code execution and escalation from an application user to root, making it a useful case study in agent-speed identity abuse and containment.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "fb825217816e73c3",
+    "date": "2026-09-30",
+    "source": "Cisco Product Security Incident Response Team",
+    "title": "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability",
+    "url": "https://team-development.cisco.com/c/en/us/support/docs/csa/cisco-sa-sdwan-webauth-xr8beuuU.html",
+    "tags": [
+      "IAM",
+      "PAM",
+      "Authentication failure",
+      "ITDR"
+    ],
+    "note": "Cisco disclosed a critical, unauthenticated API authentication bypass granting admin privileges and said it was being actively exploited, making this a priority review for privileged management-plane exposure.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
@@ -821,6 +855,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "7313d5e64734621e",
+    "date": "2026-09-29",
+    "source": "arXiv",
+    "title": "Authorization for Self-Modifying AI Agent Populations: Conserving Authority across Replacement, Forking, and Rollback",
+    "url": "https://arxiv.org/abs/2610.00347",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Privilege management",
+      "Authorization"
+    ],
+    "note": "This research addresses authority leakage when identity-bearing agents fork, replace themselves or roll back, proposing lineage-bound authorization, atomic handoff, revocation closure and non-reminting of spent authority.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
     "publishedDate": "2026-09-29",
     "id": "874baac2b2ebf2b7",
@@ -855,6 +906,23 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "1d01e2ad89f3529a",
+    "date": "2026-09-29",
+    "source": "RSA",
+    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
+    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
+    "tags": [
+      "AI-agent authorization",
+      "IGA",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "RSA announced an agent-identity platform combining discovery, per-call MCP/tool authorization, named human approval for high-risk actions and lifecycle governance, with cloud, hybrid and on-premises enforcement options.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
     "publishedDate": "2026-09-29",
     "id": "6bad01184f27e279",
@@ -869,23 +937,6 @@
     ],
     "note": "This practical example shows an AI coding agent operating against identity-management APIs and highlights the need for scoped access, guardrails and auditable administrative actions.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "1d01e2ad89f3529a",
-    "date": "2026-09-29",
-    "source": "RSA",
-    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
-    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "IGA",
-      "Authorization"
-    ],
-    "note": "RSA announced Agent ID for discovering, registering and governing AI agents while proving the authority behind consequential actions, making it a notable regulated-market move in agent identity.",
-    "score": 78
   },
   {
     "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
@@ -977,18 +1028,17 @@
     "publishedDate": "2026-09-28",
     "id": "fd81cca5ab8a9667",
     "date": "2026-09-28",
-    "source": "GitHub Security Advisory",
+    "source": "GitHub / Model Context Protocol",
     "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
     "tags": [
-      "AI-agent authorization",
       "OAuth",
       "NHI",
-      "Machine identity",
-      "Supply chain"
+      "AI-agent authorization",
+      "Token abuse"
     ],
-    "note": "High-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, and PKCE verifiers, with fixes requiring upgrades, issuer pinning, credential rotation, and token revocation.",
-    "score": 99
+    "note": "A high-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers and signed assertions to attacker-controlled token endpoints; fixed versions and post-exposure rotation steps are documented in the advisory.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
@@ -3370,55 +3420,5 @@
     ],
     "note": "Material PAM development: Delinea is applying Anthropic\u2019s frontier model to test vaulting, secret rotation, session brokering, and just-in-time authorization code in an isolated environment.",
     "score": 85
-  },
-  {
-    "firstSeenAt": "2026-09-20T10:26:41.119853-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "fc4dafc7bc11bbd5",
-    "date": "2026-09-17",
-    "source": "Malwarebytes",
-    "title": "Revolut phishing texts appear days after data breach",
-    "url": "https://www.malwarebytes.com/blog/threat-intel/2026/09/revolut-phishing-texts-appear-days-after-data-breach",
-    "tags": [
-      "Identity-Proofing",
-      "Account-Takeover",
-      "Phishing",
-      "Session-Risk"
-    ],
-    "note": "Malwarebytes reports follow-on phishing against Revolut customers after the disclosure, illustrating how leaked identity documents and account data can support convincing recovery and takeover lures.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-17T11:14:05.431495-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "3d58f07ee2751228",
-    "date": "2026-09-17",
-    "source": "Okta",
-    "title": "Lessons learned from securing our digital workforce",
-    "url": "https://www.okta.com/newsroom/articles/lessons-from-securing-our-digital-workforce/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "AI-agent-authorization",
-      "IGA"
-    ],
-    "note": "Okta describes its internal deployment of AI agents as first-class directory identities with delegated access checks, secure token storage, tool scoping, and auditable governance.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-17T15:41:06.560721-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "62f2164a08774a59",
-    "date": "2026-09-17",
-    "source": "Keeper Security / SailPoint",
-    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
-    "url": "https://www.prnewswire.com/news-releases/keeper-security-and-sailpoint-partner-to-automate-privileged-access-governance-302881339.html",
-    "tags": [
-      "PAM",
-      "IGA",
-      "Machine Identity"
-    ],
-    "note": "The new connector links SailPoint governance with KeeperPAM provisioning, deprovisioning, entitlement management, vaults, and privileged resources.",
-    "score": 78
   }
 ]
