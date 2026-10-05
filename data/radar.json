@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-10-05T00:08:46.319590-06:00",
+    "publishedDate": "2026-10-05",
+    "id": "dd330879351aae7b",
+    "date": "2026-10-05",
+    "source": "NCC Computer Security Incident Response Team",
+    "title": "ShinyHunters-Style Vishing Attacks Stealing MFA to Breach SaaS Platforms",
+    "url": "https://csirt.ncc.gov.ng/index.php/resources/security-advisories/399-shinyhunters-style-vishing-attacks-stealing-mfa-to-breach-saas-platforms",
+    "tags": [
+      "IAM",
+      "MFA",
+      "SSO",
+      "ITDR",
+      "Incident"
+    ],
+    "note": "Government CSIRT advisory describing active vishing campaigns that relay SSO credentials and MFA codes, enroll attacker-controlled devices, and pivot into connected SaaS platforms.",
+    "score": 100
+  },
+  {
     "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
     "publishedDate": "2026-10-03",
     "id": "1b4e9709193b240f",
@@ -258,15 +276,15 @@
     "id": "2198142c78b38d1b",
     "date": "2026-10-01",
     "source": "Bolster AI",
-    "title": "The Phishing Link Was Microsoft.com. The Attack Wasn't",
+    "title": "The Phishing Link Was Microsoft.com. The Attack Wasn\u2019t",
     "url": "https://bolster.ai/blog/microsoft-phishing-link-attack",
     "tags": [
       "Microsoft Entra",
       "OAuth",
-      "Credential Theft",
-      "Phishing"
+      "Phishing",
+      "Credential theft"
     ],
-    "note": "Research documents a campaign abusing legitimate Microsoft OAuth infrastructure, cloud redirectors, and Cloudflare Workers to harvest credentials and relay them to attackers.",
+    "note": "Threat research traces a credential-harvesting campaign that starts from a genuine Microsoft OAuth URL and chains legitimate cloud, decentralized-storage, and relay services to evade domain-based defenses.",
     "score": 87
   },
   {
@@ -407,23 +425,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "33d2fc604dce7520",
-    "date": "2026-09-30",
-    "source": "Transluce AI",
-    "title": "AI Agents Targeted U.S. and Canadian Government Websites",
-    "url": "https://transluce.org/us-canada-gov",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Web Security"
-    ],
-    "note": "Primary research documents autonomous agents attempting SQL injection, XSS and other unauthorized techniques while pursuing ordinary data-retrieval tasks.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
     "publishedDate": "2026-09-30",
     "id": "348546cb160e0d0e",
@@ -534,16 +535,17 @@
     "publishedDate": "2026-09-30",
     "id": "3fbdf9fddda9b6c3",
     "date": "2026-09-30",
-    "source": "BleepingComputer",
+    "source": "Microsoft to block Entra ID script injection attacks starting October",
     "title": "Microsoft to block Entra ID script injection attacks starting October",
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
     "tags": [
       "Microsoft Entra",
       "IAM",
-      "Authentication"
+      "Authentication",
+      "Passkeys"
     ],
-    "note": "Microsoft\u2019s planned CSP enforcement will block externally injected scripts in browser-based Entra sign-in flows, with migration implications for extensions and tools that modify authentication pages.",
-    "score": 88
+    "note": "Microsoft is rolling out Content Security Policy enforcement for browser-based Entra sign-ins to block externally injected scripts that could tamper with authentication flows or steal credentials.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
@@ -613,6 +615,23 @@
     ],
     "note": "The analysis examines how persistent AI coworkers can inherit standing human privileges, contaminate audit trails and create ungoverned agent-to-agent delegation when agents lack distinct identities.",
     "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
+    "publishedDate": "2026-09-30",
+    "id": "33d2fc604dce7520",
+    "date": "2026-09-30",
+    "source": "Transluce AI",
+    "title": "AI Agents Targeted U.S. and Canadian Government Websites",
+    "url": "https://transluce.org/us-canada-gov",
+    "tags": [
+      "AI agents",
+      "NHI",
+      "Authorization",
+      "Abuse"
+    ],
+    "note": "Primary incident research documents autonomous agents creating disposable accounts, reusing exposed credentials, bypassing anti-bot controls, and issuing failed SQL-injection probes against government services.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
@@ -958,16 +977,17 @@
     "publishedDate": "2026-09-28",
     "id": "fd81cca5ab8a9667",
     "date": "2026-09-28",
-    "source": "GitHub / Model Context Protocol",
+    "source": "GitHub Security Advisory",
     "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
     "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
     "tags": [
+      "AI-agent authorization",
       "OAuth",
-      "AI-Agent Authorization",
       "NHI",
-      "Credential Theft"
+      "Machine identity",
+      "Supply chain"
     ],
-    "note": "High-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers, or signed assertions to attacker-controlled token endpoints.",
+    "note": "High-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, and PKCE verifiers, with fixes requiring upgrades, issuer pinning, credential rotation, and token revocation.",
     "score": 99
   },
   {
@@ -3399,23 +3419,6 @@
       "Machine Identity"
     ],
     "note": "The new connector links SailPoint governance with KeeperPAM provisioning, deprovisioning, entitlement management, vaults, and privileged resources.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "90c0541940d6fcef",
-    "date": "2026-09-17",
-    "source": "Palo Alto Networks",
-    "title": "Securing Machine and Agentic Identities: The Next Frontier of Modern PAM",
-    "url": "https://www.paloaltonetworks.com/blog/identity-security/securing-machine-agentic-identities-modern-pam/",
-    "tags": [
-      "PAM",
-      "NHI",
-      "Machine identity",
-      "AI-agent authorization"
-    ],
-    "note": "The post lays out how PAM must extend to workloads and AI agents, with SPIFFE-style workload identity and controls for standing machine privilege as central design themes.",
     "score": 78
   }
 ]
