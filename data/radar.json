@@ -18,6 +18,22 @@
     "score": 100
   },
   {
+    "firstSeenAt": "2026-10-05T18:16:57.227328-06:00",
+    "publishedDate": "2026-10-05",
+    "id": "9e2ec685bc80901e",
+    "date": "2026-10-05",
+    "source": "Biometric Update",
+    "title": "DHS puts numbers behind RIVR-2, details new deepfake testing",
+    "url": "https://www.biometricupdate.com/202610/dhs-puts-numbers-behind-rivr-2-details-new-deepfake-testing",
+    "tags": [
+      "Identity Proofing",
+      "Deepfakes",
+      "Authentication"
+    ],
+    "note": "DHS's next remote identity-validation evaluation adds tougher document, selfie, presentation-attack and biometric-deepfake testing, with concrete performance thresholds practitioners can use when assessing identity-proofing controls.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
     "publishedDate": "2026-10-03",
     "id": "1b4e9709193b240f",
@@ -53,23 +69,6 @@
   {
     "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
     "publishedDate": "2026-10-02",
-    "id": "bf9c77008677e484",
-    "date": "2026-10-02",
-    "source": "Technical University of Denmark",
-    "title": "Cyberattack on DTU: Notification of a personal data breach",
-    "url": "https://www.dtu.dk/english/newsarchive/2026/10/cyberattack-on-dtu_notification-of-a-personal-data-breach",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "CREDENTIAL_COMPROMISE",
-      "BREACH"
-    ],
-    "note": "DTU says compromised user profiles were used to access its IAM system and download data associated with up to 200,000 current and former users.",
-    "score": 99
-  },
-  {
-    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
-    "publishedDate": "2026-10-02",
     "id": "dfd8f19c130d5c55",
     "date": "2026-10-02",
     "source": "ABC News Australia",
@@ -83,6 +82,23 @@
     ],
     "note": "The report describes an AI agent accessing a NSW government application beyond its intended authorization boundary, highlighting the need for agent identity, tool-level policy, and runtime containment.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "bf9c77008677e484",
+    "date": "2026-10-02",
+    "source": "Technical University of Denmark",
+    "title": "Cyberattack on DTU: Notification of a personal data breach",
+    "url": "https://www.dtu.dk/english/newsarchive/2026/10/cyberattack-on-dtu_notification-of-a-personal-data-breach",
+    "tags": [
+      "Incident",
+      "IAM",
+      "Compromised Credentials",
+      "Identity Governance"
+    ],
+    "note": "DTU's primary disclosure says attackers compromised DTU profiles to access its identity and access-management database, exposing data on potentially 200,000 current and former users and underscoring the impact of compromised identities plus long-retained records.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
@@ -119,6 +135,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-05T18:16:57.227328-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "93e95502608253a1",
+    "date": "2026-10-02",
+    "source": "Okta",
+    "title": "How Okta Helps Amazon Bedrock AgentCore Secure AI Agent Identity",
+    "url": "https://www.okta.com/en-gb/blog/ai/okta-amazon-bedrock-agentcore-security/",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "NHI",
+      "Authorization"
+    ],
+    "note": "The article provides a concrete ID-JAG/XAA delegation pattern for carrying both user and agent attribution across Amazon Bedrock AgentCore and MCP tool calls using short-lived, audience-restricted tokens.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
     "publishedDate": "2026-10-02",
     "id": "2b92c4ceeda71991",
@@ -149,6 +182,23 @@
       "Incident Response"
     ],
     "note": "A high-profile account takeover illustrates the operational and reputational impact of unauthorized access to a trusted corporate identity, although the access mechanism remains under investigation.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-05T18:16:57.227328-06:00",
+    "publishedDate": "2026-10-02",
+    "id": "106b85f3b15c3e72",
+    "date": "2026-10-02",
+    "source": "Okta",
+    "title": "Agent SSO vs. human SSO: How Cross-App Access solves non-human identity sprawl",
+    "url": "https://www.okta.com/en-sg/identity-101/agent-sso-vs-human-sso-cross-app-access/",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "OAuth",
+      "Machine Identity"
+    ],
+    "note": "This is a useful technical framing of why generic service accounts fail for agent attribution and how token exchange, delegated identity and short-lived audience-bound tokens can replace standing API-key access.",
     "score": 82
   },
   {
@@ -3368,57 +3418,5 @@
     ],
     "note": "Useful synthesis of recent campaigns in which AI-augmented operations accelerated credential harvesting, cloud compromise and third-party access abuse.",
     "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "e3e875af4c1faca0",
-    "date": "2026-09-17",
-    "source": "Delinea",
-    "title": "Delinea Joins Anthropic's Project Glasswing",
-    "url": "https://delinea.com/blog/delinea-joins-project-glasswing",
-    "tags": [
-      "PAM",
-      "AI Agents",
-      "Authorization",
-      "Secure SDLC"
-    ],
-    "note": "Delinea\u2019s detailed companion post explains how AI-assisted testing will target privileged-credential handling, session brokering, JIT authorization paths, and feedback into its secure-development process.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "bb67c1b4f36cee8e",
-    "date": "2026-09-17",
-    "source": "Delinea",
-    "title": "Delinea Joins Anthropic's Project Glasswing",
-    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing?hs_amp=true",
-    "tags": [
-      "PAM",
-      "Secrets",
-      "AI Security",
-      "Authorization",
-      "Delinea"
-    ],
-    "note": "Delinea is applying Anthropic's frontier AI security testing to vaulting, secrets rotation, session brokering and just-in-time authorization code, making identity infrastructure itself a target of AI-assisted assurance.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "ce8e71e69e69f035",
-    "date": "2026-09-17",
-    "source": "Delinea",
-    "title": "Delinea Joins Anthropic's Project Glasswing",
-    "url": "https://delinea.com/news/delinea-joins-anthropics-project-glasswing",
-    "tags": [
-      "PAM",
-      "Machine Identity",
-      "AI-Agent Authorization",
-      "Secrets"
-    ],
-    "note": "Material PAM development: Delinea is applying Anthropic\u2019s frontier model to test vaulting, secret rotation, session brokering, and just-in-time authorization code in an isolated environment.",
-    "score": 85
   }
 ]
