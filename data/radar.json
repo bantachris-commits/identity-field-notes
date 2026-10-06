@@ -1,5 +1,59 @@
 [
   {
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
+    "publishedDate": "2026-10-06",
+    "id": "d25e9cd8abafea95",
+    "date": "2026-10-06",
+    "source": "SailPoint",
+    "title": "From Chaos to Control: SailPoint Unlocks a Secure Agentic Era with Autonomous Identity Security",
+    "url": "https://www.globenewswire.com/news-release/2026/10/06/3375450/0/en/from-chaos-to-control-sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security.html",
+    "tags": [
+      "IGA",
+      "NHI",
+      "AI-agent-authorization",
+      "ITDR",
+      "JIT-access"
+    ],
+    "note": "SailPoint announced agentic identity governance, autonomous identity-security posture management, runtime authorization, agent kill switches, and zero-standing-privilege controls for human, machine, and AI-agent identities.",
+    "score": 89
+  },
+  {
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
+    "publishedDate": "2026-10-06",
+    "id": "26e65fb177375e4a",
+    "date": "2026-10-06",
+    "source": "BleepingComputer",
+    "title": "Fake ChatGPT, Gemini Sites steal advertising accounts, MFA codes",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
+    "tags": [
+      "MFA",
+      "Phishing",
+      "OAuth",
+      "Okta",
+      "Credential-theft"
+    ],
+    "note": "A new browser-in-the-browser campaign impersonates ChatGPT, Gemini, Claude, and Perplexity to harvest credentials and MFA state from advertising administrators, including through fake Google and Okta workflows.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
+    "publishedDate": "2026-10-06",
+    "id": "9029a82c833da02a",
+    "date": "2026-10-06",
+    "source": "PlainID",
+    "title": "PlainID Turns Any Gateway Into An Agentic Ready Control Plane",
+    "url": "https://www.plainid.com/news/plainid-turns-any-gateway-into-an-agentic-ready-control-plane/",
+    "tags": [
+      "AI-agent-authorization",
+      "OAuth",
+      "MCP",
+      "NHI",
+      "Runtime-authorization"
+    ],
+    "note": "PlainID introduced gateway enforcement that binds human and agent identities while governing MCP tools, agent intent, parameters, data exposure, and auditable runtime decisions.",
+    "score": 83
+  },
+  {
     "firstSeenAt": "2026-10-05T00:08:46.319590-06:00",
     "publishedDate": "2026-10-05",
     "id": "dd330879351aae7b",
@@ -16,6 +70,24 @@
     ],
     "note": "Government CSIRT advisory describing active vishing campaigns that relay SSO credentials and MFA codes, enroll attacker-controlled devices, and pivot into connected SaaS platforms.",
     "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
+    "publishedDate": "2026-10-05",
+    "id": "24c0230d59ca4716",
+    "date": "2026-10-05",
+    "source": "Cloud Foundry Foundation",
+    "title": "CVE-2026-59357 \u2013 Self-UAA OIDC Configuration allows JWT injection to establish unauthorized sessions",
+    "url": "https://www.cloudfoundry.org/blog/cve-2026-59357-self-uaa-oidc-configuration-allows-jwt-injection-to-establish-unauthorized-sessions/",
+    "tags": [
+      "OIDC",
+      "OAuth",
+      "Session-abuse",
+      "Authorization",
+      "Federation"
+    ],
+    "note": "A high-severity UAA flaw lets an authenticated user bypass the OAuth authorization-code exchange with an incorrectly accepted JWT and obtain a session whose effective privilege depends on shadow-account group membership.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-06T00:48:08.094698-06:00",
@@ -36,21 +108,21 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-10-06T00:48:08.094698-06:00",
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
     "publishedDate": "2026-10-05",
-    "id": "490d004cceaebf15",
+    "id": "425afe6b1f00af8c",
     "date": "2026-10-05",
-    "source": "Oracle Cloud Infrastructure Blog",
-    "title": "IAM Enables AI Transformation at Oracle",
-    "url": "https://blogs.oracle.com/cloud-infrastructure/iam-enables-ai-transformation-at-oracle",
+    "source": "MSSP Alert",
+    "title": "TrustSink attack abuses Microsoft Entra ID to steal credentials",
+    "url": "https://www.msspalert.com/brief/trustsink-attack-abuses-microsoft-entra-id-to-steal-credentials",
     "tags": [
-      "AI Agents",
-      "IAM",
-      "OAuth",
-      "MCP",
-      "Workload Identity"
+      "Microsoft-Entra",
+      "MFA",
+      "Federation",
+      "Credential-theft",
+      "Post-compromise"
     ],
-    "note": "Oracle describes using MCP security, just-in-time access, least-privilege reviews, human approval, and workload identity federation to constrain enterprise AI agents without long-lived provider keys.",
+    "note": "The report highlights TrustSink abuse of Entra\u2019s federated external-MFA trust model, where a rogue provider can capture replacement passwords during legitimate sign-ins after privileged compromise.",
     "score": 86
   },
   {
@@ -90,6 +162,24 @@
   {
     "firstSeenAt": "2026-10-06T00:48:08.094698-06:00",
     "publishedDate": "2026-10-05",
+    "id": "490d004cceaebf15",
+    "date": "2026-10-05",
+    "source": "Oracle Cloud Infrastructure",
+    "title": "IAM Enables AI Transformation at Oracle",
+    "url": "https://blogs.oracle.com/cloud-infrastructure/iam-enables-ai-transformation-at-oracle",
+    "tags": [
+      "IAM",
+      "AI-agent-authorization",
+      "MCP",
+      "Workload-identity",
+      "Secrets"
+    ],
+    "note": "Oracle describes using MCP authorization, PKCE, resource indicators, workload identity federation, and short-lived provider tokens to eliminate long-lived API keys for AI agents and scanners.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-06T00:48:08.094698-06:00",
+    "publishedDate": "2026-10-05",
     "id": "52d719a090e177bf",
     "date": "2026-10-05",
     "source": "IDEMIA Public Security",
@@ -103,6 +193,23 @@
     ],
     "note": "An independent BixeLab assessment reported zero successful biometric-injection attacks across 900 attempts, making this a relevant identity-proofing validation as synthetic-identity and deepfake attacks mature.",
     "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
+    "publishedDate": "2026-10-05",
+    "id": "5d9910278592e345",
+    "date": "2026-10-05",
+    "source": "AWS Security Blog",
+    "title": "AWS Continuum sets a new standard in autonomous code security",
+    "url": "https://aws.amazon.com/blogs/security/aws-continuum-sets-a-new-standard-in-autonomous-code-security/",
+    "tags": [
+      "AI-agents",
+      "Machine-identity",
+      "Cloud-security",
+      "Authorization"
+    ],
+    "note": "AWS reports benchmark results for Continuum, an autonomous multi-agent system that discovers, validates, and repairs vulnerabilities while operating within isolated execution and access boundaries.",
+    "score": 72
   },
   {
     "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
@@ -3318,109 +3425,5 @@
     ],
     "note": "The piece examines the broader passkey ecosystem\u2014including authenticators, WebAuthn, CTAP, metadata services and PKI\u2014rather than treating post-quantum migration as an algorithm-only problem.",
     "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "3e25d109671f8b32",
-    "date": "2026-09-18",
-    "source": "Dark Reading",
-    "title": "MFA Won't Save You From OAuth Consent Abuse",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse",
-    "tags": [
-      "OAuth",
-      "Consent",
-      "Authorization",
-      "ITDR",
-      "Session Tokens"
-    ],
-    "note": "The analysis usefully separates authentication strength from post-login authorization risk, emphasizing consent governance, scope discipline, monitoring, and rapid revocation.",
-    "score": 81
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "454198dd47723dc3",
-    "date": "2026-09-18",
-    "source": "Descope",
-    "title": "Build Auth-Ready MCP Apps With Descope and Skybridge",
-    "url": "https://www.descope.com/blog/post/descope-skybridge-mcp",
-    "tags": [
-      "MCP",
-      "OAuth",
-      "AI Agents",
-      "Authorization"
-    ],
-    "note": "The integration illustrates a concrete OAuth 2.1 and scope-enforcement pattern for MCP applications, including dynamic client registration and authorization before tool execution.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-18T15:11:19.861706-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "bc900014a902a0b4",
-    "date": "2026-09-17",
-    "source": "AWS",
-    "title": "Implementing defense-in-depth authorization for MCP tools on Amazon Quick",
-    "url": "https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "AI Agents",
-      "Authorization",
-      "OAuth"
-    ],
-    "note": "A practical AWS pattern applies Entra claims, MFA evidence, geofencing, RBAC, tool allowlists, parameter checks, and immutable auditing to every MCP invocation.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "7238e34645fcb6ee",
-    "date": "2026-09-17",
-    "source": "BleepingComputer",
-    "title": "Cisco warns of max severity ISE zero-day exploited in attacks",
-    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-identity-service-engine-zero-day-exploited-in-attacks/",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Authentication bypass",
-      "Incident"
-    ],
-    "note": "Actively exploited CVE-2026-76460 bypasses authentication on Cisco Identity Services Engine management APIs, directly exposing a control plane used for user and device access policy.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-17T23:06:45.590379-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "4436bc9edc20363f",
-    "date": "2026-09-17",
-    "source": "Hush Security",
-    "title": "New Research Finds 1 in 8 Credentials in Public MCP Config Files Are Hardcoded Secrets and Most Scanning Can't See Them",
-    "url": "https://www.prnewswire.com/il/news-releases/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them-302881871.html",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "MCP",
-      "secrets"
-    ],
-    "note": "Analysis of roughly 82,000 public MCP configurations finds hardcoded, broad-scope and non-expiring agent credentials that conventional secret scanners often miss.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-19T14:56:56.983746-06:00",
-    "publishedDate": "2026-09-17",
-    "id": "1f6331a858ab0fc3",
-    "date": "2026-09-17",
-    "source": "Hush Security",
-    "title": "New Research Finds 1 in 8 Credentials in Public MCP Config Files Are Hardcoded Secrets and Most Scanning Can\u2019t See Them",
-    "url": "https://www.hush.security/resources/new-research-finds-1-in-8-credentials-in-public-mcp-config-files-are-hardcoded-secrets-and-most-scanning-cant-see-them/",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "AI Agents",
-      "Secrets"
-    ],
-    "note": "Analysis of roughly 82,000 public MCP configurations finds widespread hardcoded, opaque, broad-scope and non-expiring credentials in AI-agent tooling.",
-    "score": 94
   }
 ]
