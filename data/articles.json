@@ -1,5 +1,81 @@
 [
   {
+    "id": "2026-10-06-morning-brief",
+    "date": "2026-10-06",
+    "coverageDate": "2026-10-05",
+    "edition": "MORNING EDITION // 2026.10.06",
+    "title": "Agent Authority, Deepfake Testing and New Identity Controls",
+    "dek": "Highlights from 2026-10-05. October 5 brought practical moves in agent authorization, payment delegation and biometric fraud testing, alongside new evidence for evaluating identity-proofing defenses.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "Authorization",
+      "Machine IAM",
+      "Identity Proofing"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-05, verified against linked sources. Edition dated 2026-10-06; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Machine IAM",
+        "title": "Oracle Details IAM Controls for Enterprise AI Agents",
+        "summary": "Oracle describes using MCP security, OAuth authorization flows, user-consent propagation and backend permission checks to keep AI assistants within the requesting employee\u2019s authority. For higher-risk operations, it combines just-in-time access, least-privilege reviews, human approval, service-specific deny policies and workload identity federation instead of long-lived model-provider API keys.",
+        "why": "The useful pattern is architectural rather than product-specific: preserve human context, constrain the agent and the calling service separately, and issue temporary authority for each task. Teams designing agent workflows should treat delegation boundaries and audit trails as IAM requirements, not application afterthoughts.",
+        "source": "Oracle Cloud Infrastructure Blog",
+        "url": "https://blogs.oracle.com/cloud-infrastructure/iam-enables-ai-transformation-at-oracle",
+        "confidence": "Primary source",
+        "published_date": "2026-10-05",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authorization",
+        "title": "Thales Adds Runtime Access Controls for Gemini Enterprise Agents",
+        "summary": "Thales says its AI Security Fabric integration with Google Cloud Gemini Enterprise applies policies during agent interactions with users, data, models and connected tools. The controls are intended to restrict what agents can access, share or execute after the initial user sign-in, including in scenarios involving prompt injection, data leakage and agent-to-agent activity.",
+        "why": "Runtime policy enforcement addresses a gap in conventional SSO: authentication establishes who initiated a task, but not whether every subsequent tool call remains within scope. Practitioners should ask how policies are evaluated at tool invocation, how denied actions are logged and whether agent-to-agent delegation preserves the original authorization boundary.",
+        "source": "FIDO Alliance",
+        "url": "https://fidoalliance.org/id-tech-thales-brings-agent-access-controls-to-google-cloud-gemini-enterprise/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-05",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "DHS Expands RIVR Testing for Document, Selfie and Deepfake Defenses",
+        "summary": "Biometric Update reports that DHS\u2019s next Remote Identity Validation Rally expands testing of identity-document validation, selfie matching and presentation-attack detection, while adding an experimental biometric-deepfake track. The program sets measurable thresholds for processing time and error rates, introduces more difficult image conditions and attack instruments, and is moving toward recurring evaluations.",
+        "why": "The value is in replacing broad vendor claims with repeatable test conditions and explicit trade-offs between fraud detection and legitimate-user completion. Buyers should examine the methodology, the treatment of failures and whether vendors will disclose their otherwise-aliased results before using benchmark numbers in procurement decisions.",
+        "source": "Biometric Update",
+        "url": "https://www.biometricupdate.com/202610/dhs-puts-numbers-behind-rivr-2-details-new-deepfake-testing",
+        "confidence": "Independent reporting",
+        "published_date": "2026-10-05",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authentication",
+        "title": "IDEMIA Separates Consumer Authentication from AI-Agent Payment Authority",
+        "summary": "IDEMIA Secure Transactions introduced an agentic-payment design combining passkey-based consumer authentication with tokenized payment credentials constrained by merchant, amount, category and time. The company also says the flow preserves evidence that the consumer consented to an agent-initiated transaction, including for later dispute handling.",
+        "why": "The separation is the important control: proving the consumer\u2019s identity should not give an agent unrestricted spending power. Payment and identity teams can apply the same model elsewhere by issuing purpose-bound, time-limited authority instead of reusing a broadly privileged user credential.",
+        "source": "FIDO Alliance",
+        "url": "https://fidoalliance.org/id-tech-idemia-adds-passkeys-and-restricted-use-tokens-for-ai-agent-payments/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-05",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "IDEMIA Reports Independent WebCapture Testing Against Deepfake Injection Attacks",
+        "summary": "IDEMIA Public Security says BixeLab evaluated its WebCapture SDK against 900 biometric-injection attempts spanning deepfakes, face swaps, replay, morphing and avatar-reenactment attacks, with no successful bypasses within the test scope. The announcement also reports two classification errors across 300 legitimate-user transactions and alignment with the substantial level of CEN/TS 18099:2024.",
+        "why": "The result is relevant evidence, but it remains a bounded vendor-sponsored announcement rather than proof of universal deepfake resistance. Evaluators should request the full test scope, attack artifacts, operating conditions and independent reproducibility before treating the figures as representative of production performance.",
+        "source": "IDEMIA North America",
+        "url": "https://na.idemia.com/2026/10/05/idemia-public-securitys-webcapture-sdk-earns-independent-validation-against-deepfake-and-biometric-fraud-attacks/",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-05",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-02-morning-brief",
     "date": "2026-10-02",
     "coverageDate": "2026-10-01",
@@ -14,7 +90,7 @@
       "Phishing"
     ],
     "readTime": "3 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-01, verified against linked sources. Edition dated 2026-10-02; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
