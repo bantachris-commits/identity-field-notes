@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-10-13",
-  "requested_at": "2026-10-13T14:12:37.385Z",
+  "requested_at": "2026-10-13T14:55:30Z",
   "requested_by": "chatgpt",
-  "reason": "Recover stalled morning edition after isolating concurrency groups"
+  "reason": "Retry morning publication after consolidating GitHub Pages deployment and clearing stale concurrency"
 }
