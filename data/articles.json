@@ -1,5 +1,59 @@
 [
   {
+    "id": "2026-10-13-morning-brief",
+    "date": "2026-10-13",
+    "coverageDate": "2026-10-12",
+    "edition": "MORNING EDITION // 2026.10.13",
+    "title": "Identity Field Notes: October 12 recap",
+    "dek": "Highlights from 2026-10-12. Yesterday\u2019s verified highlights centered on cross-boundary AI-agent authorization, an Active Directory credential-protection change, and broader enterprise passkey deployment.",
+    "tags": [
+      "IAM",
+      "IGA",
+      "Authentication",
+      "Machine IAM",
+      "AI-agent authorization"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-12, verified against linked sources. Edition dated 2026-10-13; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Standards",
+        "title": "OpenID Foundation publishes threat model for cross-boundary AI agents",
+        "summary": "The OpenID Foundation\u2019s AI Identity Management Community Group published a protocol-agnostic threat model for agents operating across security boundaries. It covers agent identification, trust between domains, resource confusion, scope broadening during translation, excessive access lifetime, and credential capture; the paper is explicitly a threat model rather than a finished solution. ([openid.net](https://openid.net/oidf-publishes-threat-model-for-cross-boundary-ai-agents/))",
+        "why": "The useful shift is treating agent federation as an authorization problem, not simply a token-format problem. Architects should document boundary crossings and verify that identity, scope, audience, and revocation semantics survive translation between domains.",
+        "source": "OpenID Foundation",
+        "url": "https://openid.net/oidf-publishes-threat-model-for-cross-boundary-ai-agents/",
+        "confidence": "Primary source",
+        "published_date": "2026-10-12",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Vendor Watch",
+        "title": "SailPoint to make site-specific encryption the only Password Interceptor mode",
+        "summary": "SailPoint said an upcoming Password Interceptor for Microsoft Active Directory release will remove the legacy encryption option for service credentials stored in Active Directory. Existing installations using the legacy default are expected to migrate automatically during upgrade, while live password-change event forwarding over TLS is unchanged; SailPoint described the timing as tentatively mid-to-late October. ([developer.sailpoint.com](https://developer.sailpoint.com/discuss/t/customer-notice-password-interceptor-for-microsoft-active-directory-upcoming-encryption-mode-change/225360))",
+        "why": "This is a deployment-planning issue, not an immediate incident. Teams should inventory domain controllers running Password Interceptor, test the in-place credential migration, and confirm rollback and service-account recovery procedures before the upgrade window.",
+        "source": "SailPoint Developer Community",
+        "url": "https://developer.sailpoint.com/discuss/t/customer-notice-password-interceptor-for-microsoft-active-directory-upcoming-encryption-mode-change/225360",
+        "confidence": "Primary source",
+        "published_date": "2026-10-12",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Market",
+        "title": "Intercede launches MyID Authenticate for enterprise passkey coverage",
+        "summary": "Intercede launched MyID Authenticate, which it says combines FIDO authentication and passkey issuance with Windows 10/11 logon, offline use, SAML and OpenID Connect federation, VPN access, and RADIUS support for legacy applications. The vendor also claims on-premises, cloud, and hybrid deployment, Microsoft Entra integration, and crypto-agility; those capability statements remain vendor claims rather than independently tested findings. ([securityinformed.com](https://www.securityinformed.com/news/intercede-myid-authenticate-fido-passkey-authentication-co-917-ga.1791811858.html))",
+        "why": "The strategic question is whether passkeys can cover desktop, VPN, offline, and legacy access without creating a parallel identity stack. Buyers should validate recovery, device-bound versus synced credential policy, federation behavior, and operational ownership of the FIDO server before treating broad protocol support as deployment readiness.",
+        "source": "SecurityInformed",
+        "url": "https://www.securityinformed.com/news/intercede-myid-authenticate-fido-passkey-authentication-co-917-ga.1791811858.html",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-12",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-06-morning-brief",
     "date": "2026-10-06",
     "coverageDate": "2026-10-05",
@@ -14,7 +68,7 @@
       "Identity Proofing"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-05, verified against linked sources. Edition dated 2026-10-06; coverage uses America/Denver. Verify material details at the source.",
     "stories": [

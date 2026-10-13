@@ -1,5 +1,123 @@
 [
   {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-13",
+    "id": "043e0041bb8e9a81",
+    "date": "2026-10-13",
+    "source": "Salt Security",
+    "title": "The State of Agentic AI and API Security 2H 2026: Agents Are Acting. Most Organizations Cannot Stop Them.",
+    "url": "https://salt.security/blog/agents-are-acting-most-organizations-cannot-stop-them",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "OAuth",
+      "ITDR"
+    ],
+    "note": "New research finds widespread unauthorized agent actions, shadow or misconfigured MCP infrastructure, and limited ability to contain misbehaving agents before irreversible actions.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-12",
+    "id": "9274082e5b50caef",
+    "date": "2026-10-12",
+    "source": "OpenID Foundation",
+    "title": "OIDF publishes threat model for cross-boundary AI agents",
+    "url": "https://openid.net/oidf-publishes-threat-model-for-cross-boundary-ai-agents/",
+    "tags": [
+      "AI-agent authorization",
+      "Federation",
+      "OAuth",
+      "Standards"
+    ],
+    "note": "The AIIM community group\u2019s protocol-agnostic threat model catalogs identity, trust, scope translation, credential capture, and revocation failures when agents cross security boundaries.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-12",
+    "id": "c00766bc891c7258",
+    "date": "2026-10-12",
+    "source": "SailPoint Developer Community",
+    "title": "Customer Notice: Password Interceptor for Microsoft Active Directory - Upcoming Encryption Mode Change",
+    "url": "https://developer.sailpoint.com/discuss/t/customer-notice-password-interceptor-for-microsoft-active-directory-upcoming-encryption-mode-change/225360",
+    "tags": [
+      "IGA",
+      "Secrets management",
+      "Active Directory"
+    ],
+    "note": "SailPoint is making site-specific encryption keys the only supported protection for Password Interceptor service credentials stored in Active Directory, with migration implications for domain controllers.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-12",
+    "id": "62093055a2b39dad",
+    "date": "2026-10-12",
+    "source": "SecurityInformed",
+    "title": "Intercede Launches MyID Authenticate Passkey Solution",
+    "url": "https://www.securityinformed.com/news/intercede-myid-authenticate-fido-passkey-authentication-co-917-ga.1791811858.html",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Authentication"
+    ],
+    "note": "MyID Authenticate extends FIDO passkey sign-in to Windows desktops, offline logon, VPNs, legacy applications, and hybrid Entra-connected environments.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-08",
+    "id": "3653dcf2bfa53e5a",
+    "date": "2026-10-08",
+    "source": "Asymmetric Security",
+    "title": "Extortion via OAuth Application",
+    "url": "https://www.asymmetricsecurity.com/newsroom/m365-extortion-via-oauth-application/",
+    "tags": [
+      "OAuth",
+      "NHI",
+      "Secrets management",
+      "Microsoft Entra",
+      "Incident response"
+    ],
+    "note": "A documented cloud extortion case shows how a stolen OAuth client secret enabled app-only Entra access to Graph, SharePoint, mailboxes, and files without a compromised user or MFA challenge.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-08",
+    "id": "12f9d7282eaaf65f",
+    "date": "2026-10-08",
+    "source": "The New Stack / The Next Web",
+    "title": "Zenity says one prompt took over every AgentCore agent in an AWS account",
+    "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
+    "tags": [
+      "AWS",
+      "NHI",
+      "AI-agent authorization",
+      "Least privilege"
+    ],
+    "note": "Zenity\u2019s research and AWS\u2019s response highlight the blast-radius risk of default or broadly delegated AgentCore roles, including cross-agent access to chats, code, and secrets.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-08",
+    "id": "b91219c4f2831c92",
+    "date": "2026-10-08",
+    "source": "OpenID Foundation",
+    "title": "OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification Approved",
+    "url": "https://openid.net/openid-connect-ephemeral-subject-identifier-1-0-final-specification-approved/",
+    "tags": [
+      "OpenID",
+      "Federation",
+      "Privacy",
+      "Standards"
+    ],
+    "note": "OIDF approved the final OpenID Connect Ephemeral Subject Identifier specification, a material federation and identifier-privacy standardization milestone.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
     "publishedDate": "2026-10-06",
     "id": "d25e9cd8abafea95",
@@ -70,6 +188,23 @@
     ],
     "note": "Government CSIRT advisory describing active vishing campaigns that relay SSO credentials and MFA codes, enroll attacker-controlled devices, and pivot into connected SaaS platforms.",
     "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
+    "publishedDate": "2026-10-05",
+    "id": "0c14479088799485",
+    "date": "2026-10-05",
+    "source": "Danish Immigration Service and SIRI",
+    "title": "Unauthorised parties have gained access to citizens' CPR data",
+    "url": "https://nyidanmark.dk/en-GB/News-Front-Page/2026/10/Uvedkommende-har-faaet-adgang-til-borgeres-CPR-oplysninger",
+    "tags": [
+      "Incident",
+      "Valid accounts",
+      "Third-party access",
+      "Identity data"
+    ],
+    "note": "Denmark\u2019s official disclosure confirms unauthorized access to CPR records through a serious incident affecting a trusted identity-data access path; the precise compromise mechanism remains under investigation.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
@@ -3293,137 +3428,5 @@
     ],
     "note": "A privileged Obot user could register an attacker-controlled MCP URL and make the platform query internal services or cloud metadata, illustrating authorization boundaries and credential-exposure risks in agent infrastructure.",
     "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-18T22:57:40.605467-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "06d4854d19963488",
-    "date": "2026-09-18",
-    "source": "Dark Reading",
-    "title": "AI Agent Breaches Spanish Organization, Modifies Personal Data",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
-    "tags": [
-      "AI Agents",
-      "IAM",
-      "NHI",
-      "Credential Abuse"
-    ],
-    "note": "Reporting based on a Spanish data-protection authority disclosure describes an AI-assisted intrusion that found loose credentials, authenticated to an internal system, exploited an application weakness, and modified records.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "408ef5d6647039b9",
-    "date": "2026-09-18",
-    "source": "SecurityWeek",
-    "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
-    "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
-    "tags": [
-      "SAML",
-      "Federation",
-      "Secrets",
-      "Supply Chain"
-    ],
-    "note": "Reporting links the compromise of 138 Brevo accounts, including a Trezor account, to a vulnerability in SAML SSO handling and subsequent abuse of an API key and credentials.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "524128cfb99a04ce",
-    "date": "2026-09-18",
-    "source": "Red Hat",
-    "title": "CVE-2026-94000",
-    "url": "https://access.redhat.com/security/cve/cve-2026-94000",
-    "tags": [
-      "IAM",
-      "Authorization",
-      "Privilege Escalation",
-      "Keycloak"
-    ],
-    "note": "A Keycloak Admin REST API authorization failure lets a delegated administrator add themselves to a high-privilege group and potentially obtain realm-admin control.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "f3de0e1ae86a2dd7",
-    "date": "2026-09-18",
-    "source": "AWS Security Blog",
-    "title": "The new AgentCore runtime: Elastic, optimized, and consistently fast starts",
-    "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "Machine identity"
-    ],
-    "note": "AWS\u2019s new managed AgentCore runtime adds session isolation, identity, and observability foundations for long-running and autonomous agents, making it relevant to teams defining agent trust boundaries.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "9332cd2646bb9a2f",
-    "date": "2026-09-18",
-    "source": "World Economic Forum",
-    "title": "Why trust in AI agents requires open global standards",
-    "url": "https://www.weforum.org/stories/artificial-intelligence/why-trust-in-ai-agents-requires-open-global-standards/",
-    "tags": [
-      "AI-agent authorization",
-      "FIDO",
-      "OAuth",
-      "NHI"
-    ],
-    "note": "This practitioner-relevant framework argues that agentic transactions need cryptographically verifiable agent identity, scoped authorization, accountability, and revocation rather than opaque bearer sessions.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-19T05:26:30.660639-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "937487800fe2f6b2",
-    "date": "2026-09-18",
-    "source": "AWS",
-    "title": "AWS Continuum now supports credential testing and accessible domain suggestions",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "AWS\u2019s penetration-testing agent can now validate supplied login credentials and discover authenticated application domains before testing, making credential scope and authentication coverage operationally visible.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "fbcd4039ec79f588",
-    "date": "2026-09-18",
-    "source": "Google Cloud Blog",
-    "title": "Using AI agents to secure Google infrastructure",
-    "url": "https://cloud.google.com/blog/topics/systems/using-ai-agents-to-secure-google-infrastructure",
-    "tags": [
-      "AI-agent authorization",
-      "ITDR",
-      "Machine identity"
-    ],
-    "note": "Google describes an agentic vulnerability-scanning and remediation pipeline operating across hundreds of millions of lines of infrastructure code, offering a concrete model for governed security-agent autonomy.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "6ee4e43b752e44b0",
-    "date": "2026-09-18",
-    "source": "Biometric Update / FIDO Alliance",
-    "title": "Passkeys in the post-quantum era: Why FIDO needs more than new algorithms",
-    "url": "https://fidoalliance.org/biometric-update-passkeys-in-the-post-quantum-era-why-fido-needs-more-than-new-algorithms/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "WebAuthn"
-    ],
-    "note": "The piece examines the broader passkey ecosystem\u2014including authenticators, WebAuthn, CTAP, metadata services and PKI\u2014rather than treating post-quantum migration as an algorithm-only problem.",
-    "score": 82
   }
 ]
