@@ -1,6 +1,6 @@
 {
-  "publication_date": "2026-10-06",
-  "requested_at": "2026-10-06T13:18:08.509Z",
+  "publication_date": "2026-10-13",
+  "requested_at": "2026-10-13T14:12:37.385Z",
   "requested_by": "chatgpt",
-  "reason": "Morning edition publishing and verification"
+  "reason": "Recover stalled morning edition after isolating concurrency groups"
 }
