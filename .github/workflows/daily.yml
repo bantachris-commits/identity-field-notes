@@ -16,8 +16,7 @@ on:
 permissions: {}
 
 concurrency:
-  group: content-writers
-  queue: max
+  group: ifn-publish-v2
   cancel-in-progress: false
 
 jobs:
