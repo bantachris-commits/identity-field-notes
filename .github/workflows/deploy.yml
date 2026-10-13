@@ -2,20 +2,25 @@ name: Deploy static site to GitHub Pages
 on:
   push:
     branches: [main]
-    # The requested daily workflow handles its own deployment.
+    # The publication request only asks the daily workflow to build content.
+    # The resulting content commit will trigger this deployment workflow.
     paths-ignore: ['.github/publish-request.json']
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# This is the only workflow allowed to deploy GitHub Pages.
+# A newer main commit supersedes any queued/stuck older deployment.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   deploy:
     timeout-minutes: 10
-    concurrency:
-      group: pages
-      queue: max
-      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
