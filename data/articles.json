@@ -132,7 +132,7 @@
         "summary": "CrowdStrike's October Patch Tuesday analysis counted 1,413 Microsoft CVEs, including an exploited zero-day and dozens of critical vulnerabilities. The scale of the release makes prioritization especially important for domain controllers, certificate services, administrative endpoints and other identity infrastructure.",
         "why": "Identity systems amplify compromise. Prioritize systems that issue, validate or broker privileged credentials before lower-impact endpoints, and pair patching with review of privileged logons and administrative workstation exposure.",
         "source": "CrowdStrike",
-        "url": "https://www.crowdstrike.com/en-us/blog/",
+        "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-october-2026/",
         "confidence": "Independent reporting",
         "published_date": "2026-10-13",
         "aiGenerated": true
