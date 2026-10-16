@@ -41,18 +41,28 @@ jobs:
         env:
           TRIGGER_EVENT: ${{ github.event_name }}
         run: python scripts/publication_gate.py
-      - name: Ensure overnight article discovery completed
+      - name: Apply recovery backfill
         if: steps.gate.outputs.run == 'yes'
+        run: python scripts/apply_recovery_backfill.py
+      - name: Ensure overnight article discovery completed
+        id: radar_refresh
+        if: steps.gate.outputs.run == 'yes'
+        continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-luna' }}
         run: python scripts/ensure_radar.py
       - name: Recap yesterday's notable Latest Articles
+        id: daily_recap
         if: steps.gate.outputs.run == 'yes'
+        continue-on-error: true
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-luna' }}
         run: python scripts/generate_daily.py
+      - name: Warn when AI generation is unavailable
+        if: steps.gate.outputs.run == 'yes' && (steps.radar_refresh.outcome == 'failure' || steps.daily_recap.outcome == 'failure')
+        run: echo "::warning::AI-backed discovery/generation failed. Static/recovery content will still be validated, committed and deployed. Check OPENAI_API_KEY."
       - name: Build RSS and sitemap
         if: steps.gate.outputs.run == 'yes'
         run: python scripts/build_feeds.py
