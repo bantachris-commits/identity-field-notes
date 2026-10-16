@@ -61,11 +61,28 @@
     "tags": [
       "PAM",
       "ITDR",
-      "Secrets",
-      "Incident"
+      "credential-theft",
+      "incident"
     ],
-    "note": "Detailed technical analysis covers exploitation of CVE-2026-102764, root-level escalation, vault extraction, persistent sudo access, malware and anti-forensics techniques.",
+    "note": "Detailed post-exploitation evidence shows a BeyondTrust Remote Support zero-day leading to root access, vault extraction, privilege escalation and downstream remote-session abuse.",
     "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "a0286855b518750e",
+    "date": "2026-10-15",
+    "source": "BeyondTrust",
+    "title": "BT26-05",
+    "url": "https://www.beyondtrust.com/trust-center/security-advisories/bt26-05",
+    "tags": [
+      "PAM",
+      "vulnerability",
+      "remote-access",
+      "incident"
+    ],
+    "note": "Primary advisory for CVE-2026-102764, a critical unauthenticated Remote Support flaw exploited in the wild and requiring patching plus compromise assessment.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
@@ -84,6 +101,39 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "188b0563c833c6ac",
+    "date": "2026-10-15",
+    "source": "Unit 42",
+    "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
+    "url": "https://unit42.paloaltonetworks.com/ai-powered-espionage-campaign-targets-government-linux-infrastructure/",
+    "tags": [
+      "credential-theft",
+      "NHI",
+      "AI-enabled-attacks",
+      "incident"
+    ],
+    "note": "Primary research documents an AI-assisted intrusion campaign combining credential harvesting, mailbox targeting, web shells, persistence and anti-forensics against government infrastructure.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "e9d81a6d7b181c4d",
+    "date": "2026-10-15",
+    "source": "FIDO Alliance",
+    "title": "7 Billion Passkeys and Counting: The Next Chapter of Passwordless Authentication",
+    "url": "https://fidoalliance.org/7-billion-passkeys-and-counting-the-next-chapter-of-passwordless-authentication/",
+    "tags": [
+      "passkeys",
+      "FIDO",
+      "authentication"
+    ],
+    "note": "The 2026 Passkey Index reports roughly 7 billion passkeys, routine use in more than a third of measured sign-ins and evidence that adoption is shifting from deployment to default usage.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
     "publishedDate": "2026-10-15",
     "id": "027ae65303f397f6",
@@ -99,6 +149,23 @@
       "least-privilege"
     ],
     "note": "Descope\u2019s release adds internal-agent governance, MCP gateway integrations, ID-JAG issuance, ownership, runtime policy enforcement, and audit trails for agents otherwise using shared long-lived credentials.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "04cf22f04b3680e5",
+    "date": "2026-10-15",
+    "source": "AWS Security Blog",
+    "title": "AWS Security Agent (now part of AWS Continuum exploited 33 of 37 new real-world CVEs",
+    "url": "https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/",
+    "tags": [
+      "AI-agent-authorization",
+      "ITDR",
+      "least-privilege",
+      "vulnerability-research"
+    ],
+    "note": "AWS reports an audited autonomous agent achieving end-to-end exploitation of 33 recent CVEs, including broken authorization, default-credential and admin-cookie attack paths.",
     "score": 84
   },
   {
@@ -205,6 +272,40 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-13",
+    "id": "dc06dd01e053bdd6",
+    "date": "2026-10-13",
+    "source": "Okta",
+    "title": "Insecure Default File Permissions in Okta RADIUS Agent Windows Installer CVE-2026-78632 - Oct 13, 2026",
+    "url": "https://trust.okta.com/security-advisories/insecure-default-file-permissions-in-okta-radius-agent-windows-installer-cve-2026-78632",
+    "tags": [
+      "IAM",
+      "secrets",
+      "service-accounts",
+      "vulnerability"
+    ],
+    "note": "The advisory identifies local service-account access to the RADIUS agent\u2019s AES key and encrypted Okta API token through insecure installer permissions.",
+    "score": 87
+  },
+  {
+    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
+    "publishedDate": "2026-10-13",
+    "id": "6adac9837232bd4a",
+    "date": "2026-10-13",
+    "source": "Okta",
+    "title": "Improper Input Validation in the Okta Credential Provider for Windows CVE-2026-78628 - Oct 13, 2026",
+    "url": "https://trust.okta.com/security-advisories/improper-input-validation-in-the-okta-credential-provider-for-windows-cve-2026-78628",
+    "tags": [
+      "IAM",
+      "authentication",
+      "credential-provider",
+      "vulnerability"
+    ],
+    "note": "The Windows credential provider flaw can expose adjacent process memory and affects authentication infrastructure on locally accessible hosts.",
+    "score": 79
+  },
+  {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
     "publishedDate": "2026-10-12",
     "id": "9274082e5b50caef",
@@ -264,12 +365,11 @@
     "tags": [
       "OAuth",
       "NHI",
-      "Secrets management",
-      "Microsoft Entra",
-      "Incident response"
+      "token-abuse",
+      "incident"
     ],
-    "note": "A documented cloud extortion case shows how a stolen OAuth client secret enabled app-only Entra access to Graph, SharePoint, mailboxes, and files without a compromised user or MFA challenge.",
-    "score": 99
+    "note": "A concrete cloud-extortion case shows a stolen OAuth client secret enabling app-only Entra access, tenant-wide Graph and SharePoint activity, data theft and file deletion without a compromised user or MFA challenge.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
@@ -3322,109 +3422,5 @@
     ],
     "note": "Compromised credentials belonging to third-party applications were used to access merchant data and inject malicious scripts, making this a useful SaaS supply-chain and app-identity case study.",
     "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "e22625aae4e38b76",
-    "date": "2026-09-21",
-    "source": "Palo Alto Networks",
-    "title": "You Do Not Have Three Years",
-    "url": "https://www.paloaltonetworks.com/blog/identity-security/frontier-ai-identity-security-90-day-plan/",
-    "tags": [
-      "PAM",
-      "NHI",
-      "AI Agents",
-      "Secrets",
-      "Zero Standing Privilege",
-      "ITDR"
-    ],
-    "note": "Useful practitioner framing of recent AI-accelerated intrusions where exposed source-code credentials, secrets-manager access and standing administrator privileges enabled rapid movement into cloud AI infrastructure.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-22T15:37:29.894588-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "14b245ef346a4d25",
-    "date": "2026-09-21",
-    "source": "Keeper Security",
-    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
-    "url": "https://www.keepersecurity.com/blog/2026/09/21/keeper-and-sailpoint-partner-to-automate-privileged-access-governance/",
-    "tags": [
-      "PAM",
-      "IGA",
-      "Offboarding",
-      "NHI"
-    ],
-    "note": "The new connector links SailPoint provisioning, deprovisioning and certifications with KeeperPAM vaults and entitlements, addressing the IGA-to-PAM enforcement gap.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "485cd6e90cc61222",
-    "date": "2026-09-21",
-    "source": "Keeper Security",
-    "title": "Keeper Security and SailPoint Partner to Automate Privileged Access Governance",
-    "url": "https://www.keepersecurity.com/blog/2026/09/keeper-and-sailpoint-partner-to-automate-privileged-access-governance/",
-    "tags": [
-      "PAM",
-      "IGA",
-      "SailPoint",
-      "Offboarding",
-      "Least Privilege"
-    ],
-    "note": "The new SailPoint-Keeper integration connects IGA provisioning, certification and revocation workflows directly to privileged vault entitlements, addressing the enforcement and offboarding gap between governance and PAM.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "94a167fdb1277332",
-    "date": "2026-09-21",
-    "source": "Google Cloud",
-    "title": "Strengthen Your CI/CD Pipeline With New Secure Source Manager Capabilities",
-    "url": "https://cloud.google.com/blog/products/identity-security/strengthen-your-cicd-pipeline-with-new-secure-source-manager-capabilities",
-    "tags": [
-      "IAM",
-      "CI/CD",
-      "Authorization",
-      "Supply Chain"
-    ],
-    "note": "New generally available controls add granular Code Owners and stronger authentication and authorization mechanisms for protecting source and deployment workflows.",
-    "score": 81
-  },
-  {
-    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "d046944ddf74253c",
-    "date": "2026-09-21",
-    "source": "SecurityWeek",
-    "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, \u2018Rapuncel\u2019 Stealer",
-    "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
-    "tags": [
-      "Credential Theft",
-      "Session Tokens",
-      "Secrets",
-      "Endpoint"
-    ],
-    "note": "A fake LastPass Authenticator campaign steals browser passwords, Windows credentials, and application tokens after disabling security tooling.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "cf76acc5f7c9a239",
-    "date": "2026-09-21",
-    "source": "Descope",
-    "title": "Descope Data Residency Is Now Available in Seven Regions",
-    "url": "https://www.descope.com/blog/post/data-residency",
-    "tags": [
-      "CIAM",
-      "Data Governance",
-      "Identity Security"
-    ],
-    "note": "Descope\u2019s expansion to seven residency regions is relevant to identity architects handling regulated identity stores, authentication telemetry, and cross-border audit data.",
-    "score": 62
   }
 ]
