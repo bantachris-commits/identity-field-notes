@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-10-16",
-  "requested_at": "2026-10-16T14:13:00Z",
+  "requested_at": "2026-10-16T14:21:00Z",
   "requested_by": "chatgpt",
-  "reason": "Recover Oct 16 publication and merge verified backdated editions after invalid OpenAI API key failure"
+  "reason": "Retry Oct 16 recovery after replacing generic Delinea status URL with incident-specific source"
 }
