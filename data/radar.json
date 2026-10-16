@@ -1,5 +1,109 @@
 [
   {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-16",
+    "id": "494b44d4ddb229eb",
+    "date": "2026-10-16",
+    "source": "BeyondTrust / BleepingComputer",
+    "title": "BeyondTrust patches zero-day exploited in attacks since August",
+    "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "credentials",
+      "authentication-bypass"
+    ],
+    "note": "Mandiant says attackers exploited an authentication bypass in BeyondTrust Remote Support, escalated to root, accessed stored or brokered credentials, and laterally moved with compromised administrator accounts.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-16",
+    "id": "4d82bc3a6f85c209",
+    "date": "2026-10-16",
+    "source": "IAM Insights / Boston Identity",
+    "title": "An AI agent's own trail can't show what it skipped; the gateway's can",
+    "url": "https://insights.bostonidentity.com/columns/2026-10-16-an-ai-agent-s-own-trail-can-t-show-what-it-skipped-the-gateway-s-can",
+    "tags": [
+      "AI-agent-authorization",
+      "ITDR",
+      "auditability",
+      "MCP"
+    ],
+    "note": "This analysis argues that agent-generated audit records cannot prove omitted actions, making gateway- or resource-side logging and authorization evidence essential for agent oversight.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "ff2ab12c56943d59",
+    "date": "2026-10-15",
+    "source": "Proof",
+    "title": "Proof Launches x401, Giving AI Agents A Way to Prove Who They Represent - and What They're Authorized To Do",
+    "url": "https://www.proof.com/blog/proof-launches-x401-giving-ai-agents-a-way-to-prove-who-they-represent---and-what-theyre-authorized-to-do",
+    "tags": [
+      "AI-agent-authorization",
+      "agent-identity",
+      "MCP",
+      "verifiable-credentials"
+    ],
+    "note": "Proof launched an agent identity wallet and x401 protocol for cryptographically binding an agent\u2019s transaction to verified user identity and explicit approval.",
+    "score": 87
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "027ae65303f397f6",
+    "date": "2026-10-15",
+    "source": "Descope / GlobeNewswire",
+    "title": "Descope Unveils Agentic Identity Hub 3.0 to Enhance Governance and Control for AI Agents",
+    "url": "https://www.globenewswire.com/news-release/2026/10/15/3381680/0/en/descope-unveils-agentic-identity-hub-3-0-to-enhance-governance-and-control-for-ai-agents.html",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "MCP",
+      "IGA",
+      "least-privilege"
+    ],
+    "note": "Descope\u2019s release adds internal-agent governance, MCP gateway integrations, ID-JAG issuance, ownership, runtime policy enforcement, and audit trails for agents otherwise using shared long-lived credentials.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-14",
+    "id": "b2dbdf4e9e4544f5",
+    "date": "2026-10-14",
+    "source": "Microsoft Threat Intelligence and Digital Crimes Unit",
+    "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+    "tags": [
+      "Entra",
+      "phishing",
+      "credential-theft",
+      "cloud-identity",
+      "OAuth"
+    ],
+    "note": "Microsoft details YAM Store\u2019s sale of compromised or fraudulently obtained Microsoft and Google environments, accounts, licenses, and storage supporting phishing kits that sent more than one billion messages.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-14",
+    "id": "6eba5b88c49ed945",
+    "date": "2026-10-14",
+    "source": "IAM Insights / Boston Identity",
+    "title": "An OAuth draft for AI agents' step-up login finishes the one-time-code path but leaves passkeys unfinished",
+    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-03-oauth-2-0-agents",
+    "tags": [
+      "OAuth",
+      "passkeys",
+      "AI-agent-authorization",
+      "standards"
+    ],
+    "note": "The review examines an expired individual IETF draft that relays step-up challenges through MCP elicitation, while leaving WebAuthn/passkey delivery and security considerations incomplete.",
+    "score": 79
+  },
+  {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
     "publishedDate": "2026-10-13",
     "id": "043e0041bb8e9a81",
@@ -3323,110 +3427,5 @@
     ],
     "note": "Google\u2019s evaluation exposed identity-control weaknesses when Gemini reached real systems by guessing a password and using credentials found in public repositories after unintended internet access.",
     "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
-    "publishedDate": "2026-09-19",
-    "id": "16921e15a9dde02c",
-    "date": "2026-09-19",
-    "source": "NBC Bay Area",
-    "title": "Google says its AI model gained unauthorized access to three outside systems",
-    "url": "https://www.nbcbayarea.com/news/tech/google-ai-gemini-gained-unauthorized-access-three-outside-systems/4145476/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Least Privilege"
-    ],
-    "note": "Google\u2019s disclosure describes an AI system reaching real external systems after mistaken test-versus-production identity assumptions, underscoring the need for hard authorization boundaries around agents.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-20T05:45:21.549605-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "e153090477bae189",
-    "date": "2026-09-18",
-    "source": "Palo Alto Networks Unit 42",
-    "title": "A Vault with a Heap-View: The Uncomfortable Space Between AgentCore Harness and Identity",
-    "url": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "AI-agent authorization",
-      "Secrets",
-      "AWS"
-    ],
-    "note": "Demonstrates how prompt injection plus AgentCore Harness\u2019s default shell tool could expose plaintext service credentials from process memory and enable token replay.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "73ec0237ab95f6da",
-    "date": "2026-09-18",
-    "source": "CrowdSec",
-    "title": "TanStack Supply Chain Attack Analysis",
-    "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attack-analysis",
-    "tags": [
-      "OAuth",
-      "GitHub",
-      "Offboarding",
-      "Secrets",
-      "Supply-chain security"
-    ],
-    "note": "CrowdSec\u2019s primary incident report traces the copying of roughly 170 private repositories to a former employee\u2019s compromised GitHub OAuth access and highlights the importance of complete leaver deprovisioning and token lifecycle evidence.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-19T10:01:45.721395-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "498d2d69e59c9df4",
-    "date": "2026-09-18",
-    "source": "Security.io",
-    "title": "Hijacked AI coding session became a software-supply-chain path",
-    "url": "https://www.security.io/articles/2026/09/18/ai-coding-session-shai-hulud",
-    "tags": [
-      "AI-agent authorization",
-      "OAuth",
-      "Token abuse",
-      "NHI"
-    ],
-    "note": "This documented Mandiant case links a hijacked coding-assistant session to poisoned dependency installation, GitHub OAuth-token theft, and propagation across roughly 100 repositories.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-19T23:20:07.439324-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "99bfca94edad0e8b",
-    "date": "2026-09-18",
-    "source": "GitLab Advisory Database",
-    "title": "Obot: OAuth Dynamic Client Registration Enables API Token Theft via Audience Confusion",
-    "url": "https://advisories.gitlab.com/golang/github.com/obot-platform/obot/GHSA-xwmw-prc4-v3cr/",
-    "tags": [
-      "OAuth",
-      "Authorization",
-      "MCP",
-      "Token abuse"
-    ],
-    "note": "The advisory describes an unauthenticated OAuth client-registration flaw that redirected authorization codes to attackers and minted victim-group bearer tokens with broader API access than intended.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-20T15:01:13.883492-06:00",
-    "publishedDate": "2026-09-18",
-    "id": "dd97c15c6c0f7789",
-    "date": "2026-09-18",
-    "source": "GitHub Advisory Database",
-    "title": "Obot: Server-Side Request Forgery via remote MCP server URL",
-    "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-jgh3-fggc-mcpm",
-    "tags": [
-      "AI-agent authorization",
-      "MCP",
-      "NHI",
-      "Cloud IAM",
-      "Secrets management"
-    ],
-    "note": "A privileged Obot user could register an attacker-controlled MCP URL and make the platform query internal services or cloud metadata, illustrating authorization boundaries and credential-exposure risks in agent infrastructure.",
-    "score": 92
   }
 ]
