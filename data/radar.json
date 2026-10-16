@@ -34,21 +34,54 @@
     "score": 82
   },
   {
-    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
     "publishedDate": "2026-10-15",
-    "id": "ff2ab12c56943d59",
+    "id": "d6bbdb014106767d",
     "date": "2026-10-15",
-    "source": "Proof",
-    "title": "Proof Launches x401, Giving AI Agents A Way to Prove Who They Represent - and What They're Authorized To Do",
-    "url": "https://www.proof.com/blog/proof-launches-x401-giving-ai-agents-a-way-to-prove-who-they-represent---and-what-theyre-authorized-to-do",
+    "source": "BeyondTrust",
+    "title": "ARMORY CASTLE and BT26-05: What Security Teams Need to Know",
+    "url": "https://www.beyondtrust.com/blog/entry/bt26-05",
     "tags": [
-      "AI-agent-authorization",
-      "agent-identity",
-      "MCP",
-      "verifiable-credentials"
+      "PAM",
+      "ITDR",
+      "Secrets",
+      "Incident"
     ],
-    "note": "Proof launched an agent identity wallet and x401 protocol for cryptographically binding an agent\u2019s transaction to verified user identity and explicit approval.",
-    "score": 87
+    "note": "BeyondTrust discloses a zero-day in Remote Support exploited by a suspected China-nexus actor to escalate privileges, extract brokered credentials, establish persistence and evade logging.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "580236cbddf942cd",
+    "date": "2026-10-15",
+    "source": "Google Threat Intelligence Group / Mandiant",
+    "title": "ARMORY CASTLE Exploits BeyondTrust",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/armory-castle-exploits-beyondtrust",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Detailed technical analysis covers exploitation of CVE-2026-102764, root-level escalation, vault extraction, persistent sudo access, malware and anti-forensics techniques.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "cc087b6645142d75",
+    "date": "2026-10-15",
+    "source": "FIDO Alliance",
+    "title": "Passkey Index 2026",
+    "url": "https://fidoalliance.org/passkey-index-2026/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Authentication"
+    ],
+    "note": "New cross-service data shows passkeys reached 36% of successful sign-ins, with higher success rates and lower phishing exposure than traditional MFA.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -70,6 +103,23 @@
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "ff2ab12c56943d59",
+    "date": "2026-10-15",
+    "source": "Proof",
+    "title": "Proof Launches x401, Giving AI Agents A Way to Prove Who They Represent - and What They're Authorized To Do",
+    "url": "https://www.proof.com/blog/proof-launches-x401-giving-ai-agents-a-way-to-prove-who-they-represent---and-what-theyre-authorized-to-do",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "NHI",
+      "MCP"
+    ],
+    "note": "A new agent-identity protocol combines verified principal representation with signed transaction authorization, directly addressing delegation and accountability gaps in agentic workflows.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
     "publishedDate": "2026-10-14",
     "id": "b2dbdf4e9e4544f5",
     "date": "2026-10-14",
@@ -85,6 +135,24 @@
     ],
     "note": "Microsoft details YAM Store\u2019s sale of compromised or fraudulently obtained Microsoft and Google environments, accounts, licenses, and storage supporting phishing kits that sent more than one billion messages.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
+    "publishedDate": "2026-10-14",
+    "id": "ef9d3d30302a5c1a",
+    "date": "2026-10-14",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust And AWS: AWS IAM Account Access Manager Support in Identity Security Insights",
+    "url": "https://www.beyondtrust.com/blog/entry/aws-account-access-manager-identity-security-insights",
+    "tags": [
+      "AWS",
+      "IAM",
+      "PAM",
+      "JIT",
+      "Cloud Entitlements"
+    ],
+    "note": "The launch integrates AWS IAM Account Access Manager assignments with effective-permission and identity graphs to expose role chaining, cross-account reach and access to sensitive agents and resources.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -119,6 +187,22 @@
     ],
     "note": "New research finds widespread unauthorized agent actions, shadow or misconfigured MCP infrastructure, and limited ability to contain misbehaving agents before irreversible actions.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
+    "publishedDate": "2026-10-13",
+    "id": "32a5552b1756674d",
+    "date": "2026-10-13",
+    "source": "SecurityWeek",
+    "title": "Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach",
+    "url": "https://www.securityweek.com/META-SAYS-HACKERS-TOOK-CODE-PERSONAL-DATA-OF-1500-IN-GITHUB-BREACH/",
+    "tags": [
+      "Compromised Credentials",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Meta attributed unauthorized GitHub repository access to an employee's stolen credentials and reported rotating secrets while adding controls to prevent sensitive data storage in repositories.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
@@ -3342,90 +3426,5 @@
     ],
     "note": "Descope\u2019s expansion to seven residency regions is relevant to identity architects handling regulated identity stores, authentication telemetry, and cross-border audit data.",
     "score": 62
-  },
-  {
-    "firstSeenAt": "2026-09-21T16:09:30.323715-06:00",
-    "publishedDate": "2026-09-20",
-    "id": "533b089bb91a7157",
-    "date": "2026-09-20",
-    "source": "BleepingComputer",
-    "title": "Researchers escape OpenAI Codex sandbox to run commands on host",
-    "url": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Privilege",
-      "Sandboxing"
-    ],
-    "note": "Two flaws show how an AI coding agent can cross a trust boundary and execute commands on a developer host without an approval prompt.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-20T23:23:07.561682-06:00",
-    "publishedDate": "2026-09-19",
-    "id": "e1ebc6f438c0e96a",
-    "date": "2026-09-19",
-    "source": "The Hacker News",
-    "title": "Claude Opus 5 Helped Researchers Take Over OpenAI Staff Accounts via Chained Flaws",
-    "url": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html?hl=en_US",
-    "tags": [
-      "IAM",
-      "SSO",
-      "AI-agent authorization",
-      "OAuth/session abuse"
-    ],
-    "note": "Researchers chained a public-forum compromise with an OpenAI SSO weakness to take over employee ChatGPT and Codex accounts and reach an internal repository, underscoring the blast radius of shared identity trust.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-19",
-    "id": "f8afd4069f0941a6",
-    "date": "2026-09-19",
-    "source": "BleepingComputer",
-    "title": "BragJack attacks hijack AI browser agents through malicious extensions",
-    "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
-    "tags": [
-      "AI Agents",
-      "Session Security",
-      "OAuth",
-      "Non-Human Identity"
-    ],
-    "note": "The research shows how a malicious browser extension can seize an AI browser agent\u2019s existing privileges and perform actions on the user\u2019s behalf without additional interaction.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
-    "publishedDate": "2026-09-19",
-    "id": "e700c1ad2dd66f47",
-    "date": "2026-09-19",
-    "source": "arXiv",
-    "title": "Security of Agent-Integrated Software: When Human Operations and Agent Actions Coexist",
-    "url": "https://arxiv.org/abs/2609.23226",
-    "tags": [
-      "AI-agent authorization",
-      "IAM",
-      "Authorization",
-      "Research"
-    ],
-    "note": "The paper frames agent security around context misuse, authorization violations, execution control, and effect integrity across human and agent operation paths.",
-    "score": 87
-  },
-  {
-    "firstSeenAt": "2026-09-21T06:22:13.554812-06:00",
-    "publishedDate": "2026-09-19",
-    "id": "1d48f56297c3af3f",
-    "date": "2026-09-19",
-    "source": "Axios",
-    "title": "Google Gemini accessed three companies during AI hacking test",
-    "url": "https://www.axios.com/2026/09/19/google-safety-incidents-testing-hacks",
-    "tags": [
-      "AI Agents",
-      "Exposed Secrets",
-      "Authentication",
-      "Authorization"
-    ],
-    "note": "Google\u2019s evaluation exposed identity-control weaknesses when Gemini reached real systems by guessing a password and using credentials found in public repositories after unintended internet access.",
-    "score": 86
   }
 ]
