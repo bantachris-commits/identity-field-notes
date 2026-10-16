@@ -18,15 +18,14 @@ permissions:
   pages: write
   id-token: write
 
-# This is the only workflow allowed to deploy GitHub Pages.
-# A newer deployment supersedes any queued/stuck older deployment.
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
   deploy:
     timeout-minutes: 10
+    # Only the actual Pages deployment holds the lock. Slow link probes from an
+    # older run must never block a newer edition from reaching the site.
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
