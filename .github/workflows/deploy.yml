@@ -1,10 +1,16 @@
 name: Deploy static site to GitHub Pages
 on:
+  # Human/connector changes to main still deploy immediately.
   push:
     branches: [main]
-    # The publication request only asks the daily workflow to build content.
-    # The resulting content commit will trigger this deployment workflow.
     paths-ignore: ['.github/publish-request.json']
+  # Content commits made inside Actions use GITHUB_TOKEN. GitHub intentionally
+  # suppresses new workflow runs from those pushes, so deploy on completion of
+  # the content-producing workflows as well and always checkout latest main.
+  workflow_run:
+    workflows: [Publish weekday Field Note, Refresh Identity Radar]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -13,7 +19,7 @@ permissions:
   id-token: write
 
 # This is the only workflow allowed to deploy GitHub Pages.
-# A newer main commit supersedes any queued/stuck older deployment.
+# A newer deployment supersedes any queued/stuck older deployment.
 concurrency:
   group: pages
   cancel-in-progress: true
