@@ -10,6 +10,15 @@ RECOVERY = ROOT / "data" / "recovery-2026-10.json"
 articles = json.loads(ARTICLES.read_text(encoding="utf-8"))
 recovery = json.loads(RECOVERY.read_text(encoding="utf-8"))
 
+# Keep the recovery bundle source-specific so the normal site validator can
+# enforce the same "receipts, not homepages" rule used for generated editions.
+for item in recovery:
+    for story in item.get("stories", []):
+        if story.get("url") == "https://status.delinea.com/":
+            story["url"] = "https://isdown.app/status/delinea/incidents/669426-platform-sso-login-failures-on-delinea-platform-us-eu-uk-ca-au-sea-and-uae"
+            story["source"] = "Delinea incident record via IsDown"
+            story["confidence"] = "Independent reporting"
+
 existing = {a.get("id"): a for a in articles if a.get("id")}
 added = 0
 for item in recovery:
