@@ -1,6 +1,6 @@
 {
-  "publication_date": "2026-10-13",
-  "requested_at": "2026-10-13T14:55:30Z",
+  "publication_date": "2026-10-16",
+  "requested_at": "2026-10-16T14:13:00Z",
   "requested_by": "chatgpt",
-  "reason": "Retry morning publication after consolidating GitHub Pages deployment and clearing stale concurrency"
+  "reason": "Recover Oct 16 publication and merge verified backdated editions after invalid OpenAI API key failure"
 }
