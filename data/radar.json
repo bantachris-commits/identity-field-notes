@@ -61,11 +61,12 @@
     "tags": [
       "PAM",
       "ITDR",
-      "credential-theft",
-      "incident"
+      "NHI",
+      "Secrets",
+      "Incident"
     ],
-    "note": "Detailed post-exploitation evidence shows a BeyondTrust Remote Support zero-day leading to root access, vault extraction, privilege escalation and downstream remote-session abuse.",
-    "score": 100
+    "note": "Primary technical analysis of a BeyondTrust Remote Support zero-day used to obtain root access, extract vaulted credentials, alter administrator permissions, and pivot into downstream systems.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
@@ -118,6 +119,24 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
+    "publishedDate": "2026-10-15",
+    "id": "91aeb95312b3a9a0",
+    "date": "2026-10-15",
+    "source": "Descope",
+    "title": "Introducing Descope Agentic Identity Hub 3.0: Governance and Control for AI Agents",
+    "url": "https://www.descope.com/blog/post/agentic-identity-hub-3",
+    "tags": [
+      "AI-Agent Authorization",
+      "NHI",
+      "OAuth",
+      "MCP",
+      "IGA"
+    ],
+    "note": "Material agent-identity release adding approval and review workflows, runtime policy enforcement, workload identity, Agent SSO, private_key_jwt, mTLS, certificate-bound tokens, and DPoP.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
     "publishedDate": "2026-10-15",
     "id": "e9d81a6d7b181c4d",
@@ -126,11 +145,11 @@
     "title": "7 Billion Passkeys and Counting: The Next Chapter of Passwordless Authentication",
     "url": "https://fidoalliance.org/7-billion-passkeys-and-counting-the-next-chapter-of-passwordless-authentication/",
     "tags": [
-      "passkeys",
+      "Passkeys",
       "FIDO",
-      "authentication"
+      "Authentication"
     ],
-    "note": "The 2026 Passkey Index reports roughly 7 billion passkeys, routine use in more than a third of measured sign-ins and evidence that adoption is shifting from deployment to default usage.",
+    "note": "The 2026 Passkey Index reports an estimated seven billion passkeys and introduces a practical deployment rubric focused on adoption, UX, recovery, and eliminating password fallbacks.",
     "score": 89
   },
   {
@@ -177,13 +196,13 @@
     "title": "Proof Launches x401, Giving AI Agents A Way to Prove Who They Represent - and What They're Authorized To Do",
     "url": "https://www.proof.com/blog/proof-launches-x401-giving-ai-agents-a-way-to-prove-who-they-represent---and-what-theyre-authorized-to-do",
     "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "MCP"
+      "AI-Agent Authorization",
+      "Verifiable Credentials",
+      "MCP",
+      "Transaction Authorization"
     ],
-    "note": "A new agent-identity protocol combines verified principal representation with signed transaction authorization, directly addressing delegation and accountability gaps in agentic workflows.",
-    "score": 82
+    "note": "A notable proposal for binding agent actions to verifiable human identity and signed transaction terms rather than treating possession of a password, OAuth token, or API key as sufficient authority.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -260,15 +279,16 @@
     "publishedDate": "2026-10-13",
     "id": "32a5552b1756674d",
     "date": "2026-10-13",
-    "source": "SecurityWeek",
+    "source": "Meta / SecurityWeek",
     "title": "Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach",
     "url": "https://www.securityweek.com/META-SAYS-HACKERS-TOOK-CODE-PERSONAL-DATA-OF-1500-IN-GITHUB-BREACH/",
     "tags": [
       "Compromised Credentials",
       "Secrets",
+      "GitHub",
       "Incident"
     ],
-    "note": "Meta attributed unauthorized GitHub repository access to an employee's stolen credentials and reported rotating secrets while adding controls to prevent sensitive data storage in repositories.",
+    "note": "Meta said attackers accessed GitHub repositories using an employee's stolen credentials, exposing business code and limited personal data before secrets were rotated.",
     "score": 88
   },
   {
@@ -287,6 +307,22 @@
     ],
     "note": "The advisory identifies local service-account access to the RADIUS agent\u2019s AES key and encrypted Okta API token through insecure installer permissions.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
+    "publishedDate": "2026-10-13",
+    "id": "78df2c64d8585e2a",
+    "date": "2026-10-13",
+    "source": "TechRadar Pro / Huntress",
+    "title": "Hackers turn business backup servers into crypto mines after sneaking malware disguised as Microsoft Edge",
+    "url": "https://www.techradar.com/pro/security/hackers-turn-business-backup-servers-into-crypto-mines-after-sneaking-malware-disguised-as-microsoft-edge",
+    "tags": [
+      "Authentication Bypass",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Reporting on exploitation of AhsayCBS flaws, including an authentication bypass where a random token could substitute for valid credentials before attackers deployed webshells and cryptomining malware.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
@@ -321,6 +357,24 @@
     ],
     "note": "The AIIM community group\u2019s protocol-agnostic threat model catalogs identity, trust, scope translation, credential capture, and revocation failures when agents cross security boundaries.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
+    "publishedDate": "2026-10-12",
+    "id": "b06c4bf6b0d632fa",
+    "date": "2026-10-12",
+    "source": "Docker",
+    "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
+    "url": "https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/",
+    "tags": [
+      "NHI",
+      "Tokens",
+      "Authorization",
+      "Supply Chain",
+      "Incident"
+    ],
+    "note": "A critical privilege-assignment flaw allowed an attacker-controlled PAT to authenticate as another user and potentially push, pull, or delete images within that user's scope.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
@@ -3370,57 +3424,5 @@
     ],
     "note": "CrowdSec\u2019s primary reconstruction links a poisoned developer dependency to theft of a former employee\u2019s GitHub OAuth token and cloning of roughly 170 private repositories before access was revoked.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-22T06:12:21.001171-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "6ccedc5e37be7c18",
-    "date": "2026-09-21",
-    "source": "Microsoft",
-    "title": "Microsoft reminds admins to migrate Entra ID users to passkeys",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-admins-to-migrate-entra-id-users-to-passkeys/",
-    "tags": [
-      "IAM",
-      "Microsoft Entra",
-      "Passkeys",
-      "MFA"
-    ],
-    "note": "Microsoft\u2019s retirement of SMS first-factor sign-in makes phishing-resistant Entra authentication migration and inventory an immediate operational priority.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-21T07:16:19.590260-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "963c798454891a79",
-    "date": "2026-09-21",
-    "source": "The Hacker News",
-    "title": "The Login Worked. That Was the Attack.",
-    "url": "https://thehackernews.com/expert-insights/2026/09/the-login-worked-that-was-attack.html",
-    "tags": [
-      "IAM",
-      "MFA",
-      "Session Theft",
-      "ITDR",
-      "PAM"
-    ],
-    "note": "Useful analysis of session-cookie theft at scale and why post-authentication behavior, session lifetime, device binding, and standing privilege matter after MFA succeeds.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-21T23:19:07.582227-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "1a49f4625fa1204c",
-    "date": "2026-09-21",
-    "source": "BleepingComputer",
-    "title": "BigCommerce alerts merchants of data breach linked to Ribon apps",
-    "url": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "Third-party access",
-      "OAuth"
-    ],
-    "note": "Compromised credentials belonging to third-party applications were used to access merchant data and inject malicious scripts, making this a useful SaaS supply-chain and app-identity case study.",
-    "score": 89
   }
 ]
