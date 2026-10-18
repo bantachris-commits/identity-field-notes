@@ -20,6 +20,8 @@ permissions:
 
 jobs:
   deploy:
+    # Failed AI discovery does not change content; avoid redeploying unchanged site.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     timeout-minutes: 10
     # Only the actual Pages deployment holds the lock. Slow link probes from an
     # older run must never block a newer edition from reaching the site.
