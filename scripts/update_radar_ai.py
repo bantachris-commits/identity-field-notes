@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 from radar_text import normalize_item, plain_text
 from radar_dates import source_date
 
@@ -52,7 +52,13 @@ Source rules:
 Return ONLY JSON: {{"items":[{{"source":"name","title":"title","url":"https://exact-item-url","published_date":"YYYY-MM-DD","tags":["PAM"],"note":"one-sentence reason to read","score":0}}]}}. Score practitioner relevance from 50-100. Return at most 12 items.'''
 print(f'Radar search starting with model: {MODEL}',flush=True)
 client=OpenAI(timeout=float(os.getenv("OPENAI_REQUEST_TIMEOUT", "600")),max_retries=1)
-r=client.responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
+try:
+    r=client.responses.create(model=MODEL,tools=[{'type':'web_search'}],input=prompt)
+except RateLimitError as exc:
+    if 'credit_balance_exhausted' in str(exc):
+        print('::error title=OpenAI API credits exhausted::The IFN OpenAI API organization has no prepaid credits remaining. Add credits in OpenAI Platform > Billing. Existing Radar content has been preserved.', flush=True)
+        raise SystemExit(2) from None
+    raise
 print('Radar search response received.',flush=True)
 t=r.output_text.strip()
 if t.startswith('```'):t=re.sub(r'^```(?:json)?\s*|\s*```$','',t)
@@ -63,7 +69,12 @@ except json.JSONDecodeError:
     payload=json.loads(t[start:end+1])
 path=ROOT/'data'/'radar.json'
 old=[normalize_item(x) for x in json.loads(path.read_text(encoding='utf-8'))] if path.exists() else []
-by_url={x.get('url'):x for x in old if x.get('url') and specific_url(x.get('url'))}
+def url_key(u):
+    # Match check_site.py URL deduplication so case and trailing slash
+    # variants cannot invalidate an otherwise usable Radar update.
+    return str(u or '').strip().rstrip('/').lower()
+
+by_url={url_key(x.get('url')):x for x in old if x.get('url') and specific_url(x.get('url'))}
 for x in payload.get('items',[]):
     u=x.get('url','')
     if not specific_url(u):
@@ -72,8 +83,8 @@ for x in payload.get('items',[]):
     if not publication_date:
         print('Skipping source without a valid publication date:', u, flush=True)
         continue
-    previous = by_url.get(u, {})
-    by_url[u]={
+    previous = by_url.get(url_key(u), {})
+    by_url[url_key(u)]={
       'firstSeenAt': previous.get('firstSeenAt') or now.isoformat(),
       'publishedDate': publication_date,
       'id':hashlib.sha1(u.encode()).hexdigest()[:16],
