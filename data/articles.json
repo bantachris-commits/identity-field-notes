@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-10-23-morning-brief",
+    "date": "2026-10-23",
+    "coverageDate": "2026-10-22",
+    "edition": "MORNING EDITION // 2026.10.23",
+    "title": "Identity Field Notes: Secrets Exposure and Hidden C2",
+    "dek": "Highlights from 2026-10-22. Yesterday\u2019s verified highlights centered on a Railway incident involving potentially exposed workspace secrets and new research on an Iranian threat group hiding command-and-control infrastructure in U.S. hosting.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "Machine IAM",
+      "Identity Threat"
+    ],
+    "readTime": "5 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-22, verified against linked sources. Edition dated 2026-10-23; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Incident",
+        "title": "Railway says attackers accessed CI credentials and potentially decrypted customer secrets",
+        "summary": "Railway\u2019s preliminary report says attackers gained access to internal systems between October 20 and October 22, 2026, escalated privileges in build infrastructure, accessed CI credentials, and decrypted artifacts containing additional API access. Railway estimates that up to 1.85% of workspaces\u2014about 100,000\u2014may have had environment variables compromised, while stating that individual Railway user accounts were not accessed; the forensic investigation remains ongoing.",
+        "why": "This is a sharp reminder that CI systems, deployment platforms, and platform-held secrets are part of the machine-identity attack surface. Practitioners should validate envelope-encryption boundaries, minimize CI privilege, maintain rapid mass-revocation capability, and treat provider-requested key rotation as an incident signal even when direct compromise is unconfirmed.",
+        "source": "Railway",
+        "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+        "confidence": "Primary source",
+        "published_date": "2026-10-22",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Threat",
+        "title": "Semperis reports Prince of Persia C2 infrastructure operating from U.S. hosting",
+        "summary": "Semperis says its researchers identified a Prince of Persia command-and-control server operating on U.S. soil in 2026, the group\u2019s first such use in roughly a decade. The research describes a shift from European VPS hosting to shared infrastructure and Cloudflare-backed concealment, alongside Telegram API channels, domain-generation algorithms, and blockchain-based exfiltration; Semperis provides indicators of compromise for Foudre, Tonnerre, and Tornado malware families.",
+        "why": "Identity defenders should not rely on geography, hosting reputation, or conventional domain blocklists as strong trust signals. Review the supplied indicators, monitor unusual Telegram-related traffic and outbound identity-system activity, and ensure detection and response playbooks connect endpoint, network, and hybrid-identity telemetry.",
+        "source": "Semperis",
+        "url": "https://www.semperis.com/press-release/semperis-researcher-discovers-an-iranian-nation-state-sponsored-threat-group-operating-command-and-control-infrastructure-in-the-united-states/",
+        "confidence": "Research",
+        "published_date": "2026-10-22",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-16-morning-brief",
     "date": "2026-10-16",
     "coverageDate": "2026-10-15",
@@ -14,7 +56,7 @@
       "ITDR"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "ChatGPT recovery backfill + verified sources",
     "disclosure": "AI-generated recovery edition using source-linked reporting published on 2026-10-15. Edition dated 2026-10-16; coverage uses America/Denver. Verify material details at the source.",
     "stories": [

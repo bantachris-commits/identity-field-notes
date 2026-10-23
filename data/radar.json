@@ -1,5 +1,158 @@
 [
   {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d671266dc23bea17",
+    "date": "2026-10-22",
+    "source": "Railway",
+    "title": "Preliminary Report: Oct 21st Security Incident",
+    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "tags": [
+      "NHI",
+      "Secrets Management",
+      "Cloud IAM",
+      "Incident"
+    ],
+    "note": "Railway reports attacker access to internal systems, CI credentials and decrypted customer secrets, with possible exposure affecting up to 1.85% of workspaces.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "5f9731572f84d964",
+    "date": "2026-10-22",
+    "source": "Semperis",
+    "title": "Semperis Researcher Discovers an Iranian Nation-State-Sponsored Threat Group Operating Command-and-Control Infrastructure in the United States",
+    "url": "https://www.semperis.com/press-release/semperis-researcher-discovers-an-iranian-nation-state-sponsored-threat-group-operating-command-and-control-infrastructure-in-the-united-states/",
+    "tags": [
+      "ITDR",
+      "Identity Security",
+      "Threat Research"
+    ],
+    "note": "New Semperis research details Prince of Persia infrastructure, stealth techniques and indicators relevant to identity-resilience and hybrid-environment defenders.",
+    "score": 76
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "80aac9868cd30e6c",
+    "date": "2026-10-21",
+    "source": "Microsoft Security",
+    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "Service Principals",
+      "AI-Agent Authorization",
+      "Incident"
+    ],
+    "note": "Primary Microsoft research links Storm-0940 and ARTEX to ConnectWise supply-chain abuse, non-interactive application authentication, Graph activity and rapid privilege persistence.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "fb2af5c6d5dcbb1f",
+    "date": "2026-10-21",
+    "source": "ConnectWise",
+    "title": "ConnectWise Cloud Backup Update: What we know about the attacker and what it means for partners",
+    "url": "https://www.connectwise.com/company/trust/advisories",
+    "tags": [
+      "OAuth",
+      "Microsoft Entra",
+      "Service Accounts",
+      "Incident"
+    ],
+    "note": "ConnectWise's disclosure identifies compromised application credentials in Cloud Backup and warns that downstream Microsoft 365 tenants may require review for persistence and unauthorized changes.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "cd9f91b6c03d2976",
+    "date": "2026-10-21",
+    "source": "Anomali",
+    "title": "Why MFA Did Not Save Microsoft 365 Tenants from the ConnectWise Attack",
+    "url": "https://www.anomali.com/blog/the-oauth-trust-gap-why-mfa-did-not-save-microsoft-365-tenants-from-the-connectwise-attack",
+    "tags": [
+      "OAuth",
+      "MFA",
+      "Microsoft Entra",
+      "Incident Analysis"
+    ],
+    "note": "This independent analysis explains how a compromised application identity bypassed user-centric MFA assumptions and exploited broad directory permissions across downstream tenants.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5657d2a6039e2de6",
+    "date": "2026-10-21",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust AI Agent Security Now Generally Available",
+    "url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "AI-Agent Authorization",
+      "NHI"
+    ],
+    "note": "BeyondTrust launched runtime controls that distinguish agent actions from human activity and apply just-in-time or approval-based privilege enforcement across endpoint AI-agent workflows.",
+    "score": 85
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "1a39f5bd86b350cd",
+    "date": "2026-10-21",
+    "source": "FIDO Alliance",
+    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
+    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "AI-Agent Authorization",
+      "Delegated Authorization"
+    ],
+    "note": "FIDO's latest conference guidance frames verifiable human approval, phishing-resistant authorization and auditable delegation as foundations for agent-initiated transactions.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "5e1b3910b8c3df34",
+    "date": "2026-10-20",
+    "source": "Andromeda",
+    "title": "Andromeda October 2026 Security Incident",
+    "url": "https://andromeda.ai/security-updates/october-2026-security-incident",
+    "tags": [
+      "Cloud IAM",
+      "Credentials",
+      "Secrets Management",
+      "Incident"
+    ],
+    "note": "Andromeda confirms unauthorized access to credentials affecting a limited number of customer accounts, key rotation and an ongoing root-cause investigation.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "7cfa263b782a85aa",
+    "date": "2026-10-20",
+    "source": "FIDO Alliance",
+    "title": "FIDO Alliance Moves to Accelerate Digital Credentials Adoption at Scale",
+    "url": "https://fidoalliance.org/fido-alliance-moves-to-accelerate-digital-credentials-adoption-at-scale/",
+    "tags": [
+      "FIDO",
+      "Passkeys",
+      "Digital Credentials",
+      "Agentic Authorization"
+    ],
+    "note": "FIDO announced public working documents for wallet certification and verifier identification, relevant to interoperable credentials, phishing-resistant recovery and trusted agent delegation.",
+    "score": 80
+  },
+  {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
     "publishedDate": "2026-10-16",
     "id": "494b44d4ddb229eb",
@@ -3270,159 +3423,5 @@
     ],
     "note": "Okta announced agent-to-agent governance, short-lived Agent SSO tokens, resource-access certifications and gateway-level active-token revocation.",
     "score": 87
-  },
-  {
-    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "fb62c95c8e9d45dc",
-    "date": "2026-09-22",
-    "source": "Microsoft Support",
-    "title": "September 22, 2026\u2014KB5124006 (OS Build 28000.3086 Preview",
-    "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/09/kb5124006-windows-11-26h1-update",
-    "tags": [
-      "Microsoft Entra",
-      "Active Directory",
-      "Machine Identity"
-    ],
-    "note": "Microsoft documents a sign-in and secure-channel failure affecting some Credential Guard-protected machine accounts when Machine Identity Isolation is honored outside supported domain-functional-level conditions.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "6fe0acb2c0085a05",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://investor.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "Machine Identity",
-      "OAuth",
-      "IGA"
-    ],
-    "note": "The cross-vendor Blueprint Alliance proposes treating agents as first-class identities, scoping access to tasks, preserving delegation provenance, continuously monitoring runtime behavior, and enabling reversible containment.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "0e9af621060459a6",
-    "date": "2026-09-22",
-    "source": "Proofpoint",
-    "title": "Proofpoint Breaks Down the Divide Between Data Security and AI Security with the Industry\u2019s First Unified Agentic System",
-    "url": "https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-breaks-down-divide-between-data-security-and-ai-security",
-    "tags": [
-      "AI-Agent Authorization",
-      "IGA",
-      "IAM",
-      "Data Access"
-    ],
-    "note": "Proofpoint introduced an agentic security system that connects identity, access, behavior, intent and data sensitivity to enforce agent actions against business-purpose policies.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "70d64c262cb2ead0",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry Leaders Form the Blueprint Alliance to Advance a Shared Architecture for Securing AI Agents",
-    "url": "https://ir.okta.com/news-and-events/news-releases/news-details/2026/Industry-Leaders-Form-the-Blueprint-Alliance-to-Advance-a-Shared-Architecture-for-Securing-AI-Agents/default.aspx",
-    "tags": [
-      "Okta",
-      "AI Agents",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "The multi-vendor Blueprint Alliance proposes a shared architecture centered on first-class agent identity, task-scoped access, traceable delegation, runtime monitoring, and reversible containment.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "243d8d30bd2a38f1",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "Industry leaders form the Blueprint Alliance to advance a shared architecture for securing AI agents",
-    "url": "https://www.okta.com/newsroom/press-releases/industry-leaders-form-the-blueprint-alliance/",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "IAM",
-      "OAuth"
-    ],
-    "note": "The cross-industry alliance proposes treating AI agents as first-class identities with scoped access, traceable delegation, runtime monitoring, and rapid reversible containment.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "be7c79ca30059e44",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
-    "url": "https://www.okta.com/es-es/newsroom/press-releases/ai-innovations-oktane-2026/",
-    "tags": [
-      "IAM",
-      "AI Agents",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "Okta\u2019s new agent capabilities are relevant for practitioners tracking runtime authorization, agent behavior visibility, lifecycle governance, and enterprise-wide access revocation.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "a80caae3e9d572f1",
-    "date": "2026-09-22",
-    "source": "Proofpoint",
-    "title": "Identity Was Built to Answer Who. The Agentic Workspace Also Needs What and Why.",
-    "url": "https://www.proofpoint.com/us/blog/ai-security/identity-was-built-answer-who-agentic-workspace-also-needs-what-and-why",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "OAuth",
-      "Identity Security"
-    ],
-    "note": "Explores how intent and data-access context can be incorporated into identity decisions for agents, including runtime authorization and blocking actions that exceed an agent\u2019s assigned task.",
-    "score": 80
-  },
-  {
-    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "8f28c96c1e2b7e42",
-    "date": "2026-09-22",
-    "source": "SailPoint Developer Community",
-    "title": "GA Announcement: Next Generation Certifications",
-    "url": "https://developer.sailpoint.com/discuss/t/ga-announcement-next-generation-certifications/223521",
-    "tags": [
-      "IGA",
-      "Access Reviews",
-      "Governance"
-    ],
-    "note": "SailPoint\u2019s next-generation certification engine is entering regional GA rollout, with material migration constraints, API changes, and limitations affecting large certification campaigns.",
-    "score": 77
-  },
-  {
-    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
-    "publishedDate": "2026-09-21",
-    "id": "23217871c1aace5d",
-    "date": "2026-09-21",
-    "source": "CrowdSec",
-    "title": "Analyse de l\u2019attaque de la supply chain TanStack",
-    "url": "https://www.crowdsec.net/blog/tanstack-supply-chain-attaque-analyse",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Offboarding",
-      "Supply Chain",
-      "NHI"
-    ],
-    "note": "CrowdSec\u2019s primary reconstruction links a poisoned developer dependency to theft of a former employee\u2019s GitHub OAuth token and cloning of roughly 170 private repositories before access was revoked.",
-    "score": 98
   }
 ]
