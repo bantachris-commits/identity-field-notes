@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "f9213bfdc4de4d06",
+    "date": "2026-10-23",
+    "source": "Help Net Security",
+    "title": "Microsoft 365 accounts compromised at 79 organizations, no passwords needed",
+    "url": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
+    "tags": [
+      "ITDR",
+      "Token abuse",
+      "MFA bypass",
+      "Microsoft Entra"
+    ],
+    "note": "Huntress reporting describes token spraying across 79 organizations through AiTM, device-code phishing and stolen-session replay after MFA completion.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-22",
     "id": "d671266dc23bea17",
@@ -15,6 +32,23 @@
     ],
     "note": "Railway reports attacker access to internal systems, CI credentials and decrypted customer secrets, with possible exposure affecting up to 1.85% of workspaces.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "c9e4f3f4f4fcf403",
+    "date": "2026-10-22",
+    "source": "IETF",
+    "title": "draft-hamr-oauth-agent-delegation-03 - An Attenuated Delegation Profile for Automated Agents",
+    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/03/",
+    "tags": [
+      "OAuth",
+      "AI-agent authorization",
+      "Delegation",
+      "NHI"
+    ],
+    "note": "A newly updated Internet-Draft proposes attenuated, verifiable delegation chains for automated agents acting across administrative domains, with scope reduction and hop-by-hop validation.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -33,6 +67,40 @@
     "score": 76
   },
   {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "8bf42f231c852c32",
+    "date": "2026-10-22",
+    "source": "IAM Insights",
+    "title": "In one consultant's experience, Entra's passkey campaign lets SMS users register synced passkeys their policy bars",
+    "url": "https://insights.bostonidentity.com/research/hip-podcast-2026-10-13-phishing-resistant-default-microsoft",
+    "tags": [
+      "Passkeys",
+      "Microsoft Entra",
+      "MFA",
+      "Identity governance"
+    ],
+    "note": "A practitioner briefing reports a potentially important Entra registration-policy mismatch in which Microsoft-managed passkey enrollment may permit synced passkeys where tenant policy expects device-bound credentials; the claim remains independently unconfirmed.",
+    "score": 76
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "dd6ed3f0f0b6adbb",
+    "date": "2026-10-22",
+    "source": "Ory",
+    "title": "Ory Hydra, Ory Kratos, Ory Keto, Ory Oathkeeper v26.4.6 released",
+    "url": "https://changelog.ory.com/announcements/ory-hydra-ory-kratos-ory-keto-ory-oathkeeper-v26-4-6-released",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Federation",
+      "Account linking"
+    ],
+    "note": "The release addresses a Go certificate-verification issue, adds brute-force protection and changes UAE PASS account-linking identity handling from upstream subject values to UUIDs.",
+    "score": 72
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
@@ -41,13 +109,13 @@
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Microsoft Entra",
+      "ITDR",
       "OAuth",
-      "Service Principals",
-      "AI-Agent Authorization",
-      "Incident"
+      "NHI",
+      "AI-agent authorization",
+      "Microsoft Entra"
     ],
-    "note": "Primary Microsoft research links Storm-0940 and ARTEX to ConnectWise supply-chain abuse, non-interactive application authentication, Graph activity and rapid privilege persistence.",
+    "note": "Primary research details how a compromised multi-tenant application, stolen app credentials and OAuth abuse enabled machine-speed access to downstream Microsoft 365 tenants, privilege changes and persistence.",
     "score": 100
   },
   {
@@ -68,6 +136,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5fbc1eddd49aa0ad",
+    "date": "2026-10-21",
+    "source": "LiteLLM",
+    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply-chain security",
+      "Machine identity"
+    ],
+    "note": "The project\u2019s incident report identifies privileged developer credentials and release-pipeline controls as the path to malicious packages that stole cloud, AI, CI/CD and developer credentials.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-21",
     "id": "cd9f91b6c03d2976",
@@ -83,6 +168,40 @@
     ],
     "note": "This independent analysis explains how a compromised application identity bypassed user-centric MFA assumptions and exploited broad directory permissions across downstream tenants.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5699ea0146a98f84",
+    "date": "2026-10-21",
+    "source": "Railway",
+    "title": "Security Disclosure: Wednesday October 21st",
+    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "Cloud IAM",
+      "Incident response"
+    ],
+    "note": "Railway\u2019s disclosure warns that decrypted environment variables may have been accessed, requiring broad rotation of API keys, database credentials, registry credentials and related service secrets.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "1a39f5bd86b350cd",
+    "date": "2026-10-21",
+    "source": "FIDO Alliance",
+    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
+    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "AI-agent authorization",
+      "Authorization"
+    ],
+    "note": "The conference synthesis connects passkeys, verified human approval, traceable delegation and revocable boundaries for agent-initiated transactions.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -102,21 +221,55 @@
     "score": 85
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-21",
-    "id": "1a39f5bd86b350cd",
+    "id": "cb4f15cccaa0b98a",
     "date": "2026-10-21",
-    "source": "FIDO Alliance",
-    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
-    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
+    "source": "BeyondTrust / GlobeNewswire",
+    "title": "Phantom Labs Research Shows AI Agents Are Acting Beyond Intent. BeyondTrust AI Agent Security, Now Available, Stops Them",
+    "url": "https://www.globenewswire.com/news-release/2026/10/21/3385607/0/en/phantom-labs-research-shows-ai-agents-are-acting-beyond-intent-beyondtrust-ai-agent-security-now-available-stops-them.html",
     "tags": [
-      "Passkeys",
-      "FIDO",
-      "AI-Agent Authorization",
-      "Delegated Authorization"
+      "PAM",
+      "NHI",
+      "AI-agent authorization",
+      "Endpoint privilege"
     ],
-    "note": "FIDO's latest conference guidance frames verifiable human approval, phishing-resistant authorization and auditable delegation as foundations for agent-initiated transactions.",
+    "note": "BeyondTrust reports runtime telemetry on agent commands, MCP connections and poisoned skills while announcing general availability of agent-specific privilege enforcement on Windows and macOS.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "cf0e97bf97c48193",
+    "date": "2026-10-21",
+    "source": "NVIDIA Newsroom",
+    "title": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+    "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "Cloud security",
+      "Runtime enforcement"
+    ],
+    "note": "The reference architecture combines agent isolation, policy enforcement, continuous monitoring and hardware-backed containment for enterprise and edge agent workloads.",
+    "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "77f8d93fe05557f8",
+    "date": "2026-10-21",
+    "source": "SentinelOne",
+    "title": "SentinelOne Launches Singularity Agentic Detection and Response to Stop Rogue and Malicious AI Agents at Machine Speed",
+    "url": "https://www.sentinelone.com/press/sentinelone-launches-singularity-agentic-detection-and-response-to-stop-rogue-and-malicious-ai-agents-at-machine-speed/",
+    "tags": [
+      "ITDR",
+      "NHI",
+      "AI-agent authorization",
+      "Runtime detection"
+    ],
+    "note": "A meaningful platform move toward discovering agents, governing their actions, monitoring behavior and stopping unintended or malicious activity at runtime.",
+    "score": 80
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -3270,158 +3423,5 @@
     ],
     "note": "Attackers used compromised credentials belonging to third-party Ribon applications to access shopper data through BigCommerce stores, illustrating the blast radius of overtrusted app identities and delayed credential revocation.",
     "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "a06e579e4539eb2a",
-    "date": "2026-09-22",
-    "source": "CERT-EU",
-    "title": "Security Advisory 2026-013: Critical Vulnerability in F5 BIG-IP APM",
-    "url": "https://cert.europa.eu/publications/security-advisories/2026-013",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authorization",
-      "ITDR"
-    ],
-    "note": "CERT-EU reports active exploitation of an unauthenticated RCE in BIG-IP APM configurations using OAuth authorization-server profiles and provides compromise indicators tied to OAuth failures and suspicious commands.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "0c6eca8485a71cfa",
-    "date": "2026-09-22",
-    "source": "CERT-EU",
-    "title": "Critical Vulnerability in F5 BIG-IP APM",
-    "url": "https://www.cert.europa.eu/publications/security-advisories/2026-013/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authentication",
-      "ITDR"
-    ],
-    "note": "Identity-gateway advisory for an actively exploited unauthenticated RCE affecting BIG-IP APM deployments combining access policies with OAuth authorization-server profiles.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "5951215eea492b0b",
-    "date": "2026-09-22",
-    "source": "Cloudflare",
-    "title": "Cloudflare participates in global operation to disrupt EvilTokens Phishing-as-a-Service",
-    "url": "https://www.cloudflare.com/threat-intelligence/research/report/cloudflare-participates-in-global-operation-to-disrupt-eviltokens-phishing-as-a-service/",
-    "tags": [
-      "OAuth",
-      "Token Abuse",
-      "MFA Bypass",
-      "Cloud Security"
-    ],
-    "note": "Cloudflare explains how EvilTokens abused Cloudflare Workers and customer-supplied API keys to automate Microsoft token theft and persistent access at scale.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "373464fd801623e4",
-    "date": "2026-09-22",
-    "source": "Microsoft Digital Crimes Unit",
-    "title": "Disrupting EvilTokens: The AI Chatbot Built for Cybercrime",
-    "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
-    "tags": [
-      "IAM",
-      "Account takeover",
-      "AI-agent authorization"
-    ],
-    "note": "Primary disruption report shows how compromised email accounts and mailbox analysis were operationalized into targeted fraud and impersonation.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "c169620ea001e674",
-    "date": "2026-09-22",
-    "source": "TechCrunch",
-    "title": "Stolen passwords are exposing America's water providers to hackers",
-    "url": "https://techcrunch.com/2026/09/22/stolen-passwords-are-exposing-americas-water-providers-to-hackers/",
-    "tags": [
-      "IAM",
-      "NHI",
-      "Session Security",
-      "Critical Infrastructure"
-    ],
-    "note": "SpyCloud research found infostealer-exposed credentials and active sessions across thousands of U.S. water providers, including cases where one compromised technology provider exposed access paths to many utilities.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "04cd5d90d4b3c0df",
-    "date": "2026-09-22",
-    "source": "Amazon Web Services",
-    "title": "CVE-2026-94384 - Missing Authorization in AmazonConnectSalesforceLambda sfExecuteAWSService",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-115-aws/",
-    "tags": [
-      "AWS",
-      "Authorization",
-      "Least Privilege",
-      "NHI"
-    ],
-    "note": "The AWS bulletin describes a privilege-escalation path where any principal able to invoke a Lambda function could cause privileged AWS API operations beyond its own IAM permissions.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "a62a122af144e52c",
-    "date": "2026-09-22",
-    "source": "SecurityWeek",
-    "title": "BigCommerce Data Breach Caused by Compromised Third-Party App Credentials",
-    "url": "https://www.securityweek.com/bigcommerce-data-breach-caused-by-compromised-third-party-app-credentials/",
-    "tags": [
-      "NHI",
-      "API keys",
-      "OAuth",
-      "Supply chain"
-    ],
-    "note": "The incident shows how compromised credentials belonging to a third-party storefront application enabled customer-data access and script injection across BigCommerce merchant environments.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-24T23:18:08.160410-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "93418228b9e585a9",
-    "date": "2026-09-22",
-    "source": "U.S. Securities and Exchange Commission",
-    "title": "Astrana Health, Inc. Form 8-K \u2014 Material Cybersecurity Incident",
-    "url": "https://www.sec.gov/Archives/edgar/data/1083446/000110465926109813/asth-20260922x8k.htm",
-    "tags": [
-      "IAM",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "Astrana Health disclosed a material incident in which attackers impersonated personnel and spoofed the company phone number to socially engineer employees into granting unauthorized system access.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e39b107a18ede821",
-    "date": "2026-09-22",
-    "source": "Okta",
-    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
-    "url": "https://www.okta.com/newsroom/press-releases/ai-innovations-oktane-2026/",
-    "tags": [
-      "Okta",
-      "AI Agents",
-      "IGA",
-      "OAuth",
-      "Token Revocation",
-      "NHI"
-    ],
-    "note": "Okta announced agent-to-agent governance, short-lived Agent SSO tokens, resource-access certifications and gateway-level active-token revocation.",
-    "score": 87
   }
 ]
