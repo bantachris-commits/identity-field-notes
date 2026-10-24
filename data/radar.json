@@ -17,6 +17,61 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "6acf43baeec09dbb",
+    "date": "2026-10-23",
+    "source": "Obsidian Security",
+    "title": "Tenant Spray - Wider SaaS Supply Chain Targeting Beyond ConnectWise",
+    "url": "https://www.obsidiansecurity.com/incident-watch/wider-saas-supply-chain-targeting-beyond-connectwise",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "Entra",
+      "Okta",
+      "NHI",
+      "ITDR"
+    ],
+    "note": "Adds cross-tenant evidence that stolen multi-tenant application credentials were used against Entra and Okta environments, including tenants where the targeted app was never installed.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "fb2af5c6d5dcbb1f",
+    "date": "2026-10-23",
+    "source": "ConnectWise",
+    "title": "Cloud Backup investigation and restoration update",
+    "url": "https://www.connectwise.com/company/trust/advisories",
+    "tags": [
+      "Entra",
+      "OAuth",
+      "NHI",
+      "Service Accounts",
+      "Incident Response"
+    ],
+    "note": "Affected-vendor advisory confirms unauthorized access to Cloud Backup application credentials and stresses tenant-level review for persistent access and unauthorized changes.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "abfff6ba3917a252",
+    "date": "2026-10-23",
+    "source": "Microsoft Security",
+    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "Secrets",
+      "AI Agents",
+      "Supply Chain"
+    ],
+    "note": "Technical analysis of a malicious LiteLLM release that harvested cloud, workload, CI/CD, browser, SSH, AI-tool and MCP credentials from environments merely starting Python.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
     "publishedDate": "2026-10-23",
     "id": "bfabc41abb7fbdd8",
@@ -34,21 +89,22 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
     "publishedDate": "2026-10-22",
-    "id": "d671266dc23bea17",
+    "id": "0eee4d6ec3f6dc47",
     "date": "2026-10-22",
-    "source": "Railway",
-    "title": "Preliminary Report: Oct 21st Security Incident",
-    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "source": "Huntress",
+    "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
+    "url": "https://www.huntress.com/blog/token-replay-spray",
     "tags": [
-      "NHI",
-      "Secrets Management",
-      "Cloud IAM",
-      "Incident"
+      "Entra",
+      "MFA",
+      "Session Theft",
+      "OAuth",
+      "ITDR"
     ],
-    "note": "Railway reports attacker access to internal systems, CI credentials and decrypted customer secrets, with possible exposure affecting up to 1.85% of workspaces.",
-    "score": 96
+    "note": "Documents 497 successful token-replay sign-ins across 79 organizations, including rogue Entra devices, replaced MFA methods and hidden inbox rules that survived ordinary password resets.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -84,6 +140,43 @@
     ],
     "note": "A token-cache keying flaw could return an OAuth bearer token issued for one client-credentials profile to another profile sharing the endpoint and client ID but using different scope or secret.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "92b876190d734454",
+    "date": "2026-10-22",
+    "source": "BleepingComputer",
+    "title": "Machine speed attacks require machine speed detection and response",
+    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+    "tags": [
+      "ITDR",
+      "OAuth",
+      "Session Theft",
+      "Token Abuse",
+      "AI Agents",
+      "Okta"
+    ],
+    "note": "Practical incident analysis shows why revoking an IdP session may not revoke downstream GitHub, cloud, SaaS or AI-provider tokens, and proposes low-friction automated containment actions.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d671266dc23bea17",
+    "date": "2026-10-22",
+    "source": "Railway",
+    "title": "Preliminary Report: Oct 21st Security Incident",
+    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "CI/CD",
+      "Cloud Identity",
+      "Incident Response"
+    ],
+    "note": "Primary incident disclosure explains unauthorized access to Railway systems and the resulting exposure and rotation requirements for cloud, CI, GitHub and AI-service credentials.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -157,36 +250,19 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security Research",
+    "source": "Microsoft Security",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
+      "Entra",
+      "OAuth",
+      "AI Agents",
       "ITDR",
-      "NHI",
-      "OAuth",
-      "AI-agent-authorization",
-      "Microsoft Entra",
-      "incident"
+      "Supply Chain",
+      "Privilege Escalation"
     ],
-    "note": "Primary Microsoft research details how stolen ConnectWise application credentials enabled machine-speed Microsoft 365 access, OAuth abuse, credential changes and attempted privilege escalation across downstream tenants.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "fb2af5c6d5dcbb1f",
-    "date": "2026-10-21",
-    "source": "ConnectWise",
-    "title": "ConnectWise Cloud Backup Update: What we know about the attacker and what it means for partners",
-    "url": "https://www.connectwise.com/company/trust/advisories",
-    "tags": [
-      "OAuth",
-      "Microsoft Entra",
-      "Service Accounts",
-      "Incident"
-    ],
-    "note": "ConnectWise's disclosure identifies compromised application credentials in Cloud Backup and warns that downstream Microsoft 365 tenants may require review for persistence and unauthorized changes.",
-    "score": 98
+    "note": "Primary Microsoft research links the ConnectWise compromise to Storm-0940 activity that abused trusted application identities, modified credentials and roles, and reached privileged cloud access at machine speed.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -3354,75 +3430,5 @@
     ],
     "note": "Google outlines how agentic workflows are changing endpoint and workforce identity assumptions, with implications for device trust, delegated authority, and policy enforcement around autonomous actions.",
     "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "328512777be817e4",
-    "date": "2026-09-23",
-    "source": "FBI",
-    "title": "FBI Statement on Compromise of fbijobs.gov Portal and Alleged Impact to FBI Employee PII",
-    "url": "https://www.fbi.gov/news/press-releases/fbi-statement-on-compromise-of-fbijobsgov-portal-and-alleged-impact-to-fbi-employee-pii",
-    "tags": [
-      "Incident response",
-      "Identity security",
-      "Government"
-    ],
-    "note": "The official statement is worth monitoring for follow-up forensic findings, although it does not yet identify the authentication or authorization failure behind the alleged portal compromise.",
-    "score": 68
-  },
-  {
-    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "b5e3deaac0408e1c",
-    "date": "2026-09-22",
-    "source": "Proofpoint",
-    "title": "Spraying in the Andes: TeamFiltration Returns to Exploit Forgotten Service Accounts",
-    "url": "https://www.proofpoint.com/us/blog/threat-insight/Spraying-in-the-Andes-TeamFiltration-Returns",
-    "tags": [
-      "IAM",
-      "NHI",
-      "MFA",
-      "Stale identities",
-      "Service accounts"
-    ],
-    "note": "Documents seven Microsoft 365 compromises involving dormant service accounts with default or predictable passwords and no MFA.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "bbe00974ebe14bb0",
-    "date": "2026-09-22",
-    "source": "BleepingComputer",
-    "title": "EvilTokens PhaaS disrupted after compromising 12,000 Microsoft accounts",
-    "url": "https://www.bleepingcomputer.com/news/security/eviltokens-phaas-disrupted-after-compromising-12-000-microsoft-accounts/",
-    "tags": [
-      "Entra",
-      "OAuth",
-      "MFA bypass",
-      "Token theft",
-      "ITDR"
-    ],
-    "note": "Reports the disruption of an OAuth device-code phishing service that compromised more than 12,000 accounts despite MFA and enabled mailbox reconnaissance and business-email-compromise activity.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-22T23:05:53.324547-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "1bbc2c4488af2f6a",
-    "date": "2026-09-22",
-    "source": "Microsoft Security Blog",
-    "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
-    "tags": [
-      "Entra",
-      "OAuth",
-      "MFA",
-      "ITDR",
-      "Token abuse"
-    ],
-    "note": "Microsoft analyzes an AI-assisted phishing-as-a-service platform that abused OAuth device-code authentication to steal tokens, register devices, create persistence and access mailboxes at scale.",
-    "score": 98
   }
 ]
