@@ -17,6 +17,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "bfabc41abb7fbdd8",
+    "date": "2026-10-23",
+    "source": "PingCAP",
+    "title": "A Note from Our CEO on Our Security Incident",
+    "url": "https://www.pingcap.com/ko/trust-hub/security/ceo-note-october-2026/",
+    "tags": [
+      "NHI",
+      "service-account-security",
+      "secrets",
+      "incident"
+    ],
+    "note": "PingCAP identifies a compromised GitHub account and exposed credentials as the route into internal systems, with customer data copied from analytics, storage and support environments.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-22",
     "id": "d671266dc23bea17",
@@ -51,6 +68,58 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "b1c9706033075c0a",
+    "date": "2026-10-22",
+    "source": "Apache Software Foundation",
+    "title": "Apache Camel Security Advisory - CVE-2026-94386",
+    "url": "https://camel.apache.org/security/CVE-2026-94386.html",
+    "tags": [
+      "OAuth",
+      "token-security",
+      "NHI",
+      "AI-agent-authorization",
+      "vulnerability"
+    ],
+    "note": "A token-cache keying flaw could return an OAuth bearer token issued for one client-credentials profile to another profile sharing the endpoint and client ID but using different scope or secret.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "ee0109c9281d77d4",
+    "date": "2026-10-22",
+    "source": "Aaron Parecki",
+    "title": "Evolution, not Revolution: How MCP is Reshaping OAuth",
+    "url": "https://aaronparecki.com/2026/10/22/2/",
+    "tags": [
+      "OAuth",
+      "OpenID",
+      "AI-agent-authorization",
+      "MCP"
+    ],
+    "note": "An identity-standards perspective on applying OAuth to MCP covers unregistered clients, Client ID Metadata Documents, resource metadata and enterprise-managed authorization for agents.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "8bf42f231c852c32",
+    "date": "2026-10-22",
+    "source": "Boston Identity",
+    "title": "In one consultant's experience, Entra's passkey campaign lets SMS users register synced passkeys their policy bars",
+    "url": "https://insights.bostonidentity.com/research/hip-podcast-2026-10-13-phishing-resistant-default-microsoft",
+    "tags": [
+      "Microsoft Entra",
+      "passkeys",
+      "MFA",
+      "identity-policy"
+    ],
+    "note": "The briefing documents a practitioner-reported Entra registration-policy mismatch that may allow SMS or voice users to enroll synced passkeys where tenant policy intends to permit only device-bound passkeys.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-22",
     "id": "5f9731572f84d964",
@@ -64,23 +133,6 @@
       "Threat Research"
     ],
     "note": "New Semperis research details Prince of Persia infrastructure, stealth techniques and indicators relevant to identity-resilience and hybrid-environment defenders.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "8bf42f231c852c32",
-    "date": "2026-10-22",
-    "source": "IAM Insights",
-    "title": "In one consultant's experience, Entra's passkey campaign lets SMS users register synced passkeys their policy bars",
-    "url": "https://insights.bostonidentity.com/research/hip-podcast-2026-10-13-phishing-resistant-default-microsoft",
-    "tags": [
-      "Passkeys",
-      "Microsoft Entra",
-      "MFA",
-      "Identity governance"
-    ],
-    "note": "A practitioner briefing reports a potentially important Entra registration-policy mismatch in which Microsoft-managed passkey enrollment may permit synced passkeys where tenant policy expects device-bound credentials; the claim remains independently unconfirmed.",
     "score": 76
   },
   {
@@ -105,17 +157,18 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Research",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
       "ITDR",
-      "OAuth",
       "NHI",
-      "AI-agent authorization",
-      "Microsoft Entra"
+      "OAuth",
+      "AI-agent-authorization",
+      "Microsoft Entra",
+      "incident"
     ],
-    "note": "Primary research details how a compromised multi-tenant application, stolen app credentials and OAuth abuse enabled machine-speed access to downstream Microsoft 365 tenants, privilege changes and persistence.",
+    "note": "Primary Microsoft research details how stolen ConnectWise application credentials enabled machine-speed Microsoft 365 access, OAuth abuse, credential changes and attempted privilege escalation across downstream tenants.",
     "score": 100
   },
   {
@@ -272,6 +325,23 @@
     "score": 80
   },
   {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "c466539333b10120",
+    "date": "2026-10-20",
+    "source": "Google Chrome Security",
+    "title": "Protecting Chrome and Android Users from Compromised eMudhra Intermediate CA Certificates",
+    "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
+    "tags": [
+      "PKI",
+      "machine-identity",
+      "secrets",
+      "incident"
+    ],
+    "note": "Google reports that weakly generated private keys for eight eMudhra intermediate CAs enabled potential trusted-site impersonation and triggered ecosystem-wide trust-store remediation.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-20",
     "id": "5e1b3910b8c3df34",
@@ -304,6 +374,41 @@
     ],
     "note": "FIDO announced public working documents for wallet certification and verifier identification, relevant to interoperable credentials, phishing-resistant recovery and trusted agent delegation.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-19",
+    "id": "6bd6585835c42569",
+    "date": "2026-10-19",
+    "source": "Palo Alto Networks Unit 42",
+    "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "tags": [
+      "PAM",
+      "MFA-bypass",
+      "VPN",
+      "ITDR",
+      "incident"
+    ],
+    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions without normal MFA, pivot to virtualization infrastructure and dump domain credentials offline.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-19",
+    "id": "e5673c94c9fce474",
+    "date": "2026-10-19",
+    "source": "FIDO Alliance",
+    "title": "Authenticate U.S. 2026",
+    "url": "https://authenticatecon.com/event/authenticate-u-s-2026/",
+    "tags": [
+      "FIDO",
+      "passkeys",
+      "authentication",
+      "standards"
+    ],
+    "note": "The current Authenticate U.S. program is a useful primary-community queue anchor for developments in passkey deployment, phishing-resistant authentication, identity proofing and federation practice.",
+    "score": 69
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -3319,109 +3424,5 @@
     ],
     "note": "Microsoft analyzes an AI-assisted phishing-as-a-service platform that abused OAuth device-code authentication to steal tokens, register devices, create persistence and access mailboxes at scale.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-22T11:13:25.576791-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "125a18e03bff65c1",
-    "date": "2026-09-22",
-    "source": "Check Point Research",
-    "title": "21st September \u2013 Threat Intelligence Report",
-    "url": "https://research.checkpoint.com/2026/21st-september-threat-intelligence-report/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "MFA",
-      "Token Abuse",
-      "ITDR"
-    ],
-    "note": "Highlights GhostCode, a device-code phishing kit that abuses OAuth to capture Microsoft 365 tokens, register attacker-controlled devices, and establish persistence without stealing passwords or directly bypassing MFA.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e1051ee9bd0aabab",
-    "date": "2026-09-22",
-    "source": "Canadian Centre for Cyber Security",
-    "title": "AL26-022 - Vulnerability impacting F5 BIG-IP Access Policy Manager (APM \u2013 CVE-2026-94127",
-    "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-022-vulnerability-impacting-f5-big-ip-access-policy-manager-apm-cve-2026-94127",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authentication",
-      "Zero-Day"
-    ],
-    "note": "Government guidance covers an actively exploited unauthenticated RCE in BIG-IP APM deployments combining an access policy with an OAuth profile, including remediation and log-review advice.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "e37c24c05934b869",
-    "date": "2026-09-22",
-    "source": "Varonis Threat Labs via BleepingComputer",
-    "title": "Rogue external MFA providers can steal passwords during logins",
-    "url": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
-    "tags": [
-      "Entra",
-      "MFA",
-      "ITDR",
-      "Federation",
-      "Credential Theft"
-    ],
-    "note": "The TrustSink technique shows how a privileged Entra compromise can register a rogue external authentication provider that captures replacement passwords inside legitimate MFA flows and survives password resets.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "682952e74bdefc30",
-    "date": "2026-09-22",
-    "source": "F5",
-    "title": "Security Advisory: BIG-IP APM Remote Code Execution Vulnerability CVE-2026-94127",
-    "url": "https://my.f5.com/manage/s/article/K000149843",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authentication"
-    ],
-    "note": "F5 disclosed active exploitation of a BIG-IP APM flaw affecting OAuth Authorization Server deployments, making this an urgent identity-proxy and federation control review item.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-23T15:43:10.890193-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "8c4e4ffe7f8c0dfd",
-    "date": "2026-09-22",
-    "source": "Dark Reading",
-    "title": "Shai-Hulud Attack Nips Cyber-Firm CrowdSec's GitHub Data",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/shai-hulud-attack-cyber-firm-crowdsec-github-data",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "Token Abuse",
-      "Offboarding"
-    ],
-    "note": "CrowdSec\u2019s disclosure describes a former employee\u2019s retained GitHub repository permission being abused through an OAuth token stolen from the employee\u2019s compromised device, exposing about 170 private repositories.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-24T15:44:19.957995-06:00",
-    "publishedDate": "2026-09-22",
-    "id": "dace937c271171a5",
-    "date": "2026-09-22",
-    "source": "SecurityWeek",
-    "title": "BigCommerce Data Stolen via Ribon Apps Hack",
-    "url": "https://www.securityweek.com/bigcommerce-data-stolen-via-ribon-apps-hack/",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "Secrets",
-      "OAuth",
-      "Third-Party Risk"
-    ],
-    "note": "Attackers used compromised credentials belonging to third-party Ribon applications to access shopper data through BigCommerce stores, illustrating the blast radius of overtrusted app identities and delayed credential revocation.",
-    "score": 94
   }
 ]
