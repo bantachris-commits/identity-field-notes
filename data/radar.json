@@ -105,6 +105,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "af798b2c649dde4f",
+    "date": "2026-10-23",
+    "source": "Railway",
+    "title": "Changelog 0313",
+    "url": "https://railway.com/changelog/2026-10-23-october-21-security-incident",
+    "tags": [
+      "Secrets",
+      "API Tokens",
+      "Incident Response",
+      "Session Security"
+    ],
+    "note": "Railway's follow-up confirms the incident response scope and recommends revoking and replacing sensitive credentials, reviewing GitHub and registry audit logs, and checking for exposed database access.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
     "publishedDate": "2026-10-23",
     "id": "c3317b2efe93ee9b",
@@ -157,23 +174,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "d671266dc23bea17",
-    "date": "2026-10-22",
-    "source": "Railway",
-    "title": "Preliminary Report: Oct 21st Security Incident",
-    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
-    "tags": [
-      "Secrets",
-      "PAM",
-      "CI/CD",
-      "NHI"
-    ],
-    "note": "Primary incident disclosure describing privilege escalation, CI credential compromise, decryption of stored environment variables, and rotation of potentially exposed customer keys.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-22",
     "id": "c9e4f3f4f4fcf403",
@@ -208,6 +208,23 @@
     ],
     "note": "Practical incident analysis shows why revoking an IdP session may not revoke downstream GitHub, cloud, SaaS or AI-provider tokens, and proposes low-friction automated containment actions.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d671266dc23bea17",
+    "date": "2026-10-22",
+    "source": "Railway",
+    "title": "Preliminary Report: Oct 21st Security Incident",
+    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "API Tokens",
+      "Incident Response"
+    ],
+    "note": "Railway says attackers escalated privileges, decrypted some customer environment secrets, and accessed CI credentials that exposed additional API access, making this a useful case study in secret custody and blast-radius control.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -298,17 +315,18 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Threat Intelligence",
+    "source": "Microsoft Security",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Entra",
-      "Service Accounts",
+      "Microsoft Entra",
+      "NHI",
       "OAuth",
-      "Supply Chain",
-      "AI Agents"
+      "Service Principals",
+      "ITDR",
+      "Incident Response"
     ],
-    "note": "Provides primary analysis of Storm-0940 abusing ConnectWise application identities and existing Microsoft 365 permissions, with concrete Entra hunting and containment guidance.",
+    "note": "Microsoft describes Storm-0940 abusing stolen ConnectWise application credentials across more than 2,250 Microsoft 365 tenants, including Graph activity, application-credential changes, and identity and privileged-role modifications.",
     "score": 99
   },
   {
@@ -378,6 +396,23 @@
     ],
     "note": "Railway\u2019s disclosure warns that decrypted environment variables may have been accessed, requiring broad rotation of API keys, database credentials, registry credentials and related service secrets.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "989a78d26c9c7a0f",
+    "date": "2026-10-21",
+    "source": "IETF",
+    "title": "Mission-Bound Authorization for OAuth 2.0",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-01",
+    "tags": [
+      "OAuth",
+      "AI-Agent Authorization",
+      "Token Security",
+      "Delegation"
+    ],
+    "note": "This new Internet-Draft proposes a durable mission object binding user-approved tasks to later token issuance, while explicitly noting that revoking a mission does not recall already-issued access tokens.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -499,6 +534,24 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "0732f8cc15c20fb3",
+    "date": "2026-10-20",
+    "source": "AWS",
+    "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "AI-Agent Authorization",
+      "Session Security",
+      "NHI"
+    ],
+    "note": "AWS now brokers AI-agent WorkSpaces sessions through OAuth 2.0 and manages connection lifecycles, while exposing session state and observability without handing agents the underlying streaming connection.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-20",
     "id": "7cfa263b782a85aa",
@@ -532,6 +585,23 @@
     ],
     "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions without normal MFA, pivot to virtualization infrastructure and dump domain credentials offline.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
+    "publishedDate": "2026-10-19",
+    "id": "cd30eb68866bcd0b",
+    "date": "2026-10-19",
+    "source": "Microsoft Security",
+    "title": "Agents are your newest insiders. Security must move at their speed.",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+    "tags": [
+      "Microsoft Entra",
+      "AI-Agent Authorization",
+      "NHI",
+      "ITDR"
+    ],
+    "note": "Microsoft expands Entra Agent ID to cover local and previously unknown agents discovered by security sensors, positioning agent identity as the anchor for ownership, lifecycle, permissions, runtime controls, and attribution.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -3358,75 +3428,5 @@
     ],
     "note": "The report operationalizes the TrustSink technique: a privileged attacker can register a rogue Entra external MFA provider that captures replacement passwords, so provider removal must precede password rotation.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "c21f26630257f0a5",
-    "date": "2026-09-23",
-    "source": "Microsoft Learn",
-    "title": "FAQ for Microsoft-provided SMS and voice retirement - Microsoft Entra ID",
-    "url": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sms-voice-retirement-faq",
-    "tags": [
-      "Entra",
-      "Passkeys",
-      "MFA",
-      "Authentication"
-    ],
-    "note": "Updated migration guidance explains automatic passkey enablement for SMS- and voice-dependent users and the February 1, 2027 retirement deadline for most affected populations.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-09-24T11:30:25.065825-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e158ecac2f7dd6fa",
-    "date": "2026-09-23",
-    "source": "Okta",
-    "title": "Oktane 2026: Setting the standard for the secure agentic future",
-    "url": "https://www.okta.com/en-ca/newsroom/articles/setting-the-standard-for-the-secure-agentic-future/",
-    "tags": [
-      "Okta",
-      "Auth0",
-      "AI Agents",
-      "Authorization",
-      "Standards"
-    ],
-    "note": "Okta outlines Agent SSO, Cross App Access, and a multi-vendor blueprint intended to standardize agent discovery, authorization, runtime visibility, and response.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "0ce37d3561b3f3f4",
-    "date": "2026-09-23",
-    "source": "SailPoint Developer Community",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Your Environment",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-your-environment/223638",
-    "tags": [
-      "IGA",
-      "Identity Graph",
-      "NHI",
-      "AI Agents",
-      "ITDR"
-    ],
-    "note": "SailPoint is making an identity graph broadly available to visualize human, non-human, and agent access paths and identify the blast radius of compromised identities.",
-    "score": 85
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4196216303b7486e",
-    "date": "2026-09-23",
-    "source": "SailPoint Developer Community",
-    "title": "New Availability: The SailPoint Identity Graph is Coming to Business+ Tenants",
-    "url": "https://developer.sailpoint.com/discuss/t/new-availability-the-sailpoint-identity-graph-is-coming-to-business-tenants/223638",
-    "tags": [
-      "IGA",
-      "ITDR",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "SailPoint is extending Identity Graph availability to Business+ tenants with unified visibility across human, non-human and agent identities, blast-radius analysis and direct remediation actions.",
-    "score": 84
   }
 ]
