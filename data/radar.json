@@ -36,6 +36,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "abfff6ba3917a252",
+    "date": "2026-10-23",
+    "source": "Microsoft Security Research",
+    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply Chain",
+      "OAuth"
+    ],
+    "note": "Details how a malicious LiteLLM release executed during Python startup and targeted cloud credentials, workload identities, API keys, and developer secrets.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-23",
     "id": "fb2af5c6d5dcbb1f",
@@ -54,22 +71,21 @@
     "score": 95
   },
   {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
     "publishedDate": "2026-10-23",
-    "id": "abfff6ba3917a252",
+    "id": "99bef6d2595d07c5",
     "date": "2026-10-23",
-    "source": "Microsoft Security",
-    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "source": "Socket",
+    "title": "New Evidence Shows LiteLLM Secret-Stealing Workflows Ran 11 Days Before Supply Chain Attack",
+    "url": "https://www.socket.dev/blog/litellm-attack-timeline",
     "tags": [
       "NHI",
-      "Machine Identity",
       "Secrets",
-      "AI Agents",
-      "Supply Chain"
+      "Supply Chain",
+      "CI/CD"
     ],
-    "note": "Technical analysis of a malicious LiteLLM release that harvested cloud, workload, CI/CD, browser, SSH, AI-tool and MCP credentials from environments merely starting Python.",
-    "score": 94
+    "note": "Adds evidence that the attacker used an unrecalled agent-platform master key and GitHub credentials to run secret-exfiltration workflows before publishing the malicious package.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -89,6 +105,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "c3317b2efe93ee9b",
+    "date": "2026-10-23",
+    "source": "Salesforce Help",
+    "title": "Security Change: New SSO-Required Permission and Automatic Legacy Configuration Migration",
+    "url": "https://help.salesforce.com/s/articleView?id=005461455&language=en_US&type=1",
+    "tags": [
+      "IAM",
+      "SSO",
+      "Federation",
+      "Offboarding"
+    ],
+    "note": "Documents Salesforce's new per-user SSO-required permission, sandbox availability on October 23, 2026, and automatic migration of eligible legacy configurations.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
     "publishedDate": "2026-10-22",
     "id": "0eee4d6ec3f6dc47",
@@ -97,31 +130,13 @@
     "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
     "url": "https://www.huntress.com/blog/token-replay-spray",
     "tags": [
-      "Entra",
+      "ITDR",
       "MFA",
       "Session Theft",
-      "OAuth",
-      "ITDR"
+      "Entra"
     ],
-    "note": "Documents 497 successful token-replay sign-ins across 79 organizations, including rogue Entra devices, replaced MFA methods and hidden inbox rules that survived ordinary password resets.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "c9e4f3f4f4fcf403",
-    "date": "2026-10-22",
-    "source": "IETF",
-    "title": "draft-hamr-oauth-agent-delegation-03 - An Attenuated Delegation Profile for Automated Agents",
-    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/03/",
-    "tags": [
-      "OAuth",
-      "AI-agent authorization",
-      "Delegation",
-      "NHI"
-    ],
-    "note": "A newly updated Internet-Draft proposes attenuated, verifiable delegation chains for automated agents acting across administrative domains, with scope reduction and hop-by-hop validation.",
-    "score": 94
+    "note": "Tracks 497 successful Microsoft 365 token-replay sign-ins across 79 organizations, including rogue Entra devices, MFA tampering, and hidden inbox rules.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -140,6 +155,40 @@
     ],
     "note": "A token-cache keying flaw could return an OAuth bearer token issued for one client-credentials profile to another profile sharing the endpoint and client ID but using different scope or secret.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d671266dc23bea17",
+    "date": "2026-10-22",
+    "source": "Railway",
+    "title": "Preliminary Report: Oct 21st Security Incident",
+    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "tags": [
+      "Secrets",
+      "PAM",
+      "CI/CD",
+      "NHI"
+    ],
+    "note": "Primary incident disclosure describing privilege escalation, CI credential compromise, decryption of stored environment variables, and rotation of potentially exposed customer keys.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "c9e4f3f4f4fcf403",
+    "date": "2026-10-22",
+    "source": "IETF OAuth Working Group",
+    "title": "An Attenuated Delegation Profile for Automated Agents",
+    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/03/",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "Delegation",
+      "Authorization"
+    ],
+    "note": "Introduces an OAuth delegation profile for agent chains that carries attenuated delegation links, directly addressing scope expansion and agent-to-agent authorization.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
@@ -161,24 +210,6 @@
     "score": 93
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "d671266dc23bea17",
-    "date": "2026-10-22",
-    "source": "Railway",
-    "title": "Preliminary Report: Oct 21st Security Incident",
-    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "CI/CD",
-      "Cloud Identity",
-      "Incident Response"
-    ],
-    "note": "Primary incident disclosure explains unauthorized access to Railway systems and the resulting exposure and rotation requirements for cloud, CI, GitHub and AI-service credentials.",
-    "score": 91
-  },
-  {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
     "publishedDate": "2026-10-22",
     "id": "ee0109c9281d77d4",
@@ -193,6 +224,23 @@
       "MCP"
     ],
     "note": "An identity-standards perspective on applying OAuth to MCP covers unregistered clients, Client ID Metadata Documents, resource metadata and enterprise-managed authorization for agents.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "42da6d60c991a6dc",
+    "date": "2026-10-22",
+    "source": "Microsoft Learn",
+    "title": "October 2026 - Azure Databricks",
+    "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/october",
+    "tags": [
+      "IGA",
+      "Entra",
+      "Service Principals",
+      "ITDR"
+    ],
+    "note": "Adds a beta Microsoft Entra connector that ingests users, groups, applications, service principals, roles, identity configuration, and audit/sign-in logs into Databricks.",
     "score": 84
   },
   {
@@ -250,19 +298,35 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security",
+    "source": "Microsoft Threat Intelligence",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
       "Entra",
+      "Service Accounts",
       "OAuth",
-      "AI Agents",
-      "ITDR",
       "Supply Chain",
-      "Privilege Escalation"
+      "AI Agents"
     ],
-    "note": "Primary Microsoft research links the ConnectWise compromise to Storm-0940 activity that abused trusted application identities, modified credentials and roles, and reached privileged cloud access at machine speed.",
+    "note": "Provides primary analysis of Storm-0940 abusing ConnectWise application identities and existing Microsoft 365 permissions, with concrete Entra hunting and containment guidance.",
     "score": 99
+  },
+  {
+    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "eb39d485f167cf39",
+    "date": "2026-10-21",
+    "source": "Cremit",
+    "title": "Zeabur's Second Breach Ran on Keys the First Rotation Missed",
+    "url": "https://www.cremit.io/blog/zeabur-2026-breach-unrotated-admin-credentials",
+    "tags": [
+      "Secrets",
+      "PAM",
+      "Cloud IAM",
+      "Service Accounts"
+    ],
+    "note": "Analyzes how stale plaintext admin tokens, unrotated cloud credentials, root passwords, and an overprivileged maintenance credential contributed to Zeabur's second breach.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -314,23 +378,6 @@
     ],
     "note": "Railway\u2019s disclosure warns that decrypted environment variables may have been accessed, requiring broad rotation of API keys, database credentials, registry credentials and related service secrets.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "1a39f5bd86b350cd",
-    "date": "2026-10-21",
-    "source": "FIDO Alliance",
-    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
-    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "AI-agent authorization",
-      "Authorization"
-    ],
-    "note": "The conference synthesis connects passkeys, verified human approval, traceable delegation and revocable boundaries for agent-initiated transactions.",
-    "score": 86
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -399,6 +446,23 @@
     ],
     "note": "A meaningful platform move toward discovering agents, governing their actions, monitoring behavior and stopping unintended or malicious activity at runtime.",
     "score": 80
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "1a39f5bd86b350cd",
+    "date": "2026-10-21",
+    "source": "FIDO Alliance",
+    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
+    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "AI Agents",
+      "Authorization"
+    ],
+    "note": "Summarizes FIDO's latest agentic-transaction focus on verified human approval, traceability, and enforcing limits on actions taken by delegated agents.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -485,6 +549,24 @@
     ],
     "note": "The current Authenticate U.S. program is a useful primary-community queue anchor for developments in passkey deployment, phishing-resistant authentication, identity proofing and federation practice.",
     "score": 69
+  },
+  {
+    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
+    "publishedDate": "2026-10-17",
+    "id": "6ebb6110329d2fce",
+    "date": "2026-10-17",
+    "source": "BleepingComputer",
+    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-connectwise-supply-chain-attack/",
+    "tags": [
+      "Entra",
+      "Service Principals",
+      "OAuth",
+      "MFA Bypass",
+      "Supply Chain"
+    ],
+    "note": "Explains how compromised ConnectWise service-principal credentials enabled direct app authentication, broad tenant access, and MFA bypass across customer Microsoft 365 environments.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -3346,89 +3428,5 @@
     ],
     "note": "SailPoint is extending Identity Graph availability to Business+ tenants with unified visibility across human, non-human and agent identities, blast-radius analysis and direct remediation actions.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "4de0b82706d58314",
-    "date": "2026-09-23",
-    "source": "Semperis",
-    "title": "Semperis Reimagines Active Directory Migration from the Ground Up",
-    "url": "https://www.semperis.com/press-release/semperis-reimagines-active-directory-migration-from-the-ground-up/",
-    "tags": [
-      "PAM",
-      "IGA",
-      "Active Directory",
-      "ITDR"
-    ],
-    "note": "Migrator 2.0 treats directory migration as an identity-security event, adding staged validation, controlled synchronization and unified operational evidence across migration components.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-23T23:17:02.242631-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "418eab4b215afd87",
-    "date": "2026-09-23",
-    "source": "Microsoft Security Blog",
-    "title": "Reimagining the SOC for the agentic era in Microsoft Defender",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
-    "tags": [
-      "ITDR",
-      "Microsoft Entra",
-      "AI Agents",
-      "Security Operations"
-    ],
-    "note": "Microsoft announced a preview integrated security operations center that combines security signals, context and response controls for human- and agent-operated investigations, with implications for identity-centric detection and response.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "bb1f3698a227bd4f",
-    "date": "2026-09-23",
-    "source": "Ping Identity",
-    "title": "September Product Updates: Agentic Identity & Connectors",
-    "url": "https://www.pingidentity.com/en/resources/blog/post/september-2026-product-updates.html",
-    "tags": [
-      "Ping Identity",
-      "AI Agents",
-      "MCP",
-      "Runtime Authorization"
-    ],
-    "note": "Ping\u2019s September changes add runtime policy for personal agents, agent recognition, MCP integrations, and user/device linkage for agent activity.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "ee4ea52c54c1c84a",
-    "date": "2026-09-23",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust Launches New Integrations with CrowdStrike Falcon Next-Gen SIEM",
-    "url": "https://www.beyondtrust.com/press/beyondtrust-crowdstrike-falcon-next-gen-siem-integrations",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "The integration brings privilege relationships and exposure context for human, non-human and AI identities into SIEM investigations, reinforcing the convergence of PAM telemetry and SOC response.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-09-24T06:08:32.232892-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "84d20851445bb56a",
-    "date": "2026-09-23",
-    "source": "Google Cloud",
-    "title": "Secure, intelligent experiences across every endpoint",
-    "url": "https://cloud.google.com/blog/products/chrome-enterprise/secure-intelligent-experiences-across-every-endpoint",
-    "tags": [
-      "AI Agents",
-      "IAM",
-      "Authorization",
-      "Endpoint Identity"
-    ],
-    "note": "Google outlines how agentic workflows are changing endpoint and workforce identity assumptions, with implications for device trust, delegated authority, and policy enforcement around autonomous actions.",
-    "score": 76
   }
 ]
