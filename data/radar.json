@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
+    "publishedDate": "2026-10-24",
+    "id": "7265c92bc0ed6486",
+    "date": "2026-10-24",
+    "source": "The Five Nines",
+    "title": "Researchers link k0t campaign to 70,000 exposed firewall credentials",
+    "url": "https://www.thefivenines.com/security/researchers-link-k0t-campaign-to-70-000-exposed-firewall-credentials",
+    "tags": [
+      "PAM",
+      "Credential Security",
+      "AD",
+      "LDAP"
+    ],
+    "note": "Reports research linking a campaign to exposed FortiGate, FortiWeb and GlobalProtect credentials, including LDAP and Active Directory secrets recoverable from compromised appliance configurations.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
     "publishedDate": "2026-10-23",
     "id": "8ef4f07d663f0a18",
@@ -11,9 +28,10 @@
       "NHI",
       "OAuth",
       "Secrets",
+      "AI Agents",
       "Supply Chain"
     ],
-    "note": "A canonical incident reconstruction showing how an unrevoked exposed master key led to stolen GitHub OAuth tokens, owner-level access, CI secret exfiltration, and a poisoned release.",
+    "note": "Primary incident analysis traces compromise from an exposed LiteLLM master key to stolen post-MFA GitHub CLI OAuth tokens, CI secret exfiltration and release-pipeline takeover.",
     "score": 99
   },
   {
@@ -49,8 +67,8 @@
       "NHI",
       "ITDR"
     ],
-    "note": "Adds cross-tenant evidence that stolen multi-tenant application credentials were used against Entra and Okta environments, including tenants where the targeted app was never installed.",
-    "score": 96
+    "note": "Detailed independent telemetry shows stolen vendor application credentials being tested across Microsoft 365 and Okta tenants, with token issuance, password spraying and cross-tenant targeting.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
@@ -292,6 +310,22 @@
     "score": 89
   },
   {
+    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "c857d00b04e61c1b",
+    "date": "2026-10-22",
+    "source": "eMudhra",
+    "title": "eMudhra to Exit global SSL/TLS Certificate Business",
+    "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
+    "tags": [
+      "PKI",
+      "Machine Identity",
+      "Trust Anchors"
+    ],
+    "note": "Material market response to the compromise of eight weakly generated intermediate CA keys, highlighting the operational and ecosystem consequences of failures in machine-identity trust anchors.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
     "publishedDate": "2026-10-22",
     "id": "ee0109c9281d77d4",
@@ -323,6 +357,24 @@
       "ITDR"
     ],
     "note": "Adds a beta Microsoft Entra connector that ingests users, groups, applications, service principals, roles, identity configuration, and audit/sign-in logs into Databricks.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d007edba3784505e",
+    "date": "2026-10-22",
+    "source": "BeyondTrust",
+    "title": "Identity Security Insights 26.10.1",
+    "url": "https://docs.beyondtrust.com/insights/changelog/identity-security-insights-26-10-1",
+    "tags": [
+      "ITDR",
+      "PAM",
+      "Okta",
+      "OAuth",
+      "Identity Governance"
+    ],
+    "note": "Meaningful product update adds identity-risk classification and expanded Okta detections for dormant administrators, weak MFA, long sessions, OAuth scope problems, API tokens and persistence mechanisms.",
     "score": 84
   },
   {
@@ -401,14 +453,13 @@
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Microsoft Entra",
-      "NHI",
+      "Entra",
       "OAuth",
-      "Service Principals",
-      "ITDR",
-      "Incident Response"
+      "NHI",
+      "AI Agents",
+      "ITDR"
     ],
-    "note": "Microsoft describes Storm-0940 abusing stolen ConnectWise application credentials across more than 2,250 Microsoft 365 tenants, including Graph activity, application-credential changes, and identity and privileged-role modifications.",
+    "note": "Primary Microsoft reporting details Storm-0940 activity involving compromised ConnectWise application credentials, cross-tenant Microsoft 365 access and changes to Entra applications, roles and authentication controls.",
     "score": 99
   },
   {
@@ -625,12 +676,11 @@
     "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
     "tags": [
       "PKI",
-      "machine-identity",
-      "secrets",
-      "incident"
+      "Machine Identity",
+      "Session Security"
     ],
-    "note": "Google reports that weakly generated private keys for eight eMudhra intermediate CAs enabled potential trusted-site impersonation and triggered ecosystem-wide trust-store remediation.",
-    "score": 88
+    "note": "Primary technical disclosure explains how weak intermediate-CA private keys could enable trusted-site impersonation, credential interception and session hijacking, and documents Chrome\u2019s emergency response.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -821,6 +871,23 @@
     ],
     "note": "Explains how compromised ConnectWise service-principal credentials enabled direct app authentication, broad tenant access, and MFA bypass across customer Microsoft 365 environments.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
+    "publishedDate": "2026-10-16",
+    "id": "432b50edcc433b9f",
+    "date": "2026-10-16",
+    "source": "CISA",
+    "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+    "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+    "tags": [
+      "PAM",
+      "Authentication",
+      "MFA",
+      "ITDR"
+    ],
+    "note": "CISA confirms active exploitation of a BeyondTrust Remote Support authentication-bypass vulnerability and directs organizations to investigate privileged sessions, stored credentials, MFA changes and persistence.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -3358,72 +3425,5 @@
     ],
     "note": "Field telemetry describes a sharp rise in device-code phishing that yields attacker-controlled refresh tokens without stealing passwords, reinforcing the need to monitor device-code issuance and revoke delegated sessions.",
     "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "efd68e0344eaa989",
-    "date": "2026-09-24",
-    "source": "Google Cloud",
-    "title": "AlloyDB delivers PostgreSQL for agents: Real-time data at agent scale, with full workload isolation",
-    "url": "https://cloud.google.com/blog/products/databases/announcing-postgresql-for-agents-in-alloydb",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "Cloud IAM",
-      "Secrets"
-    ],
-    "note": "A meaningful workload-identity move for agentic systems: IAM authentication replaces static database passwords while sandboxed instances, VPC Service Controls and auditability constrain agent access.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "636f48d43c3d94d8",
-    "date": "2026-09-24",
-    "source": "Amazon Web Services",
-    "title": "CVE-2026-95985 - Kiro IDE Allows Agentic Writes to Global Configurations While Working in Untrusted Workspaces",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-117-aws/",
-    "tags": [
-      "AWS",
-      "AI Agents",
-      "Authorization",
-      "Secrets"
-    ],
-    "note": "AWS warns that an untrusted workspace could manipulate an agent\u2019s globally loaded configuration, an important example of agent-context integrity becoming an authorization and execution boundary.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-27T15:34:05.343409-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "3f59779bd025b0ad",
-    "date": "2026-09-24",
-    "source": "OpenAI",
-    "title": "ChatGPT Enterprise and Edu release notes \u2014 External access controls",
-    "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
-    "tags": [
-      "IAM",
-      "authorization",
-      "SaaS identity"
-    ],
-    "note": "New tenant controls separate identity-only sign-in from connected-app and site data access, a useful pattern for governing delegated access in enterprise AI workspaces.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "daa2b1340f64ffa6",
-    "date": "2026-09-24",
-    "source": "The Record",
-    "title": "Astrana latest healthcare tech firm to report data breach to SEC",
-    "url": "https://therecord.media/astrana-cyberattack-sec-ransomware",
-    "tags": [
-      "Incident",
-      "Compromised Credentials",
-      "Social Engineering",
-      "ITDR"
-    ],
-    "note": "Astrana\u2019s SEC-disclosed incident involved attackers impersonating personnel, spoofing the corporate phone number, and persuading employees into server access, making it a relevant identity-led intrusion case study.",
-    "score": 80
   }
 ]
