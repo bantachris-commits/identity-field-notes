@@ -82,10 +82,11 @@
       "NHI",
       "Machine Identity",
       "Secrets",
-      "Supply Chain"
+      "Supply Chain",
+      "AI"
     ],
-    "note": "Primary technical analysis of a malicious LiteLLM release that automatically harvested cloud credentials, developer tokens, browser secrets, API keys and workload identity material from Python environments.",
-    "score": 96
+    "note": "A compromised LiteLLM release used Python startup hooks to harvest cloud credentials, workload identities, SSH keys, AI-tool tokens, browser data and mounted secrets across developer, CI/CD and container environments.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -449,18 +450,18 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Research",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Entra",
       "OAuth",
       "NHI",
       "AI Agents",
-      "ITDR"
+      "Entra",
+      "Privilege Escalation"
     ],
-    "note": "Primary Microsoft reporting details Storm-0940 activity involving compromised ConnectWise application credentials, cross-tenant Microsoft 365 access and changes to Entra applications, roles and authentication controls.",
-    "score": 99
+    "note": "Microsoft details how the China-aligned Storm-0940 used an agentic AI framework to accelerate ConnectWise application-credential abuse, downstream OAuth access, privilege changes and persistence across customer tenants.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -650,6 +651,24 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "6bd6585835c42569",
+    "date": "2026-10-20",
+    "source": "Palo Alto Networks Unit 42",
+    "title": "Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20",
+    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "tags": [
+      "PAM",
+      "MFA Bypass",
+      "VPN",
+      "Credential Theft",
+      "ITDR"
+    ],
+    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions without MFA and, in one case, pivot to vCenter and dump domain-controller credentials offline.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
     "publishedDate": "2026-10-20",
     "id": "aa2f36ffa3be9ae9",
@@ -769,21 +788,22 @@
     "score": 80
   },
   {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
     "publishedDate": "2026-10-19",
-    "id": "6bd6585835c42569",
+    "id": "e1878fccb67fd76c",
     "date": "2026-10-19",
-    "source": "Palo Alto Networks Unit 42",
-    "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 20",
-    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "source": "Sophos X-Ops",
+    "title": "ConnectWise Cloud Backup application abused in cross-tenant token sweep",
+    "url": "https://www.sophos.com/en-us/blog/connectwise-cloud-backup-application-abused-in-token-sweep",
     "tags": [
-      "PAM",
-      "MFA Bypass",
-      "Authentication",
-      "VPN"
+      "Entra",
+      "OAuth",
+      "NHI",
+      "Machine Identity",
+      "Token Abuse"
     ],
-    "note": "Documents active ransomware exploitation of a GlobalProtect authentication bypass that can establish unauthorized VPN sessions and bypass normal authentication controls.",
-    "score": 97
+    "note": "A compromised vendor-held application credential was used to request app-only Microsoft Graph tokens across consenting Microsoft 365 tenants without passwords or MFA, demonstrating multi-tenant service-principal blast radius.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -807,17 +827,18 @@
     "publishedDate": "2026-10-19",
     "id": "cd30eb68866bcd0b",
     "date": "2026-10-19",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Blog",
     "title": "Agents are your newest insiders. Security must move at their speed.",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
     "tags": [
-      "Microsoft Entra",
-      "AI-Agent Authorization",
-      "NHI",
+      "AI Agents",
+      "Entra",
+      "IGA",
+      "Authorization",
       "ITDR"
     ],
-    "note": "Microsoft expands Entra Agent ID to cover local and previously unknown agents discovered by security sensors, positioning agent identity as the anchor for ownership, lifecycle, permissions, runtime controls, and attribution.",
-    "score": 90
+    "note": "Microsoft outlines a control model for agent discovery, first-class identities, task-scoped authority, continuous risk adaptation and containment when agents are manipulated or compromised.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -1297,6 +1318,24 @@
     ],
     "note": "MyID Authenticate extends FIDO passkey sign-in to Windows desktops, offline logon, VPNs, legacy applications, and hybrid Entra-connected environments.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
+    "publishedDate": "2026-10-09",
+    "id": "48ec1fe58c1ea7f4",
+    "date": "2026-10-09",
+    "source": "Palo Alto Networks",
+    "title": "Resolving the AI Agent Identity Crisis: Many Standards, One Direction",
+    "url": "https://www.paloaltonetworks.com/blog/identity-security/ai-agent-identity-security-standards-guide/",
+    "tags": [
+      "AI Agents",
+      "Machine Identity",
+      "OAuth",
+      "SPIFFE",
+      "OpenID"
+    ],
+    "note": "A useful technical map of emerging agent-identity work across WIMSE, SPIFFE, OAuth, OpenID, ODIS, CoSAI and NIST, with practical emphasis on short-lived tokens, zero standing privilege and human step-up approval.",
+    "score": 85
   },
   {
     "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
@@ -2468,6 +2507,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
+    "publishedDate": "2026-09-29",
+    "id": "008238bcc8dc3342",
+    "date": "2026-09-29",
+    "source": "NIST NCCoE",
+    "title": "Comments on Software and Agentic AI Identity Concept Paper",
+    "url": "https://www.nist.gov/news-events/news/2026/09/comments-software-and-agentic-ai-identity-concept-paper",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Standards",
+      "NIST",
+      "IGA"
+    ],
+    "note": "NIST summarizes feedback shaping its software and AI-agent identity and authorization project, including an upcoming DevSecOps implementation use case for identifying, authenticating and authorizing agents.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
     "publishedDate": "2026-09-29",
     "id": "874baac2b2ebf2b7",
@@ -3374,56 +3431,6 @@
       "AI-agent-authorization"
     ],
     "note": "ThreatDown evidence shows a botnet using an AI agent to collect API keys, SSH credentials, and access tokens after taking over unauthenticated Docker hosts.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "299848cb4a041aa9",
-    "date": "2026-09-24",
-    "source": "Omada",
-    "title": "Omada Acquires EmpowerID to Close the AI Agent Security Gap",
-    "url": "https://omadaidentity.com/press/omada-acquires-empowerid/",
-    "tags": [
-      "IGA",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "The acquisition combines IGA lifecycle and certification capabilities with runtime governance for human, non-human and AI-agent identities.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "b1239021871d445f",
-    "date": "2026-09-24",
-    "source": "Constella Intelligence",
-    "title": "Infostealers Are Exposing More Than Passwords. Here\u2019s What Security Teams Need to Know",
-    "url": "https://constella.ai/blog/infostealers-are-exposing-more-than-passwords-heres-what-security-teams-need-to-know/",
-    "tags": [
-      "Identity Security",
-      "Session Theft",
-      "Machine Identity",
-      "ITDR"
-    ],
-    "note": "The report highlights the operational need to investigate stolen browser sessions and authentication artifacts\u2014not just reset exposed passwords\u2014after infostealer infections.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-27T11:14:21.111026-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "1d56efbaf8df354f",
-    "date": "2026-09-24",
-    "source": "Insomnia",
-    "title": "OAuth Device-Code Phishing \u2014 Bypassing MFA Without Touching a Password",
-    "url": "https://insom.ai/en/blog/oauth-device-code-phishing-bypassing-mfa-without-touching-a-password-20260924",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "ITDR",
-      "Session Security"
-    ],
-    "note": "Field telemetry describes a sharp rise in device-code phishing that yields attacker-controlled refresh tokens without stealing passwords, reinforcing the need to monitor device-code issuance and revoke delegated sessions.",
     "score": 88
   }
 ]
