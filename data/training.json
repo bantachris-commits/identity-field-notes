@@ -1,82 +1,98 @@
 [
   {
     "provider": "Microsoft Learn",
-    "title": "Perform basic identity and access tasks",
-    "level": "Beginner",
-    "focus": "Microsoft Entra fundamentals, user and group management, authentication, Conditional Access, identity protection and governance",
-    "url": "https://learn.microsoft.com/en-us/training/paths/perform-basic-identity-access-tasks/",
+    "title": "Training for Identity and Access Administrators",
+    "level": "Beginner to intermediate",
+    "focus": "IAM administration, authentication, authorization, Microsoft Entra ID, external identities, and identity lifecycle management",
+    "url": "https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-admin",
     "sponsored": false
   },
   {
     "provider": "Microsoft Learn",
-    "title": "Manage identity and access in Microsoft Entra ID",
-    "level": "Beginner to intermediate",
-    "focus": "Users, groups, Microsoft Entra Connect, MFA and self-service password reset",
-    "url": "https://learn.microsoft.com/en-us/training/paths/manage-identity-and-access/",
+    "title": "Plan and implement an identity governance strategy",
+    "level": "Intermediate",
+    "focus": "IGA, entitlement management, access reviews, privileged access controls, lifecycle governance, and monitoring",
+    "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
+    "sponsored": false
+  },
+  {
+    "provider": "Microsoft Learn",
+    "title": "Secure access to resources by using Microsoft Entra",
+    "level": "Intermediate",
+    "focus": "MFA, passwordless authentication, Conditional Access, PIM, least privilege, and identity-aware AI applications",
+    "url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
+    "sponsored": false
+  },
+  {
+    "provider": "Microsoft Learn",
+    "title": "Implement an identity management solution using Microsoft Entra ID",
+    "level": "Intermediate",
+    "focus": "Users, groups, external identities, hybrid identity, workload identities, and core Entra administration",
+    "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
     "sponsored": false
   },
   {
     "provider": "Okta Learning",
-    "title": "Implement Phishing-Resistant Authentication",
-    "level": "Intermediate",
-    "focus": "FIDO2 authenticators, Okta FastPass and phishing-resistant authentication",
-    "url": "https://learning.okta.com/page/courses-all",
+    "title": "Okta Learning Plans",
+    "level": "Beginner to advanced",
+    "focus": "Okta IAM administration, IGA, lifecycle management, passkeys, PAM, identity threat protection, AI agents, and certification preparation",
+    "url": "https://learning.okta.com/page/learning-plans-list",
     "sponsored": false
   },
   {
-    "provider": "SailPoint Identity University",
-    "title": "Identity Security Leader training and certification",
-    "level": "Beginner to intermediate",
-    "focus": "Identity security strategy, access management, governance, business value and program leadership",
-    "url": "https://www.sailpoint.com/university/training-paths/identity-security-leader",
-    "sponsored": false
-  },
-  {
-    "provider": "SailPoint Identity University",
-    "title": "Machine Identity Security training path",
+    "provider": "Okta Learning",
+    "title": "Administrator Certification Preparation",
     "level": "Intermediate",
-    "focus": "Machine identity governance, non-human identities and identity security controls",
-    "url": "https://www.sailpoint.com/university/training-paths/machine-identity-security",
+    "focus": "Okta administration, directory integration, SSO, provisioning, security policies, logging, token management, and operational troubleshooting",
+    "url": "https://learning.okta.com/administrator-certification-preparation",
     "sponsored": false
   },
   {
     "provider": "CyberArk University",
     "title": "Defender - PAM Sample Items & Study Guide",
-    "level": "Intermediate",
-    "focus": "PAM concepts, CyberArk Defender certification preparation and privileged access administration",
-    "url": "https://training.cyberark.com/learn/public/catalog/view/1",
+    "level": "Intermediate to advanced",
+    "focus": "PAM administration, privileged account management, CyberArk PAM operations, and Defender-PAM certification preparation",
+    "url": "https://training.cyberark.com/learn/course/external/view/elearning/113/defender-pam-sample-items-study-guide",
     "sponsored": false
   },
   {
-    "provider": "BeyondTrust University",
-    "title": "Password Safe Administration",
-    "level": "Intermediate",
-    "focus": "PAM administration, privileged account management, password vaulting, monitoring and reporting",
-    "url": "https://www.beyondtrust.com/services-training/beyondtrust-university",
+    "provider": "SailPoint Identity University",
+    "title": "Identity University training and certification paths",
+    "level": "Beginner to advanced",
+    "focus": "IGA, identity security, IdentityIQ, Identity Security Cloud, administration, engineering, and professional certification",
+    "url": "https://university.sailpoint.com",
     "sponsored": false
   },
   {
-    "provider": "Google for Developers",
-    "title": "Passwordless login on the web with passkeys",
-    "level": "Intermediate",
-    "focus": "Passkeys, WebAuthn, registration, authentication and browser autofill",
-    "url": "https://developers.google.com/learn/pathways/passkeys_web",
+    "provider": "OWASP Foundation",
+    "title": "OWASP Non-Human Identities Top 10",
+    "level": "Intermediate to advanced",
+    "focus": "Non-human identity threats, secret leakage, overprivilege, insecure authentication, cloud workload identities, offboarding, and incident response",
+    "url": "https://owasp.org/projects/non-human-identities-top-10",
     "sponsored": false
   },
   {
-    "provider": "Google for Developers",
-    "title": "Implement passkeys with form autofill in a web app",
-    "level": "Intermediate",
-    "focus": "Hands-on WebAuthn and passkey implementation using browser APIs",
-    "url": "https://developers.google.com/codelabs/passkey-form-autofill",
+    "provider": "OpenID Foundation",
+    "title": "OpenID Foundation Specifications and Implementer\u2019s Guides",
+    "level": "Intermediate to advanced",
+    "focus": "OpenID Connect, OAuth, AuthZEN authorization, federation, digital credentials, FAPI, and standards-based implementation",
+    "url": "https://openid.net/developers/specs/",
     "sponsored": false
   },
   {
-    "provider": "Cloud Security Alliance",
-    "title": "Certificate of Competence in Zero Trust (CCZT) Training",
-    "level": "Intermediate",
-    "focus": "Zero Trust architecture, identity-centric controls, least privilege and continuous verification",
-    "url": "https://cloudsecurityalliance.org/education/schedule/",
+    "provider": "SPIFFE/SPIRE",
+    "title": "SPIFFE Concepts and SPIRE Concepts",
+    "level": "Intermediate to advanced",
+    "focus": "Workload identity, workload attestation, short-lived credentials, mTLS, service identity, and non-human identity architecture",
+    "url": "https://spiffe.io/docs/latest/spiffe/concepts/",
+    "sponsored": false
+  },
+  {
+    "provider": "FIDO Alliance",
+    "title": "Authenticate Conference Video Library and Passkey Resources",
+    "level": "Beginner to advanced",
+    "focus": "Passkeys, phishing-resistant authentication, account recovery, digital credentials, authentication architecture, and deployment practice",
+    "url": "https://authenticatecon.com/",
     "sponsored": false
   }
 ]
