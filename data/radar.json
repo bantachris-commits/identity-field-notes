@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "8ef4f07d663f0a18",
+    "date": "2026-10-23",
+    "source": "LiteLLM",
+    "title": "The attack chain behind the Oct 21, 2026 release compromise",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "A canonical incident reconstruction showing how an unrevoked exposed master key led to stolen GitHub OAuth tokens, owner-level access, CI secret exfiltration, and a poisoned release.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-23",
     "id": "f9213bfdc4de4d06",
@@ -156,6 +173,23 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "9384ac6c19c87fc1",
+    "date": "2026-10-22",
+    "source": "Google Cloud",
+    "title": "Inside Agent Compute Engine: Building the compute foundation for the agentic era",
+    "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "Authorization",
+      "Machine Identity"
+    ],
+    "note": "Details a production architecture that keeps credentials out of agent sandboxes and separates user delegation, workload identity, agent identity, and gateway-enforced token exchange.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
     "publishedDate": "2026-10-22",
     "id": "b1c9706033075c0a",
@@ -225,6 +259,22 @@
     ],
     "note": "Railway says attackers escalated privileges, decrypted some customer environment secrets, and accessed CI credentials that exposed additional API access, making this a useful case study in secret custody and blast-radius control.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "cb4ef503d3f3e5eb",
+    "date": "2026-10-22",
+    "source": "iProov",
+    "title": "iProov Launches New Human Authorization Service for AI Agent Gateways with First Integrations",
+    "url": "https://www.iproov.com/press/human-authorization-service-ai-agent-gateways-integrations",
+    "tags": [
+      "AI Agents",
+      "Authorization",
+      "Human-in-the-Loop"
+    ],
+    "note": "Introduces a HAPS-compliant approval flow that binds cryptographic human approval to the exact high-risk action an agent is attempting to execute.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -364,6 +414,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "989a78d26c9c7a0f",
+    "date": "2026-10-21",
+    "source": "IETF",
+    "title": "Mission-Bound Authorization for OAuth 2.0",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-01",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "Token Security"
+    ],
+    "note": "Proposes a durable Mission object binding an approved task to derived authority and token issuance, while explicitly noting that already-issued tokens may remain valid until expiry.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-21",
     "id": "cd9f91b6c03d2976",
@@ -381,6 +448,23 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5657d2a6039e2de6",
+    "date": "2026-10-21",
+    "source": "BeyondTrust",
+    "title": "BeyondTrust AI Agent Security Now Generally Available",
+    "url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
+    "tags": [
+      "PAM",
+      "NHI",
+      "AI Agents",
+      "Least Privilege"
+    ],
+    "note": "A meaningful PAM move that distinguishes agent actions from human actions and applies runtime privilege policy, JIT escalation, and approval to endpoint-based AI agents.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-21",
     "id": "5699ea0146a98f84",
@@ -396,40 +480,6 @@
     ],
     "note": "Railway\u2019s disclosure warns that decrypted environment variables may have been accessed, requiring broad rotation of API keys, database credentials, registry credentials and related service secrets.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "989a78d26c9c7a0f",
-    "date": "2026-10-21",
-    "source": "IETF",
-    "title": "Mission-Bound Authorization for OAuth 2.0",
-    "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-01",
-    "tags": [
-      "OAuth",
-      "AI-Agent Authorization",
-      "Token Security",
-      "Delegation"
-    ],
-    "note": "This new Internet-Draft proposes a durable mission object binding user-approved tasks to later token issuance, while explicitly noting that revoking a mission does not recall already-issued access tokens.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5657d2a6039e2de6",
-    "date": "2026-10-21",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust AI Agent Security Now Generally Available",
-    "url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "AI-Agent Authorization",
-      "NHI"
-    ],
-    "note": "BeyondTrust launched runtime controls that distinguish agent actions from human activity and apply just-in-time or approval-based privilege enforcement across endpoint AI-agent workflows.",
-    "score": 85
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -464,6 +514,23 @@
     ],
     "note": "The reference architecture combines agent isolation, policy enforcement, continuous monitoring and hardware-backed containment for enterprise and edge agent workloads.",
     "score": 83
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "a3382c909fa9dc07",
+    "date": "2026-10-21",
+    "source": "Delinea",
+    "title": "Delinea Fastpath Launches MCP Server for AI-Powered Access Governance and Audit Readiness",
+    "url": "https://www.globenewswire.com/news-release/2026/10/21/3385488/0/en/delinea-fastpath-launches-mcp-server-for-ai-powered-access-governance-and-audit-readiness.html",
+    "tags": [
+      "IGA",
+      "AI Agents",
+      "MCP",
+      "Authorization"
+    ],
+    "note": "Shows how access-review, SoD, and audit data are being exposed to AI assistants while retaining governance context and remediation workflows.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -515,6 +582,23 @@
     ],
     "note": "Google reports that weakly generated private keys for eight eMudhra intermediate CAs enabled potential trusted-site impersonation and triggered ecosystem-wide trust-store remediation.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "3bf15234a6cdb8f0",
+    "date": "2026-10-20",
+    "source": "FIDO Alliance",
+    "title": "FIDO Alliance Moves to Accelerate Digital Credentials Adoption at Scale",
+    "url": "https://fidoalliance.org/fido-alliance-moves-to-accelerate-digital-credentials-adoption-at-scale/?query-cdbd12d0-page=76",
+    "tags": [
+      "FIDO",
+      "Passkeys",
+      "Digital Identity",
+      "AI Agents"
+    ],
+    "note": "Announces public digital-wallet certification work and verifier-identification mechanisms aimed at making credential presentation, agentic commerce, and human approval more interoperable and phishing-resistant.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -574,17 +658,33 @@
     "id": "6bd6585835c42569",
     "date": "2026-10-19",
     "source": "Palo Alto Networks Unit 42",
-    "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+    "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 20",
     "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
     "tags": [
       "PAM",
-      "MFA-bypass",
-      "VPN",
-      "ITDR",
-      "incident"
+      "MFA Bypass",
+      "Authentication",
+      "VPN"
     ],
-    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions without normal MFA, pivot to virtualization infrastructure and dump domain credentials offline.",
+    "note": "Documents active ransomware exploitation of a GlobalProtect authentication bypass that can establish unauthorized VPN sessions and bypass normal authentication controls.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-19",
+    "id": "0dbe591401e4d521",
+    "date": "2026-10-19",
+    "source": "IETF",
+    "title": "Intent Token",
+    "url": "https://datatracker.ietf.org/doc/html/draft-chen-oauth-agent-intent-token-00",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "Standards"
+    ],
+    "note": "A new standards-track proposal for carrying signed, auditable user intent into later OAuth authorization decisions instead of letting agents translate natural-language goals directly into broad scopes.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
@@ -619,6 +719,24 @@
     ],
     "note": "The current Authenticate U.S. program is a useful primary-community queue anchor for developments in passkey deployment, phishing-resistant authentication, identity proofing and federation practice.",
     "score": 69
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-17",
+    "id": "5aba2bdccac5729c",
+    "date": "2026-10-17",
+    "source": "Huntress",
+    "title": "ConnectWise (SkyKick Vendor Credentials Abused in M365 Attacks",
+    "url": "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access",
+    "tags": [
+      "IAM",
+      "NHI",
+      "OAuth",
+      "Service Accounts",
+      "Microsoft Entra"
+    ],
+    "note": "A high-value incident analysis of compromised ConnectWise application credentials used across Microsoft 365 tenants, including self-assigned Global Administrator access and planted application credentials.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -3307,126 +3425,5 @@
     ],
     "note": "Compromised developer packages execute credential-stealing payloads that target cloud keys, registry tokens, Vault tokens, SSH keys, JWTs and other secrets from developer and CI environments.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "271d3904c94326f6",
-    "date": "2026-09-23",
-    "source": "Huntress",
-    "title": "OAuth Token Theft Through Microsoft's Front Door",
-    "url": "https://www.huntress.com/blog/stealing-oauth-tokens-through-microsofts-front-door",
-    "tags": [
-      "OAuth",
-      "session-tokens",
-      "token-theft",
-      "Entra",
-      "ITDR"
-    ],
-    "note": "Demonstrates how a sideloaded AppX package can use Microsoft-signed components to capture access and refresh tokens after legitimate MFA, with Developer Mode or enterprise sideloading as the exposure gate. (huntress.com",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "e82bf04022f67ea0",
-    "date": "2026-09-23",
-    "source": "Transluce",
-    "title": "Early rogue AI agent activity and attempts to hack found on urlquery.net",
-    "url": "https://transluce.org/agent-activity",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "OAuth/session/token abuse"
-    ],
-    "note": "Primary research documents autonomous agents bypassing web restrictions and attempting to exploit public data providers, underscoring the need for task-scoped authorization and runtime containment.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-23T06:02:52.767576-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "03b9753abd7a90e4",
-    "date": "2026-09-23",
-    "source": "The Hacker News",
-    "title": "F5 Patches Critical BIG-IP APM Zero-Day Exploited for Unauthenticated RCE on OAuth Servers",
-    "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
-    "tags": [
-      "OAuth",
-      "IAM",
-      "ITDR",
-      "Vulnerability"
-    ],
-    "note": "An actively exploited BIG-IP APM flaw affects deployments acting as OAuth authorization servers and can provide unauthenticated remote code execution against identity-edge infrastructure.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "d14c028c0f089f21",
-    "date": "2026-09-23",
-    "source": "BleepingComputer",
-    "title": "F5 patches BIG-IP APM zero-day flaw exploited in RCE attacks",
-    "url": "https://www.bleepingcomputer.com/news/security/f5-warns-of-big-ip-apm-remote-code-execution-zero-day-exploited-in-attacks/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authentication",
-      "Vulnerability"
-    ],
-    "note": "An actively exploited unauthenticated flaw affects BIG-IP APM deployments acting as OAuth authorization servers, making this a high-priority identity-plane exposure.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "3a5e2fec5352e727",
-    "date": "2026-09-23",
-    "source": "Dark Reading",
-    "title": "GitLab Email Addresses Can Be Weaponized for Supply Chain Attacks",
-    "url": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Machine Identity",
-      "Supply Chain"
-    ],
-    "note": "Aikido Security found that GitLab\u2019s project-specific incoming email addresses function as highly privileged, bearer-like tokens capable of creating content in private projects.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "8f47d015c58dd0c1",
-    "date": "2026-09-23",
-    "source": "Okta",
-    "title": "New Okta for AI Agents innovations increase visibility into agent behavior, secure connections at runtime, and enforce continuous agent governance",
-    "url": "https://www.okta.com/en-ca/newsroom/press-releases/ai-innovations-oktane-2026/",
-    "tags": [
-      "Okta",
-      "Auth0",
-      "AI Agents",
-      "NHI",
-      "Authorization",
-      "ITDR"
-    ],
-    "note": "Okta announced agent discovery, an agent gateway, third-party IdP support, and governance controls aimed at treating AI agents as first-class identities.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
-    "publishedDate": "2026-09-23",
-    "id": "f0bc4949993e9f24",
-    "date": "2026-09-23",
-    "source": "Security.io",
-    "title": "TrustSink shows why external MFA providers need control-plane monitoring",
-    "url": "https://www.security.io/articles/2026/09/23/trustsink-external-mfa-provider-control",
-    "tags": [
-      "Entra",
-      "MFA",
-      "PAM",
-      "ITDR"
-    ],
-    "note": "The report operationalizes the TrustSink technique: a privileged attacker can register a rogue Entra external MFA provider that captures replacement passwords, so provider removal must precede password rotation.",
-    "score": 91
   }
 ]
