@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "35a2887f86531272",
+    "date": "2026-10-26",
+    "source": "The Hacker News",
+    "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+    "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "tags": [
+      "IAM",
+      "ITDR",
+      "MFA",
+      "Token Theft",
+      "Entra"
+    ],
+    "note": "Huntress details a large-scale AiTM campaign that replayed stolen Microsoft 365 tokens, registered rogue Entra devices, replaced MFA methods, and created mailbox persistence.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
     "publishedDate": "2026-10-25",
     "id": "9e8f060397f4d2d1",
@@ -138,6 +156,24 @@
     ],
     "note": "Adds evidence that the attacker used an unrecalled agent-platform master key and GitHub credentials to run secret-exfiltration workflows before publishing the malicious package.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "008690d60e8f553f",
+    "date": "2026-10-23",
+    "source": "CERT-In",
+    "title": "Compromise of LiteLLM PyPI Package and Docker Images",
+    "url": "https://www.cert-in.org.in/s2cMainServlet?VLCODE=CIAD-2026-0053&pageid=PUBVLNOTES02",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "OAuth",
+      "Supply Chain",
+      "Machine Identity"
+    ],
+    "note": "Government advisory on the LiteLLM supply-chain compromise, including theft of cloud credentials, browser sessions, GitHub and AI-tool tokens, SSH/GPG keys, and CI/CD secrets.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -601,18 +637,19 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security Research",
+    "source": "Microsoft Security Blog",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "OAuth",
       "NHI",
+      "IAM",
+      "OAuth",
+      "Service Principals",
       "AI Agents",
-      "Entra",
-      "Privilege Escalation"
+      "ITDR"
     ],
-    "note": "Microsoft details how the China-aligned Storm-0940 used an agentic AI framework to accelerate ConnectWise application-credential abuse, downstream OAuth access, privilege changes and persistence across customer tenants.",
-    "score": 100
+    "note": "Microsoft documents Storm-0940\u2019s abuse of compromised ConnectWise application identities, excessive tenant permissions, Graph reconnaissance, credential additions, and privilege escalation across customer environments.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -3391,41 +3428,5 @@
     ],
     "note": "OCI IAM's move toward FIDO2 discoverable credentials is a concrete passwordless deployment update relevant to workforce authentication and passkey lifecycle design.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "8e4e4844f4e587c9",
-    "date": "2026-09-24",
-    "source": "Dark Reading",
-    "title": "Ghost Service Accounts Enable M365 Data Theft in Chile",
-    "url": "https://www.darkreading.com/cyberattacks-data-breaches/ghost-service-accounts-m365-data-theft-chile",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "Service Accounts",
-      "Microsoft 365",
-      "Incident"
-    ],
-    "note": "A campaign against Chilean organizations reportedly bypassed hardened employee accounts by abusing forgotten Microsoft 365 service accounts with weak or missing MFA controls.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "a1b8a3594f3b3725",
-    "date": "2026-09-24",
-    "source": "Zenity Labs",
-    "title": "SalesBleed: Indirect Prompt Injection and 0-Click Data Exfiltration on Agentforce",
-    "url": "https://labs.zenity.io/post/salesbleed-0-click-data-exfiltration-on-agentforce",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Excessive Privilege",
-      "NHI",
-      "OAuth"
-    ],
-    "note": "Primary research showing how attacker-controlled CRM input, broad agent tool permissions and URL-rendering behavior enabled zero-click data exfiltration without tenant login or victim interaction.",
-    "score": 96
   }
 ]
