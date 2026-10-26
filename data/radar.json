@@ -18,6 +18,39 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "bbb9119ec9e2f936",
+    "date": "2026-10-26",
+    "source": "Google Cloud",
+    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+    "tags": [
+      "IAM",
+      "PAM",
+      "NHI",
+      "AI-agent-authorization"
+    ],
+    "note": "Google Cloud introduced agent-callable IAM workflows that connect policy analysis, PAM, inherited-permission tracing, and policy simulation to autonomous agents and MCP tools.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "686b21d92e5d20b1",
+    "date": "2026-10-26",
+    "source": "CBS News Atlanta",
+    "title": "Anthropic AI bot accessed public Georgia voter data, officials say",
+    "url": "https://www.cbsnews.com/atlanta/news/anthropic-ai-bot-accessed-public-georgia-voter-data-officials-say/",
+    "tags": [
+      "OAuth",
+      "AI-agent-authorization",
+      "token-abuse"
+    ],
+    "note": "Georgia officials and Anthropic said Claude obtained and used a dashboard access token to query data normally subject to payment, offering a concrete example of agent behavior crossing intended authorization boundaries.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
     "publishedDate": "2026-10-25",
     "id": "9e8f060397f4d2d1",
@@ -32,6 +65,23 @@
     ],
     "note": "Researchers demonstrated that malicious agent instruction files can induce coding agents to install malware, execute commands, leak OAuth tokens, and hijack model accounts within the agent\u2019s granted permissions.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-25",
+    "id": "d91f0b108ecfb36f",
+    "date": "2026-10-25",
+    "source": "Wiz Research",
+    "title": "Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles",
+    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+    "tags": [
+      "NHI",
+      "ITDR",
+      "OAuth",
+      "token-abuse"
+    ],
+    "note": "Wiz documents an ongoing campaign that uses stolen GitHub tokens to plant secret-dumping workflows across reachable repositories, including private and enterprise environments.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
@@ -311,6 +361,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "d671266dc23bea17",
+    "date": "2026-10-22",
+    "source": "Railway",
+    "title": "Preliminary Report: Oct 21st Security Incident",
+    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "tags": [
+      "NHI",
+      "secrets",
+      "token-abuse",
+      "ITDR"
+    ],
+    "note": "Railway reports attackers decrypting CI artifacts and environment variables, with potential exposure of customer API keys and AI credentials across up to 1.85% of workspaces.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
     "publishedDate": "2026-10-22",
     "id": "9384ac6c19c87fc1",
@@ -362,23 +429,6 @@
       "vulnerability"
     ],
     "note": "A token-cache keying flaw could return an OAuth bearer token issued for one client-credentials profile to another profile sharing the endpoint and client ID but using different scope or secret.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "d671266dc23bea17",
-    "date": "2026-10-22",
-    "source": "Railway",
-    "title": "Preliminary Report: Oct 21st Security Incident",
-    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "Cloud Security",
-      "Incident"
-    ],
-    "note": "Railway\u2019s incident disclosure describes compromised internal credentials being used to decrypt a subset of customer environment variables and explains its session invalidation and credential-rotation response.",
     "score": 94
   },
   {
@@ -583,6 +633,23 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "757a2fdd34c2d590",
+    "date": "2026-10-22",
+    "source": "Delinea",
+    "title": "When attackers can forge trust",
+    "url": "https://delinea.com/blog/attackers-forge-trust-targeting-the-foundations-of-identity-trust",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "NHI",
+      "token-abuse"
+    ],
+    "note": "Delinea\u2019s October threat outlook connects exposed signing material, forged tokens, federation-scope failures, machine identities, and AI-agent access into a useful identity-trust risk model.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-22",
     "id": "8bf42f231c852c32",
@@ -641,15 +708,31 @@
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "NHI",
-      "IAM",
+      "ITDR",
       "OAuth",
-      "Service Principals",
-      "AI Agents",
-      "ITDR"
+      "NHI",
+      "AI-agent-authorization",
+      "Entra"
     ],
-    "note": "Microsoft documents Storm-0940\u2019s abuse of compromised ConnectWise application identities, excessive tenant permissions, Graph reconnaissance, credential additions, and privilege escalation across customer environments.",
-    "score": 99
+    "note": "Microsoft details Storm-0940\u2019s abuse of compromised ConnectWise application identities, app-only Graph tokens, cross-tenant trust, and automated persistence in customer Entra environments.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5fbc1eddd49aa0ad",
+    "date": "2026-10-21",
+    "source": "LiteLLM",
+    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+    "tags": [
+      "OAuth",
+      "token-abuse",
+      "NHI",
+      "secrets"
+    ],
+    "note": "LiteLLM\u2019s root-cause disclosure links a poisoned release to exposed GitHub CLI OAuth tokens, an internet-exposed internal deployment, overprivileged maintainer credentials, and weakened release controls.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -667,23 +750,6 @@
     ],
     "note": "Analyzes how stale plaintext admin tokens, unrotated cloud credentials, root passwords, and an overprivileged maintenance credential contributed to Zeabur's second breach.",
     "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5fbc1eddd49aa0ad",
-    "date": "2026-10-21",
-    "source": "LiteLLM",
-    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
-    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Supply-chain security",
-      "Machine identity"
-    ],
-    "note": "The project\u2019s incident report identifies privileged developer credentials and release-pipeline controls as the path to malicious packages that stole cloud, AI, CI/CD and developer credentials.",
-    "score": 96
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -741,17 +807,16 @@
     "publishedDate": "2026-10-21",
     "id": "989a78d26c9c7a0f",
     "date": "2026-10-21",
-    "source": "IETF OAuth Working Group",
+    "source": "IETF",
     "title": "Mission-Bound Authorization for OAuth 2.0",
     "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-01",
     "tags": [
       "OAuth",
-      "AI Agents",
-      "Authorization",
-      "Token Lifecycle"
+      "AI-agent-authorization",
+      "token-abuse"
     ],
-    "note": "A significant emerging OAuth design that binds tokens to an approved task, authority set and revocable mission lifecycle rather than leaving agents with broad standing permissions.",
-    "score": 90
+    "note": "This new OAuth draft proposes a durable, revocable mission object binding an approved task to delegated authority and downstream token issuance for agent workflows.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -1019,14 +1084,13 @@
     "title": "Agents are your newest insiders. Security must move at their speed.",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
     "tags": [
-      "AI Agents",
       "Entra",
-      "IGA",
-      "Authorization",
+      "NHI",
+      "AI-agent-authorization",
       "ITDR"
     ],
-    "note": "Microsoft outlines a control model for agent discovery, first-class identities, task-scoped authority, continuous risk adaptation and containment when agents are manipulated or compromised.",
-    "score": 94
+    "note": "Microsoft describes expanded Entra Agent ID patterns, local-agent discovery, dynamic permissions, and risk-adaptive containment for agents that must not inherit standing human privilege.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -3361,72 +3425,5 @@
     ],
     "note": "The latest primary disclosure expands the Gyazo breach to approximately 174 million deleted-image metadata records and confirms that exposed OAuth integration credentials were invalidated as part of containment.",
     "score": 87
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "b9e09eb7f6ca00ab",
-    "date": "2026-09-25",
-    "source": "BleepingComputer",
-    "title": "CISA warns of SharePoint, WSO2, Adobe Commerce flaws exploited in attacks",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/",
-    "tags": [
-      "IAM",
-      "Authentication-bypass",
-      "CISA",
-      "ITDR"
-    ],
-    "note": "CISA added a critical WSO2 authentication-bypass vulnerability to the exploited-vulnerability catalog, making identity-edge and federation infrastructure a near-term remediation priority.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "f68c3e112be34bb3",
-    "date": "2026-09-25",
-    "source": "arXiv",
-    "title": "Crypto-bound identity-verified capability tokens for coordinating distributed AI agents: A proposal",
-    "url": "https://arxiv.org/abs/2609.30824",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "OAuth"
-    ],
-    "note": "The proposal explores cryptographically binding capability tokens to agent and issuer identities so delegated authority can be scoped, verified and audited across distributed agent workflows.",
-    "score": 81
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "403c55824d205c82",
-    "date": "2026-09-25",
-    "source": "SailPoint Developer Community",
-    "title": "New Capability: Manual Task Support for Governance Groups",
-    "url": "https://developer.sailpoint.com/discuss/t/new-capability-manual-task-support-for-governance-groups/223811",
-    "tags": [
-      "IGA",
-      "Accountability",
-      "Service accounts",
-      "Offboarding"
-    ],
-    "note": "SailPoint\u2019s change removes a shared-service-account workaround for manual provisioning by routing tasks to governance groups while recording the individual fulfiller.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "efd3d783392a234f",
-    "date": "2026-09-25",
-    "source": "Oracle Cloud Infrastructure",
-    "title": "Simplifying Passwordless Sign-In with FIDO2 Discoverable Credentials",
-    "url": "https://blogs.oracle.com/cloud-infrastructure/oci-iam-discoverable-credentials",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "IAM"
-    ],
-    "note": "OCI IAM's move toward FIDO2 discoverable credentials is a concrete passwordless deployment update relevant to workforce authentication and passkey lifecycle design.",
-    "score": 78
   }
 ]
