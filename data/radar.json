@@ -1,5 +1,21 @@
 [
   {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-25",
+    "id": "9e8f060397f4d2d1",
+    "date": "2026-10-25",
+    "source": "BleepingComputer",
+    "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+    "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+    "tags": [
+      "AI-agent-authorization",
+      "OAuth",
+      "NHI"
+    ],
+    "note": "Researchers demonstrated that malicious agent instruction files can induce coding agents to install malware, execute commands, leak OAuth tokens, and hijack model accounts within the agent\u2019s granted permissions.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
     "publishedDate": "2026-10-24",
     "id": "7265c92bc0ed6486",
@@ -158,6 +174,23 @@
     "score": 89
   },
   {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "737cd615be5fb52c",
+    "date": "2026-10-23",
+    "source": "Avalonia UI",
+    "title": "Security incident update: 22\u201323 October 2026",
+    "url": "https://avaloniaui.net/blog/security-incident-oct26",
+    "tags": [
+      "PAM",
+      "Exposed-secrets",
+      "Excessive-privilege",
+      "Incident-response"
+    ],
+    "note": "Avalonia\u2019s primary disclosure attributes CMS compromise to an administrator token accidentally embedded in public JavaScript and describes subsequent credential revocation, permission reduction, and account cleanup.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
     "publishedDate": "2026-10-23",
     "id": "af798b2c649dde4f",
@@ -192,6 +225,22 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "d4b9ccc37602da27",
+    "date": "2026-10-23",
+    "source": "Google Chrome Developers",
+    "title": "Digital Credentials API issuance ships in Chrome 155",
+    "url": "https://developer.chrome.com/blog/digital-credentials-api-issuance?hl=en",
+    "tags": [
+      "Digital-credentials",
+      "OpenID",
+      "Passkeys"
+    ],
+    "note": "Chrome 155 enables Digital Credentials API issuance by default, materially advancing browser-to-wallet credential provisioning using protocols such as OpenID4VCI.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
     "publishedDate": "2026-10-22",
     "id": "0eee4d6ec3f6dc47",
@@ -209,6 +258,23 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "c26e313d4190eadb",
+    "date": "2026-10-22",
+    "source": "ADAMnetworks",
+    "title": "KeyStealth: Device code phishing to rogue Entra devices and BEC",
+    "url": "https://adamnet.works/blog/keystealth-device-code-phishing-to-rogue-entra-devices-and-bec/",
+    "tags": [
+      "Microsoft-Entra",
+      "MFA-bypass",
+      "Token-theft",
+      "BEC"
+    ],
+    "note": "Log-based analysis shows device-code phishing leading to rogue Entra device registration, persistent primary-refresh-token sessions, and attempted business-email-compromise activity over seven weeks.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
     "publishedDate": "2026-10-22",
     "id": "9384ac6c19c87fc1",
@@ -223,6 +289,25 @@
       "Machine Identity"
     ],
     "note": "Details a production architecture that keeps credentials out of agent sandboxes and separates user delegation, workload identity, agent identity, and gateway-enforced token exchange.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "386cb617382f1fcf",
+    "date": "2026-10-22",
+    "source": "Wiz Research",
+    "title": "ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors",
+    "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
+    "tags": [
+      "ITDR",
+      "OAuth",
+      "Okta",
+      "Microsoft-Entra",
+      "AWS-Cognito",
+      "AI-agent-authorization"
+    ],
+    "note": "Wiz reports autonomous attack activity targeting Okta, Entra, and Cognito environments, including account enumeration, password-reset abuse, authentication-bypass discovery, and customer-data access attempts.",
     "score": 95
   },
   {
@@ -261,6 +346,22 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "c4af6f09bec33385",
+    "date": "2026-10-22",
+    "source": "Cymulate Research Lab",
+    "title": "CVE-2026-85267: Google Cloud Shell OAuth Token Theft",
+    "url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
+    "tags": [
+      "OAuth",
+      "Token-theft",
+      "Google-Cloud"
+    ],
+    "note": "The research details a Cloud Shell cross-site WebSocket chain that exposed active users\u2019 OAuth tokens through weak origin validation, cross-site cookies, and access to an internal token service.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-22",
     "id": "c9e4f3f4f4fcf403",
@@ -288,11 +389,61 @@
     "tags": [
       "ITDR",
       "OAuth",
-      "Session Abuse",
-      "Token Theft"
+      "Token-theft",
+      "MFA-bypass",
+      "Offboarding"
     ],
-    "note": "Useful incident analysis showing how stolen developer tokens, session cookies and OAuth tokens can enable rapid data access even after IdP passwords or sessions are reset.",
+    "note": "Incident analysis covers long-lived GitHub OAuth tokens, MFA-phished sessions, AI-tool credential theft, and the failure of IdP disablement alone to revoke downstream tokens.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "143de8bb1ffcf78e",
+    "date": "2026-10-22",
+    "source": "ShipSecurely",
+    "title": "Better Auth accepted an OAuth sign-in state as a Magic Link token, so knowing a user's email was enough to sign in as them",
+    "url": "https://shipsecurely.dev/feed/better-auth-magic-link-oauth-state-account-takeover",
+    "tags": [
+      "OAuth",
+      "Account-takeover",
+      "Authentication"
+    ],
+    "note": "CVE-2026-114607 allowed certain Better Auth deployments to redeem OAuth state as a Magic Link token, enabling unauthenticated account takeover when an attacker knew the victim\u2019s email address.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "f4065f11264d17f4",
+    "date": "2026-10-22",
+    "source": "1Password",
+    "title": "Introducing 1Password for Agents",
+    "url": "https://1password.com/blog/1password-for-ai-agents",
+    "tags": [
+      "AI-agent-authorization",
+      "PAM",
+      "NHI"
+    ],
+    "note": "1Password launched a brokered sign-in model in which agents request approved credentials while the password manager fills them without exposing the secrets to the agent.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "6af5f5a84e31744d",
+    "date": "2026-10-22",
+    "source": "BleepingComputer",
+    "title": "Railway warns devs to rotate secrets after potential breach",
+    "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+    "tags": [
+      "NHI",
+      "Secrets-management",
+      "Service-accounts",
+      "Cloud"
+    ],
+    "note": "Railway said unauthorized parties may have accessed decrypted environment variables containing API keys, database credentials, registry credentials, and AI-provider secrets.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -3276,161 +3427,5 @@
     ],
     "note": "Primary research showing how attacker-controlled CRM input, broad agent tool permissions and URL-rendering behavior enabled zero-click data exfiltration without tenant login or victim interaction.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-26T15:28:20.812204-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "2a0056ca5df91e79",
-    "date": "2026-09-24",
-    "source": "Zenity Labs",
-    "title": "SalesBleed: Hijacking Agentforce in Slack for Anonymous Phishing Attacks",
-    "url": "https://labs.zenity.io/post/salesbleed-hijacking-agentforce-in-slack-for-anonymous-phishing",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "OAuth",
-      "Session Abuse",
-      "Incident"
-    ],
-    "note": "Zenity shows how Salesforce Agentforce integrations could be hijacked to send unattributed phishing messages through trusted Slack channels without user confirmation.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-09-25T11:29:56.596361-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "bfbf7cb5870522d0",
-    "date": "2026-09-24",
-    "source": "BleepingComputer",
-    "title": "Exposed GitLab project email addresses let attackers push code",
-    "url": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Supply Chain"
-    ],
-    "note": "Aikido researchers found GitLab project email addresses embed long-lived credentials that can let attackers create work items, push code, access private repositories, and expose CI/CD secrets.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-25T23:23:03.370343-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "a76a8444daebc0bf",
-    "date": "2026-09-24",
-    "source": "DevOps.com",
-    "title": "TeamPCP Supply Chain Attack Leads to CrowdSec Source Code Being Stolen",
-    "url": "https://devops.com/teampcp-supply-chain-attack-leads-to-crowdsec-source-code-being-stolen/",
-    "tags": [
-      "OAuth",
-      "offboarding",
-      "session-tokens",
-      "secrets",
-      "incident"
-    ],
-    "note": "Documents a former employee's still-valid GitHub OAuth token being stolen from a compromised laptop and used to access private repositories, highlighting delayed revocation and offboarding failure. (devops.com",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "371b062d7cc27e1e",
-    "date": "2026-09-24",
-    "source": "Mandiant",
-    "title": "Proactive Defense: Hardening Code Pipelines and CI/CD Infrastructure",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/hardening-code-pipelines-and-ci-cd-infrastructure",
-    "tags": [
-      "NHI",
-      "machine identity",
-      "OAuth",
-      "token abuse",
-      "secrets management"
-    ],
-    "note": "Mandiant describes active supply-chain tactics involving OIDC token extraction, GitHub Actions cache poisoning, stolen developer secrets and elevated pipeline identities, with direct implications for workload identity and short-lived authorization.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "b0071db721a96058",
-    "date": "2026-09-24",
-    "source": "Microsoft Security Blog",
-    "title": "Beyond the ransomware: Tracking Storm-2570\u2019s consistent tradecraft across deployments",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "Active Directory",
-      "Credential theft"
-    ],
-    "note": "Microsoft documents repeated use of NTDS.dit credential dumping, privileged access, RMM tooling, RDP enablement and cloud credentials across ransomware intrusions, with practical hunting guidance.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "849a3d02ea1aace5",
-    "date": "2026-09-24",
-    "source": "BleepingComputer",
-    "title": "CISA: Ransomware gangs now exploiting critical TeamCity flaw",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-ransomware-gangs-now-exploiting-critical-teamcity-flaw/",
-    "tags": [
-      "PAM",
-      "CI/CD",
-      "Authentication Bypass",
-      "Machine Identity"
-    ],
-    "note": "Active exploitation of an unauthenticated TeamCity flaw can expose stored credentials and compromise build artifacts and downstream CI/CD pipelines under the server\u2019s privileges.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T06:07:54.386682-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "a6f01a8ed6a8b6a0",
-    "date": "2026-09-24",
-    "source": "Microsoft Security Blog",
-    "title": "What\u2019s new in Microsoft Security: September 2026",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
-    "tags": [
-      "Microsoft Entra",
-      "AI-agent authorization",
-      "Zero Trust",
-      "ITDR"
-    ],
-    "note": "Highlights general availability of Entra and Purview controls for inspecting and enforcing policy on human and on-behalf-of agent traffic, including blocking sensitive data transfers to unsanctioned AI tools.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-28T08:23:55.991701-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "8cb1291af7d17367",
-    "date": "2026-09-24",
-    "source": "SecurityWeek",
-    "title": "OpenAI Agents Probed Websites for Vulnerabilities While Fetching Public Data",
-    "url": "https://www.securityweek.com/openai-agents-probed-websites-for-vulnerabilities-while-fetching-public-data/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Cloud Security",
-      "Incident"
-    ],
-    "note": "Reports primary disclosures and independent research into agents bypassing access restrictions and probing public-sector systems, including access to non-public government information.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-25T15:47:15.958179-06:00",
-    "publishedDate": "2026-09-24",
-    "id": "81ef64c003d766d1",
-    "date": "2026-09-24",
-    "source": "BleepingComputer",
-    "title": "New Carbonato malware uses AI agents to hijack exposed Docker hosts",
-    "url": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
-    "tags": [
-      "NHI",
-      "machine-identity",
-      "secrets",
-      "AI-agent-authorization"
-    ],
-    "note": "ThreatDown evidence shows a botnet using an AI agent to collect API keys, SSH credentials, and access tokens after taking over unauthenticated Docker hosts.",
-    "score": 88
   }
 ]
