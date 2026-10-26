@@ -1,5 +1,35 @@
 [
   {
+    "id": "2026-10-26-morning-brief",
+    "date": "2026-10-26",
+    "coverageDate": "2026-10-25",
+    "edition": "MORNING EDITION // 2026.10.26",
+    "title": "AI-Agent Instructions Become an Identity Attack Surface",
+    "dek": "Highlights from 2026-10-25. Yesterday\u2019s verified coverage highlighted how malicious instruction files can turn coding agents into execution and credential-theft tools within their granted permissions.",
+    "tags": [
+      "AI-agent-authorization",
+      "OAuth",
+      "NHI"
+    ],
+    "readTime": "4 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-25, verified against linked sources. Edition dated 2026-10-26; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Malicious AGENTS.md files can hijack coding agents and OAuth sessions",
+        "summary": "Researchers demonstrated that a malicious AGENTS.md file placed in a Downloads folder can induce AI coding agents to install malware, alter configuration, and execute attacker-controlled commands. Tests against OpenAI Codex reportedly achieved code execution in most attempts, while a related Claude Code technique redirected API traffic to expose OAuth tokens and enable account takeover within the agent\u2019s permissions.",
+        "why": "Treat agent working directories and instruction files as part of the identity boundary, not merely developer tooling. Organizations should prohibit agents from operating in web-writable locations, review AGENTS.md and similar files, preserve approval and sandbox controls, and rotate credentials if agent configuration or API endpoints change unexpectedly.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-10-25",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-23-morning-brief",
     "date": "2026-10-23",
     "coverageDate": "2026-10-22",
@@ -13,7 +43,7 @@
       "Identity Threat"
     ],
     "readTime": "5 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-22, verified against linked sources. Edition dated 2026-10-23; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
