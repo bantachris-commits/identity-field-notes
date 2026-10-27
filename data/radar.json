@@ -17,6 +17,24 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "191d36f8251c2863",
+    "date": "2026-10-26",
+    "source": "Huntress",
+    "title": "AI, Scripts, Operator: Inside the ConnectWise Attack",
+    "url": "https://www.huntress.com/blog/connectwise-attack-ai",
+    "tags": [
+      "NHI",
+      "OAuth",
+      "ITDR",
+      "AI-agent authorization",
+      "Incident"
+    ],
+    "note": "Huntress provides granular telemetry on scripted enumeration, adaptive tooling, credential planting, Global Administrator assignment, and the limits of inferring AI involvement from attacker behavior.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
     "publishedDate": "2026-10-26",
     "id": "35a2887f86531272",
@@ -33,24 +51,6 @@
     ],
     "note": "Huntress documented an AiTM campaign that captured Microsoft 365 tokens, compromised 97 accounts, registered rogue Entra devices and used MFA-method persistence.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "bbb9119ec9e2f936",
-    "date": "2026-10-26",
-    "source": "Google Cloud",
-    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
-    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
-    "tags": [
-      "IAM",
-      "PAM",
-      "NHI",
-      "AI-agents",
-      "MCP"
-    ],
-    "note": "Google Cloud introduced IAM Helper, an agent-facing orchestration layer that exposes IAM, Policy Intelligence and PAM workflows to autonomous agents and deployment pipelines.",
-    "score": 91
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -102,6 +102,23 @@
     ],
     "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "bbb9119ec9e2f936",
+    "date": "2026-10-26",
+    "source": "Google Cloud",
+    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+    "tags": [
+      "IAM",
+      "PAM",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "Google Cloud introduces an agent-facing IAM orchestration layer that makes Policy Intelligence and Privileged Access Manager callable by autonomous agents, deployment pipelines, and custom tools.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
@@ -255,24 +272,6 @@
     ],
     "note": "Detailed independent telemetry shows stolen vendor application credentials being tested across Microsoft 365 and Okta tenants, with token issuance, password spraying and cross-tenant targeting.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "191d36f8251c2863",
-    "date": "2026-10-23",
-    "source": "Huntress",
-    "title": "AI, Scripts, Operator: Inside the ConnectWise Attack",
-    "url": "https://www.huntress.com/blog/connectwise-attack-ai",
-    "tags": [
-      "NHI",
-      "IAM",
-      "OAuth",
-      "Service-accounts",
-      "Incident"
-    ],
-    "note": "Huntress provides technical follow-up on how the compromised Cloud Backup application identity was used to enumerate Microsoft 365 tenants and request Graph tokens at scale.",
-    "score": 97
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -844,14 +843,14 @@
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Microsoft Entra",
-      "OAuth",
       "NHI",
+      "OAuth",
+      "ITDR",
       "AI-agent authorization",
-      "ITDR"
+      "Incident"
     ],
-    "note": "Microsoft attributes the ConnectWise supply-chain activity to Storm-0940 and describes abuse of already-authorized application identities, Graph access, credential changes, and privilege-modification attempts across customer tenants.",
-    "score": 97
+    "note": "Microsoft details Storm-0940\u2019s use of an agentic framework to abuse compromised multi-tenant application credentials, perform OAuth application abuse, alter credentials and roles, and reach privileged cloud access at machine speed.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -1041,24 +1040,6 @@
     "score": 78
   },
   {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "6bd6585835c42569",
-    "date": "2026-10-20",
-    "source": "Palo Alto Networks Unit 42",
-    "title": "Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20",
-    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
-    "tags": [
-      "PAM",
-      "MFA Bypass",
-      "VPN",
-      "Credential Theft",
-      "ITDR"
-    ],
-    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions without MFA and, in one case, pivot to vCenter and dump domain-controller credentials offline.",
-    "score": 99
-  },
-  {
     "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
     "publishedDate": "2026-10-20",
     "id": "aa2f36ffa3be9ae9",
@@ -1092,6 +1073,23 @@
     ],
     "note": "ConnectWise disclosed unauthorized access to Cloud Backup application identities and described credential resets, disabled application connections and customer remediation guidance.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "6bd6585835c42569",
+    "date": "2026-10-20",
+    "source": "Palo Alto Networks Unit 42",
+    "title": "Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20",
+    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "tags": [
+      "PAM",
+      "MFA bypass",
+      "ITDR",
+      "Incident"
+    ],
+    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions while bypassing MFA, then pivoting toward lateral movement and offline domain-credential theft.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
@@ -1282,24 +1280,6 @@
     "score": 69
   },
   {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-17",
-    "id": "5aba2bdccac5729c",
-    "date": "2026-10-17",
-    "source": "Huntress",
-    "title": "ConnectWise (SkyKick Vendor Credentials Abused in M365 Attacks",
-    "url": "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access",
-    "tags": [
-      "IAM",
-      "NHI",
-      "OAuth",
-      "Service Accounts",
-      "Microsoft Entra"
-    ],
-    "note": "A high-value incident analysis of compromised ConnectWise application credentials used across Microsoft 365 tenants, including self-assigned Global Administrator access and planted application credentials.",
-    "score": 100
-  },
-  {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
     "publishedDate": "2026-10-17",
     "id": "6ebb6110329d2fce",
@@ -1316,6 +1296,24 @@
     ],
     "note": "Explains how compromised ConnectWise service-principal credentials enabled direct app authentication, broad tenant access, and MFA bypass across customer Microsoft 365 environments.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-16",
+    "id": "5aba2bdccac5729c",
+    "date": "2026-10-16",
+    "source": "Huntress",
+    "title": "ConnectWise (SkyKick Vendor Credentials Abused in M365 Attacks",
+    "url": "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "NHI",
+      "Excessive privilege",
+      "Incident"
+    ],
+    "note": "The investigation documents a compromised vendor application secret being used across Microsoft 365 tenants, including self-assigned Global Administrator privileges and persistence through added application credentials.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
