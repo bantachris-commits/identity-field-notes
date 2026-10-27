@@ -1,5 +1,92 @@
 [
   {
+    "id": "2026-10-27-morning-brief",
+    "date": "2026-10-27",
+    "coverageDate": "2026-10-26",
+    "edition": "MORNING EDITION // 2026.10.27",
+    "title": "Identity Field Notes: Agent Authority Meets Token Theft",
+    "dek": "Highlights from 2026-10-26. Yesterday\u2019s strongest identity stories covered Microsoft 365 token replay, dormant AI-agent access, new agent-identity controls, and finer-grained authorization across cloud environments.",
+    "tags": [
+      "IAM",
+      "PAM",
+      "ITDR",
+      "NHI",
+      "AI-agents"
+    ],
+    "readTime": "7 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-26, verified against linked sources. Edition dated 2026-10-27; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Token-replay campaign compromised 97 Microsoft 365 accounts across 79 organizations",
+        "summary": "Huntress documented an adversary-in-the-middle campaign that captured Microsoft 365 session tokens and replayed them at scale, resulting in 97 compromised accounts and 48 rogue Entra device registrations. Attackers also added authenticator methods, removed existing MFA methods in some cases, and created mailbox rules to hide or redirect messages. The Hacker News reports these findings and the recommended response actions. ([thehackernews.com](https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html?utm_source=openai))",
+        "why": "MFA alone did not prevent post-authentication abuse. Incident response playbooks should treat unexpected Entra devices, new authentication methods, OAuth applications, inbox rules, and token revocation as one connected investigation rather than separate alerts.",
+        "source": "The Hacker News",
+        "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+        "confidence": "Independent reporting",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "Dormant AI agents may retain live credentials and unsafe triggers",
+        "summary": "Arrakis research, reported by Help Net Security, found that roughly 76% of enabled agents examined had not run in 60 days, while many retained active integrations and credentials. The study also identified unsecured external triggers, excessive permissions, sensitive connections without verified data-loss controls, and non-expiring API keys. ([helpnetsecurity.com](https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/?utm_source=openai))",
+        "why": "Agent inventories need lifecycle state, ownership, trigger security, credential expiry, and offboarding\u2014not just registration. An agent that is inactive from an operational perspective may still be an authorized execution path for an attacker.",
+        "source": "Help Net Security",
+        "url": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
+        "confidence": "Research",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "IBM makes Agent Identity generally available",
+        "summary": "IBM announced general availability of IBM Agent Identity, a control-plane approach for registering agents, assigning ownership, preserving delegated authorization, issuing short-lived task-scoped tokens, enforcing runtime policy, protecting downstream credentials, and maintaining audit trails. The offering is positioned alongside IBM Verify, HashiCorp Vault, and watsonx Orchestrate. ([ibm.com](https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era?utm_source=openai))",
+        "why": "The useful design pattern is broader than the product claim: treat agents as governed identities with explicit delegation, bounded credentials, runtime decisions, and evidence linking human direction to agent action. Practitioners should test whether these controls integrate with existing IdPs and secrets infrastructure rather than creating another isolated inventory.",
+        "source": "IBM",
+        "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
+        "confidence": "Primary source",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Vendor Watch",
+        "title": "Google Cloud exposes IAM and PAM workflows to autonomous agents",
+        "summary": "Google Cloud introduced IAM Helper Agent Skills and MCP Tools for permission troubleshooting, policy simulation, policy authoring, and Privileged Access Manager workflows. The announced design separates discovery and simulation from policy changes, with human confirmation for changes according to configurable risk tiers. ([cloud.google.com](https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/?utm_source=openai))",
+        "why": "Making IAM callable by agents can reduce access-management bottlenecks, but it also turns policy mutation into an agent-facing control surface. The important safeguards are least-privilege tool exposure, simulation against real access data, approval gates, and durable audit records for every proposed and applied change.",
+        "source": "Google Cloud",
+        "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+        "confidence": "Primary source",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Authorization",
+        "title": "AWS extends trusted identity propagation across Regions",
+        "summary": "AWS IAM Identity Center now supports cross-Region trusted identity propagation, allowing a user\u2019s identity and group context to travel with requests to AWS services in another Region. AWS says the change avoids broad role-based grants while preserving per-user authorization and auditability. ([aws.amazon.com](https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/?utm_source=openai))",
+        "why": "This addresses a common failure mode in distributed AWS architectures: collapsing individual authorization into shared workload roles when services and data span Regions. Teams should validate service support, organization boundaries, session behavior, and CloudTrail evidence before redesigning access around the capability.",
+        "source": "AWS",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
+        "confidence": "Primary source",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "Entra Agent ID blueprint credentials can become a cross-tenant trust boundary",
+        "summary": "Boston Identity summarized Datadog researcher Katie Knowles\u2019s demonstration involving compromised Microsoft Entra Agent ID blueprint credentials and associated agents in trusting tenants. The briefing emphasizes that the resulting reach depends on the permissions assigned to those identities and cautions that a demonstrated temporary-access-pass escalation may no longer work after platform changes. ([insights.bostonidentity.com](https://insights.bostonidentity.com/research/entra-chat-2026-07-12-one-compromised-agent-id?utm_source=openai))",
+        "why": "The key lesson is not that every blueprint compromise yields tenant administrator access; it is that vendor-controlled blueprint credentials can fan out into multiple customer environments. Review blueprint ownership, credential-addition detections, cross-tenant consent, associated-agent permissions, and the use of production client secrets.",
+        "source": "Boston Identity",
+        "url": "https://insights.bostonidentity.com/research/entra-chat-2026-07-12-one-compromised-agent-id",
+        "confidence": "Research",
+        "published_date": "2026-10-26",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-26-morning-brief",
     "date": "2026-10-26",
     "coverageDate": "2026-10-25",
@@ -12,7 +99,7 @@
       "NHI"
     ],
     "readTime": "4 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-25, verified against linked sources. Edition dated 2026-10-26; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
