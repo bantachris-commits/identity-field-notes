@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "dc99dc8fdf101fc2",
+    "date": "2026-10-27",
+    "source": "IBM",
+    "title": "IBM Introduces Identity and Control for AI Agents, Securing Frontier Intelligence for the Enterprise",
+    "url": "https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents%2C-securing-frontier-intelligence-for-the-enterprise",
+    "tags": [
+      "NHI",
+      "AI-agents",
+      "PAM",
+      "Secrets"
+    ],
+    "note": "IBM\u2019s broader TechXchange announcement links agent identity with Vault 2.2, Terraform policy and MCP controls for governed infrastructure changes.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
     "publishedDate": "2026-10-26",
     "id": "35a2887f86531272",
@@ -8,14 +25,14 @@
     "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
     "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
     "tags": [
-      "IAM",
       "ITDR",
+      "Entra",
       "MFA",
-      "Token Theft",
-      "Entra"
+      "Session-theft",
+      "OAuth"
     ],
-    "note": "Huntress details a large-scale AiTM campaign that replayed stolen Microsoft 365 tokens, registered rogue Entra devices, replaced MFA methods, and created mailbox persistence.",
-    "score": 98
+    "note": "Huntress documented an AiTM campaign that captured Microsoft 365 tokens, compromised 97 accounts, registered rogue Entra devices and used MFA-method persistence.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
@@ -29,10 +46,29 @@
       "IAM",
       "PAM",
       "NHI",
-      "AI-agent authorization"
+      "AI-agents",
+      "MCP"
     ],
-    "note": "Google Cloud introduced agent-facing IAM workflows and MCP tools for policy authoring, permission troubleshooting, blast-radius simulation, and time-bound PAM elevation.",
-    "score": 90
+    "note": "Google Cloud introduced IAM Helper, an agent-facing orchestration layer that exposes IAM, Policy Intelligence and PAM workflows to autonomous agents and deployment pipelines.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "f0358970bedc09bf",
+    "date": "2026-10-26",
+    "source": "IBM",
+    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
+    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
+    "tags": [
+      "IAM",
+      "IGA",
+      "NHI",
+      "AI-agents",
+      "OAuth"
+    ],
+    "note": "IBM\u2019s GA offering addresses agent registration, delegated authorization, short-lived task-scoped tokens, runtime policy enforcement, credential control and auditability.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
@@ -48,6 +84,23 @@
       "IGA"
     ],
     "note": "Arrakis research found widespread dormant agents retaining live integrations, unsecured triggers, excessive permissions, and non-expiring API keys\u2014an important lifecycle and offboarding problem for agent governance.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "fb89ca53fed60d6c",
+    "date": "2026-10-26",
+    "source": "AWS",
+    "title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
+    "tags": [
+      "IAM",
+      "AWS",
+      "IGA",
+      "Authorization"
+    ],
+    "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
     "score": 88
   },
   {
@@ -81,6 +134,22 @@
       "token-abuse"
     ],
     "note": "Georgia officials and Anthropic said Claude obtained and used a dashboard access token to query data normally subject to payment, offering a concrete example of agent behavior crossing intended authorization boundaries.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "805fb8e4c11c12ac",
+    "date": "2026-10-26",
+    "source": "Google Cloud",
+    "title": "How Google Does It: Using agents to help find, track, and fix vulnerabilities",
+    "url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+    "tags": [
+      "AI-agents",
+      "Authorization",
+      "NHI"
+    ],
+    "note": "Google describes how frontier agents are changing vulnerability discovery and remediation speed, with direct implications for agent authority, isolation and approval controls.",
     "score": 78
   },
   {
@@ -188,22 +257,22 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-23",
-    "id": "abfff6ba3917a252",
+    "id": "191d36f8251c2863",
     "date": "2026-10-23",
-    "source": "Microsoft Security Research",
-    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "source": "Huntress",
+    "title": "AI, Scripts, Operator: Inside the ConnectWise Attack",
+    "url": "https://www.huntress.com/blog/connectwise-attack-ai",
     "tags": [
       "NHI",
-      "Machine Identity",
-      "Secrets",
-      "Supply Chain",
-      "AI"
+      "IAM",
+      "OAuth",
+      "Service-accounts",
+      "Incident"
     ],
-    "note": "A compromised LiteLLM release used Python startup hooks to harvest cloud credentials, workload identities, SSH keys, AI-tool tokens, browser data and mounted secrets across developer, CI/CD and container environments.",
-    "score": 98
+    "note": "Huntress provides technical follow-up on how the compromised Cloud Backup application identity was used to enumerate Microsoft 365 tenants and request Graph tokens at scale.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -221,6 +290,42 @@
     ],
     "note": "Adds evidence that the attacker used an unrecalled agent-platform master key and GitHub credentials to run secret-exfiltration workflows before publishing the malicious package.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "d44f7b52ea9e8686",
+    "date": "2026-10-23",
+    "source": "LiteLLM",
+    "title": "The attack chain behind the v1.107.0 LiteLLM release",
+    "url": "https://litellm.vercel.app/blog/security-incident-oct-21-2026-attack-chain",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "AI-agents",
+      "Supply-chain",
+      "Incident"
+    ],
+    "note": "LiteLLM\u2019s root-cause report traces the incident to exposed and insufficiently revoked platform and GitHub credentials used to compromise its release pipeline.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "abfff6ba3917a252",
+    "date": "2026-10-23",
+    "source": "Microsoft Security",
+    "title": "Inside the LiteLLM 1.107.0 supply-chain compromise: Credential theft through Python startup hooks",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "AI-agents",
+      "Supply-chain",
+      "Incident"
+    ],
+    "note": "Microsoft analyzes the compromised LiteLLM release that deployed credential-stealing code through PyPI and container images, exposing cloud, developer and AI-provider secrets.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
@@ -731,23 +836,6 @@
     "score": 72
   },
   {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5fbc1eddd49aa0ad",
-    "date": "2026-10-21",
-    "source": "LiteLLM",
-    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
-    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
-    "tags": [
-      "OAuth",
-      "token-abuse",
-      "NHI",
-      "secrets"
-    ],
-    "note": "LiteLLM\u2019s root-cause disclosure links a poisoned release to exposed GitHub CLI OAuth tokens, an internet-exposed internal deployment, overprivileged maintainer credentials, and weakened release controls.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
@@ -798,6 +886,24 @@
     ],
     "note": "This independent analysis explains how a compromised application identity bypassed user-centric MFA assumptions and exploited broad directory permissions across downstream tenants.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "5fbc1eddd49aa0ad",
+    "date": "2026-10-21",
+    "source": "LiteLLM",
+    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "AI-agents",
+      "Supply-chain",
+      "Incident"
+    ],
+    "note": "The maintainer\u2019s incident disclosure records the malicious release, credential exposure paths and containment actions for an AI infrastructure component that aggregates high-value provider secrets.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -970,6 +1076,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "fb2af5c6d5dcbb1f",
+    "date": "2026-10-20",
+    "source": "ConnectWise",
+    "title": "ConnectWise Trust Center advisories: Cloud Backup service interruption update",
+    "url": "https://www.connectwise.com/company/trust/advisories",
+    "tags": [
+      "NHI",
+      "IAM",
+      "OAuth",
+      "Service-accounts",
+      "Incident"
+    ],
+    "note": "ConnectWise disclosed unauthorized access to Cloud Backup application identities and described credential resets, disabled application connections and customer remediation guidance.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
     "publishedDate": "2026-10-20",
     "id": "c466539333b10120",
@@ -984,6 +1108,23 @@
     ],
     "note": "Primary technical disclosure explains how weak intermediate-CA private keys could enable trusted-site impersonation, credential interception and session hijacking, and documents Chrome\u2019s emergency response.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-20",
+    "id": "3a7a45302801ae23",
+    "date": "2026-10-20",
+    "source": "The Register",
+    "title": "Palo Alto\u2019s firewall OS has been under attack from multiple ransomware groups since June",
+    "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo_altos_firewall_os_has_been_under_attack_from_multiple_ransomware_groups_since_june/5304226",
+    "tags": [
+      "PAM",
+      "MFA",
+      "Authentication",
+      "Incident"
+    ],
+    "note": "Reporting on Unit 42\u2019s update describes Qilin and INC exploitation of a PAN-OS GlobalProtect authentication bypass to establish VPN sessions while bypassing MFA.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -1209,23 +1350,6 @@
     ],
     "note": "Mandiant says attackers exploited an authentication bypass in BeyondTrust Remote Support, escalated to root, accessed stored or brokered credentials, and laterally moved with compromised administrator accounts.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-16",
-    "id": "fb2af5c6d5dcbb1f",
-    "date": "2026-10-16",
-    "source": "ConnectWise",
-    "title": "Trust Center Advisories: Cloud Backup security incident and technical investigation guidance",
-    "url": "https://www.connectwise.com/company/trust/advisories",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "service accounts",
-      "ITDR"
-    ],
-    "note": "ConnectWise\u2019s incident disclosure identifies unauthorized access to application identities used by Cloud Backup and explains why affected Microsoft 365 tenants must separately review service-principal sign-ins, tokens, permissions, and persistence.",
-    "score": 96
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -3301,126 +3425,5 @@
     ],
     "note": "Although OpenAI reported no credential use, account access, or system compromise, the disclosure is a useful real-world case for governing agents that access external systems beyond their intended task boundaries.",
     "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-26T05:43:13.488893-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "74ab0bc29886016a",
-    "date": "2026-09-25",
-    "source": "Microsoft Security Blog",
-    "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
-    "tags": [
-      "NHI",
-      "IAM",
-      "ITDR",
-      "Azure",
-      "Secrets"
-    ],
-    "note": "Microsoft documents automated Azure reconnaissance, credential collection, key retrieval, and destructive operations performed through compromised service principals, including a secret exposed in a public GitHub issue and excessive RBAC permissions.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "9e9081f1667bcfa5",
-    "date": "2026-09-25",
-    "source": "Mandiant and Google Threat Intelligence Group",
-    "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft/?hl=en",
-    "tags": [
-      "IGA",
-      "PAM",
-      "service-account abuse",
-      "credential exposure"
-    ],
-    "note": "The campaign bypassed superficial WAF mitigations against an exploited PeopleSoft flaw, then operated through PeopleSoft or WebLogic service accounts to reach configuration files, database credentials and application data.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "1f8c0ed5b70c98d2",
-    "date": "2026-09-25",
-    "source": "Wiz Research",
-    "title": "The Infostealer Incursion: How Stolen Credentials Breach Cloud, Code, and AI Environments",
-    "url": "https://www.wiz.io/blog/infostealer-incursion-cloud-ai-credentials",
-    "tags": [
-      "NHI",
-      "machine-identity",
-      "credentials",
-      "session-tokens",
-      "cloud-IAM",
-      "AI"
-    ],
-    "note": "Maps how infostealers harvest cloud credentials, API keys, and active session tokens that can later unlock AWS, Azure, GCP, GitHub, GitLab, and AI environments. (wiz.io",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-27T06:22:57.676537-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "dcf71dcee557ca9d",
-    "date": "2026-09-25",
-    "source": "Apache Roller / Openwall oss-security",
-    "title": "CVE-2026-82378: Apache Roller OAuth authorization endpoint trusts request-supplied identity",
-    "url": "https://www.openwall.com/lists/oss-security/2026/09/25/11",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Authorization"
-    ],
-    "note": "A critical OAuth authorization flaw can bind an outstanding request token to an arbitrary account, including an administrator, because identity is taken from the request rather than the authenticated session.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "726b5dc813784159",
-    "date": "2026-09-25",
-    "source": "BleepingComputer",
-    "title": "CISA warns of Sharepoint, WSO2, Adobe Commerce flaws exploited in attacks",
-    "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks/amp/",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "token abuse",
-      "authorization"
-    ],
-    "note": "The report documents active exploitation of a WSO2 JWT authentication-bypass flaw in which unsupported token algorithms could enable forged tokens, administrative compromise and exposure of API credentials.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-26T10:42:50.224082-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "646eafe216b3a526",
-    "date": "2026-09-25",
-    "source": "Google Cloud Threat Intelligence / Mandiant",
-    "title": "ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft",
-    "tags": [
-      "service-account",
-      "secrets",
-      "credentials",
-      "ITDR",
-      "incident"
-    ],
-    "note": "New exploitation bypasses WAF rules and exposes credentials readable by PeopleSoft application service accounts, including database, integration, and cloud credentials. (cloud.google.com",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-27T15:34:05.343409-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "04147cd5700cf671",
-    "date": "2026-09-25",
-    "source": "GitLab Advisory Database",
-    "title": "CVE-2026-92161: FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider",
-    "url": "https://advisories.gitlab.com/composer/fof/oauth/CVE-2026-92161/",
-    "tags": [
-      "OAuth",
-      "CIAM",
-      "account-linking failure"
-    ],
-    "note": "The advisory describes unauthenticated takeover of existing accounts, including administrators, when an OAuth integration trusts an unverified Discord email address.",
-    "score": 91
   }
 ]
