@@ -29,10 +29,43 @@
       "IAM",
       "PAM",
       "NHI",
-      "AI-agent-authorization"
+      "AI-agent authorization"
     ],
-    "note": "Google Cloud introduced agent-callable IAM workflows that connect policy analysis, PAM, inherited-permission tracing, and policy simulation to autonomous agents and MCP tools.",
+    "note": "Google Cloud introduced agent-facing IAM workflows and MCP tools for policy authoring, permission troubleshooting, blast-radius simulation, and time-bound PAM elevation.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "36875f2f7926cf84",
+    "date": "2026-10-26",
+    "source": "Help Net Security",
+    "title": "Forgotten AI agents may still access sensitive company data",
+    "url": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "IGA"
+    ],
+    "note": "Arrakis research found widespread dormant agents retaining live integrations, unsecured triggers, excessive permissions, and non-expiring API keys\u2014an important lifecycle and offboarding problem for agent governance.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "7c4b8263fd55d0aa",
+    "date": "2026-10-26",
+    "source": "Boston Identity",
+    "title": "A compromised Agent ID blueprint can expose agents across trusting tenants",
+    "url": "https://insights.bostonidentity.com/research/entra-chat-2026-07-12-one-compromised-agent-id",
+    "tags": [
+      "Microsoft Entra",
+      "NHI",
+      "ITDR",
+      "AI-agent authorization"
+    ],
+    "note": "The briefing describes a Datadog researcher\u2019s cross-tenant demonstration in which compromised Entra Agent ID blueprint credentials exposed associated agent identities and their permissions.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
@@ -76,12 +109,12 @@
     "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
     "tags": [
       "NHI",
-      "ITDR",
       "OAuth",
-      "token-abuse"
+      "token abuse",
+      "secrets"
     ],
-    "note": "Wiz documents an ongoing campaign that uses stolen GitHub tokens to plant secret-dumping workflows across reachable repositories, including private and enterprise environments.",
-    "score": 95
+    "note": "Wiz tracked a campaign using compromised GitHub tokens to plant secret-dumping workflows across more than 850 accounts, illustrating the risk of long-lived developer and machine credentials.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
@@ -173,24 +206,6 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "fb2af5c6d5dcbb1f",
-    "date": "2026-10-23",
-    "source": "ConnectWise",
-    "title": "Cloud Backup investigation and restoration update",
-    "url": "https://www.connectwise.com/company/trust/advisories",
-    "tags": [
-      "Entra",
-      "OAuth",
-      "NHI",
-      "Service Accounts",
-      "Incident Response"
-    ],
-    "note": "Affected-vendor advisory confirms unauthorized access to Cloud Backup application credentials and stresses tenant-level review for persistent access and unauthorized changes.",
-    "score": 95
-  },
-  {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
     "publishedDate": "2026-10-23",
     "id": "99bef6d2595d07c5",
@@ -274,6 +289,22 @@
       "Incident-response"
     ],
     "note": "Avalonia\u2019s primary disclosure attributes CMS compromise to an administrator token accidentally embedded in public JavaScript and describes subsequent credential revocation, permission reduction, and account cleanup.",
+    "score": 89
+  },
+  {
+    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "989b0007f8ec4158",
+    "date": "2026-10-23",
+    "source": "Cisco",
+    "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r",
+    "tags": [
+      "Machine identity",
+      "PKI",
+      "secrets"
+    ],
+    "note": "Cisco\u2019s advisory documents the compromise of eight eMudhra intermediate CA private keys caused by defective key generation, with consequences for TLS and code-signing trust.",
     "score": 89
   },
   {
@@ -700,24 +731,6 @@
     "score": 72
   },
   {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "80aac9868cd30e6c",
-    "date": "2026-10-21",
-    "source": "Microsoft Security Blog",
-    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-    "tags": [
-      "ITDR",
-      "OAuth",
-      "NHI",
-      "AI-agent-authorization",
-      "Entra"
-    ],
-    "note": "Microsoft details Storm-0940\u2019s abuse of compromised ConnectWise application identities, app-only Graph tokens, cross-tenant trust, and automated persistence in customer Entra environments.",
-    "score": 100
-  },
-  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-21",
     "id": "5fbc1eddd49aa0ad",
@@ -733,6 +746,24 @@
     ],
     "note": "LiteLLM\u2019s root-cause disclosure links a poisoned release to exposed GitHub CLI OAuth tokens, an internet-exposed internal deployment, overprivileged maintainer credentials, and weakened release controls.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-21",
+    "id": "80aac9868cd30e6c",
+    "date": "2026-10-21",
+    "source": "Microsoft Security",
+    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "NHI",
+      "AI-agent authorization",
+      "ITDR"
+    ],
+    "note": "Microsoft attributes the ConnectWise supply-chain activity to Storm-0940 and describes abuse of already-authorized application identities, Graph access, credential changes, and privilege-modification attempts across customer tenants.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -1178,6 +1209,23 @@
     ],
     "note": "Mandiant says attackers exploited an authentication bypass in BeyondTrust Remote Support, escalated to root, accessed stored or brokered credentials, and laterally moved with compromised administrator accounts.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-16",
+    "id": "fb2af5c6d5dcbb1f",
+    "date": "2026-10-16",
+    "source": "ConnectWise",
+    "title": "Trust Center Advisories: Cloud Backup security incident and technical investigation guidance",
+    "url": "https://www.connectwise.com/company/trust/advisories",
+    "tags": [
+      "Microsoft Entra",
+      "OAuth",
+      "service accounts",
+      "ITDR"
+    ],
+    "note": "ConnectWise\u2019s incident disclosure identifies unauthorized access to application identities used by Cloud Backup and explains why affected Microsoft 365 tenants must separately review service-principal sign-ins, tokens, permissions, and persistence.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
@@ -3374,56 +3422,5 @@
     ],
     "note": "The advisory describes unauthenticated takeover of existing accounts, including administrators, when an OAuth integration trusts an unverified Discord email address.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-26T23:39:33.075112-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "ef33b8cf9b798c4a",
-    "date": "2026-09-25",
-    "source": "TechCrunch",
-    "title": "For months, OpenAI's agent swarms have been attacking online databases to find obscure facts",
-    "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "runtime security"
-    ],
-    "note": "Reporting on agents probing and attempting to access protected data sources makes the authorization gap between assigned task, tool capability, and actual behavior concrete for identity teams.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "7628309360512418",
-    "date": "2026-09-25",
-    "source": "IETF",
-    "title": "Agent Identity Problem Statement",
-    "url": "https://datatracker.ietf.org/doc/html/draft-drake-agent-identity-problem-statement-00",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "AI-Agent Authorization",
-      "OAuth",
-      "Identity Standards"
-    ],
-    "note": "This new Internet-Draft frames identity continuity, delegation, attestation, authorization, auditability, and liability as distinct problems for autonomous software agents and robots.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
-    "publishedDate": "2026-09-25",
-    "id": "38320a75c08b97d0",
-    "date": "2026-09-25",
-    "source": "Helpfeel",
-    "title": "Notice and Apology Regarding a Data Breach Resulting from Unauthorized Access to Gyazo (Update 2",
-    "url": "https://corp.helpfeel.com/en/news/news-20260925",
-    "tags": [
-      "OAuth",
-      "Token security",
-      "CIAM",
-      "Incident response"
-    ],
-    "note": "The latest primary disclosure expands the Gyazo breach to approximately 174 million deleted-image metadata records and confirms that exposed OAuth integration credentials were invalidated as part of containment.",
-    "score": 87
   }
 ]
