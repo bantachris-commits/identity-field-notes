@@ -1,5 +1,59 @@
 [
   {
+    "id": "2026-10-28-morning-brief",
+    "date": "2026-10-28",
+    "coverageDate": "2026-10-27",
+    "edition": "MORNING EDITION // 2026.10.28",
+    "title": "Agent Identity Moves From Principle to Platform",
+    "dek": "Highlights from 2026-10-27. Yesterday\u2019s strongest identity developments centered on formal design principles for AI-agent identity, enterprise controls for agent credentials, and federal-grade convergence of IGA and PAM.",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent authorization",
+      "PAM",
+      "IGA"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-27, verified against linked sources. Edition dated 2026-10-28; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Standards",
+        "title": "NIST proposes ten design tenets for agent identity systems",
+        "summary": "NIST published an initial set of ten design tenets for managing AI-agent identity, authentication, authorization, accountability, lifecycle, and privacy. The guidance emphasizes distinct cryptographically verifiable agent identities, linked delegation with attenuated authority, and least- or zero-standing privilege. ([nist.gov](https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems))",
+        "why": "The useful shift is from treating agents as another service account to giving them distinct identity and authorization lifecycles. IAM teams can use the tenets as a review framework for agent-registration, delegation, audit, and revocation designs.",
+        "source": "NIST",
+        "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
+        "confidence": "Primary source",
+        "published_date": "2026-10-27",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "IBM extends Vault controls to AI-agent identity and credentials",
+        "summary": "IBM announced capabilities linking HashiCorp Vault with governed AI-agent identities, short-lived credentials, least-privilege access, and real-time revocation. The announcement also describes an authoritative record for each agent covering ownership, lifecycle status, and granted authority, alongside Vault 2.2 features for secured agent accounts and credential renewal. ([newsroom.ibm.com](https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents%2C-securing-frontier-intelligence-for-the-enterprise))",
+        "why": "The operational challenge is not merely identifying an agent but controlling the credentials it uses across databases, applications, and clouds. Practitioners should evaluate whether agent identity, secrets issuance, authorization context, and revocation are connected\u2014or still managed as separate control planes.",
+        "source": "IBM",
+        "url": "https://newsroom.ibm.com/2026-10-27-ibm-introduces-identity-and-control-for-ai-agents%2C-securing-frontier-intelligence-for-the-enterprise",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-27",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Market",
+        "title": "Saviynt announces FedRAMP High certification for unified identity security",
+        "summary": "Saviynt announced FedRAMP Class D, or High, certification for an offering combining identity governance and administration, privileged access management, and application access governance within one federal authorization boundary. The company says the scope covers human, non-human, and AI identities, building on its existing FedRAMP Moderate presence. ([globenewswire.com](https://www.globenewswire.com/news-release/2026/10/27/3389134/0/en/saviynt-achieves-united-states-fedramp-class-d-high-certification.html))",
+        "why": "If independently validated in agency procurement and authorization materials, the move could strengthen the case for consolidating IGA, PAM, and non-human identity controls in sensitive government environments. Buyers should distinguish the certified federal environment from claims about broader product availability and posture.",
+        "source": "Saviynt",
+        "url": "https://www.globenewswire.com/news-release/2026/10/27/3389134/0/en/saviynt-achieves-united-states-fedramp-class-d-high-certification.html",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-27",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-27-morning-brief",
     "date": "2026-10-27",
     "coverageDate": "2026-10-26",
@@ -14,7 +68,7 @@
       "AI-agents"
     ],
     "readTime": "7 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-26, verified against linked sources. Edition dated 2026-10-27; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
