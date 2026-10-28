@@ -1,5 +1,57 @@
 [
   {
+    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "81e0f3df4e301155",
+    "date": "2026-10-28",
+    "source": "Huntress",
+    "title": "Managed for Malice: How Attackers Turn MDM into Remote Access",
+    "url": "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access",
+    "tags": [
+      "IAM",
+      "PAM",
+      "ITDR",
+      "Incident Response"
+    ],
+    "note": "Documents incidents where social engineering led to unauthorized MDM enrollment, SYSTEM-level deployment, rogue RMM persistence and remote access, making MDM identity events a security-sensitive control point.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "c0b792ea9c4ed3e9",
+    "date": "2026-10-28",
+    "source": "Forbes",
+    "title": "Data Theft Hackers Are Weaponizing New Passkey-Themed Threats By Proxy",
+    "url": "https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/",
+    "tags": [
+      "Passkeys",
+      "MFA",
+      "Session Theft",
+      "ITDR"
+    ],
+    "note": "Reports ReliaQuest findings that residential proxies matched to a victim\u2019s location helped attackers evade geolocation signals, register persistence and begin exfiltration within minutes of access.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "4a763ab4e3655352",
+    "date": "2026-10-28",
+    "source": "Commvault",
+    "title": "Commvault Advances Identity Resilience, Enabling Customers to Identify and Manage Hidden Risks in Identity Systems Before Attackers Exploit Them",
+    "url": "https://www.prnewswire.com/news-releases/commvault-advances-identity-resilience-enabling-customers-to-identify-and-manage-hidden-risks-in-identity-systems-before-attackers-exploit-them-302921448.html",
+    "tags": [
+      "ITDR",
+      "IGA",
+      "Entra",
+      "Okta",
+      "AD"
+    ],
+    "note": "A meaningful identity-resilience move adds cross-provider auditing, Tier 0 exposure analysis, guided remediation and recovery across Active Directory, Entra ID and Okta.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-10-28T00:12:50.791149-06:00",
     "publishedDate": "2026-10-27",
     "id": "f65e1d863674c710",
@@ -8,12 +60,13 @@
     "title": "Design Tenets for Agent Identity Management Systems",
     "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
     "tags": [
-      "IAM",
+      "AI Agents",
       "NHI",
-      "AI-agent authorization",
-      "OAuth"
+      "Authorization",
+      "IAM",
+      "ITDR"
     ],
-    "note": "NIST proposes ten foundational design tenets for agent identity, authentication, authorization, accountability, lifecycle management, and privacy-preserving access.",
+    "note": "NIST proposes ten design tenets for agent identity systems, including distinct agent identities, least privilege, policy separation from reasoning, deterministic decisions, continuous monitoring and immutable evidence.",
     "score": 98
   },
   {
@@ -69,6 +122,24 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "bbbc363564a58cf2",
+    "date": "2026-10-27",
+    "source": "Saviynt",
+    "title": "Saviynt Achieves United States FedRAMP Class D (High Certification",
+    "url": "https://saviynt.com/press-release/fedramp-high-authorization-federal-identity-security?hsLang=en-gb",
+    "tags": [
+      "IGA",
+      "PAM",
+      "NHI",
+      "AI Agents",
+      "Federal"
+    ],
+    "note": "The certification materially expands Saviynt\u2019s federal positioning by placing IGA, PAM and application access governance for human, nonhuman and AI identities under one high-assurance boundary.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
     "publishedDate": "2026-10-26",
     "id": "35a2887f86531272",
@@ -97,12 +168,12 @@
     "tags": [
       "NHI",
       "OAuth",
-      "ITDR",
-      "AI-agent authorization",
-      "Incident"
+      "Service Accounts",
+      "M365",
+      "Incident Response"
     ],
-    "note": "Huntress provides granular telemetry on scripted enumeration, adaptive tooling, credential planting, Global Administrator assignment, and the limits of inferring AI involvement from attacker behavior.",
-    "score": 98
+    "note": "Provides fresh telemetry on the ConnectWise Cloud Backup compromise, including machine-speed abuse of application credentials, downstream Microsoft 365 access and uncertainty around AI-agent involvement.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -522,12 +593,13 @@
     "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
     "url": "https://www.huntress.com/blog/token-replay-spray",
     "tags": [
-      "ITDR",
+      "Entra",
+      "OAuth",
+      "Token Theft",
       "MFA",
-      "Session Theft",
-      "Entra"
+      "ITDR"
     ],
-    "note": "Tracks 497 successful Microsoft 365 token-replay sign-ins across 79 organizations, including rogue Entra devices, MFA tampering, and hidden inbox rules.",
+    "note": "Details a ten-week campaign affecting 79 organizations through AiTM and device-code token theft, rogue Entra devices, MFA replacement and hidden inbox rules.",
     "score": 99
   },
   {
@@ -652,24 +724,6 @@
     "score": 93
   },
   {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "92b876190d734454",
-    "date": "2026-10-22",
-    "source": "BleepingComputer",
-    "title": "Machine speed attacks require machine speed detection and response",
-    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "tags": [
-      "ITDR",
-      "OAuth",
-      "Token-theft",
-      "MFA-bypass",
-      "Offboarding"
-    ],
-    "note": "Incident analysis covers long-lived GitHub OAuth tokens, MFA-phished sessions, AI-tool credential theft, and the failure of IdP disablement alone to revoke downstream tokens.",
-    "score": 93
-  },
-  {
     "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
     "publishedDate": "2026-10-22",
     "id": "143de8bb1ffcf78e",
@@ -717,6 +771,24 @@
     ],
     "note": "Railway said unauthorized parties may have accessed decrypted environment variables containing API keys, database credentials, registry credentials, and AI-provider secrets.",
     "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "92b876190d734454",
+    "date": "2026-10-22",
+    "source": "BleepingComputer",
+    "title": "Machine-speed attacks require machine-speed detection and response",
+    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+    "tags": [
+      "ITDR",
+      "OAuth",
+      "Session Theft",
+      "MFA",
+      "NHI"
+    ],
+    "note": "Examines stolen developer tokens, AI-tool lures and help-desk vishing that enabled rapid enumeration and data access before conventional identity detections could respond.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -3359,71 +3431,5 @@
     ],
     "note": "Connects infostealer-compromised AI service logins to enterprise exposure, showing how stolen user sessions and shadow-AI access become organizational identity risks.",
     "score": 86
-  },
-  {
-    "firstSeenAt": "2026-09-28T17:28:10.467562-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "b54a74d3c721b762",
-    "date": "2026-09-28",
-    "source": "SiliconANGLE",
-    "title": "1Password ties AI agent access to individual tasks",
-    "url": "https://siliconangle.com/2026/09/28/1password-limits-ai-agent-access-task-based-verification-oktane/",
-    "tags": [
-      "PAM",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "Explains a task-scoped credential-broker model that keeps secrets out of AI-agent contexts and rejects standing privilege.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "89a3c0e8c074489a",
-    "date": "2026-09-28",
-    "source": "Auth0",
-    "title": "Securing Agentic Commerce Using Auth0 and the Universal Commerce Protocol (UCP",
-    "url": "https://auth0.com/blog/securing-agentic-commerce-using-auth0-universal-commerce-protocol-ucp/",
-    "tags": [
-      "authorization",
-      "OAuth",
-      "AI-agents",
-      "account-linking",
-      "session-security"
-    ],
-    "note": "The proposal uses verified account linking, on-behalf-of token exchange and short-lived purchase-scoped tokens to constrain agentic commerce actions and preserve human attribution.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "54cc405880d0c95c",
-    "date": "2026-09-28",
-    "source": "FIDO Alliance",
-    "title": "IoT News: WBA and FIDO test zero-touch IoT Wi-Fi onboarding",
-    "url": "https://fidoalliance.org/iot-news-wba-and-fido-test-zero-touch-iot-wi-fi-onboarding/",
-    "tags": [
-      "FIDO",
-      "Machine Identity",
-      "NHI"
-    ],
-    "note": "The WBA\u2013FIDO Device Onboard interoperability work shows how cryptographic device identity can replace manual MAC, Wi-Fi-key, and administrative-credential provisioning at industrial scale.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "24498a978a591e8b",
-    "date": "2026-09-28",
-    "source": "FIDO Alliance",
-    "title": "Tech Times: Visa Payment Passkey Goes Live at Five India State Banks: OTP Attack Surface Eliminated",
-    "url": "https://fidoalliance.org/tech-times-visa-payment-passkey-goes-live-at-five-india-state-banks-otp-attack-surface-eliminated/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "MFA"
-    ],
-    "note": "The rollout of Visa Payment Passkey at five Indian state banks is a concrete large-scale deployment that removes OTP dependence from payment authentication.",
-    "score": 75
   }
 ]
