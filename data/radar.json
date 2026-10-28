@@ -10,11 +10,29 @@
     "tags": [
       "IAM",
       "NHI",
-      "AI-agent-authorization",
-      "IGA"
+      "AI-agent authorization",
+      "OAuth"
     ],
-    "note": "NIST proposes ten practical design principles for cryptographically distinct agent identities, lifecycle management, delegated authority, least privilege, and accountable autonomous actions.",
-    "score": 97
+    "note": "NIST proposes ten foundational design tenets for agent identity, authentication, authorization, accountability, lifecycle management, and privacy-preserving access.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "8ef3ed5431079836",
+    "date": "2026-10-27",
+    "source": "Saviynt",
+    "title": "Saviynt Achieves United States FedRAMP\u00ae Class D (High Certification",
+    "url": "https://www.globenewswire.com/news-release/2026/10/27/3389134/0/en/saviynt-achieves-united-states-fedramp-class-d-high-certification.html",
+    "tags": [
+      "IGA",
+      "PAM",
+      "NHI",
+      "AI-agent authorization",
+      "FedRAMP"
+    ],
+    "note": "Saviynt\u2019s FedRAMP High certification brings IGA, PAM, application access governance, and coverage for human, non-human, and AI identities into one federal authorization boundary.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -31,6 +49,23 @@
       "Secrets"
     ],
     "note": "IBM\u2019s broader TechXchange announcement links agent identity with Vault 2.2, Terraform policy and MCP controls for governed infrastructure changes.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "965aaf8862049f06",
+    "date": "2026-10-27",
+    "source": "Microsoft 365 Message Center Archive",
+    "title": "Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
+    "url": "https://message.cengizyilmaz.net/message/mc1450134-microsoft-entra-windows-hello-for-business-and-macos-platform-sso-as-standalone-mfa-factors",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "passkeys",
+      "FIDO"
+    ],
+    "note": "The updated rollout will let supported Windows Hello for Business and macOS Platform SSO credentials satisfy MFA without requiring an additional passkey, affecting registration, step-up, and authentication-strength planning.",
     "score": 84
   },
   {
@@ -3390,39 +3425,5 @@
     ],
     "note": "The rollout of Visa Payment Passkey at five Indian state banks is a concrete large-scale deployment that removes OTP dependence from payment authentication.",
     "score": 75
-  },
-  {
-    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
-    "publishedDate": "2026-09-27",
-    "id": "47903fccd0c43f12",
-    "date": "2026-09-27",
-    "source": "Insomnia Security",
-    "title": "OAuth Device-Code Phishing \u2014 Bypassing MFA Without Touching a Password",
-    "url": "https://insom.ai/en/blog/oauth-device-code-phishing-bypassing-mfa-without-touching-a-password-20260927",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "MFA",
-      "Token Abuse"
-    ],
-    "note": "Field telemetry on device-code phishing shows how attackers can obtain refresh-token access after users complete legitimate Microsoft or Google authorization steps.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-09-28T06:21:38.575235-06:00",
-    "publishedDate": "2026-09-27",
-    "id": "8509949b9dc891a6",
-    "date": "2026-09-27",
-    "source": "SC Media",
-    "title": "OAuth token abuse: how the attack works and how to stop it",
-    "url": "https://www.scworld.com/tech-explainer/oauth-token-abuse-how-the-attack-works-and-how-to-stop-it",
-    "tags": [
-      "OAuth",
-      "token abuse",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "A focused technical explainer covers consent phishing, over-privileged application identities and persistence through added credentials, client secrets and service-principal roles.",
-    "score": 76
   }
 ]
