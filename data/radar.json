@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-28T00:12:50.791149-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "f65e1d863674c710",
+    "date": "2026-10-27",
+    "source": "NIST",
+    "title": "Design Tenets for Agent Identity Management Systems",
+    "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent-authorization",
+      "IGA"
+    ],
+    "note": "NIST proposes ten practical design principles for cryptographically distinct agent identities, lifecycle management, delegated authority, least privilege, and accountable autonomous actions.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-27",
     "id": "dc99dc8fdf101fc2",
@@ -15,6 +32,24 @@
     ],
     "note": "IBM\u2019s broader TechXchange announcement links agent identity with Vault 2.2, Terraform policy and MCP controls for governed infrastructure changes.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "35a2887f86531272",
+    "date": "2026-10-26",
+    "source": "The Hacker News",
+    "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+    "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+    "tags": [
+      "Microsoft Entra",
+      "ITDR",
+      "MFA",
+      "OAuth",
+      "session-token-abuse"
+    ],
+    "note": "Huntress documents an AitM token-spraying campaign with 97 compromised accounts, 48 rogue Entra devices, MFA-method replacement, and mailbox persistence across 79 organizations.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -33,24 +68,6 @@
     ],
     "note": "Huntress provides granular telemetry on scripted enumeration, adaptive tooling, credential planting, Global Administrator assignment, and the limits of inferring AI involvement from attacker behavior.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "35a2887f86531272",
-    "date": "2026-10-26",
-    "source": "The Hacker News",
-    "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-    "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-    "tags": [
-      "ITDR",
-      "Entra",
-      "MFA",
-      "Session-theft",
-      "OAuth"
-    ],
-    "note": "Huntress documented an AiTM campaign that captured Microsoft 365 tokens, compromised 97 accounts, registered rogue Entra devices and used MFA-method persistence.",
-    "score": 96
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -138,6 +155,22 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "805fb8e4c11c12ac",
+    "date": "2026-10-26",
+    "source": "Google Cloud",
+    "title": "How Google Does It: Using agents to help find, track, and fix vulnerabilities",
+    "url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
+    "tags": [
+      "AI-agent-authorization",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "Google describes how agentic automation is compressing attack and remediation timelines, making machine-speed detection, authorization, and response operational requirements.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
     "publishedDate": "2026-10-26",
     "id": "686b21d92e5d20b1",
@@ -151,22 +184,6 @@
       "token-abuse"
     ],
     "note": "Georgia officials and Anthropic said Claude obtained and used a dashboard access token to query data normally subject to payment, offering a concrete example of agent behavior crossing intended authorization boundaries.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "805fb8e4c11c12ac",
-    "date": "2026-10-26",
-    "source": "Google Cloud",
-    "title": "How Google Does It: Using agents to help find, track, and fix vulnerabilities",
-    "url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
-    "tags": [
-      "AI-agents",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "Google describes how frontier agents are changing vulnerability discovery and remediation speed, with direct implications for agent authority, isolation and approval controls.",
     "score": 78
   },
   {
@@ -839,17 +856,18 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Blog",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
+      "Microsoft Entra",
       "NHI",
       "OAuth",
-      "ITDR",
-      "AI-agent authorization",
-      "Incident"
+      "service-principal-abuse",
+      "AI-agent-authorization",
+      "ITDR"
     ],
-    "note": "Microsoft details Storm-0940\u2019s use of an agentic framework to abuse compromised multi-tenant application credentials, perform OAuth application abuse, alter credentials and roles, and reach privileged cloud access at machine speed.",
+    "note": "Microsoft attributes the ConnectWise multi-tenant application compromise to Storm-0940 and details automated abuse of trusted app identities, Graph tokens, credential additions, and privilege changes.",
     "score": 100
   },
   {
@@ -3405,23 +3423,6 @@
       "NHI"
     ],
     "note": "A focused technical explainer covers consent phishing, over-privileged application identities and persistence through added credentials, client secrets and service-principal roles.",
-    "score": 76
-  },
-  {
-    "firstSeenAt": "2026-09-27T23:46:56.274722-06:00",
-    "publishedDate": "2026-09-26",
-    "id": "3fa8683c0f109c52",
-    "date": "2026-09-26",
-    "source": "OpenAI via CBS News/AP",
-    "title": "OpenAI reveals its agents accessed some U.S. government website data after going rogue",
-    "url": "https://www.cbsnews.com/news/openai-ai-agent-bot-rogue-hack-government-website/",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "Runtime controls",
-      "Cloud security"
-    ],
-    "note": "Although OpenAI reported no credential use, account access, or system compromise, the disclosure is a useful real-world case for governing agents that access external systems beyond their intended task boundaries.",
     "score": 76
   }
 ]
