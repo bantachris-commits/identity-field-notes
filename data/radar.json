@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "a1df75625f69c813",
+    "date": "2026-10-28",
+    "source": "ReliaQuest Threat Research",
+    "title": "Residential Proxies Mask Social-Engineering Attacks",
+    "url": "https://reliaquest.com/blog/threat-spotlight-residential-proxies-mask-social-engineering-attacks/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Passkeys",
+      "ITDR",
+      "Session Theft"
+    ],
+    "note": "Documents passkey-, SSO- and Okta-themed social engineering that uses victim-local residential proxies to evade geographic and risk-based identity detections while capturing credentials or session tokens.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
     "publishedDate": "2026-10-28",
     "id": "fb2af5c6d5dcbb1f",
@@ -130,11 +148,28 @@
     "tags": [
       "ITDR",
       "IGA",
-      "PAM",
       "Entra",
-      "Okta"
+      "Okta",
+      "AD"
     ],
-    "note": "Commvault is extending identity-risk discovery, Tier 0 exposure analysis and recovery-oriented controls across Active Directory, Entra ID and Okta.",
+    "note": "A meaningful platform move toward identity resilience adds cross-provider identity auditing, Tier 0 exposure analysis and recovery capabilities spanning Active Directory, Entra ID and Okta.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "b0bd5a9bcb1e13b3",
+    "date": "2026-10-28",
+    "source": "Proof",
+    "title": "From Fraud Defense to Agentic Workflows: October Product Updates",
+    "url": "https://www.proof.com/blog/from-fraud-defense-to-agentic-workflows-october-product-updates",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "Authorization",
+      "Agent Identity"
+    ],
+    "note": "Introduces an MCP-based agent workflow in which OAuth grants persistent authority to act with a user\u2019s verified digital identity, making delegation scope, consent and auditability practical design concerns.",
     "score": 78
   },
   {
@@ -208,6 +243,22 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "9f18f4bc4fddcb50",
+    "date": "2026-10-27",
+    "source": "Giftbit",
+    "title": "October 2026 Security Incident",
+    "url": "https://www.giftbit.com/news/october-2026-security-incident",
+    "tags": [
+      "Authorization",
+      "Privilege Escalation",
+      "Web Access Control"
+    ],
+    "note": "Giftbit\u2019s disclosure identifies an access-control vulnerability in a web dashboard that allowed attackers to assume privileged access in the main application.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-27",
     "id": "dc99dc8fdf101fc2",
@@ -260,6 +311,24 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "a9a891ddddb9c87a",
+    "date": "2026-10-27",
+    "source": "Infisical",
+    "title": "Infisical Raises $40M Series B led by Elad Gil: Building Security Infrastructure for the AI Era",
+    "url": "https://infisical.com/blog/series-b",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Secrets",
+      "AI Agents",
+      "Machine Identity"
+    ],
+    "note": "The funding announcement is relevant because Infisical is expanding Agent Vault, a credential-brokering model intended to give agents task access without exposing underlying secrets to the agent or model.",
+    "score": 76
+  },
+  {
     "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
     "publishedDate": "2026-10-27",
     "id": "2ce9638cfd1ef525",
@@ -275,6 +344,24 @@
       "Government"
     ],
     "note": "Material platform and market move: Saviynt says its FedRAMP High boundary covers IGA, PAM and application-access governance for human, nonhuman and AI-agent identities.",
+    "score": 74
+  },
+  {
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "8d3dee1fbb624fa1",
+    "date": "2026-10-27",
+    "source": "Saviynt",
+    "title": "Saviynt Achieves FedRAMP Class D (High Certification for Unified Identity Security",
+    "url": "https://saviynt.com/blog/fedramp-class-d-identity-security",
+    "tags": [
+      "IGA",
+      "PAM",
+      "NHI",
+      "AI Agents",
+      "Federal"
+    ],
+    "note": "Saviynt\u2019s Class D certification materially changes its federal positioning by placing IGA, PAM and application-access governance for human, non-human and AI identities within one certification boundary.",
     "score": 74
   },
   {
@@ -296,6 +383,24 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "bd27d44e1a221fdc",
+    "date": "2026-10-26",
+    "source": "Arctic Wolf Labs",
+    "title": "Beyond the Inbox: How Threat Actors Abuse Microsoft Teams External Chat for Initial Access",
+    "url": "https://arcticwolf.com/resources/blog/threat-actors-abuse-microsoft-teams-external-chat-for-initial-access/",
+    "tags": [
+      "IAM",
+      "Federation",
+      "Social Engineering",
+      "MFA",
+      "Endpoint Access"
+    ],
+    "note": "Analyzes more than 400 attacks abusing Teams federation, fake IT identities, vishing and Quick Assist or RMM tools to obtain hands-on access and establish persistence.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-26",
     "id": "191d36f8251c2863",
@@ -314,21 +419,21 @@
     "score": 93
   },
   {
-    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
     "publishedDate": "2026-10-26",
-    "id": "bd27d44e1a221fdc",
+    "id": "a49f81574cf6f534",
     "date": "2026-10-26",
-    "source": "Arctic Wolf Labs",
-    "title": "Beyond the Inbox: How Threat Actors Abuse Microsoft Teams External Chat for Initial Access",
-    "url": "https://arcticwolf.com/resources/blog/threat-actors-abuse-microsoft-teams-external-chat-for-initial-access/",
+    "source": "Microsoft MSRC",
+    "title": "Microsoft\u2019s response to compromised eMudhra certificate authority keys",
+    "url": "https://www.microsoft.com/en-us/msrc/blog/2026/10/microsoft-response-to-compromised-emudhra-certificate-authority-keys",
     "tags": [
-      "IAM",
-      "Federation",
-      "Social Engineering",
-      "MFA"
+      "Machine Identity",
+      "PKI",
+      "Trust",
+      "Session Theft"
     ],
-    "note": "The report documents more than 400 cases where attackers abused Teams external chat, fake IT identities, vishing and remote-access tools to establish hands-on access.",
-    "score": 92
+    "note": "Explains Microsoft\u2019s emergency removal of seven eMudhra-related certificates after recoverable CA private keys created the potential to impersonate trusted services and intercept sessions.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -529,7 +634,7 @@
       "Supply Chain",
       "AI Agents"
     ],
-    "note": "LiteLLM\u2019s root-cause analysis traces a supply-chain compromise from a public, unrevo\u00adked agent-platform master key to stolen GitHub tokens and a poisoned release.",
+    "note": "The root-cause timeline traces a poisoned release to an Agent Platform key exposed in May and never revoked, followed by theft and abuse of multiple GitHub tokens in the release pipeline.",
     "score": 98
   },
   {
@@ -817,13 +922,13 @@
     "title": "Preliminary Report: Oct 21st Security Incident",
     "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
     "tags": [
+      "Secrets",
       "NHI",
-      "secrets",
-      "token-abuse",
-      "ITDR"
+      "Cloud IAM",
+      "API Keys"
     ],
-    "note": "Railway reports attackers decrypting CI artifacts and environment variables, with potential exposure of customer API keys and AI credentials across up to 1.85% of workspaces.",
-    "score": 96
+    "note": "Railway reports unauthorized access to internal systems that exposed encrypted customer environment variables and potentially decrypted secrets, including AI-provider API keys and other credentials.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -3326,107 +3431,5 @@
     ],
     "note": "This practical example shows an AI coding agent operating against identity-management APIs and highlights the need for scoped access, guardrails and auditable administrative actions.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "c76eff62cfae071f",
-    "date": "2026-09-29",
-    "source": "Google Threat Intelligence Group",
-    "title": "Google Cloud partners deliver new security agents and AI defenses with Gemini Enterprise",
-    "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-partners-deliver-new-security-agents-and-ai-defenses-with-gemini-enterprise",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "ITDR",
-      "Google Cloud"
-    ],
-    "note": "Google Cloud is expanding an agent ecosystem tied to Agent Gateway and Agent Registry, making runtime identity, policy and third-party agent governance increasingly operational concerns for IAM teams.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "28594b2bec10c628",
-    "date": "2026-09-29",
-    "source": "Microsoft Security Blog",
-    "title": "Phishing Abuses RMM Tools for Persistent Access",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "MFA"
-    ],
-    "note": "Microsoft documents phishing campaigns that abused legitimate remote-management tooling to establish redundant access paths, offering useful detection lessons for identity and remote-access teams.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "6147261bb960aa35",
-    "date": "2026-09-29",
-    "source": "CrowdStrike",
-    "title": "CrowdStrike Brings the Falcon Platform to the OpenAI Marketplace",
-    "url": "https://ir.crowdstrike.com/node/17741/pdf",
-    "tags": [
-      "AI-agents",
-      "ITDR",
-      "runtime-security",
-      "OpenAI"
-    ],
-    "note": "CrowdStrike says Falcon Guardian will provide visibility and runtime controls for supported Codex agents, signaling a platform shift toward security enforcement inside agent execution paths.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "47680caf318fa88b",
-    "date": "2026-09-29",
-    "source": "Oracle Cloud Infrastructure",
-    "title": "Turn OCI IAM Identity Assurance Signals into Risk Insights",
-    "url": "https://blogs.oracle.com/cloud-infrastructure/identity-assurance-signals-into-risk-insights",
-    "tags": [
-      "IAM",
-      "ITDR",
-      "Identity Proofing",
-      "Insider Risk"
-    ],
-    "note": "The article connects biometric identity-assurance outcomes with IAM and audit telemetry to investigate impersonation and anomalous access, including risks illustrated by remote-worker identity fraud.",
-    "score": 74
-  },
-  {
-    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "be5ce4a651a9d68a",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "JadePuffer agentic AI attacks target Azure, destroy cloud resources",
-    "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-ai-attacks-target-azure-destroy-cloud-resources/",
-    "tags": [
-      "Microsoft Entra",
-      "NHI",
-      "Service Accounts",
-      "PAM",
-      "Incident"
-    ],
-    "note": "Microsoft observed compromised Azure service principals conducting reconnaissance, credential collection and destructive actions against more than 100 storage accounts, with public credential exposure and excessive permissions implicated.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "fd81cca5ab8a9667",
-    "date": "2026-09-28",
-    "source": "GitHub / Model Context Protocol",
-    "title": "OAuth client could send credentials to an authorization server chosen by the MCP server",
-    "url": "https://github.com/modelcontextprotocol/python-sdk/security/advisories/GHSA-qx49-fqc8-xw99",
-    "tags": [
-      "OAuth",
-      "NHI",
-      "AI-agent authorization",
-      "Token abuse"
-    ],
-    "note": "A high-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers and signed assertions to attacker-controlled token endpoints; fixed versions and post-exposure rotation steps are documented in the advisory.",
-    "score": 98
   }
 ]
