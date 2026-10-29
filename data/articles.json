@@ -1,5 +1,81 @@
 [
   {
+    "id": "2026-10-29-morning-brief",
+    "date": "2026-10-29",
+    "coverageDate": "2026-10-28",
+    "edition": "MORNING EDITION // 2026.10.29",
+    "title": "Identity Field Notes \u2014 October 29, 2026",
+    "dek": "Highlights from 2026-10-28. Yesterday\u2019s strongest identity signals centered on MDM abuse, passkey-themed social engineering, AI-agent impersonation, identity resilience, and guardrails for digital credentials.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "Authentication",
+      "Machine Identity",
+      "Identity Threat"
+    ],
+    "readTime": "7 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-10-28, verified against linked sources. Edition dated 2026-10-29; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Incident",
+        "title": "Attackers Turn Legitimate MDM Enrollment Into Privileged Remote Access",
+        "summary": "Huntress documents two incidents in which social engineering led victims to enroll systems in attacker-controlled Hexnode or Rippling MDM environments. The attackers then used the trusted management path to install ScreenConnect as SYSTEM and maintain access, even after defenders removed the RMM tool. ([huntress.com](https://www.huntress.com/blog?utm_source=openai))",
+        "why": "Treat MDM enrollment, tenant changes, and management-agent installation as identity-security events\u2014not routine endpoint administration. Detection should correlate user deception, new MDM enrollment, privileged deployment, RMM installation, and outbound relay activity. ([huntress.com](https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access))",
+        "source": "Huntress",
+        "url": "https://www.huntress.com/blog/attackers-turn-mdm-into-remote-access",
+        "confidence": "Research",
+        "published_date": "2026-10-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Threat",
+        "title": "Residential Proxies Make Passkey-Themed Account Takeovers Harder to Spot",
+        "summary": "Reporting based on ReliaQuest research describes social-engineering campaigns that route authentication and device registration through residential proxies near a victim\u2019s expected location. Attackers can use captured credentials or session tokens to register authentication methods, retain access after password resets, and begin cloud-data exfiltration within minutes. ([tollbit.forbes.com](https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/))",
+        "why": "Geolocation, IP reputation, and impossible-travel detections are becoming weaker signals when attackers can proxy through a victim-matched residential network. Phishing-resistant authentication remains important, but teams also need controls around device registration, token revocation, session continuity, and rapid data-access monitoring. ([tollbit.forbes.com](https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/))",
+        "source": "Forbes",
+        "url": "https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-10-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "Credential Scanners Impersonate More Than 30 AI Bots",
+        "summary": "Dark Reading reports on CQ Prime Research findings describing a scanner that rotated among roughly 32 claimed AI-bot identities, including agents associated with OpenAI, Anthropic, Meta, and Perplexity. The scanner probed for configuration files, cloud credentials, API keys, and private SSH keys; the reporting indicates widespread probing but not a confirmed breach. ([darkreading.com](https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials))",
+        "why": "A user-agent string is not an agent identity. Organizations should verify machine callers through signed requests, trusted integrations, published network ranges, or other cryptographic signals, while treating requests for credential-bearing files as a behavioral detection opportunity. ([darkreading.com](https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials))",
+        "source": "Dark Reading",
+        "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+        "confidence": "Independent reporting",
+        "published_date": "2026-10-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Vendor Watch",
+        "title": "Commvault Extends Identity Resilience Across AD, Entra ID, and Okta",
+        "summary": "Commvault announced planned capabilities for cross-provider identity auditing, Tier 0 exposure analysis, guided remediation, and recovery of trusted identity configurations across Active Directory, Microsoft Entra ID, and Okta. The company says the capabilities are planned for early access in coming quarters, so availability and effectiveness remain vendor claims rather than established field results. ([prnewswire.com](https://www.prnewswire.com/news-releases/commvault-advances-identity-resilience-enabling-customers-to-identify-and-manage-hidden-risks-in-identity-systems-before-attackers-exploit-them-302921448.html))",
+        "why": "The announcement reflects the market\u2019s continued shift from identity detection toward identity recovery. The useful evaluation question is whether a product can establish a trustworthy baseline, explain control paths to Tier 0 assets, and restore directory state\u2014not merely flag risky permissions. ([prnewswire.com](https://www.prnewswire.com/news-releases/commvault-advances-identity-resilience-enabling-customers-to-identify-and-manage-hidden-risks-in-identity-systems-before-attackers-exploit-them-302921448.html))",
+        "source": "Commvault",
+        "url": "https://www.prnewswire.com/news-releases/commvault-advances-identity-resilience-enabling-customers-to-identify-and-manage-hidden-risks-in-identity-systems-before-attackers-exploit-them-302921448.html",
+        "confidence": "Vendor claim",
+        "published_date": "2026-10-28",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Standards",
+        "title": "Better Identity Coalition Publishes Best Practices for Digital Credential Data Use",
+        "summary": "The Better Identity Coalition released final guidance for organizations requesting and using verifiable digital credentials, including mobile driver\u2019s licenses. Its principles emphasize data minimization, preserving anonymous or pseudonymous online activity, limiting requests to relevant attributes, and restricting credential use for purposes such as marketing. ([centerforcybersecuritypolicy.org](https://www.centerforcybersecuritypolicy.org/insights-and-research/better-identity-coalition-releases-best-practices-for-digital-credential-data-use))",
+        "why": "The guidance is not a binding standard, but it provides a useful design and procurement baseline for digital-ID programs. Identity teams should require explicit purpose limitation and attribute-level disclosure rather than treating possession of a verifiable credential as permission to collect a full identity record. ([centerforcybersecuritypolicy.org](https://www.centerforcybersecuritypolicy.org/insights-and-research/better-identity-coalition-releases-best-practices-for-digital-credential-data-use))",
+        "source": "Better Identity Coalition",
+        "url": "https://www.centerforcybersecuritypolicy.org/insights-and-research/better-identity-coalition-releases-best-practices-for-digital-credential-data-use",
+        "confidence": "Primary source",
+        "published_date": "2026-10-28",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-28-morning-brief",
     "date": "2026-10-28",
     "coverageDate": "2026-10-27",
@@ -14,7 +90,7 @@
       "IGA"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-27, verified against linked sources. Edition dated 2026-10-28; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
