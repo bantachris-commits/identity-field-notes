@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "fb2af5c6d5dcbb1f",
+    "date": "2026-10-28",
+    "source": "ConnectWise",
+    "title": "Cloud Backup (formerly known as SkyKick Service Interruption",
+    "url": "https://www.connectwise.com/company/trust/advisories",
+    "tags": [
+      "IAM",
+      "NHI",
+      "OAuth",
+      "Incident Response",
+      "Excessive Privilege"
+    ],
+    "note": "The latest incident update reports phased restoration after unauthorized access to Cloud Backup application credentials that enabled downstream Microsoft 365 tenant access and required partner-side identity review.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
     "publishedDate": "2026-10-28",
     "id": "81e0f3df4e301155",
@@ -32,6 +50,40 @@
     ],
     "note": "Reports ReliaQuest findings that residential proxies matched to a victim\u2019s location helped attackers evade geolocation signals, register persistence and begin exfiltration within minutes of access.",
     "score": 90
+  },
+  {
+    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "e4e01999204f920b",
+    "date": "2026-10-28",
+    "source": "IETF",
+    "title": "Linking an Agent's DNS Name to its OAuth Client",
+    "url": "https://datatracker.ietf.org/doc/draft-shankarlingam-oauth-agent-dns-link/",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "NHI",
+      "Authorization"
+    ],
+    "note": "New Internet-Draft proposes linking an agent DNS name to its OAuth client so receivers can verify both agent identity and the operator's continuing authorization across organizational boundaries.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "70a17c1d3a5b4867",
+    "date": "2026-10-28",
+    "source": "Dark Reading",
+    "title": "Attacker Impersonates AI Bots to Scan Orgs for Keys, Credentials",
+    "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "AI Agents",
+      "Secrets"
+    ],
+    "note": "Research on a scanner impersonating more than 30 AI-bot identities to hunt exposed credentials, underscoring the need to verify agent identity rather than trust user-agent claims.",
+    "score": 83
   },
   {
     "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
@@ -68,6 +120,24 @@
     ],
     "note": "NIST proposes ten design tenets for agent identity systems, including distinct agent identities, least privilege, policy separation from reasoning, deterministic decisions, continuous monitoring and immutable evidence.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "b055c341e4777f2e",
+    "date": "2026-10-27",
+    "source": "AWS",
+    "title": "CVE-2026-115413 - AWS API MCP Server OAuth token audience validation bypass",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-152-aws/",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "MCP",
+      "NHI"
+    ],
+    "note": "An OAuth audience-validation flaw in the AWS API MCP Server could accept a token issued to another application in the same tenant and use it to make AWS API calls.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
@@ -140,6 +210,24 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "2ce9638cfd1ef525",
+    "date": "2026-10-27",
+    "source": "Saviynt",
+    "title": "Saviynt Achieves United States FedRAMP Class D (High Certification",
+    "url": "https://saviynt.com/press-release/fedramp-high-authorization-federal-identity-security?hsLang=en",
+    "tags": [
+      "IGA",
+      "PAM",
+      "NHI",
+      "AI Agents",
+      "Government"
+    ],
+    "note": "Material platform and market move: Saviynt says its FedRAMP High boundary covers IGA, PAM and application-access governance for human, nonhuman and AI-agent identities.",
+    "score": 74
+  },
+  {
     "firstSeenAt": "2026-10-26T07:29:11.122805-06:00",
     "publishedDate": "2026-10-26",
     "id": "35a2887f86531272",
@@ -167,13 +255,13 @@
     "url": "https://www.huntress.com/blog/connectwise-attack-ai",
     "tags": [
       "NHI",
+      "AI Agents",
       "OAuth",
       "Service Accounts",
-      "M365",
       "Incident Response"
     ],
-    "note": "Provides fresh telemetry on the ConnectWise Cloud Backup compromise, including machine-speed abuse of application credentials, downstream Microsoft 365 access and uncertainty around AI-agent involvement.",
-    "score": 96
+    "note": "Independent telemetry analysis separates scripted enumeration, operator steering and possible agentic behavior in the ConnectWise application-credential abuse, with useful evidence on privilege changes and cross-tenant targeting.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -585,24 +673,6 @@
     "score": 82
   },
   {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "0eee4d6ec3f6dc47",
-    "date": "2026-10-22",
-    "source": "Huntress",
-    "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
-    "url": "https://www.huntress.com/blog/token-replay-spray",
-    "tags": [
-      "Entra",
-      "OAuth",
-      "Token Theft",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "Details a ten-week campaign affecting 79 organizations through AiTM and device-code token theft, rogue Entra devices, MFA replacement and hidden inbox rules.",
-    "score": 99
-  },
-  {
     "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
     "publishedDate": "2026-10-22",
     "id": "c26e313d4190eadb",
@@ -618,6 +688,24 @@
     ],
     "note": "Log-based analysis shows device-code phishing leading to rogue Entra device registration, persistent primary-refresh-token sessions, and attempted business-email-compromise activity over seven weeks.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
+    "publishedDate": "2026-10-22",
+    "id": "0eee4d6ec3f6dc47",
+    "date": "2026-10-22",
+    "source": "Huntress",
+    "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
+    "url": "https://www.huntress.com/blog/token-replay-spray",
+    "tags": [
+      "ITDR",
+      "Token Theft",
+      "MFA Bypass",
+      "Entra",
+      "OAuth"
+    ],
+    "note": "Substantive campaign research covering stolen-session replay across 79 organizations, rogue Entra devices, MFA-method replacement and hidden inbox rules that persisted beyond password resets.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -963,19 +1051,19 @@
     "publishedDate": "2026-10-21",
     "id": "80aac9868cd30e6c",
     "date": "2026-10-21",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Security",
     "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
     "tags": [
-      "Microsoft Entra",
-      "NHI",
+      "AI Agents",
       "OAuth",
-      "service-principal-abuse",
-      "AI-agent-authorization",
-      "ITDR"
+      "NHI",
+      "Supply Chain",
+      "ITDR",
+      "Excessive Privilege"
     ],
-    "note": "Microsoft attributes the ConnectWise multi-tenant application compromise to Storm-0940 and details automated abuse of trusted app identities, Graph tokens, credential additions, and privilege changes.",
-    "score": 100
+    "note": "Primary threat research attributes the ConnectWise downstream compromise to automated password spraying and OAuth-application abuse, including credential planting for persistence and Microsoft Graph data access.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -1179,24 +1267,6 @@
       "Incident"
     ],
     "note": "A material identity-control failure involving plaintext internal credentials, unrotated administrator tokens, exposed cloud access keys, SSH-key persistence and root access across GCP servers.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "fb2af5c6d5dcbb1f",
-    "date": "2026-10-20",
-    "source": "ConnectWise",
-    "title": "ConnectWise Trust Center advisories: Cloud Backup service interruption update",
-    "url": "https://www.connectwise.com/company/trust/advisories",
-    "tags": [
-      "NHI",
-      "IAM",
-      "OAuth",
-      "Service-accounts",
-      "Incident"
-    ],
-    "note": "ConnectWise disclosed unauthorized access to Cloud Backup application identities and described credential resets, disabled application connections and customer remediation guidance.",
     "score": 98
   },
   {
@@ -3361,75 +3431,5 @@
     ],
     "note": "Research coverage connects infostealer-compromised AI logins, persistent sessions, standing OAuth grants, and exposed API keys to enterprise identity risk.",
     "score": 93
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:20:53.498806-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "c97ff75e84c28b08",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "Session Theft",
-      "Machine Identity",
-      "AI Agents"
-    ],
-    "note": "The report connects infostealer exposure of AI-service credentials, live cookies, OAuth grants, and API keys to shadow AI accounts, agent access, data theft, and LLMjacking risk across more than 80,000 organizations.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "51f3f2ec27aaa072",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "Over 16,000 Supabase databases expose PII, passwords, auth tokens",
-    "url": "https://www.bleepingcomputer.com/news/security/misconfigured-supabase-apps-expose-data-in-over-16-000-databases/",
-    "tags": [
-      "Authorization",
-      "Secrets Management",
-      "NHI",
-      "Machine Identity",
-      "AI-Agent Authorization"
-    ],
-    "note": "UpGuard found widespread Supabase exposure caused by missing or ineffective row-level security and public-key misuse, including plaintext passwords and authentication tokens in application backends increasingly built with AI assistance.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "45a2ea141f7a2ee1",
-    "date": "2026-09-28",
-    "source": "eSentire",
-    "title": "PaperCut MF Zero-Day Intrusion: Java Loader, Web Shell, and AdaptixC2 via CVE-2026-82078 and CVE-2026-81578",
-    "url": "https://www.esentire.com/blog/papercut-mf-zero-day-intrusion-java-loader-web-shell-and-adaptixc2-via-cve-2026-82078-and-cve-2026-81578",
-    "tags": [
-      "PAM",
-      "service accounts",
-      "credential theft",
-      "Active Directory"
-    ],
-    "note": "The incident investigation documents theft of a token from a domain-privileged service account, credential dumping and NTLM-hash-based lateral movement to a domain controller.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "6b0cb1680fa86bae",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjack ing/amp/",
-    "tags": [
-      "Credential Theft",
-      "Session Theft",
-      "NHI",
-      "AI Security"
-    ],
-    "note": "Connects infostealer-compromised AI service logins to enterprise exposure, showing how stolen user sessions and shadow-AI access become organizational identity risks.",
-    "score": 86
   }
 ]
