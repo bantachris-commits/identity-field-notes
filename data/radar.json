@@ -18,6 +18,39 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "b30586343489ff29",
+    "date": "2026-10-28",
+    "source": "Microsoft Authenticator research coverage",
+    "title": "Critical Microsoft Authenticator flaw let malicious Android apps steal access to your precious accounts",
+    "url": "https://www.techradar.com/pro/security/critical-microsoft-authenticator-flaw-let-malicious-android-apps-steal-access-to-your-precious-accounts",
+    "tags": [
+      "MFA",
+      "Session Tokens",
+      "Mobile Identity"
+    ],
+    "note": "Researchers identified an Android Authenticator flaw that allowed an unprivileged application to impersonate another app and obtain Microsoft Graph access tokens for a signed-in work account.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "c0b792ea9c4ed3e9",
+    "date": "2026-10-28",
+    "source": "Forbes",
+    "title": "Data Theft Hackers Are Weaponizing New Passkey-Themed Threats By Proxy",
+    "url": "https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/",
+    "tags": [
+      "Passkeys",
+      "Session Tokens",
+      "MFA",
+      "OAuth"
+    ],
+    "note": "The report describes passkey-themed social engineering combined with residential proxies, device or MFA registration and rapid cloud-data exfiltration after token or credential capture.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
     "publishedDate": "2026-10-28",
     "id": "81e0f3df4e301155",
@@ -33,23 +66,6 @@
     ],
     "note": "Documents incidents where social engineering led to unauthorized MDM enrollment, SYSTEM-level deployment, rogue RMM persistence and remote access, making MDM identity events a security-sensitive control point.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
-    "publishedDate": "2026-10-28",
-    "id": "c0b792ea9c4ed3e9",
-    "date": "2026-10-28",
-    "source": "Forbes",
-    "title": "Data Theft Hackers Are Weaponizing New Passkey-Themed Threats By Proxy",
-    "url": "https://tollbit.forbes.com/sites/daveywinder/2026/10/28/data-theft-hackers-are-weaponizing-new-passkey-themed-threats-by-proxy/",
-    "tags": [
-      "Passkeys",
-      "MFA",
-      "Session Theft",
-      "ITDR"
-    ],
-    "note": "Reports ReliaQuest findings that residential proxies matched to a victim\u2019s location helped attackers evade geolocation signals, register persistence and begin exfiltration within minutes of access.",
-    "score": 90
   },
   {
     "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
@@ -102,6 +118,40 @@
     ],
     "note": "A meaningful identity-resilience move adds cross-provider auditing, Tier 0 exposure analysis, guided remediation and recovery across Active Directory, Entra ID and Okta.",
     "score": 82
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "3e45454a042fd830",
+    "date": "2026-10-28",
+    "source": "Commvault",
+    "title": "Commvault Advances Identity Resilience, Enabling Customers to Identify and Manage Hidden Risks in Identity Systems Before Attackers Exploit Them",
+    "url": "https://www.commvault.com/news/commvault-advances-identity-resilience-identify-and-manage-hidden-risks",
+    "tags": [
+      "ITDR",
+      "IGA",
+      "PAM",
+      "Entra",
+      "Okta"
+    ],
+    "note": "Commvault is extending identity-risk discovery, Tier 0 exposure analysis and recovery-oriented controls across Active Directory, Entra ID and Okta.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "3502f22986ea6ff3",
+    "date": "2026-10-28",
+    "source": "Better Identity Coalition",
+    "title": "Better Identity Coalition Releases Best Practices for Digital Credential Data Use",
+    "url": "https://www.centerforcybersecuritypolicy.org/insights-and-research/better-identity-coalition-releases-best-practices-for-digital-credential-data-use",
+    "tags": [
+      "Digital Identity",
+      "Privacy",
+      "Standards"
+    ],
+    "note": "The coalition\u2019s final guidance addresses appropriate data minimization, security and privacy practices for verifiable digital credentials and mobile IDs.",
+    "score": 72
   },
   {
     "firstSeenAt": "2026-10-28T00:12:50.791149-06:00",
@@ -264,6 +314,23 @@
     "score": 93
   },
   {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "bd27d44e1a221fdc",
+    "date": "2026-10-26",
+    "source": "Arctic Wolf Labs",
+    "title": "Beyond the Inbox: How Threat Actors Abuse Microsoft Teams External Chat for Initial Access",
+    "url": "https://arcticwolf.com/resources/blog/threat-actors-abuse-microsoft-teams-external-chat-for-initial-access/",
+    "tags": [
+      "IAM",
+      "Federation",
+      "Social Engineering",
+      "MFA"
+    ],
+    "note": "The report documents more than 400 cases where attackers abused Teams external chat, fake IT identities, vishing and remote-access tools to establish hands-on access.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-26",
     "id": "f0358970bedc09bf",
@@ -312,6 +379,23 @@
       "Authorization"
     ],
     "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "680a1bdeb1056a7b",
+    "date": "2026-10-26",
+    "source": "The Record by Recorded Future",
+    "title": "Popular AI tool LiteLLM says unrevoked key allowed hackers to target users",
+    "url": "https://therecord.media/litellm-hackers-ai-malware",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply Chain",
+      "AI Agents"
+    ],
+    "note": "This independent account adds context on how LiteLLM\u2019s exposed and unrevo\u00adked key enabled repository takeover and credential-harvesting malware distribution.",
     "score": 88
   },
   {
@@ -436,17 +520,17 @@
     "id": "8ef4f07d663f0a18",
     "date": "2026-10-23",
     "source": "LiteLLM",
-    "title": "The attack chain behind the Oct 21, 2026 release compromise",
+    "title": "The attack chain behind the v1.107.0 LiteLLM release",
     "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
     "tags": [
       "NHI",
-      "OAuth",
       "Secrets",
-      "AI Agents",
-      "Supply Chain"
+      "OAuth",
+      "Supply Chain",
+      "AI Agents"
     ],
-    "note": "Primary incident analysis traces compromise from an exposed LiteLLM master key to stolen post-MFA GitHub CLI OAuth tokens, CI secret exfiltration and release-pipeline takeover.",
-    "score": 99
+    "note": "LiteLLM\u2019s root-cause analysis traces a supply-chain compromise from a public, unrevo\u00adked agent-platform master key to stolen GitHub tokens and a poisoned release.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
@@ -637,6 +721,23 @@
       "Session Security"
     ],
     "note": "Railway's follow-up confirms the incident response scope and recommends revoking and replacing sensitive credentials, reviewing GitHub and registry audit logs, and checking for exposed database access.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "eb7b59101023c4bd",
+    "date": "2026-10-23",
+    "source": "University of Copenhagen",
+    "title": "University of Copenhagen hit by cyber attack",
+    "url": "https://news.ku.dk/all_news/2026/10/university-of-copenhagen-hit-by-cyber-attack/",
+    "tags": [
+      "IAM",
+      "Phishing",
+      "Credentials",
+      "Data Breach"
+    ],
+    "note": "The university disclosed unauthorized access to a test environment and data on approximately 525,000 people, creating a significant targeted-phishing and identity-theft risk.",
     "score": 84
   },
   {
@@ -1422,6 +1523,24 @@
     ],
     "note": "A compromised vendor-held application credential was used to request app-only Microsoft Graph tokens across consenting Microsoft 365 tenants without passwords or MFA, demonstrating multi-tenant service-principal blast radius.",
     "score": 100
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-19",
+    "id": "309bb43857a252a2",
+    "date": "2026-10-19",
+    "source": "CSO Online",
+    "title": "ConnectWise backup credentials exposed multiple Microsoft 365 tenants",
+    "url": "https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html",
+    "tags": [
+      "NHI",
+      "Service Accounts",
+      "Entra",
+      "Excessive Privilege",
+      "OAuth"
+    ],
+    "note": "The incident shows how a compromised application credential authenticated into customer tenants without interactive MFA, obtained Graph access and reportedly escalated application privileges.",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
@@ -3309,127 +3428,5 @@
     ],
     "note": "A high-severity MCP Python SDK flaw allowed malicious servers to redirect client secrets, authorization codes, PKCE verifiers and signed assertions to attacker-controlled token endpoints; fixed versions and post-exposure rotation steps are documented in the advisory.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "5eb659083f3cf7a4",
-    "date": "2026-09-28",
-    "source": "Cybersecurity News",
-    "title": "TrustSink Attack Uses Rogue MFA Provider to Steal Microsoft Entra Passwords During Legitimate Logins",
-    "url": "https://cybersecuritynews.com/trustsink-attack/",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "The newly reported TrustSink technique abuses privileged Entra configuration to insert a rogue external MFA provider that captures passwords while returning a valid MFA-completion token.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "3f6044139594a134",
-    "date": "2026-09-28",
-    "source": "Duende Software",
-    "title": "Security Advisory - Duende IdentityServer Pushed Authorization Requests (GHSA-mxv6-xwqj-ww2p",
-    "url": "https://duendesoftware.com/blog/security-advisory-duende-identityserver-pushed-authorization-requests-ghsa-mxv6-xwqj-ww2p",
-    "tags": [
-      "OAuth",
-      "Authorization",
-      "Token security",
-      "Federation"
-    ],
-    "note": "A high-severity PAR flaw can permit authorization-request forgery and, under affected configurations, token theft through attacker-controlled redirect URIs.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "ff90a20e4f0e3daa",
-    "date": "2026-09-28",
-    "source": "Australian Signals Directorate",
-    "title": "Protect your organisations\u2019 AI services",
-    "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/protect-your-organisations-ai-services",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "OAuth",
-      "Session/token abuse",
-      "Secrets"
-    ],
-    "note": "This government advisory connects AI-service abuse to compromised API keys, stolen sessions and tokens, vulnerable agent dashboards and excessive permissions, with concrete revocation and monitoring guidance.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "63da7af8f2fa80ae",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjjacking/",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "OAuth",
-      "Session Theft",
-      "Token Abuse",
-      "AI-Agent Authorization"
-    ],
-    "note": "SOCRadar data tied infostealer-exposed AI credentials and sessions to more than 80,000 corporate domains, highlighting shadow accounts, replayable sessions, API-key abuse, and delegated automation risk.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "010c66b533c320d0",
-    "date": "2026-09-28",
-    "source": "Bitget",
-    "title": "2026 Bitget Security Incident \u2014 Official Updates and Timeline",
-    "url": "https://www.bitget.com/campaigns/bitget-security-incident-2026",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "NHI",
-      "Secrets"
-    ],
-    "note": "Bitget\u2019s official incident timeline attributes a $387.5 million theft to a third-party security-product flaw that exposed intranet credentials, enabling forged withdrawal commands and bypass of risk verification.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-09-29T23:54:05.991514-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "37378583fce2b515",
-    "date": "2026-09-28",
-    "source": "arXiv",
-    "title": "API Secrets Should Never Become Tokens in the LLM's Vocabulary: A Threat Analysis of API Credential Handling in LLM Agent Systems and an Empirical Evaluation of a Vault-Mediated Execution Boundary",
-    "url": "https://arxiv.org/abs/2609.33371",
-    "tags": [
-      "NHI",
-      "Machine Identity",
-      "Secrets Management",
-      "AI-Agent Authorization",
-      "OAuth"
-    ],
-    "note": "New research treats agent credential handling as an execution-boundary problem and evaluates whether vault-mediated access can keep API secrets out of prompts, logs, files, and tool-visible request data.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
-    "publishedDate": "2026-09-28",
-    "id": "ce0a8108462d8b04",
-    "date": "2026-09-28",
-    "source": "BleepingComputer",
-    "title": "80,000+ Organizations Had AI Logins Stolen: From Shadow AI to LLMjacking",
-    "url": "https://www.bleepingcomputer.com/news/security/80-000-plus-organizations-had-ai-logins-stolen-from-shadow-ai-to-llmjacking/amp/",
-    "tags": [
-      "NHI",
-      "AI-Agent Authorization",
-      "Session Theft",
-      "Secrets Management"
-    ],
-    "note": "Research coverage connects infostealer-compromised AI logins, persistent sessions, standing OAuth grants, and exposed API keys to enterprise identity risk.",
-    "score": 93
   }
 ]
