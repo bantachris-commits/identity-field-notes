@@ -1,5 +1,73 @@
 [
   {
+    "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "bf3026d4c625e902",
+    "date": "2026-10-29",
+    "source": "WIRED",
+    "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
+    "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "PAM",
+      "credential exposure"
+    ],
+    "note": "A reported DoD incident shows how granting a personal coding agent administrative access to a production environment led to exfiltration of contractor credentials, passwords and network information.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "95bc8186e22fc637",
+    "date": "2026-10-29",
+    "source": "FusionAuth",
+    "title": "FusionAuth 1.70: least privilege for your customers' AI agents",
+    "url": "https://fusionauth.io/blog/announcing-fusionauth-1-70",
+    "tags": [
+      "AI-agent authorization",
+      "OAuth",
+      "NHI",
+      "least privilege"
+    ],
+    "note": "The release adds Client ID Metadata Document registration and RFC 8693 token exchange for delegated, least-privilege agent access rather than unrestricted bearer tokens.",
+    "score": 80
+  },
+  {
+    "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "668f2f37d5ffbed9",
+    "date": "2026-10-29",
+    "source": "TrueFoundry",
+    "title": "Introducing Agent Identity: Verifiable Identity for Every AI Agent",
+    "url": "https://www.truefoundry.io/blog/introducing-agent-identity",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "IGA"
+    ],
+    "note": "A substantive agent-governance launch centered on unique verifiable agent identities, ownership, delegated authority and auditable access to models, tools and other agents.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "50c5990242071355",
+    "date": "2026-10-29",
+    "source": "Boston Identity",
+    "title": "BI-FIND-2026-1809 \u00b7 Finding: The draft's OAuth profile says an agent SHOULD use a Client ID Metadata Document as its\u2026",
+    "url": "https://insights.bostonidentity.com/ref/BI-FIND-2026-1809",
+    "tags": [
+      "OAuth",
+      "AI-agent authorization",
+      "standards",
+      "NHI"
+    ],
+    "note": "This standards analysis highlights why an agent URI or client metadata name cannot establish identity without cryptographic proof, and discusses token exchange, DPoP and PAR implications.",
+    "score": 76
+  },
+  {
     "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
     "publishedDate": "2026-10-28",
     "id": "a1df75625f69c813",
@@ -265,15 +333,15 @@
     "id": "9f18f4bc4fddcb50",
     "date": "2026-10-27",
     "source": "Giftbit",
-    "title": "October 2026 Security Incident",
+    "title": "October 2026 Security incident update",
     "url": "https://www.giftbit.com/news/october-2026-security-incident",
     "tags": [
-      "Authorization",
-      "Privilege Escalation",
-      "Web Access Control"
+      "ITDR",
+      "authorization failure",
+      "excessive privilege"
     ],
-    "note": "Giftbit\u2019s disclosure identifies an access-control vulnerability in a web dashboard that allowed attackers to assume privileged access in the main application.",
-    "score": 88
+    "note": "Giftbit\u2019s disclosure identifies an access-control vulnerability that let an attacker assume privileged application access and reach administrative tools and customer reward data.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -418,6 +486,23 @@
   {
     "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
     "publishedDate": "2026-10-26",
+    "id": "680a1bdeb1056a7b",
+    "date": "2026-10-26",
+    "source": "The Record by Recorded Future News",
+    "title": "Popular AI tool LiteLLM says unrevoked key allowed hackers to target users",
+    "url": "https://therecord.media/litellm-hackers-ai-malware",
+    "tags": [
+      "NHI",
+      "secrets management",
+      "OAuth",
+      "supply chain"
+    ],
+    "note": "LiteLLM traced a supply-chain compromise to an exposed master key that was deleted but not revoked, enabling repository takeover and malware distribution that harvested cloud credentials.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
+    "publishedDate": "2026-10-26",
     "id": "bd27d44e1a221fdc",
     "date": "2026-10-26",
     "source": "Arctic Wolf Labs",
@@ -469,24 +554,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "f0358970bedc09bf",
-    "date": "2026-10-26",
-    "source": "IBM",
-    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
-    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
-    "tags": [
-      "IAM",
-      "IGA",
-      "NHI",
-      "AI-agents",
-      "OAuth"
-    ],
-    "note": "IBM\u2019s GA offering addresses agent registration, delegated authorization, short-lived task-scoped tokens, runtime policy enforcement, credential control and auditability.",
-    "score": 89
-  },
-  {
     "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
     "publishedDate": "2026-10-26",
     "id": "36875f2f7926cf84",
@@ -517,23 +584,6 @@
       "Authorization"
     ],
     "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "680a1bdeb1056a7b",
-    "date": "2026-10-26",
-    "source": "The Record by Recorded Future",
-    "title": "Popular AI tool LiteLLM says unrevoked key allowed hackers to target users",
-    "url": "https://therecord.media/litellm-hackers-ai-malware",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Supply Chain",
-      "AI Agents"
-    ],
-    "note": "This independent account adds context on how LiteLLM\u2019s exposed and unrevo\u00adked key enabled repository takeover and credential-harvesting malware distribution.",
     "score": 88
   },
   {
@@ -585,6 +635,24 @@
     ],
     "note": "Google describes how agentic automation is compressing attack and remediation timelines, making machine-speed detection, authorization, and response operational requirements.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "f0358970bedc09bf",
+    "date": "2026-10-26",
+    "source": "IBM",
+    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
+    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "IGA",
+      "OAuth",
+      "PAM"
+    ],
+    "note": "IBM\u2019s GA offering combines agent registration, delegated on-behalf-of authorization, short-lived task-scoped tokens, runtime policy enforcement and Vault-backed just-in-time credentials.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
@@ -3361,74 +3429,5 @@
     ],
     "note": "AWS is previewing managed agents with separate IAM roles, human approval for consequential actions, durable sessions, MCP connectivity, and CloudTrail activity records.",
     "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "c4cedd30fdf9478d",
-    "date": "2026-09-29",
-    "source": "Microsoft",
-    "title": "Security improvements to the autoupgrade process for Microsoft Entra Connect Sync and Microsoft Entra Connect Health alerts",
-    "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/security-updates-pks",
-    "tags": [
-      "Entra",
-      "IAM",
-      "Federation",
-      "Hybrid Identity"
-    ],
-    "note": "The updated advisory records the September 30, 2026 service-impact deadline and a further April 7, 2027 requirement to move Entra Connect Sync to application-based authentication.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "7313d5e64734621e",
-    "date": "2026-09-29",
-    "source": "arXiv",
-    "title": "Authorization for Self-Modifying AI Agent Populations: Conserving Authority across Replacement, Forking, and Rollback",
-    "url": "https://arxiv.org/abs/2610.00347",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "Privilege management",
-      "Authorization"
-    ],
-    "note": "This research addresses authority leakage when identity-bearing agents fork, replace themselves or roll back, proposing lineage-bound authorization, atomic handoff, revocation closure and non-reminting of spent authority.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "008238bcc8dc3342",
-    "date": "2026-09-29",
-    "source": "NIST NCCoE",
-    "title": "Comments on Software and Agentic AI Identity Concept Paper",
-    "url": "https://www.nist.gov/news-events/news/2026/09/comments-software-and-agentic-ai-identity-concept-paper",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Standards",
-      "NIST",
-      "IGA"
-    ],
-    "note": "NIST summarizes feedback shaping its software and AI-agent identity and authorization project, including an upcoming DevSecOps implementation use case for identifying, authenticating and authorizing agents.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "874baac2b2ebf2b7",
-    "date": "2026-09-29",
-    "source": "Curity",
-    "title": "Curity Identity Server 11.5: passkeys across domains, custom hashing, refreshed Admin UI",
-    "url": "https://curity.io/blog/curity-identity-server-11-5/",
-    "tags": [
-      "Passkeys",
-      "OAuth",
-      "Token security",
-      "IAM"
-    ],
-    "note": "The release adds cross-domain passkeys, configurable Argon2 and SCrypt hashing, default JWT issuer validation during introspection and revocation, and DPoP-bound access tokens.",
-    "score": 86
   }
 ]
