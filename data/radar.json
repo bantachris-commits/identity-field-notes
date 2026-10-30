@@ -147,13 +147,13 @@
     "url": "https://www.commvault.com/news/commvault-advances-identity-resilience-identify-and-manage-hidden-risks",
     "tags": [
       "ITDR",
-      "IGA",
+      "Identity Security",
       "Entra",
       "Okta",
-      "AD"
+      "Active Directory"
     ],
-    "note": "A meaningful platform move toward identity resilience adds cross-provider identity auditing, Tier 0 exposure analysis and recovery capabilities spanning Active Directory, Entra ID and Okta.",
-    "score": 82
+    "note": "Commvault announced cross-provider identity auditing, Tier 0 exposure analysis and guided remediation spanning Active Directory, Entra ID and Okta.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
@@ -187,6 +187,23 @@
     ],
     "note": "The coalition\u2019s final guidance addresses appropriate data minimization, security and privacy practices for verifiable digital credentials and mobile IDs.",
     "score": 72
+  },
+  {
+    "firstSeenAt": "2026-10-30T00:21:17.597179-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "3e21a5552b80469f",
+    "date": "2026-10-28",
+    "source": "JumpCloud",
+    "title": "JumpCloud Makes Continuous Compliance Easier in the Agentic Era",
+    "url": "https://jumpcloud.com/press/jumpcloud-makes-continuous-compliance-easier-in-the-agentic-era",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "IGA",
+      "Compliance"
+    ],
+    "note": "The release is relevant for teams deciding whether user, device and AI-agent governance should share one policy and compliance control plane.",
+    "score": 70
   },
   {
     "firstSeenAt": "2026-10-28T00:12:50.791149-06:00",
@@ -291,6 +308,22 @@
     ],
     "note": "The updated rollout will let supported Windows Hello for Business and macOS Platform SSO credentials satisfy MFA without requiring an additional passkey, affecting registration, step-up, and authentication-strength planning.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-10-30T00:21:17.597179-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "d46bfd8d0d808e74",
+    "date": "2026-10-27",
+    "source": "IETF",
+    "title": "Agent Authorization Center for User-Side Agent Authentication and Authorization",
+    "url": "https://datatracker.ietf.org/doc/draft-du-oauth-agent-authorization-center/",
+    "tags": [
+      "OAuth",
+      "AI-agent authorization",
+      "Authorization"
+    ],
+    "note": "This new Internet-Draft proposes a policy-bearing authorization intermediary that distinguishes autonomous agent approval from human authorization for delegated access.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
@@ -620,24 +653,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "8ef4f07d663f0a18",
-    "date": "2026-10-23",
-    "source": "LiteLLM",
-    "title": "The attack chain behind the v1.107.0 LiteLLM release",
-    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "OAuth",
-      "Supply Chain",
-      "AI Agents"
-    ],
-    "note": "The root-cause timeline traces a poisoned release to an Agent Platform key exposed in May and never revoked, followed by theft and abuse of multiple GitHub tokens in the release pipeline.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
     "publishedDate": "2026-10-23",
     "id": "f9213bfdc4de4d06",
@@ -672,6 +687,24 @@
     ],
     "note": "Detailed independent telemetry shows stolen vendor application credentials being tested across Microsoft 365 and Okta tenants, with token issuance, password spraying and cross-tenant targeting.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "8ef4f07d663f0a18",
+    "date": "2026-10-23",
+    "source": "LiteLLM",
+    "title": "The attack chain behind the v1.107.0 LiteLLM release",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "OAuth",
+      "Supply Chain",
+      "AI"
+    ],
+    "note": "LiteLLM\u2019s root-cause analysis traces its poisoned release to an administrative key exposed months earlier and never revoked, followed by theft and abuse of GitHub OAuth tokens.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
@@ -709,21 +742,37 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-10-30T00:21:17.597179-06:00",
+    "publishedDate": "2026-10-23",
+    "id": "13602fa4a4efa9b8",
+    "date": "2026-10-23",
+    "source": "Enclave",
+    "title": "AuthMask: We Made Microsoft Authenticator Hand Over Tokens to an App With Zero Permissions",
+    "url": "https://enclave.ai/blog/authmask-we-made-microsoft-authenticator-hand-over-tokens",
+    "tags": [
+      "Microsoft Entra",
+      "Token Theft",
+      "MFA",
+      "Mobile Security"
+    ],
+    "note": "Researchers demonstrated that a zero-permission Android app could impersonate Microsoft first-party clients and obtain work-account tokens from Microsoft Authenticator, fixed as CVE-2026-80097.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
     "publishedDate": "2026-10-23",
     "id": "abfff6ba3917a252",
     "date": "2026-10-23",
     "source": "Microsoft Security",
-    "title": "Inside the LiteLLM 1.107.0 supply-chain compromise: Credential theft through Python startup hooks",
+    "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
     "tags": [
-      "Secrets",
       "NHI",
-      "AI-agents",
-      "Supply-chain",
-      "Incident"
+      "Secrets",
+      "Machine Identity",
+      "Supply Chain"
     ],
-    "note": "Microsoft analyzes the compromised LiteLLM release that deployed credential-stealing code through PyPI and container images, exposing cloud, developer and AI-provider secrets.",
+    "note": "Microsoft\u2019s technical analysis details how the compromised package harvested developer, cloud, browser and AI-service credentials during normal Python startup.",
     "score": 94
   },
   {
@@ -3381,55 +3430,5 @@
     ],
     "note": "The release adds cross-domain passkeys, configurable Argon2 and SCrypt hashing, default JWT issuer validation during introspection and revocation, and DPoP-bound access tokens.",
     "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "c76657c2f12ba775",
-    "date": "2026-09-29",
-    "source": "C1.ai",
-    "title": "C1.ai launches sign-in and permissions for the apps you build",
-    "url": "https://www.c1.ai/news/press-release/c1-launches-governed-sign-in-and-application-permissions",
-    "tags": [
-      "IGA",
-      "IAM",
-      "AI-agent authorization",
-      "AuthZEN"
-    ],
-    "note": "C1.ai applies governed SSO, entitlement reviews, separation-of-duties checks and live AuthZEN authorization to AI-built applications instead of relying on stale hardcoded user lists.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "1d01e2ad89f3529a",
-    "date": "2026-09-29",
-    "source": "RSA",
-    "title": "Hope Isn\u2019t an AI Strategy: RSA Agent ID Closes the Agentic Identity Gap for Highly Regulated Industries",
-    "url": "https://www.rsa.com/news/press-releases/rsa-agent-id/",
-    "tags": [
-      "AI-agent authorization",
-      "IGA",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "RSA announced an agent-identity platform combining discovery, per-call MCP/tool authorization, named human approval for high-risk actions and lifecycle governance, with cloud, hybrid and on-premises enforcement options.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-09-30T06:57:10.366414-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "6bad01184f27e279",
-    "date": "2026-09-29",
-    "source": "Auth0",
-    "title": "Integrating Claude Code with Auth0 APIs",
-    "url": "https://auth0.com/blog/integrating-claude-code-with-auth0-apis/",
-    "tags": [
-      "IAM",
-      "AI-agent authorization",
-      "OAuth"
-    ],
-    "note": "This practical example shows an AI coding agent operating against identity-management APIs and highlights the need for scoped access, guardrails and auditable administrative actions.",
-    "score": 80
   }
 ]
