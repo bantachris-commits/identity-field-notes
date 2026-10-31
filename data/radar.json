@@ -16,21 +16,56 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "ba55b05e53eaee48",
+    "date": "2026-10-31",
+    "source": "BleepingComputer",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Machine Identity",
+      "AI Agents"
+    ],
+    "note": "Northflank told customers to assume stored environment variables were decrypted after a breach led to unauthorized use of customer AI API keys, underscoring the blast radius of platform-held secrets.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "9a73492867a45c41",
+    "date": "2026-10-31",
+    "source": "IETF",
+    "title": "Identity Assertion JWT Authorization Grant",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-identity-assertion-authz-grant",
+    "tags": [
+      "OAuth",
+      "Federation",
+      "Authorization",
+      "AI Agents"
+    ],
+    "note": "This new OAuth draft specifies Cross-App Access using identity assertions, token exchange and federated trust so an IdP can broker app-to-app API access while the resource server retains local authorization control.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
     "publishedDate": "2026-10-30",
     "id": "8b5f34b85bf1bd76",
     "date": "2026-10-30",
-    "source": "Google Threat Intelligence Group / Mandiant",
+    "source": "Google Threat Intelligence Group",
     "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
     "tags": [
       "AI Agents",
       "ITDR",
-      "NHI",
-      "Credential Abuse"
+      "OAuth",
+      "Credentials",
+      "Least Privilege"
     ],
-    "note": "Primary threat research reports in-the-wild use of multi-agent offensive frameworks for reconnaissance, lateral movement, privilege escalation, cloud-key harvesting, and exfiltration preparation.",
-    "score": 99
+    "note": "GTIG and Mandiant report real intrusions using agentic offensive frameworks such as ARTEX, Hexstrike and CAIRN, emphasizing machine-speed abuse of compromised credentials and the need for short-lived credentials and behavioral detection.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -50,20 +85,21 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-30",
-    "id": "2676ebabd2430694",
+    "id": "bf6d0a1c66992012",
     "date": "2026-10-30",
-    "source": "FIDO Alliance",
-    "title": "FIDO Alliance counts 7 billion passkeys as adoption gains momentum",
-    "url": "https://fidoalliance.org/biometric-update-fido-alliance-counts-7-billion-passkeys-as-adoption-gains-momentum/",
+    "source": "IETF",
+    "title": "Binding Agent Dialogs to WIMSE and OAuth Credentials",
+    "url": "https://datatracker.ietf.org/doc/html/draft-reddy-wimse-oauth-dialog-binding",
     "tags": [
-      "Passkeys",
-      "FIDO",
-      "Authentication"
+      "AI Agents",
+      "OAuth",
+      "Workload Identity",
+      "Authorization"
     ],
-    "note": "The new Passkey Index and deployment guidance provide current adoption data and practical signals for organizations moving from passkey availability toward sustained usage and secure enrollment.",
-    "score": 91
+    "note": "The draft addresses a key agent-authorization gap by binding dialog context to WIMSE and OAuth credentials, helping receivers detect context swapping and prevent a token obtained in one agent interaction from being replayed in another.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -91,12 +127,29 @@
     "title": "Building trusted access for AI agents with OCI IAM",
     "url": "https://blogs.oracle.com/cloud-infrastructure/building-trusted-access-for-ai-agents-with-oci-iam",
     "tags": [
-      "AI-agent-authorization",
-      "NHI",
+      "AI Agents",
       "IAM",
-      "PAM"
+      "Authorization",
+      "MCP",
+      "Human-in-the-Loop"
     ],
-    "note": "A useful product-architecture discussion prompted by an AI agent using a broad API token to delete production data, with emphasis on scoped authorization and human approval.",
+    "note": "Oracle describes IAM patterns for agent access to enterprise tools, including OAuth support for MCP, action-bound human approval and authorization decisions that distinguish user entitlement from approval of a specific agent action.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "2676ebabd2430694",
+    "date": "2026-10-30",
+    "source": "FIDO Alliance",
+    "title": "Biometric Update: FIDO Alliance counts 7 billion passkeys as adoption gains momentum",
+    "url": "https://fidoalliance.org/biometric-update-fido-alliance-counts-7-billion-passkeys-as-adoption-gains-momentum/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Authentication"
+    ],
+    "note": "FIDO reports its 2026 Passkey Index findings, including broad account eligibility but a substantial enrollment gap, and introduces a deployment rubric useful for practitioners planning adoption and measuring real usage.",
     "score": 84
   },
   {
@@ -132,6 +185,23 @@
     ],
     "note": "A reported DoD incident shows how granting a personal coding agent administrative access to a production environment led to exfiltration of contractor credentials, passwords and network information.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "7c2b70bd7e3e786d",
+    "date": "2026-10-29",
+    "source": "BleepingComputer",
+    "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+    "tags": [
+      "Authentication Bypass",
+      "Privileged Access",
+      "ITDR",
+      "Infrastructure Identity"
+    ],
+    "note": "Researchers observed exploitation of a Cisco Catalyst SD-WAN authentication-bypass flaw to gain privileged controller access and deploy malware capable of intercepting control traffic and extracting encryption key material.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -3357,75 +3427,5 @@
     ],
     "note": "Provides an itemized view of new controls for MCP tool execution, agent discovery, SPIFFE identities, short-lived tokens, workload least privilege and near-real-time privileged-account synchronization.",
     "score": 90
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "d26df91884856c43",
-    "date": "2026-09-30",
-    "source": "watchTowr",
-    "title": "Frequently Asked Questions About the Cisco Catalyst SD-WAN Manager Authentication Bypass (CVE-2026-76504",
-    "url": "https://watchtowr.com/intelligence/cisco-catalyst-sd-wan-manager-cve-2026-76504-faq/",
-    "tags": [
-      "Authentication Bypass",
-      "PAM",
-      "ITDR",
-      "CISA KEV"
-    ],
-    "note": "A useful technical treatment of an actively exploited management-plane authentication bypass that grants unauthenticated access to privileged APIs.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-09-29T00:06:54.772300-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "b26193e5169cd329",
-    "date": "2026-09-30",
-    "source": "Bromcom",
-    "title": "SSO Personal Data Breach FAQs",
-    "url": "https://docs.bromcom.com/knowledge-base/sso-personal-data-breach-faqs/",
-    "tags": [
-      "IAM",
-      "SSO",
-      "FEDERATION",
-      "ACCOUNT_LIFECYCLE",
-      "BREACH"
-    ],
-    "note": "Bromcom\u2019s disclosure covers a legacy SSO registration component left in production, with additional authorization checks and operation-specific logging added after the incident.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "3fbdf9fddda9b6c3",
-    "date": "2026-09-30",
-    "source": "Microsoft to block Entra ID script injection attacks starting October",
-    "title": "Microsoft to block Entra ID script injection attacks starting October",
-    "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
-    "tags": [
-      "Microsoft Entra",
-      "IAM",
-      "Authentication",
-      "Passkeys"
-    ],
-    "note": "Microsoft is rolling out Content Security Policy enforcement for browser-based Entra sign-ins to block externally injected scripts that could tamper with authentication flows or steal credentials.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "b8acfd6aa7fc8d8b",
-    "date": "2026-09-30",
-    "source": "Netwrix",
-    "title": "Netwrix Research: 79% of Healthcare Organizations Face Security Risks Due to Gaps in Governing AI Agents and Other Non-Human Identities",
-    "url": "https://netwrix.com/it/resources/news/netwrix-research-healthcare-identity-governance-risks-ai-era/",
-    "tags": [
-      "IGA",
-      "NHI",
-      "AI Agents",
-      "Active Directory",
-      "Healthcare"
-    ],
-    "note": "New healthcare-sector survey data highlights unauthorized identity access, privilege-escalation uncertainty and weak governance of non-human identities.",
-    "score": 84
   }
 ]
