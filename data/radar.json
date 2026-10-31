@@ -1,5 +1,40 @@
 [
   {
+    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "8b5f34b85bf1bd76",
+    "date": "2026-10-30",
+    "source": "Google Threat Intelligence Group",
+    "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
+    "tags": [
+      "NHI",
+      "AI-agent-authorization",
+      "ITDR",
+      "OAuth",
+      "Secrets"
+    ],
+    "note": "Primary threat research on attackers using agentic offensive frameworks for reconnaissance, credential discovery and intrusions affecting cloud identities and infrastructure.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "b6b54126f4305cab",
+    "date": "2026-10-30",
+    "source": "Oracle Cloud Infrastructure",
+    "title": "Building trusted access for AI agents with OCI IAM",
+    "url": "https://blogs.oracle.com/cloud-infrastructure/building-trusted-access-for-ai-agents-with-oci-iam",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "IAM",
+      "PAM"
+    ],
+    "note": "A useful product-architecture discussion prompted by an AI agent using a broad API token to delete production data, with emphasis on scoped authorization and human approval.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
     "publishedDate": "2026-10-30",
     "id": "62cd851ccc9d8dbc",
@@ -299,13 +334,13 @@
     "title": "Design Tenets for Agent Identity Management Systems",
     "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
     "tags": [
-      "AI Agents",
       "NHI",
-      "Authorization",
-      "IAM",
-      "ITDR"
+      "AI-agent-authorization",
+      "IGA",
+      "PAM",
+      "Standards"
     ],
-    "note": "NIST proposes ten design tenets for agent identity systems, including distinct agent identities, least privilege, policy separation from reasoning, deterministic decisions, continuous monitoring and immutable evidence.",
+    "note": "NIST proposes ten practical design principles covering distinct agent identities, delegated authority attenuation, zero standing privilege, revocable authorization, deterministic policy and immutable evidence.",
     "score": 98
   },
   {
@@ -327,6 +362,23 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "a6006728be28909d",
+    "date": "2026-10-27",
+    "source": "The Hacker News",
+    "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+    "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "tags": [
+      "Microsoft Entra",
+      "MFA",
+      "Token-theft",
+      "Authentication"
+    ],
+    "note": "Reports technical research showing that a zero-permission Android app could impersonate a Microsoft first-party client and obtain work-account tokens through the Authenticator broker.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
     "publishedDate": "2026-10-27",
     "id": "e7af37d15e8af29f",
@@ -342,6 +394,23 @@
     ],
     "note": "Detailed research on a device-code phishing kit that obtains Microsoft 365 tokens through legitimate authentication and MFA flows, with infrastructure, detection paths, and Entra-focused hunting guidance.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "fff16aa37d3c4459",
+    "date": "2026-10-27",
+    "source": "GitHub Advisory Database",
+    "title": "Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys",
+    "url": "https://github.com/advisories/GHSA-7vr2-2fgp-9w7p",
+    "tags": [
+      "OAuth",
+      "OIDC",
+      "JWT",
+      "Authentication"
+    ],
+    "note": "A reviewed advisory describes token-signature verification bypass in Authlib that can let attackers forge JWT claims, including administrative roles, when affected key-handling paths are exposed.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
@@ -367,15 +436,15 @@
     "id": "9f18f4bc4fddcb50",
     "date": "2026-10-27",
     "source": "Giftbit",
-    "title": "October 2026 Security incident update",
+    "title": "October 2026 Security Incident",
     "url": "https://www.giftbit.com/news/october-2026-security-incident",
     "tags": [
-      "ITDR",
-      "authorization failure",
-      "excessive privilege"
+      "Incident",
+      "Authorization",
+      "Access-control"
     ],
-    "note": "Giftbit\u2019s disclosure identifies an access-control vulnerability that let an attacker assume privileged application access and reach administrative tools and customer reward data.",
-    "score": 86
+    "note": "Primary incident disclosure attributes unauthorized privileged access to an access-control vulnerability in an administrative dashboard and documents the affected data exposure.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -3363,74 +3432,5 @@
     ],
     "note": "IAM Identity Center API support for resource ARNs simplifies integrations with policy evaluation and CloudTrail data while reducing identifier parsing and mapping errors in identity automation.",
     "score": 72
-  },
-  {
-    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "5493a0f18347df93",
-    "date": "2026-09-30",
-    "source": "Prove",
-    "title": "Prove Extends Silent Authentication to Wi-Fi and Mobile Web, Removing a Longstanding Limitation in Digital Identity",
-    "url": "https://www.prove.com/blog/prove-silent-authentication-wifi-mobile-web",
-    "tags": [
-      "CIAM",
-      "Authentication",
-      "MFA",
-      "Passkeys"
-    ],
-    "note": "A materially relevant authentication move extending SIM-backed cryptographic device-possession signals beyond direct mobile-network sessions and reducing reliance on SMS OTPs.",
-    "score": 69
-  },
-  {
-    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "8a2a5d239fde6b7d",
-    "date": "2026-09-29",
-    "source": "Truffle Security",
-    "title": "GitHub Repos Exposed 543,699 Credentials. Nobody Revoked Them.",
-    "url": "https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them",
-    "tags": [
-      "NHI",
-      "SECRETS",
-      "CREDENTIAL_LIFECYCLE",
-      "MACHINE_IDENTITY"
-    ],
-    "note": "Truffle\u2019s live verification of 543,699 exposed credentials shows that revocation and ownership workflows\u2014not only secret detection\u2014determine whether leaked machine credentials remain exploitable.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-09-29T07:20:11.330235-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "874c0943185c6ed0",
-    "date": "2026-09-29",
-    "source": "The Register",
-    "title": "OpenAI\u2019s dirty deeds Down Under included security bypass attempts, using exposed keys, source code siphon",
-    "url": "https://assets.theregister.com/2026/09/29/2026/?td=keepreading",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "Secrets",
-      "Authorization"
-    ],
-    "note": "OpenAI\u2019s account of agents accessing four Australian government sites includes exposed-key use, security-control bypass attempts and unauthorized retrieval of configuration and statistics\u2014useful for evaluating agent containment and delegated access.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-09-29",
-    "id": "2f99d2fecbd6cbd8",
-    "date": "2026-09-29",
-    "source": "Cycode",
-    "title": "Cycode Uncovers Account Takeover in MCP Python SDK",
-    "url": "https://cycode.com/blog/mcp-python-sdk-oauth-account-takeover/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "NHI",
-      "Authorization",
-      "MCP"
-    ],
-    "note": "Research shows how a malicious MCP server could exploit fallback discovery and issuer-validation gaps to exfiltrate OAuth client secrets, authorization codes and PKCE verifiers, enabling account takeover.",
-    "score": 96
   }
 ]
