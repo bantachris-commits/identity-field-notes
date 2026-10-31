@@ -1,21 +1,86 @@
 [
   {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "546ee063747cafd7",
+    "date": "2026-10-31",
+    "source": "IETF OAuth Working Group",
+    "title": "The OAuth 2.1 Authorization Framework (draft-ietf-oauth-v2-1-17",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/17/",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "Token Security"
+    ],
+    "note": "The latest OAuth 2.1 draft tightens browser-based authorization, removes legacy flows, and documents defenses against token leakage, client impersonation, redirect abuse, and authorization-code attacks.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
     "publishedDate": "2026-10-30",
     "id": "8b5f34b85bf1bd76",
     "date": "2026-10-30",
-    "source": "Google Threat Intelligence Group",
+    "source": "Google Threat Intelligence Group / Mandiant",
     "title": "ARTEX and Friends: Enter Agentic Offensive Frameworks",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/artex-and-friends-enter-agentic-offensive-frameworks",
     "tags": [
-      "NHI",
-      "AI-agent-authorization",
+      "AI Agents",
       "ITDR",
-      "OAuth",
-      "Secrets"
+      "NHI",
+      "Credential Abuse"
     ],
-    "note": "Primary threat research on attackers using agentic offensive frameworks for reconnaissance, credential discovery and intrusions affecting cloud identities and infrastructure.",
-    "score": 96
+    "note": "Primary threat research reports in-the-wild use of multi-agent offensive frameworks for reconnaissance, lateral movement, privilege escalation, cloud-key harvesting, and exfiltration preparation.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "8064c295189a4723",
+    "date": "2026-10-30",
+    "source": "Binance / BleepingComputer",
+    "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/amp/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Privileged Access",
+      "Incident"
+    ],
+    "note": "Binance attributed unauthorized withdrawal transactions to access obtained through a compromised DevOps laptop and service container, making this a high-impact case study in workload authorization and developer-endpoint trust.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "2676ebabd2430694",
+    "date": "2026-10-30",
+    "source": "FIDO Alliance",
+    "title": "FIDO Alliance counts 7 billion passkeys as adoption gains momentum",
+    "url": "https://fidoalliance.org/biometric-update-fido-alliance-counts-7-billion-passkeys-as-adoption-gains-momentum/",
+    "tags": [
+      "Passkeys",
+      "FIDO",
+      "Authentication"
+    ],
+    "note": "The new Passkey Index and deployment guidance provide current adoption data and practical signals for organizations moving from passkey availability toward sustained usage and secure enrollment.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "ee72629317ef81d9",
+    "date": "2026-10-30",
+    "source": "CISA / BleepingComputer",
+    "title": "CISA says max severity GitLab flaw now exploited in the wild",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/amp/",
+    "tags": [
+      "Secrets",
+      "CI/CD",
+      "NHI",
+      "Vulnerability"
+    ],
+    "note": "The actively exploited GitLab flaw enables unauthenticated code execution on self-managed instances, raising immediate concerns for CI/CD credentials, runners, repositories, and deployment identities.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
@@ -67,6 +132,22 @@
     ],
     "note": "A reported DoD incident shows how granting a personal coding agent administrative access to a production environment led to exfiltration of contractor credentials, passwords and network information.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-29",
+    "id": "978114416125d275",
+    "date": "2026-10-29",
+    "source": "GitLab Advisory Database",
+    "title": "CVE-2026-55186: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
+    "url": "https://advisories.gitlab.io/composer/silverstripe/mfa/CVE-2026-55186/",
+    "tags": [
+      "MFA",
+      "Authentication",
+      "Account Recovery"
+    ],
+    "note": "The advisory provides the precise affected versions and remediation for a password-reset path that allowed authenticated sessions before the second factor was completed.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
@@ -204,6 +285,22 @@
     ],
     "note": "Documents incidents where social engineering led to unauthorized MDM enrollment, SYSTEM-level deployment, rogue RMM persistence and remote access, making MDM identity events a security-sensitive control point.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "badfaa130ce552f8",
+    "date": "2026-10-28",
+    "source": "Silverstripe CMS",
+    "title": "Announcing Silverstripe CMS 6.3.0 with basic image editing",
+    "url": "https://www.silverstripe.org/blog/silverstripe-cms-630",
+    "tags": [
+      "MFA",
+      "Authentication",
+      "Vulnerability"
+    ],
+    "note": "The release discloses a password-reset flaw that could create a logged-in session before MFA completion, highlighting an alternate-path authentication failure in recovery workflows.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
@@ -393,6 +490,23 @@
       "MFA-bypass"
     ],
     "note": "Detailed research on a device-code phishing kit that obtains Microsoft 365 tokens through legitimate authentication and MFA flows, with infrastructure, detection paths, and Entra-focused hunting guidance.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "bbb9119ec9e2f936",
+    "date": "2026-10-27",
+    "source": "Google Cloud",
+    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+    "tags": [
+      "AI Agents",
+      "IAM",
+      "PAM",
+      "JIT Access"
+    ],
+    "note": "Google Cloud introduces agent-facing IAM workflows that combine policy simulation, human approval, least-privilege changes, and time-bound PAM elevation for autonomous deployment and operations agents.",
     "score": 94
   },
   {
@@ -724,23 +838,6 @@
     ],
     "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
     "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "bbb9119ec9e2f936",
-    "date": "2026-10-26",
-    "source": "Google Cloud",
-    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
-    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
-    "tags": [
-      "IAM",
-      "PAM",
-      "NHI",
-      "AI-agent authorization"
-    ],
-    "note": "Google Cloud introduces an agent-facing IAM orchestration layer that makes Policy Intelligence and Privileged Access Manager callable by autonomous agents, deployment pipelines, and custom tools.",
-    "score": 86
   },
   {
     "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
@@ -3330,107 +3427,5 @@
     ],
     "note": "New healthcare-sector survey data highlights unauthorized identity access, privilege-escalation uncertainty and weak governance of non-human identities.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "13b0512e129b3ae6",
-    "date": "2026-09-30",
-    "source": "SC Media",
-    "title": "Okta: The Blueprint Alliance AI-agent framework isn't ours, but everybody's",
-    "url": "https://www.scworld.com/resource/okta-the-blueprint-alliance-ai-agent-framework-isnt-ours-but-everybodys",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Open Standards",
-      "Okta"
-    ],
-    "note": "Explains the Blueprint Alliance's proposed principles for agent identity, task-scoped access, traceable delegation, runtime monitoring and reversible containment.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "dc9136a95d123a08",
-    "date": "2026-09-30",
-    "source": "Gartner",
-    "title": "Gartner Identifies Top Five Actions for CISOs To Take by End of 2026",
-    "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-30-gartner-identifies-top-five-actions-for-cisos-to-take-by-end-of-2026",
-    "tags": [
-      "AI-agent authorization",
-      "Identity governance",
-      "Authentication",
-      "Privilege management"
-    ],
-    "note": "Calls for governing autonomous systems by action privileges rather than model intelligence and for replacing recognition-based trust with stronger contextual authentication and authorization controls.",
-    "score": 83
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "f02e730c7b1238c7",
-    "date": "2026-09-30",
-    "source": "BleepingComputer",
-    "title": "AI\u2019s Third Wave: Coworkers Break the Security Model That Worked for Agents",
-    "url": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "OAuth",
-      "Authorization"
-    ],
-    "note": "The analysis examines how persistent AI coworkers can inherit standing human privileges, contaminate audit trails and create ungoverned agent-to-agent delegation when agents lack distinct identities.",
-    "score": 83
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "33d2fc604dce7520",
-    "date": "2026-09-30",
-    "source": "Transluce AI",
-    "title": "AI Agents Targeted U.S. and Canadian Government Websites",
-    "url": "https://transluce.org/us-canada-gov",
-    "tags": [
-      "AI agents",
-      "NHI",
-      "Authorization",
-      "Abuse"
-    ],
-    "note": "Primary incident research documents autonomous agents creating disposable accounts, reusing exposed credentials, bypassing anti-bot controls, and issuing failed SQL-injection probes against government services.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-03T05:57:42.843241-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "0d0c1a669cd0f636",
-    "date": "2026-09-30",
-    "source": "Oracle Cloud Infrastructure",
-    "title": "Managing One-Click Sign-In with Passkeys",
-    "url": "https://docs.oracle.com/en-us/iaas/releasenotes/identity/one-click-sign-in-with-passkeys.htm",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "IAM",
-      "Authentication"
-    ],
-    "note": "Oracle IAM added one-click sign-in using discoverable FIDO passkeys, with WebAuthn resident-key enrollment and recorded attestation outcomes.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "d5105854def1ec5c",
-    "date": "2026-09-30",
-    "source": "AWS",
-    "title": "AWS IAM Identity Center Identity Store APIs now accept resource ARNs in addition to resource IDs",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
-    "tags": [
-      "IAM",
-      "IGA",
-      "AWS",
-      "Cloud identity"
-    ],
-    "note": "IAM Identity Center API support for resource ARNs simplifies integrations with policy evaluation and CloudTrail data while reducing identifier parsing and mapping errors in identity automation.",
-    "score": 72
   }
 ]
