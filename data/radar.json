@@ -25,12 +25,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
     "tags": [
       "NHI",
-      "Secrets",
-      "Machine Identity",
-      "AI Agents"
+      "Secrets management",
+      "Cloud IAM",
+      "AI-agent authorization"
     ],
-    "note": "Northflank told customers to assume stored environment variables were decrypted after a breach led to unauthorized use of customer AI API keys, underscoring the blast radius of platform-held secrets.",
-    "score": 96
+    "note": "Customers were told to assume stored environment variables were decrypted after a breach, with confirmed unauthorized use of customer AI API keys and an unknown initial access path.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
@@ -85,6 +85,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "ec6a0a4e6dc90e2f",
+    "date": "2026-10-30",
+    "source": "Wiz",
+    "title": "\u201cBlack October\u201d for AI Developer Platforms",
+    "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "OAuth/session/token abuse",
+      "Cloud IAM"
+    ],
+    "note": "Connects at least nine AI-platform incidents to credential access, exposed environment variables, stolen AI keys and subsequent LLM-jacking, including observed six-figure Bedrock abuse.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-30",
     "id": "bf6d0a1c66992012",
@@ -100,6 +117,40 @@
     ],
     "note": "The draft addresses a key agent-authorization gap by binding dialog context to WIMSE and OAuth credentials, helping receivers detect context swapping and prevent a token obtained in one agent interaction from being replayed in another.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "96a0f026f2e040c0",
+    "date": "2026-10-30",
+    "source": "BleepingComputer",
+    "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+    "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+    "tags": [
+      "NHI",
+      "Secrets management",
+      "AI-agent authorization",
+      "PAM"
+    ],
+    "note": "A trojanized AI coding extension added attacker SSH keys, persistence and reverse-tunnel logic while exposing host details and names of environment variables associated with sensitive credentials.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "cd5ec976f11495e7",
+    "date": "2026-10-30",
+    "source": "BleepingComputer",
+    "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-compromised-devops-laptop/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Excessive privilege",
+      "Compromised credentials"
+    ],
+    "note": "Binance attributes the theft to compromise of a DevOps engineer's laptop followed by access to a service container and unauthorized withdrawal transactions, highlighting privileged workload and authorization controls.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -119,6 +170,22 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "AI-agent authorization",
+      "ITDR",
+      "IAM"
+    ],
+    "note": "Primary disclosure of an intrusion using \u201coffensive agentic techniques,\u201d with access to user identity metadata but no evidence so far of stolen credentials or session tokens.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
     "publishedDate": "2026-10-30",
     "id": "b6b54126f4305cab",
@@ -134,6 +201,23 @@
       "Human-in-the-Loop"
     ],
     "note": "Oracle describes IAM patterns for agent access to enterprise tools, including OAuth support for MCP, action-bound human approval and authorization decisions that distinguish user entitlement from approval of a specific agent action.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "77f66563a1464511",
+    "date": "2026-10-30",
+    "source": "IT Pro",
+    "title": "40,000 staff exposed in 'severe' Department of Homeland Security breach",
+    "url": "https://www.itpro.com/security/data-breaches/a-severe-operational-failure-that-places-the-physical-safety-of-undercover-personnel-at-direct-risk-hacktivist-group-leaks-data-on-40-000-department-of-homeland-security-staff",
+    "tags": [
+      "Okta/Auth0",
+      "IAM",
+      "Compromised credentials",
+      "ITDR"
+    ],
+    "note": "Reports a DHS data leak allegedly enabled through Okta using exposed user credentials; the access route remains an attacker claim and has not been independently confirmed by DHS or Okta.",
     "score": 86
   },
   {
@@ -662,6 +746,22 @@
       "FIDO"
     ],
     "note": "The updated rollout will let supported Windows Hello for Business and macOS Platform SSO credentials satisfy MFA without requiring an additional passkey, affecting registration, step-up, and authentication-strength planning.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "148f4f2a14b06306",
+    "date": "2026-10-27",
+    "source": "IETF",
+    "title": "Agent Authorization Center for User-Side Agent Authentication and Authorization",
+    "url": "https://datatracker.ietf.org/doc/html/draft-du-oauth-agent-authorization-center-00",
+    "tags": [
+      "OAuth/session/token abuse",
+      "AI-agent authorization",
+      "OpenID/FIDO"
+    ],
+    "note": "New OAuth-related Internet-Draft proposes autonomous and human-approved authorization modes for user-side agents, but its agent-authentication and security-considerations sections remain incomplete.",
     "score": 84
   },
   {
@@ -3322,110 +3422,5 @@
     ],
     "note": "A reported AI-driven intrusion chained Zammad flaws for session hijacking, remote code execution and escalation from an application user to root, making it a useful case study in agent-speed identity abuse and containment.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "fb825217816e73c3",
-    "date": "2026-09-30",
-    "source": "Cisco Product Security Incident Response Team",
-    "title": "Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability",
-    "url": "https://team-development.cisco.com/c/en/us/support/docs/csa/cisco-sa-sdwan-webauth-xr8beuuU.html",
-    "tags": [
-      "IAM",
-      "PAM",
-      "Authentication failure",
-      "ITDR"
-    ],
-    "note": "Cisco disclosed a critical, unauthenticated API authentication bypass granting admin privileges and said it was being actively exploited, making this a priority review for privileged management-plane exposure.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "010c20fc0f6b588b",
-    "date": "2026-09-30",
-    "source": "Microsoft Security Research",
-    "title": "Approval Laundering: Systematizing Approval--Execution Binding Failures in AI Coding-Agent Harnesses",
-    "url": "https://arxiv.org/abs/2609.38983",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "OAuth",
-      "ITDR"
-    ],
-    "note": "Primary research shows how coding-agent harnesses can execute actions that differ from what a human approved, and evaluates capability-style approval tokens as a mitigation.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-01T16:52:16.308643-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "348546cb160e0d0e",
-    "date": "2026-09-30",
-    "source": "Google Threat Intelligence Group",
-    "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
-    "tags": [
-      "ITDR",
-      "NHI",
-      "AI-agent authorization",
-      "PAM"
-    ],
-    "note": "GTIG data shows AI-assisted discovery is increasing high-risk vulnerability output and highlights exploited identity-adjacent flaws including BeyondTrust PRA command injection and AI middleware credential theft.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "21e4f3b250ede438",
-    "date": "2026-09-30",
-    "source": "IETF",
-    "title": "OpenA2A Agent Authorization Protocol (AAP",
-    "url": "https://www.ietf.org/ietf-ftp/internet-drafts/draft-fane-opena2a-aap-02.html",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "OAuth",
-      "NHI",
-      "Standards"
-    ],
-    "note": "A new Internet-Draft proposes agent identity assertions, scoped capability grants, cross-agent delegation, federation and revocation propagation for agent systems.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "c328be79f138af80",
-    "date": "2026-09-30",
-    "source": "Okta",
-    "title": "Okta Identity Engine API release notes (2026",
-    "url": "https://developer.okta.com/docs/release-notes/2026-okta-identity-engine/",
-    "tags": [
-      "Okta",
-      "CIAM",
-      "AI Agents",
-      "MCP",
-      "Passkeys"
-    ],
-    "note": "The September 30 release adds preview support for third-party OIDC Agent SSO, MCP-server authorization controls, AI-agent profile attributes and automatic phishing resistance for FastPass authentication chains.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "f266688a3274c76d",
-    "date": "2026-09-30",
-    "source": "Palo Alto Networks / Idira",
-    "title": "Idira Platform Updates (August 2026): What Shipped for Machine and AI Agent Identity",
-    "url": "https://www.paloaltonetworks.com/blog/identity-security/machine-agentic-identity-updates-august-2026/",
-    "tags": [
-      "PAM",
-      "Machine identity",
-      "AI-agent authorization",
-      "SPIFFE",
-      "Secrets management"
-    ],
-    "note": "Provides an itemized view of new controls for MCP tool execution, agent discovery, SPIFFE identities, short-lived tokens, workload least privilege and near-real-time privileged-account synchronization.",
-    "score": 90
   }
 ]
