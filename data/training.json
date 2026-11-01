@@ -1,98 +1,98 @@
 [
   {
     "provider": "Microsoft Learn",
-    "title": "Training for Identity and Access Administrators",
+    "title": "Training for Microsoft Entra ID",
     "level": "Beginner to intermediate",
-    "focus": "IAM administration, authentication, authorization, Microsoft Entra ID, external identities, and identity lifecycle management",
-    "url": "https://learn.microsoft.com/en-us/training/career-paths/identity-and-access-admin",
+    "focus": "Microsoft Entra identity principals, authentication, access management, identity protection, governance and administrator certification preparation.",
+    "url": "https://learn.microsoft.com/en-us/training/entra/",
     "sponsored": false
   },
   {
     "provider": "Microsoft Learn",
     "title": "Plan and implement an identity governance strategy",
     "level": "Intermediate",
-    "focus": "IGA, entitlement management, access reviews, privileged access controls, lifecycle governance, and monitoring",
+    "focus": "IGA, entitlement management, access reviews, privileged access, lifecycle management, monitoring and Microsoft Entra ID Governance.",
     "url": "https://learn.microsoft.com/en-us/training/paths/plan-implement-identity-governance-strategy/",
     "sponsored": false
   },
   {
     "provider": "Microsoft Learn",
-    "title": "Secure access to resources by using Microsoft Entra",
+    "title": "Secure AI identity infrastructure with Microsoft Entra",
     "level": "Intermediate",
-    "focus": "MFA, passwordless authentication, Conditional Access, PIM, least privilege, and identity-aware AI applications",
-    "url": "https://learn.microsoft.com/en-us/training/paths/secure-access-resources-entra/",
-    "sponsored": false
-  },
-  {
-    "provider": "Microsoft Learn",
-    "title": "Implement an identity management solution using Microsoft Entra ID",
-    "level": "Intermediate",
-    "focus": "Users, groups, external identities, hybrid identity, workload identities, and core Entra administration",
-    "url": "https://learn.microsoft.com/en-us/training/paths/implement-identity-management-solution/",
-    "sponsored": false
-  },
-  {
-    "provider": "Okta Learning",
-    "title": "Okta Learning Plans",
-    "level": "Beginner to advanced",
-    "focus": "Okta IAM administration, IGA, lifecycle management, passkeys, PAM, identity threat protection, AI agents, and certification preparation",
-    "url": "https://learning.okta.com/page/learning-plans-list",
-    "sponsored": false
-  },
-  {
-    "provider": "Okta Learning",
-    "title": "Administrator Certification Preparation",
-    "level": "Intermediate",
-    "focus": "Okta administration, directory integration, SSO, provisioning, security policies, logging, token management, and operational troubleshooting",
-    "url": "https://learning.okta.com/administrator-certification-preparation",
+    "focus": "Workload identities, managed identities, AI workload access, Conditional Access, identity risk and AI-agent identity security.",
+    "url": "https://learn.microsoft.com/en-us/training/paths/entra-ai-secure-workloads/",
     "sponsored": false
   },
   {
     "provider": "CyberArk University",
-    "title": "Defender - PAM Sample Items & Study Guide",
+    "title": "Privileged Access Management (PAM) Administration - Self-Paced",
+    "level": "Intermediate",
+    "focus": "CyberArk Enterprise Password Vault, Privileged Session Management, Privileged Threat Analytics and PAM administration.",
+    "url": "https://training.cyberark.com/learn/course/external/view/elearning/3/PrivilegedAccessManagementPAMAdministration-Self-Paced",
+    "sponsored": false
+  },
+  {
+    "provider": "Delinea Security Academy",
+    "title": "Delinea Security Academy Certification Program",
     "level": "Intermediate to advanced",
-    "focus": "PAM administration, privileged account management, CyberArk PAM operations, and Defender-PAM certification preparation",
-    "url": "https://training.cyberark.com/learn/course/external/view/elearning/113/defender-pam-sample-items-study-guide",
+    "focus": "PAM concepts, Delinea product administration, implementation, troubleshooting, hands-on labs and privileged access security.",
+    "url": "https://delinea.com/training/certification-program",
     "sponsored": false
   },
   {
-    "provider": "SailPoint Identity University",
-    "title": "Identity University training and certification paths",
-    "level": "Beginner to advanced",
-    "focus": "IGA, identity security, IdentityIQ, Identity Security Cloud, administration, engineering, and professional certification",
-    "url": "https://university.sailpoint.com",
+    "provider": "Auth0 Learning",
+    "title": "Authentication Best Practices",
+    "level": "Beginner to intermediate",
+    "focus": "MFA, passwordless authentication, passkeys, breached-password protection, brute-force protection and account-takeover defenses.",
+    "url": "https://learning.auth0.com/path/authentication-best-practices",
     "sponsored": false
   },
   {
-    "provider": "OWASP Foundation",
+    "provider": "Auth0 Learning",
+    "title": "Build Scalable Authorization Models with Auth0 FGA",
+    "level": "Intermediate",
+    "focus": "Fine-grained authorization, relationship-based access control, authorization modeling and hands-on FGA practice beyond RBAC.",
+    "url": "https://learning.auth0.com/path/build-scalable-authorization-models-with-auth0-fga",
+    "sponsored": false
+  },
+  {
+    "provider": "Auth0 Learning",
+    "title": "Secure Your RAG Pipelines with Auth0 Fine-Grained Access",
+    "level": "Advanced",
+    "focus": "Authorization for AI agents and RAG pipelines, document-level access control, relationship tuples and Auth0 FGA hands-on implementation.",
+    "url": "https://learning.auth0.com/path/secure-your-rag-pipelines-with-auth0-fine-grained-access",
+    "sponsored": false
+  },
+  {
+    "provider": "Okta Developer",
+    "title": "Passkeys and custom domains",
+    "level": "Intermediate",
+    "focus": "Passkey and WebAuthn configuration, relying-party identifiers, custom domains and cross-domain passkey deployment considerations.",
+    "url": "https://developer.okta.com/docs/guides/custom-passkeys/main/",
+    "sponsored": false
+  },
+  {
+    "provider": "OWASP",
     "title": "OWASP Non-Human Identities Top 10",
-    "level": "Intermediate to advanced",
-    "focus": "Non-human identity threats, secret leakage, overprivilege, insecure authentication, cloud workload identities, offboarding, and incident response",
+    "level": "Intermediate",
+    "focus": "Non-human identity attack surface, improper offboarding, secret leakage, third-party workload risk, prevention practices and incident-response playbooks.",
     "url": "https://owasp.org/projects/non-human-identities-top-10",
     "sponsored": false
   },
   {
-    "provider": "OpenID Foundation",
-    "title": "OpenID Foundation Specifications and Implementer\u2019s Guides",
-    "level": "Intermediate to advanced",
-    "focus": "OpenID Connect, OAuth, AuthZEN authorization, federation, digital credentials, FAPI, and standards-based implementation",
-    "url": "https://openid.net/developers/specs/",
-    "sponsored": false
-  },
-  {
-    "provider": "SPIFFE/SPIRE",
-    "title": "SPIFFE Concepts and SPIRE Concepts",
-    "level": "Intermediate to advanced",
-    "focus": "Workload identity, workload attestation, short-lived credentials, mTLS, service identity, and non-human identity architecture",
-    "url": "https://spiffe.io/docs/latest/spiffe/concepts/",
-    "sponsored": false
-  },
-  {
     "provider": "FIDO Alliance",
-    "title": "Authenticate Conference Video Library and Passkey Resources",
-    "level": "Beginner to advanced",
-    "focus": "Passkeys, phishing-resistant authentication, account recovery, digital credentials, authentication architecture, and deployment practice",
-    "url": "https://authenticatecon.com/",
+    "title": "Passkeys",
+    "level": "Beginner to intermediate",
+    "focus": "Passkey concepts, phishing-resistant authentication, device-bound and synced credentials, deployment considerations and ecosystem terminology.",
+    "url": "https://fidoalliance.org/passkeys-2/",
+    "sponsored": false
+  },
+  {
+    "provider": "Microsoft Learn",
+    "title": "Microsoft Certified: Identity and Access Administrator Associate",
+    "level": "Intermediate",
+    "focus": "User identities, authentication, access management, workload identities and identity governance through the SC-300 certification path.",
+    "url": "https://learn.microsoft.com/en-us/certifications/identity-and-access-administrator",
     "sponsored": false
   }
 ]
