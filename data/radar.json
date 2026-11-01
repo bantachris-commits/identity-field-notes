@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "ba55b05e53eaee48",
+    "date": "2026-10-31",
+    "source": "BleepingComputer",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "tags": [
+      "NHI",
+      "secrets",
+      "OAuth",
+      "machine identity"
+    ],
+    "note": "A live incident involving decrypted environment variables, unauthorized AI-key use, and urgent rotation of application credentials, database secrets, and tokens.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
     "publishedDate": "2026-10-31",
     "id": "546ee063747cafd7",
@@ -16,21 +33,21 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
     "publishedDate": "2026-10-31",
-    "id": "ba55b05e53eaee48",
+    "id": "a291b7051796cec4",
     "date": "2026-10-31",
     "source": "BleepingComputer",
-    "title": "Northflank security breach leads to abuse of customers' AI API keys",
-    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
     "tags": [
+      "AI agents",
       "NHI",
-      "Secrets management",
-      "Cloud IAM",
-      "AI-agent authorization"
+      "IAM",
+      "incident response"
     ],
-    "note": "Customers were told to assume stored environment variables were decrypted after a breach, with confirmed unauthorized use of customer AI API keys and an unknown initial access path.",
-    "score": 95
+    "note": "Important early disclosure of an AI-assisted intrusion into internal systems and tools, with customer identity data accessed while credential and session-token exposure remains under investigation.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
@@ -89,16 +106,33 @@
     "publishedDate": "2026-10-30",
     "id": "ec6a0a4e6dc90e2f",
     "date": "2026-10-30",
-    "source": "Wiz",
+    "source": "Wiz Research",
     "title": "\u201cBlack October\u201d for AI Developer Platforms",
     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
     "tags": [
       "NHI",
       "AI-agent authorization",
-      "OAuth/session/token abuse",
-      "Cloud IAM"
+      "secrets",
+      "PAM"
     ],
-    "note": "Connects at least nine AI-platform incidents to credential access, exposed environment variables, stolen AI keys and subsequent LLM-jacking, including observed six-figure Bedrock abuse.",
+    "note": "Connects at least nine October breaches of AI developer platforms to attackers harvesting environment variables and AI credentials for LLMjacking, with downstream evidence of large-scale Bedrock abuse.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "b92d627b0562b1c3",
+    "date": "2026-10-30",
+    "source": "Binance",
+    "title": "Security Incident Update 2 (2026-10-30",
+    "url": "https://www.binance.com/en-TR/support/announcement/detail/d3306d9dca5243548c813b605e1d1751",
+    "tags": [
+      "PAM",
+      "privilege",
+      "secrets",
+      "incident response"
+    ],
+    "note": "Binance reports approximately $6.3 billion in unauthorized withdrawals, an initially suspected compromised DevOps laptop, additional breach points, and revoked authorizations.",
     "score": 96
   },
   {
@@ -371,6 +405,23 @@
     ],
     "note": "Documents passkey-, SSO- and Okta-themed social engineering that uses victim-local residential proxies to evade geographic and risk-based identity detections while capturing credentials or session tokens.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
+    "publishedDate": "2026-10-28",
+    "id": "133957ec4e76f57b",
+    "date": "2026-10-28",
+    "source": "Red Hat Product Security",
+    "title": "CVE-2026-118669",
+    "url": "https://access.redhat.com/security/cve/cve-2026-118669",
+    "tags": [
+      "OAuth",
+      "authorization",
+      "token security",
+      "privilege escalation"
+    ],
+    "note": "A high-severity oauthlib flaw can let an authenticated low-privilege client obtain access tokens with another client's permissions and scopes through client-identity confusion.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
@@ -715,6 +766,23 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
+    "publishedDate": "2026-10-27",
+    "id": "db852607b1360578",
+    "date": "2026-10-27",
+    "source": "BleepingComputer",
+    "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+    "url": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+    "tags": [
+      "AI agents",
+      "NHI",
+      "supply chain",
+      "ITDR"
+    ],
+    "note": "A third-party vendor compromise exposed agent decision logs and telemetry for a reported portion of Warp users, illustrating identity and authorization visibility gaps in agentic developer platforms.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-10-27",
     "id": "dc99dc8fdf101fc2",
@@ -879,14 +947,13 @@
     "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
     "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
     "tags": [
-      "Microsoft Entra",
+      "Entra",
       "ITDR",
-      "MFA",
-      "OAuth",
-      "session-token-abuse"
+      "MFA bypass",
+      "session theft"
     ],
-    "note": "Huntress documents an AitM token-spraying campaign with 97 compromised accounts, 48 rogue Entra devices, MFA-method replacement, and mailbox persistence across 79 organizations.",
-    "score": 99
+    "note": "Huntress findings show adversary-in-the-middle token replay, rogue Entra device registration, MFA-method replacement, and mailbox persistence across 79 organizations.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
@@ -3353,74 +3420,5 @@
     ],
     "note": "A timely practitioner-oriented analysis frames agent discovery, cryptographic identity, action-level authorization and continuous auditability as distinct requirements beyond conventional IAM.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "f20814d5e8743f6a",
-    "date": "2026-10-01",
-    "source": "Belnet",
-    "title": "Security and privacy incident affecting Belnet\u2019s IT infrastructure",
-    "url": "https://www.belnet.be/en/news-events/news/security-and-privacy-incident-affecting-belnets-it-infrastructure",
-    "tags": [
-      "SECRETS",
-      "FEDERATION",
-      "CREDENTIAL_SECURITY",
-      "INCIDENT"
-    ],
-    "note": "Belnet\u2019s update says a Fortinet zero-day exposed email and file-transfer infrastructure, while password- or authentication-protected transfers were not considered readable unless protection data was also disclosed.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "9c9742ebbf4e85dc",
-    "date": "2026-09-30",
-    "source": "BleepingComputer",
-    "title": "Over 543,000 valid credentials exposed in public GitHub repositories",
-    "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-    "tags": [
-      "NHI",
-      "Secrets Management",
-      "Cloud IAM",
-      "Incident"
-    ],
-    "note": "Truffle Security found 543,699 working credentials, including 69,041 valid Google Cloud service-account credentials, highlighting persistent secret exposure and inadequate revocation.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-01T00:27:34.807943-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "854bd82d12eaf31b",
-    "date": "2026-09-30",
-    "source": "Cloud Security Alliance",
-    "title": "The MCP Python SDK OAuth Flaw and the Cost of Implicit Trust",
-    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-mcp-python-sdk-oauth-flaw-20260930-csa-sty/",
-    "tags": [
-      "OAuth",
-      "AI-agent authorization",
-      "NHI",
-      "Token security"
-    ],
-    "note": "Analyzes a high-severity MCP Python SDK flaw that let malicious servers redirect OAuth credentials and PKCE material to attacker-controlled endpoints, with direct implications for agent-to-service trust and issuer binding.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-01T07:49:48.883583-06:00",
-    "publishedDate": "2026-09-30",
-    "id": "736b5634430d03f1",
-    "date": "2026-09-30",
-    "source": "Dutch Institute for Vulnerability Disclosure / BleepingComputer",
-    "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
-    "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-    "tags": [
-      "ITDR",
-      "session-security",
-      "PAM",
-      "AI-agents",
-      "privilege-escalation"
-    ],
-    "note": "A reported AI-driven intrusion chained Zammad flaws for session hijacking, remote code execution and escalation from an application user to root, making it a useful case study in agent-speed identity abuse and containment.",
-    "score": 96
   }
 ]
