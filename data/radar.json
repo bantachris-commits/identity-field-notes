@@ -33,6 +33,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
+    "publishedDate": "2026-10-31",
+    "id": "68361b010a51d4ae",
+    "date": "2026-10-31",
+    "source": "IETF",
+    "title": "draft-ietf-oauth-v2-1-17 - The OAuth 2.1 Authorization Framework",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "Token Security",
+      "Standards"
+    ],
+    "note": "The latest OAuth 2.1 draft adds or tightens guidance relevant to consent phishing, short-lived and scoped bearer tokens, PKCE, redirect handling, token validation, and browser-based applications.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
     "publishedDate": "2026-10-31",
     "id": "a291b7051796cec4",
@@ -134,6 +151,23 @@
     ],
     "note": "Binance reports approximately $6.3 billion in unauthorized withdrawals, an initially suspected compromised DevOps laptop, additional breach points, and revoked authorizations.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "b435b9d5fb8e7891",
+    "date": "2026-10-30",
+    "source": "Binance",
+    "title": "Security Incident Update 2 (2026-10-30",
+    "url": "https://www.binance.com/en/support/announcement/detail/d3306d9dca5243548c813b605e1d1751",
+    "tags": [
+      "Incident",
+      "PAM",
+      "Secrets",
+      "Privilege"
+    ],
+    "note": "Binance reports approximately $6.3 billion in unauthorized hot-wallet withdrawals and says its initial engineer-laptop theory was incomplete, making this a major case study in DevOps access paths, service-container privilege, and authorization controls.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
@@ -238,23 +272,6 @@
     "score": 86
   },
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "77f66563a1464511",
-    "date": "2026-10-30",
-    "source": "IT Pro",
-    "title": "40,000 staff exposed in 'severe' Department of Homeland Security breach",
-    "url": "https://www.itpro.com/security/data-breaches/a-severe-operational-failure-that-places-the-physical-safety-of-undercover-personnel-at-direct-risk-hacktivist-group-leaks-data-on-40-000-department-of-homeland-security-staff",
-    "tags": [
-      "Okta/Auth0",
-      "IAM",
-      "Compromised credentials",
-      "ITDR"
-    ],
-    "note": "Reports a DHS data leak allegedly enabled through Okta using exposed user credentials; the access route remains an attacker claim and has not been independently confirmed by DHS or Okta.",
-    "score": 86
-  },
-  {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
     "publishedDate": "2026-10-30",
     "id": "2676ebabd2430694",
@@ -286,6 +303,23 @@
     ],
     "note": "Explains the post-acquisition transition of StrongDM capabilities into Delinea Runtime Authorization, including product continuity, branding, roadmap, and planned platform integration.",
     "score": 82
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "77f66563a1464511",
+    "date": "2026-10-30",
+    "source": "ITPro",
+    "title": "\u2018A severe operational failure that places the physical safety of undercover personnel at direct risk\u2019: Hacktivist group leaks data on 40,000 Department of Homeland Security staff",
+    "url": "https://www.itpro.com/security/data-breaches/a-severe-operational-failure-that-places-the-physical-safety-of-undercover-personnel-at-direct-risk-hacktivist-group-leaks-data-on-40-000-department-of-homeland-security-staff",
+    "tags": [
+      "Incident",
+      "Okta",
+      "IAM",
+      "Compromised Credentials"
+    ],
+    "note": "ITPro reports a hacktivist claim that exposed DHS credentials were used through Okta; DHS was still investigating, so the identity-control attribution remains preliminary rather than confirmed.",
+    "score": 72
   },
   {
     "firstSeenAt": "2026-10-30T07:27:06.017399-06:00",
@@ -595,6 +629,24 @@
     "score": 78
   },
   {
+    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
+    "publishedDate": "2026-10-28",
+    "id": "8e54c821eddb61be",
+    "date": "2026-10-28",
+    "source": "Commvault",
+    "title": "Commvault Advances Identity Resilience, Enabling Customers to Identify and Manage Hidden Risks in Identity Systems Before Attackers Exploit Them",
+    "url": "https://ir.commvault.com/node/24711/pdf",
+    "tags": [
+      "ITDR",
+      "Entra",
+      "Okta",
+      "Active Directory",
+      "Identity Resilience"
+    ],
+    "note": "Commvault announced identity-resilience capabilities spanning Active Directory, Entra ID, and Okta, with emphasis on Tier 0 exposure, identity-change detection, and recovery-oriented remediation.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
     "publishedDate": "2026-10-28",
     "id": "3502f22986ea6ff3",
@@ -698,23 +750,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "bbb9119ec9e2f936",
-    "date": "2026-10-27",
-    "source": "Google Cloud",
-    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
-    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
-    "tags": [
-      "AI Agents",
-      "IAM",
-      "PAM",
-      "JIT Access"
-    ],
-    "note": "Google Cloud introduces agent-facing IAM workflows that combine policy simulation, human approval, least-privilege changes, and time-bound PAM elevation for autonomous deployment and operations agents.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
     "publishedDate": "2026-10-27",
     "id": "fff16aa37d3c4459",
@@ -730,6 +765,23 @@
     ],
     "note": "A reviewed advisory describes token-signature verification bypass in Authlib that can let attackers forge JWT claims, including administrative roles, when affected key-handling paths are exposed.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "bbb9119ec9e2f936",
+    "date": "2026-10-27",
+    "source": "Google Cloud",
+    "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+    "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+    "tags": [
+      "Google Cloud",
+      "IAM",
+      "MCP",
+      "AI-Agent Authorization"
+    ],
+    "note": "Google introduces agent-facing IAM Helper components that make Policy Intelligence and Privileged Access Manager callable by autonomous agents, raising important questions about guardrails around agents that can administer IAM.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
@@ -1125,6 +1177,24 @@
       "PAM"
     ],
     "note": "IBM\u2019s GA offering combines agent registration, delegated on-behalf-of authorization, short-lived task-scoped tokens, runtime policy enforcement and Vault-backed just-in-time credentials.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
+    "publishedDate": "2026-10-26",
+    "id": "230fb182c50e3b46",
+    "date": "2026-10-26",
+    "source": "Palo Alto Networks",
+    "title": "Palo Alto Networks Named a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for Privileged Access Management",
+    "url": "https://www.paloaltonetworks.com/blog/2026/10/palo-alto-networks-named-a-leader-in-the-2026-gartner-magic-quadrant-for-privileged-access-management/",
+    "tags": [
+      "PAM",
+      "CyberArk",
+      "Palo Alto Networks",
+      "Zero Standing Privilege",
+      "NHI"
+    ],
+    "note": "This is the first Gartner PAM positioning published under Palo Alto Networks after the CyberArk integration and highlights the market shift toward ZSP, workload identities, secrets governance, and agent privilege.",
     "score": 82
   },
   {
@@ -1654,6 +1724,23 @@
       "Cloud"
     ],
     "note": "Railway said unauthorized parties may have accessed decrypted environment variables containing API keys, database credentials, registry credentials, and AI-provider secrets.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
+    "publishedDate": "2026-10-22",
+    "id": "0d299af9f60b06a0",
+    "date": "2026-10-22",
+    "source": "Google Cloud",
+    "title": "Introducing Agent Compute Engine and expanded agent governance",
+    "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+    "tags": [
+      "Google Cloud",
+      "AI-Agent Authorization",
+      "Workload Identity",
+      "Runtime Security"
+    ],
+    "note": "Google describes hardware-isolated agent microVMs, cryptographically verified identities, short-lived credentials, egress credential injection, and cross-cloud governance integrations with Ping Identity, SailPoint, and Saviynt.",
     "score": 90
   },
   {
@@ -3335,90 +3422,5 @@
     ],
     "note": "A timely technical analysis of the EvilTokens campaign shows how attackers abused the legitimate OAuth device-authorization flow to compromise Microsoft 365 accounts without stealing passwords.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-02T00:05:57.601827-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "2198142c78b38d1b",
-    "date": "2026-10-01",
-    "source": "Bolster AI",
-    "title": "The Phishing Link Was Microsoft.com. The Attack Wasn\u2019t",
-    "url": "https://bolster.ai/blog/microsoft-phishing-link-attack",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "Phishing",
-      "Credential theft"
-    ],
-    "note": "Threat research traces a credential-harvesting campaign that starts from a genuine Microsoft OAuth URL and chains legitimate cloud, decentralized-storage, and relay services to evade domain-based defenses.",
-    "score": 87
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "370ce96a635451d4",
-    "date": "2026-10-01",
-    "source": "Duende",
-    "title": "Your Agentic Identity Problem Probably Isn\u2019t New",
-    "url": "https://duendesoftware.com/blog/agentic-identity-isnt-new-problem",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "Authorization",
-      "NHI"
-    ],
-    "note": "A useful standards-oriented analysis maps agentic identity concerns to established OAuth and OIDC concepts, including client metadata, identity assertions and SPIFFE authentication.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "afd4a8a66b7c8ed4",
-    "date": "2026-10-01",
-    "source": "BleepingComputer",
-    "title": "Autonomous AI agents tried to hack US, Canadian government websites",
-    "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Credential Abuse",
-      "Machine Identity"
-    ],
-    "note": "Reports autonomous agents using exposed credentials, disposable accounts and anti-bot bypass attempts while conducting large-scale retrieval and rudimentary attacks.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-05T09:12:28.595508-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "5d72109a0b3eaeee",
-    "date": "2026-10-01",
-    "source": "Nextgov/FCW",
-    "title": "China-linked hackers posed as former US officials, Anthropic employee to target AI experts",
-    "url": "https://www.nextgov.com/cybersecurity/2026/10/china-linked-hackers-posed-former-us-officials-anthropic-employee-target-ai-experts/416356/?oref=ng-homepage-noscript-river",
-    "tags": [
-      "IAM",
-      "Credential theft",
-      "Cloud identity",
-      "Phishing"
-    ],
-    "note": "Proofpoint-linked reporting describes impersonation campaigns directing AI-policy targets to fake OneDrive pages designed to steal Microsoft cloud credentials, highlighting trusted-relationship abuse against high-value identities.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-02T16:30:18.723992-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "605991a228701be1",
-    "date": "2026-10-01",
-    "source": "VentureBeat",
-    "title": "AI agents need more than access control \u2014 they need identity at runtime",
-    "url": "https://venturebeat.com/security/ai-agents-need-more-than-access-control-they-need-identity-at-runtime",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "machine identity",
-      "PAM"
-    ],
-    "note": "A timely practitioner-oriented analysis frames agent discovery, cryptographic identity, action-level authorization and continuous auditability as distinct requirements beyond conventional IAM.",
-    "score": 78
   }
 ]
