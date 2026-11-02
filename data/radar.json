@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "63028db311b26f99",
+    "date": "2026-11-02",
+    "source": "Google Cloud Threat Intelligence Group",
+    "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+    "tags": [
+      "NHI",
+      "IAM",
+      "OAuth",
+      "Session Theft",
+      "Cloud Identity",
+      "AI Agents"
+    ],
+    "note": "Documents LLMJacking intrusions driven by exposed IAM credentials, service-account keys, PATs, federation tokens and active session tokens, including privilege escalation and unauthorized AI-resource access.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-11-01T23:43:37.675704-07:00",
     "publishedDate": "2026-11-01",
     "id": "95b811421d316970",
@@ -66,6 +85,23 @@
     ],
     "note": "The latest OAuth 2.1 draft adds or tightens guidance relevant to consent phishing, short-lived and scoped bearer tokens, PKCE, redirect handling, token validation, and browser-based applications.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-10-31",
+    "id": "69c0844d91403dc6",
+    "date": "2026-10-31",
+    "source": "IETF OAuth Working Group",
+    "title": "Transaction Tokens For Agents",
+    "url": "https://mailarchive.ietf.org/arch/msg/i-d-announce/mPJx1RcLbSxKcZ2ktrY2qBE3khE/",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "Token Security"
+    ],
+    "note": "Introduces an agent-focused transaction-token draft with explicit delegation context, agent identity propagation and safeguards against identity laundering across token-exchange hops.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
@@ -137,21 +173,41 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "98d73061497950af",
+    "date": "2026-10-30",
+    "source": "Northflank",
+    "title": "Notice history",
+    "url": "https://status.northflank.com/history/1",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Cloud Identity",
+      "AI Agents",
+      "Incident"
+    ],
+    "note": "Primary incident updates told customers to assume environment variables and stored credentials were compromised after unauthorized AI-key use, with later revocation of access tokens, sessions, IAM roles and service accounts.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-10-30",
     "id": "ec6a0a4e6dc90e2f",
     "date": "2026-10-30",
-    "source": "Wiz Research",
+    "source": "Wiz",
     "title": "\u201cBlack October\u201d for AI Developer Platforms",
     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
     "tags": [
       "NHI",
-      "AI-agent authorization",
-      "secrets",
-      "PAM"
+      "Secrets",
+      "Cloud Identity",
+      "AI Agents",
+      "LLMJacking",
+      "Incident"
     ],
-    "note": "Connects at least nine October breaches of AI developer platforms to attackers harvesting environment variables and AI credentials for LLMjacking, with downstream evidence of large-scale Bedrock abuse.",
-    "score": 98
+    "note": "Connects a wave of AI-platform incidents to credential access and shows downstream abuse of stolen cloud and AI keys, including large-scale unauthorized Bedrock usage.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
@@ -224,6 +280,24 @@
   {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Incident",
+      "AI Agents",
+      "IAM",
+      "MFA",
+      "Session Tokens"
+    ],
+    "note": "Primary disclosure describes unauthorized access using offensive agentic techniques and confirms exposure of customer identity data while reporting no evidence of access to credentials, MFA secrets or session tokens.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
     "id": "cd5ec976f11495e7",
     "date": "2026-10-30",
     "source": "BleepingComputer",
@@ -253,22 +327,6 @@
       "Vulnerability"
     ],
     "note": "The actively exploited GitLab flaw enables unauthenticated code execution on self-managed instances, raising immediate concerns for CI/CD credentials, runners, repositories, and deployment identities.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "de035062107f053e",
-    "date": "2026-10-30",
-    "source": "Chainalysis",
-    "title": "Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "AI-agent authorization",
-      "ITDR",
-      "IAM"
-    ],
-    "note": "Primary disclosure of an intrusion using \u201coffensive agentic techniques,\u201d with access to user identity metadata but no evidence so far of stolen credentials or session tokens.",
     "score": 88
   },
   {
@@ -707,13 +765,14 @@
     "title": "Design Tenets for Agent Identity Management Systems",
     "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
     "tags": [
-      "AI-agent authorization",
-      "IAM",
+      "AI Agents",
       "NHI",
-      "Zero standing privilege"
+      "IAM",
+      "Authorization",
+      "Standards"
     ],
-    "note": "NIST proposes tenets including distinct agent identities, linked delegation with attenuation, JIT authorization, policy-reasoning separation, deterministic decisions, and immutable evidence.",
-    "score": 98
+    "note": "Provides government-backed design guidance for distinct agent identities, JIT authorization, runtime verification, revocation and avoiding long-lived bearer tokens or reusable secrets.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
@@ -1098,6 +1157,23 @@
     "score": 93
   },
   {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-10-26",
+    "id": "cb3ce79bbd3a48b1",
+    "date": "2026-10-26",
+    "source": "IETF OAuth Working Group",
+    "title": "Attenuating Authorization Tokens for Agentic Delegation Chains",
+    "url": "https://datatracker.ietf.org/doc/html/draft-niyikiza-oauth-attenuating-agent-tokens",
+    "tags": [
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "Token Security"
+    ],
+    "note": "Proposes cryptographically linked, holder-derived tokens whose authority can only narrow through multi-agent delegation chains and can be verified offline at enforcement points.",
+    "score": 93
+  },
+  {
     "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
     "publishedDate": "2026-10-26",
     "id": "a49f81574cf6f534",
@@ -1148,6 +1224,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-10-26",
+    "id": "f0358970bedc09bf",
+    "date": "2026-10-26",
+    "source": "IBM",
+    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
+    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
+    "tags": [
+      "AI Agents",
+      "IGA",
+      "Authorization",
+      "NHI",
+      "Product Move"
+    ],
+    "note": "A meaningful platform move toward treating AI agents as governed identities, with lifecycle registration, on-behalf-of delegation, short-lived task-scoped tokens and consent-aware authorization.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
     "publishedDate": "2026-10-26",
     "id": "7c4b8263fd55d0aa",
@@ -1179,24 +1273,6 @@
     ],
     "note": "Google describes how agentic automation is compressing attack and remediation timelines, making machine-speed detection, authorization, and response operational requirements.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "f0358970bedc09bf",
-    "date": "2026-10-26",
-    "source": "IBM",
-    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
-    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "IGA",
-      "OAuth",
-      "PAM"
-    ],
-    "note": "IBM\u2019s GA offering combines agent registration, delegated on-behalf-of authorization, short-lived task-scoped tokens, runtime policy enforcement and Vault-backed just-in-time credentials.",
-    "score": 82
   },
   {
     "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
@@ -3355,74 +3431,5 @@
     ],
     "note": "A concrete architecture for routing Auth0 outbound identity traffic across isolated AWS VPCs while preserving centralized policy and auditability.",
     "score": 72
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "c2bc59a43e0e4ef6",
-    "date": "2026-10-02",
-    "source": "BleepingComputer",
-    "title": "Microsoft\u2019s X account hacked in crypto token pump-and-dump scheme",
-    "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
-    "tags": [
-      "IAM",
-      "Account Takeover",
-      "Incident"
-    ],
-    "note": "Microsoft confirmed unauthorized access to its high-profile X account, a useful recent case for examining social-account recovery, session control and privileged brand-account protection.",
-    "score": 70
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "4f4244d6a71d4055",
-    "date": "2026-10-01",
-    "source": "Dutch Institute for Vulnerability Disclosure",
-    "title": "DIVD-2026-00014 - When, not if\u2026",
-    "url": "https://csirt.divd.nl/cases/DIVD-2026-00014/",
-    "tags": [
-      "ITDR",
-      "SESSION_HIJACKING",
-      "PRIVILEGE_ESCALATION",
-      "AI_AGENT",
-      "BREACH"
-    ],
-    "note": "DIVD\u2019s primary incident record says two Zammad zero-days enabled session hijacking, remote code execution, and escalation from a Zammad user to root during an AI-driven intrusion.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "153ed042230555ad",
-    "date": "2026-10-01",
-    "source": "Truffle Security",
-    "title": "Why exposed credentials stay live for years",
-    "url": "https://trufflesecurity.com/blog/why-exposed-credentials-stay-live-for-years",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Machine Identity",
-      "AWS"
-    ],
-    "note": "Research found 543,699 credentials in public repositories that still authenticated, underscoring persistent failures in rotation, ownership and offboarding.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "62aaa2495778a410",
-    "date": "2026-10-01",
-    "source": "Proofpoint",
-    "title": "Hallucinating Credibility: China-Aligned TA419 Impersonates its Way into US AI Policy Circles",
-    "url": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
-    "tags": [
-      "IAM",
-      "MFA",
-      "AiTM",
-      "Session Theft",
-      "Credential Phishing"
-    ],
-    "note": "Proofpoint details rapport-building lures followed by adversary-in-the-middle phishing using a customized Browser-in-the-Browser tool to steal cloud credentials and sessions from AI-policy targets.",
-    "score": 93
   }
 ]

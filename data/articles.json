@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-11-02-morning-brief",
+    "date": "2026-11-02",
+    "coverageDate": "2026-11-01",
+    "edition": "MORNING EDITION // 2026.11.02",
+    "title": "OAuth Adds a Deferred Path for Agent Authorization",
+    "dek": "Highlights from 2026-11-01. The IETF OAuth Working Group published a draft for deferring token issuance while approval, review, or agent-governance decisions complete.",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "AI-agent authorization",
+      "Token security"
+    ],
+    "readTime": "3 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-01, verified against linked sources. Edition dated 2026-11-02; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Standards",
+        "title": "IETF draft defines deferred OAuth token issuance",
+        "summary": "The new Deferred Token Response draft lets an authorization server return a sender-constrained deferral code and polling interval instead of issuing a token immediately. The flow is designed for asynchronous decisions such as human approval, identity verification, governance workflows, and autonomous agents requesting access beyond their standing authorization. ([datatracker.ietf.org](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-deferred-token-response?utm_source=openai))",
+        "why": "This gives agent and enterprise authorization systems a standard protocol boundary between a pending decision and eventual token issuance, without forcing clients to treat approval workflows as generic errors. Implementers should focus on deferral-code protection, polling controls, callback validation, consent freshness, and clear separation between pending authorization and actual resource access.",
+        "source": "IETF OAuth Working Group",
+        "url": "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-deferred-token-response",
+        "confidence": "Primary source",
+        "published_date": "2026-11-01",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-10-30-morning-brief",
     "date": "2026-10-30",
     "coverageDate": "2026-10-29",
@@ -14,7 +45,7 @@
       "Standards"
     ],
     "readTime": "7 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-10-29, verified against linked sources. Edition dated 2026-10-30; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
