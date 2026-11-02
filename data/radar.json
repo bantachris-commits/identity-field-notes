@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-11-01T23:43:37.675704-07:00",
+    "publishedDate": "2026-11-01",
+    "id": "95b811421d316970",
+    "date": "2026-11-01",
+    "source": "IETF OAuth Working Group",
+    "title": "Deferred Token Response \u2014 draft-ietf-oauth-deferred-token-response-01",
+    "url": "https://datatracker.ietf.org/doc/html/draft-ietf-oauth-deferred-token-response",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "AI-agent authorization",
+      "Token security"
+    ],
+    "note": "New OAuth 2.1 draft defines deferred token issuance for approval, governance, and agentic authorization workflows, with sender-constrained deferral codes and polling controls.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-31",
     "id": "ba55b05e53eaee48",
@@ -9,12 +26,13 @@
     "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
     "tags": [
       "NHI",
-      "secrets",
-      "OAuth",
-      "machine identity"
+      "Machine identity",
+      "Secrets",
+      "AI-agent security",
+      "Incident"
     ],
-    "note": "A live incident involving decrypted environment variables, unauthorized AI-key use, and urgent rotation of application credentials, database secrets, and tokens.",
-    "score": 97
+    "note": "Northflank told customers to assume stored environment variables had been decrypted after a breach, with reported unauthorized use of customer AI API keys.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -50,23 +68,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
-    "publishedDate": "2026-10-31",
-    "id": "a291b7051796cec4",
-    "date": "2026-10-31",
-    "source": "BleepingComputer",
-    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
-    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
-    "tags": [
-      "AI agents",
-      "NHI",
-      "IAM",
-      "incident response"
-    ],
-    "note": "Important early disclosure of an AI-assisted intrusion into internal systems and tools, with customer identity data accessed while credential and session-token exposure remains under investigation.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-31",
     "id": "9a73492867a45c41",
@@ -82,6 +83,23 @@
     ],
     "note": "This new OAuth draft specifies Cross-App Access using identity assertions, token exchange and federated trust so an IdP can broker app-to-app API access while the resource server retains local authorization control.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
+    "publishedDate": "2026-10-31",
+    "id": "a291b7051796cec4",
+    "date": "2026-10-31",
+    "source": "BleepingComputer",
+    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "tags": [
+      "AI-agent security",
+      "IAM",
+      "Incident",
+      "Identity data"
+    ],
+    "note": "Chainalysis reported unauthorized access using what it called offensive agentic techniques and exposure of user IDs, names, emails, and organizational role labels, while reporting no evidence of stolen credentials or session tokens to date.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
@@ -286,23 +304,6 @@
     ],
     "note": "FIDO reports its 2026 Passkey Index findings, including broad account eligibility but a substantial enrollment gap, and introduces a deployment rubric useful for practitioners planning adoption and measuring real usage.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "62cd851ccc9d8dbc",
-    "date": "2026-10-30",
-    "source": "Delinea Community",
-    "title": "StrongDM acquisition and integration FAQS",
-    "url": "https://community.delinea.com/updates-3/strongdm-acquisition-and-integration-faqs-904",
-    "tags": [
-      "PAM",
-      "NHI",
-      "AI-agents",
-      "Authorization"
-    ],
-    "note": "Explains the post-acquisition transition of StrongDM capabilities into Delinea Runtime Authorization, including product continuity, branding, roadmap, and planned platform integration.",
-    "score": 82
   },
   {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
@@ -559,6 +560,24 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
+    "publishedDate": "2026-10-28",
+    "id": "62cd851ccc9d8dbc",
+    "date": "2026-10-28",
+    "source": "Delinea",
+    "title": "StrongDM acquisition and integration FAQs",
+    "url": "https://community.delinea.com/updates-3/strongdm-acquisition-and-integration-faqs-904",
+    "tags": [
+      "PAM",
+      "Runtime authorization",
+      "NHI",
+      "AI-agent authorization",
+      "Market"
+    ],
+    "note": "Delinea clarifies the post-acquisition operating model: StrongDM capabilities continue as Delinea Runtime Authorization, with integration into the Delinea Platform planned during 2027.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
     "publishedDate": "2026-10-28",
     "id": "70a17c1d3a5b4867",
@@ -688,13 +707,12 @@
     "title": "Design Tenets for Agent Identity Management Systems",
     "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
     "tags": [
+      "AI-agent authorization",
+      "IAM",
       "NHI",
-      "AI-agent-authorization",
-      "IGA",
-      "PAM",
-      "Standards"
+      "Zero standing privilege"
     ],
-    "note": "NIST proposes ten practical design principles covering distinct agent identities, delegated authority attenuation, zero standing privilege, revocable authorization, deterministic policy and immutable evidence.",
+    "note": "NIST proposes tenets including distinct agent identities, linked delegation with attenuation, JIT authorization, policy-reasoning separation, deterministic decisions, and immutable evidence.",
     "score": 98
   },
   {
@@ -777,11 +795,12 @@
     "tags": [
       "Google Cloud",
       "IAM",
-      "MCP",
-      "AI-Agent Authorization"
+      "PAM",
+      "AI-agent authorization",
+      "MCP"
     ],
-    "note": "Google introduces agent-facing IAM Helper components that make Policy Intelligence and Privileged Access Manager callable by autonomous agents, raising important questions about guardrails around agents that can administer IAM.",
-    "score": 91
+    "note": "Google Cloud introduced an agent-facing IAM orchestration layer that invokes Policy Intelligence and Privileged Access Manager while addressing agent over-permissioning and least-privilege administration.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-28T07:28:23.547294-06:00",
@@ -3405,22 +3424,5 @@
     ],
     "note": "Proofpoint details rapport-building lures followed by adversary-in-the-middle phishing using a customized Browser-in-the-Browser tool to steal cloud credentials and sessions from AI-policy targets.",
     "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
-    "publishedDate": "2026-10-01",
-    "id": "b3fb171bc6d8b573",
-    "date": "2026-10-01",
-    "source": "WorkOS",
-    "title": "Device code phishing: How EvilTokens worked and how to stop it",
-    "url": "https://workos.com/blog/device-code-phishing-eviltokens",
-    "tags": [
-      "OAuth",
-      "Microsoft Entra",
-      "Phishing",
-      "MFA Bypass"
-    ],
-    "note": "A timely technical analysis of the EvilTokens campaign shows how attackers abused the legitimate OAuth device-authorization flow to compromise Microsoft 365 accounts without stealing passwords.",
-    "score": 91
   }
 ]
