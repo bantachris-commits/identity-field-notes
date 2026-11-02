@@ -36,22 +36,21 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
-    "publishedDate": "2026-10-31",
-    "id": "ba55b05e53eaee48",
-    "date": "2026-10-31",
-    "source": "BleepingComputer",
-    "title": "Northflank security breach leads to abuse of customers' AI API keys",
-    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
+    "publishedDate": "2026-11-01",
+    "id": "d2a38c58463a3753",
+    "date": "2026-11-01",
+    "source": "Trigger.dev",
+    "title": "Security Disclosure: Sunday November 1st",
+    "url": "https://trigger.dev/blog/security-incident-nov-2026",
     "tags": [
       "NHI",
-      "Machine identity",
+      "AI-agents",
       "Secrets",
-      "AI-agent security",
-      "Incident"
+      "Incident-response"
     ],
-    "note": "Northflank told customers to assume stored environment variables had been decrypted after a breach, with reported unauthorized use of customer AI API keys.",
-    "score": 96
+    "note": "Trigger.dev disclosed that an attacker accessed environment variables belonging to a subset of organizations, highlighting the risk of exposed credentials in hosted agent and workflow platforms.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -85,6 +84,23 @@
     ],
     "note": "The latest OAuth 2.1 draft adds or tightens guidance relevant to consent phishing, short-lived and scoped bearer tokens, PKCE, redirect handling, token validation, and browser-based applications.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "ba55b05e53eaee48",
+    "date": "2026-10-31",
+    "source": "BleepingComputer",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "AI-agents",
+      "Cloud-security"
+    ],
+    "note": "Northflank told customers to assume environment variables were decrypted after a platform breach, with confirmed unauthorized use of customer AI API keys and possible downstream credential abuse.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
@@ -200,14 +216,13 @@
     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
     "tags": [
       "NHI",
+      "AI-agents",
       "Secrets",
-      "Cloud Identity",
-      "AI Agents",
-      "LLMJacking",
-      "Incident"
+      "Cloud-security",
+      "AWS"
     ],
-    "note": "Connects a wave of AI-platform incidents to credential access and shows downstream abuse of stolen cloud and AI keys, including large-scale unauthorized Bedrock usage.",
-    "score": 97
+    "note": "Wiz connects at least nine AI-platform incidents to credential access and theft of environment variables, documenting downstream LLM-jacking involving large-scale Amazon Bedrock API abuse.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-11-01T11:03:34.904173-07:00",
@@ -3413,23 +3428,6 @@
       "Authentication"
     ],
     "note": "A short-lived global PingOne MFA degradation is relevant to practitioners planning authentication failover, incident handling and availability safeguards.",
-    "score": 72
-  },
-  {
-    "firstSeenAt": "2026-10-03T15:42:42.057390-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "ae8ef60ed39121c0",
-    "date": "2026-10-02",
-    "source": "Auth0",
-    "title": "Architecting Secure Identity: Extending Auth0 PrivateLink with Intelligent Gateways",
-    "url": "https://auth0.com/blog/extending-auth0-privatelink-with-intelligent-gateways/",
-    "tags": [
-      "IAM",
-      "CIAM",
-      "AWS",
-      "Network Security"
-    ],
-    "note": "A concrete architecture for routing Auth0 outbound identity traffic across isolated AWS VPCs while preserving centralized policy and auditability.",
     "score": 72
   }
 ]
