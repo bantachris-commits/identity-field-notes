@@ -2,21 +2,87 @@
   {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-11-02",
-    "id": "63028db311b26f99",
+    "id": "2e54985e07586244",
     "date": "2026-11-02",
-    "source": "Google Cloud Threat Intelligence Group",
+    "source": "Google Threat Intelligence Group / Mandiant",
     "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
     "tags": [
       "NHI",
-      "IAM",
-      "OAuth",
-      "Session Theft",
-      "Cloud Identity",
-      "AI Agents"
+      "Cloud IAM",
+      "Service accounts",
+      "Secrets",
+      "AI-agent authorization"
     ],
-    "note": "Documents LLMJacking intrusions driven by exposed IAM credentials, service-account keys, PATs, federation tokens and active session tokens, including privilege escalation and unauthorized AI-resource access.",
-    "score": 99
+    "note": "Primary research details multiple 2026 intrusions where stolen IAM credentials, service-account keys, federation tokens, session tokens and API keys enabled LLM hijacking, privilege escalation and fraudulent cloud charges exceeding $100,000 per day.",
+    "score": 100
+  },
+  {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "98d73061497950af",
+    "date": "2026-11-02",
+    "source": "Northflank",
+    "title": "Security incident",
+    "url": "https://status.northflank.com/history/1",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "Cloud IAM",
+      "Incident response"
+    ],
+    "note": "Northflank\u2019s incident update says the attack focused on secrets in its control plane, required broad customer credential rotation, and involved patching CVE-2026-98432 across its fleet.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-03T00:10:52.740508-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "0e35ca8c91cc8143",
+    "date": "2026-11-02",
+    "source": "NVIDIA / Tom's Hardware",
+    "title": "Nvidia Brev security breach may have exposed SSH keys used to access customer VMs \u2014 investigation finds unauthorized activity spanning 16 days, but no evidence of misuse",
+    "url": "https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse",
+    "tags": [
+      "PAM",
+      "Machine identity",
+      "SSH keys",
+      "Secrets"
+    ],
+    "note": "NVIDIA rotated SSH keys provisioned by Brev after detecting unauthorized activity, illustrating the blast radius and remediation requirements when cloud-development machine credentials may have been exposed.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-03T00:10:52.740508-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "df4c3383a4e5edee",
+    "date": "2026-11-02",
+    "source": "Genesys Cloud",
+    "title": "Genesys Cloud Collaborate/Communicate is adopting PKCE Authorization Code OAuth flow",
+    "url": "https://community.genesys.com/discussion/genesys-cloud-collaborate-communicate-is-adopting-pkce-authorization-code-oauth-flow",
+    "tags": [
+      "OAuth",
+      "Token security",
+      "Session security"
+    ],
+    "note": "Genesys is replacing the deprecated implicit grant with authorization code plus PKCE so access tokens no longer appear in browser URLs or local storage, directly addressing token leakage and session-abuse risk.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
+    "publishedDate": "2026-11-01",
+    "id": "d2a38c58463a3753",
+    "date": "2026-11-01",
+    "source": "Trigger.dev",
+    "title": "Security Disclosure: Sunday November 1st",
+    "url": "https://trigger.dev/blog/security-incident-nov-2026",
+    "tags": [
+      "Secrets",
+      "NHI",
+      "Cloud IAM",
+      "Incident response"
+    ],
+    "note": "Trigger.dev reports unauthorized access to environment variables for a subset of organizations after an exploit, making this a direct reminder to rotate workload secrets and assess downstream service-account exposure.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-01T23:43:37.675704-07:00",
@@ -33,23 +99,6 @@
       "Token security"
     ],
     "note": "New OAuth 2.1 draft defines deferred token issuance for approval, governance, and agentic authorization workflows, with sender-constrained deferral codes and polling controls.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
-    "publishedDate": "2026-11-01",
-    "id": "d2a38c58463a3753",
-    "date": "2026-11-01",
-    "source": "Trigger.dev",
-    "title": "Security Disclosure: Sunday November 1st",
-    "url": "https://trigger.dev/blog/security-incident-nov-2026",
-    "tags": [
-      "NHI",
-      "AI-agents",
-      "Secrets",
-      "Incident-response"
-    ],
-    "note": "Trigger.dev disclosed that an attacker accessed environment variables belonging to a subset of organizations, highlighting the risk of exposed credentials in hosted agent and workflow platforms.",
     "score": 91
   },
   {
@@ -189,39 +238,20 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
-    "publishedDate": "2026-10-30",
-    "id": "98d73061497950af",
-    "date": "2026-10-30",
-    "source": "Northflank",
-    "title": "Notice history",
-    "url": "https://status.northflank.com/history/1",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Cloud Identity",
-      "AI Agents",
-      "Incident"
-    ],
-    "note": "Primary incident updates told customers to assume environment variables and stored credentials were compromised after unauthorized AI-key use, with later revocation of access tokens, sessions, IAM roles and service accounts.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-10-30",
     "id": "ec6a0a4e6dc90e2f",
     "date": "2026-10-30",
-    "source": "Wiz",
+    "source": "Wiz Research",
     "title": "\u201cBlack October\u201d for AI Developer Platforms",
     "url": "https://www.wiz.io/blog/black-october-for-ai-developer-platforms",
     "tags": [
       "NHI",
-      "AI-agents",
       "Secrets",
-      "Cloud-security",
-      "AWS"
+      "AI-agent authorization",
+      "Cloud IAM"
     ],
-    "note": "Wiz connects at least nine AI-platform incidents to credential access and theft of environment variables, documenting downstream LLM-jacking involving large-scale Amazon Bedrock API abuse.",
+    "note": "A useful cross-incident analysis of attacks against at least nine AI developer platforms, with credential access, exposed environment variables and stolen AI keys emerging as recurring control failures.",
     "score": 96
   },
   {
@@ -3395,39 +3425,5 @@
     ],
     "note": "A high-profile account takeover illustrates the operational and reputational impact of unauthorized access to a trusted corporate identity, although the access mechanism remains under investigation.",
     "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-05T18:16:57.227328-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "106b85f3b15c3e72",
-    "date": "2026-10-02",
-    "source": "Okta",
-    "title": "Agent SSO vs. human SSO: How Cross-App Access solves non-human identity sprawl",
-    "url": "https://www.okta.com/en-sg/identity-101/agent-sso-vs-human-sso-cross-app-access/",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "OAuth",
-      "Machine Identity"
-    ],
-    "note": "This is a useful technical framing of why generic service accounts fail for agent attribution and how token exchange, delegated identity and short-lived audience-bound tokens can replace standing API-key access.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "d6b958cd9e1a55ee",
-    "date": "2026-10-02",
-    "source": "Ping Identity",
-    "title": "PingOne MFA - Global - Degradation",
-    "url": "https://pingoru.io/providers/ping-identity/incidents/12182638",
-    "tags": [
-      "Ping Identity",
-      "MFA",
-      "Availability",
-      "Authentication"
-    ],
-    "note": "A short-lived global PingOne MFA degradation is relevant to practitioners planning authentication failover, incident handling and availability safeguards.",
-    "score": 72
   }
 ]
