@@ -18,6 +18,24 @@
     "score": 100
   },
   {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "bfa232f07a1daae3",
+    "date": "2026-11-02",
+    "source": "Google Threat Intelligence Group",
+    "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models?hl=en",
+    "tags": [
+      "NHI",
+      "IAM",
+      "Cloud Security",
+      "AI-Agent Authorization",
+      "Secrets"
+    ],
+    "note": "Mandiant details 2026 LLM-jacking incidents in which stolen cloud access keys enabled attackers to activate AI services, generate large charges, and abuse over-privileged identities.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-11-02",
     "id": "98d73061497950af",
@@ -52,6 +70,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "96771a62c058482e",
+    "date": "2026-11-02",
+    "source": "Google Cloud",
+    "title": "Agent Anomaly Detection overview",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-anomalies-overview",
+    "tags": [
+      "AI-Agent Authorization",
+      "ITDR",
+      "NHI",
+      "Authorization"
+    ],
+    "note": "Google added automatic enrollment for agent anomaly monitoring, with detections covering tool misuse, identity privilege abuse, confused-deputy behavior, rogue agents, and resource exhaustion.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-11-03T00:10:52.740508-07:00",
     "publishedDate": "2026-11-02",
     "id": "df4c3383a4e5edee",
@@ -66,6 +101,40 @@
     ],
     "note": "Genesys is replacing the deprecated implicit grant with authorization code plus PKCE so access tokens no longer appear in browser URLs or local storage, directly addressing token leakage and session-abuse risk.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "51c62b4a96d203d3",
+    "date": "2026-11-02",
+    "source": "Axiomatics",
+    "title": "Axiomatics Authorization Management Platform 26.2 Release",
+    "url": "https://axiomatics.com/news/axiomatics-authorization-management-platform-26-2-release/",
+    "tags": [
+      "Authorization",
+      "AuthZEN",
+      "AI-Agent Authorization",
+      "IGA"
+    ],
+    "note": "The release adds native AuthZEN support, graphical and AI-assisted policy authoring, policy rollback and activity history, and deployment options relevant to centralized fine-grained authorization.",
+    "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "305f18c012c0a5b8",
+    "date": "2026-11-02",
+    "source": "Microsoft Entra",
+    "title": "Global Secure Access: Private and Internet Access in one offering",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/global-secure-access-private-access-and-internet-access-in-one-offering/4569098",
+    "tags": [
+      "Microsoft Entra",
+      "Zero Trust",
+      "IAM",
+      "AI-Agent Authorization"
+    ],
+    "note": "Microsoft made a unified Entra Global Secure Access offering available, positioning identity-aware controls for private and internet traffic across users and AI agents.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
@@ -289,6 +358,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "701a4bd948c862c2",
+    "date": "2026-10-30",
+    "source": "Binance",
+    "title": "Security Incident Update (2026-10-30",
+    "url": "https://www.binance.com/en-IN/square/post/382736847211186",
+    "tags": [
+      "Incident",
+      "PAM",
+      "NHI",
+      "Authorization",
+      "Compromised Credentials"
+    ],
+    "note": "Binance\u2019s initial account links a roughly $6.3 billion hot-wallet theft to a potentially compromised DevOps engineer laptop, access to a service container, and unauthorized withdrawal transactions.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-30",
     "id": "bf6d0a1c66992012",
@@ -328,16 +415,15 @@
     "id": "de035062107f053e",
     "date": "2026-10-30",
     "source": "Chainalysis",
-    "title": "Chainalysis Security Incident Information",
+    "title": "Updated Nov 2: Chainalysis Security Incident Information",
     "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
     "tags": [
       "Incident",
-      "AI Agents",
+      "AI-Agent Authorization",
       "IAM",
-      "MFA",
-      "Session Tokens"
+      "Session Security"
     ],
-    "note": "Primary disclosure describes unauthorized access using offensive agentic techniques and confirms exposure of customer identity data while reporting no evidence of access to credentials, MFA secrets or session tokens.",
+    "note": "Chainalysis disclosed unauthorized access using what it calls offensive agentic techniques, with customer identity and role data accessed and products taken offline while the investigation continues.",
     "score": 91
   },
   {
@@ -356,6 +442,23 @@
     ],
     "note": "Binance attributes the theft to compromise of a DevOps engineer's laptop followed by access to a service container and unauthorized withdrawal transactions, highlighting privileged workload and authorization controls.",
     "score": 90
+  },
+  {
+    "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "2c2f5ba60b52f844",
+    "date": "2026-10-30",
+    "source": "Cathay Pacific",
+    "title": "Personal data security incident involving a third-party service provider",
+    "url": "https://www.cathaypacific.com/cx/en_IE/latest-news/security-and-operational-changes/personal-data-security.html",
+    "tags": [
+      "Incident",
+      "NHI",
+      "Third-Party Risk",
+      "Credentials"
+    ],
+    "note": "Cathay reported that an attacker used credentials assigned to an Amadeus system account to access reservation data affecting about 53,000 bookings, highlighting long-lived or insufficiently monitored service-account risk.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -3324,106 +3427,5 @@
     ],
     "note": "The report describes an AI agent accessing a NSW government application beyond its intended authorization boundary, highlighting the need for agent identity, tool-level policy, and runtime containment.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "bf9c77008677e484",
-    "date": "2026-10-02",
-    "source": "Technical University of Denmark",
-    "title": "Cyberattack on DTU: Notification of a personal data breach",
-    "url": "https://www.dtu.dk/english/newsarchive/2026/10/cyberattack-on-dtu_notification-of-a-personal-data-breach",
-    "tags": [
-      "Incident",
-      "IAM",
-      "Compromised Credentials",
-      "Identity Governance"
-    ],
-    "note": "DTU's primary disclosure says attackers compromised DTU profiles to access its identity and access-management database, exposing data on potentially 200,000 current and former users and underscoring the impact of compromised identities plus long-retained records.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-04T06:48:53.620806-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "cb70a7a7537918b7",
-    "date": "2026-10-02",
-    "source": "GitHub Changelog",
-    "title": "Stateless GitHub App installation tokens rolled out",
-    "url": "https://github.blog/changelog/2026-10-02-stateless-github-app-installation-tokens-rolled-out/",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "TOKEN_SECURITY",
-      "MACHINE_IDENTITY"
-    ],
-    "note": "GitHub has completed the rollout of longer stateless installation tokens, requiring token consumers, gateways, secret stores, and redaction rules to stop assuming the legacy 40-character format.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-04T00:15:56.097797-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "77cbe1b8188d5cf9",
-    "date": "2026-10-02",
-    "source": "BleepingComputer",
-    "title": "The EDR blind spot: 3 ways browser attacks evade endpoint telemetry",
-    "url": "https://www.bleepingcomputer.com/news/security/the-edr-blind-spot-3-ways-browser-attacks-evade-endpoint-telemetry/amp/",
-    "tags": [
-      "ITDR",
-      "Session Theft",
-      "OAuth",
-      "MFA Bypass"
-    ],
-    "note": "Useful incident-oriented analysis of AiTM phishing, session-cookie replay, OAuth-token theft, and inbox-rule persistence that can evade conventional endpoint telemetry.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-05T18:16:57.227328-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "93e95502608253a1",
-    "date": "2026-10-02",
-    "source": "Okta",
-    "title": "How Okta Helps Amazon Bedrock AgentCore Secure AI Agent Identity",
-    "url": "https://www.okta.com/en-gb/blog/ai/okta-amazon-bedrock-agentcore-security/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "NHI",
-      "Authorization"
-    ],
-    "note": "The article provides a concrete ID-JAG/XAA delegation pattern for carrying both user and agent attribution across Amazon Bedrock AgentCore and MCP tool calls using short-lived, audience-restricted tokens.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-04T15:52:24.072922-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "2b92c4ceeda71991",
-    "date": "2026-10-02",
-    "source": "BleepingComputer",
-    "title": "Warlock ransomware breach SharePoint in water, telecom operator attacks",
-    "url": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
-    "tags": [
-      "AD",
-      "PAM",
-      "Credential Abuse",
-      "Incident"
-    ],
-    "note": "Post-compromise activity included Active Directory enumeration, credential spraying and remote command execution, illustrating how an initial application compromise can become an identity and privilege attack path.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-03T10:39:01.000337-06:00",
-    "publishedDate": "2026-10-02",
-    "id": "331e472c72a5947a",
-    "date": "2026-10-02",
-    "source": "Microsoft",
-    "title": "Microsoft\u2019s X account hacked in crypto token pump-and-dump scheme",
-    "url": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/amp/",
-    "tags": [
-      "ITDR",
-      "Account Takeover",
-      "Incident Response"
-    ],
-    "note": "A high-profile account takeover illustrates the operational and reputational impact of unauthorized access to a trusted corporate identity, although the access mechanism remains under investigation.",
-    "score": 82
   }
 ]
