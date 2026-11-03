@@ -1,5 +1,59 @@
 [
   {
+    "id": "2026-11-03-morning-brief",
+    "date": "2026-11-03",
+    "coverageDate": "2026-11-02",
+    "edition": "MORNING EDITION // 2026.11.03",
+    "title": "Identity\u2019s AI Credential Blast Radius",
+    "dek": "Highlights from 2026-11-02. Yesterday\u2019s strongest identity signals centered on cloud credentials being monetized for AI abuse, alongside two disclosures involving exposed secrets and machine access.",
+    "tags": [
+      "IAM",
+      "PAM",
+      "Machine IAM",
+      "Authentication",
+      "AI-agent identity"
+    ],
+    "readTime": "5 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-02, verified against linked sources. Edition dated 2026-11-03; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Mandiant documents the operational rise of LLMJacking",
+        "summary": "Google Threat Intelligence Group says financially motivated actors are hijacking enterprise access to LLMs through exposed or stolen IAM credentials, service-account keys, federation tokens, session tokens, PATs and API keys. Investigated incidents produced fraudulent AI and cloud charges exceeding $100,000 in a day, with some organizations reaching cumulative losses of up to $1 million. ([cloud.google.com](https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/))",
+        "why": "Treat model access as a privileged identity path, not merely an application setting. Detection should cover service-account and access-key creation, token abuse, unauthorized model enablement, low-volume credential-validation requests and anomalous billing activity; least privilege and short-lived credentials matter as much for AI workloads as for conventional cloud administration. ([cloud.google.com](https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/))",
+        "source": "Google Threat Intelligence Group / Mandiant",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
+        "confidence": "Primary source",
+        "published_date": "2026-11-02",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Northflank tells customers to rotate control-plane secrets after attack",
+        "summary": "Northflank reported a security incident at 11:09 AM UTC on November 2, 2026, saying the attack appeared focused on secrets held in its control plane rather than running workloads or workload data. The company advised customers to rotate integration and project secrets, including AI-provider keys, cloud credentials, private keys and database credentials; it also revoked affected sessions, tokens, VCS integrations and cross-account IAM roles where possible. ([status.northflank.com](https://status.northflank.com/history/1))",
+        "why": "The response illustrates why platforms that broker cloud and AI credentials need customer-visible blast-radius analysis, rapid credential rotation and auditable revocation. Northflank said the root cause remained under review, so customers should distinguish confirmed exposure of control-plane secrets from any unconfirmed claim of workload or data access. ([status.northflank.com](https://status.northflank.com/history/1))",
+        "source": "Northflank",
+        "url": "https://status.northflank.com/history/1",
+        "confidence": "Primary source",
+        "published_date": "2026-11-02",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "NVIDIA rotates Brev SSH keys after unauthorized platform activity",
+        "summary": "NVIDIA replaced SSH keys provisioned through its Brev cloud development platform after detecting unauthorized activity spanning October 4\u201320. The company reportedly found no evidence that the keys were misused, but it has not disclosed how access was obtained or whether customer workloads or data were accessed. ([tomshardware.com](https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse))",
+        "why": "A provider-managed SSH key can become a cross-customer machine-identity dependency. Rotation should be paired with host-level review for persistence, unauthorized keys and active sessions; replacing the key alone does not establish that previously accessible systems are clean. ([tomshardware.com](https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse))",
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-02",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-02-morning-brief",
     "date": "2026-11-02",
     "coverageDate": "2026-11-01",
@@ -13,7 +67,7 @@
       "Token security"
     ],
     "readTime": "3 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-01, verified against linked sources. Edition dated 2026-11-02; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
