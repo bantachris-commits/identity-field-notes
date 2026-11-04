@@ -17,6 +17,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "9ca07b46843ba208",
+    "date": "2026-11-03",
+    "source": "The Hacker News",
+    "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+    "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+    "tags": [
+      "Passkeys",
+      "MFA",
+      "Credential Security",
+      "Incident Response"
+    ],
+    "note": "A timely password-manager incident watch: mSeven urged current and former users to rotate passwords, reset 2FA and replace passkeys without initially disclosing the affected systems or confirming vault compromise.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-11-02",
     "id": "2e54985e07586244",
@@ -89,23 +106,6 @@
   {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
     "publishedDate": "2026-11-02",
-    "id": "647e5f05d7199de5",
-    "date": "2026-11-02",
-    "source": "IETF OAuth Working Group",
-    "title": "Scenario-Based Service Discovery and Authorization Protocol in Agent Environments",
-    "url": "https://datatracker.ietf.org/doc/draft-liu-oauth-scenario-discovery-authz/",
-    "tags": [
-      "OAuth",
-      "AI-agent authorization",
-      "NHI",
-      "DPoP"
-    ],
-    "note": "The draft defines capability advertisements, intent matching, delegated authorization, DPoP-bound agent tokens, runtime enforcement, and remediation for agent-to-application interactions.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-02",
     "id": "6d2b5215232f178a",
     "date": "2026-11-02",
     "source": "arXiv",
@@ -119,6 +119,22 @@
     ],
     "note": "A new benchmark evaluates how attacker-controlled RAG context can induce provider-valid AWS IAM policies that exceed intended authorization across scope, trust, permissions boundaries, and role delegation.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "647e5f05d7199de5",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "Scenario-Based Service Discovery and Authorization Protocol in Agent Environments",
+    "url": "https://datatracker.ietf.org/doc/draft-liu-oauth-scenario-discovery-authz/",
+    "tags": [
+      "OAuth",
+      "AI-Agent Authorization",
+      "Authorization"
+    ],
+    "note": "New draft proposes capability discovery, delegated sessions, DPoP-bound tokens and runtime authorization boundaries for agents without exposing users\u2019 primary credentials.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-03T00:10:52.740508-07:00",
@@ -155,6 +171,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "5b382fcb9a40c91f",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "OAuth SPIFFE Client Authentication",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-oauth-spiffe-client-auth/",
+    "tags": [
+      "OAuth",
+      "NHI",
+      "Machine Identity",
+      "SPIFFE"
+    ],
+    "note": "Updated draft profiles SPIFFE JWT-, workload- and X.509-SVIDs for OAuth client authentication, reducing reliance on distributed static client secrets.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-11-03T00:10:52.740508-07:00",
     "publishedDate": "2026-11-02",
     "id": "df4c3383a4e5edee",
@@ -188,6 +221,25 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "aa0c45cea862c289",
+    "date": "2026-11-02",
+    "source": "Palo Alto Networks / Idira",
+    "title": "Idira Platform Updates (September-October 2026): What Shipped for Workload and Agentic Identity Security",
+    "url": "https://www.paloaltonetworks.com/blog/identity-security/idira-machine-ai-agent-identity-updates-september-october-2026/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Machine Identity",
+      "AI-Agent Authorization",
+      "OAuth",
+      "SPIFFE"
+    ],
+    "note": "Useful release-level overview covering brokered MCP access, dynamic client registration, managed agent identities, SPIFFE SVIDs, workload attestation and short-lived credentials.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
     "publishedDate": "2026-11-02",
     "id": "51c62b4a96d203d3",
@@ -205,6 +257,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "01d19205bbea0e4a",
+    "date": "2026-11-02",
+    "source": "AWS",
+    "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+    "tags": [
+      "AWS",
+      "IAM",
+      "AI-Agent Authorization",
+      "NHI"
+    ],
+    "note": "Highlights Step Functions exposure as Bedrock AgentCore tools and cross-Region trusted identity propagation in IAM Identity Center, both relevant to agent authorization and auditability.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
     "publishedDate": "2026-11-02",
     "id": "305f18c012c0a5b8",
@@ -219,6 +288,22 @@
       "AI-Agent Authorization"
     ],
     "note": "Microsoft made a unified Entra Global Secure Access offering available, positioning identity-aware controls for private and internet traffic across users and AI agents.",
+    "score": 82
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "cad413f3aa83e425",
+    "date": "2026-11-02",
+    "source": "WorkOS",
+    "title": "October 30th, 2026 Data Security Incident",
+    "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident",
+    "tags": [
+      "IAM",
+      "Incident Response",
+      "AI-Agent Security"
+    ],
+    "note": "Primary disclosure describes unauthorized access to an internal customer-facing tool, AI-assisted reconnaissance, and exposure of CRM and support metadata while finding no evidence of production identity-service access.",
     "score": 82
   },
   {
@@ -289,23 +374,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
-    "publishedDate": "2026-10-31",
-    "id": "ba55b05e53eaee48",
-    "date": "2026-10-31",
-    "source": "BleepingComputer",
-    "title": "Northflank security breach leads to abuse of customers' AI API keys",
-    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "AI-agents",
-      "Cloud-security"
-    ],
-    "note": "Northflank told customers to assume environment variables were decrypted after a platform breach, with confirmed unauthorized use of customer AI API keys and possible downstream credential abuse.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-10-31",
     "id": "69c0844d91403dc6",
@@ -321,6 +389,24 @@
     ],
     "note": "Introduces an agent-focused transaction-token draft with explicit delegation context, agent identity propagation and safeguards against identity laundering across token-exchange hops.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
+    "publishedDate": "2026-10-31",
+    "id": "ba55b05e53eaee48",
+    "date": "2026-10-31",
+    "source": "BleepingComputer",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "AI-Agent Security",
+      "Cloud IAM",
+      "Incident Response"
+    ],
+    "note": "Reports Northflank\u2019s warning that stored environment variables may have been decrypted and customer-confirmed unauthorized use of AI API keys; the initial access path remained undisclosed.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
@@ -442,6 +528,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "ad4296e15ebcf305",
+    "date": "2026-10-30",
+    "source": "Microsoft Security",
+    "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+    "tags": [
+      "Active Directory",
+      "ITDR",
+      "Privileged Identity",
+      "MFA Bypass"
+    ],
+    "note": "Detailed primary research shows Teams help-desk impersonation leading to Quick Assist access, AD CS certificate abuse, privileged identity takeover and the persistence problem of containment exclusions.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
     "publishedDate": "2026-10-30",
     "id": "b435b9d5fb8e7891",
@@ -509,23 +612,6 @@
     ],
     "note": "A trojanized AI coding extension added attacker SSH keys, persistence and reverse-tunnel logic while exposing host details and names of environment variables associated with sensitive credentials.",
     "score": 92
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "de035062107f053e",
-    "date": "2026-10-30",
-    "source": "Chainalysis",
-    "title": "Updated Nov 2: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Incident",
-      "AI-Agent Authorization",
-      "IAM",
-      "Session Security"
-    ],
-    "note": "Chainalysis disclosed unauthorized access using what it calls offensive agentic techniques, with customer identity and role data accessed and products taken offline while the investigation continues.",
-    "score": 91
   },
   {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
@@ -612,6 +698,22 @@
     ],
     "note": "Oracle describes IAM patterns for agent access to enterprise tools, including OAuth support for MCP, action-bound human approval and authorization decisions that distinguish user entitlement from approval of a specific agent action.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "IAM",
+      "Incident Response",
+      "Phishing Risk"
+    ],
+    "note": "Primary incident notice reports access to user IDs, names, email addresses and role labels, while stating there is no evidence that passwords, MFA secrets or session tokens were accessed.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
@@ -3045,6 +3147,22 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-10-14",
+    "id": "d1ac115d2778ec20",
+    "date": "2026-10-14",
+    "source": "Salesforce",
+    "title": "Connected App & External Client App Security Requirement Updates",
+    "url": "https://help.salesforce.com/s/articleView?id=005461287&language=en_US&type=1",
+    "tags": [
+      "OAuth",
+      "Session Security",
+      "Token Security"
+    ],
+    "note": "Production enforcement on November 4 limits refresh-token idle lifetime to 30 days and begins a broader retirement path for legacy OAuth flows and connected apps.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
     "publishedDate": "2026-10-14",
     "id": "ef9d3d30302a5c1a",
@@ -3298,130 +3416,5 @@
     ],
     "note": "OIDF approved the final OpenID Connect Ephemeral Subject Identifier specification, a material federation and identifier-privacy standardization milestone.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
-    "publishedDate": "2026-10-06",
-    "id": "d25e9cd8abafea95",
-    "date": "2026-10-06",
-    "source": "SailPoint",
-    "title": "From Chaos to Control: SailPoint Unlocks a Secure Agentic Era with Autonomous Identity Security",
-    "url": "https://www.globenewswire.com/news-release/2026/10/06/3375450/0/en/from-chaos-to-control-sailpoint-unlocks-a-secure-agentic-era-with-autonomous-identity-security.html",
-    "tags": [
-      "IGA",
-      "NHI",
-      "AI-agent-authorization",
-      "ITDR",
-      "JIT-access"
-    ],
-    "note": "SailPoint announced agentic identity governance, autonomous identity-security posture management, runtime authorization, agent kill switches, and zero-standing-privilege controls for human, machine, and AI-agent identities.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
-    "publishedDate": "2026-10-06",
-    "id": "26e65fb177375e4a",
-    "date": "2026-10-06",
-    "source": "BleepingComputer",
-    "title": "Fake ChatGPT, Gemini Sites steal advertising accounts, MFA codes",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-chatgpt-gemini-sites-steal-advertising-accounts-mfa-codes/",
-    "tags": [
-      "MFA",
-      "Phishing",
-      "OAuth",
-      "Okta",
-      "Credential-theft"
-    ],
-    "note": "A new browser-in-the-browser campaign impersonates ChatGPT, Gemini, Claude, and Perplexity to harvest credentials and MFA state from advertising administrators, including through fake Google and Okta workflows.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
-    "publishedDate": "2026-10-06",
-    "id": "9029a82c833da02a",
-    "date": "2026-10-06",
-    "source": "PlainID",
-    "title": "PlainID Turns Any Gateway Into An Agentic Ready Control Plane",
-    "url": "https://www.plainid.com/news/plainid-turns-any-gateway-into-an-agentic-ready-control-plane/",
-    "tags": [
-      "AI-agent-authorization",
-      "OAuth",
-      "MCP",
-      "NHI",
-      "Runtime-authorization"
-    ],
-    "note": "PlainID introduced gateway enforcement that binds human and agent identities while governing MCP tools, agent intent, parameters, data exposure, and auditable runtime decisions.",
-    "score": 83
-  },
-  {
-    "firstSeenAt": "2026-10-05T00:08:46.319590-06:00",
-    "publishedDate": "2026-10-05",
-    "id": "dd330879351aae7b",
-    "date": "2026-10-05",
-    "source": "NCC Computer Security Incident Response Team",
-    "title": "ShinyHunters-Style Vishing Attacks Stealing MFA to Breach SaaS Platforms",
-    "url": "https://csirt.ncc.gov.ng/index.php/resources/security-advisories/399-shinyhunters-style-vishing-attacks-stealing-mfa-to-breach-saas-platforms",
-    "tags": [
-      "IAM",
-      "MFA",
-      "SSO",
-      "ITDR",
-      "Incident"
-    ],
-    "note": "Government CSIRT advisory describing active vishing campaigns that relay SSO credentials and MFA codes, enroll attacker-controlled devices, and pivot into connected SaaS platforms.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-05",
-    "id": "0c14479088799485",
-    "date": "2026-10-05",
-    "source": "Danish Immigration Service and SIRI",
-    "title": "Unauthorised parties have gained access to citizens' CPR data",
-    "url": "https://nyidanmark.dk/en-GB/News-Front-Page/2026/10/Uvedkommende-har-faaet-adgang-til-borgeres-CPR-oplysninger",
-    "tags": [
-      "Incident",
-      "Valid accounts",
-      "Third-party access",
-      "Identity data"
-    ],
-    "note": "Denmark\u2019s official disclosure confirms unauthorized access to CPR records through a serious incident affecting a trusted identity-data access path; the precise compromise mechanism remains under investigation.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-06T12:34:34.563296-06:00",
-    "publishedDate": "2026-10-05",
-    "id": "24c0230d59ca4716",
-    "date": "2026-10-05",
-    "source": "Cloud Foundry Foundation",
-    "title": "CVE-2026-59357 \u2013 Self-UAA OIDC Configuration allows JWT injection to establish unauthorized sessions",
-    "url": "https://www.cloudfoundry.org/blog/cve-2026-59357-self-uaa-oidc-configuration-allows-jwt-injection-to-establish-unauthorized-sessions/",
-    "tags": [
-      "OIDC",
-      "OAuth",
-      "Session-abuse",
-      "Authorization",
-      "Federation"
-    ],
-    "note": "A high-severity UAA flaw lets an authenticated user bypass the OAuth authorization-code exchange with an incorrectly accepted JWT and obtain a session whose effective privilege depends on shadow-account group membership.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-06T00:48:08.094698-06:00",
-    "publishedDate": "2026-10-05",
-    "id": "0c19893949e8580d",
-    "date": "2026-10-05",
-    "source": "FIDO Alliance",
-    "title": "ID Tech: Thales Brings Agent Access Controls to Google Cloud Gemini Enterprise",
-    "url": "https://fidoalliance.org/id-tech-thales-brings-agent-access-controls-to-google-cloud-gemini-enterprise/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Google Cloud",
-      "NHI",
-      "Runtime Security"
-    ],
-    "note": "The integration applies runtime policies to agent access to data and connected tools, extending authorization enforcement beyond the initial user sign-in and addressing prompt injection and agent-to-agent risk.",
-    "score": 88
   }
 ]

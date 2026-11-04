@@ -1,5 +1,47 @@
 [
   {
+    "id": "2026-11-04-morning-brief",
+    "date": "2026-11-04",
+    "coverageDate": "2026-11-03",
+    "edition": "MORNING EDITION // 2026.11.04",
+    "title": "Workload Identity Abuse, Password-Manager Uncertainty",
+    "dek": "Highlights from 2026-11-03. Yesterday\u2019s verified identity coverage centered on active abuse of Entra workload credentials and an unresolved mSecure security incident affecting password, 2FA and passkey hygiene.",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Authentication",
+      "Identity Threat"
+    ],
+    "readTime": "5 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-03, verified against linked sources. Edition dated 2026-11-04; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Stolen workload credentials are being used to traverse MSP-linked Entra and Azure environments",
+        "summary": "Todyl reported an ongoing, unattributed campaign in which an operator used stolen app secrets, federated workload credentials and replayed Azure DevOps session tokens to access Microsoft Entra, Azure DevOps and downstream MSP tenants. Todyl said roughly 45 app registrations across 18 organizations were targeted, with more than 33 authenticating successfully; the activity included Graph searches, SharePoint downloads and attempts to access Key Vault, while observed refresh-token replay was blocked by Conditional Access. ([todyl.com](https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads))",
+        "why": "This is a concrete reminder that workload identity is a lateral-movement path, not merely an automation concern. Review app-registration and federated-credential inventories, Key Vault access, cross-tenant MSP permissions and scripted sign-ins from hosting providers; user-focused MFA and Conditional Access policies will not cover app-only access. ([todyl.com](https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads))",
+        "source": "Todyl",
+        "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
+        "confidence": "Primary source",
+        "published_date": "2026-11-03",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "mSecure urges password, 2FA and passkey resets after undisclosed suspicious activity",
+        "summary": "mSeven Software reportedly emailed current and former mSecure customers on November 3 advising them to change passwords, reset 2FA and remove or replace passkeys after detecting suspicious activity. The company did not identify the affected systems, disclose whether vault data or encryption keys were accessed, or clarify whether the recommendations applied to mSecure accounts, stored credentials or both. ([thehackernews.com](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html))",
+        "why": "The incident illustrates the operational difficulty of issuing identity-reset guidance before scope is known. Practitioners should distinguish account recovery from secrets stored in the password manager, communicate sequencing clearly and avoid treating encrypted vault claims as proof that exposure did not occur. ([thehackernews.com](https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html))",
+        "source": "The Hacker News",
+        "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-03",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-03-morning-brief",
     "date": "2026-11-03",
     "coverageDate": "2026-11-02",
@@ -14,7 +56,7 @@
       "AI-agent identity"
     ],
     "readTime": "5 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-02, verified against linked sources. Edition dated 2026-11-03; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
