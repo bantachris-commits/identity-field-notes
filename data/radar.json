@@ -1,5 +1,54 @@
 [
   {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "76f398aa937ffa51",
+    "date": "2026-11-04",
+    "source": "SecurityWeek",
+    "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
+    "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Secrets management",
+      "AI-agent authorization"
+    ],
+    "note": "Binance\u2019s incident account traces the theft through compromised developer endpoints, stolen credentials, a container-deployment token, and wallet-signing authorization.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "9ad31758930619dd",
+    "date": "2026-11-04",
+    "source": "Appwrite",
+    "title": "Incident report: Sites & Functions runtime vulnerability, November 1st, 2026",
+    "url": "https://appwrite.io/blog/post/incident-report-sites-functions-runtime-vulnerability",
+    "tags": [
+      "NHI",
+      "Secrets management",
+      "Cloud IAM"
+    ],
+    "note": "Appwrite reports exploitation that exposed an internal service credential capable of reading customer function and site environment variables across Frankfurt compute.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "c59f897a3506478f",
+    "date": "2026-11-04",
+    "source": "CrowdStrike",
+    "title": "CrowdStrike Unveils Agentic Adversary Emulation on the Falcon Platform to Identify and Close Exploitable Attack Paths",
+    "url": "https://crowdstrike.gcs-web.com/news-releases/news-release-details/crowdstrike-unveils-agentic-adversary-emulation-falcon-platform",
+    "tags": [
+      "ITDR",
+      "AI-agent authorization",
+      "Identity security"
+    ],
+    "note": "CrowdStrike\u2019s new agentic emulation capability explicitly chains identity gaps with vulnerabilities and misconfigurations to identify attack paths to critical assets.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
     "publishedDate": "2026-11-03",
     "id": "abfd8670eca50ba4",
@@ -15,6 +64,88 @@
     ],
     "note": "An active multi-tenant incident shows attackers using stolen service-principal secrets and workload federated credentials to access Entra and Azure DevOps without MFA or user-scoped Conditional Access.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "1aea925e3d50e8e4",
+    "date": "2026-11-03",
+    "source": "OPSSHIELD",
+    "title": "Security Incident Disclosure: manage.opsshield.com",
+    "url": "https://opsshield.com/notice/security-incident-disclosure-servermanage.html",
+    "tags": [
+      "IAM",
+      "Secrets management",
+      "Supply-chain identity"
+    ],
+    "note": "The deeper disclosure identifies a registered customer account, stolen update-signing keys, cloud access tokens, and approximately 2,950 potentially affected servers.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "293e100bf1f5972f",
+    "date": "2026-11-03",
+    "source": "OPSSHIELD",
+    "title": "cPGuard security advisory: Update channel compromise",
+    "url": "https://opsshield.com/notice/cpguard-update-channel-compromise.html",
+    "tags": [
+      "PAM",
+      "Secrets management",
+      "Supply-chain identity"
+    ],
+    "note": "A compromised credential gave an attacker access to the cPGuard update infrastructure, enabling a malicious update that collected password hashes, SSH keys, database credentials, and shell history.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "c136875d05ca548e",
+    "date": "2026-11-03",
+    "source": "BleepingComputer",
+    "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
+    "url": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+    "tags": [
+      "Active Directory",
+      "PAM",
+      "ITDR",
+      "Credential theft"
+    ],
+    "note": "The intrusion involved credential extraction from backup systems and browsers, LSASS dumping, creation of domain-admin backdoors, and unauthorized trusts across multiple AD domains.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "a60f458037d9ae2e",
+    "date": "2026-11-03",
+    "source": "Decrypt",
+    "title": "Crypto Docs Host GitBook Hit by AI Agent Security Breach, Urges Users to Rotate Keys",
+    "url": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "Secrets management",
+      "OAuth"
+    ],
+    "note": "GitBook disclosed an AI-assisted intrusion involving infrastructure credentials, integration tokens, Git Sync secrets, API tokens, and MCP reauthentication.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "b0a8ea5b69867de6",
+    "date": "2026-11-03",
+    "source": "BleepingComputer",
+    "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+    "tags": [
+      "Secrets management",
+      "Supply-chain identity",
+      "Credential theft"
+    ],
+    "note": "Independent reporting adds scope to the cPGuard incident, including nearly 3,000 affected servers and theft of sensitive local credentials and SSH authorization data.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
@@ -34,22 +165,37 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "d859859ded0765ef",
+    "date": "2026-11-03",
+    "source": "Palo Alto Networks",
+    "title": "Delivering More Value to CyberArk Machine Identity SaaS Customers with NGTS",
+    "url": "https://live.paloaltonetworks.com/t5/community-blogs/delivering-more-value-to-cyberark-machine-identity-saas/ba-p/1267315",
+    "tags": [
+      "Machine identity",
+      "NHI",
+      "PAM"
+    ],
+    "note": "Palo Alto Networks outlines the transition of CyberArk Machine Identity SaaS customers to Next-Generation Trust Security, including certificate usage visibility and workload identity controls.",
+    "score": 76
+  },
+  {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-11-02",
     "id": "2e54985e07586244",
     "date": "2026-11-02",
-    "source": "Google Threat Intelligence Group / Mandiant",
+    "source": "Google Threat Intelligence Group",
     "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
     "tags": [
-      "NHI",
       "Cloud IAM",
-      "Service accounts",
-      "Secrets",
+      "NHI",
+      "Session/token abuse",
       "AI-agent authorization"
     ],
-    "note": "Primary research details multiple 2026 intrusions where stolen IAM credentials, service-account keys, federation tokens, session tokens and API keys enabled LLM hijacking, privilege escalation and fraudulent cloud charges exceeding $100,000 per day.",
-    "score": 100
+    "note": "Google documents LLMjacking campaigns abusing IAM credentials, service-account keys, GitHub tokens, active session tokens, and API keys to monetize cloud AI resources.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
@@ -700,22 +846,6 @@
     "score": 86
   },
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "de035062107f053e",
-    "date": "2026-10-30",
-    "source": "Chainalysis",
-    "title": "Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "IAM",
-      "Incident Response",
-      "Phishing Risk"
-    ],
-    "note": "Primary incident notice reports access to user IDs, names, email addresses and role labels, while stating there is no evidence that passwords, MFA secrets or session tokens were accessed.",
-    "score": 84
-  },
-  {
     "firstSeenAt": "2026-10-31T06:59:17.934577-06:00",
     "publishedDate": "2026-10-30",
     "id": "2676ebabd2430694",
@@ -730,6 +860,22 @@
     ],
     "note": "FIDO reports its 2026 Passkey Index findings, including broad account eligibility but a substantial enrollment gap, and introduces a deployment rubric useful for practitioners planning adoption and measuring real usage.",
     "score": 84
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "ITDR",
+      "AI-agent authorization",
+      "IAM"
+    ],
+    "note": "Chainalysis disclosed unauthorized access using offensive agentic techniques and warned users to watch for unexpected password-reset requests and authentication prompts.",
+    "score": 83
   },
   {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
@@ -3263,158 +3409,5 @@
     ],
     "note": "Reporting on exploitation of AhsayCBS flaws, including an authentication bypass where a random token could substitute for valid credentials before attackers deployed webshells and cryptomining malware.",
     "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
-    "publishedDate": "2026-10-13",
-    "id": "6adac9837232bd4a",
-    "date": "2026-10-13",
-    "source": "Okta",
-    "title": "Improper Input Validation in the Okta Credential Provider for Windows CVE-2026-78628 - Oct 13, 2026",
-    "url": "https://trust.okta.com/security-advisories/improper-input-validation-in-the-okta-credential-provider-for-windows-cve-2026-78628",
-    "tags": [
-      "IAM",
-      "authentication",
-      "credential-provider",
-      "vulnerability"
-    ],
-    "note": "The Windows credential provider flaw can expose adjacent process memory and affects authentication infrastructure on locally accessible hosts.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-12",
-    "id": "9274082e5b50caef",
-    "date": "2026-10-12",
-    "source": "OpenID Foundation",
-    "title": "OIDF publishes threat model for cross-boundary AI agents",
-    "url": "https://openid.net/oidf-publishes-threat-model-for-cross-boundary-ai-agents/",
-    "tags": [
-      "AI-agent authorization",
-      "Federation",
-      "OAuth",
-      "Standards"
-    ],
-    "note": "The AIIM community group\u2019s protocol-agnostic threat model catalogs identity, trust, scope translation, credential capture, and revocation failures when agents cross security boundaries.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
-    "publishedDate": "2026-10-12",
-    "id": "b06c4bf6b0d632fa",
-    "date": "2026-10-12",
-    "source": "Docker",
-    "title": "Docker Hub security advisory: personal access tokens transferred during account-to-organization conversions",
-    "url": "https://www.docker.com/blog/docker-hub-security-advisory-cve-2026-105445/",
-    "tags": [
-      "NHI",
-      "Tokens",
-      "Authorization",
-      "Supply Chain",
-      "Incident"
-    ],
-    "note": "A critical privilege-assignment flaw allowed an attacker-controlled PAT to authenticate as another user and potentially push, pull, or delete images within that user's scope.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-12",
-    "id": "c00766bc891c7258",
-    "date": "2026-10-12",
-    "source": "SailPoint Developer Community",
-    "title": "Customer Notice: Password Interceptor for Microsoft Active Directory - Upcoming Encryption Mode Change",
-    "url": "https://developer.sailpoint.com/discuss/t/customer-notice-password-interceptor-for-microsoft-active-directory-upcoming-encryption-mode-change/225360",
-    "tags": [
-      "IGA",
-      "Secrets management",
-      "Active Directory"
-    ],
-    "note": "SailPoint is making site-specific encryption keys the only supported protection for Password Interceptor service credentials stored in Active Directory, with migration implications for domain controllers.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-12",
-    "id": "62093055a2b39dad",
-    "date": "2026-10-12",
-    "source": "SecurityInformed",
-    "title": "Intercede Launches MyID Authenticate Passkey Solution",
-    "url": "https://www.securityinformed.com/news/intercede-myid-authenticate-fido-passkey-authentication-co-917-ga.1791811858.html",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "Authentication"
-    ],
-    "note": "MyID Authenticate extends FIDO passkey sign-in to Windows desktops, offline logon, VPNs, legacy applications, and hybrid Entra-connected environments.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
-    "publishedDate": "2026-10-09",
-    "id": "48ec1fe58c1ea7f4",
-    "date": "2026-10-09",
-    "source": "Palo Alto Networks",
-    "title": "Resolving the AI Agent Identity Crisis: Many Standards, One Direction",
-    "url": "https://www.paloaltonetworks.com/blog/identity-security/ai-agent-identity-security-standards-guide/",
-    "tags": [
-      "AI Agents",
-      "Machine Identity",
-      "OAuth",
-      "SPIFFE",
-      "OpenID"
-    ],
-    "note": "A useful technical map of emerging agent-identity work across WIMSE, SPIFFE, OAuth, OpenID, ODIS, CoSAI and NIST, with practical emphasis on short-lived tokens, zero standing privilege and human step-up approval.",
-    "score": 85
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-08",
-    "id": "3653dcf2bfa53e5a",
-    "date": "2026-10-08",
-    "source": "Asymmetric Security",
-    "title": "Extortion via OAuth Application",
-    "url": "https://www.asymmetricsecurity.com/newsroom/m365-extortion-via-oauth-application/",
-    "tags": [
-      "OAuth",
-      "NHI",
-      "token-abuse",
-      "incident"
-    ],
-    "note": "A concrete cloud-extortion case shows a stolen OAuth client secret enabling app-only Entra access, tenant-wide Graph and SharePoint activity, data theft and file deletion without a compromised user or MFA challenge.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-08",
-    "id": "12f9d7282eaaf65f",
-    "date": "2026-10-08",
-    "source": "The New Stack / The Next Web",
-    "title": "Zenity says one prompt took over every AgentCore agent in an AWS account",
-    "url": "https://thenextweb.com/news/aws-agentcore-zenity-agentcorruption-one-prompt-agents",
-    "tags": [
-      "AWS",
-      "NHI",
-      "AI-agent authorization",
-      "Least privilege"
-    ],
-    "note": "Zenity\u2019s research and AWS\u2019s response highlight the blast-radius risk of default or broadly delegated AgentCore roles, including cross-agent access to chats, code, and secrets.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-08",
-    "id": "b91219c4f2831c92",
-    "date": "2026-10-08",
-    "source": "OpenID Foundation",
-    "title": "OpenID Connect Ephemeral Subject Identifier 1.0 Final Specification Approved",
-    "url": "https://openid.net/openid-connect-ephemeral-subject-identifier-1-0-final-specification-approved/",
-    "tags": [
-      "OpenID",
-      "Federation",
-      "Privacy",
-      "Standards"
-    ],
-    "note": "OIDF approved the final OpenID Connect Ephemeral Subject Identifier specification, a material federation and identifier-privacy standardization milestone.",
-    "score": 78
   }
 ]
