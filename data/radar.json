@@ -1,22 +1,5 @@
 [
   {
-    "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "3b6af3c9f587ffba",
-    "date": "2026-11-05",
-    "source": "Google Cloud",
-    "title": "Helping you build and defend at machine-speed in the agentic era",
-    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "OAuth",
-      "PAM"
-    ],
-    "note": "Google Cloud introduced generally available Auth Manager for governed OAuth 2.0/PKCE flows and preview OIDC-based Agent Identity to replace static, long-lived API keys across cloud, on-premises, and MCP environments.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "76f398aa937ffa51",
@@ -32,6 +15,24 @@
     ],
     "note": "Binance\u2019s incident account traces the theft through compromised developer endpoints, stolen credentials, a container-deployment token, and wallet-signing authorization.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "3b6af3c9f587ffba",
+    "date": "2026-11-04",
+    "source": "Google Cloud",
+    "title": "Helping you build and defend at machine-speed in the agentic era",
+    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "OIDC",
+      "Google Cloud"
+    ],
+    "note": "Google announced general availability for Auth Manager, plus preview OIDC agent tokens for cross-cloud and MCP authentication without static long-lived API keys.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -74,12 +75,31 @@
     "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
     "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
     "tags": [
-      "IAM",
+      "Microsoft Entra",
       "NHI",
-      "Entra",
+      "service-account abuse",
+      "OAuth",
       "ITDR"
     ],
-    "note": "An active multi-tenant incident shows attackers using stolen service-principal secrets and workload federated credentials to access Entra and Azure DevOps without MFA or user-scoped Conditional Access.",
+    "note": "Todyl describes an ongoing campaign using stolen application credentials to authenticate as workloads across MSP and downstream Microsoft 365 and Azure tenants.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-05T13:13:37.613739-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "317e8557e095955c",
+    "date": "2026-11-03",
+    "source": "Binance / BleepingComputer",
+    "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+    "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+    "tags": [
+      "PAM",
+      "compromised credentials",
+      "NHI",
+      "secrets",
+      "excessive privilege"
+    ],
+    "note": "Binance\u2019s incident account ties the theft to malware on an engineer\u2019s device, compromise of additional wallet personnel, stolen credentials and a container deployment token reaching wallet-signing infrastructure.",
     "score": 98
   },
   {
@@ -96,6 +116,24 @@
       "Supply-chain identity"
     ],
     "note": "The deeper disclosure identifies a registered customer account, stolen update-signing keys, cloud access tokens, and approximately 2,950 potentially affected servers.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-05T13:13:37.613739-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "b911f574fc9df9d7",
+    "date": "2026-11-03",
+    "source": "Google Threat Intelligence",
+    "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
+    "url": "https://www.bleepingcomputer.com/news/security/google-llm-jacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+    "tags": [
+      "NHI",
+      "cloud IAM",
+      "service-account abuse",
+      "AI-agent authorization",
+      "secrets"
+    ],
+    "note": "Google-linked research details attackers abusing exposed cloud credentials, service-account keys, GitHub tokens, session tokens and LLM API keys to run costly unauthorized AI workloads.",
     "score": 95
   },
   {
@@ -119,17 +157,18 @@
     "publishedDate": "2026-11-03",
     "id": "c136875d05ca548e",
     "date": "2026-11-03",
-    "source": "BleepingComputer",
+    "source": "Bitdefender / BleepingComputer",
     "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
     "url": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
     "tags": [
       "Active Directory",
       "PAM",
+      "credential theft",
       "ITDR",
-      "Credential theft"
+      "AI-agent authorization"
     ],
-    "note": "The intrusion involved credential extraction from backup systems and browsers, LSASS dumping, creation of domain-admin backdoors, and unauthorized trusts across multiple AD domains.",
-    "score": 93
+    "note": "The investigation found credential extraction from Veeam and Chrome, LSASS dumping, creation of backdoor domain-admin accounts and trust changes that expanded the attack across school domains.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -153,16 +192,17 @@
     "publishedDate": "2026-11-03",
     "id": "b0a8ea5b69867de6",
     "date": "2026-11-03",
-    "source": "BleepingComputer",
+    "source": "OpsShield / BleepingComputer",
     "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
     "tags": [
-      "Secrets management",
-      "Supply-chain identity",
-      "Credential theft"
+      "compromised credentials",
+      "secrets",
+      "software supply chain",
+      "PAM"
     ],
-    "note": "Independent reporting adds scope to the cPGuard incident, including nearly 3,000 affected servers and theft of sensitive local credentials and SSH authorization data.",
-    "score": 90
+    "note": "OpsShield said attackers used compromised credentials to access update-distribution infrastructure and push malicious cPGuard versions for roughly 12 hours.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
@@ -180,6 +220,23 @@
     ],
     "note": "A timely password-manager incident watch: mSeven urged current and former users to rotate passwords, reset 2FA and replace passkeys without initially disclosing the affected systems or confirming vault compromise.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-05T13:13:37.613739-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "28f6f729d35efd2e",
+    "date": "2026-11-03",
+    "source": "mSeven Software",
+    "title": "Important Security Notice 2026-11-03",
+    "url": "https://support.msecure.com/es/support/discussions/topics/36000038998/page/1?url_locale=es",
+    "tags": [
+      "credential compromise",
+      "passkeys",
+      "MFA",
+      "secrets"
+    ],
+    "note": "mSecure warned customers of suspicious activity associated with its password-management application and recommended changing passwords, resetting MFA and removing existing passkeys, while leaving scope and root cause unresolved.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -487,23 +544,6 @@
     "score": 82
   },
   {
-    "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
-    "publishedDate": "2026-11-01",
-    "id": "d2a38c58463a3753",
-    "date": "2026-11-01",
-    "source": "Trigger.dev",
-    "title": "Security Disclosure: Sunday November 1st",
-    "url": "https://trigger.dev/blog/security-incident-nov-2026",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "Cloud IAM",
-      "Incident response"
-    ],
-    "note": "Trigger.dev reports unauthorized access to environment variables for a subset of organizations after an exploit, making this a direct reminder to rotate workload secrets and assess downstream service-account exposure.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
     "publishedDate": "2026-11-01",
     "id": "ffa41fb552603a26",
@@ -535,6 +575,23 @@
     ],
     "note": "New OAuth 2.1 draft defines deferred token issuance for approval, governance, and agentic authorization workflows, with sender-constrained deferral codes and polling controls.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-02T14:53:40.342678-07:00",
+    "publishedDate": "2026-11-01",
+    "id": "d2a38c58463a3753",
+    "date": "2026-11-01",
+    "source": "Trigger.dev",
+    "title": "Security Disclosure: Sunday November 1st",
+    "url": "https://trigger.dev/blog/security-incident-nov-2026",
+    "tags": [
+      "secrets",
+      "NHI",
+      "cloud security",
+      "AI-agent authorization"
+    ],
+    "note": "Trigger.dev disclosed unauthorized access to environment variables for a subset of organizations and said affected account owners were contacted to mitigate exposed credentials and tokens.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
@@ -1026,6 +1083,23 @@
       "IGA"
     ],
     "note": "A substantive agent-governance launch centered on unique verifiable agent identities, ownership, delegated authority and auditable access to models, tools and other agents.",
+    "score": 78
+  },
+  {
+    "firstSeenAt": "2026-11-05T13:13:37.613739-07:00",
+    "publishedDate": "2026-10-29",
+    "id": "a2ece90f73ce35ac",
+    "date": "2026-10-29",
+    "source": "Reuters",
+    "title": "US Homeland Security cites risk to over 40,000 personnel in effort to take leaked data offline",
+    "url": "https://www.investing.com/news/world-news/dhs-cites-doxxing-threat-to-more-than-40000-people-in-effort-to-get-leaked-personnel-data-taken-offline-4984840",
+    "tags": [
+      "Okta",
+      "SSO",
+      "identity breach",
+      "excessive privilege"
+    ],
+    "note": "Reuters reports a major DHS personnel-data leak tied by the attackers to an Okta SSO service, while Okta says it has no evidence its systems or data were compromised, making the identity path significant but contested.",
     "score": 78
   },
   {
@@ -3337,78 +3411,9 @@
     "tags": [
       "OAuth",
       "session/token abuse",
-      "CIAM"
+      "SaaS security"
     ],
-    "note": "Salesforce's production enforcement began November 4, 2026, limiting connected-app refresh-token idle lifetime to 30 days as part of a broader program addressing stolen-token and malicious-app takeover risks.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
-    "publishedDate": "2026-10-14",
-    "id": "ef9d3d30302a5c1a",
-    "date": "2026-10-14",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust And AWS: AWS IAM Account Access Manager Support in Identity Security Insights",
-    "url": "https://www.beyondtrust.com/blog/entry/aws-account-access-manager-identity-security-insights",
-    "tags": [
-      "AWS",
-      "IAM",
-      "PAM",
-      "JIT",
-      "Cloud Entitlements"
-    ],
-    "note": "The launch integrates AWS IAM Account Access Manager assignments with effective-permission and identity graphs to expose role chaining, cross-account reach and access to sensitive agents and resources.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
-    "publishedDate": "2026-10-14",
-    "id": "6eba5b88c49ed945",
-    "date": "2026-10-14",
-    "source": "IAM Insights / Boston Identity",
-    "title": "An OAuth draft for AI agents' step-up login finishes the one-time-code path but leaves passkeys unfinished",
-    "url": "https://insights.bostonidentity.com/research/ietf-datatracker-2026-04-03-oauth-2-0-agents",
-    "tags": [
-      "OAuth",
-      "passkeys",
-      "AI-agent-authorization",
-      "standards"
-    ],
-    "note": "The review examines an expired individual IETF draft that relays step-up challenges through MCP elicitation, while leaving WebAuthn/passkey delivery and security considerations incomplete.",
-    "score": 79
-  },
-  {
-    "firstSeenAt": "2026-10-13T08:12:55.635277-06:00",
-    "publishedDate": "2026-10-13",
-    "id": "043e0041bb8e9a81",
-    "date": "2026-10-13",
-    "source": "Salt Security",
-    "title": "The State of Agentic AI and API Security 2H 2026: Agents Are Acting. Most Organizations Cannot Stop Them.",
-    "url": "https://salt.security/blog/agents-are-acting-most-organizations-cannot-stop-them",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "OAuth",
-      "ITDR"
-    ],
-    "note": "New research finds widespread unauthorized agent actions, shadow or misconfigured MCP infrastructure, and limited ability to contain misbehaving agents before irreversible actions.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
-    "publishedDate": "2026-10-13",
-    "id": "32a5552b1756674d",
-    "date": "2026-10-13",
-    "source": "Meta / SecurityWeek",
-    "title": "Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach",
-    "url": "https://www.securityweek.com/META-SAYS-HACKERS-TOOK-CODE-PERSONAL-DATA-OF-1500-IN-GITHUB-BREACH/",
-    "tags": [
-      "Compromised Credentials",
-      "Secrets",
-      "GitHub",
-      "Incident"
-    ],
-    "note": "Meta said attackers accessed GitHub repositories using an employee's stolen credentials, exposing business code and limited personal data before secrets were rotated.",
-    "score": 88
+    "note": "Salesforce\u2019s November 4 production enforcement limits connected-app refresh-token idle lifetime to 30 days and lays out further OAuth flow restrictions and retirements.",
+    "score": 91
   }
 ]
