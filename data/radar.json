@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "3b6af3c9f587ffba",
+    "date": "2026-11-05",
+    "source": "Google Cloud",
+    "title": "Helping you build and defend at machine-speed in the agentic era",
+    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
+    "tags": [
+      "NHI",
+      "AI-agent authorization",
+      "OAuth",
+      "PAM"
+    ],
+    "note": "Google Cloud introduced generally available Auth Manager for governed OAuth 2.0/PKCE flows and preview OIDC-based Agent Identity to replace static, long-lived API keys across cloud, on-premises, and MCP environments.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "76f398aa937ffa51",
@@ -287,16 +304,16 @@
     "publishedDate": "2026-11-02",
     "id": "0e35ca8c91cc8143",
     "date": "2026-11-02",
-    "source": "NVIDIA / Tom's Hardware",
+    "source": "Tom's Hardware",
     "title": "Nvidia Brev security breach may have exposed SSH keys used to access customer VMs \u2014 investigation finds unauthorized activity spanning 16 days, but no evidence of misuse",
     "url": "https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse",
     "tags": [
-      "PAM",
-      "Machine identity",
-      "SSH keys",
-      "Secrets"
+      "NHI",
+      "machine identity",
+      "secrets management",
+      "PAM"
     ],
-    "note": "NVIDIA rotated SSH keys provisioned by Brev after detecting unauthorized activity, illustrating the blast radius and remediation requirements when cloud-development machine credentials may have been exposed.",
+    "note": "NVIDIA replaced SSH keys provisioned by Brev after unauthorized platform activity potentially exposed credentials capable of accessing customer virtual machines, although it reported no evidence of misuse.",
     "score": 91
   },
   {
@@ -331,6 +348,23 @@
       "SPIFFE"
     ],
     "note": "Updated draft profiles SPIFFE JWT-, workload- and X.509-SVIDs for OAuth client authentication, reducing reliance on distributed static client secrets.",
+    "score": 89
+  },
+  {
+    "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "4ba6dd2629a83301",
+    "date": "2026-11-02",
+    "source": "IT Pro",
+    "title": "Infostealer uses LLMs to compile dossiers on victims",
+    "url": "https://www.itpro.com/security/malware/infostealer-uses-llms-to-compile-dossiers-on-victims",
+    "tags": [
+      "session/token abuse",
+      "OAuth",
+      "machine identity",
+      "secrets management"
+    ],
+    "note": "Cisco Talos analysis of Volta-Autodoxer shows an infostealer harvesting Microsoft OAuth tokens, browser sessions, SSH keys, cloud-provider keys, and other secrets before using LLMs to enrich and prioritize victims.",
     "score": 89
   },
   {
@@ -3302,11 +3336,11 @@
     "url": "https://help.salesforce.com/s/articleView?id=005461287&language=en_US&type=1",
     "tags": [
       "OAuth",
-      "Session Security",
-      "Token Security"
+      "session/token abuse",
+      "CIAM"
     ],
-    "note": "Production enforcement on November 4 limits refresh-token idle lifetime to 30 days and begins a broader retirement path for legacy OAuth flows and connected apps.",
-    "score": 88
+    "note": "Salesforce's production enforcement began November 4, 2026, limiting connected-app refresh-token idle lifetime to 30 days as part of a broader program addressing stolen-token and malicious-app takeover risks.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-10-16T10:53:41.755688-06:00",
@@ -3376,38 +3410,5 @@
     ],
     "note": "Meta said attackers accessed GitHub repositories using an employee's stolen credentials, exposing business code and limited personal data before secrets were rotated.",
     "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
-    "publishedDate": "2026-10-13",
-    "id": "dc06dd01e053bdd6",
-    "date": "2026-10-13",
-    "source": "Okta",
-    "title": "Insecure Default File Permissions in Okta RADIUS Agent Windows Installer CVE-2026-78632 - Oct 13, 2026",
-    "url": "https://trust.okta.com/security-advisories/insecure-default-file-permissions-in-okta-radius-agent-windows-installer-cve-2026-78632",
-    "tags": [
-      "IAM",
-      "secrets",
-      "service-accounts",
-      "vulnerability"
-    ],
-    "note": "The advisory identifies local service-account access to the RADIUS agent\u2019s AES key and encrypted Okta API token through insecure installer permissions.",
-    "score": 87
-  },
-  {
-    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
-    "publishedDate": "2026-10-13",
-    "id": "78df2c64d8585e2a",
-    "date": "2026-10-13",
-    "source": "TechRadar Pro / Huntress",
-    "title": "Hackers turn business backup servers into crypto mines after sneaking malware disguised as Microsoft Edge",
-    "url": "https://www.techradar.com/pro/security/hackers-turn-business-backup-servers-into-crypto-mines-after-sneaking-malware-disguised-as-microsoft-edge",
-    "tags": [
-      "Authentication Bypass",
-      "Secrets",
-      "Incident"
-    ],
-    "note": "Reporting on exploitation of AhsayCBS flaws, including an authentication bypass where a random token could substitute for valid credentials before attackers deployed webshells and cryptomining malware.",
-    "score": 82
   }
 ]
