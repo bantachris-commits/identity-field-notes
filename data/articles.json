@@ -1,5 +1,59 @@
 [
   {
+    "id": "2026-11-05-morning-brief",
+    "date": "2026-11-05",
+    "coverageDate": "2026-11-04",
+    "edition": "MORNING EDITION // 2026.11.05",
+    "title": "Identity Field Notes: Three Lessons from Yesterday\u2019s Attack Paths",
+    "dek": "Highlights from 2026-11-04. The November 4 recap centers on compromised developer identities, exposed cloud secrets, and the emerging use of AI to test identity-linked attack paths.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "NHI",
+      "Secrets management",
+      "AI-agent authorization"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-04, verified against linked sources. Edition dated 2026-11-05; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Breach",
+        "title": "Binance traces $6.34 billion theft through engineers, deployment tokens and wallet authorization",
+        "summary": "Binance\u2019s initial incident account says attackers compromised three engineers\u2019 computers through a tampered developer-tool download, a fake coding assignment and an internal AI tool. They then used a container-deployment token, stolen credentials and unauthorized access to a wallet-signing service to move assets, including through Ethereum\u2019s EIP-7702 delegation mechanism. Binance says the incident was attributed by the FBI to the North Korean TraderTraitor group, although North Korea denied the claim.",
+        "why": "The incident is a sharp reminder that privileged access paths now span endpoints, developer tooling, deployment infrastructure, secrets and machine-controlled signing. PAM programs need to govern short-lived workload credentials and downstream authorization\u2014not just human administrator sessions.",
+        "source": "SecurityWeek",
+        "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-04",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Appwrite discloses runtime flaw that exposed reach to customer environment variables",
+        "summary": "Appwrite says an attacker exploited a vulnerability in its Frankfurt function runtime on November 1, 2026, exposing an internal service credential that could read environment variables from customer Functions and Sites. The company is notifying owners of 1,022 projects, while saying it found no evidence that the affected credential was used to read variables; incomplete infrastructure-provider audit logs prevent ruling that out completely. Appwrite rotated credentials, isolated customer workloads, split service credentials and advised affected customers to rotate secrets.",
+        "why": "This is a concrete example of cloud control-plane compromise turning an application-runtime flaw into a secrets-management problem. Customers should treat provider exposure windows as an opportunity to verify secret scoping, rotation speed, audit-log completeness and whether workloads share credentials across trust boundaries.",
+        "source": "Appwrite",
+        "url": "https://appwrite.io/blog/post/incident-report-sites-functions-runtime-vulnerability",
+        "confidence": "Primary source",
+        "published_date": "2026-11-04",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Research",
+        "title": "CrowdStrike introduces agentic adversary emulation for identity-linked attack paths",
+        "summary": "CrowdStrike announced Agentic Adversary Emulation, an early-access capability that uses its SafeMind models to chain vulnerabilities, misconfigurations and identity gaps into paths toward critical assets. The company says the system can prioritize remediation and rerun attacks to validate that paths are closed. These are vendor claims; the release does not provide independent efficacy results or broad-availability data.",
+        "why": "The meaningful shift is from enumerating isolated identity weaknesses to testing whether they combine into an exploitable route. Practitioners should demand clear authorization boundaries, evidence preservation, human approval controls and measurable validation before allowing autonomous attack simulation against production-connected environments.",
+        "source": "CrowdStrike",
+        "url": "https://crowdstrike.gcs-web.com/news-releases/news-release-details/crowdstrike-unveils-agentic-adversary-emulation-falcon-platform",
+        "confidence": "Vendor claim",
+        "published_date": "2026-11-04",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-04-morning-brief",
     "date": "2026-11-04",
     "coverageDate": "2026-11-03",
@@ -13,7 +67,7 @@
       "Identity Threat"
     ],
     "readTime": "5 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-03, verified against linked sources. Edition dated 2026-11-04; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
