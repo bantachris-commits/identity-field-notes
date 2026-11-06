@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "e2845eccbac1628b",
+    "date": "2026-11-05",
+    "source": "Microsoft Security",
+    "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+    "tags": [
+      "IAM",
+      "Entra",
+      "NHI",
+      "OAuth",
+      "AI-agent authorization",
+      "Secrets"
+    ],
+    "note": "Microsoft documents agentic tooling abusing leaked application credentials, service principals, single-tenant OAuth applications, Azure Key Vault, Azure DevOps and workload identities.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "76f398aa937ffa51",
@@ -25,14 +44,14 @@
     "title": "Helping you build and defend at machine-speed in the agentic era",
     "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
     "tags": [
-      "AI-agent authorization",
+      "IAM",
       "NHI",
+      "AI-agent authorization",
       "OAuth",
-      "OIDC",
-      "Google Cloud"
+      "Workload identity"
     ],
-    "note": "Google announced general availability for Auth Manager, plus preview OIDC agent tokens for cross-cloud and MCP authentication without static long-lived API keys.",
-    "score": 96
+    "note": "Google announces generally available Auth Manager for delegated OAuth flows and preview Agent Identity JWT support for agent access across clouds, on-premises systems and MCP servers.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -49,6 +68,42 @@
     ],
     "note": "Appwrite reports exploitation that exposed an internal service credential capable of reading customer function and site environment variables across Frankfurt compute.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "1c760f2bdaf32e3f",
+    "date": "2026-11-04",
+    "source": "Descope",
+    "title": "Introducing Descope Envoy: Delegated Access for Personal Agents",
+    "url": "https://www.descope.com/blog/post/envoy",
+    "tags": [
+      "CIAM",
+      "AI-agent authorization",
+      "OAuth",
+      "Session/token abuse",
+      "DPoP"
+    ],
+    "note": "Descope introduces a personal-agent access path based on the Poppy protocol, cryptographically bound agent sessions, explicit user approval, scoped permissions and DPoP-bound tokens.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "190bd1ffabaed35d",
+    "date": "2026-11-04",
+    "source": "SailPoint",
+    "title": "From AI agent visibility to risk mitigation: What\u2019s new for SailPoint Agentic Fabric",
+    "url": "https://www.sailpoint.com/blog/whats-new-sailpoint-agentic-fabric-ga",
+    "tags": [
+      "IGA",
+      "NHI",
+      "AI-agent authorization",
+      "ITDR",
+      "Machine identity"
+    ],
+    "note": "SailPoint describes general availability of Agentic Fabric capabilities that map agents to owners, credentials, entitlements, MCP servers and reachable data, adding discovery, governance and risk mitigation for non-human identities.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -82,6 +137,25 @@
       "ITDR"
     ],
     "note": "Todyl describes an ongoing campaign using stolen application credentials to authenticate as workloads across MSP and downstream Microsoft 365 and Azure tenants.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "888c16722be1dee8",
+    "date": "2026-11-03",
+    "source": "Todyl",
+    "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
+    "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads?trk=public_post_comment-text",
+    "tags": [
+      "Incident",
+      "Entra",
+      "NHI",
+      "OAuth",
+      "Session/token abuse",
+      "MSP security"
+    ],
+    "note": "An ongoing campaign used valid application secrets, a federated workload identity and replayed session tokens to reach at least 27 MSPs and downstream customers while bypassing normal user-MFA assumptions.",
     "score": 99
   },
   {
@@ -188,6 +262,24 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "99c32846d5cef5ea",
+    "date": "2026-11-03",
+    "source": "GitBook",
+    "title": "Security incident 2026-11-03",
+    "url": "https://www.gitbook.com/status/security-incident-2026-11-03",
+    "tags": [
+      "Incident",
+      "Secrets",
+      "OAuth",
+      "NHI",
+      "AI-agent authorization"
+    ],
+    "note": "GitBook reported unauthorized access to infrastructure credentials and potentially exposed integration tokens, Git Sync secrets, API tokens and MCP-related credentials, requiring customer rotation and reauthentication.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-03",
     "id": "b0a8ea5b69867de6",
@@ -236,6 +328,24 @@
       "secrets"
     ],
     "note": "mSecure warned customers of suspicious activity associated with its password-management application and recommended changing passwords, resetting MFA and removing existing passkeys, while leaving scope and root cause unresolved.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "fe71f7a92512d094",
+    "date": "2026-11-03",
+    "source": "BeyondTrust",
+    "title": "Privileged Remote Access 26.3.1 release notes",
+    "url": "https://docs.beyondtrust.com/pra/changelog/privileged-remote-access-26-3-1-release-notes",
+    "tags": [
+      "PAM",
+      "FIDO2",
+      "Entra",
+      "MCP",
+      "Session monitoring"
+    ],
+    "note": "The release adds audited Oracle database credential injection, Entra-compatible client-certificate presentation, FIDO2 authentication, MCP-based configuration access and controls against unauthenticated RDP-session reconnection.",
     "score": 84
   },
   {
@@ -817,6 +927,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "de66b0ddb93d6b4f",
+    "date": "2026-10-30",
+    "source": "Binance",
+    "title": "Security Incident Update (2026-10-30",
+    "url": "https://www.binance.com/en-GB/support/announcement/security-incident-update-2026-10-30-c5a8729a97ac486d963784d96c5642d7",
+    "tags": [
+      "Incident",
+      "PAM",
+      "Secrets",
+      "Excessive privilege",
+      "Service-account abuse"
+    ],
+    "note": "Binance\u2019s primary disclosure attributes a roughly $6.3 billion theft to a compromised DevOps engineer laptop, access to a service container and unauthorized withdrawal transactions.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-10-31T15:49:53.500584-06:00",
     "publishedDate": "2026-10-30",
     "id": "bf6d0a1c66992012",
@@ -882,6 +1010,23 @@
       "Compromised credentials"
     ],
     "note": "Binance attributes the theft to compromise of a DevOps engineer's laptop followed by access to a service container and unauthorized withdrawal transactions, highlighting privileged workload and authorization controls.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-10-30",
+    "id": "f03f486a382e44d2",
+    "date": "2026-10-30",
+    "source": "Material Security",
+    "title": "897 Domains Later: How Operation CloudFire Burned the Calendar Invite Campaign",
+    "url": "https://material.security/resources/897-domains-later-how-operation-cloudfire-burned-the-calendar-invite-campaign",
+    "tags": [
+      "Incident",
+      "MFA bypass",
+      "Session/token abuse",
+      "Phishing-resistant MFA"
+    ],
+    "note": "Material\u2019s follow-up tracks a live-proxy campaign that used calendar invitations to capture authenticated Google sessions despite passwords and second-factor approval, and reports takedown of 897 campaign domains.",
     "score": 90
   },
   {
@@ -1413,24 +1558,6 @@
     "score": 95
   },
   {
-    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "b055c341e4777f2e",
-    "date": "2026-10-27",
-    "source": "AWS",
-    "title": "CVE-2026-115413 - AWS API MCP Server OAuth token audience validation bypass",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-152-aws/",
-    "tags": [
-      "OAuth",
-      "AI Agents",
-      "Authorization",
-      "MCP",
-      "NHI"
-    ],
-    "note": "An OAuth audience-validation flaw in the AWS API MCP Server could accept a token issued to another application in the same tenant and use it to make AWS API calls.",
-    "score": 95
-  },
-  {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
     "publishedDate": "2026-10-27",
     "id": "a6006728be28909d",
@@ -1446,6 +1573,24 @@
     ],
     "note": "Reports technical research showing that a zero-permission Android app could impersonate a Microsoft first-party client and obtain work-account tokens through the Authenticator broker.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
+    "publishedDate": "2026-10-27",
+    "id": "b055c341e4777f2e",
+    "date": "2026-10-27",
+    "source": "AWS Security",
+    "title": "CVE-2026-115413 - AWS API MCP Server OAuth token audience validation bypass",
+    "url": "https://aws.amazon.com/security/security-bulletins/2026-152-aws/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "AI-agent authorization",
+      "MCP",
+      "Authorization failure"
+    ],
+    "note": "AWS discloses an OAuth audience-validation flaw in the API MCP Server that could accept a token issued to another application in the same tenant and authorize AWS API calls with host credentials.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
@@ -3278,142 +3423,5 @@
     ],
     "note": "New cross-service data shows passkeys reached 36% of successful sign-ins, with higher success rates and lower phishing exposure than traditional MFA.",
     "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "188b0563c833c6ac",
-    "date": "2026-10-15",
-    "source": "Unit 42",
-    "title": "AI-Powered Espionage Campaign Targets Government Linux Infrastructure",
-    "url": "https://unit42.paloaltonetworks.com/ai-powered-espionage-campaign-targets-government-linux-infrastructure/",
-    "tags": [
-      "credential-theft",
-      "NHI",
-      "AI-enabled-attacks",
-      "incident"
-    ],
-    "note": "Primary research documents an AI-assisted intrusion campaign combining credential harvesting, mailbox targeting, web shells, persistence and anti-forensics against government infrastructure.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-17T09:53:23.996223-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "91aeb95312b3a9a0",
-    "date": "2026-10-15",
-    "source": "Descope",
-    "title": "Introducing Descope Agentic Identity Hub 3.0: Governance and Control for AI Agents",
-    "url": "https://www.descope.com/blog/post/agentic-identity-hub-3",
-    "tags": [
-      "AI-Agent Authorization",
-      "NHI",
-      "OAuth",
-      "MCP",
-      "IGA"
-    ],
-    "note": "Material agent-identity release adding approval and review workflows, runtime policy enforcement, workload identity, Agent SSO, private_key_jwt, mTLS, certificate-bound tokens, and DPoP.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "e9d81a6d7b181c4d",
-    "date": "2026-10-15",
-    "source": "FIDO Alliance",
-    "title": "7 Billion Passkeys and Counting: The Next Chapter of Passwordless Authentication",
-    "url": "https://fidoalliance.org/7-billion-passkeys-and-counting-the-next-chapter-of-passwordless-authentication/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "Authentication"
-    ],
-    "note": "The 2026 Passkey Index reports an estimated seven billion passkeys and introduces a practical deployment rubric focused on adoption, UX, recovery, and eliminating password fallbacks.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "027ae65303f397f6",
-    "date": "2026-10-15",
-    "source": "Descope / GlobeNewswire",
-    "title": "Descope Unveils Agentic Identity Hub 3.0 to Enhance Governance and Control for AI Agents",
-    "url": "https://www.globenewswire.com/news-release/2026/10/15/3381680/0/en/descope-unveils-agentic-identity-hub-3-0-to-enhance-governance-and-control-for-ai-agents.html",
-    "tags": [
-      "AI-agent-authorization",
-      "NHI",
-      "MCP",
-      "IGA",
-      "least-privilege"
-    ],
-    "note": "Descope\u2019s release adds internal-agent governance, MCP gateway integrations, ID-JAG issuance, ownership, runtime policy enforcement, and audit trails for agents otherwise using shared long-lived credentials.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-16T15:38:00.634135-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "04cf22f04b3680e5",
-    "date": "2026-10-15",
-    "source": "AWS Security Blog",
-    "title": "AWS Security Agent (now part of AWS Continuum exploited 33 of 37 new real-world CVEs",
-    "url": "https://aws.amazon.com/blogs/security/aws-security-agent-now-part-of-aws-continuum-exploited-33-of-37-new-real-world-cves/",
-    "tags": [
-      "AI-agent-authorization",
-      "ITDR",
-      "least-privilege",
-      "vulnerability-research"
-    ],
-    "note": "AWS reports an audited autonomous agent achieving end-to-end exploitation of 33 recent CVEs, including broken authorization, default-credential and admin-cookie attack paths.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
-    "publishedDate": "2026-10-15",
-    "id": "ff2ab12c56943d59",
-    "date": "2026-10-15",
-    "source": "Proof",
-    "title": "Proof Launches x401, Giving AI Agents A Way to Prove Who They Represent - and What They're Authorized To Do",
-    "url": "https://www.proof.com/blog/proof-launches-x401-giving-ai-agents-a-way-to-prove-who-they-represent---and-what-theyre-authorized-to-do",
-    "tags": [
-      "AI-Agent Authorization",
-      "Verifiable Credentials",
-      "MCP",
-      "Transaction Authorization"
-    ],
-    "note": "A notable proposal for binding agent actions to verifiable human identity and signed transaction terms rather than treating possession of a password, OAuth token, or API key as sufficient authority.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-16T09:56:25.289041-06:00",
-    "publishedDate": "2026-10-14",
-    "id": "b2dbdf4e9e4544f5",
-    "date": "2026-10-14",
-    "source": "Microsoft Threat Intelligence and Digital Crimes Unit",
-    "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
-    "tags": [
-      "Entra",
-      "phishing",
-      "credential-theft",
-      "cloud-identity",
-      "OAuth"
-    ],
-    "note": "Microsoft details YAM Store\u2019s sale of compromised or fraudulently obtained Microsoft and Google environments, accounts, licenses, and storage supporting phishing kits that sent more than one billion messages.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
-    "publishedDate": "2026-10-14",
-    "id": "d1ac115d2778ec20",
-    "date": "2026-10-14",
-    "source": "Salesforce",
-    "title": "Connected App & External Client App Security Requirement Updates",
-    "url": "https://help.salesforce.com/s/articleView?id=005461287&language=en_US&type=1",
-    "tags": [
-      "OAuth",
-      "session/token abuse",
-      "SaaS security"
-    ],
-    "note": "Salesforce\u2019s November 4 production enforcement limits connected-app refresh-token idle lifetime to 30 days and lays out further OAuth flow restrictions and retirements.",
-    "score": 91
   }
 ]
