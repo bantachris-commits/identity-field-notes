@@ -1,5 +1,36 @@
 [
   {
+    "id": "2026-11-06-morning-brief",
+    "date": "2026-11-06",
+    "coverageDate": "2026-11-05",
+    "edition": "MORNING EDITION // 2026.11.06",
+    "title": "Agentic AI Turns Exposed Secrets Into Cloud Access",
+    "dek": "Highlights from 2026-11-05. Microsoft reports that threat actors used autonomous tooling to discover leaked credentials and pivot through Entra ID, OAuth applications, Azure Key Vault, and other cloud resources.",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AI-agent authorization",
+      "Secrets"
+    ],
+    "readTime": "3 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-05, verified against linked sources. Edition dated 2026-11-06; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+        "summary": "Microsoft Threat Intelligence says it observed an agentic framework scanning public GitHub repositories for credentials, application secrets, and AI-service keys, then using valid credentials to access Entra ID tenants and connected Azure and Microsoft 365 resources. In one case, Microsoft says the tooling moved from secret discovery to Azure Key Vault data exfiltration in about five minutes; observed activity also included service-principal sign-ins, OAuth application abuse, Azure DevOps searches, and resource discovery.",
+        "why": "Workload identities and OAuth applications now need incident response controls comparable to user accounts: monitor non-interactive sign-ins, constrain service-principal permissions, detect cross-resource token use, and rotate every secret reachable by a compromised application. Removing a leaked secret from source control is not remediation unless the credential itself is revoked or rotated.",
+        "source": "Microsoft Security",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+        "confidence": "Primary source",
+        "published_date": "2026-11-05",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-05-morning-brief",
     "date": "2026-11-05",
     "coverageDate": "2026-11-04",
@@ -14,7 +45,7 @@
       "AI-agent authorization"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-04, verified against linked sources. Edition dated 2026-11-05; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
