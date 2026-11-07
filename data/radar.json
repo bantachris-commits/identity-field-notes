@@ -1,22 +1,5 @@
 [
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-06",
-    "id": "de035062107f053e",
-    "date": "2026-11-06",
-    "source": "Chainalysis",
-    "title": "Updated Nov 6: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Incident",
-      "Session Tokens",
-      "API Keys",
-      "Credential Exposure"
-    ],
-    "note": "Chainalysis says names, usernames, password hashes and live tokens for all users were exposed, and requires password resets and API-key rotation as services are restored.",
-    "score": 99
-  },
-  {
     "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
     "publishedDate": "2026-11-06",
     "id": "3bc058b957f31d5d",
@@ -51,6 +34,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-07T06:28:18.013408-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "982e4d41f719446e",
+    "date": "2026-11-06",
+    "source": "Glean",
+    "title": "November 6, 2026",
+    "url": "https://docs.glean.com/release-notes/releases/2026-11-06-november-release",
+    "tags": [
+      "OAuth",
+      "Authorization",
+      "AI-Agent Authorization",
+      "IGA"
+    ],
+    "note": "Glean added an OAuth client-API restriction requiring the authenticated user's email domain to match configured company domains and fixed a cross-department agent-administration permission issue.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
     "publishedDate": "2026-11-06",
     "id": "f7fc70f1225811d5",
@@ -60,10 +60,11 @@
     "url": "https://developers.cloudflare.com/changelog/post/2026-11-06-access-passkeys/",
     "tags": [
       "Passkeys",
+      "FIDO",
       "IAM",
       "Zero Trust"
     ],
-    "note": "Cloudflare Access now supports passkey sign-in for protected applications and the App Launcher while retaining application-level policy enforcement and administrator passkey removal.",
+    "note": "Cloudflare Access now supports passkeys directly for protected applications and the App Launcher, with administrator-controlled enrollment and removal.",
     "score": 82
   },
   {
@@ -71,18 +72,18 @@
     "publishedDate": "2026-11-05",
     "id": "e2845eccbac1628b",
     "date": "2026-11-05",
-    "source": "Microsoft Security",
+    "source": "Microsoft Threat Intelligence",
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
-      "IAM",
-      "Entra",
       "NHI",
+      "Machine Identity",
+      "Entra",
       "OAuth",
-      "AI-agent authorization",
-      "Secrets"
+      "Secrets",
+      "AI-Agent Authorization"
     ],
-    "note": "Microsoft documents agentic tooling abusing leaked application credentials, service principals, single-tenant OAuth applications, Azure Key Vault, Azure DevOps and workload identities.",
+    "note": "Microsoft details agentic attacks that discovered public repository secrets, abused Entra service principals and OAuth applications, and reached Azure Key Vault and Microsoft 365 data in minutes.",
     "score": 99
   },
   {
@@ -131,11 +132,12 @@
     "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
     "tags": [
       "Incident",
-      "Authorization Failure",
-      "Excessive Access",
-      "Stale Identities"
+      "IAM",
+      "Authorization",
+      "Excessive Privilege",
+      "Offboarding"
     ],
-    "note": "A server migration exposed an internal system whose self-registration and authorization controls allowed an unauthorized account to read archived customer records and identity documents.",
+    "note": "A VPN-to-internet migration left an internal system exposed; attackers self-registered accounts and exploited an authorization flaw to read archived customer records.",
     "score": 94
   },
   {
@@ -195,17 +197,18 @@
     "publishedDate": "2026-11-04",
     "id": "1413af0079f42d2d",
     "date": "2026-11-04",
-    "source": "DreamHost",
+    "source": "BleepingComputer",
     "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
     "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
     "tags": [
-      "Credentials",
-      "Session Theft",
+      "Incident",
+      "Credential Theft",
+      "Session Tokens",
       "Secrets",
-      "Incident"
+      "PAM"
     ],
-    "note": "Attackers exploited a File Manager vulnerability to obtain FTP/SFTP credentials and potentially webmail session information over roughly two months.",
-    "score": 93
+    "note": "A vulnerable File Manager exposed customers' FTP/SFTP credentials and, for some users, webmail session information; DreamHost invalidated passwords and active sessions.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -1011,6 +1014,25 @@
     ],
     "note": "Chainalysis reported unauthorized access using what it called offensive agentic techniques and exposure of user IDs, names, emails, and organizational role labels, while reporting no evidence of stolen credentials or session tokens to date.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Updated Nov 6: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Incident",
+      "Credential Theft",
+      "Session Tokens",
+      "API Keys",
+      "AI-Agent Authorization",
+      "ITDR"
+    ],
+    "note": "Chainalysis' evolving disclosure says names, usernames, password hashes and live tokens for all users were exposed, followed by account lockdowns, credential resets and API-key rotation.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
@@ -3409,22 +3431,5 @@
     ],
     "note": "A new standards-track proposal for carrying signed, auditable user intent into later OAuth authorization decisions instead of letting agents translate natural-language goals directly into broad scopes.",
     "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
-    "publishedDate": "2026-10-19",
-    "id": "cd30eb68866bcd0b",
-    "date": "2026-10-19",
-    "source": "Microsoft Security Blog",
-    "title": "Agents are your newest insiders. Security must move at their speed.",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-    "tags": [
-      "Entra",
-      "NHI",
-      "AI-agent-authorization",
-      "ITDR"
-    ],
-    "note": "Microsoft describes expanded Entra Agent ID patterns, local-agent discovery, dynamic permissions, and risk-adaptive containment for agents that must not inherit standing human privilege.",
-    "score": 90
   }
 ]
