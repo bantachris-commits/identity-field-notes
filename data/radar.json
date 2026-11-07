@@ -8,13 +8,30 @@
     "title": "Updated Nov 6: Chainalysis Security Incident Information",
     "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
     "tags": [
-      "IAM",
-      "ITDR",
-      "Credentials",
-      "Incident"
+      "Incident",
+      "Session Tokens",
+      "API Keys",
+      "Credential Exposure"
     ],
-    "note": "Chainalysis now says an on-path attack exposed some customer passwords and that all users must reset passwords and rotate API keys before service restoration.",
-    "score": 96
+    "note": "Chainalysis says names, usernames, password hashes and live tokens for all users were exposed, and requires password resets and API-key rotation as services are restored.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "3bc058b957f31d5d",
+    "date": "2026-11-06",
+    "source": "Okta Threat Intelligence",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/en-ca/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
+    "tags": [
+      "CIAM",
+      "OAuth",
+      "AI-agent authorization",
+      "Credential Stuffing"
+    ],
+    "note": "Okta reports agent-assisted reconnaissance, fraudulent registrations, OAuth-flow probing, credential stuffing and account-linking risk across hundreds of Okta and Auth0 tenants, with similar activity seen against Cognito and Entra.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -32,6 +49,22 @@
     ],
     "note": "The release adds non-human identity discovery for HashiCorp Vault, OCI, Atlassian credentials and OAuth clients, plus JWT-based OAuth authentication for Oracle connectors.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "f7fc70f1225811d5",
+    "date": "2026-11-06",
+    "source": "Cloudflare",
+    "title": "Sign in to Cloudflare Access with passkeys",
+    "url": "https://developers.cloudflare.com/changelog/post/2026-11-06-access-passkeys/",
+    "tags": [
+      "Passkeys",
+      "IAM",
+      "Zero Trust"
+    ],
+    "note": "Cloudflare Access now supports passkey sign-in for protected applications and the App Launcher while retaining application-level policy enforcement and administrator passkey removal.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -71,20 +104,38 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "886e9406677fab21",
+    "date": "2026-11-05",
+    "source": "BleepingComputer",
+    "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+    "tags": [
+      "MFA Bypass",
+      "OAuth",
+      "Session Theft",
+      "Microsoft Entra",
+      "Google Workspace"
+    ],
+    "note": "The campaign combines Microsoft device-code phishing with Google AiTM reverse proxying to obtain tokens, credentials and session cookies while bypassing or sidestepping MFA.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-05",
     "id": "6b1d9cd5a096d574",
     "date": "2026-11-05",
-    "source": "DigiCert",
+    "source": "BleepingComputer",
     "title": "DigiCert data breach exposes customer information, identity documents",
     "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
     "tags": [
-      "IAM",
-      "Authorization Failure",
       "Incident",
-      "Identity Data"
+      "Authorization Failure",
+      "Excessive Access",
+      "Stale Identities"
     ],
-    "note": "A migration exposed an internal system with self-registration, and an authorization flaw allowed an unauthorized account to read archived customer records and identity documents.",
+    "note": "A server migration exposed an internal system whose self-registration and authorization controls allowed an unauthorized account to read archived customer records and identity documents.",
     "score": 94
   },
   {
@@ -103,22 +154,6 @@
     ],
     "note": "The revised draft advances selective-disclosure credentials toward standardization and remains directly relevant to strong authentication, proof-of-possession and privacy-preserving identity assertions.",
     "score": 86
-  },
-  {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "061aa79c518fa966",
-    "date": "2026-11-05",
-    "source": "Palo Alto Networks / CyberArk",
-    "title": "Idira is now Idira: Frequently Asked Questions",
-    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
-    "tags": [
-      "PAM",
-      "Identity Security",
-      "Platform Shift"
-    ],
-    "note": "The transition guidance outlines the final customer-facing integration of CyberArk capabilities into Palo Alto Networks' Idira identity-security ecosystem, including actions due before November 16, 2026.",
-    "score": 82
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -140,20 +175,20 @@
   {
     "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
     "publishedDate": "2026-11-04",
-    "id": "3b6af3c9f587ffba",
+    "id": "83a84e4b30e13713",
     "date": "2026-11-04",
     "source": "Google Cloud",
     "title": "Helping you build and defend at machine-speed in the agentic era",
-    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
+    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era/",
     "tags": [
-      "IAM",
-      "NHI",
       "AI-agent authorization",
+      "NHI",
+      "Machine Identity",
       "OAuth",
-      "Workload identity"
+      "Workload Identity"
     ],
-    "note": "Google announces generally available Auth Manager for delegated OAuth flows and preview Agent Identity JWT support for agent access across clouds, on-premises systems and MCP servers.",
-    "score": 95
+    "note": "Google Cloud announced generally available Agent Identity Auth Manager, OAuth 2.0/PKCE handling, preview OIDC JWT support for agents and identity-based VPC Service Controls for agent workloads.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -225,6 +260,23 @@
     "score": 86
   },
   {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "4ba7cadb265aa20a",
+    "date": "2026-11-04",
+    "source": "BleepingComputer",
+    "title": "mSecure password manager hack prompts password reset warnings",
+    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+    "tags": [
+      "Incident",
+      "Passkeys",
+      "Credential Exposure",
+      "Password Managers"
+    ],
+    "note": "mSecure users were told to change stored passwords, reset MFA and remove passkeys after reports that an encrypted customer database was stolen, although the scope and data-access evidence remain unclear.",
+    "score": 86
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "c59f897a3506478f",
@@ -239,6 +291,23 @@
     ],
     "note": "CrowdStrike\u2019s new agentic emulation capability explicitly chains identity gaps with vulnerabilities and misconfigurations to identify attack paths to critical assets.",
     "score": 78
+  },
+  {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "061aa79c518fa966",
+    "date": "2026-11-04",
+    "source": "Palo Alto Networks / CyberArk Community",
+    "title": "Idira is now Idira: Frequently Asked Questions",
+    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
+    "tags": [
+      "PAM",
+      "Identity Security Platform",
+      "CyberArk",
+      "Palo Alto Networks"
+    ],
+    "note": "The FAQ details the next phase of CyberArk's transition into Palo Alto Networks' Idira platform, including support-portal changes and the process for migrating self-hosted PAM customers.",
+    "score": 68
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -267,14 +336,14 @@
     "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
     "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
     "tags": [
-      "Microsoft Entra",
       "NHI",
-      "service-account abuse",
-      "OAuth",
-      "ITDR"
+      "Service Accounts",
+      "Machine Identity",
+      "Microsoft Entra",
+      "Token Abuse"
     ],
-    "note": "Todyl describes an ongoing campaign using stolen application credentials to authenticate as workloads across MSP and downstream Microsoft 365 and Azure tenants.",
-    "score": 99
+    "note": "Todyl documents an ongoing campaign abusing valid Entra application credentials, federated workload identities and session tokens to reach MSPs and downstream customers without relying on user MFA.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -640,6 +709,23 @@
   {
     "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
     "publishedDate": "2026-11-02",
+    "id": "cad413f3aa83e425",
+    "date": "2026-11-02",
+    "source": "WorkOS",
+    "title": "October 30th, 2026 Data Security Incident",
+    "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident",
+    "tags": [
+      "Incident",
+      "AI-agent authorization",
+      "Excessive Privilege",
+      "SaaS"
+    ],
+    "note": "WorkOS disclosed unauthorized access to an internal sales application containing CRM, customer-support and Slack-derived data, with investigators identifying an AI-assisted offensive framework.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
+    "publishedDate": "2026-11-02",
     "id": "5b382fcb9a40c91f",
     "date": "2026-11-02",
     "source": "IETF",
@@ -772,22 +858,6 @@
       "AI-Agent Authorization"
     ],
     "note": "Microsoft made a unified Entra Global Secure Access offering available, positioning identity-aware controls for private and internet traffic across users and AI agents.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-11-04T12:53:23.585822-07:00",
-    "publishedDate": "2026-11-02",
-    "id": "cad413f3aa83e425",
-    "date": "2026-11-02",
-    "source": "WorkOS",
-    "title": "October 30th, 2026 Data Security Incident",
-    "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident",
-    "tags": [
-      "IAM",
-      "Incident Response",
-      "AI-Agent Security"
-    ],
-    "note": "Primary disclosure describes unauthorized access to an internal customer-facing tool, AI-assisted reconnaissance, and exposure of CRM and support metadata while finding no evidence of production identity-service access.",
     "score": 82
   },
   {
@@ -3356,75 +3426,5 @@
     ],
     "note": "Microsoft describes expanded Entra Agent ID patterns, local-agent discovery, dynamic permissions, and risk-adaptive containment for agents that must not inherit standing human privilege.",
     "score": 90
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-19",
-    "id": "e5673c94c9fce474",
-    "date": "2026-10-19",
-    "source": "FIDO Alliance",
-    "title": "Authenticate U.S. 2026",
-    "url": "https://authenticatecon.com/event/authenticate-u-s-2026/",
-    "tags": [
-      "FIDO",
-      "passkeys",
-      "authentication",
-      "standards"
-    ],
-    "note": "The current Authenticate U.S. program is a useful primary-community queue anchor for developments in passkey deployment, phishing-resistant authentication, identity proofing and federation practice.",
-    "score": 69
-  },
-  {
-    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
-    "publishedDate": "2026-10-17",
-    "id": "6ebb6110329d2fce",
-    "date": "2026-10-17",
-    "source": "BleepingComputer",
-    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-connectwise-supply-chain-attack/",
-    "tags": [
-      "Entra",
-      "Service Principals",
-      "OAuth",
-      "MFA Bypass",
-      "Supply Chain"
-    ],
-    "note": "Explains how compromised ConnectWise service-principal credentials enabled direct app authentication, broad tenant access, and MFA bypass across customer Microsoft 365 environments.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-16",
-    "id": "5aba2bdccac5729c",
-    "date": "2026-10-16",
-    "source": "Huntress",
-    "title": "ConnectWise (SkyKick Vendor Credentials Abused in M365 Attacks",
-    "url": "https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "NHI",
-      "Excessive privilege",
-      "Incident"
-    ],
-    "note": "The investigation documents a compromised vendor application secret being used across Microsoft 365 tenants, including self-assigned Global Administrator privileges and persistence through added application credentials.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
-    "publishedDate": "2026-10-16",
-    "id": "432b50edcc433b9f",
-    "date": "2026-10-16",
-    "source": "CISA",
-    "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
-    "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
-    "tags": [
-      "PAM",
-      "Authentication",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "CISA confirms active exploitation of a BeyondTrust Remote Support authentication-bypass vulnerability and directs organizations to investigate privileged sessions, stored credentials, MFA changes and persistence.",
-    "score": 100
   }
 ]
