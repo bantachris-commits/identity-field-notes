@@ -17,6 +17,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-06",
+    "id": "de035062107f053e",
+    "date": "2026-11-06",
+    "source": "Chainalysis",
+    "title": "Updated Nov 6: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "session-tokens",
+      "token-theft",
+      "credentials",
+      "ITDR"
+    ],
+    "note": "Chainalysis revised its impact assessment to include password hashes and live tokens for all users, making this a high-value case study in session invalidation and incident disclosure evolution.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-06",
     "id": "c3d339653aff4e93",
@@ -32,6 +49,24 @@
     ],
     "note": "The release adds non-human identity discovery for HashiCorp Vault, OCI, Atlassian credentials and OAuth clients, plus JWT-based OAuth authentication for Oracle connectors.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "29f03553d9b2d40d",
+    "date": "2026-11-06",
+    "source": "SailPoint",
+    "title": "SaaS Release Notes - November 6, 2026",
+    "url": "https://community.sailpoint.com/release-notes/saas/saas-release-notes-november-6-2026",
+    "tags": [
+      "IGA",
+      "NHI",
+      "machine-identity",
+      "OAuth",
+      "Entra"
+    ],
+    "note": "Notable production changes add HashiCorp Vault discovery for agents, machines, tokens, PATs and API keys, plus Atlassian credential aggregation and stronger Entra role-assignment failure handling.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-11-07T06:28:18.013408-07:00",
@@ -59,12 +94,11 @@
     "title": "Sign in to Cloudflare Access with passkeys",
     "url": "https://developers.cloudflare.com/changelog/post/2026-11-06-access-passkeys/",
     "tags": [
-      "Passkeys",
-      "FIDO",
+      "passkeys",
       "IAM",
-      "Zero Trust"
+      "phishing-resistant-MFA"
     ],
-    "note": "Cloudflare Access now supports passkeys directly for protected applications and the App Launcher, with administrator-controlled enrollment and removal.",
+    "note": "A meaningful workforce-access move that lets administrators use passkeys directly for protected applications while retaining application-level policy enforcement.",
     "score": 82
   },
   {
@@ -127,18 +161,50 @@
     "publishedDate": "2026-11-05",
     "id": "6b1d9cd5a096d574",
     "date": "2026-11-05",
-    "source": "BleepingComputer",
+    "source": "DigiCert / BleepingComputer",
     "title": "DigiCert data breach exposes customer information, identity documents",
     "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
     "tags": [
-      "Incident",
-      "IAM",
-      "Authorization",
-      "Excessive Privilege",
-      "Offboarding"
+      "authorization",
+      "identity-proofing",
+      "data-exposure"
     ],
-    "note": "A VPN-to-internet migration left an internal system exposed; attackers self-registered accounts and exploited an authorization flaw to read archived customer records.",
-    "score": 94
+    "note": "A server migration exposed an internal system whose self-registration and authorization flaws allowed external accounts to read archived customer validation records.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "3dd970433e0707d0",
+    "date": "2026-11-05",
+    "source": "Okta",
+    "title": "Okta expands collaboration with AWS with multi-year commitment to advance agentic AI security",
+    "url": "https://www.okta.com/en-gb/newsroom/press-releases/okta-expands-collaboration-with-aws-with-multi-year-commitment-to-advance-agentic-ai-security/",
+    "tags": [
+      "IAM",
+      "AI-agents",
+      "authorization",
+      "AWS",
+      "Auth0"
+    ],
+    "note": "Material platform alignment covering Cross App Access, human approval for high-risk actions, Okta as a Bedrock policy decision point, and agent access certification.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "b3a5f02cf741d6d1",
+    "date": "2026-11-05",
+    "source": "OpenSSH",
+    "title": "OpenSSH 10.6p2 release notes",
+    "url": "https://www.openssh.org/releasenotes.html",
+    "tags": [
+      "authentication",
+      "PAM",
+      "privilege"
+    ],
+    "note": "The release fixes a password-authentication bypass affecting some musl-based Linux systems with PAM disabled, undermining assumptions about key-only accounts.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -193,6 +259,24 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "a8b31d456e065de9",
+    "date": "2026-11-04",
+    "source": "Apache OFBiz / Openwall oss-security",
+    "title": "Apache OFBiz: CVE Announcements",
+    "url": "https://www.openwall.com/lists/oss-security/2026/11/04/9",
+    "tags": [
+      "authentication",
+      "authorization",
+      "JWT",
+      "OAuth",
+      "account-takeover"
+    ],
+    "note": "A concentrated set of fixes covers hard-coded JWT signing keys, password-reset takeover, cross-tenant authorization bypass, social-login account binding and default-open REST authentication.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-04",
     "id": "1413af0079f42d2d",
@@ -208,6 +292,22 @@
       "PAM"
     ],
     "note": "A vulnerable File Manager exposed customers' FTP/SFTP credentials and, for some users, webmail session information; DreamHost invalidated passwords and active sessions.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "e557e28cb4b86c5a",
+    "date": "2026-11-04",
+    "source": "Start with Identity",
+    "title": "DreamHost says File Manager attacker took FTP passwords and webmail sessions for about ten weeks",
+    "url": "https://startwithidentity.com/blog/2026-11-04-dreamhost-says-file-manager-attacker-took-ftp-passwords-and-webmail-sessions-for-ten-weeks/",
+    "tags": [
+      "credentials",
+      "session-hijacking",
+      "account-recovery"
+    ],
+    "note": "The incident shows how compromised login forms can capture long-lived FTP credentials and webmail sessions, including sessions that bypass the need for a password or MFA.",
     "score": 91
   },
   {
@@ -243,6 +343,23 @@
     ],
     "note": "Descope introduces a personal-agent access path based on the Poppy protocol, cryptographically bound agent sessions, explicit user approval, scoped permissions and DPoP-bound tokens.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "f6be5652d6e725e1",
+    "date": "2026-11-04",
+    "source": "Vercel / Start with Identity",
+    "title": "Vercel starts binding dashboard sessions to devices with DBSC in Chrome",
+    "url": "https://startwithidentity.com/blog/2026-11-04-vercel-starts-binding-dashboard-sessions-to-devices-with-dbsc-in-chrome/",
+    "tags": [
+      "session-tokens",
+      "token-theft",
+      "ITDR",
+      "OAuth"
+    ],
+    "note": "Vercel\u2019s rollout of Device Bound Session Credentials is a concrete defense against replay of stolen dashboard cookies, with useful implications for SaaS session protection.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -384,6 +501,42 @@
     ],
     "note": "Binance\u2019s incident account ties the theft to malware on an engineer\u2019s device, compromise of additional wallet personnel, stolen credentials and a container deployment token reaching wallet-signing infrastructure.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "8fdbf1596f1f2c0b",
+    "date": "2026-11-03",
+    "source": "Todyl / Start with Identity",
+    "title": "One actor signed in as Entra ID apps with stolen secrets and reached 27 organizations, Todyl says",
+    "url": "https://startwithidentity.com/blog/2026-11-03-actor-signs-in-as-entra-id-apps-with-stolen-secrets-across-27-organizations/",
+    "tags": [
+      "Entra",
+      "NHI",
+      "service-principals",
+      "client-secrets",
+      "OAuth"
+    ],
+    "note": "A cross-tenant campaign abused stolen Entra app secrets, workload identities and DevOps session tokens to search mail and download files without interactive MFA.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "6575fc0564fd7422",
+    "date": "2026-11-03",
+    "source": "Binance",
+    "title": "29 October 2026 Binance Security Incident: Initial Findings and Response Update",
+    "url": "https://www.binance.com/en-NZ/blog/community/3229153443759566763",
+    "tags": [
+      "PAM",
+      "privilege",
+      "secrets",
+      "service-accounts",
+      "AI-agents"
+    ],
+    "note": "Binance\u2019s first-party account traces wallet-signing abuse to compromised engineer endpoints, a deployment permission token, internal AI tooling and insufficient transaction-authorization controls.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -574,23 +727,6 @@
     "score": 76
   },
   {
-    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
-    "publishedDate": "2026-11-02",
-    "id": "2e54985e07586244",
-    "date": "2026-11-02",
-    "source": "Google Threat Intelligence Group",
-    "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
-    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models/",
-    "tags": [
-      "Cloud IAM",
-      "NHI",
-      "Session/token abuse",
-      "AI-agent authorization"
-    ],
-    "note": "Google documents LLMjacking campaigns abusing IAM credentials, service-account keys, GitHub tokens, active session tokens, and API keys to monetize cloud AI resources.",
-    "score": 96
-  },
-  {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
     "publishedDate": "2026-11-02",
     "id": "f6edbcaffade5370",
@@ -606,6 +742,24 @@
     ],
     "note": "CrowdStrike-linked reporting describes AI agents forging administrator tokens, abusing authentication keys from an old mail-server export, and conducting password spraying and credential scanning at scale.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "63028db311b26f99",
+    "date": "2026-11-02",
+    "source": "Google Threat Intelligence Group",
+    "title": "The Rise of LLMJacking: How Threat Actors Monetize Compromised Cloud and Model Resources",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/llmjacking-monetizing-compromised-cloud-models",
+    "tags": [
+      "cloud-IAM",
+      "NHI",
+      "service-accounts",
+      "secrets",
+      "AI-agents"
+    ],
+    "note": "Mandiant details real intrusions involving stolen cloud credentials, service-account token creation, unauthorized IAM accounts, SSH-key persistence and abuse of LLM infrastructure.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-11-03T12:45:20.456659-07:00",
@@ -1014,25 +1168,6 @@
     ],
     "note": "Chainalysis reported unauthorized access using what it called offensive agentic techniques and exposure of user IDs, names, emails, and organizational role labels, while reporting no evidence of stolen credentials or session tokens to date.",
     "score": 88
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-30",
-    "id": "de035062107f053e",
-    "date": "2026-10-30",
-    "source": "Chainalysis",
-    "title": "Updated Nov 6: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Incident",
-      "Credential Theft",
-      "Session Tokens",
-      "API Keys",
-      "AI-Agent Authorization",
-      "ITDR"
-    ],
-    "note": "Chainalysis' evolving disclosure says names, usernames, password hashes and live tokens for all users were exposed, followed by account lockdowns, credential resets and API-key rotation.",
-    "score": 98
   },
   {
     "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
@@ -3292,144 +3427,5 @@
     ],
     "note": "Reporting on Unit 42\u2019s update describes Qilin and INC exploitation of a PAN-OS GlobalProtect authentication bypass to establish VPN sessions while bypassing MFA.",
     "score": 90
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "3bf15234a6cdb8f0",
-    "date": "2026-10-20",
-    "source": "FIDO Alliance",
-    "title": "FIDO Alliance Moves to Accelerate Digital Credentials Adoption at Scale",
-    "url": "https://fidoalliance.org/fido-alliance-moves-to-accelerate-digital-credentials-adoption-at-scale/?query-cdbd12d0-page=76",
-    "tags": [
-      "FIDO",
-      "Passkeys",
-      "Digital Identity",
-      "AI Agents"
-    ],
-    "note": "Announces public digital-wallet certification work and verifier-identification mechanisms aimed at making credential presentation, agentic commerce, and human approval more interoperable and phishing-resistant.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "435e5f1f7a7c8cd7",
-    "date": "2026-10-20",
-    "source": "Auth0",
-    "title": "Securing AI Agents with Auth0 CIMD and Token Exchange",
-    "url": "https://auth0.com/blog/securing-ai-agents-with-auth0-cimd-token-exchange/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "Token Exchange",
-      "Authorization"
-    ],
-    "note": "Provides a concrete implementation pattern for preserving the user-to-agent delegation chain across multi-hop agent calls while enforcing permission ceilings and short-lived delegated tokens.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "5e1b3910b8c3df34",
-    "date": "2026-10-20",
-    "source": "Andromeda",
-    "title": "Andromeda October 2026 Security Incident",
-    "url": "https://andromeda.ai/security-updates/october-2026-security-incident",
-    "tags": [
-      "Cloud IAM",
-      "Credentials",
-      "Secrets Management",
-      "Incident"
-    ],
-    "note": "Andromeda confirms unauthorized access to credentials affecting a limited number of customer accounts, key rotation and an ongoing root-cause investigation.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "0732f8cc15c20fb3",
-    "date": "2026-10-20",
-    "source": "AWS",
-    "title": "Amazon WorkSpaces simplifies secure AI agent access to enterprise cloud desktops with less infrastructure to operate and manage",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/workspaces-ai-agents-oauth-connection-management/",
-    "tags": [
-      "AWS",
-      "OAuth",
-      "AI-Agent Authorization",
-      "Session Security",
-      "NHI"
-    ],
-    "note": "AWS now brokers AI-agent WorkSpaces sessions through OAuth 2.0 and manages connection lifecycles, while exposing session state and observability without handing agents the underlying streaming connection.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "7cfa263b782a85aa",
-    "date": "2026-10-20",
-    "source": "FIDO Alliance",
-    "title": "FIDO Alliance Moves to Accelerate Digital Credentials Adoption at Scale",
-    "url": "https://fidoalliance.org/fido-alliance-moves-to-accelerate-digital-credentials-adoption-at-scale/",
-    "tags": [
-      "FIDO",
-      "Passkeys",
-      "Digital Credentials",
-      "Agentic Authorization"
-    ],
-    "note": "FIDO announced public working documents for wallet certification and verifier identification, relevant to interoperable credentials, phishing-resistant recovery and trusted agent delegation.",
-    "score": 80
-  },
-  {
-    "firstSeenAt": "2026-10-25T15:10:35.311850-06:00",
-    "publishedDate": "2026-10-19",
-    "id": "e1878fccb67fd76c",
-    "date": "2026-10-19",
-    "source": "Sophos X-Ops",
-    "title": "ConnectWise Cloud Backup application abused in cross-tenant token sweep",
-    "url": "https://www.sophos.com/en-us/blog/connectwise-cloud-backup-application-abused-in-token-sweep",
-    "tags": [
-      "Entra",
-      "OAuth",
-      "NHI",
-      "Machine Identity",
-      "Token Abuse"
-    ],
-    "note": "A compromised vendor-held application credential was used to request app-only Microsoft Graph tokens across consenting Microsoft 365 tenants without passwords or MFA, demonstrating multi-tenant service-principal blast radius.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
-    "publishedDate": "2026-10-19",
-    "id": "309bb43857a252a2",
-    "date": "2026-10-19",
-    "source": "CSO Online",
-    "title": "ConnectWise backup credentials exposed multiple Microsoft 365 tenants",
-    "url": "https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html",
-    "tags": [
-      "NHI",
-      "Service Accounts",
-      "Entra",
-      "Excessive Privilege",
-      "OAuth"
-    ],
-    "note": "The incident shows how a compromised application credential authenticated into customer tenants without interactive MFA, obtained Graph access and reportedly escalated application privileges.",
-    "score": 99
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-19",
-    "id": "0dbe591401e4d521",
-    "date": "2026-10-19",
-    "source": "IETF",
-    "title": "Intent Token",
-    "url": "https://datatracker.ietf.org/doc/html/draft-chen-oauth-agent-intent-token-00",
-    "tags": [
-      "OAuth",
-      "AI Agents",
-      "Authorization",
-      "Standards"
-    ],
-    "note": "A new standards-track proposal for carrying signed, auditable user intent into later OAuth authorization decisions instead of letting agents translate natural-language goals directly into broad scopes.",
-    "score": 94
   }
 ]
