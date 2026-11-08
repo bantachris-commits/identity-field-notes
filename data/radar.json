@@ -17,6 +17,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "28001d41675bc5dd",
+    "date": "2026-11-06",
+    "source": "SecurityWeek",
+    "title": "DigiCert Data Breach Impacts Business Customer Information",
+    "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "IGA",
+      "Excessive Privilege",
+      "Stale Identity"
+    ],
+    "note": "Attackers abused an internet-exposed internal system\u2019s self-registration feature, creating a non-MFA account with read access to archived customer data and identity documents.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-11-06",
     "id": "de035062107f053e",
@@ -31,6 +49,23 @@
       "ITDR"
     ],
     "note": "Chainalysis revised its impact assessment to include password hashes and live tokens for all users, making this a high-value case study in session invalidation and incident disclosure evolution.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "e0d8eb7fb5d3f114",
+    "date": "2026-11-06",
+    "source": "TechRadar Pro",
+    "title": "Chainalysis admits all users affected in major data breach \u2014 names, usernames, password hashes, and live tokens all exposed",
+    "url": "https://www.techradar.com/pro/security/chainalysis-admits-all-users-affected-in-major-data-breach-names-usernames-password-hashes-and-live-tokens-all-exposed",
+    "tags": [
+      "Credentials",
+      "Session Tokens",
+      "Secrets",
+      "Incident Response"
+    ],
+    "note": "Chainalysis\u2019 revised disclosure identifies an on-path attack exposing some customer passwords and requiring password resets, API-key rotation and service shutdowns.",
     "score": 96
   },
   {
@@ -67,6 +102,22 @@
     ],
     "note": "Notable production changes add HashiCorp Vault discovery for agents, machines, tokens, PATs and API keys, plus Atlassian credential aggregation and stronger Entra role-assignment failure handling.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "061aa79c518fa966",
+    "date": "2026-11-06",
+    "source": "CyberArk / Idira",
+    "title": "CyberArk is now Idira: Frequently Asked Questions",
+    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
+    "tags": [
+      "PAM",
+      "Market Shift",
+      "Secrets"
+    ],
+    "note": "The FAQ gives customers concrete details on the CyberArk-to-Idira transition into Palo Alto Networks, including the November 16 migration of support, learning and community systems.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-11-07T06:28:18.013408-07:00",
@@ -106,7 +157,7 @@
     "publishedDate": "2026-11-05",
     "id": "e2845eccbac1628b",
     "date": "2026-11-05",
-    "source": "Microsoft Threat Intelligence",
+    "source": "Microsoft Security",
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
@@ -115,9 +166,9 @@
       "Entra",
       "OAuth",
       "Secrets",
-      "AI-Agent Authorization"
+      "ITDR"
     ],
-    "note": "Microsoft details agentic attacks that discovered public repository secrets, abused Entra service principals and OAuth applications, and reached Azure Key Vault and Microsoft 365 data in minutes.",
+    "note": "Microsoft details attacks that used leaked application credentials and OAuth applications to access Entra tenants, Azure resources, Key Vault secrets, SharePoint, OneDrive and mailboxes.",
     "score": 99
   },
   {
@@ -147,14 +198,14 @@
     "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
     "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
     "tags": [
-      "MFA Bypass",
+      "Entra",
       "OAuth",
-      "Session Theft",
-      "Microsoft Entra",
-      "Google Workspace"
+      "MFA Bypass",
+      "AiTM",
+      "Session Theft"
     ],
-    "note": "The campaign combines Microsoft device-code phishing with Google AiTM reverse proxying to obtain tokens, credentials and session cookies while bypassing or sidestepping MFA.",
-    "score": 97
+    "note": "The campaign combines Kali365 device-code phishing with VoidProxy AiTM attacks to steal Microsoft and Google credentials, tokens and session cookies while bypassing MFA.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -207,6 +258,24 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "b289c8a09a34e9b8",
+    "date": "2026-11-05",
+    "source": "Okta",
+    "title": "Okta Privileged Access Device Tools release notes \u2014 Version 1.117.2",
+    "url": "https://help.okta.com/oie/en-us/content/topics/releasenotes/privileged-access/opa-release-notes-device-tools.htm",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Machine Identity",
+      "AWS",
+      "Secrets"
+    ],
+    "note": "Okta Privileged Access added workload authentication using AWS IAM roles instead of static access keys, plus a systemd deployment mode for its workload token issuer.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-05",
     "id": "10b1885bfe6cd447",
@@ -243,20 +312,21 @@
   {
     "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
     "publishedDate": "2026-11-04",
-    "id": "83a84e4b30e13713",
+    "id": "3b6af3c9f587ffba",
     "date": "2026-11-04",
     "source": "Google Cloud",
     "title": "Helping you build and defend at machine-speed in the agentic era",
-    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era/",
+    "url": "https://cloud.google.com/blog/products/identity-security/helping-you-build-and-defend-at-machine-speed-in-the-agentic-era",
     "tags": [
-      "AI-agent authorization",
       "NHI",
       "Machine Identity",
+      "AI-Agent Authorization",
       "OAuth",
-      "Workload Identity"
+      "Workload Identity",
+      "AWS"
     ],
-    "note": "Google Cloud announced generally available Agent Identity Auth Manager, OAuth 2.0/PKCE handling, preview OIDC JWT support for agents and identity-based VPC Service Controls for agent workloads.",
-    "score": 96
+    "note": "Google Cloud announced generally available Auth Manager for agent OAuth 2.0/PKCE flows and preview Agent Identity JWT support for cross-cloud and MCP authentication without long-lived API keys.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
@@ -309,6 +379,23 @@
     ],
     "note": "The incident shows how compromised login forms can capture long-lived FTP credentials and webmail sessions, including sessions that bypass the need for a password or MFA.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "4ba7cadb265aa20a",
+    "date": "2026-11-04",
+    "source": "BleepingComputer",
+    "title": "mSecure password manager hack prompts password reset warnings",
+    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+    "tags": [
+      "Credentials",
+      "Secrets",
+      "Passkeys",
+      "MFA"
+    ],
+    "note": "mSecure customers were told to change stored passwords, reset MFA and remove passkeys after reports that an encrypted cloud password database was stolen.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -380,23 +467,6 @@
     "score": 86
   },
   {
-    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
-    "publishedDate": "2026-11-04",
-    "id": "4ba7cadb265aa20a",
-    "date": "2026-11-04",
-    "source": "BleepingComputer",
-    "title": "mSecure password manager hack prompts password reset warnings",
-    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
-    "tags": [
-      "Incident",
-      "Passkeys",
-      "Credential Exposure",
-      "Password Managers"
-    ],
-    "note": "mSecure users were told to change stored passwords, reset MFA and remove passkeys after reports that an encrypted customer database was stolen, although the scope and data-access evidence remain unclear.",
-    "score": 86
-  },
-  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "c59f897a3506478f",
@@ -411,23 +481,6 @@
     ],
     "note": "CrowdStrike\u2019s new agentic emulation capability explicitly chains identity gaps with vulnerabilities and misconfigurations to identify attack paths to critical assets.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-04",
-    "id": "061aa79c518fa966",
-    "date": "2026-11-04",
-    "source": "Palo Alto Networks / CyberArk Community",
-    "title": "Idira is now Idira: Frequently Asked Questions",
-    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
-    "tags": [
-      "PAM",
-      "Identity Security Platform",
-      "CyberArk",
-      "Palo Alto Networks"
-    ],
-    "note": "The FAQ details the next phase of CyberArk's transition into Palo Alto Networks' Idira platform, including support-portal changes and the process for migrating self-hosted PAM customers.",
-    "score": 68
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -814,6 +867,23 @@
     "score": 92
   },
   {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "610b74ebaee50946",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "Agentic AI Use Cases and Requirements",
+    "url": "https://datatracker.ietf.org/doc/html/draft-agentic-ai-usecases-requirements-07",
+    "tags": [
+      "AI-Agent Authorization",
+      "Delegation",
+      "NHI",
+      "OAuth"
+    ],
+    "note": "The revised requirements draft addresses authorization propagation, progressive scope attenuation, cryptographically verifiable delegation chains and cancellation across multi-agent workflows.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
     "publishedDate": "2026-11-02",
     "id": "647e5f05d7199de5",
@@ -878,6 +948,23 @@
       "SaaS"
     ],
     "note": "WorkOS disclosed unauthorized access to an internal sales application containing CRM, customer-support and Slack-derived data, with investigators identifying an AI-assisted offensive framework.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "9bf0852ad631b202",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "Agent Action Confirmation Protocol (AACP",
+    "url": "https://datatracker.ietf.org/doc/html/draft-liu-agent-action-confirmation-00",
+    "tags": [
+      "AI-Agent Authorization",
+      "OAuth",
+      "Delegation",
+      "Non-Repudiation"
+    ],
+    "note": "This new individual Internet-Draft proposes signed, verifier-side evidence binding human confirmation to exact agent actions, parameters, audiences and delegation paths.",
     "score": 91
   },
   {
@@ -3343,89 +3430,5 @@
     ],
     "note": "A meaningful platform move toward discovering agents, governing their actions, monitoring behavior and stopping unintended or malicious activity at runtime.",
     "score": 80
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "1a39f5bd86b350cd",
-    "date": "2026-10-21",
-    "source": "FIDO Alliance",
-    "title": "Authenticate 2026 Day 3: Trusting the transaction in the agentic economy",
-    "url": "https://fidoalliance.org/authenticate-2026-day-3-trusting-the-transaction-in-the-agentic-economy/",
-    "tags": [
-      "Passkeys",
-      "FIDO",
-      "AI Agents",
-      "Authorization"
-    ],
-    "note": "Summarizes FIDO's latest agentic-transaction focus on verified human approval, traceability, and enforcing limits on actions taken by delegated agents.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "aa2f36ffa3be9ae9",
-    "date": "2026-10-20",
-    "source": "BleepingComputer",
-    "title": "Zeabur shutting down after second security breach in two months",
-    "url": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "Cloud Security",
-      "Incident"
-    ],
-    "note": "A material identity-control failure involving plaintext internal credentials, unrotated administrator tokens, exposed cloud access keys, SSH-key persistence and root access across GCP servers.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "6bd6585835c42569",
-    "date": "2026-10-20",
-    "source": "Palo Alto Networks Unit 42",
-    "title": "Active Exploitation of May 2026 PAN-OS CVE-2026-0257 (Updated October 20",
-    "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
-    "tags": [
-      "PAM",
-      "MFA bypass",
-      "ITDR",
-      "Incident"
-    ],
-    "note": "Unit 42 reports ransomware operators exploiting a GlobalProtect authentication bypass to establish VPN sessions while bypassing MFA, then pivoting toward lateral movement and offline domain-credential theft.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "c466539333b10120",
-    "date": "2026-10-20",
-    "source": "Google Chrome Security",
-    "title": "Protecting Chrome and Android Users from Compromised eMudhra Intermediate CA Certificates",
-    "url": "https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/",
-    "tags": [
-      "PKI",
-      "Machine Identity",
-      "Session Security"
-    ],
-    "note": "Primary technical disclosure explains how weak intermediate-CA private keys could enable trusted-site impersonation, credential interception and session hijacking, and documents Chrome\u2019s emergency response.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-20",
-    "id": "3a7a45302801ae23",
-    "date": "2026-10-20",
-    "source": "The Register",
-    "title": "Palo Alto\u2019s firewall OS has been under attack from multiple ransomware groups since June",
-    "url": "https://www.theregister.com/cyber-crime/2026/10/20/palo_altos_firewall_os_has_been_under_attack_from_multiple_ransomware_groups_since_june/5304226",
-    "tags": [
-      "PAM",
-      "MFA",
-      "Authentication",
-      "Incident"
-    ],
-    "note": "Reporting on Unit 42\u2019s update describes Qilin and INC exploitation of a PAN-OS GlobalProtect authentication bypass to establish VPN sessions while bypassing MFA.",
-    "score": 90
   }
 ]
