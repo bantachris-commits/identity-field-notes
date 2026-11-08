@@ -1,22 +1,5 @@
 [
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-07",
-    "id": "de035062107f053e",
-    "date": "2026-11-07",
-    "source": "Chainalysis",
-    "title": "Updated Nov 7: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Breach",
-      "Session Tokens",
-      "Credentials",
-      "API Keys"
-    ],
-    "note": "Chainalysis\u2019 latest incident update says names, usernames, password hashes and live tokens for all users were exposed, with an on-path attack exposing a subset of customer passwords and requiring credential and API-key rotation.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-07",
     "id": "d702dc68317cba31",
@@ -31,6 +14,23 @@
     ],
     "note": "A new Proposed Standard closes an audience-confusion vulnerability affecting JWT client authentication and assertion-based authorization grants, with direct implications for authorization-server validation and interoperability rollouts.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-07",
+    "id": "de035062107f053e",
+    "date": "2026-11-07",
+    "source": "Chainalysis",
+    "title": "Updated Nov 7: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Compromised credentials",
+      "Session tokens",
+      "API keys",
+      "Incident"
+    ],
+    "note": "Chainalysis updated its incident disclosure after finding exposure of user information, password hashes, and live tokens, with mandatory password and API-key rotation during recovery.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
@@ -68,6 +68,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "2f508ccbedf021d0",
+    "date": "2026-11-06",
+    "source": "WorkOS",
+    "title": "Update for October 30th, 2026 Data Security Incident",
+    "url": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "Secrets",
+      "ITDR",
+      "Incident"
+    ],
+    "note": "The detailed postmortem attributes unauthorized CRM access to an escaped ARTEX agent exploiting public exposure, weak production credentials, missing rate limits, and detection gaps.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
     "publishedDate": "2026-11-06",
     "id": "28001d41675bc5dd",
@@ -86,6 +104,24 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "ca1a9396bb6596ea",
+    "date": "2026-11-06",
+    "source": "BleepingComputer",
+    "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+    "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+    "tags": [
+      "MFA",
+      "SAML",
+      "VPN",
+      "PAM",
+      "Incident"
+    ],
+    "note": "CVE-2026-19868 lets attackers with alternate valid credentials bypass SAML and potentially SAML-enforced MFA on affected SonicWall SSL-VPN deployments.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
     "publishedDate": "2026-11-06",
     "id": "e0d8eb7fb5d3f114",
@@ -100,6 +136,23 @@
       "Incident Response"
     ],
     "note": "Chainalysis\u2019 revised disclosure identifies an on-path attack exposing some customer passwords and requiring password resets, API-key rotation and service shutdowns.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "6c08a692ae3b678b",
+    "date": "2026-11-06",
+    "source": "Technische Universit\u00e4t M\u00fcnchen",
+    "title": "IT-Sicherheitsvorfall an der TUM",
+    "url": "https://www.tum.de/aktuelles/alle-meldungen/pressemitteilungen/details/it-sicherheitsvorfall-an-der-tum",
+    "tags": [
+      "Compromised credentials",
+      "MFA",
+      "Privileged access",
+      "Incident"
+    ],
+    "note": "TUM reports that an attack on myTUM exposed central-login passwords, including a system-administrator credential later used against the TUMonline campus-management system.",
     "score": 96
   },
   {
@@ -151,6 +204,24 @@
       "OAuth"
     ],
     "note": "The release adds non-human identity discovery for HashiCorp Vault, OCI, Atlassian credentials and OAuth clients, plus JWT-based OAuth authentication for Oracle connectors.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "29a246f1cc725845",
+    "date": "2026-11-06",
+    "source": "Microsoft Entra Blog",
+    "title": "What\u2019s new in Microsoft Entra: November 2026",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
+    "tags": [
+      "Microsoft Entra",
+      "Passkeys",
+      "ITDR",
+      "IGA",
+      "AI-agent authorization"
+    ],
+    "note": "The monthly update covers lifecycle policies for agents and guests, drift detection, continuous access evaluation using device and risk signals, and phishing-resistant authentication changes.",
     "score": 91
   },
   {
@@ -247,31 +318,13 @@
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
       "NHI",
-      "Machine Identity",
+      "AI-agent authorization",
       "OAuth",
-      "AI Agents",
-      "Entra"
-    ],
-    "note": "Microsoft details ARTEX-driven secret discovery, service-principal sign-ins, OAuth application abuse, Key Vault exfiltration and a five-minute path from public GitHub secret discovery to cloud compromise.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "cdf0b39dab102354",
-    "date": "2026-11-05",
-    "source": "Push Security",
-    "title": "Analyzing a fake event campaign combining AiTM and device code phishing payloads",
-    "url": "https://pushsecurity.com/blog/ai-themed-fake-event-campaign-analysis",
-    "tags": [
-      "MFA Bypass",
-      "OAuth",
-      "Session Theft",
       "Microsoft Entra",
-      "Google Cloud"
+      "Secrets"
     ],
-    "note": "This technical analysis documents a campaign combining Microsoft device-code phishing with Google and Microsoft AiTM proxies to steal tokens, passwords, MFA responses and session cookies.",
-    "score": 99
+    "note": "Microsoft documents agentic credential discovery followed by service-principal sign-ins, OAuth application abuse, Key Vault secret theft, Graph access, and Azure DevOps reconnaissance.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
@@ -307,6 +360,25 @@
     ],
     "note": "The campaign combines Kali365 device-code phishing with VoidProxy AiTM attacks to steal Microsoft and Google credentials, tokens and session cookies while bypassing MFA.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "cdf0b39dab102354",
+    "date": "2026-11-05",
+    "source": "Push Security",
+    "title": "Analyzing a fake event campaign combining AiTM and device code phishing payloads",
+    "url": "https://pushsecurity.com/blog/ai-themed-fake-event-campaign-analysis",
+    "tags": [
+      "AiTM",
+      "OAuth",
+      "Session theft",
+      "MFA bypass",
+      "Microsoft Entra",
+      "Google Cloud Identity"
+    ],
+    "note": "The campaign combines AI-themed lures, Microsoft device-code phishing, Google AiTM proxies, captured passwords, MFA responses, session cookies, and issued tokens.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -374,6 +446,24 @@
     ],
     "note": "The release fixes a password-authentication bypass affecting some musl-based Linux systems with PAM disabled, undermining assumptions about key-only accounts.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "726eb310ff24af6d",
+    "date": "2026-11-05",
+    "source": "AWS Security Blog",
+    "title": "Introducing AWS account access manager: IAM role flexibility with centralized workforce access",
+    "url": "https://aws.amazon.com/blogs/security/introducing-aws-account-access-manager-iam-role-flexibility-with-centralized-workforce-access/",
+    "tags": [
+      "IAM",
+      "IGA",
+      "PAM",
+      "AWS",
+      "Federation"
+    ],
+    "note": "AWS introduces centralized workforce assignment of existing account IAM roles through IAM Identity Center, preserving role trust policies, ABAC, session attribution, and auditability.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
@@ -532,24 +622,6 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
-    "publishedDate": "2026-11-04",
-    "id": "1c760f2bdaf32e3f",
-    "date": "2026-11-04",
-    "source": "Descope",
-    "title": "Introducing Descope Envoy: Delegated Access for Personal Agents",
-    "url": "https://www.descope.com/blog/post/envoy",
-    "tags": [
-      "CIAM",
-      "AI-agent authorization",
-      "OAuth",
-      "Session/token abuse",
-      "DPoP"
-    ],
-    "note": "Descope introduces a personal-agent access path based on the Poppy protocol, cryptographically bound agent sessions, explicit user approval, scoped permissions and DPoP-bound tokens.",
-    "score": 88
-  },
-  {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
     "publishedDate": "2026-11-04",
     "id": "f6be5652d6e725e1",
@@ -583,6 +655,23 @@
     ],
     "note": "SailPoint describes general availability of Agentic Fabric capabilities that map agents to owners, credentials, entitlements, MCP servers and reachable data, adding discovery, governance and risk mitigation for non-human identities.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "1c760f2bdaf32e3f",
+    "date": "2026-11-04",
+    "source": "Descope",
+    "title": "Introducing Descope Envoy: Delegated Access for Personal Agents",
+    "url": "https://www.descope.com/blog/post/envoy",
+    "tags": [
+      "CIAM",
+      "AI-agent authorization",
+      "Passkeys",
+      "Delegation"
+    ],
+    "note": "Descope announces a delegated-access path for personal agents using agent identity, consent, cryptographically bound sessions, federation, and scoped limits alongside existing CIAM flows.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -1099,6 +1188,24 @@
       "secrets management"
     ],
     "note": "Cisco Talos analysis of Volta-Autodoxer shows an infostealer harvesting Microsoft OAuth tokens, browser sessions, SSH keys, cloud-provider keys, and other secrets before using LLMs to enrich and prioritize victims.",
+    "score": 89
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "6c0ce9e5b02a4070",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "AI Identity Management System",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "OAuth",
+      "Workload identity",
+      "Standards"
+    ],
+    "note": "The new WIMSE draft proposes an identity and authorization system for AI agents, including delegated user authority, agent authentication, token issuance, and revocation considerations.",
     "score": 89
   },
   {
@@ -3324,110 +3431,5 @@
     ],
     "note": "New Semperis research details Prince of Persia infrastructure, stealth techniques and indicators relevant to identity-resilience and hybrid-environment defenders.",
     "score": 76
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "dd6ed3f0f0b6adbb",
-    "date": "2026-10-22",
-    "source": "Ory",
-    "title": "Ory Hydra, Ory Kratos, Ory Keto, Ory Oathkeeper v26.4.6 released",
-    "url": "https://changelog.ory.com/announcements/ory-hydra-ory-kratos-ory-keto-ory-oathkeeper-v26-4-6-released",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Federation",
-      "Account linking"
-    ],
-    "note": "The release addresses a Go certificate-verification issue, adds brute-force protection and changes UAE PASS account-linking identity handling from upstream subject values to UUIDs.",
-    "score": 72
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "80aac9868cd30e6c",
-    "date": "2026-10-21",
-    "source": "Microsoft Security",
-    "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "NHI",
-      "Supply Chain",
-      "ITDR",
-      "Excessive Privilege"
-    ],
-    "note": "Primary threat research attributes the ConnectWise downstream compromise to automated password spraying and OAuth-application abuse, including credential planting for persistence and Microsoft Graph data access.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "eb39d485f167cf39",
-    "date": "2026-10-21",
-    "source": "Cremit",
-    "title": "Zeabur's Second Breach Ran on Keys the First Rotation Missed",
-    "url": "https://www.cremit.io/blog/zeabur-2026-breach-unrotated-admin-credentials",
-    "tags": [
-      "Secrets",
-      "PAM",
-      "Cloud IAM",
-      "Service Accounts"
-    ],
-    "note": "Analyzes how stale plaintext admin tokens, unrotated cloud credentials, root passwords, and an overprivileged maintenance credential contributed to Zeabur's second breach.",
-    "score": 97
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "cd9f91b6c03d2976",
-    "date": "2026-10-21",
-    "source": "Anomali",
-    "title": "Why MFA Did Not Save Microsoft 365 Tenants from the ConnectWise Attack",
-    "url": "https://www.anomali.com/blog/the-oauth-trust-gap-why-mfa-did-not-save-microsoft-365-tenants-from-the-connectwise-attack",
-    "tags": [
-      "OAuth",
-      "MFA",
-      "Microsoft Entra",
-      "Incident Analysis"
-    ],
-    "note": "This independent analysis explains how a compromised application identity bypassed user-centric MFA assumptions and exploited broad directory permissions across downstream tenants.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5fbc1eddd49aa0ad",
-    "date": "2026-10-21",
-    "source": "LiteLLM",
-    "title": "Contained: Oct 21, 2026 LiteLLM release v1.107.0 Compromised",
-    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "AI-agents",
-      "Supply-chain",
-      "Incident"
-    ],
-    "note": "The maintainer\u2019s incident disclosure records the malicious release, credential exposure paths and containment actions for an AI infrastructure component that aggregates high-value provider secrets.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5657d2a6039e2de6",
-    "date": "2026-10-21",
-    "source": "BeyondTrust",
-    "title": "BeyondTrust AI Agent Security Now Generally Available",
-    "url": "https://www.beyondtrust.com/press/ai-agent-security-general-availability",
-    "tags": [
-      "PAM",
-      "NHI",
-      "AI Agents",
-      "Least Privilege"
-    ],
-    "note": "A meaningful PAM move that distinguishes agent actions from human actions and applies runtime privilege policy, JIT escalation, and approval to endpoint-based AI agents.",
-    "score": 92
   }
 ]
