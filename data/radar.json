@@ -1,5 +1,56 @@
 [
   {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-07",
+    "id": "de035062107f053e",
+    "date": "2026-11-07",
+    "source": "Chainalysis",
+    "title": "Updated Nov 7: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Breach",
+      "Session Tokens",
+      "Credentials",
+      "API Keys"
+    ],
+    "note": "Chainalysis\u2019 latest incident update says names, usernames, password hashes and live tokens for all users were exposed, with an on-path attack exposing a subset of customer passwords and requiring credential and API-key rotation.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-07",
+    "id": "d702dc68317cba31",
+    "date": "2026-11-07",
+    "source": "IETF",
+    "title": "RFC 10070 - Updates to OAuth 2.0 JSON Web Token (JWT Client Authentication and Assertion-Based Authorization Grants",
+    "url": "https://datatracker.ietf.org/doc/rfc10070/",
+    "tags": [
+      "OAuth",
+      "OIDC",
+      "Identity Security"
+    ],
+    "note": "A new Proposed Standard closes an audience-confusion vulnerability affecting JWT client authentication and assertion-based authorization grants, with direct implications for authorization-server validation and interoperability rollouts.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "abfd8670eca50ba4",
+    "date": "2026-11-06",
+    "source": "Todyl",
+    "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
+    "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
+    "tags": [
+      "Entra",
+      "NHI",
+      "Machine Identity",
+      "Secrets",
+      "MSP Security"
+    ],
+    "note": "An updated investigation attributes an ongoing campaign to agentic credential crawling and documents service-principal abuse, cross-tenant access, stolen secrets and refresh-token replay affecting MSPs and their customers.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
     "publishedDate": "2026-11-06",
     "id": "3bc058b957f31d5d",
@@ -35,23 +86,6 @@
     "score": 97
   },
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-06",
-    "id": "de035062107f053e",
-    "date": "2026-11-06",
-    "source": "Chainalysis",
-    "title": "Updated Nov 6: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "session-tokens",
-      "token-theft",
-      "credentials",
-      "ITDR"
-    ],
-    "note": "Chainalysis revised its impact assessment to include password hashes and live tokens for all users, making this a high-value case study in session invalidation and incident disclosure evolution.",
-    "score": 96
-  },
-  {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
     "publishedDate": "2026-11-06",
     "id": "e0d8eb7fb5d3f114",
@@ -67,6 +101,40 @@
     ],
     "note": "Chainalysis\u2019 revised disclosure identifies an on-path attack exposing some customer passwords and requiring password resets, API-key rotation and service shutdowns.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "e115b44724e254be",
+    "date": "2026-11-06",
+    "source": "Microsoft Security Blog",
+    "title": "ARTEX abuse expands as cybercriminals target financial sector",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+    "tags": [
+      "AI Agents",
+      "ITDR",
+      "Credential Theft",
+      "Cloud Identity"
+    ],
+    "note": "New Microsoft research connects an agentic offensive framework to financial-sector intrusions involving compromised credentials, cloud identities, password spraying, privilege escalation and machine-speed lateral movement.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "b20f3c4de67cd962",
+    "date": "2026-11-06",
+    "source": "Technical University of Munich",
+    "title": "IT Security Incident at TUM",
+    "url": "https://www.tum.de/en/news-and-events/all-news/press-releases/details/it-security-incident-at-tum",
+    "tags": [
+      "Breach",
+      "Credentials",
+      "Privileged Access",
+      "MFA"
+    ],
+    "note": "TUM reports that attackers stole central account passwords, including a TUMonline administrator\u2019s credentials, and used them against the campus-management system; accounts were suspended and MFA is being required.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -120,6 +188,23 @@
     "score": 87
   },
   {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "c5532d0fb1f05c44",
+    "date": "2026-11-06",
+    "source": "The Record from Recorded Future News",
+    "title": "Certificate authority DigiCert reports data breach involving business customer info",
+    "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach",
+    "tags": [
+      "Breach",
+      "Identity Data",
+      "Authorization",
+      "Secrets"
+    ],
+    "note": "DigiCert\u2019s incident involved an externally reachable internal system, an unassigned account and insufficient alerting; accessed records included customer contact data and some identity documents, while certificate issuance and customer login credentials were reportedly unaffected.",
+    "score": 87
+  },
+  {
     "firstSeenAt": "2026-11-07T06:28:18.013408-07:00",
     "publishedDate": "2026-11-06",
     "id": "982e4d41f719446e",
@@ -157,19 +242,18 @@
     "publishedDate": "2026-11-05",
     "id": "e2845eccbac1628b",
     "date": "2026-11-05",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Blog",
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
       "NHI",
       "Machine Identity",
-      "Entra",
       "OAuth",
-      "Secrets",
-      "ITDR"
+      "AI Agents",
+      "Entra"
     ],
-    "note": "Microsoft details attacks that used leaked application credentials and OAuth applications to access Entra tenants, Azure resources, Key Vault secrets, SharePoint, OneDrive and mailboxes.",
-    "score": 99
+    "note": "Microsoft details ARTEX-driven secret discovery, service-principal sign-ins, OAuth application abuse, Key Vault exfiltration and a five-minute path from public GitHub secret discovery to cloud compromise.",
+    "score": 100
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -187,6 +271,23 @@
       "Google Cloud"
     ],
     "note": "This technical analysis documents a campaign combining Microsoft device-code phishing with Google and Microsoft AiTM proxies to steal tokens, passwords, MFA responses and session cookies.",
+    "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "0ea2bc3df024353a",
+    "date": "2026-11-05",
+    "source": "Red Hat Product Security",
+    "title": "CVE-2026-117691 - Red Hat Customer Portal",
+    "url": "https://access.redhat.com/security/cve/cve-2026-117691",
+    "tags": [
+      "Federation",
+      "SAML",
+      "Account Takeover",
+      "Authentication"
+    ],
+    "note": "A Keycloak SAML HTTP-Redirect parsing discrepancy lets unauthenticated attackers bypass signature verification with percent-encoded parameter names and log in as arbitrary federated users.",
     "score": 99
   },
   {
@@ -221,6 +322,23 @@
       "data-exposure"
     ],
     "note": "A server migration exposed an internal system whose self-registration and authorization flaws allowed external accounts to read archived customer validation records.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "ba37dcecc4fd246f",
+    "date": "2026-11-05",
+    "source": "OpenSSH",
+    "title": "OpenSSH: Release Notes - OpenSSH 10.6p2",
+    "url": "https://www.openssh.org/releasenotes.html#10.6p2",
+    "tags": [
+      "PAM",
+      "Authentication",
+      "SSH",
+      "Privilege"
+    ],
+    "note": "OpenSSH 10.6p2 fixes a password-authentication bypass affecting some Linux systems using musl libc with PAM disabled, including configurations intended to permit key-only access.",
     "score": 93
   },
   {
@@ -498,24 +616,6 @@
       "Incident"
     ],
     "note": "Binance's primary account describes stolen engineer credentials, an internal AI-tool compromise, container deployment and malicious scripting that enabled the theft of approximately $6.34 billion in digital assets.",
-    "score": 100
-  },
-  {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-03",
-    "id": "abfd8670eca50ba4",
-    "date": "2026-11-03",
-    "source": "Todyl",
-    "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
-    "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
-    "tags": [
-      "NHI",
-      "Service Accounts",
-      "Machine Identity",
-      "Microsoft Entra",
-      "Token Abuse"
-    ],
-    "note": "Todyl documents an ongoing campaign abusing valid Entra application credentials, federated workload identities and session tokens to reach MSPs and downstream customers without relying on user MFA.",
     "score": 100
   },
   {
@@ -3329,106 +3429,5 @@
     ],
     "note": "A meaningful PAM move that distinguishes agent actions from human actions and applies runtime privilege policy, JIT escalation, and approval to endpoint-based AI agents.",
     "score": 92
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "5699ea0146a98f84",
-    "date": "2026-10-21",
-    "source": "Railway",
-    "title": "Security Disclosure: Wednesday October 21st",
-    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "Cloud IAM",
-      "Incident response"
-    ],
-    "note": "Railway\u2019s disclosure warns that decrypted environment variables may have been accessed, requiring broad rotation of API keys, database credentials, registry credentials and related service secrets.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "989a78d26c9c7a0f",
-    "date": "2026-10-21",
-    "source": "IETF",
-    "title": "Mission-Bound Authorization for OAuth 2.0",
-    "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-01",
-    "tags": [
-      "OAuth",
-      "AI-agent-authorization",
-      "token-abuse"
-    ],
-    "note": "This new OAuth draft proposes a durable, revocable mission object binding an approved task to delegated authority and downstream token issuance for agent workflows.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "cb4f15cccaa0b98a",
-    "date": "2026-10-21",
-    "source": "BeyondTrust / GlobeNewswire",
-    "title": "Phantom Labs Research Shows AI Agents Are Acting Beyond Intent. BeyondTrust AI Agent Security, Now Available, Stops Them",
-    "url": "https://www.globenewswire.com/news-release/2026/10/21/3385607/0/en/phantom-labs-research-shows-ai-agents-are-acting-beyond-intent-beyondtrust-ai-agent-security-now-available-stops-them.html",
-    "tags": [
-      "PAM",
-      "NHI",
-      "AI-agent authorization",
-      "Endpoint privilege"
-    ],
-    "note": "BeyondTrust reports runtime telemetry on agent commands, MCP connections and poisoned skills while announcing general availability of agent-specific privilege enforcement on Windows and macOS.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "cf0e97bf97c48193",
-    "date": "2026-10-21",
-    "source": "NVIDIA Newsroom",
-    "title": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
-    "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "Cloud security",
-      "Runtime enforcement"
-    ],
-    "note": "The reference architecture combines agent isolation, policy enforcement, continuous monitoring and hardware-backed containment for enterprise and edge agent workloads.",
-    "score": 83
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "a3382c909fa9dc07",
-    "date": "2026-10-21",
-    "source": "Delinea",
-    "title": "Delinea Fastpath Launches MCP Server for AI-Powered Access Governance and Audit Readiness",
-    "url": "https://www.globenewswire.com/news-release/2026/10/21/3385488/0/en/delinea-fastpath-launches-mcp-server-for-ai-powered-access-governance-and-audit-readiness.html",
-    "tags": [
-      "IGA",
-      "AI Agents",
-      "MCP",
-      "Authorization"
-    ],
-    "note": "Shows how access-review, SoD, and audit data are being exposed to AI assistants while retaining governance context and remediation workflows.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-21",
-    "id": "77f8d93fe05557f8",
-    "date": "2026-10-21",
-    "source": "SentinelOne",
-    "title": "SentinelOne Launches Singularity Agentic Detection and Response to Stop Rogue and Malicious AI Agents at Machine Speed",
-    "url": "https://www.sentinelone.com/press/sentinelone-launches-singularity-agentic-detection-and-response-to-stop-rogue-and-malicious-ai-agents-at-machine-speed/",
-    "tags": [
-      "ITDR",
-      "NHI",
-      "AI-agent authorization",
-      "Runtime detection"
-    ],
-    "note": "A meaningful platform move toward discovering agents, governing their actions, monitoring behavior and stopping unintended or malicious activity at runtime.",
-    "score": 80
   }
 ]
