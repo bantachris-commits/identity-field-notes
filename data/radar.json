@@ -19,6 +19,24 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-07",
+    "id": "de035062107f053e",
+    "date": "2026-11-07",
+    "source": "Chainalysis",
+    "title": "Updated Nov 7: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "IAM",
+      "NHI",
+      "OAuth",
+      "Token Security",
+      "Incident"
+    ],
+    "note": "Chainalysis confirmed exposure of customer names, usernames, password hashes and live tokens, making this a significant case study in credential and session-token containment during an ongoing vendor compromise.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-07",
     "id": "d702dc68317cba31",
@@ -35,23 +53,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-07",
-    "id": "de035062107f053e",
-    "date": "2026-11-07",
-    "source": "Chainalysis",
-    "title": "Updated Nov 7: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Compromised credentials",
-      "Session tokens",
-      "API keys",
-      "Incident"
-    ],
-    "note": "Chainalysis updated its incident disclosure after finding exposure of user information, password hashes, and live tokens, with mandatory password and API-key rotation during recovery.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-11-09T00:05:59.599055-07:00",
     "publishedDate": "2026-11-07",
     "id": "cd076038178d8b44",
@@ -66,23 +67,6 @@
     ],
     "note": "New standards-track guidance requires OAuth JWT client assertions to use the authorization server\u2019s issuer identifier as their sole audience, closing an audience-injection path relevant to agent gateways and workload-identity brokers. (rfc-editor.org",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "3bc058b957f31d5d",
-    "date": "2026-11-06",
-    "source": "Okta Threat Intelligence",
-    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
-    "url": "https://www.okta.com/en-ca/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
-    "tags": [
-      "CIAM",
-      "OAuth",
-      "AI-agent authorization",
-      "Credential Stuffing"
-    ],
-    "note": "Okta reports agent-assisted reconnaissance, fraudulent registrations, OAuth-flow probing, credential stuffing and account-linking risk across hundreds of Okta and Auth0 tenants, with similar activity seen against Cognito and Entra.",
-    "score": 98
   },
   {
     "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
@@ -173,6 +157,42 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-09T15:39:22.520878-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "d28094fb0b83f144",
+    "date": "2026-11-06",
+    "source": "Canadian Centre for Cyber Security",
+    "title": "SonicWall security advisory (AV26-1133",
+    "url": "https://www.cyber.gc.ca/en/alerts-advisories/sonicwall-security-advisory-av26-1133",
+    "tags": [
+      "IAM",
+      "MFA",
+      "SAML",
+      "VPN",
+      "Incident"
+    ],
+    "note": "This government advisory covers actively exploited CVE-2026-19868, which can let an attacker with valid alternate-method credentials bypass SAML controls, including SAML-enforced MFA, on affected SSL-VPN deployments.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "3bc058b957f31d5d",
+    "date": "2026-11-06",
+    "source": "Okta",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/en-ca/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
+    "tags": [
+      "IAM",
+      "Auth0",
+      "OAuth",
+      "Account Takeover",
+      "AI Agents"
+    ],
+    "note": "Okta documents large-scale automated reconnaissance, fraudulent registration and OAuth-flow testing across Okta and Auth0 tenants, including probing of redirect URIs, scopes, PKCE, DPoP and JWT validation.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "e115b44724e254be",
@@ -246,17 +266,17 @@
     "publishedDate": "2026-11-06",
     "id": "29a246f1cc725845",
     "date": "2026-11-06",
-    "source": "Microsoft Entra Blog",
+    "source": "Microsoft",
     "title": "What\u2019s new in Microsoft Entra: November 2026",
     "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
     "tags": [
       "Microsoft Entra",
+      "IGA",
       "Passkeys",
       "ITDR",
-      "IGA",
-      "AI-agent authorization"
+      "AI Agents"
     ],
-    "note": "The monthly update covers lifecycle policies for agents and guests, drift detection, continuous access evaluation using device and risk signals, and phishing-resistant authentication changes.",
+    "note": "The roundup includes access-package drift detection, guest lifecycle automation, first-method phishing-resistant sign-in, continuous access evaluation using device and risk signals, and agent-identity lifecycle policies.",
     "score": 91
   },
   {
@@ -502,6 +522,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-11-09T15:39:22.520878-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "1a39a444dba6b797",
+    "date": "2026-11-05",
+    "source": "Microsoft",
+    "title": "What\u2019s new in Microsoft Security: November 2026",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
+    "tags": [
+      "Microsoft Entra",
+      "PAM",
+      "AI Agents",
+      "Least Privilege",
+      "ITDR"
+    ],
+    "note": "Microsoft details Dynamic Permissions and Dynamic Agent Risk for task-scoped agent authority, alongside endpoint containment and discovery capabilities intended to reduce excessive permissions and agent-runtime exposure.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
     "publishedDate": "2026-11-05",
     "id": "b289c8a09a34e9b8",
@@ -625,23 +663,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
-    "publishedDate": "2026-11-04",
-    "id": "4ba7cadb265aa20a",
-    "date": "2026-11-04",
-    "source": "BleepingComputer",
-    "title": "mSecure password manager hack prompts password reset warnings",
-    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
-    "tags": [
-      "Credentials",
-      "Secrets",
-      "Passkeys",
-      "MFA"
-    ],
-    "note": "mSecure customers were told to change stored passwords, reset MFA and remove passkeys after reports that an encrypted cloud password database was stolen.",
-    "score": 90
-  },
-  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "9ad31758930619dd",
@@ -685,12 +706,11 @@
     "tags": [
       "IGA",
       "NHI",
-      "AI-agent authorization",
-      "ITDR",
-      "Machine identity"
+      "AI Agents",
+      "Authorization"
     ],
-    "note": "SailPoint describes general availability of Agentic Fabric capabilities that map agents to owners, credentials, entitlements, MCP servers and reachable data, adding discovery, governance and risk mitigation for non-human identities.",
-    "score": 86
+    "note": "SailPoint describes the next phase of Agentic Fabric, including inventory, ownership, access mapping and risk controls for agents operating with forgotten, unmonitored or stolen credentials.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -710,6 +730,23 @@
     "score": 84
   },
   {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "4ba7cadb265aa20a",
+    "date": "2026-11-04",
+    "source": "BleepingComputer",
+    "title": "mSecure password manager hack prompts password reset warnings",
+    "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+    "tags": [
+      "IAM",
+      "Secrets Management",
+      "Passkeys",
+      "Incident"
+    ],
+    "note": "mSecure\u2019s notification to current and former users to reset passwords, 2FA and passkeys is a useful incident-management case involving a credential-management provider whose scope remained initially unclear.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "c59f897a3506478f",
@@ -724,24 +761,6 @@
     ],
     "note": "CrowdStrike\u2019s new agentic emulation capability explicitly chains identity gaps with vulnerabilities and misconfigurations to identify attack paths to critical assets.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
-    "publishedDate": "2026-11-03",
-    "id": "8c8d2bb3eb7c5e34",
-    "date": "2026-11-03",
-    "source": "Binance",
-    "title": "29 October 2026 Binance Security Incident: Initial Findings and Response Update",
-    "url": "https://www.binance.com/en/blog/community/3229153443759566763",
-    "tags": [
-      "PAM",
-      "Credentials",
-      "Token Abuse",
-      "Machine Identity",
-      "Incident"
-    ],
-    "note": "Binance's primary account describes stolen engineer credentials, an internal AI-tool compromise, container deployment and malicious scripting that enabled the theft of approximately $6.34 billion in digital assets.",
-    "score": 100
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -815,6 +834,24 @@
     ],
     "note": "A cross-tenant campaign abused stolen Entra app secrets, workload identities and DevOps session tokens to search mail and download files without interactive MFA.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "8c8d2bb3eb7c5e34",
+    "date": "2026-11-03",
+    "source": "Binance",
+    "title": "29 October 2026 Binance Security Incident: Initial Findings and Response Update",
+    "url": "https://www.binance.com/en/blog/community/3229153443759566763",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Secrets Management",
+      "Excessive Privilege",
+      "Incident"
+    ],
+    "note": "Binance\u2019s primary disclosure traces a multistage intrusion through compromised developer endpoints, stolen credentials, an internal AI tool and a container-deployment permission token into wallet-signing operations.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
@@ -1330,6 +1367,24 @@
       "SPIFFE"
     ],
     "note": "Useful release-level overview covering brokered MCP access, dynamic client registration, managed agent identities, SPIFFE SVIDs, workload attestation and short-lived credentials.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-09T15:39:22.520878-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "78d7e7258c281e81",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "OAuth SPIFFE Client Authentication, draft-ietf-oauth-spiffe-client-auth-03",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-oauth-spiffe-client-auth-03.html",
+    "tags": [
+      "NHI",
+      "Machine Identity",
+      "OAuth",
+      "SPIFFE",
+      "Secrets Management"
+    ],
+    "note": "The updated draft profiles SPIFFE SVIDs for OAuth client authentication, offering a standards-based path to replace shared client secrets with workload-bound JWT or X.509 identities.",
     "score": 88
   },
   {
@@ -3383,57 +3438,5 @@
     ],
     "note": "An identity-standards perspective on applying OAuth to MCP covers unregistered clients, Client ID Metadata Documents, resource metadata and enterprise-managed authorization for agents.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "42da6d60c991a6dc",
-    "date": "2026-10-22",
-    "source": "Microsoft Learn",
-    "title": "October 2026 - Azure Databricks",
-    "url": "https://learn.microsoft.com/en-us/azure/databricks/release-notes/product/2026/october",
-    "tags": [
-      "IGA",
-      "Entra",
-      "Service Principals",
-      "ITDR"
-    ],
-    "note": "Adds a beta Microsoft Entra connector that ingests users, groups, applications, service principals, roles, identity configuration, and audit/sign-in logs into Databricks.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "d007edba3784505e",
-    "date": "2026-10-22",
-    "source": "BeyondTrust",
-    "title": "Identity Security Insights 26.10.1",
-    "url": "https://docs.beyondtrust.com/insights/changelog/identity-security-insights-26-10-1",
-    "tags": [
-      "ITDR",
-      "PAM",
-      "Okta",
-      "OAuth",
-      "Identity Governance"
-    ],
-    "note": "Meaningful product update adds identity-risk classification and expanded Okta detections for dormant administrators, weak MFA, long sessions, OAuth scope problems, API tokens and persistence mechanisms.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "e6a77a651a842fb2",
-    "date": "2026-10-22",
-    "source": "Auth0",
-    "title": "Scaling AI Agent Identity with CIMD and Application Profiles in Auth0",
-    "url": "https://auth0.com/blog/scaling-ai-agent-identity-cimd-application-profiles/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "NHI",
-      "Authorization"
-    ],
-    "note": "A timely product move around Client ID Metadata Documents, dynamic agent registration, DPoP and centrally managed authorization profiles for large populations of AI-agent clients.",
-    "score": 82
   }
 ]
