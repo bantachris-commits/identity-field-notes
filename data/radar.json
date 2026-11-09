@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
+    "publishedDate": "2026-11-09",
+    "id": "191d36f8251c2863",
+    "date": "2026-11-09",
+    "source": "Huntress",
+    "title": "AI, Scripts, Operator: Inside the ConnectWise Attack",
+    "url": "https://www.huntress.com/blog/connectwise-attack-ai",
+    "tags": [
+      "M365",
+      "Entra",
+      "OAuth",
+      "NHI",
+      "ITDR",
+      "AI agents"
+    ],
+    "note": "Huntress adds independent telemetry to the ConnectWise downstream-tenant incident, showing scripted enumeration, privilege changes, credential additions, retry behavior, and why defenders should detect actions rather than presumed AI fingerprints. (huntress.com",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-07",
     "id": "d702dc68317cba31",
@@ -33,22 +52,20 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "abfd8670eca50ba4",
-    "date": "2026-11-06",
-    "source": "Todyl",
-    "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
-    "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
+    "firstSeenAt": "2026-11-09T00:05:59.599055-07:00",
+    "publishedDate": "2026-11-07",
+    "id": "cd076038178d8b44",
+    "date": "2026-11-07",
+    "source": "IETF RFC Editor",
+    "title": "RFC 10070: Updates to OAuth 2.0 JSON Web Token (JWT Client Authentication and Assertion-Based Authorization Grants",
+    "url": "https://www.rfc-editor.org/rfc/rfc10070.html",
     "tags": [
-      "Entra",
-      "NHI",
-      "Machine Identity",
-      "Secrets",
-      "MSP Security"
+      "OAuth",
+      "Authorization",
+      "AI agents"
     ],
-    "note": "An updated investigation attributes an ongoing campaign to agentic credential crawling and documents service-principal abuse, cross-tenant access, stolen secrets and refresh-token replay affecting MSPs and their customers.",
-    "score": 99
+    "note": "New standards-track guidance requires OAuth JWT client assertions to use the authorization server\u2019s issuer identifier as their sole audience, closing an audience-injection path relevant to agent gateways and workload-identity brokers. (rfc-editor.org",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
@@ -190,6 +207,24 @@
     "score": 94
   },
   {
+    "firstSeenAt": "2026-11-09T00:05:59.599055-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "0b2e79c23a53c305",
+    "date": "2026-11-06",
+    "source": "Okta Threat Intelligence",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/en-sg/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
+    "tags": [
+      "IAM",
+      "CIAM",
+      "OAuth",
+      "Account takeover",
+      "AI agents"
+    ],
+    "note": "Okta details large-scale automated probing across Okta and Auth0 tenants, including fraudulent registration, credential stuffing, OAuth-flow manipulation, weak PKCE or DPoP enforcement, and federation/account-linking risks. (okta.com",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-06",
     "id": "c3d339653aff4e93",
@@ -243,22 +278,6 @@
     "score": 88
   },
   {
-    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "061aa79c518fa966",
-    "date": "2026-11-06",
-    "source": "CyberArk / Idira",
-    "title": "CyberArk is now Idira: Frequently Asked Questions",
-    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
-    "tags": [
-      "PAM",
-      "Market Shift",
-      "Secrets"
-    ],
-    "note": "The FAQ gives customers concrete details on the CyberArk-to-Idira transition into Palo Alto Networks, including the November 16 migration of support, learning and community systems.",
-    "score": 87
-  },
-  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "c5532d0fb1f05c44",
@@ -309,22 +328,39 @@
     "score": 82
   },
   {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "061aa79c518fa966",
+    "date": "2026-11-06",
+    "source": "CyberArk / Idira",
+    "title": "CyberArk is now Idira: Frequently Asked Questions",
+    "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
+    "tags": [
+      "PAM",
+      "Machine identity",
+      "Platform strategy"
+    ],
+    "note": "The integration milestone clarifies the transition of CyberArk identity-security support, documentation, partner authorization, and Venafi machine-identity workflows into the Palo Alto Networks ecosystem. (community.cyberark.com",
+    "score": 68
+  },
+  {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
     "publishedDate": "2026-11-05",
     "id": "e2845eccbac1628b",
     "date": "2026-11-05",
-    "source": "Microsoft Security Blog",
+    "source": "Microsoft Threat Intelligence",
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
+      "Entra",
       "NHI",
-      "AI-agent authorization",
+      "Machine identity",
       "OAuth",
-      "Microsoft Entra",
-      "Secrets"
+      "Secrets management",
+      "AI agents"
     ],
-    "note": "Microsoft documents agentic credential discovery followed by service-principal sign-ins, OAuth application abuse, Key Vault secret theft, Graph access, and Azure DevOps reconnaissance.",
-    "score": 100
+    "note": "Microsoft reports ARTEX-driven discovery of exposed application credentials followed by Entra service-principal access, OAuth application abuse, Key Vault exfiltration, Graph activity, and cloud-resource compromise. (microsoft.com",
+    "score": 99
   },
   {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
@@ -727,6 +763,24 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-11-03T23:56:23.199761-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "abfd8670eca50ba4",
+    "date": "2026-11-03",
+    "source": "Todyl",
+    "title": "Stolen App Credentials, Real Access: An Actor Is Signing Into Entra ID and Azure DevOps as Your Workloads",
+    "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads",
+    "tags": [
+      "Entra",
+      "NHI",
+      "Service accounts",
+      "Secrets management",
+      "Token abuse"
+    ],
+    "note": "Todyl provides incident-level telemetry on stolen application credentials used as workload identities across MSP environments, including rapid token acquisition, mailbox and file access, refresh-token replay, and the need to hunt back to October 28. (todyl.com",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-05T13:13:37.613739-07:00",
     "publishedDate": "2026-11-03",
     "id": "317e8557e095955c",
@@ -829,6 +883,24 @@
     ],
     "note": "A compromised credential gave an attacker access to the cPGuard update infrastructure, enabling a malicious update that collected password hashes, SSH keys, database credentials, and shell history.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-09T00:05:59.599055-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "f457294a3eba2ad0",
+    "date": "2026-11-03",
+    "source": "Binance",
+    "title": "Binance Security Incident on October 30, 2026: Update on Preliminary Investigation Findings and Response Progress",
+    "url": "https://www.binance.com/en/square/post/384314641614134",
+    "tags": [
+      "PAM",
+      "Secrets management",
+      "Least privilege",
+      "AI agents",
+      "Token abuse"
+    ],
+    "note": "Binance\u2019s preliminary investigation attributes a multistage theft to compromised developer endpoints, internal AI tools, stolen deployment credentials, and excessive reach into wallet-signing operations. (binance.com",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -2564,24 +2636,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "191d36f8251c2863",
-    "date": "2026-10-26",
-    "source": "Huntress",
-    "title": "AI, Scripts, Operator: Inside the ConnectWise Attack",
-    "url": "https://www.huntress.com/blog/connectwise-attack-ai",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "OAuth",
-      "Service Accounts",
-      "Incident Response"
-    ],
-    "note": "Independent telemetry analysis separates scripted enumeration, operator steering and possible agentic behavior in the ConnectWise application-credential abuse, with useful evidence on privilege changes and cross-tenant targeting.",
-    "score": 93
-  },
-  {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
     "publishedDate": "2026-10-26",
     "id": "cb3ce79bbd3a48b1",
@@ -3381,55 +3435,5 @@
     ],
     "note": "A timely product move around Client ID Metadata Documents, dynamic agent registration, DPoP and centrally managed authorization profiles for large populations of AI-agent clients.",
     "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "757a2fdd34c2d590",
-    "date": "2026-10-22",
-    "source": "Delinea",
-    "title": "When attackers can forge trust",
-    "url": "https://delinea.com/blog/attackers-forge-trust-targeting-the-foundations-of-identity-trust",
-    "tags": [
-      "PAM",
-      "ITDR",
-      "NHI",
-      "token-abuse"
-    ],
-    "note": "Delinea\u2019s October threat outlook connects exposed signing material, forged tokens, federation-scope failures, machine identities, and AI-agent access into a useful identity-trust risk model.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "8bf42f231c852c32",
-    "date": "2026-10-22",
-    "source": "Boston Identity",
-    "title": "In one consultant's experience, Entra's passkey campaign lets SMS users register synced passkeys their policy bars",
-    "url": "https://insights.bostonidentity.com/research/hip-podcast-2026-10-13-phishing-resistant-default-microsoft",
-    "tags": [
-      "Microsoft Entra",
-      "passkeys",
-      "MFA",
-      "identity-policy"
-    ],
-    "note": "The briefing documents a practitioner-reported Entra registration-policy mismatch that may allow SMS or voice users to enroll synced passkeys where tenant policy intends to permit only device-bound passkeys.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "5f9731572f84d964",
-    "date": "2026-10-22",
-    "source": "Semperis",
-    "title": "Semperis Researcher Discovers an Iranian Nation-State-Sponsored Threat Group Operating Command-and-Control Infrastructure in the United States",
-    "url": "https://www.semperis.com/press-release/semperis-researcher-discovers-an-iranian-nation-state-sponsored-threat-group-operating-command-and-control-infrastructure-in-the-united-states/",
-    "tags": [
-      "ITDR",
-      "Identity Security",
-      "Threat Research"
-    ],
-    "note": "New Semperis research details Prince of Persia infrastructure, stealth techniques and indicators relevant to identity-resilience and hybrid-environment defenders.",
-    "score": 76
   }
 ]
