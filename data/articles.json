@@ -1,5 +1,37 @@
 [
   {
+    "id": "2026-11-10-morning-brief",
+    "date": "2026-11-10",
+    "coverageDate": "2026-11-09",
+    "edition": "MORNING EDITION // 2026.11.10",
+    "title": "Agent Consent Becomes an IAM Attack Surface",
+    "dek": "Highlights from 2026-11-09. Proofpoint\u2019s research shows how malicious Microsoft Entra agent blueprints could turn one consent decision into scalable tenant access.",
+    "tags": [
+      "IAM",
+      "Authentication",
+      "Authorization",
+      "AI-agent identity",
+      "Microsoft Entra"
+    ],
+    "readTime": "4 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-09, verified against linked sources. Edition dated 2026-11-10; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Research",
+        "title": "Proofpoint details BluePhishing abuse path through Microsoft Entra agent blueprints",
+        "summary": "Proofpoint describes \u201cBluePhishing,\u201d a research proof of concept that extends OAuth consent abuse to Microsoft Entra agent identities. A victim consenting to a malicious third-party agent blueprint could create a blueprint principal, allow inheritable permissions, and enable attacker-controlled agent identities to obtain tokens and operate with assigned privileges. Proofpoint says it has not identified in-the-wild exploitation.",
+        "why": "Treat agent blueprints and consent flows as first-class IAM objects, not merely AI configuration. Review who can create or consent to third-party blueprints, monitor new blueprint principals and agent identities, and account for permissions that may be inherited but are difficult to see in ordinary Entra inventory views.",
+        "source": "Proofpoint",
+        "url": "https://www.proofpoint.com/us/blog/threat-insight/BluePhishing-Initial-Access-via-Third-Party-Agent-Blueprint-Consent",
+        "confidence": "Research",
+        "published_date": "2026-11-09",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-06-morning-brief",
     "date": "2026-11-06",
     "coverageDate": "2026-11-05",
@@ -13,7 +45,7 @@
       "Secrets"
     ],
     "readTime": "3 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-05, verified against linked sources. Edition dated 2026-11-06; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
