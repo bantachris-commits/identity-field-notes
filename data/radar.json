@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "2de8f7597bd112f7",
+    "date": "2026-11-10",
+    "source": "Railway",
+    "title": "Incident Report: October 21st Security Attack",
+    "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Cloud Security",
+      "AI-Agent Authorization",
+      "Incident Response"
+    ],
+    "note": "Railway\u2019s detailed postmortem traces how chained cloud credentials and a longer-lived orchestration credential enabled decryption of customer environment variables and approximately $740,000 in unauthorized AI-service usage.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
     "publishedDate": "2026-11-09",
     "id": "0082aba371822002",
@@ -15,6 +33,24 @@
     ],
     "note": "Research demonstrates how malicious Microsoft Entra agent blueprints could abuse consent, inherited permissions and agent identities for scalable tenant access, although no in-the-wild exploitation was reported.",
     "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "f3f3d2a78cd5b234",
+    "date": "2026-11-09",
+    "source": "Wiz",
+    "title": "Trusted by Default: Qubole Cross-Account Access Abused in the Wild",
+    "url": "https://www.wiz.io/blog/qubole-cross-account-access-abused-in-the-wild",
+    "tags": [
+      "IAM",
+      "NHI",
+      "AWS",
+      "Cloud Security",
+      "Supply Chain"
+    ],
+    "note": "A threat actor used compromised Qubole AWS IAM credentials to assume stale cross-account roles in customer environments, enumerate resources, harvest secrets and access S3 data.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -36,6 +72,42 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "2895b47e9d2f96a9",
+    "date": "2026-11-09",
+    "source": "NEAR AI",
+    "title": "Security Incident Report: SGLang Vulnerability",
+    "url": "https://near.ai/blog/security-incident-report-sglang-vulnerability",
+    "tags": [
+      "NHI",
+      "AI-Agent Authorization",
+      "Secrets",
+      "Session Security",
+      "Incident Response"
+    ],
+    "note": "An SGLang RCE reached internal systems, exposed two customer API keys and data from legacy agents, and prompted revocation of sessions, administrative credentials and agent tokens.",
+    "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "d654e2a125c179fc",
+    "date": "2026-11-09",
+    "source": "Fireworks AI",
+    "title": "Update on October 2026 security incident",
+    "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Service Accounts",
+      "AI Security",
+      "Incident Response"
+    ],
+    "note": "Fireworks reports additional customer impact after a third-party cloud-provider compromise, including access to selected secrets, datasets and incomplete models, plus credential and service-account lockdown.",
+    "score": 92
+  },
+  {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
     "publishedDate": "2026-11-08",
     "id": "529c4950faabf002",
@@ -53,23 +125,6 @@
     ],
     "note": "A detailed primary disclosure shows an authorization flaw enabling organization takeover, credential exfiltration, CI privilege escalation and cloud compromise, including attempted prompt-injection against an internal AI agent.",
     "score": 98
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-07",
-    "id": "de035062107f053e",
-    "date": "2026-11-07",
-    "source": "Chainalysis",
-    "title": "Updated Nov 7: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Incident",
-      "Compromised-credentials",
-      "Session-token-theft",
-      "NHI"
-    ],
-    "note": "Chainalysis\u2019 evolving primary disclosure reports exposure of customer usernames, password hashes and live tokens, followed by account lockouts, password resets and API-key rotation.",
-    "score": 96
   },
   {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
@@ -102,6 +157,23 @@
     ],
     "note": "New standards-track guidance requires OAuth JWT client assertions to use the authorization server\u2019s issuer identifier as their sole audience, closing an audience-injection path relevant to agent gateways and workload-identity brokers. (rfc-editor.org",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-07",
+    "id": "de035062107f053e",
+    "date": "2026-11-07",
+    "source": "Chainalysis",
+    "title": "Updated Nov 7: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "IAM",
+      "Session Security",
+      "Credentials",
+      "Incident Response"
+    ],
+    "note": "Chainalysis\u2019 continuing disclosure moved from initially ruling out credential and token access to reporting an on-path attack exposing some customer passwords and abnormal activity affecting customer-facing products.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
@@ -245,6 +317,24 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "7161034e516f779b",
+    "date": "2026-11-06",
+    "source": "Botpress",
+    "title": "Security incident disclosure \u2014 November 2026",
+    "url": "https://botpress.com/blog/security-incident-disclosure-november-2026",
+    "tags": [
+      "IAM",
+      "Secrets",
+      "Excessive Privilege",
+      "AI-Agent Authorization",
+      "Incident Response"
+    ],
+    "note": "A flaw in an internal authentication proxy let attackers forge employee-looking sessions, obtain an employee API credential and read bot configurations containing customer integration secrets across 16 workspaces.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "b20f3c4de67cd962",
@@ -280,24 +370,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "29a246f1cc725845",
-    "date": "2026-11-06",
-    "source": "Microsoft",
-    "title": "What\u2019s new in Microsoft Entra: November 2026",
-    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
-    "tags": [
-      "Microsoft Entra",
-      "IGA",
-      "Passkeys",
-      "ITDR",
-      "AI-agent-authorization"
-    ],
-    "note": "The monthly update includes first-MFA passkey registration, guest and agent lifecycle policies, inactivity-based identity disabling and continuous access evaluation using device and user risk.",
-    "score": 92
-  },
-  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-06",
     "id": "c3d339653aff4e93",
@@ -313,6 +385,42 @@
     ],
     "note": "The release adds non-human identity discovery for HashiCorp Vault, OCI, Atlassian credentials and OAuth clients, plus JWT-based OAuth authentication for Oracle connectors.",
     "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "5c563e2d4564f19f",
+    "date": "2026-11-06",
+    "source": "Okta",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
+    "tags": [
+      "IAM",
+      "CIAM",
+      "OAuth",
+      "Auth0",
+      "AI Security"
+    ],
+    "note": "Okta details large-scale automated reconnaissance, fraudulent registration and credential-stuffing activity against Okta and Auth0 tenants, including probing of ROPC and cross-origin authentication flows.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "29a246f1cc725845",
+    "date": "2026-11-06",
+    "source": "Microsoft Entra",
+    "title": "What\u2019s new in Microsoft Entra: November 2026",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
+    "tags": [
+      "Microsoft Entra",
+      "IGA",
+      "Passkeys",
+      "ITDR",
+      "NHI"
+    ],
+    "note": "The monthly release summary includes agent-identity lifecycle policies, guest cleanup, access-package drift detection, device- and risk-aware continuous access evaluation, and first-factor passkey registration.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
@@ -387,35 +495,17 @@
     "publishedDate": "2026-11-06",
     "id": "061aa79c518fa966",
     "date": "2026-11-06",
-    "source": "CyberArk / Idira",
-    "title": "CyberArk is now Idira: Frequently Asked Questions",
+    "source": "CyberArk/Idira",
+    "title": "CyberArk is now Idira\u00ae: Frequently Asked Questions",
     "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
     "tags": [
       "PAM",
-      "Machine identity",
-      "Platform strategy"
+      "Identity Security",
+      "Machine Identity",
+      "Platform Strategy"
     ],
-    "note": "The integration milestone clarifies the transition of CyberArk identity-security support, documentation, partner authorization, and Venafi machine-identity workflows into the Palo Alto Networks ecosystem. (community.cyberark.com",
-    "score": 68
-  },
-  {
-    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "e2845eccbac1628b",
-    "date": "2026-11-05",
-    "source": "Microsoft Threat Intelligence",
-    "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-    "tags": [
-      "Entra",
-      "NHI",
-      "Machine identity",
-      "OAuth",
-      "Secrets management",
-      "AI agents"
-    ],
-    "note": "Microsoft reports ARTEX-driven discovery of exposed application credentials followed by Entra service-principal access, OAuth application abuse, Key Vault exfiltration, Graph activity, and cloud-resource compromise. (microsoft.com",
-    "score": 99
+    "note": "The transition FAQ documents the imminent integration of the former CyberArk/Idira identity-security and machine-identity customer experience into Palo Alto Networks, including changes to support, advisories, licensing and certification workflows.",
+    "score": 78
   },
   {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
@@ -433,6 +523,24 @@
     ],
     "note": "A Keycloak SAML HTTP-Redirect parsing discrepancy lets unauthenticated attackers bypass signature verification with percent-encoded parameter names and log in as arbitrary federated users.",
     "score": 99
+  },
+  {
+    "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "9ba6da309821d411",
+    "date": "2026-11-05",
+    "source": "Microsoft Security",
+    "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-AI-tooling-to-find-and-abuse-exposed-secrets/",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "OAuth",
+      "Microsoft Entra",
+      "AI-Agent Authorization"
+    ],
+    "note": "Microsoft describes agentic tooling that searched public repositories for secrets, used leaked application credentials against Entra tenants and obtained OAuth tokens to enumerate connected Azure and Microsoft 365 resources.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
@@ -846,6 +954,24 @@
       "Delegation"
     ],
     "note": "Descope announces a delegated-access path for personal agents using agent identity, consent, cryptographically bound sessions, federation, and scoped limits alongside existing CIAM flows.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "b7fa55cac5d92770",
+    "date": "2026-11-04",
+    "source": "Descope",
+    "title": "Descope Unveils Envoy, an Identity-Aware Way For Personal AI Agents to Act on People\u2019s Behalf",
+    "url": "https://www.descope.com/press-release/envoy",
+    "tags": [
+      "CIAM",
+      "AI-Agent Authorization",
+      "OAuth",
+      "Passkeys",
+      "DPoP"
+    ],
+    "note": "Descope\u2019s product announcement is notable for implementing delegated rather than impersonated agent access, with agent-bound sessions, DPoP, RAR permissions and CIBA approval for sensitive actions.",
     "score": 84
   },
   {
@@ -1265,6 +1391,24 @@
     ],
     "note": "Mandiant details 2026 LLM-jacking incidents in which stolen cloud access keys enabled attackers to activate AI services, generate large charges, and abuse over-privileged identities.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "e7ec0acbf56b7ca5",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "Workload Authorization Grant",
+    "url": "https://datatracker.ietf.org/doc/html/draft-carleton-workload-authz-grant-02",
+    "tags": [
+      "OAuth",
+      "NHI",
+      "Workload Identity",
+      "AI-Agent Authorization",
+      "Standards"
+    ],
+    "note": "This new Internet-Draft proposes an OAuth grant for platform-hosted workloads and AI agents to obtain scoped access tokens using verifiable workload identity without per-workload administrator provisioning.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
@@ -3302,144 +3446,5 @@
     ],
     "note": "Chrome 155 enables Digital Credentials API issuance by default, materially advancing browser-to-wallet credential provisioning using protocols such as OpenID4VCI.",
     "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "c26e313d4190eadb",
-    "date": "2026-10-22",
-    "source": "ADAMnetworks",
-    "title": "KeyStealth: Device code phishing to rogue Entra devices and BEC",
-    "url": "https://adamnet.works/blog/keystealth-device-code-phishing-to-rogue-entra-devices-and-bec/",
-    "tags": [
-      "Microsoft-Entra",
-      "MFA-bypass",
-      "Token-theft",
-      "BEC"
-    ],
-    "note": "Log-based analysis shows device-code phishing leading to rogue Entra device registration, persistent primary-refresh-token sessions, and attempted business-email-compromise activity over seven weeks.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "0eee4d6ec3f6dc47",
-    "date": "2026-10-22",
-    "source": "Huntress",
-    "title": "M365 Token Spray and Replay Campaign Compromises Business Email Accounts",
-    "url": "https://www.huntress.com/blog/token-replay-spray",
-    "tags": [
-      "ITDR",
-      "Token Theft",
-      "MFA Bypass",
-      "Entra",
-      "OAuth"
-    ],
-    "note": "Substantive campaign research covering stolen-session replay across 79 organizations, rogue Entra devices, MFA-method replacement and hidden inbox rules that persisted beyond password resets.",
-    "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-23T14:30:55.047384-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "d671266dc23bea17",
-    "date": "2026-10-22",
-    "source": "Railway",
-    "title": "Preliminary Report: Oct 21st Security Incident",
-    "url": "https://blog.railway.com/p/preliminary-report-october-security-incident",
-    "tags": [
-      "Secrets",
-      "NHI",
-      "Cloud IAM",
-      "API Keys"
-    ],
-    "note": "Railway reports unauthorized access to internal systems that exposed encrypted customer environment variables and potentially decrypted secrets, including AI-provider API keys and other credentials.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "9384ac6c19c87fc1",
-    "date": "2026-10-22",
-    "source": "Google Cloud",
-    "title": "Inside Agent Compute Engine: Building the compute foundation for the agentic era",
-    "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive/",
-    "tags": [
-      "NHI",
-      "AI Agents",
-      "Authorization",
-      "Machine Identity"
-    ],
-    "note": "Details a production architecture that keeps credentials out of agent sandboxes and separates user delegation, workload identity, agent identity, and gateway-enforced token exchange.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "386cb617382f1fcf",
-    "date": "2026-10-22",
-    "source": "Wiz Research",
-    "title": "ARTEX in the Wild: Storm-0940 Expands Targeting of IT and Software Vendors",
-    "url": "https://www.wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors",
-    "tags": [
-      "ITDR",
-      "OAuth",
-      "Okta",
-      "Microsoft-Entra",
-      "AWS-Cognito",
-      "AI-agent-authorization"
-    ],
-    "note": "Wiz reports autonomous attack activity targeting Okta, Entra, and Cognito environments, including account enumeration, password-reset abuse, authentication-bypass discovery, and customer-data access attempts.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "b1c9706033075c0a",
-    "date": "2026-10-22",
-    "source": "Apache Software Foundation",
-    "title": "Apache Camel Security Advisory - CVE-2026-94386",
-    "url": "https://camel.apache.org/security/CVE-2026-94386.html",
-    "tags": [
-      "OAuth",
-      "token-security",
-      "NHI",
-      "AI-agent-authorization",
-      "vulnerability"
-    ],
-    "note": "A token-cache keying flaw could return an OAuth bearer token issued for one client-credentials profile to another profile sharing the endpoint and client ID but using different scope or secret.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "c4af6f09bec33385",
-    "date": "2026-10-22",
-    "source": "Cymulate Research Lab",
-    "title": "CVE-2026-85267: Google Cloud Shell OAuth Token Theft",
-    "url": "https://cymulate.com/blog/cve-2026-85267-google-cloud-shell-oauth-token-theft/",
-    "tags": [
-      "OAuth",
-      "Token-theft",
-      "Google-Cloud"
-    ],
-    "note": "The research details a Cloud Shell cross-site WebSocket chain that exposed active users\u2019 OAuth tokens through weak origin validation, cross-site cookies, and access to an internal token service.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "c9e4f3f4f4fcf403",
-    "date": "2026-10-22",
-    "source": "IETF OAuth Working Group",
-    "title": "An Attenuated Delegation Profile for Automated Agents",
-    "url": "https://datatracker.ietf.org/doc/draft-hamr-oauth-agent-delegation/03/",
-    "tags": [
-      "AI Agents",
-      "OAuth",
-      "Delegation",
-      "Authorization"
-    ],
-    "note": "Introduces an OAuth delegation profile for agent chains that carries attenuated delegation links, directly addressing scope expansion and agent-to-agent authorization.",
-    "score": 93
   }
 ]
