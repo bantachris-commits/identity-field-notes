@@ -1,5 +1,22 @@
 [
   {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "0082aba371822002",
+    "date": "2026-11-09",
+    "source": "Proofpoint",
+    "title": "BluePhishing: Initial Access via Third-Party Agent Blueprint Consent",
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/BluePhishing-Initial-Access-via-Third-Party-Agent-Blueprint-Consent",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "AI-agent-authorization",
+      "Microsoft Entra"
+    ],
+    "note": "Research demonstrates how malicious Microsoft Entra agent blueprints could abuse consent, inherited permissions and agent identities for scalable tenant access, although no in-the-wild exploitation was reported.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
     "publishedDate": "2026-11-09",
     "id": "191d36f8251c2863",
@@ -19,6 +36,25 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-08",
+    "id": "529c4950faabf002",
+    "date": "2026-11-08",
+    "source": "Dosu",
+    "title": "Nov 2, 2026 Security Incident Post-Mortem",
+    "url": "https://dosu.dev/security/incident-2026-11-02",
+    "tags": [
+      "IAM",
+      "IGA",
+      "NHI",
+      "Secrets",
+      "AI-agent-authorization",
+      "Incident"
+    ],
+    "note": "A detailed primary disclosure shows an authorization flaw enabling organization takeover, credential exfiltration, CI privilege escalation and cloud compromise, including attempted prompt-injection against an internal AI agent.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-11-07",
     "id": "de035062107f053e",
@@ -27,14 +63,13 @@
     "title": "Updated Nov 7: Chainalysis Security Incident Information",
     "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
     "tags": [
-      "IAM",
-      "NHI",
-      "OAuth",
-      "Token Security",
-      "Incident"
+      "Incident",
+      "Compromised-credentials",
+      "Session-token-theft",
+      "NHI"
     ],
-    "note": "Chainalysis confirmed exposure of customer names, usernames, password hashes and live tokens, making this a significant case study in credential and session-token containment during an ongoing vendor compromise.",
-    "score": 98
+    "note": "Chainalysis\u2019 evolving primary disclosure reports exposure of customer usernames, password hashes and live tokens, followed by account lockouts, password resets and API-key rotation.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
@@ -231,18 +266,36 @@
     "publishedDate": "2026-11-06",
     "id": "0b2e79c23a53c305",
     "date": "2026-11-06",
-    "source": "Okta Threat Intelligence",
-    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "source": "Okta",
+    "title": "Agentic attack tools used to accelerate reconnaissance of identity flows",
     "url": "https://www.okta.com/en-sg/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
     "tags": [
       "IAM",
       "CIAM",
       "OAuth",
-      "Account takeover",
-      "AI agents"
+      "AI-agent-authorization",
+      "Threat-intelligence"
     ],
-    "note": "Okta details large-scale automated probing across Okta and Auth0 tenants, including fraudulent registration, credential stuffing, OAuth-flow manipulation, weak PKCE or DPoP enforcement, and federation/account-linking risks. (okta.com",
+    "note": "Okta reports large-scale automated reconnaissance, fraudulent registration and credential-stuffing activity across Okta/Auth0 tenants, with similar activity observed against Cognito and Entra.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "29a246f1cc725845",
+    "date": "2026-11-06",
+    "source": "Microsoft",
+    "title": "What\u2019s new in Microsoft Entra: November 2026",
+    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
+    "tags": [
+      "Microsoft Entra",
+      "IGA",
+      "Passkeys",
+      "ITDR",
+      "AI-agent-authorization"
+    ],
+    "note": "The monthly update includes first-MFA passkey registration, guest and agent lifecycle policies, inactivity-based identity disabling and continuous access evaluation using device and user risk.",
+    "score": 92
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -259,24 +312,6 @@
       "OAuth"
     ],
     "note": "The release adds non-human identity discovery for HashiCorp Vault, OCI, Atlassian credentials and OAuth clients, plus JWT-based OAuth authentication for Oracle connectors.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "29a246f1cc725845",
-    "date": "2026-11-06",
-    "source": "Microsoft",
-    "title": "What\u2019s new in Microsoft Entra: November 2026",
-    "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/what%E2%80%99s-new-in-microsoft-entra-november-2026/4556457",
-    "tags": [
-      "Microsoft Entra",
-      "IGA",
-      "Passkeys",
-      "ITDR",
-      "AI Agents"
-    ],
-    "note": "The roundup includes access-package drift detection, guest lifecycle automation, first-method phishing-resistant sign-in, continuous access evaluation using device and risk signals, and agent-identity lifecycle policies.",
     "score": 91
   },
   {
@@ -437,6 +472,24 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "95d0b275fdd06d16",
+    "date": "2026-11-05",
+    "source": "ITPro",
+    "title": "How the Binance hack happened",
+    "url": "https://www.itpro.com/security/cyber-crime/fake-interviews-compromised-laptops-and-dodgy-software-packages-how-the-binance-hack-happened",
+    "tags": [
+      "PAM",
+      "Incident",
+      "Compromised-credentials",
+      "Secrets",
+      "NHI"
+    ],
+    "note": "The reporting traces the attack through fake interviews, a compromised engineer laptop, stolen credentials and a deployment-permission token used to reach wallet systems.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-05",
     "id": "6b1d9cd5a096d574",
@@ -540,6 +593,23 @@
     "score": 89
   },
   {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "50307b0083c165a0",
+    "date": "2026-11-05",
+    "source": "Okta",
+    "title": "Okta for AI Agents is now Generally Available",
+    "url": "https://www.okta.com/blog/ai/okta-for-ai-agents-general-availability/",
+    "tags": [
+      "AI-agent-authorization",
+      "NHI",
+      "IAM",
+      "OAuth"
+    ],
+    "note": "Okta\u2019s GA release formalizes first-class identities, discovery, onboarding and governance for AI agents, including monitoring for unmanaged agents and OAuth consent grants.",
+    "score": 89
+  },
+  {
     "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
     "publishedDate": "2026-11-05",
     "id": "b289c8a09a34e9b8",
@@ -556,6 +626,22 @@
     ],
     "note": "Okta Privileged Access added workload authentication using AWS IAM roles instead of static access keys, plus a systemd deployment mode for its workload token issuer.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "a8953d2599b68737",
+    "date": "2026-11-05",
+    "source": "TechRadar Pro",
+    "title": "DreamHost admits major cyberattack saw hackers steal customer data and access inboxes",
+    "url": "https://www.techradar.com/pro/security/dreamhost-admits-major-cyberattack-saw-hackers-steal-customer-data-and-access-inboxes",
+    "tags": [
+      "Incident",
+      "Session-token-theft",
+      "Compromised-credentials"
+    ],
+    "note": "DreamHost\u2019s disclosure indicates attackers reached webmail systems and obtained session information, including credentials, making this a relevant session and account-control incident.",
+    "score": 87
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -663,6 +749,23 @@
     "score": 91
   },
   {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "ac7d20dbfeaafe4f",
+    "date": "2026-11-04",
+    "source": "Elastic Security",
+    "title": "Identity and AiTM",
+    "url": "https://www.elastic.co/pdf/elastic-threats-etc-elastic-security-command-nov-2026.pdf",
+    "tags": [
+      "ITDR",
+      "Microsoft Entra",
+      "MFA-bypass",
+      "Session-token-theft"
+    ],
+    "note": "The quarterly threat report documents adversary-in-the-middle phishing, replayed session tokens and Entra primary refresh token issuance as practical identity attack paths.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
     "publishedDate": "2026-11-04",
     "id": "9ad31758930619dd",
@@ -694,6 +797,22 @@
     ],
     "note": "Vercel\u2019s rollout of Device Bound Session Credentials is a concrete defense against replay of stolen dashboard cookies, with useful implications for SaaS session protection.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "a637b78f61fae17b",
+    "date": "2026-11-04",
+    "source": "arXiv",
+    "title": "Rethinking Access Control for AI Agents: Recent Advances and Open Challenges",
+    "url": "https://arxiv.org/abs/2611.06764",
+    "tags": [
+      "AI-agent-authorization",
+      "IAM",
+      "Authorization"
+    ],
+    "note": "The paper surveys current agent access-control mechanisms and frames unresolved problems around authorization preservation, delegation, runtime enforcement and auditability across agent workflows.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
@@ -903,6 +1022,23 @@
       "secrets"
     ],
     "note": "Google-linked research details attackers abusing exposed cloud credentials, service-account keys, GitHub tokens, session tokens and LLM API keys to run costly unauthorized AI workloads.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-03",
+    "id": "423480b3699a12d4",
+    "date": "2026-11-03",
+    "source": "Chainalysis",
+    "title": "DPRK Fake Interview Playbook: How Hackers Targeted Binance",
+    "url": "https://www.chainalysis.com/blog/binance-hack-dprk-employment-fraud/",
+    "tags": [
+      "PAM",
+      "Incident",
+      "Compromised-credentials",
+      "Excessive-privilege"
+    ],
+    "note": "The analysis links the Binance theft to a fake-employment campaign that compromised an employee with privileged access and used stolen credentials and permissions to reach wallet infrastructure.",
     "score": 95
   },
   {
@@ -3305,138 +3441,5 @@
     ],
     "note": "Introduces an OAuth delegation profile for agent chains that carries attenuated delegation links, directly addressing scope expansion and agent-to-agent authorization.",
     "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "143de8bb1ffcf78e",
-    "date": "2026-10-22",
-    "source": "ShipSecurely",
-    "title": "Better Auth accepted an OAuth sign-in state as a Magic Link token, so knowing a user's email was enough to sign in as them",
-    "url": "https://shipsecurely.dev/feed/better-auth-magic-link-oauth-state-account-takeover",
-    "tags": [
-      "OAuth",
-      "Account-takeover",
-      "Authentication"
-    ],
-    "note": "CVE-2026-114607 allowed certain Better Auth deployments to redeem OAuth state as a Magic Link token, enabling unauthenticated account takeover when an attacker knew the victim\u2019s email address.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "f4065f11264d17f4",
-    "date": "2026-10-22",
-    "source": "1Password",
-    "title": "Introducing 1Password for Agents",
-    "url": "https://1password.com/blog/1password-for-ai-agents",
-    "tags": [
-      "AI-agent-authorization",
-      "PAM",
-      "NHI"
-    ],
-    "note": "1Password launched a brokered sign-in model in which agents request approved credentials while the password manager fills them without exposing the secrets to the agent.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "6af5f5a84e31744d",
-    "date": "2026-10-22",
-    "source": "BleepingComputer",
-    "title": "Railway warns devs to rotate secrets after potential breach",
-    "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
-    "tags": [
-      "NHI",
-      "Secrets-management",
-      "Service-accounts",
-      "Cloud"
-    ],
-    "note": "Railway said unauthorized parties may have accessed decrypted environment variables containing API keys, database credentials, registry credentials, and AI-provider secrets.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
-    "publishedDate": "2026-10-22",
-    "id": "0d299af9f60b06a0",
-    "date": "2026-10-22",
-    "source": "Google Cloud",
-    "title": "Introducing Agent Compute Engine and expanded agent governance",
-    "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
-    "tags": [
-      "Google Cloud",
-      "AI-Agent Authorization",
-      "Workload Identity",
-      "Runtime Security"
-    ],
-    "note": "Google describes hardware-isolated agent microVMs, cryptographically verified identities, short-lived credentials, egress credential injection, and cross-cloud governance integrations with Ping Identity, SailPoint, and Saviynt.",
-    "score": 90
-  },
-  {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "92b876190d734454",
-    "date": "2026-10-22",
-    "source": "BleepingComputer",
-    "title": "Machine-speed attacks require machine-speed detection and response",
-    "url": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-    "tags": [
-      "ITDR",
-      "OAuth",
-      "Session Theft",
-      "MFA",
-      "NHI"
-    ],
-    "note": "Examines stolen developer tokens, AI-tool lures and help-desk vishing that enabled rapid enumeration and data access before conventional identity detections could respond.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "cb4ef503d3f3e5eb",
-    "date": "2026-10-22",
-    "source": "iProov",
-    "title": "iProov Launches New Human Authorization Service for AI Agent Gateways with First Integrations",
-    "url": "https://www.iproov.com/press/human-authorization-service-ai-agent-gateways-integrations",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "Human-in-the-Loop"
-    ],
-    "note": "Introduces a HAPS-compliant approval flow that binds cryptographic human approval to the exact high-risk action an agent is attempting to execute.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "c857d00b04e61c1b",
-    "date": "2026-10-22",
-    "source": "eMudhra",
-    "title": "eMudhra to Exit global SSL/TLS Certificate Business",
-    "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-    "tags": [
-      "PKI",
-      "Machine Identity",
-      "Trust Anchors"
-    ],
-    "note": "Material market response to the compromise of eight weakly generated intermediate CA keys, highlighting the operational and ecosystem consequences of failures in machine-identity trust anchors.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-22",
-    "id": "ee0109c9281d77d4",
-    "date": "2026-10-22",
-    "source": "Aaron Parecki",
-    "title": "Evolution, not Revolution: How MCP is Reshaping OAuth",
-    "url": "https://aaronparecki.com/2026/10/22/2/",
-    "tags": [
-      "OAuth",
-      "OpenID",
-      "AI-agent-authorization",
-      "MCP"
-    ],
-    "note": "An identity-standards perspective on applying OAuth to MCP covers unregistered clients, Client ID Metadata Documents, resource metadata and enterprise-managed authorization for agents.",
-    "score": 84
   }
 ]
