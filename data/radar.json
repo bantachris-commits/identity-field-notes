@@ -18,6 +18,22 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "50eb1dccf495275b",
+    "date": "2026-11-10",
+    "source": "BleepingComputer",
+    "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+    "tags": [
+      "Microsoft Entra",
+      "ITDR",
+      "Vulnerability"
+    ],
+    "note": "The release includes a critical Microsoft Entra Device Registration elevation-of-privilege vulnerability, making this month's identity-related patch review especially important.",
+    "score": 78
+  },
+  {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
     "publishedDate": "2026-11-09",
     "id": "0082aba371822002",
@@ -106,6 +122,39 @@
     ],
     "note": "Fireworks reports additional customer impact after a third-party cloud-provider compromise, including access to selected secrets, datasets and incomplete models, plus credential and service-account lockdown.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "8d206c962ee8a1f7",
+    "date": "2026-11-09",
+    "source": "N-able / BleepingComputer",
+    "title": "N-able takes cloud platform offline after 30+ zero-days published",
+    "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+    "tags": [
+      "PAM",
+      "ITDR",
+      "Incident",
+      "Service Accounts"
+    ],
+    "note": "The disclosed N-central chains could create attacker-controlled administrator accounts, expose credentials and enable full management-server takeover.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "7097f73c5fb179cf",
+    "date": "2026-11-09",
+    "source": "Barracuda Networks",
+    "title": "Pre-Authentication Authorization Bypass and Command Injection Vulnerabilities in Certain Barracuda Products",
+    "url": "https://trust.barracuda.com/security/pre-authentication-authorization-bypass-command-injection",
+    "tags": [
+      "ITDR",
+      "Authorization",
+      "Incident"
+    ],
+    "note": "Barracuda confirmed exploitation of a vulnerability chain that bypasses authorization controls and can provide root access to affected email security gateways.",
+    "score": 89
   },
   {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
@@ -282,24 +331,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "3bc058b957f31d5d",
-    "date": "2026-11-06",
-    "source": "Okta",
-    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
-    "url": "https://www.okta.com/en-ca/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
-    "tags": [
-      "IAM",
-      "Auth0",
-      "OAuth",
-      "Account Takeover",
-      "AI Agents"
-    ],
-    "note": "Okta documents large-scale automated reconnaissance, fraudulent registration and OAuth-flow testing across Okta and Auth0 tenants, including probing of redirect URIs, scopes, PKCE, DPoP and JWT validation.",
-    "score": 95
-  },
-  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "e115b44724e254be",
@@ -449,13 +480,13 @@
     "title": "Certificate authority DigiCert reports data breach involving business customer info",
     "url": "https://therecord.media/digicert-certificate-authority-reports-data-breach",
     "tags": [
-      "Breach",
-      "Identity Data",
-      "Authorization",
-      "Secrets"
+      "Incident",
+      "Stale Identities",
+      "Exposed Services",
+      "Account Provisioning"
     ],
-    "note": "DigiCert\u2019s incident involved an externally reachable internal system, an unassigned account and insufficient alerting; accessed records included customer contact data and some identity documents, while certificate issuance and customer login credentials were reportedly unaffected.",
-    "score": 87
+    "note": "DigiCert attributed the incident to an infrastructure move that exposed an internal system, an unassigned account and insufficient alerting for account creation and request activity.",
+    "score": 84
   },
   {
     "firstSeenAt": "2026-11-07T06:28:18.013408-07:00",
@@ -527,19 +558,20 @@
   {
     "firstSeenAt": "2026-11-06T00:18:32.237732-07:00",
     "publishedDate": "2026-11-05",
-    "id": "9ba6da309821d411",
+    "id": "e2845eccbac1628b",
     "date": "2026-11-05",
-    "source": "Microsoft Security",
+    "source": "Microsoft Security Blog",
     "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-AI-tooling-to-find-and-abuse-exposed-secrets/",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
     "tags": [
       "NHI",
-      "Secrets",
+      "AI Agents",
       "OAuth",
+      "Secrets",
       "Microsoft Entra",
-      "AI-Agent Authorization"
+      "Incident"
     ],
-    "note": "Microsoft describes agentic tooling that searched public repositories for secrets, used leaked application credentials against Entra tenants and obtained OAuth tokens to enumerate connected Azure and Microsoft 365 resources.",
+    "note": "Microsoft documents automated discovery of leaked application credentials followed by Entra service-principal abuse, OAuth application access, Key Vault theft and cloud lateral movement.",
     "score": 98
   },
   {
@@ -561,6 +593,23 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "350327fdd7cd3bdb",
+    "date": "2026-11-05",
+    "source": "The Record from Recorded Future News",
+    "title": "Chainalysis warns all users hit in cyber breach involving \u2018agentic\u2019 techniques",
+    "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
+    "tags": [
+      "Incident",
+      "Credentials",
+      "Session Tokens",
+      "NHI"
+    ],
+    "note": "Chainalysis revised its disclosure to say usernames, password hashes and live tokens for all users were exposed, underscoring the containment burden of token compromise.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-05",
     "id": "cdf0b39dab102354",
@@ -578,6 +627,24 @@
     ],
     "note": "The campaign combines AI-themed lures, Microsoft device-code phishing, Google AiTM proxies, captured passwords, MFA responses, session cookies, and issued tokens.",
     "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-06T23:29:42.719075-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "3bc058b957f31d5d",
+    "date": "2026-11-05",
+    "source": "Okta",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/en-ca/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
+    "tags": [
+      "Okta",
+      "OAuth",
+      "AI Agents",
+      "Authorization",
+      "ITDR"
+    ],
+    "note": "Okta reports broad agent-assisted probing of registration and OAuth controls, including redirect validation, scopes, PKCE, DPoP and JWT-signature verification.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
@@ -683,24 +750,6 @@
     "score": 90
   },
   {
-    "firstSeenAt": "2026-11-09T15:39:22.520878-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "1a39a444dba6b797",
-    "date": "2026-11-05",
-    "source": "Microsoft",
-    "title": "What\u2019s new in Microsoft Security: November 2026",
-    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-    "tags": [
-      "Microsoft Entra",
-      "PAM",
-      "AI Agents",
-      "Least Privilege",
-      "ITDR"
-    ],
-    "note": "Microsoft details Dynamic Permissions and Dynamic Agent Risk for task-scoped agent authority, alongside endpoint containment and discovery capabilities intended to reduce excessive permissions and agent-runtime exposure.",
-    "score": 89
-  },
-  {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
     "publishedDate": "2026-11-05",
     "id": "50307b0083c165a0",
@@ -750,6 +799,23 @@
     ],
     "note": "DreamHost\u2019s disclosure indicates attackers reached webmail systems and obtained session information, including credentials, making this a relevant session and account-control incident.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-11-09T15:39:22.520878-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "1a39a444dba6b797",
+    "date": "2026-11-05",
+    "source": "Microsoft Security Blog",
+    "title": "What\u2019s new in Microsoft Security: November 2026",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
+    "tags": [
+      "Microsoft Entra",
+      "PAM",
+      "AI Agents",
+      "ITDR"
+    ],
+    "note": "Microsoft introduced Dynamic Permissions and Dynamic Agent Risk concepts for task-scoped agent authority, adaptive restriction and human approval when behavior or context changes.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -887,6 +953,23 @@
       "Cloud IAM"
     ],
     "note": "Appwrite reports exploitation that exposed an internal service credential capable of reading customer function and site environment variables across Frankfurt compute.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
+    "publishedDate": "2026-11-04",
+    "id": "35574f3f3564dff3",
+    "date": "2026-11-04",
+    "source": "AWS",
+    "title": "AWS Sign-In now supports OAuth 2.0 Token Exchange",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-signin-token-exchange/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "NHI",
+      "Workload Identity"
+    ],
+    "note": "AWS now supports exchanging third-party OIDC tokens for short-lived, service-scoped AWS access tokens, reducing the need to distribute AWS credentials to integrations.",
     "score": 88
   },
   {
@@ -1393,6 +1476,23 @@
     "score": 95
   },
   {
+    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "6c0ce9e5b02a4070",
+    "date": "2026-11-02",
+    "source": "IETF",
+    "title": "AI Identity Management System (AIMS), draft-ietf-wimse-aims-01",
+    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
+    "tags": [
+      "NHI",
+      "AI Agents",
+      "OAuth",
+      "Authorization"
+    ],
+    "note": "This new WIMSE draft gives practitioners a concrete architecture for agent identity, delegated OAuth authorization, transaction tokens, cross-domain delegation and sender-constrained access.",
+    "score": 95
+  },
+  {
     "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
     "publishedDate": "2026-11-02",
     "id": "e7ec0acbf56b7ca5",
@@ -1577,24 +1677,6 @@
       "secrets management"
     ],
     "note": "Cisco Talos analysis of Volta-Autodoxer shows an infostealer harvesting Microsoft OAuth tokens, browser sessions, SSH keys, cloud-provider keys, and other secrets before using LLMs to enrich and prioritize victims.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
-    "publishedDate": "2026-11-02",
-    "id": "6c0ce9e5b02a4070",
-    "date": "2026-11-02",
-    "source": "IETF",
-    "title": "AI Identity Management System",
-    "url": "https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/",
-    "tags": [
-      "AI-agent authorization",
-      "NHI",
-      "OAuth",
-      "Workload identity",
-      "Standards"
-    ],
-    "note": "The new WIMSE draft proposes an identity and authorization system for AI agents, including delegated user authority, agent authentication, token issuance, and revocation considerations.",
     "score": 89
   },
   {
@@ -3363,88 +3445,5 @@
     ],
     "note": "Avalonia\u2019s primary disclosure attributes CMS compromise to an administrator token accidentally embedded in public JavaScript and describes subsequent credential revocation, permission reduction, and account cleanup.",
     "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "989b0007f8ec4158",
-    "date": "2026-10-23",
-    "source": "Cisco",
-    "title": "Cisco Informational for Emergency Distrust of eMudhra Root and Intermediate Certificate Authorities",
-    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-emudhra-info-ScS22A1r",
-    "tags": [
-      "Machine identity",
-      "PKI",
-      "secrets"
-    ],
-    "note": "Cisco\u2019s advisory documents the compromise of eight eMudhra intermediate CA private keys caused by defective key generation, with consequences for TLS and code-signing trust.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-24T15:07:52.334169-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "af798b2c649dde4f",
-    "date": "2026-10-23",
-    "source": "Railway",
-    "title": "Changelog 0313",
-    "url": "https://railway.com/changelog/2026-10-23-october-21-security-incident",
-    "tags": [
-      "Secrets",
-      "API Tokens",
-      "Incident Response",
-      "Session Security"
-    ],
-    "note": "Railway's follow-up confirms the incident response scope and recommends revoking and replacing sensitive credentials, reviewing GitHub and registry audit logs, and checking for exposed database access.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "eb7b59101023c4bd",
-    "date": "2026-10-23",
-    "source": "University of Copenhagen",
-    "title": "University of Copenhagen hit by cyber attack",
-    "url": "https://news.ku.dk/all_news/2026/10/university-of-copenhagen-hit-by-cyber-attack/",
-    "tags": [
-      "IAM",
-      "Phishing",
-      "Credentials",
-      "Data Breach"
-    ],
-    "note": "The university disclosed unauthorized access to a test environment and data on approximately 525,000 people, creating a significant targeted-phishing and identity-theft risk.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "c3317b2efe93ee9b",
-    "date": "2026-10-23",
-    "source": "Salesforce Help",
-    "title": "Security Change: New SSO-Required Permission and Automatic Legacy Configuration Migration",
-    "url": "https://help.salesforce.com/s/articleView?id=005461455&language=en_US&type=1",
-    "tags": [
-      "IAM",
-      "SSO",
-      "Federation",
-      "Offboarding"
-    ],
-    "note": "Documents Salesforce's new per-user SSO-required permission, sandbox availability on October 23, 2026, and automatic migration of eligible legacy configurations.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "d4b9ccc37602da27",
-    "date": "2026-10-23",
-    "source": "Google Chrome Developers",
-    "title": "Digital Credentials API issuance ships in Chrome 155",
-    "url": "https://developer.chrome.com/blog/digital-credentials-api-issuance?hl=en",
-    "tags": [
-      "Digital-credentials",
-      "OpenID",
-      "Passkeys"
-    ],
-    "note": "Chrome 155 enables Digital Credentials API issuance by default, materially advancing browser-to-wallet credential provisioning using protocols such as OpenID4VCI.",
-    "score": 82
   }
 ]
