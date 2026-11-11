@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "d4ec26522f88377f",
+    "date": "2026-11-10",
+    "source": "Qubole / CSO Online",
+    "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
+    "url": "https://www.csoonline.com/article/4246780/qubole-supply-chain-attack-exposed-aws-entra-id-and-okta-credentials.html",
+    "tags": [
+      "IAM",
+      "NHI",
+      "Cloud IAM",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Wiz, Sentra and Mandiant traced a supply-chain intrusion through Qubole\u2019s cross-account AWS IAM roles, exposing customer data and harvesting AWS, Entra service-principal and Okta OAuth credentials.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
     "publishedDate": "2026-11-10",
     "id": "2de8f7597bd112f7",
@@ -18,6 +36,40 @@
     "score": 97
   },
   {
+    "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "a20959749278512a",
+    "date": "2026-11-10",
+    "source": "Salesforce Help",
+    "title": "Security Change: Direct Login Blocked for SSO Users Who Haven't Registered MFA",
+    "url": "https://help.salesforce.com/s/articleView?id=005465526&language=en_US&type=1",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Federation",
+      "Authentication"
+    ],
+    "note": "Salesforce documents a new control that blocks direct login for users previously authenticated through SSO until they register a Salesforce MFA method, including the operational implications during IdP outages.",
+    "score": 84
+  },
+  {
+    "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "1aeabc6dc90beaf1",
+    "date": "2026-11-10",
+    "source": "Obsidian Security",
+    "title": "Obsidian Security Announces Industry\u2019s First Context-Aware Runtime Decision Engine to Enforce AI Agent Actions, Across Coding Tools, Gateways and Third-Party Applications",
+    "url": "https://obsidiansecurity.webflow.io/news/context-aware-runtime-decision-engine",
+    "tags": [
+      "AI agents",
+      "Authorization",
+      "ITDR",
+      "Runtime policy"
+    ],
+    "note": "The announcement is a meaningful market move toward centralized, context-aware allow, deny and human-approval decisions for agent actions across applications and coding tools.",
+    "score": 82
+  },
+  {
     "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
     "publishedDate": "2026-11-10",
     "id": "50eb1dccf495275b",
@@ -32,23 +84,6 @@
     ],
     "note": "The release includes a critical Microsoft Entra Device Registration elevation-of-privilege vulnerability, making this month's identity-related patch review especially important.",
     "score": 78
-  },
-  {
-    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
-    "publishedDate": "2026-11-09",
-    "id": "0082aba371822002",
-    "date": "2026-11-09",
-    "source": "Proofpoint",
-    "title": "BluePhishing: Initial Access via Third-Party Agent Blueprint Consent",
-    "url": "https://www.proofpoint.com/us/blog/threat-insight/BluePhishing-Initial-Access-via-Third-Party-Agent-Blueprint-Consent",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "AI-agent-authorization",
-      "Microsoft Entra"
-    ],
-    "note": "Research demonstrates how malicious Microsoft Entra agent blueprints could abuse consent, inherited permissions and agent identities for scalable tenant access, although no in-the-wild exploitation was reported.",
-    "score": 99
   },
   {
     "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
@@ -67,6 +102,24 @@
     ],
     "note": "A threat actor used compromised Qubole AWS IAM credentials to assume stale cross-account roles in customer environments, enumerate resources, harvest secrets and access S3 data.",
     "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "0082aba371822002",
+    "date": "2026-11-09",
+    "source": "Proofpoint",
+    "title": "BluePhishing: Initial Access via Third-Party Agent Blueprint Consent",
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/BluePhishing-Initial-Access-via-Third-Party-Agent-Blueprint-Consent",
+    "tags": [
+      "Entra",
+      "OAuth",
+      "AI agents",
+      "Authorization",
+      "Consent phishing"
+    ],
+    "note": "Proofpoint demonstrates how consent to a malicious Microsoft Entra Agent ID blueprint can create tenant-local agent identities and enable token-based access with inherited permissions.",
+    "score": 96
   },
   {
     "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
@@ -206,23 +259,6 @@
     ],
     "note": "New standards-track guidance requires OAuth JWT client assertions to use the authorization server\u2019s issuer identifier as their sole audience, closing an audience-injection path relevant to agent gateways and workload-identity brokers. (rfc-editor.org",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-07",
-    "id": "de035062107f053e",
-    "date": "2026-11-07",
-    "source": "Chainalysis",
-    "title": "Updated Nov 7: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "IAM",
-      "Session Security",
-      "Credentials",
-      "Incident Response"
-    ],
-    "note": "Chainalysis\u2019 continuing disclosure moved from initially ruling out credential and token access to reporting an on-path attack exposing some customer passwords and abnormal activity affecting customer-facing products.",
-    "score": 89
   },
   {
     "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
@@ -647,24 +683,6 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
-    "publishedDate": "2026-11-05",
-    "id": "95d0b275fdd06d16",
-    "date": "2026-11-05",
-    "source": "ITPro",
-    "title": "How the Binance hack happened",
-    "url": "https://www.itpro.com/security/cyber-crime/fake-interviews-compromised-laptops-and-dodgy-software-packages-how-the-binance-hack-happened",
-    "tags": [
-      "PAM",
-      "Incident",
-      "Compromised-credentials",
-      "Secrets",
-      "NHI"
-    ],
-    "note": "The reporting traces the attack through fake interviews, a compromised engineer laptop, stolen credentials and a deployment-permission token used to reach wallet systems.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
     "publishedDate": "2026-11-05",
     "id": "6b1d9cd5a096d574",
@@ -696,6 +714,23 @@
     ],
     "note": "OpenSSH 10.6p2 fixes a password-authentication bypass affecting some Linux systems using musl libc with PAM disabled, including configurations intended to permit key-only access.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "95d0b275fdd06d16",
+    "date": "2026-11-05",
+    "source": "ITPro",
+    "title": "How the Binance hack happened",
+    "url": "https://www.itpro.com/security/cyber-crime/fake-interviews-compromised-laptops-and-dodgy-software-packages-how-the-binance-hack-happened",
+    "tags": [
+      "Incident",
+      "Compromised credentials",
+      "Privileged access",
+      "Secrets"
+    ],
+    "note": "Reporting links the multibillion-dollar Binance theft to a compromised engineer laptop, access to an internal AI tool and subsequent misuse of stolen credentials against wallet infrastructure.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
@@ -850,6 +885,23 @@
     ],
     "note": "Binance\u2019s incident account traces the theft through compromised developer endpoints, stolen credentials, a container-deployment token, and wallet-signing authorization.",
     "score": 97
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-11-04",
+    "id": "de035062107f053e",
+    "date": "2026-11-04",
+    "source": "Chainalysis",
+    "title": "Updated Nov 10: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Incident",
+      "Credentials",
+      "Session tokens",
+      "Secrets"
+    ],
+    "note": "Chainalysis disclosed that names, usernames, password hashes and live tokens for all users were exposed, followed by abnormal activity and forced password and API-key rotation.",
+    "score": 95
   },
   {
     "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
@@ -3394,56 +3446,5 @@
     ],
     "note": "Government advisory on the LiteLLM supply-chain compromise, including theft of cloud credentials, browser sessions, GitHub and AI-tool tokens, SSH/GPG keys, and CI/CD secrets.",
     "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-23T22:57:54.705277-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "bfabc41abb7fbdd8",
-    "date": "2026-10-23",
-    "source": "PingCAP",
-    "title": "A Note from Our CEO on Our Security Incident",
-    "url": "https://www.pingcap.com/ko/trust-hub/security/ceo-note-october-2026/",
-    "tags": [
-      "NHI",
-      "service-account-security",
-      "secrets",
-      "incident"
-    ],
-    "note": "PingCAP identifies a compromised GitHub account and exposed credentials as the route into internal systems, with customer data copied from analytics, storage and support environments.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-25T05:56:38.947530-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "4eed9c7e043606c8",
-    "date": "2026-10-23",
-    "source": "BleepingComputer",
-    "title": "You gave your AI agent access, but who is giving it orders?",
-    "url": "https://www.bleepingcomputer.com/news/security/you-gave-your-ai-agent-access-but-who-is-giving-it-orders/",
-    "tags": [
-      "AI Agents",
-      "Authorization",
-      "NHI",
-      "Prompt Injection"
-    ],
-    "note": "Reviews Gen Threat Labs research demonstrating that untrusted content can manipulate an authorized AI agent into executing commands, exfiltrating data and performing destructive actions without a conventional exploit.",
-    "score": 89
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "737cd615be5fb52c",
-    "date": "2026-10-23",
-    "source": "Avalonia UI",
-    "title": "Security incident update: 22\u201323 October 2026",
-    "url": "https://avaloniaui.net/blog/security-incident-oct26",
-    "tags": [
-      "PAM",
-      "Exposed-secrets",
-      "Excessive-privilege",
-      "Incident-response"
-    ],
-    "note": "Avalonia\u2019s primary disclosure attributes CMS compromise to an administrator token accidentally embedded in public JavaScript and describes subsequent credential revocation, permission reduction, and account cleanup.",
-    "score": 89
   }
 ]
