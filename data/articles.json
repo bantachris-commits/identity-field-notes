@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-11-morning-brief",
+    "date": "2026-11-11",
+    "coverageDate": "2026-11-10",
+    "edition": "MORNING EDITION // 2026.11.11",
+    "title": "Identity Blast Radius: Railway\u2019s AI-Key Attack and Microsoft\u2019s November Patch Review",
+    "dek": "Highlights from 2026-11-10. Yesterday\u2019s strongest identity stories centered on chained machine credentials, exposed AI-provider secrets, and a Microsoft patch cycle with an actively exploited Outlook flaw and a critical Entra device-registration vulnerability.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "Machine IAM",
+      "AI-Agent Identity",
+      "Identity Threat"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-10, verified against linked sources. Edition dated 2026-11-11; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Incident",
+        "title": "Railway details how chained machine credentials exposed customer secrets and AI keys",
+        "summary": "Railway\u2019s November 10 incident report says an attacker escaped build isolation, obtained an internal build credential, exploited an erroneous cloud OIDC binding, and then combined short-lived and longer-lived credentials to reach encrypted environment variables. Railway estimates that up to 1.85% of workspaces\u2014about 100,000\u2014could have had variables decrypted; stolen AI-provider and linked-account tokens produced approximately $740,000 in unauthorized usage. ([blog.railway.com](https://blog.railway.com/p/incident-report-october-security-incident))",
+        "why": "The incident is a practical warning against treating workload, orchestration, CI/CD, and cloud identities as separate trust zones. Short-lived federation did not prevent compromise when downstream permissions, network reachability, host-stored credentials, and decryption authority could be chained together; agent platforms need identity-bound access, credential isolation, and telemetry across the entire execution path.",
+        "source": "Railway",
+        "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+        "confidence": "Primary source",
+        "published_date": "2026-11-10",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Threat",
+        "title": "Microsoft\u2019s November update cycle includes an exploited Outlook credential-disclosure flaw and critical Entra issue",
+        "summary": "Microsoft\u2019s November 10 security release addressed 1,235 vulnerabilities, including the actively exploited CVE-2026-124194 Outlook spoofing flaw, which can disclose NTLM authentication material when a user opens a crafted message file. The roundup also identifies CVE-2026-109469, a critical Entra Device Registration elevation-of-privilege vulnerability; BleepingComputer notes that the Entra flaw was released earlier in November and is excluded from the Patch Tuesday count. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/))",
+        "why": "Identity teams should prioritize the Outlook fix where NTLM exposure remains possible, then separately confirm remediation of the Entra Device Registration issue rather than relying only on the monthly Patch Tuesday deployment report. The combination reinforces the need to reduce legacy authentication exposure and monitor device-registration privilege paths.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-10",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-10-morning-brief",
     "date": "2026-11-10",
     "coverageDate": "2026-11-09",
@@ -14,7 +57,7 @@
       "Microsoft Entra"
     ],
     "readTime": "4 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-09, verified against linked sources. Edition dated 2026-11-10; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
