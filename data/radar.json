@@ -1,5 +1,23 @@
 [
   {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-11",
+    "id": "4c711c158d7c0975",
+    "date": "2026-11-11",
+    "source": "Barracuda Networks",
+    "title": "Forty-four hours: Anatomy of a machine-speed intrusion",
+    "url": "https://blog.barracuda.com/2026/11/11/anatomy-of-a-machine-speed-intrusion",
+    "tags": [
+      "PAM",
+      "NHI",
+      "Secrets",
+      "Cloud IAM",
+      "Incident"
+    ],
+    "note": "Barracuda documents an intrusion that began with an unretired third-party cloud key and moved through AWS keys, Azure service-principal secrets, source-control tokens, and Kubernetes.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-12T00:38:51.756397-07:00",
     "publishedDate": "2026-11-11",
     "id": "9c9df925add3b480",
@@ -16,6 +34,23 @@
     ],
     "note": "Arctic Wolf observed agentic attack infrastructure using valid AWS IAM users and assumed EC2 roles for credential validation, discovery and secret harvesting.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-11",
+    "id": "34f63dbdf4168e23",
+    "date": "2026-11-11",
+    "source": "SecurityWeek",
+    "title": "Recently Patched Barracuda Vulnerabilities Exploited in Attacks",
+    "url": "https://www.securityweek.com/recently-patched-barracuda-vulnerabilities-exploited-in-attacks/",
+    "tags": [
+      "Authentication",
+      "Authorization",
+      "PAM",
+      "Incident"
+    ],
+    "note": "Active exploitation chained a pre-authentication authorization bypass with command injection to obtain root access on exposed Barracuda administrative interfaces.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-11-12T00:38:51.756397-07:00",
@@ -63,12 +98,13 @@
     "tags": [
       "NHI",
       "Secrets",
-      "Cloud Security",
+      "OAuth",
+      "Session/Token Abuse",
       "AI-Agent Authorization",
-      "Incident Response"
+      "Incident"
     ],
-    "note": "Railway\u2019s detailed postmortem traces how chained cloud credentials and a longer-lived orchestration credential enabled decryption of customer environment variables and approximately $740,000 in unauthorized AI-service usage.",
-    "score": 97
+    "note": "A detailed postmortem traces how build isolation escapes, over-trusted internal services, long-lived credentials, and decrypted customer secrets enabled theft of AI-provider keys and linked-account tokens.",
+    "score": 98
   },
   {
     "firstSeenAt": "2026-11-12T00:38:51.756397-07:00",
@@ -87,6 +123,23 @@
     ],
     "note": "Railway\u2019s incident report ties infrastructure vulnerabilities and an improperly configured trust relationship to stolen environment variables, linked-account tokens and unauthorized AI-provider usage.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "a9b26ac86b88ab5b",
+    "date": "2026-11-10",
+    "source": "OpenID Foundation",
+    "title": "AAuth Working Group - Overview",
+    "url": "https://openid.net/wg/aauth/",
+    "tags": [
+      "OpenID",
+      "OAuth",
+      "AI-Agent Authorization",
+      "Standards"
+    ],
+    "note": "The new working-group agenda puts agent identity, delegated authorization across trust domains, supervision, events, budgets, and rich resource requests onto a formal standards track.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
@@ -157,6 +210,25 @@
     "score": 99
   },
   {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "8d77c71f2d72a331",
+    "date": "2026-11-09",
+    "source": "Wiz / The Register",
+    "title": "Attackers backdoor trusted AWS integrations to steal secrets",
+    "url": "https://www.theregister.com/security/2026/11/09/attackers_backdoor_trusted_aws_integrations_to_steal_secrets/5308553",
+    "tags": [
+      "AWS IAM",
+      "NHI",
+      "Secrets",
+      "OAuth",
+      "Cloud IAM",
+      "Incident"
+    ],
+    "note": "This supply-chain campaign abused Qubole cross-account IAM trust to assume customer roles, harvest secrets, and pivot into Entra and Okta credentials and OAuth tokens.",
+    "score": 97
+  },
+  {
     "firstSeenAt": "2026-11-10T00:40:53.061166-07:00",
     "publishedDate": "2026-11-09",
     "id": "0082aba371822002",
@@ -212,24 +284,6 @@
     "score": 93
   },
   {
-    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
-    "publishedDate": "2026-11-09",
-    "id": "d654e2a125c179fc",
-    "date": "2026-11-09",
-    "source": "Fireworks AI",
-    "title": "Update on October 2026 security incident",
-    "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Service Accounts",
-      "AI Security",
-      "Incident Response"
-    ],
-    "note": "Fireworks reports additional customer impact after a third-party cloud-provider compromise, including access to selected secrets, datasets and incomplete models, plus credential and service-account lockdown.",
-    "score": 92
-  },
-  {
     "firstSeenAt": "2026-11-11T00:00:07.438931-07:00",
     "publishedDate": "2026-11-09",
     "id": "8d206c962ee8a1f7",
@@ -245,6 +299,24 @@
     ],
     "note": "The disclosed N-central chains could create attacker-controlled administrator accounts, expose credentials and enable full management-server takeover.",
     "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-09",
+    "id": "d654e2a125c179fc",
+    "date": "2026-11-09",
+    "source": "Fireworks AI",
+    "title": "Update on October 2026 security incident",
+    "url": "https://fireworks.ai/security/bulletins/october-2026-security-incident-update",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply Chain",
+      "AI",
+      "Incident"
+    ],
+    "note": "Fireworks expands its disclosure of an October cloud-provider compromise affecting stored secrets, customer datasets, model material, and LLM-jacking activity.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-12T00:38:51.756397-07:00",
@@ -577,6 +649,24 @@
     "score": 88
   },
   {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "0bf3f82ddf079606",
+    "date": "2026-11-06",
+    "source": "The Register",
+    "title": "DigiCert admits 16-month security lapse exposed customer information",
+    "url": "https://www.theregister.com/security/2026/11/06/digicert-admits-16-month-security-lapse-exposed-customer-information/5308097",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Account Provisioning",
+      "Authorization",
+      "Incident"
+    ],
+    "note": "A network migration exposed an internal archive where self-registration without MFA and a permissions flaw let an unauthorized account browse customer records.",
+    "score": 88
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "c5532d0fb1f05c44",
@@ -631,16 +721,16 @@
     "publishedDate": "2026-11-06",
     "id": "061aa79c518fa966",
     "date": "2026-11-06",
-    "source": "CyberArk/Idira",
-    "title": "CyberArk is now Idira\u00ae: Frequently Asked Questions",
+    "source": "Palo Alto Networks / CyberArk",
+    "title": "CyberArk is now Idira: Frequently Asked Questions",
     "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
     "tags": [
       "PAM",
-      "Identity Security",
-      "Machine Identity",
-      "Platform Strategy"
+      "Platform Shift",
+      "Palo Alto Networks",
+      "CyberArk"
     ],
-    "note": "The transition FAQ documents the imminent integration of the former CyberArk/Idira identity-security and machine-identity customer experience into Palo Alto Networks, including changes to support, advisories, licensing and certification workflows.",
+    "note": "The transition FAQ provides operationally relevant details on CyberArk\u2019s Idira rebrand, support and documentation migration, security-advisory changes, and PAM migration workflows.",
     "score": 78
   },
   {
@@ -937,6 +1027,25 @@
     ],
     "note": "The revised draft advances selective-disclosure credentials toward standardization and remains directly relevant to strong authentication, proof-of-possession and privacy-preserving identity assertions.",
     "score": 86
+  },
+  {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-05",
+    "id": "a83c18f47d32bec8",
+    "date": "2026-11-05",
+    "source": "Okta",
+    "title": "Okta expands collaboration with AWS with multi-year commitment to advance agentic AI security",
+    "url": "https://www.okta.com/newsroom/press-releases/okta-expands-collaboration-with-aws-with-multi-year-commitment-to-advance-agentic-ai-security/",
+    "tags": [
+      "Okta",
+      "Auth0",
+      "AWS",
+      "IGA",
+      "OAuth",
+      "AI-Agent Authorization"
+    ],
+    "note": "The expanded Okta-AWS collaboration targets Cross-App Access, human approval for high-risk actions, AgentCore policy decisions, and access certification for agents.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-11-04T12:58:53.946267-07:00",
@@ -3341,110 +3450,5 @@
     ],
     "note": "Researchers demonstrated that malicious agent instruction files can induce coding agents to install malware, execute commands, leak OAuth tokens, and hijack model accounts within the agent\u2019s granted permissions.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-25",
-    "id": "d91f0b108ecfb36f",
-    "date": "2026-10-25",
-    "source": "Wiz Research",
-    "title": "Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles",
-    "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
-    "tags": [
-      "NHI",
-      "OAuth",
-      "token abuse",
-      "secrets"
-    ],
-    "note": "Wiz tracked a campaign using compromised GitHub tokens to plant secret-dumping workflows across more than 850 accounts, illustrating the risk of long-lived developer and machine credentials.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-25T10:45:17.936643-06:00",
-    "publishedDate": "2026-10-24",
-    "id": "7265c92bc0ed6486",
-    "date": "2026-10-24",
-    "source": "The Five Nines",
-    "title": "Researchers link k0t campaign to 70,000 exposed firewall credentials",
-    "url": "https://www.thefivenines.com/security/researchers-link-k0t-campaign-to-70-000-exposed-firewall-credentials",
-    "tags": [
-      "PAM",
-      "Credential Security",
-      "AD",
-      "LDAP"
-    ],
-    "note": "Reports research linking a campaign to exposed FortiGate, FortiWeb and GlobalProtect credentials, including LDAP and Active Directory secrets recoverable from compromised appliance configurations.",
-    "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-23T15:36:09.184084-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "f9213bfdc4de4d06",
-    "date": "2026-10-23",
-    "source": "Help Net Security",
-    "title": "Microsoft 365 accounts compromised at 79 organizations, no passwords needed",
-    "url": "https://www.helpnetsecurity.com/2026/10/23/microsoft-365-accounts-stolen-sessions/",
-    "tags": [
-      "ITDR",
-      "Token abuse",
-      "MFA bypass",
-      "Microsoft Entra"
-    ],
-    "note": "Huntress reporting describes token spraying across 79 organizations through AiTM, device-code phishing and stolen-session replay after MFA completion.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T05:30:28.897444-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "6acf43baeec09dbb",
-    "date": "2026-10-23",
-    "source": "Obsidian Security",
-    "title": "Tenant Spray - Wider SaaS Supply Chain Targeting Beyond ConnectWise",
-    "url": "https://www.obsidiansecurity.com/incident-watch/wider-saas-supply-chain-targeting-beyond-connectwise",
-    "tags": [
-      "IAM",
-      "OAuth",
-      "Entra",
-      "Okta",
-      "NHI",
-      "ITDR"
-    ],
-    "note": "Detailed independent telemetry shows stolen vendor application credentials being tested across Microsoft 365 and Okta tenants, with token issuance, password spraying and cross-tenant targeting.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T23:11:48.444212-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "8ef4f07d663f0a18",
-    "date": "2026-10-23",
-    "source": "LiteLLM",
-    "title": "The attack chain behind the v1.107.0 LiteLLM release",
-    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026-attack-chain",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "OAuth",
-      "AI-agents",
-      "Supply-chain"
-    ],
-    "note": "Canonical root-cause analysis showing how an unrevoked Agent Platform key exposed GitHub owner OAuth tokens that were used to exfiltrate secrets and poison the LiteLLM release pipeline.",
-    "score": 98
-  },
-  {
-    "firstSeenAt": "2026-10-24T10:12:05.514992-06:00",
-    "publishedDate": "2026-10-23",
-    "id": "99bef6d2595d07c5",
-    "date": "2026-10-23",
-    "source": "Socket",
-    "title": "New Evidence Shows LiteLLM Secret-Stealing Workflows Ran 11 Days Before Supply Chain Attack",
-    "url": "https://www.socket.dev/blog/litellm-attack-timeline",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "Supply Chain",
-      "CI/CD"
-    ],
-    "note": "Adds evidence that the attacker used an unrecalled agent-platform master key and GitHub credentials to run secret-exfiltration workflows before publishing the malicious package.",
-    "score": 95
   }
 ]
