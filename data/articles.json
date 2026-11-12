@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-12-morning-brief",
+    "date": "2026-11-12",
+    "coverageDate": "2026-11-11",
+    "edition": "MORNING EDITION // 2026.11.12",
+    "title": "Identity Field Notes: AI Agents Turn Credentials into Attack Infrastructure",
+    "dek": "Highlights from 2026-11-11. Yesterday\u2019s verified highlights centered on agentic abuse of valid AWS identities and a third-party AI breach that exposed Notion chat transcripts.",
+    "tags": [
+      "IAM",
+      "Machine IAM",
+      "AI Agents",
+      "Identity Threat",
+      "Third-Party Risk"
+    ],
+    "readTime": "5 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-11, verified against linked sources. Edition dated 2026-11-12; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Threat",
+        "title": "AntiFox agents used valid AWS identities in credential-theft attacks",
+        "summary": "Arctic Wolf observed infrastructure hosting the AntiFox agentic penetration-testing platform using valid AWS IAM users and, in some cases, assumed EC2 roles to make authenticated API requests. Attackers combined webshell activity with identity cycling, configuration discovery, secret harvesting and S3 access; some production secrets were obtained, while AWS said its services were not compromised and the activity involved credentials taken from customers\u2019 applications. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/))",
+        "why": "The incident reinforces that machine-identity defense must correlate application compromise, webshell execution and cloud API behavior\u2014not just flag unfamiliar source IPs. Bursts of denied requests followed by successful calls, role assumption and use of long-lived keys in application configuration deserve immediate investigation.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+        "confidence": "Multiple sources",
+        "published_date": "2026-11-11",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Breach",
+        "title": "Notion says Fireworks breach exposed a limited set of AI chat transcripts",
+        "summary": "Notion disclosed that fewer than 1% of workspaces were affected after a breach at AI infrastructure provider Fireworks. The exposed dataset contained transcripts used for Notion\u2019s Insights feature; most were not attributable to a specific user or workspace, but Notion advised affected customers to review the data and rotate passwords, API keys or other credentials pasted into chats. ([bleepingcomputer.com](https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/))",
+        "why": "The incident is a reminder that zero-retention commitments do not eliminate concentration and processor risk when product features require stored prompts and responses. Identity teams should inventory sensitive data sent to model providers, define credential-rotation playbooks for exposed prompts and verify that vendor contracts match actual data flows.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+        "confidence": "Multiple sources",
+        "published_date": "2026-11-11",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-11-morning-brief",
     "date": "2026-11-11",
     "coverageDate": "2026-11-10",
@@ -14,7 +57,7 @@
       "Identity Threat"
     ],
     "readTime": "6 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-10, verified against linked sources. Edition dated 2026-11-11; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
