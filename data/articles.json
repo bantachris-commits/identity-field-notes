@@ -1,5 +1,58 @@
 [
   {
+    "id": "2026-11-13-morning-brief",
+    "date": "2026-11-13",
+    "coverageDate": "2026-11-12",
+    "edition": "MORNING EDITION // 2026.11.13",
+    "title": "Identity Field Notes: Credential Exposure, Session Abuse and Agent Access",
+    "dek": "Highlights from 2026-11-12. Yesterday\u2019s verified highlights centered on remote-management session security, machine-credential containment and the unresolved authorization model for consumer AI agents.",
+    "tags": [
+      "PAM",
+      "IAM",
+      "Machine IAM",
+      "AI-agent authorization"
+    ],
+    "readTime": "6 min",
+    "featured": true,
+    "generatedBy": "OpenAI gpt-5.6-luna + web search",
+    "disclosure": "AI-generated morning recap of articles published on 2026-11-12, verified against linked sources. Edition dated 2026-11-13; coverage uses America/Denver. Verify material details at the source.",
+    "stories": [
+      {
+        "kicker": "Breach",
+        "title": "ScreenConnect campaign exposes the limits of patching and credential resets",
+        "summary": "ConnectWise is investigating unauthorized access affecting customers through the RMM+ third-party extension for ScreenConnect. Huntress reported 288 affected endpoints across 48 organizations, while researchers found evidence of compromised credentials or hijacked operator sessions, remote-command abuse and persistence; ConnectWise said the extension was present in roughly 400 partner environments, but presence alone does not establish compromise.",
+        "why": "Patching the exploited vulnerability may block one entry path but does not contain a stolen technician session or an already-authorized management API. MSPs should treat remote-management sessions and extensions as privileged identity infrastructure, with strong session binding, high-risk action controls, extension inventory and post-incident endpoint validation.",
+        "source": "The Record from Recorded Future News",
+        "url": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
+        "confidence": "Multiple sources",
+        "published_date": "2026-11-12",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Incident",
+        "title": "Apify rotates API tokens and requires some users to reset 2FA after internal-system breach",
+        "summary": "Apify said an unauthorized third party accessed parts of its internal systems on November 9 and 10, 2026. The company invalidated internal credentials, rotated customer API tokens and proxy passwords, reset active sessions, revoked selected OAuth connections and asked affected users to reset 2FA after warning that authentication codes may have been exposed; it said there was no indication that stored account data was affected.",
+        "why": "The response illustrates why machine-identity incident playbooks must cover API tokens, OAuth grants, session state, proxy credentials and MFA recovery material\u2014not just user passwords. Teams should maintain an inventory of non-human credentials and be able to revoke and reissue them without waiting for a full forensic conclusion.",
+        "source": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-12",
+        "aiGenerated": true
+      },
+      {
+        "kicker": "Machine IAM",
+        "title": "United Airlines moves to block third-party AI agents from bookings and purchases",
+        "summary": "United Airlines said it will block AI agents from managing reservations and buying flights, citing credential exposure, unintended purchases, privacy and cybersecurity risks, and possible violations of aviation and transportation rules. The restrictions will apply across United\u2019s platforms and through aggregators and agencies, reflecting the difficulty of distinguishing an authorized customer agent from an uncontrolled automation layer.",
+        "why": "Blocking agents is a containment measure, not an authorization architecture. The durable requirement is verifiable delegation: scoped, time-limited credentials; explicit transaction consent; accountable principals; and policy enforcement that can distinguish read, modify and purchase actions without requiring users to hand over primary account credentials.",
+        "source": "The Record from Recorded Future News",
+        "url": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+        "confidence": "Independent reporting",
+        "published_date": "2026-11-12",
+        "aiGenerated": true
+      }
+    ]
+  },
+  {
     "id": "2026-11-12-morning-brief",
     "date": "2026-11-12",
     "coverageDate": "2026-11-11",
@@ -14,7 +67,7 @@
       "Third-Party Risk"
     ],
     "readTime": "5 min",
-    "featured": true,
+    "featured": false,
     "generatedBy": "OpenAI gpt-5.6-luna + web search",
     "disclosure": "AI-generated morning recap of articles published on 2026-11-11, verified against linked sources. Edition dated 2026-11-12; coverage uses America/Denver. Verify material details at the source.",
     "stories": [
