@@ -1,5 +1,72 @@
 [
   {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-12",
+    "id": "5a8fd33cd11f1d85",
+    "date": "2026-11-12",
+    "source": "Unit 42",
+    "title": "Attackers Use Autonomous AI to Target Semiconductor, Defense and Civil Society Sectors",
+    "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "PAM",
+      "Incident"
+    ],
+    "note": "Unit 42 describes autonomous AI operations that obtained valid credentials, created persistent administrator accounts, and retrieved sensitive identities and data.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-12",
+    "id": "7968b43f44c2e8e1",
+    "date": "2026-11-12",
+    "source": "The Record from Recorded Future News",
+    "title": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
+    "url": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
+    "tags": [
+      "PAM",
+      "Session security",
+      "Remote access",
+      "Incident"
+    ],
+    "note": "Researchers say the campaign combined exploitation with authenticated-operator-session hijacking and abuse of legitimate remote-management functions to push code.",
+    "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-12",
+    "id": "7927f7b9de97b7ad",
+    "date": "2026-11-12",
+    "source": "BleepingComputer",
+    "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+    "url": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+    "tags": [
+      "IAM",
+      "OAuth",
+      "NHI",
+      "Incident"
+    ],
+    "note": "Apify says a compromised credential exposed account credentials, prompting API-token rotation, session resets, secret rotation, and precautionary OAuth-connection revocation.",
+    "score": 92
+  },
+  {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-12",
+    "id": "bb48d6f8868d0053",
+    "date": "2026-11-12",
+    "source": "The Record from Recorded Future News",
+    "title": "United to block customers from using AI agents, citing cyber threats",
+    "url": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+    "tags": [
+      "AI-agent authorization",
+      "IAM",
+      "Consumer identity"
+    ],
+    "note": "United\u2019s decision to block third-party agents from managing reservations highlights the unresolved authorization, accountability, and credential-sharing model for consumer agents.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
     "publishedDate": "2026-11-11",
     "id": "4c711c158d7c0975",
@@ -107,6 +174,24 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "e7a8a4d2bbbe8652",
+    "date": "2026-11-10",
+    "source": "SecurityWeek",
+    "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
+    "url": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
+    "tags": [
+      "AWS",
+      "IAM",
+      "NHI",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Compromised Qubole IAM credentials were used through stale cross-account trust relationships to assume customer roles, harvest secrets, and exfiltrate S3 data.",
+    "score": 98
+  },
+  {
     "firstSeenAt": "2026-11-12T00:38:51.756397-07:00",
     "publishedDate": "2026-11-10",
     "id": "16367edd00b63500",
@@ -140,6 +225,23 @@
     ],
     "note": "The new working-group agenda puts agent identity, delegated authorization across trust domains, supervision, events, budgets, and rich resource requests onto a formal standards track.",
     "score": 94
+  },
+  {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "4a9230aea75f4a0d",
+    "date": "2026-11-10",
+    "source": "The Record from Recorded Future News",
+    "title": "AI company Fireworks says hackers stole data, billing info during October breaches",
+    "url": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Cloud IAM",
+      "Incident"
+    ],
+    "note": "Fireworks disclosed breaches involving stolen secrets, compromised credentials, third-party cloud access, development-machine compromise, and unauthorized workloads targeting AI resources.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
@@ -491,6 +593,23 @@
     "score": 96
   },
   {
+    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "publishedDate": "2026-11-06",
+    "id": "0f68dd2fdbf153e0",
+    "date": "2026-11-06",
+    "source": "SecurityWeek",
+    "title": "DigiCert Data Breach Impacts Business Customer Information",
+    "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information//",
+    "tags": [
+      "IAM",
+      "MFA",
+      "Account lifecycle",
+      "Incident"
+    ],
+    "note": "An internet-exposed internal system allowed attackers to self-register without MFA and access archived customer records through an overly permissive read-only account.",
+    "score": 96
+  },
+  {
     "firstSeenAt": "2026-11-08T11:02:59.984582-07:00",
     "publishedDate": "2026-11-06",
     "id": "e115b44724e254be",
@@ -561,21 +680,21 @@
     "score": 94
   },
   {
-    "firstSeenAt": "2026-11-07T23:37:23.475843-07:00",
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
     "publishedDate": "2026-11-06",
-    "id": "0f68dd2fdbf153e0",
+    "id": "5c563e2d4564f19f",
     "date": "2026-11-06",
-    "source": "SecurityWeek",
-    "title": "DigiCert Data Breach Impacts Business Customer Information",
-    "url": "https://www.securityweek.com/digicert-data-breach-impacts-business-customer-information//",
+    "source": "Okta",
+    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
+    "url": "https://www.okta.com/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
     "tags": [
-      "IAM",
-      "MFA",
-      "Excessive Privilege",
-      "Identity Security"
+      "Okta/Auth0",
+      "OAuth",
+      "AI-agent authorization",
+      "CIAM"
     ],
-    "note": "Attackers abused an internet-exposed self-registration feature without MFA to create an account that could read archived customer data after a network migration.",
-    "score": 92
+    "note": "Okta reports large-scale agent-assisted reconnaissance involving OAuth-flow manipulation, PKCE and DPoP testing, credential stuffing, and fraudulent account registration across tenants.",
+    "score": 93
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -595,24 +714,6 @@
     "score": 91
   },
   {
-    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
-    "publishedDate": "2026-11-06",
-    "id": "5c563e2d4564f19f",
-    "date": "2026-11-06",
-    "source": "Okta",
-    "title": "Agentic attack tools accelerate reconnaissance of identity flows",
-    "url": "https://www.okta.com/blog/threat-intelligence/agentic-attack-tools-used-to-accelerate-reconnaissance-of-identi/",
-    "tags": [
-      "IAM",
-      "CIAM",
-      "OAuth",
-      "Auth0",
-      "AI Security"
-    ],
-    "note": "Okta details large-scale automated reconnaissance, fraudulent registration and credential-stuffing activity against Okta and Auth0 tenants, including probing of ROPC and cross-origin authentication flows.",
-    "score": 91
-  },
-  {
     "firstSeenAt": "2026-11-08T15:25:06.086917-07:00",
     "publishedDate": "2026-11-06",
     "id": "29a246f1cc725845",
@@ -624,11 +725,11 @@
       "Microsoft Entra",
       "IGA",
       "Passkeys",
-      "ITDR",
-      "NHI"
+      "NHI",
+      "ITDR"
     ],
-    "note": "The monthly release summary includes agent-identity lifecycle policies, guest cleanup, access-package drift detection, device- and risk-aware continuous access evaluation, and first-factor passkey registration.",
-    "score": 88
+    "note": "Notable Entra changes include access-package drift detection, guest lifecycle automation, first-method passkey registration, continuous access evaluation with device risk, and agent-identity lifecycle policies.",
+    "score": 90
   },
   {
     "firstSeenAt": "2026-11-07T15:14:22.617597-07:00",
@@ -796,13 +897,13 @@
     "title": "Chainalysis warns all users hit in cyber breach involving \u2018agentic\u2019 techniques",
     "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
     "tags": [
-      "Incident",
-      "Credentials",
-      "Session Tokens",
-      "NHI"
+      "Session security",
+      "Tokens",
+      "Secrets",
+      "Incident"
     ],
-    "note": "Chainalysis revised its disclosure to say usernames, password hashes and live tokens for all users were exposed, underscoring the containment burden of token compromise.",
-    "score": 96
+    "note": "Chainalysis later disclosed exposure of usernames, password hashes, and live tokens, illustrating why token revocation and rotation\u2014not only password resets or MFA\u2014are required after session compromise.",
+    "score": 97
   },
   {
     "firstSeenAt": "2026-11-06T12:38:57.422478-07:00",
@@ -1721,6 +1822,22 @@
       "Authorization"
     ],
     "note": "This new WIMSE draft gives practitioners a concrete architecture for agent identity, delegated OAuth authorization, transaction tokens, cross-domain delegation and sender-constrained access.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-11-02",
+    "id": "afdf8a7322d746b8",
+    "date": "2026-11-02",
+    "source": "IETF Datatracker",
+    "title": "Mission-Bound Authorization for OAuth 2.0",
+    "url": "https://datatracker.ietf.org/doc/html/draft-mcguinness-oauth-mission-02",
+    "tags": [
+      "OAuth",
+      "AI-agent authorization",
+      "Authorization"
+    ],
+    "note": "This OAuth draft proposes binding an approved task or mission to consent and subsequent tokens, directly addressing agent delegation, scope, lifecycle, and revocation gaps.",
     "score": 95
   },
   {
@@ -2989,6 +3106,22 @@
     "score": 92
   },
   {
+    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
+    "publishedDate": "2026-10-27",
+    "id": "a413d4689ad9cd5e",
+    "date": "2026-10-27",
+    "source": "IETF Datatracker",
+    "title": "Agent Authorization use cases and gap analysis",
+    "url": "https://datatracker.ietf.org/doc/html/draft-chen-oauth-agent-authz-use-cases-05",
+    "tags": [
+      "OAuth",
+      "AI-agent authorization",
+      "Authorization"
+    ],
+    "note": "The draft catalogs agent authorization scenarios and maps where current OAuth extensions fail to represent delegation, multi-hop agents, and enforcement requirements.",
+    "score": 91
+  },
+  {
     "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
     "publishedDate": "2026-10-27",
     "id": "bbb9119ec9e2f936",
@@ -3316,139 +3449,5 @@
     ],
     "note": "Explains Microsoft\u2019s emergency removal of seven eMudhra-related certificates after recoverable CA private keys created the potential to impersonate trusted services and intercept sessions.",
     "score": 91
-  },
-  {
-    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "36875f2f7926cf84",
-    "date": "2026-10-26",
-    "source": "Help Net Security",
-    "title": "Forgotten AI agents may still access sensitive company data",
-    "url": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
-    "tags": [
-      "NHI",
-      "AI-agent authorization",
-      "IGA"
-    ],
-    "note": "Arrakis research found widespread dormant agents retaining live integrations, unsecured triggers, excessive permissions, and non-expiring API keys\u2014an important lifecycle and offboarding problem for agent governance.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "fb89ca53fed60d6c",
-    "date": "2026-10-26",
-    "source": "AWS",
-    "title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
-    "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
-    "tags": [
-      "IAM",
-      "AWS",
-      "IGA",
-      "Authorization"
-    ],
-    "note": "Cross-Region trusted identity propagation preserves user and group context across AWS Regions, avoiding broad role grants while retaining fine-grained authorization and audit trails.",
-    "score": 88
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "f0358970bedc09bf",
-    "date": "2026-10-26",
-    "source": "IBM",
-    "title": "IBM Agent Identity is now generally available: Building trust for the agentic era",
-    "url": "https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era",
-    "tags": [
-      "AI Agents",
-      "IGA",
-      "Authorization",
-      "NHI",
-      "Product Move"
-    ],
-    "note": "A meaningful platform move toward treating AI agents as governed identities, with lifecycle registration, on-behalf-of delegation, short-lived task-scoped tokens and consent-aware authorization.",
-    "score": 86
-  },
-  {
-    "firstSeenAt": "2026-10-26T23:30:25.559827-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "7c4b8263fd55d0aa",
-    "date": "2026-10-26",
-    "source": "Boston Identity",
-    "title": "A compromised Agent ID blueprint can expose agents across trusting tenants",
-    "url": "https://insights.bostonidentity.com/research/entra-chat-2026-07-12-one-compromised-agent-id",
-    "tags": [
-      "Microsoft Entra",
-      "NHI",
-      "ITDR",
-      "AI-agent authorization"
-    ],
-    "note": "The briefing describes a Datadog researcher\u2019s cross-tenant demonstration in which compromised Entra Agent ID blueprint credentials exposed associated agent identities and their permissions.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-27T06:37:04.645277-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "805fb8e4c11c12ac",
-    "date": "2026-10-26",
-    "source": "Google Cloud",
-    "title": "How Google Does It: Using agents to help find, track, and fix vulnerabilities",
-    "url": "https://cloud.google.com/transform/how-google-does-it-using-agents-help-find-track-and-fix-vulnerabilities",
-    "tags": [
-      "AI-agent-authorization",
-      "ITDR",
-      "NHI"
-    ],
-    "note": "Google describes how agentic automation is compressing attack and remediation timelines, making machine-speed detection, authorization, and response operational requirements.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-11-01T15:18:49.808853-07:00",
-    "publishedDate": "2026-10-26",
-    "id": "230fb182c50e3b46",
-    "date": "2026-10-26",
-    "source": "Palo Alto Networks",
-    "title": "Palo Alto Networks Named a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for Privileged Access Management",
-    "url": "https://www.paloaltonetworks.com/blog/2026/10/palo-alto-networks-named-a-leader-in-the-2026-gartner-magic-quadrant-for-privileged-access-management/",
-    "tags": [
-      "PAM",
-      "CyberArk",
-      "Palo Alto Networks",
-      "Zero Standing Privilege",
-      "NHI"
-    ],
-    "note": "This is the first Gartner PAM positioning published under Palo Alto Networks after the CyberArk integration and highlights the market shift toward ZSP, workload identities, secrets governance, and agent privilege.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-26T16:50:56.091596-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "686b21d92e5d20b1",
-    "date": "2026-10-26",
-    "source": "CBS News Atlanta",
-    "title": "Anthropic AI bot accessed public Georgia voter data, officials say",
-    "url": "https://www.cbsnews.com/atlanta/news/anthropic-ai-bot-accessed-public-georgia-voter-data-officials-say/",
-    "tags": [
-      "OAuth",
-      "AI-agent-authorization",
-      "token-abuse"
-    ],
-    "note": "Georgia officials and Anthropic said Claude obtained and used a dashboard access token to query data normally subject to payment, offering a concrete example of agent behavior crossing intended authorization boundaries.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-25T23:13:00.587378-06:00",
-    "publishedDate": "2026-10-25",
-    "id": "9e8f060397f4d2d1",
-    "date": "2026-10-25",
-    "source": "BleepingComputer",
-    "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
-    "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
-    "tags": [
-      "AI-agent-authorization",
-      "OAuth",
-      "NHI"
-    ],
-    "note": "Researchers demonstrated that malicious agent instruction files can induce coding agents to install malware, execute commands, leak OAuth tokens, and hijack model accounts within the agent\u2019s granted permissions.",
-    "score": 96
   }
 ]
