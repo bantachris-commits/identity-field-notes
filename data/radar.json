@@ -1,5 +1,24 @@
 [
   {
+    "firstSeenAt": "2026-11-13T12:58:40.269320-07:00",
+    "publishedDate": "2026-11-12",
+    "id": "8a587b4d6329e768",
+    "date": "2026-11-12",
+    "source": "Aikido Security",
+    "title": "wfx-loot campaign pushes CI secret stealer to tens of thousands of repositories",
+    "url": "https://www.aikido.dev/blog/compromised-github-accounts-push-ci-secret-stealer-to-tens-of-thousands-of-repositories",
+    "tags": [
+      "NHI",
+      "IAM",
+      "Cloud IAM",
+      "OAuth",
+      "Secrets",
+      "Supply Chain"
+    ],
+    "note": "A large active campaign used stolen GitHub credentials to inject workflows that exfiltrated CI, cloud and AI-provider secrets, exchanged OIDC tokens for cloud sessions, and planted AWS trust-policy and Entra federated-credential persistence that survives rotation.",
+    "score": 99
+  },
+  {
     "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
     "publishedDate": "2026-11-12",
     "id": "5a8fd33cd11f1d85",
@@ -105,6 +124,23 @@
   {
     "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
     "publishedDate": "2026-11-11",
+    "id": "a9b26ac86b88ab5b",
+    "date": "2026-11-11",
+    "source": "OpenID Foundation",
+    "title": "AAuth Working Group - Overview",
+    "url": "https://openid.net/wg/aauth/",
+    "tags": [
+      "AI Agents",
+      "OAuth",
+      "Authorization",
+      "Standards"
+    ],
+    "note": "The new Agent Auth working group is being formed to standardize how agents prove their identity, represent the party they act for, and obtain delegated authorization across trust domains.",
+    "score": 91
+  },
+  {
+    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
+    "publishedDate": "2026-11-11",
     "id": "34f63dbdf4168e23",
     "date": "2026-11-11",
     "source": "SecurityWeek",
@@ -135,6 +171,23 @@
     ],
     "note": "A breach at Notion\u2019s AI infrastructure provider exposed some AI chat transcripts and followed an earlier incident involving API keys and tokens stored as provider secrets.",
     "score": 87
+  },
+  {
+    "firstSeenAt": "2026-11-13T12:58:40.269320-07:00",
+    "publishedDate": "2026-11-11",
+    "id": "8dd0eaa2f9b214d0",
+    "date": "2026-11-11",
+    "source": "Amazon Web Services",
+    "title": "Ease of use and secure defaults in the new AWS experience",
+    "url": "https://aws.amazon.com/blogs/security/ease-of-use-and-secure-defaults-in-the-new-aws-experience/",
+    "tags": [
+      "AWS",
+      "IAM",
+      "Cloud IAM",
+      "Least Privilege"
+    ],
+    "note": "AWS describes a broad set of newly rolled-out secure defaults and identity-related onboarding changes that practitioners should assess against account-bootstrap and privilege-escalation risks.",
+    "score": 82
   },
   {
     "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
@@ -210,23 +263,6 @@
     "score": 96
   },
   {
-    "firstSeenAt": "2026-11-12T13:21:51.673117-07:00",
-    "publishedDate": "2026-11-10",
-    "id": "a9b26ac86b88ab5b",
-    "date": "2026-11-10",
-    "source": "OpenID Foundation",
-    "title": "AAuth Working Group - Overview",
-    "url": "https://openid.net/wg/aauth/",
-    "tags": [
-      "OpenID",
-      "OAuth",
-      "AI-Agent Authorization",
-      "Standards"
-    ],
-    "note": "The new working-group agenda puts agent identity, delegated authorization across trust domains, supervision, events, budgets, and rich resource requests onto a formal standards track.",
-    "score": 94
-  },
-  {
     "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
     "publishedDate": "2026-11-10",
     "id": "4a9230aea75f4a0d",
@@ -242,6 +278,23 @@
     ],
     "note": "Fireworks disclosed breaches involving stolen secrets, compromised credentials, third-party cloud access, development-machine compromise, and unauthorized workloads targeting AI resources.",
     "score": 93
+  },
+  {
+    "firstSeenAt": "2026-11-13T12:58:40.269320-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "71fceeec39fa228b",
+    "date": "2026-11-10",
+    "source": "TechRadar Pro",
+    "title": "New 'BluePhishing' scam sees criminals spoof AI agents to get access to corporate environments",
+    "url": "https://www.techradar.com/pro/security/new-bluephishing-scam-sees-criminals-spoof-ai-agents-to-get-access-to-corporate-environments",
+    "tags": [
+      "AI Agents",
+      "Entra",
+      "Phishing",
+      "Authorization"
+    ],
+    "note": "Proofpoint researchers describe a social-engineering path in which attackers create a malicious agent blueprint and induce victims to approve it through a genuine Microsoft authorization flow.",
+    "score": 88
   },
   {
     "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
@@ -822,16 +875,16 @@
     "publishedDate": "2026-11-06",
     "id": "061aa79c518fa966",
     "date": "2026-11-06",
-    "source": "Palo Alto Networks / CyberArk",
-    "title": "CyberArk is now Idira: Frequently Asked Questions",
+    "source": "CyberArk / Idira",
+    "title": "CyberArk is now Idira\u00ae: Frequently Asked Questions",
     "url": "https://community.cyberark.com/s/article/CyberArk-is-now-Idira-Frequently-Asked-Questions",
     "tags": [
       "PAM",
-      "Platform Shift",
+      "CyberArk",
       "Palo Alto Networks",
-      "CyberArk"
+      "Market Shift"
     ],
-    "note": "The transition FAQ provides operationally relevant details on CyberArk\u2019s Idira rebrand, support and documentation migration, security-advisory changes, and PAM migration workflows.",
+    "note": "The FAQ gives customers concrete migration and support-platform details ahead of the November 16 transition as CyberArk\u2019s identity-security business is integrated into Palo Alto Networks under the Idira brand.",
     "score": 78
   },
   {
@@ -862,12 +915,12 @@
     "tags": [
       "Entra",
       "NHI",
-      "Secrets",
       "OAuth",
-      "AI Agents",
-      "Cloud Security"
+      "Secrets",
+      "ITDR",
+      "AI Agents"
     ],
-    "note": "Microsoft documents agentic frameworks finding public secrets and using valid application credentials to access Entra tenants, Azure, Microsoft 365, Key Vault, SharePoint and OneDrive.",
+    "note": "Microsoft documents observed attacks in which agentic tooling harvested exposed application credentials, abused service principals and OAuth applications, accessed Key Vault and Microsoft 365 data, and used Azure Run Command for further compromise.",
     "score": 98
   },
   {
@@ -1164,24 +1217,6 @@
     ],
     "note": "Binance\u2019s incident account traces the theft through compromised developer endpoints, stolen credentials, a container-deployment token, and wallet-signing authorization.",
     "score": 97
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-11-04",
-    "id": "de035062107f053e",
-    "date": "2026-11-04",
-    "source": "Chainalysis",
-    "title": "Updated Nov 10: Chainalysis Security Incident Information",
-    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
-    "tags": [
-      "Credential Theft",
-      "Session Security",
-      "Tokens",
-      "MFA",
-      "ITDR"
-    ],
-    "note": "Chainalysis disclosed exposure of user names, usernames, password hashes and live tokens, plus an on-path attack that exposed a subset of customer passwords.",
-    "score": 95
   },
   {
     "firstSeenAt": "2026-11-05T00:18:07.017816-07:00",
@@ -2338,6 +2373,24 @@
   {
     "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
     "publishedDate": "2026-10-30",
+    "id": "de035062107f053e",
+    "date": "2026-10-30",
+    "source": "Chainalysis",
+    "title": "Updated Nov 10: Chainalysis Security Incident Information",
+    "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+    "tags": [
+      "Incident",
+      "Session Tokens",
+      "Credentials",
+      "MFA",
+      "ITDR"
+    ],
+    "note": "A material incident update confirmed exposure of customer usernames, password hashes and live tokens, following an earlier disclosure that initially said credentials and session tokens were not accessed.",
+    "score": 97
+  },
+  {
+    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
+    "publishedDate": "2026-10-30",
     "id": "ec6a0a4e6dc90e2f",
     "date": "2026-10-30",
     "source": "Wiz Research",
@@ -3397,57 +3450,5 @@
     ],
     "note": "LiteLLM traced a supply-chain compromise to an exposed master key that was deleted but not revoked, enabling repository takeover and malware distribution that harvested cloud credentials.",
     "score": 96
-  },
-  {
-    "firstSeenAt": "2026-10-29T07:38:31.160577-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "bd27d44e1a221fdc",
-    "date": "2026-10-26",
-    "source": "Arctic Wolf Labs",
-    "title": "Beyond the Inbox: How Threat Actors Abuse Microsoft Teams External Chat for Initial Access",
-    "url": "https://arcticwolf.com/resources/blog/threat-actors-abuse-microsoft-teams-external-chat-for-initial-access/",
-    "tags": [
-      "IAM",
-      "Federation",
-      "Social Engineering",
-      "MFA",
-      "Endpoint Access"
-    ],
-    "note": "Analyzes more than 400 attacks abusing Teams federation, fake IT identities, vishing and Quick Assist or RMM tools to obtain hands-on access and establish persistence.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-11-02T14:47:56.807392-07:00",
-    "publishedDate": "2026-10-26",
-    "id": "cb3ce79bbd3a48b1",
-    "date": "2026-10-26",
-    "source": "IETF OAuth Working Group",
-    "title": "Attenuating Authorization Tokens for Agentic Delegation Chains",
-    "url": "https://datatracker.ietf.org/doc/html/draft-niyikiza-oauth-attenuating-agent-tokens",
-    "tags": [
-      "OAuth",
-      "AI Agents",
-      "Authorization",
-      "Token Security"
-    ],
-    "note": "Proposes cryptographically linked, holder-derived tokens whose authority can only narrow through multi-agent delegation chains and can be verified offline at enforcement points.",
-    "score": 93
-  },
-  {
-    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
-    "publishedDate": "2026-10-26",
-    "id": "a49f81574cf6f534",
-    "date": "2026-10-26",
-    "source": "Microsoft MSRC",
-    "title": "Microsoft\u2019s response to compromised eMudhra certificate authority keys",
-    "url": "https://www.microsoft.com/en-us/msrc/blog/2026/10/microsoft-response-to-compromised-emudhra-certificate-authority-keys",
-    "tags": [
-      "Machine Identity",
-      "PKI",
-      "Trust",
-      "Session Theft"
-    ],
-    "note": "Explains Microsoft\u2019s emergency removal of seven eMudhra-related certificates after recoverable CA private keys created the potential to impersonate trusted services and intercept sessions.",
-    "score": 91
   }
 ]
