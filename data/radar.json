@@ -1,5 +1,79 @@
 [
   {
+    "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "d0e66135c4d8bd8b",
+    "date": "2026-11-13",
+    "source": "FBI Internet Crime Complaint Center",
+    "title": "FBI FLASH \u2014 Actionable Cyber Intelligence: ARTEX AI-Enabled Cyber Threats",
+    "url": "https://www.ic3.gov/CSA/2026/261113.pdf",
+    "tags": [
+      "AI-agent authorization",
+      "PAM",
+      "NHI",
+      "ITDR",
+      "Entra",
+      "OAuth"
+    ],
+    "note": "The FBI details how ARTEX accelerated multi-target intrusions to privileged access in under three hours, including campaigns involving ConnectWise Cloud Backup and more than 2,250 downstream Microsoft 365 tenants.",
+    "score": 98
+  },
+  {
+    "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "2fbef573b5bb19f3",
+    "date": "2026-11-13",
+    "source": "Okta",
+    "title": "Okta for AI Agents now works out-of-the-box with multiple third-party identity providers",
+    "url": "https://www.okta.com/en-in/newsroom/press-releases/okta-for-ai-agents-now-works-out-of-the-box-with-multiple-third-party-identity-providers/",
+    "tags": [
+      "AI-agent authorization",
+      "IGA",
+      "OAuth",
+      "federation",
+      "Ping Identity",
+      "Descope"
+    ],
+    "note": "Okta announced support for agent identities originating in third-party XAA-enabled IdPs such as Ping and Descope, with centralized scoping, auditing and access reviews without requiring IdP consolidation.",
+    "score": 90
+  },
+  {
+    "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "02eedf01eb356097",
+    "date": "2026-11-13",
+    "source": "Notion",
+    "title": "Fireworks AI incident",
+    "url": "https://www.notion.com/en-gb/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+    "tags": [
+      "NHI",
+      "secrets",
+      "API keys",
+      "OAuth",
+      "third-party risk"
+    ],
+    "note": "Notion\u2019s advisory says affected AI-chat data could contain credentials, that exposed Notion API keys were revoked and that third-party API keys found in messages were reported to their issuers.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "1118476b50e9ba57",
+    "date": "2026-11-13",
+    "source": "Google Cloud",
+    "title": "Enterprise AI agent observability with BigQuery and Looker",
+    "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/",
+    "tags": [
+      "AI-agent authorization",
+      "NHI",
+      "ITDR",
+      "cloud IAM",
+      "audit"
+    ],
+    "note": "Google Cloud introduced unified telemetry and evaluation capabilities for first- and third-party agents, giving teams a durable record of agent activity, data access, spend and behavior for governance and response.",
+    "score": 84
+  },
+  {
     "firstSeenAt": "2026-11-13T12:58:40.269320-07:00",
     "publishedDate": "2026-11-12",
     "id": "8a587b4d6329e768",
@@ -262,25 +336,6 @@
     "score": 98
   },
   {
-    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
-    "publishedDate": "2026-11-10",
-    "id": "2de8f7597bd112f7",
-    "date": "2026-11-10",
-    "source": "Railway",
-    "title": "Incident Report: October 21st Security Attack",
-    "url": "https://blog.railway.com/p/incident-report-october-security-incident",
-    "tags": [
-      "NHI",
-      "Secrets",
-      "OAuth",
-      "Session/Token Abuse",
-      "AI-Agent Authorization",
-      "Incident"
-    ],
-    "note": "A detailed postmortem traces how build isolation escapes, over-trusted internal services, long-lived credentials, and decrypted customer secrets enabled theft of AI-provider keys and linked-account tokens.",
-    "score": 98
-  },
-  {
     "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
     "publishedDate": "2026-11-10",
     "id": "e7a8a4d2bbbe8652",
@@ -315,6 +370,25 @@
     ],
     "note": "Railway\u2019s incident report ties infrastructure vulnerabilities and an improperly configured trust relationship to stolen environment variables, linked-account tokens and unauthorized AI-provider usage.",
     "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-10T12:58:02.200618-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "2de8f7597bd112f7",
+    "date": "2026-11-10",
+    "source": "Railway",
+    "title": "Incident Report: October 21st Security Attack",
+    "url": "https://blog.railway.com/p/incident-report-october-security-incident",
+    "tags": [
+      "NHI",
+      "workload identity",
+      "OAuth",
+      "secrets",
+      "token abuse",
+      "cloud IAM"
+    ],
+    "note": "Railway\u2019s detailed postmortem traces customer-secret exposure through filesystem-isolation escape, an overtrusted internal credential, an erroneous OIDC binding and long-lived credentials on an orchestration host.",
+    "score": 94
   },
   {
     "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
@@ -383,6 +457,24 @@
     ],
     "note": "Proofpoint researchers describe a social-engineering path in which attackers create a malicious agent blueprint and induce victims to approve it through a genuine Microsoft authorization flow.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
+    "publishedDate": "2026-11-10",
+    "id": "7250a1de982ba451",
+    "date": "2026-11-10",
+    "source": "Uber Technologies",
+    "title": "Notice of Security Incident",
+    "url": "https://www.iowaattorneygeneral.gov/media/cms/11102026_Uber_Technologies_Inc_089721E61CBAB.pdf",
+    "tags": [
+      "IAM",
+      "credential abuse",
+      "third-party risk",
+      "cloud IAM",
+      "ITDR"
+    ],
+    "note": "Uber\u2019s regulatory notice identifies a service provider\u2019s compromised internal credentials as the access path to Uber data and notes that valid-credential use bypassed existing alerting.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-11-11T12:49:38.039217-07:00",
@@ -3364,91 +3456,5 @@
     ],
     "note": "The updated rollout will let supported Windows Hello for Business and macOS Platform SSO credentials satisfy MFA without requiring an additional passkey, affecting registration, step-up, and authentication-strength planning.",
     "score": 84
-  },
-  {
-    "firstSeenAt": "2026-11-01T00:44:53.040944-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "148f4f2a14b06306",
-    "date": "2026-10-27",
-    "source": "IETF",
-    "title": "Agent Authorization Center for User-Side Agent Authentication and Authorization",
-    "url": "https://datatracker.ietf.org/doc/html/draft-du-oauth-agent-authorization-center-00",
-    "tags": [
-      "OAuth/session/token abuse",
-      "AI-agent authorization",
-      "OpenID/FIDO"
-    ],
-    "note": "New OAuth-related Internet-Draft proposes autonomous and human-approved authorization modes for user-side agents, but its agent-authentication and security-considerations sections remain incomplete.",
-    "score": 84
-  },
-  {
-    "firstSeenAt": "2026-10-30T00:21:17.597179-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "d46bfd8d0d808e74",
-    "date": "2026-10-27",
-    "source": "IETF",
-    "title": "Agent Authorization Center for User-Side Agent Authentication and Authorization",
-    "url": "https://datatracker.ietf.org/doc/draft-du-oauth-agent-authorization-center/",
-    "tags": [
-      "OAuth",
-      "AI-agent authorization",
-      "Authorization"
-    ],
-    "note": "This new Internet-Draft proposes a policy-bearing authorization intermediary that distinguishes autonomous agent approval from human authorization for delegated access.",
-    "score": 82
-  },
-  {
-    "firstSeenAt": "2026-10-28T16:48:22.214333-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "bbbc363564a58cf2",
-    "date": "2026-10-27",
-    "source": "Saviynt",
-    "title": "Saviynt Achieves United States FedRAMP Class D (High Certification",
-    "url": "https://saviynt.com/press-release/fedramp-high-authorization-federal-identity-security?hsLang=en-gb",
-    "tags": [
-      "IGA",
-      "PAM",
-      "NHI",
-      "AI Agents",
-      "Federal"
-    ],
-    "note": "The certification materially expands Saviynt\u2019s federal positioning by placing IGA, PAM and application access governance for human, nonhuman and AI identities under one high-assurance boundary.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "6f4675999fa70e06",
-    "date": "2026-10-27",
-    "source": "Saviynt",
-    "title": "Saviynt Achieves United States FedRAMP\u00ae Class D (High Certification",
-    "url": "https://saviynt.com/press-release/fedramp-high-authorization-federal-identity-security?hsLang=de",
-    "tags": [
-      "IGA",
-      "PAM",
-      "NHI",
-      "AI-agents",
-      "Compliance"
-    ],
-    "note": "Material platform and market development as Saviynt brings IGA, PAM, and application-access governance for human, non-human, and AI identities into a FedRAMP High certification boundary.",
-    "score": 78
-  },
-  {
-    "firstSeenAt": "2026-10-29T16:56:16.176786-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "a9a891ddddb9c87a",
-    "date": "2026-10-27",
-    "source": "Infisical",
-    "title": "Infisical Raises $40M Series B led by Elad Gil: Building Security Infrastructure for the AI Era",
-    "url": "https://infisical.com/blog/series-b",
-    "tags": [
-      "PAM",
-      "NHI",
-      "Secrets",
-      "AI Agents",
-      "Machine Identity"
-    ],
-    "note": "The funding announcement is relevant because Infisical is expanding Agent Vault, a credential-brokering model intended to give agents task access without exposing underlying secrets to the agent or model.",
-    "score": 76
   }
 ]
