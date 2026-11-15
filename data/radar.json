@@ -19,6 +19,58 @@
     "score": 98
   },
   {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "26a46cce7cf42b66",
+    "date": "2026-11-13",
+    "source": "Cursor",
+    "title": "An update on our recent security incident",
+    "url": "https://cursor.com/blog/security-incident-update",
+    "tags": [
+      "NHI",
+      "Secrets",
+      "Supply Chain",
+      "AI-Agent Authorization"
+    ],
+    "note": "Cursor attributes the incident to an exposed Fireworks access key, unredacted agent traces, credential reuse across SaaS tools, and a malicious extension distributed through its marketplace cache.",
+    "score": 96
+  },
+  {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "4084f96e5a59e128",
+    "date": "2026-11-13",
+    "source": "SecurityWeek",
+    "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+    "url": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+    "tags": [
+      "IAM",
+      "MFA",
+      "OAuth",
+      "Secrets",
+      "Incident"
+    ],
+    "note": "Apify says a compromised credential enabled access to additional credentials and customer accounts, with reported exposure including 2FA recovery codes and Google/GitHub authentication tokens.",
+    "score": 95
+  },
+  {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "bdcf0a81792f69ab",
+    "date": "2026-11-13",
+    "source": "FIDO Alliance",
+    "title": "Attackers Can\u2019t Steal Passkeys, So They\u2019re Enrolling Their Own",
+    "url": "https://fidoalliance.org/security-boulevard-attackers-cant-steal-passkeys-so-theyre-enrolling-their-own/",
+    "tags": [
+      "Passkeys",
+      "MFA",
+      "Account Takeover",
+      "Entra"
+    ],
+    "note": "The analysis highlights a shift from stealing passkeys to socially engineering users into enrolling attacker-controlled authenticators, making enrollment, recovery, and change-of-authenticator controls central defenses.",
+    "score": 94
+  },
+  {
     "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
     "publishedDate": "2026-11-13",
     "id": "2fbef573b5bb19f3",
@@ -27,15 +79,13 @@
     "title": "Okta for AI Agents now works out-of-the-box with multiple third-party identity providers",
     "url": "https://www.okta.com/en-in/newsroom/press-releases/okta-for-ai-agents-now-works-out-of-the-box-with-multiple-third-party-identity-providers/",
     "tags": [
-      "AI-agent authorization",
-      "IGA",
+      "IAM",
+      "AI-Agent Authorization",
       "OAuth",
-      "federation",
-      "Ping Identity",
-      "Descope"
+      "Federation"
     ],
-    "note": "Okta announced support for agent identities originating in third-party XAA-enabled IdPs such as Ping and Descope, with centralized scoping, auditing and access reviews without requiring IdP consolidation.",
-    "score": 90
+    "note": "Okta added generally available support for agents and users from third-party IdPs including Ping and Descope, with scoped short-lived tokens, unified auditing, and an agent-access kill switch.",
+    "score": 91
   },
   {
     "firstSeenAt": "2026-11-14T15:42:20.660246-07:00",
@@ -56,6 +106,24 @@
     "score": 90
   },
   {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "7e5a49e13dd965f9",
+    "date": "2026-11-13",
+    "source": "SailPoint",
+    "title": "Production release notes - November 13, 2026",
+    "url": "https://developer.sailpoint.com/discuss/t/production-release-notes-november-13-2026/230794",
+    "tags": [
+      "IGA",
+      "NHI",
+      "Machine Identity",
+      "ITDR",
+      "Secrets"
+    ],
+    "note": "SailPoint expanded Agentic Fabric with machine-account lifecycle operations, exposed and vaulted credential inventories, agent approvals and blocking, endpoint AI-agent governance, and NHI deactivation workflows.",
+    "score": 90
+  },
+  {
     "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
     "publishedDate": "2026-11-13",
     "id": "02eedf01eb356097",
@@ -72,6 +140,40 @@
     ],
     "note": "Notion\u2019s advisory says affected AI-chat data could contain credentials, that exposed Notion API keys were revoked and that third-party API keys found in messages were reported to their issuers.",
     "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "0c33fe8f48fde0fe",
+    "date": "2026-11-13",
+    "source": "AWS",
+    "title": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 discovery URLs",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-oauth2-discovery/",
+    "tags": [
+      "AWS",
+      "OAuth",
+      "AI-Agent Authorization",
+      "Workload Identity"
+    ],
+    "note": "AgentCore Identity can now consume OAuth 2.0 authorization-server metadata directly, extending agent authentication and credential-provider interoperability beyond OIDC-only deployments.",
+    "score": 88
+  },
+  {
+    "firstSeenAt": "2026-11-15T00:05:19.264267-07:00",
+    "publishedDate": "2026-11-13",
+    "id": "3f297ec6d22329c8",
+    "date": "2026-11-13",
+    "source": "UCHealth",
+    "title": "UCHealth Notifies Individuals of Data Security Incident",
+    "url": "https://www.uchealth.org/notifications/uchealth-notifies-individuals-of-data-security-incident/",
+    "tags": [
+      "IAM",
+      "Entra",
+      "Compromised Credentials",
+      "Incident"
+    ],
+    "note": "UCHealth reports that an unauthorized party accessed two employee accounts in its Microsoft cloud environment and potentially acquired files affecting approximately 129,000 individuals.",
+    "score": 86
   },
   {
     "firstSeenAt": "2026-11-14T11:26:51.675721-07:00",
@@ -3360,108 +3462,5 @@
     ],
     "note": "The release is relevant for teams deciding whether user, device and AI-agent governance should share one policy and compliance control plane.",
     "score": 70
-  },
-  {
-    "firstSeenAt": "2026-10-28T00:12:50.791149-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "f65e1d863674c710",
-    "date": "2026-10-27",
-    "source": "NIST",
-    "title": "Design Tenets for Agent Identity Management Systems",
-    "url": "https://www.nist.gov/blogs/cybersecurity-insights/design-tenets-agent-identity-management-systems",
-    "tags": [
-      "AI Agents",
-      "NHI",
-      "IAM",
-      "Authorization",
-      "Standards"
-    ],
-    "note": "Provides government-backed design guidance for distinct agent identities, JIT authorization, runtime verification, revocation and avoiding long-lived bearer tokens or reusable secrets.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "a6006728be28909d",
-    "date": "2026-10-27",
-    "source": "The Hacker News",
-    "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-    "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-    "tags": [
-      "Microsoft Entra",
-      "MFA",
-      "Token-theft",
-      "Authentication"
-    ],
-    "note": "Reports technical research showing that a zero-permission Android app could impersonate a Microsoft first-party client and obtain work-account tokens through the Authenticator broker.",
-    "score": 95
-  },
-  {
-    "firstSeenAt": "2026-10-29T00:22:48.878628-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "b055c341e4777f2e",
-    "date": "2026-10-27",
-    "source": "AWS Security",
-    "title": "CVE-2026-115413 - AWS API MCP Server OAuth token audience validation bypass",
-    "url": "https://aws.amazon.com/security/security-bulletins/2026-152-aws/",
-    "tags": [
-      "AWS",
-      "OAuth",
-      "AI-agent authorization",
-      "MCP",
-      "Authorization failure"
-    ],
-    "note": "AWS discloses an OAuth audience-validation flaw in the API MCP Server that could accept a token issued to another application in the same tenant and authorize AWS API calls with host credentials.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-30T16:36:33.014697-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "e7af37d15e8af29f",
-    "date": "2026-10-27",
-    "source": "ANY.RUN",
-    "title": "SkyW4lker Exposed: A Growing Microsoft 365 Phishing Threat to American Enterprises",
-    "url": "https://any.run/cybersecurity-blog/skyw4lker-phishing-kit-analysis/",
-    "tags": [
-      "Microsoft Entra",
-      "OAuth",
-      "Token-abuse",
-      "MFA-bypass"
-    ],
-    "note": "Detailed research on a device-code phishing kit that obtains Microsoft 365 tokens through legitimate authentication and MFA flows, with infrastructure, detection paths, and Entra-focused hunting guidance.",
-    "score": 94
-  },
-  {
-    "firstSeenAt": "2026-10-31T00:12:24.343667-06:00",
-    "publishedDate": "2026-10-27",
-    "id": "fff16aa37d3c4459",
-    "date": "2026-10-27",
-    "source": "GitHub Advisory Database",
-    "title": "Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys",
-    "url": "https://github.com/advisories/GHSA-7vr2-2fgp-9w7p",
-    "tags": [
-      "OAuth",
-      "OIDC",
-      "JWT",
-      "Authentication"
-    ],
-    "note": "A reviewed advisory describes token-signature verification bypass in Authlib that can let attackers forge JWT claims, including administrative roles, when affected key-handling paths are exposed.",
-    "score": 92
-  },
-  {
-    "firstSeenAt": "2026-11-13T00:09:37.101303-07:00",
-    "publishedDate": "2026-10-27",
-    "id": "a413d4689ad9cd5e",
-    "date": "2026-10-27",
-    "source": "IETF Datatracker",
-    "title": "Agent Authorization use cases and gap analysis",
-    "url": "https://datatracker.ietf.org/doc/html/draft-chen-oauth-agent-authz-use-cases-05",
-    "tags": [
-      "OAuth",
-      "AI-agent authorization",
-      "Authorization"
-    ],
-    "note": "The draft catalogs agent authorization scenarios and maps where current OAuth extensions fail to represent delegation, multi-hop agents, and enforcement requirements.",
-    "score": 91
   }
 ]
